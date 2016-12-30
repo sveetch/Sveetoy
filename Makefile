@@ -22,7 +22,7 @@ clean: delpyc
 
 install:
 	virtualenv --no-site-packages --setuptools .
-	bin/pip install -r requirements/basic.txt
+	bin/pip install -r requirements/dev.txt
 	@echo "Install done. You should execute 'bin/activate' to start environment."
 
 build-demo:

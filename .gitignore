@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.installed.cfg
+pip-selfcheck.json
+eggs/
+bin/
+build/
+dist/
+include/
+local/
+lib/
+*.egg-info
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# Foundation sources
+foundation-sites-5.5.3
