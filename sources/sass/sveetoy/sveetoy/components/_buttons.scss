@@ -1,0 +1,108 @@
+/*
+ * Button enhancements
+ */
+$include-sveetoy-buttons: $include-sveetoy-classes !default;
+
+@if $include-sveetoy-buttons {
+    button,
+    .button{
+        ///
+        /// Explicitely remove all button margins
+        ///
+        &.unmarged {
+            margin: 0;
+        }
+
+        ///
+        /// Make stronger button
+        ///
+        &.strong{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        ///
+        /// Fullwidth (like '.expand' but keeping padding)
+        ///
+        &.full {
+            width: 100%;
+        }
+
+        /*
+        * Modest padding
+        */
+        &.modest{
+            $padding: $button-med / 2;
+            padding: $padding ($padding * 2) ($padding + rem-calc(1)) ($padding * 2);
+
+            &.tiny{
+                $padding: $button-tny / 2;
+                padding: $padding ($padding * 2) ($padding + rem-calc(1)) ($padding * 2);
+            }
+            &.small{
+                $padding: $button-sml / 2;
+                padding: $padding ($padding * 2) ($padding + rem-calc(1)) ($padding * 2);
+            }
+            &.medium{
+                $padding: $button-med / 2;
+                padding: $padding ($padding * 2) ($padding + rem-calc(1)) ($padding * 2);
+            }
+            &.large{
+                $padding: $button-lrg / 2;
+                padding: $padding ($padding * 2) ($padding + rem-calc(1)) ($padding * 2);
+            }
+        }
+
+        ///
+        /// Various color variants
+        ///
+        &.alpha-white{
+            color: $white;
+            background-color: transparent;
+            border-color: $white;
+            border-width: 1px;
+        }
+    }
+    // Don't keep cursor link on non link elements
+    div.button,
+    span.button,
+    li.button,
+    p.button{
+        cursor: default;
+    }
+
+    ///
+    /// Disable bottom margin for last element
+    ///
+    p, dd{
+        button:last-child,
+        .button:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    ///
+    /// Visually transform a dropdown button into a select list with vertical
+    /// scrollbar. This is useful for long list items that can impact on page size
+    ///
+    .f-dropdown.overflow {
+        overflow: auto;
+        height: rem-calc(200px);
+        // Various sizes
+        &.overflow-100 {
+            height: rem-calc(100px);
+        }
+        &.overflow-150 {
+            height: rem-calc(150px);
+        }
+        &.overflow-200 {
+            height: rem-calc(200px);
+        }
+        &.overflow-250 {
+            height: rem-calc(250px);
+        }
+        &.overflow-300 {
+            height: rem-calc(300px);
+        }
+    }
+}

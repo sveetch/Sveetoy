@@ -1,0 +1,11 @@
+{%- for branch in site_sitemap recursive -%}
+    {% set outer_loop = loop %}
+    {%- for leaf_name,leaf_content in branch.items() -%}
+        <li{%- if leaf_content.data.is_dir and leaf_content.children %} class="has-dropdown"{%- endif %}>
+            <a href="{{ page_relative_position }}{{ leaf_content.data.link|e }}">{{ leaf_name|capitalize }}</a>
+            {%- if leaf_content.data.is_dir and leaf_content.children -%}
+            <ul class="dropdown">{{ outer_loop(leaf_content.children) }}</ul>
+            {%- endif -%}
+        </li>
+    {%- endfor -%}
+{%- endfor -%}

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import "settings";
+
+/*
+ * Full Foundation components import for development process
+ */
+@import "foundation";
+
+/*
+ * Sveetoy library
+ */
+@import "sveetoy";
+@import "sveetoy/utils/functions";
+
+/*
+ * Used components
+ */
+@import "components/header";
+@import "components/footer";
+
+#body_content{
+    @import "components/contents";
+}
+
+/*
+ * Sometime, you need fallback hacks for some specific browsers, it should allways be
+ * at the end to be able to override every others components
+ */
+@import "sveetoy/utils/browser_fallbacks";

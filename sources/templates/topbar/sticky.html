@@ -1,0 +1,9 @@
+{% extends "_includes/_skeleton.html" %}
+
+{% block header_topbar %}<div class="sticky try1">
+{{ super() }}
+</div>{% endblock %}
+
+{% block base_content %}
+    {% include '_includes/_default_kitchensink.html' %}
+{% endblock %}

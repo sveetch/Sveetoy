@@ -1,0 +1,12 @@
+{
+    "SOURCES_PATH": "scss",
+    "LIBRARY_PATHS": [
+        "../../foundation-sites-5.5.3/scss",
+        "sveetoy"
+    ],
+    "TARGET_PATH": "../dist/css",
+    "OUTPUT_STYLES": "expanded",
+    "SOURCE_COMMENTS": false,
+    "SOURCE_MAP": false,
+    "EXCLUDES": []
+}

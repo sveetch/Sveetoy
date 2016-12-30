@@ -1,0 +1,9 @@
+{% extends "_includes/_skeleton.html" %}
+
+{% block header_topbar %}<div class="contain-to-grid">
+{{ super() }}
+</div>{% endblock %}
+
+{% block base_content %}
+    {% include '_includes/_default_kitchensink.html' %}
+{% endblock %}

@@ -1,0 +1,218 @@
+@import "../mixins/colors";
+
+/*
+ *
+ * Typography
+ *
+ */
+$include-sveetoy-typography: $include-sveetoy-classes !default;
+
+// Some font weight in addition of Foundation ones
+$font-weight-thin: null !default;
+$font-weight-bolder: null !default;
+
+@if $include-sveetoy-typography {
+    // No trailing margin on last paragraph in their container
+    p {
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    /*
+    * Horizontal rule
+    */
+    hr{
+        &.unmarged{
+            margin: 0;
+        }
+    }
+
+    /*
+    * Transform and decoration
+    */
+    .text-upper{
+        text-transform: uppercase !important;
+    }
+    .text-important{
+        text-decoration: underline !important;
+    }
+
+    /*
+    * Various font weights
+    */
+    @if $font-weight-thin{
+        .text-thin{
+            font-weight: $font-weight-thin !important;
+        }
+    }
+    .text-normal{
+        font-weight: $font-weight-normal !important;
+    }
+    b, .text-strong{
+        font-weight: $font-weight-bold !important;
+    }
+    strong, .text-stronger{
+        @if $font-weight-bolder{
+            font-weight: $font-weight-bolder;
+        }
+    }
+
+    /*
+    * Text colors
+    *
+    * Produces some classes like '.text-black' to enforce text color
+    */
+    @each $name, $color in $sveetoy-color-text-palette {
+        &.text-#{$name} {
+            color: $color !important;
+        }
+    }
+
+    /*
+    * Various <small> modifier
+    */
+    small{
+        .small{
+            font-size: 40%;
+        }
+        .medium{
+            font-size: 60%; //equivalent to default <small> behavior
+        }
+        .big{
+            font-size: 80%;
+        }
+    }
+
+    ///
+    /// Rewrite titles adding paragraph classes so we can have the same
+    /// behaviors without troubling SEO/semantic
+    ///
+    h1, h2, h3, h4, h5, h6,
+    .title-1, .title-2, .title-3, .title-4, .title-5, .title-6 {
+        font-family: $header-font-family;
+        font-weight: $header-font-weight;
+        font-style: $header-font-style;
+        color: $header-font-color;
+        text-rendering: $header-text-rendering;
+        margin-top: $header-top-margin;
+        margin-bottom: $header-bottom-margin;
+        line-height: $header-line-height;
+    }
+
+    // From small size to upper
+    //p, li, dd, dt{ font-size: $paragraph-font-size; }
+    h1, .title-1 { font-size: $h1-font-size - $h1-font-reduction; }
+    h2, .title-2 { font-size: $h2-font-size - $h2-font-reduction; }
+    h3, .title-3 { font-size: $h3-font-size - $h3-font-reduction; }
+    h4, .title-4 { font-size: $h4-font-size - $h4-font-reduction; }
+    h5, .title-5 { font-size: $h5-font-size - $h5-font-reduction; }
+    h6, .title-6 { font-size: $h6-font-size - $h6-font-reduction; }
+
+    // Final size for large screen and up
+    @media #{$xlarge-up} {
+        h1, .title-1 { font-size: $h1-font-size; }
+        h2, .title-2 { font-size: $h2-font-size; }
+        h3, .title-3 { font-size: $h3-font-size; }
+        h4, .title-4 { font-size: $h4-font-size; }
+        h5, .title-5 { font-size: $h5-font-size; }
+        h6, .title-6 { font-size: $h6-font-size; }
+    }
+
+    // Underlined element
+    .underline{
+        // Base
+        &:after{
+            content:"";
+            display: block;
+            width: 40%;
+            height: rem-calc(2px);
+            margin: 1rem 0;
+            border-bottom: rem-calc(3px) solid $black;
+        }
+
+        // On centered text
+        &.text-center{
+            &:after{
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        // Border weight
+        &.thin{
+            &:after{
+                height: rem-calc(1px);
+                border-bottom: rem-calc(1px) solid $black;
+            }
+        }
+        &.bold{
+            &:after{
+                height: rem-calc(4px);
+                border-bottom: rem-calc(5px) solid $black;
+            }
+        }
+
+        // Border width size
+        &.tiny{
+            &:after{
+                width: 5%;
+            }
+        }
+        &.short{
+            &:after{
+                width: 15%;
+            }
+        }
+        &.large{
+            &:after{
+                width: 70%;
+            }
+        }
+        &.full{
+            &:after{
+                width: 100%;
+            }
+        }
+
+        // Border distance from text
+        &.far{
+            &:after{
+                margin: 2rem 0;
+            }
+            &.text-center{
+                &:after{
+                    margin: 2rem auto;
+                }
+            }
+        }
+        &.near{
+            &:after{
+                margin: 0.5rem 0;
+            }
+            &.text-center{
+                &:after{
+                    margin: 0.5rem auto;
+                }
+            }
+        }
+        &.sticked{
+            &:after{
+                margin: 0 0;
+            }
+            &.text-center{
+                &:after{
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        // Border colors
+        &.black:after{
+            border-bottom-color: $black !important;
+        }
+        &.white:after{
+            border-bottom-color: $white !important;
+        }
+    }
+}

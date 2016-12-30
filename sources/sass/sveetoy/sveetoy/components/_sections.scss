@@ -1,0 +1,57 @@
+@import "../mixins/colors";
+@import "../mixins/spaces";
+
+/*
+ *
+ * Sections
+ *
+ */
+$include-sveetoy-sections: $include-sveetoy-classes !default;
+
+@if $include-sveetoy-sections {
+    .section {
+        @include sveetoy-apply-spaces(map-get($sveetoy-spaces, "normal"));
+
+        @each $name, $definitions in $sveetoy-spaces{
+            &.#{$name}{
+                @include sveetoy-apply-spaces($definitions, $axis: "vertical");
+            }
+        }
+
+        ///
+        /// Replicate section spacing to direct inner element
+        ///
+        .inner{
+            @include sveetoy-apply-spaces(map-get($sveetoy-spaces, "normal"));
+
+            @each $name, $definitions in $sveetoy-spaces{
+                &.#{$name}{
+                    @include sveetoy-apply-spaces($definitions, $axis: "vertical");
+                }
+            }
+        }
+
+        ///
+        /// Unpadded section or inner element
+        ///
+        &.unpadded,
+        & > .inner.unpadded{
+            padding: 0;
+        }
+
+        ///
+        /// Default colors
+        ///
+        @if $sveetoy-colors-scheme-default != null {
+            @include sveetoy-scheme-colors($sveetoy-colors-scheme-default);
+        }
+        ///
+        /// Color variants
+        ///
+        @each $name, $scheme in $sveetoy-colors-schemes {
+            &.#{$name}{
+                @include sveetoy-scheme-colors($scheme);
+            }
+        }
+    }
+}

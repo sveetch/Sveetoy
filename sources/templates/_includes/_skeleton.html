@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="{% block html_attr_alt %}{% endblock %}no-js lt-ie9" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="{% block html_attr %}{% endblock %}no-js" lang="fr"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>{% block head_title %}{{ page_title|capitalize }} - {{ SITE.name }}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {#<link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}favicon.ico">#}
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    {% block header_content -%}
+        {% block head_metas -%}
+            <meta name="robots" content="index,follow,all">
+        {%- endblock %}
+
+        {% block base_css -%}{%- assets "main_css" -%}
+            <link rel="stylesheet" href="{{ page_relative_position }}{{ ASSET_URL }}">
+        {%- endassets -%}{%- endblock %}
+        {% block more_css %}{% endblock %}
+        {% block base_js -%}{%- assets "app_modernizr_js" -%}
+            <script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>
+        {%- endassets -%}{%- endblock %}
+        {% block head_more_links %}{% endblock %}
+    {%- endblock %}
+</head>
+
+<body{% block body_attr %}{% endblock %}>
+    <div id="header-container">
+        {% block header_topbar %}<nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name">
+                    <p><a href="/">{{ SITE.name }}</a></p>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+
+            <div class="top-bar-section">
+                <ul class="left">
+                    {% include '_includes/_menu.html' %}
+                </ul>
+            </div>
+        </nav>{% endblock %}
+    </div>
+
+    {% block content_container %}<div id="body_content"{% block content_container_attrs %}{% endblock %}>
+        {% block base_content %}{% endblock %}
+    </div>{% endblock %}
+
+    {#{% block footer_container %}
+    <footer class="row">
+        <div class="large-12 columns">
+            <div class="inner">
+                <div class="row">
+                    <div class="large-12 columns last">
+                        <p>&copy; ACME SA. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% endblock %}#}
+
+    {% if debug %}<div id="watch-for-current-mquery"><small>Current MQuery</small><span class="value"></span></div>{% endif %}
+
+    {% block more_js -%}{%- assets "main_js" -%}
+        <script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>
+    {%- endassets -%}{%- endblock %}
+</body>
+</html>

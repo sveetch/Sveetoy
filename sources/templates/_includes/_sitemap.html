@@ -1,0 +1,17 @@
+<div class="section">
+    <div class="row larger">
+        <div class="small-12 columns">
+            <ul class="sitemap">
+            {%- for branch in site_sitemap recursive %}
+                {% set outer_loop = loop %}
+                {%- for leaf_name,leaf_content in branch.items() %}
+                    <li><a href="{{ page_relative_position }}{{ leaf_content.data.link|e }}">{{ leaf_name|capitalize }}</a>
+                    {%- if leaf_content.data.is_dir -%}
+                        <ul class="submenu">{{ outer_loop(leaf_content.children) }}</ul>
+                    {%- endif %}</li>
+                {%- endfor %}
+            {%- endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
