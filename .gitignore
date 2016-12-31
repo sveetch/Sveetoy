@@ -35,3 +35,5 @@ foundation-sites-5.5.3
 sources/js/foundation5/foundation
 sources/js/foundation5/vendor/*.js
 
+# Various
+cherrypy
