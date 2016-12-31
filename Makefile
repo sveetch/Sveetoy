@@ -1,4 +1,4 @@
-.PHONY: help install install-venv install-foundation5 clean delpyc demo-build demo-server
+.PHONY: help install install-venv install-foundation5 clean delpyc demo-build demo-server demo-watcher
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -9,6 +9,7 @@ help:
 	@echo
 	@echo "  demo-build           -- to build demonstration site in development mode."
 	@echo "  demo-server          -- to start demonstration site server with CherryPie."
+	@echo "  demo-watcher         -- to start watchdog on sources in development mode."
 	@echo
 	@echo "  clean                -- to clean your local repository from all installed stuff."
 	@echo "  delpyc               -- to remove all *.pyc files, this is recursive from the current directory."
@@ -53,3 +54,6 @@ demo-build:
 
 demo-server:
 	cd project && ../bin/optimus-cli runserver 0.0.0.0:8001
+
+demo-watcher:
+	cd project && ../bin/optimus-cli watch
