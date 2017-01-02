@@ -3,14 +3,30 @@
 {% block head_title %}{{ SITE.name }}{% endblock %}
 
 {% block base_content %}
-<div class="section">
+<div class="section" id="intro">
     <div class="row large">
-        <div class="small-12 columns text-center">
-            <h1>Introduction</h1>
-            <p>Sveetoy is a SASS library on top of Foundation.</p>
-
-            <p>It contains some addons to easy webdesign integration.</p>
+        <div class="small-12 columns">
+            <h1 class="logo">Sveetoy</h1>
+            <p class="title-4">Sveetoy is a Sass library for programmatic rythm and some candies on top of Foundation5 for Sites (currently Foundation 5.5.3).</p>
         </div>
     </div>
 </div>
+
+<div class="section unpadded" id="demo-menu">
+    <div class="row">
+        <div class="small-12 columns">
+            <div data-magellan-expedition="fixed">
+                <dl class="sub-nav">
+                    <dd data-magellan-arrival="typography"><a href="#typography">Typography</a></dd>
+                    <dd data-magellan-arrival="buttons"><a href="#buttons">Buttons</a></dd>
+                    <dd data-magellan-arrival="sections"><a href="#sections">Sections</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'components/typography.html' %}
+{% include 'components/buttons.html' %}
+{% include 'components/sections.html' %}
 {% endblock %}

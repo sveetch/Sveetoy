@@ -11,7 +11,7 @@ $sveetoy-color-text-palette: () !default;
  * Full Foundation components import for development process
  */
 meta.foundation-version {
-  font-family: "/5.5.3/";
+  font-family: "/{{VERSION}}/";
 }
 
 meta.foundation-mq-small {
@@ -84,7 +84,7 @@ body {
   background: #fff;
   color: #222;
   cursor: auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -1287,7 +1287,7 @@ html.no-flexbox .flex-grid > .cell + .end.cell {
   background: #EFEFEF;
   color: #222222;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   padding: 1rem;
 }
@@ -1856,7 +1856,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -4644,7 +4644,7 @@ kbd {
 
 .label {
   display: inline-block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1;
   margin-bottom: auto;
@@ -5195,7 +5195,7 @@ ul.pagination li {
 .pricing-table .title {
   background-color: #333333;
   color: #EEEEEE;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   padding: 0.9375rem 1.25rem;
@@ -5205,7 +5205,7 @@ ul.pagination li {
 .pricing-table .price {
   background-color: #F6F6F6;
   color: #333333;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   padding: 0.9375rem 1.25rem;
@@ -5594,7 +5594,7 @@ ul.pagination li {
 
 .side-nav {
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   list-style-position: outside;
   list-style-type: none;
   margin: 0;
@@ -5625,7 +5625,7 @@ ul.pagination li {
 
 .side-nav li.active > a:first-child:not(.button) {
   color: #1cc7ff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -5809,7 +5809,7 @@ ul.pagination li {
 .sub-nav li {
   color: #999999;
   float: left;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   margin-left: 1rem;
@@ -6089,7 +6089,7 @@ table tr td {
   display: block;
   background-color: #EFEFEF;
   color: #222222;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   padding: 1rem 2rem;
 }
@@ -6526,7 +6526,7 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li > a {
   color: #ffffff;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.8125rem;
   font-weight: 400;
   padding-left: 0.9375rem;
@@ -7286,7 +7286,7 @@ p aside {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.4;
@@ -9563,7 +9563,7 @@ small .big {
 
 h1, h2, h3, h4, h5, h6,
 .title-1, .title-2, .title-3, .title-4, .title-5, .title-6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #222222;
@@ -10020,7 +10020,7 @@ h6, .title-6 {
 .top-bar-section ul li > .item-box {
   color: #ffffff;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.8125rem;
   font-weight: 400;
   padding-left: 0.9375rem;
@@ -10632,7 +10632,7 @@ ul.arrow.defer li > *:first-child:before {
 .top-bar-section ul li > .item-box {
   color: #ffffff;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.8125rem;
   font-weight: 400;
   padding-left: 0.9375rem;
@@ -10678,6 +10678,17 @@ ul.arrow.defer li > *:first-child:before {
  * Used components
  */
 /*
+ * Various content styles
+ */
+.text-family-overlock {
+  font-family: "Overlock SC", cursive;
+}
+
+.text-family-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+/*
  *
  * All stuff for page header
  *
@@ -10691,6 +10702,36 @@ ul.arrow.defer li > *:first-child:before {
   /*
  * Various content styles
  */
+}
+
+#body_content #intro .logo {
+  font-size: 4.5rem;
+  font-family: "Overlock SC", cursive;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#body_content .section.demo-section {
+  border-top: 1px solid #e0e0e0;
+}
+
+#body_content .section.demo-section .demo-title {
+  font-family: "Overlock SC", cursive;
+}
+
+#body_content .section.demo-section .demo-result {
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(-90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(-90deg, transparent 1px, transparent 1px), linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(transparent 1px, transparent 1px), transparent;
+  background-size: 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
+  border: 1px solid #d0d0d0;
+}
+
+#body_content .section.demo-section:nth-child(2n) {
+  background-color: #f4f2f0;
+  border-top: 1px solid #d0d0d0;
+}
+
+#body_content .section.demo-section:nth-child(2n) .demo-result {
+  background-color: #ffffff;
 }
 
 /*

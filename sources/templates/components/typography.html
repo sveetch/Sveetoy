@@ -1,76 +1,80 @@
-{% extends "_includes/_skeleton.html" %}
-
-{% block base_content %}
-<div class="row larger">
-    <div class="small-12 columns">
-        <h1>Typography</h1>
+<div class="section demo-section" data-magellan-destination="typography">
+    <a name="typography"></a>
+    <div class="row larger demo-introduction">
+        <div class="small-12 columns">
+            <h1 class="demo-title">Typography</h1>
+            <p>This components just add some minor things to the Foundation typography stuff.</p>
+            <p><strong>Location:</strong> <code>sveetoy/components/_type.scss</code></p>
+        </div>
     </div>
-</div>
 
-<hr/>
-<div class="section">
     <div class="row larger">
 
         <div class="small-12 columns">
-            {% for count in range(1, 7) %}
-            <h{{ count }}>Titre {{ count }}</h{{ count }}>
-            {% endfor %}
+            <div class="demo-result">
+                <h2 class="demo-title">Title element</h2>
+                {% for count in range(1, 7) %}
+                <h{{ count }}>Titre {{ count }}</h{{ count }}>
+                {% endfor %}
+            </div>
         </div>
 
     </div>
-</div>
 
-<hr/>
-<div class="section">
     <div class="row larger">
 
         <div class="small-12 columns">
-            {% for count in range(1, 7) %}
-            <p class="title-{{ count }}">.title-{{ count }}</p>
-            {% endfor %}
+            <h2 class="demo-title">Title class</h2>
+            <div class="demo-result">
+                {% for count in range(1, 7) %}
+                <p class="title-{{ count }}">.title-{{ count }}</p>
+                {% endfor %}
+            </div>
         </div>
 
     </div>
-</div>
 
-<hr/>
-<div class="section">
     <div class="row larger">
 
         <div class="small-12 columns">
-            <p>
-            In ut cursus turpis. Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Aliquam metus metus, malesuada a nisl non, dignissim facilisis velit. Ut aliquet mattis mauris vel lobortis. Sed ut commodo lorem. </p>
+            <h2 class="demo-title">Paragraph and inline markup</h2>
+            <div class="demo-result">
+                <p>
+                In ut cursus turpis. Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Aliquam metus metus, malesuada a nisl non, dignissim facilisis velit. Ut aliquet mattis mauris vel lobortis. Sed ut commodo lorem. </p>
 
-            <p>
-            Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus <code>some code</code> arcu elit, nec ullamcorper augue rutrum et. Suspendisse facilisis nec ex sit amet mollis. Phasellus ut massa a tortor tristique viverra. Proin blandit nunc id arcu congue; ut viverra lectus tincidunt? Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec vitae accumsan nisi! Cras tincidunt semper accumsan. Proin risus velit, bibendum et ornare in, auctor eget magna.
-            </p>
+                <p>
+                Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus <code>some code</code> arcu elit, nec ullamcorper augue rutrum et. Suspendisse facilisis nec ex sit amet mollis. Phasellus ut massa a tortor tristique viverra. Proin blandit nunc id arcu congue; ut viverra lectus tincidunt? Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec vitae accumsan nisi! Cras tincidunt semper accumsan. Proin risus velit, bibendum et ornare in, auctor eget magna.
+                </p>
+            </div>
         </div>
 
     </div>
-</div>
 
-<hr/>
-<div class="section">
     <div class="row larger">
 
         <div class="small-12 columns">
-            <ul>
-                <li>Nullam auctor lorem.</li>
-                <li>Duis et placerat massa. Integer.</li>
-                <li>Vestibulum elementum, ex et.</li>
-                <li>Cras tempus auctor neque, viverra sodales risus.</li>
-            </ul>
+            <h2 class="demo-title">Bullet list</h2>
+            <div class="demo-result">
+                <ul>
+                    <li>Nullam auctor lorem.</li>
+                    <li>Duis et placerat massa. Integer.</li>
+                    <li>Vestibulum elementum, ex et.</li>
+                    <li>Cras tempus auctor neque, viverra sodales risus.</li>
+                </ul>
+            </div>
         </div>
 
         <div class="small-12 columns">
-            <ol>
-                <li>Nullam auctor lorem.</li>
-                <li>Duis et placerat massa. Integer.</li>
-                <li>Vestibulum elementum, ex et.</li>
-                <li>Cras tempus auctor neque, viverra sodales risus.</li>
-            </ol>
+            <h2 class="demo-title">Numbered list</h2>
+            <div class="demo-result">
+                <ol>
+                    <li>Nullam auctor lorem.</li>
+                    <li>Duis et placerat massa. Integer.</li>
+                    <li>Vestibulum elementum, ex et.</li>
+                    <li>Cras tempus auctor neque, viverra sodales risus.</li>
+                </ol>
+            </div>
         </div>
 
     </div>
 </div>
-{% endblock %}

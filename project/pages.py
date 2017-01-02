@@ -8,8 +8,8 @@ from optimus.conf import settings
 from project.sitemap import PageSitemap, tree_from_directory_structure
 
 
-sitemap_tree = tree_from_directory_structure(settings.TEMPLATES_DIR)
-#sitemap_tree.show()
+#sitemap_tree = tree_from_directory_structure(settings.TEMPLATES_DIR)
+##sitemap_tree.show()
 
 
 """
@@ -40,4 +40,5 @@ class PageWithSitemap(BasicPage):
 
 
 # Enabled pages to build
-PAGES = PageSitemap(sitemap_tree, PageWithSitemap).ressources
+#PAGES = PageSitemap(sitemap_tree, PageWithSitemap).ressources
+PAGES = [BasicPage()]

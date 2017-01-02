@@ -43,9 +43,13 @@ $font-weight-bold: 500;
 $font-weight-bolder: 700;
 
 // Poppins font family
-$font-family-opensans: 'Open Sans', sans-serif;
+//$font-family-opensans: 'Open Sans', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-overlock: 'Overlock SC', cursive;
 
-$body-font-family: $font-family-opensans;
+
+
+$body-font-family: $font-family-roboto;
 
 
 // d. Media Query Ranges

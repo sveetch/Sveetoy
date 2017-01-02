@@ -7,6 +7,7 @@ help:
 	@echo "  install-venv         -- to install the Python virtual environment. Will require 'virtualenv'."
 	@echo "  install-foundation5  -- to install last Foundation5 sources. Will require 'wget' and 'bower'."
 	@echo
+	@echo "  demo-clean           -- to build demonstration site in development mode."
 	@echo "  demo-build           -- to build demonstration site in development mode."
 	@echo "  demo-server          -- to start demonstration site server with CherryPie."
 	@echo "  demo-watcher         -- to start watchdog on sources in development mode."
@@ -23,9 +24,11 @@ clean-foundation5:
 	rm -Rf sources/js/foundation5/foundation
 	rm -Rf sources/js/foundation5/vendor/*.js
 
-clean: delpyc clean-foundation5
-	rm -Rf bin include lib local pip-selfcheck.json
+clean-demo:
 	rm -Rf project/_build project/.webassets-cache
+
+clean: delpyc clean-foundation5 clean-demo
+	rm -Rf bin include lib local pip-selfcheck.json
 
 install: install-venv install-foundation5
 

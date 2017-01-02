@@ -1,51 +1,48 @@
-{% extends "_includes/_skeleton.html" %}
-
-{% block base_content %}
-<div class="section demo-section">
-    <div class="row larger">
+<div class="section demo-section" data-magellan-destination="sections">
+    <a name="sections"></a>
+    <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title">{{ page_title|capitalize }}</h1>
+            <h1 class="demo-title">Sections</h1>
             <p>Sections are just full width container on top level of your body elements tree. There are useful for fluid design layouts but their first goal is to set background and font colors for their child elements.</p>
             <p>Default section have vertical padding but you can use bigger or lower padding value or even null.</p>
             <p>Section CSS rules enforce color for texts. You can set different font color for paragraph (lists inherit from it), each title level and links.</p>
-            <p><strong>Location:</strong> <code>addons/_sections.scss</code></p>
+            <p><strong>Location:</strong> <code>sveetoy/components/_sections.scss</code></p>
         </div>
     </div>
-</div>
 
-<div class="section">
-    <div class="row">
-        <div class="small-12 columns">
-            <h2>Hey i'm standard section</h2>
-            <p>And i give the <strong>default</strong> section behaviors, just black font color on top of white background color.</p>
+    <div class="section">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="demo-title">Hey i'm standard section</h2>
+                <p>And i give the <strong>default</strong> section behaviors, just black font color on top of white background color.</p>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="section black">
-    <div class="row">
-        <div class="small-12 columns">
-            <h2>Hoo i'm so jazzy</h2>
-            <p>I'm just a <strong>black</strong> section, meaning white font on black background.</p>
+    <div class="section black">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="demo-title">Hoo i'm so jazzy</h2>
+                <p>I'm just a <strong>black</strong> section, meaning white font on black background.</p>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="section aliceblue">
-    <div class="row">
-        <div class="small-12 columns">
-            <h2>Sky is blue and me too</h2>
-            <p>This is another sample based on some blue colors.</p>
+    <div class="section aliceblue">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="demo-title">Sky is blue and me too</h2>
+                <p>This is another sample based on some blue colors.</p>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="section tall">
-    <div class="row">
-        <div class="small-12 columns">
-            <h2>I'm tall</h2>
-            <p>A simple section with <strong>tall</strong> padding.</p>
+    <div class="section tall">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="demo-title">I'm tall</h2>
+                <p>A simple section with <strong>tall</strong> padding.</p>
+            </div>
         </div>
     </div>
 </div>
-{% endblock %}

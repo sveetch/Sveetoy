@@ -4,7 +4,7 @@
         "../../foundation-sites-5.5.3/scss",
         "sveetoy"
     ],
-    "TARGET_PATH": "../dist/css",
+    "TARGET_PATH": "../css",
     "OUTPUT_STYLES": "expanded",
     "SOURCE_COMMENTS": false,
     "SOURCE_MAP": false,
