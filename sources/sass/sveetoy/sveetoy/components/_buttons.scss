@@ -74,10 +74,11 @@ $include-sveetoy-buttons: $include-sveetoy-classes !default;
     ///
     /// Disable bottom margin for last element
     ///
-    p, dd{
-        button:last-child,
-        .button:last-child{
-            margin-bottom: 0;
+    div, p, dd, li{
+        button, .button{
+            &:last-child{
+                margin-bottom: 0;
+            }
         }
     }
 

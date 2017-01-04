@@ -1,5 +1,4 @@
 /*
-
 // Some font weight in addition of Foundation ones
 $font-weight-thin: null !default;
 $font-weight-bolder: null !default;
@@ -9468,9 +9467,7 @@ p.button {
   cursor: default;
 }
 
-p button:last-child,
-p .button:last-child, dd button:last-child,
-dd .button:last-child {
+div button:last-child, div .button:last-child, p button:last-child, p .button:last-child, dd button:last-child, dd .button:last-child, li button:last-child, li .button:last-child {
   margin-bottom: 0;
 }
 
@@ -9546,6 +9543,34 @@ strong, .text-stronger {
     *
     * Produces some classes like '.text-black' to enforce text color
     */
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.text-gray25 {
+  color: #404040 !important;
+}
+
+.text-gray82 {
+  color: #d0d0d0 !important;
+}
+
+.text-gray88 {
+  color: #e0e0e0 !important;
+}
+
+.text-lightskyblue {
+  color: #87cefa !important;
+}
+
+.text-deepskyblue4 {
+  color: #00688b !important;
+}
+
 /*
     * Various <small> modifier
     */
@@ -9698,6 +9723,8 @@ h6, .title-6 {
 .section {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  color: #404040;
+  background-color: #ffffff;
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -10010,6 +10037,146 @@ h6, .title-6 {
 .section.unpadded,
 .section > .inner.unpadded {
   padding: 0;
+}
+
+.section h1, .section .title-1 {
+  color: #404040;
+}
+
+.section h2, .section .title-2 {
+  color: #404040;
+}
+
+.section h3, .section .title-3 {
+  color: #404040;
+}
+
+.section h4, .section .title-4 {
+  color: #404040;
+}
+
+.section h5, .section .title-5 {
+  color: #404040;
+}
+
+.section h6, .section .title-6 {
+  color: #404040;
+}
+
+.section.white {
+  color: #404040;
+  background-color: #ffffff;
+}
+
+.section.white h1, .section.white .title-1 {
+  color: #404040;
+}
+
+.section.white h2, .section.white .title-2 {
+  color: #404040;
+}
+
+.section.white h3, .section.white .title-3 {
+  color: #404040;
+}
+
+.section.white h4, .section.white .title-4 {
+  color: #404040;
+}
+
+.section.white h5, .section.white .title-5 {
+  color: #404040;
+}
+
+.section.white h6, .section.white .title-6 {
+  color: #404040;
+}
+
+.section.black {
+  color: white;
+  background-color: #000000;
+}
+
+.section.black h1, .section.black .title-1 {
+  color: white;
+}
+
+.section.black h2, .section.black .title-2 {
+  color: white;
+}
+
+.section.black h3, .section.black .title-3 {
+  color: white;
+}
+
+.section.black h4, .section.black .title-4 {
+  color: white;
+}
+
+.section.black h5, .section.black .title-5 {
+  color: white;
+}
+
+.section.black h6, .section.black .title-6 {
+  color: white;
+}
+
+.section.lightskyblue {
+  color: #00688b;
+  background-color: #87cefa;
+}
+
+.section.lightskyblue h1, .section.lightskyblue .title-1 {
+  color: #00688b;
+}
+
+.section.lightskyblue h2, .section.lightskyblue .title-2 {
+  color: #00688b;
+}
+
+.section.lightskyblue h3, .section.lightskyblue .title-3 {
+  color: #00688b;
+}
+
+.section.lightskyblue h4, .section.lightskyblue .title-4 {
+  color: #00688b;
+}
+
+.section.lightskyblue h5, .section.lightskyblue .title-5 {
+  color: #00688b;
+}
+
+.section.lightskyblue h6, .section.lightskyblue .title-6 {
+  color: #00688b;
+}
+
+.section.snow1, #body_content .section.demo-section:nth-child(2n) {
+  color: #404040;
+  background-color: #fffafa;
+}
+
+.section.snow1 h1, #body_content .section.demo-section:nth-child(2n) h1, .section.snow1 .title-1, #body_content .section.demo-section:nth-child(2n) .title-1 {
+  color: #404040;
+}
+
+.section.snow1 h2, #body_content .section.demo-section:nth-child(2n) h2, .section.snow1 .title-2, #body_content .section.demo-section:nth-child(2n) .title-2 {
+  color: #404040;
+}
+
+.section.snow1 h3, #body_content .section.demo-section:nth-child(2n) h3, .section.snow1 .title-3, #body_content .section.demo-section:nth-child(2n) .title-3 {
+  color: #404040;
+}
+
+.section.snow1 h4, #body_content .section.demo-section:nth-child(2n) h4, .section.snow1 .title-4, #body_content .section.demo-section:nth-child(2n) .title-4 {
+  color: #404040;
+}
+
+.section.snow1 h5, #body_content .section.demo-section:nth-child(2n) h5, .section.snow1 .title-5, #body_content .section.demo-section:nth-child(2n) .title-5 {
+  color: #404040;
+}
+
+.section.snow1 h6, #body_content .section.demo-section:nth-child(2n) h6, .section.snow1 .title-6, #body_content .section.demo-section:nth-child(2n) .title-6 {
+  color: #404040;
 }
 
 /*
@@ -10700,7 +10867,9 @@ ul.arrow.defer li > *:first-child:before {
  */
 #body_content {
   /*
+ *
  * Various content styles
+ *
  */
 }
 
@@ -10711,8 +10880,37 @@ ul.arrow.defer li > *:first-child:before {
   text-transform: uppercase;
 }
 
+#body_content #demo-menu .menu {
+  background-color: #fffafa;
+}
+
+#body_content #demo-menu .menu dd a {
+  color: #404040;
+  text-transform: uppercase;
+}
+
+#body_content #demo-menu .menu dd a:hover {
+  text-decoration: underline;
+}
+
+#body_content #demo-menu .menu.fixed {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#body_content #demo-menu .menu.fixed dd.active a {
+  color: #ffffff;
+}
+
+#body_content #demo-menu .menu.fixed dd.active a:hover {
+  text-decoration: none;
+}
+
 #body_content .section.demo-section {
   border-top: 1px solid #e0e0e0;
+}
+
+#body_content .section.demo-section .demo-introduction {
+  margin-bottom: 3rem;
 }
 
 #body_content .section.demo-section .demo-title {
@@ -10720,14 +10918,10 @@ ul.arrow.defer li > *:first-child:before {
 }
 
 #body_content .section.demo-section .demo-result {
-  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(-90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(-90deg, transparent 1px, transparent 1px), linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(transparent 1px, transparent 1px), transparent;
+  padding: 1rem;
+  background: linear-gradient(-90deg, #f0f0f0 1px, transparent 1px), linear-gradient(#f0f0f0 1px, transparent 1px), linear-gradient(-90deg, #f0f0f0 1px, transparent 1px), linear-gradient(#f0f0f0 1px, transparent 1px), linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(-90deg, transparent 1px, transparent 1px), linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(transparent 1px, transparent 1px), transparent;
   background-size: 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
-  border: 1px solid #d0d0d0;
-}
-
-#body_content .section.demo-section:nth-child(2n) {
-  background-color: #f4f2f0;
-  border-top: 1px solid #d0d0d0;
+  border: 1px solid #e0e0e0;
 }
 
 #body_content .section.demo-section:nth-child(2n) .demo-result {

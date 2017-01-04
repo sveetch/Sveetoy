@@ -1,6 +1,11 @@
 /*
+ *
  * Various content styles
+ *
  */
+
+///
+/// Introduction header
 #intro{
     .logo{
         font-size: 4.5rem;
@@ -10,22 +15,58 @@
     }
 }
 
+///
+/// Component menu bar
+///
+#demo-menu{
+    .menu{
+        background-color: map-get($snow1-color-scheme, "background-color");
+
+        dd a{
+            color: map-get($snow1-color-scheme, "font-color");
+            text-transform: uppercase;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        &.fixed{
+            border-bottom: 1px solid $gray88;
+
+            dd.active a{
+                color: $white;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+///
+/// Specific demo layout
+///
 .section{
     &.demo-section{
-        border-top: 1px solid #e0e0e0;
+        border-top: 1px solid $gray88;
 
-        .demo-introduction{}
+        .demo-introduction{
+            margin-bottom: 3rem;
+        }
 
         .demo-title{
             font-family: $font-family-overlock;
         }
 
         .demo-result{
+            padding: 1rem;
             background:
-                linear-gradient(-90deg, rgba($black, .03) 1px, transparent 1px),
-                linear-gradient(rgba($black, .03) 1px, transparent 1px),
-                linear-gradient(-90deg, rgba($black, .03) 1px, transparent 1px),
-                linear-gradient(rgba($black, .03) 1px, transparent 1px),
+                linear-gradient(-90deg, $gray94 1px, transparent 1px),
+                linear-gradient($gray94 1px, transparent 1px),
+                linear-gradient(-90deg, $gray94 1px, transparent 1px),
+                linear-gradient($gray94 1px, transparent 1px),
                 linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px),
                 linear-gradient(-90deg, transparent 1px, transparent 1px),
                 linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px),
@@ -39,13 +80,12 @@
                 10px 10px,
                 10px 10px,
                 10px 10px;
-            border: 1px solid #d0d0d0;
+            border: 1px solid $gray88;
         }
 
         // Even section
         &:nth-child(2n) {
-            background-color: #f4f2f0;
-            border-top: 1px solid #d0d0d0;
+            @extend .section.snow1;
 
             .demo-result{
                 background-color: $white;
