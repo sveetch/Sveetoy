@@ -9,8 +9,8 @@
 // Default available percentage sizes
 // Sizes like '18' is when you want a '20%' container but with '1%' horizontal
 // marging (ex: 1% + 18% + 1% = 20%)
-//$flex-grid-sizes: 23 25 31.3333 33.3333 48 50 73 75 98 100 !default;
-$flex-grid-sizes: 25 33.3333 50 75 100 !default;
+$flex-grid-sizes: 18 20 23 25 31.3333 33.3333 48 50 73 75 98 100 !default;
+//$flex-grid-sizes: 25 33.3333 50 75 100 !default;
 
 $include-sveetoy-flex: $include-sveetoy-classes !default;
 

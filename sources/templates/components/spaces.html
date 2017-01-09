@@ -1,0 +1,104 @@
+<div class="section demo-section" data-magellan-destination="spaces">
+    <a name="spaces"></a>
+    <div class="row larger demo-introduction">
+        <div class="small-12 columns">
+            <h1 class="demo-title">Spaces</h1>
+            <p>This about space rythmic surround element for both sides on vertical or horizontal axe and optionally on only one side.</p>
+            <p>There are many space sizes available and each of them have their own breakpoint sizes. Spaces scheme is defined from <code>$sveetoy-spaces</code>.</p>
+            <p><strong>Location:</strong> <code>sveetoy/components/_spaces.scss</code></p>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <hr>
+
+            <h2 class="demo-title">Vertical padding in element</h2>
+            <div class="flex-grid marged">
+                {% for thickness in ['thin', 'tiny', 'normal', 'wide', 'huge'] %}
+                <div class="cell small-98 medium-31 large-18">
+                    <div class="demo-result v-space-{{ thickness }}">
+                        <span class="button small full">.v-space-{{ thickness }}</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <h3 class="demo-title">Only top or bottom</h2>
+            <div class="flex-grid marged">
+                {% for side in ['top', 'bottom'] %}
+                <div class="cell small-98 medium-48">
+                    <div class="demo-result v-space-normal {{ side }}-only">
+                        <span class="button small full">.v-space-normal.{{ side }}-only</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <hr>
+
+        <div class="small-12 columns">
+            <h2 class="demo-title">Horizontal padding in element</h2>
+            <div class="flex-grid marged">
+                {% for thickness in ['thin', 'tiny', 'normal', 'wide', 'huge'] %}
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result h-space-{{ thickness }}">
+                        <span class="button small full">.v-space-{{ thickness }}</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <h3 class="demo-title">Only left or right</h2>
+            <div class="flex-grid marged">
+                {% for side in ['left', 'right'] %}
+                <div class="cell small-98 medium-48">
+                    <div class="demo-result h-space-normal {{ side }}-only">
+                        <span class="button small full">.h-space-normal.{{ side }}-only</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <hr>
+
+        <div class="small-12 columns">
+            <h2 class="demo-title">Vertical margin divider</h2>
+            <div class="flex-grid marged">
+                {% for thickness in ['thin', 'tiny', 'normal', 'wide', 'huge'] %}
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result">
+                        <span class="button small full v-divider-{{ thickness }}">.v-divider-{{ thickness }}</span>
+                        <span class="button small full secondary">Follower</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <hr>
+
+        <div class="small-12 columns">
+            <h2 class="demo-title">Horizontal margin divider</h2>
+            <div class="flex-grid marged">
+                {% for thickness in ['thin', 'tiny', 'normal', 'wide', 'huge'] %}
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result">
+                        <span class="button small h-divider-{{ thickness }}">.h-divider-{{ thickness }}</span>
+                        <span class="button small secondary">Follower</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+</div>

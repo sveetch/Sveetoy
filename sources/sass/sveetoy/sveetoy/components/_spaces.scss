@@ -32,10 +32,10 @@ $include-sveetoy-spaces: $include-sveetoy-classes !default;
     // 'Top/Bottom only' for vertical spaces
     [class^="v-space-"], [class*=" v-space-"]{
         &.top-only{
-            bottom: 0;
+            padding-bottom: 0;
         }
         &.bottom-only{
-            top: 0;
+            padding-top: 0;
         }
     }
 
@@ -50,10 +50,10 @@ $include-sveetoy-spaces: $include-sveetoy-classes !default;
     // 'Left/Right only' for horizontal spaces
     [class^="h-space-"], [class*=" h-space-"]{
         &.left-only{
-            right: 0;
+            padding-right: 0;
         }
         &.right-only{
-            left: 0;
+            padding-left: 0;
         }
     }
 

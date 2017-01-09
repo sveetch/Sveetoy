@@ -52,8 +52,8 @@ $font-weight-bolder: null !default;
     b, .text-strong{
         font-weight: $font-weight-bold !important;
     }
-    strong, .text-stronger{
-        @if $font-weight-bolder{
+    @if $font-weight-bolder{
+        strong, .text-stronger{
             font-weight: $font-weight-bolder;
         }
     }
@@ -208,11 +208,12 @@ $font-weight-bolder: null !default;
         }
 
         // Border colors
-        &.black:after{
+        // TODO: Automatic from $sveetoy-color-text-palette
+        /*&.black:after{
             border-bottom-color: $black !important;
         }
         &.white:after{
             border-bottom-color: $white !important;
-        }
+        }*/
     }
 }

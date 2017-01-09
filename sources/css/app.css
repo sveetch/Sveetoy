@@ -3902,7 +3902,7 @@ fieldset {
 }
 
 fieldset legend {
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
   margin-left: -0.1875rem;
   padding: 0 0.1875rem;
@@ -4523,7 +4523,7 @@ label.error {
 .joyride-tip-guide h5,
 .joyride-tip-guide h6 {
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.25;
   margin: 0;
 }
@@ -5082,7 +5082,7 @@ ul.pagination li.current a, ul.pagination li.current button {
   background: #008CBA;
   color: #ffffff;
   cursor: default;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.pagination li.current button:hover, ul.pagination li.current button:focus {
@@ -5584,7 +5584,7 @@ ul.pagination li {
   color: #AAAAAA;
   cursor: pointer;
   font-size: 2.5rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1;
   position: absolute;
   top: 0.625rem;
@@ -6023,7 +6023,7 @@ table thead tr th,
 table thead tr td {
   color: #222222;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0.5rem 0.625rem 0.625rem;
 }
 
@@ -6035,7 +6035,7 @@ table tfoot tr th,
 table tfoot tr td {
   color: #222222;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0.5rem 0.625rem 0.625rem;
 }
 
@@ -6211,7 +6211,7 @@ table tr td {
   border-bottom: dotted 1px #CCCCCC;
   color: #333333;
   cursor: help;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .has-tip:hover, .has-tip:focus {
@@ -6430,7 +6430,7 @@ meta.foundation-mq-topbar {
   color: #ffffff;
   display: block;
   font-size: 0.8125rem;
-  font-weight: 500;
+  font-weight: 700;
   height: 2.8125rem;
   line-height: 2.8125rem;
   padding: 0 0.9375rem;
@@ -6821,7 +6821,7 @@ meta.foundation-mq-topbar {
 .top-bar-section .dropdown label {
   color: #777777;
   font-size: 0.625rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 0;
   padding: 8px 0.9375rem 2px;
   text-transform: uppercase;
@@ -7349,7 +7349,7 @@ i {
 
 strong,
 b {
-  font-weight: 500;
+  font-weight: 700;
   line-height: inherit;
 }
 
@@ -7436,7 +7436,7 @@ ol li ol {
 /* Definition Lists */
 dl dt {
   margin-bottom: 0.3rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 dl dd {
@@ -7502,18 +7502,18 @@ blockquote p {
 }
 
 .vcard .fn {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 0.9375rem;
 }
 
 .vevent .summary {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .vevent abbr {
   cursor: default;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
   border: none;
   padding: 0 0.0625rem;
 }
@@ -7644,7 +7644,7 @@ blockquote p {
 
 .tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4, .tab-bar h5, .tab-bar h6 {
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 2.8125rem;
   margin: 0;
 }
@@ -7848,7 +7848,7 @@ ul.off-canvas-list li label {
   color: #999999;
   display: block;
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
   padding: 0.3rem 0.9375rem;
   text-transform: uppercase;
@@ -8214,7 +8214,7 @@ ul.off-canvas-list li a:active {
   border-bottom: none;
   border-top: 1px solid #5e5e5e;
   color: #999999;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0.3rem 0.9375rem;
   text-transform: uppercase;
   margin: 0;
@@ -8276,7 +8276,7 @@ ul.off-canvas-list li a:active {
   border-bottom: none;
   border-top: 1px solid #5e5e5e;
   color: #999999;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0.3rem 0.9375rem;
   text-transform: uppercase;
   margin: 0;
@@ -8339,7 +8339,7 @@ ul.off-canvas-list li a:active {
   border-bottom: none;
   border-top: 1px solid #5e5e5e;
   color: #999999;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0.3rem 0.9375rem;
   text-transform: uppercase;
   margin: 0;
@@ -8396,7 +8396,7 @@ ul.off-canvas-list li a:active {
   border-bottom: none;
   border-top: 1px solid #5e5e5e;
   color: #999999;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0.3rem 0.9375rem;
   text-transform: uppercase;
   margin: 0;
@@ -9248,11 +9248,11 @@ img.expanded {
 }
 
 [class^="v-space-"].top-only, [class*=" v-space-"].top-only {
-  bottom: 0;
+  padding-bottom: 0;
 }
 
 [class^="v-space-"].bottom-only, [class*=" v-space-"].bottom-only {
-  top: 0;
+  padding-top: 0;
 }
 
 .h-space-thin {
@@ -9386,11 +9386,11 @@ img.expanded {
 }
 
 [class^="h-space-"].left-only, [class*=" h-space-"].left-only {
-  right: 0;
+  padding-right: 0;
 }
 
 [class^="h-space-"].right-only, [class*=" h-space-"].right-only {
-  left: 0;
+  padding-left: 0;
 }
 
 .unmarged {
@@ -9526,16 +9526,20 @@ hr.unmarged {
 /*
     * Various font weights
     */
+.text-thin {
+  font-weight: 100 !important;
+}
+
 .text-normal {
   font-weight: 400 !important;
 }
 
 b, .text-strong {
-  font-weight: 500 !important;
+  font-weight: 700 !important;
 }
 
 strong, .text-stronger {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 /*
@@ -9643,6 +9647,15 @@ h6, .title-6 {
   }
 }
 
+.underline {
+  /*&.black:after{
+            border-bottom-color: $black !important;
+        }
+        &.white:after{
+            border-bottom-color: $white !important;
+        }*/
+}
+
 .underline:after {
   content: "";
   display: block;
@@ -9705,14 +9718,6 @@ h6, .title-6 {
 
 .underline.sticked.text-center:after {
   margin: 0 auto;
-}
-
-.underline.black:after {
-  border-bottom-color: #000000 !important;
-}
-
-.underline.white:after {
-  border-bottom-color: #ffffff !important;
 }
 
 /*
@@ -10365,21 +10370,49 @@ html.flexbox .flex-grid > .cell.flex-space-between-stack {
 }
 
 @media only screen {
+  html.flexbox .flex-grid > .small-18 {
+    flex: 1 0 18%;
+    max-width: 18%;
+  }
+  html.flexbox .flex-grid > .small-20 {
+    flex: 1 0 20%;
+    max-width: 20%;
+  }
+  html.flexbox .flex-grid > .small-23 {
+    flex: 1 0 23%;
+    max-width: 23%;
+  }
   html.flexbox .flex-grid > .small-25 {
     flex: 1 0 25%;
     max-width: 25%;
+  }
+  html.flexbox .flex-grid > .small-31 {
+    flex: 1 0 31.3333%;
+    max-width: 31.3333%;
   }
   html.flexbox .flex-grid > .small-33 {
     flex: 1 0 33.3333%;
     max-width: 33.3333%;
   }
+  html.flexbox .flex-grid > .small-48 {
+    flex: 1 0 48%;
+    max-width: 48%;
+  }
   html.flexbox .flex-grid > .small-50 {
     flex: 1 0 50%;
     max-width: 50%;
   }
+  html.flexbox .flex-grid > .small-73 {
+    flex: 1 0 73%;
+    max-width: 73%;
+  }
   html.flexbox .flex-grid > .small-75 {
     flex: 1 0 75%;
     max-width: 75%;
+  }
+  html.flexbox .flex-grid > .small-98 {
+    flex: 1 0 98%;
+    max-width: 98%;
   }
   html.flexbox .flex-grid > .small-100 {
     flex: 1 0 100%;
@@ -10388,21 +10421,49 @@ html.flexbox .flex-grid > .cell.flex-space-between-stack {
 }
 
 @media only screen and (min-width: 40.063em) {
+  html.flexbox .flex-grid > .medium-18 {
+    flex: 1 0 18%;
+    max-width: 18%;
+  }
+  html.flexbox .flex-grid > .medium-20 {
+    flex: 1 0 20%;
+    max-width: 20%;
+  }
+  html.flexbox .flex-grid > .medium-23 {
+    flex: 1 0 23%;
+    max-width: 23%;
+  }
   html.flexbox .flex-grid > .medium-25 {
     flex: 1 0 25%;
     max-width: 25%;
+  }
+  html.flexbox .flex-grid > .medium-31 {
+    flex: 1 0 31.3333%;
+    max-width: 31.3333%;
   }
   html.flexbox .flex-grid > .medium-33 {
     flex: 1 0 33.3333%;
     max-width: 33.3333%;
   }
+  html.flexbox .flex-grid > .medium-48 {
+    flex: 1 0 48%;
+    max-width: 48%;
+  }
   html.flexbox .flex-grid > .medium-50 {
     flex: 1 0 50%;
     max-width: 50%;
   }
+  html.flexbox .flex-grid > .medium-73 {
+    flex: 1 0 73%;
+    max-width: 73%;
+  }
   html.flexbox .flex-grid > .medium-75 {
     flex: 1 0 75%;
     max-width: 75%;
+  }
+  html.flexbox .flex-grid > .medium-98 {
+    flex: 1 0 98%;
+    max-width: 98%;
   }
   html.flexbox .flex-grid > .medium-100 {
     flex: 1 0 100%;
@@ -10411,21 +10472,49 @@ html.flexbox .flex-grid > .cell.flex-space-between-stack {
 }
 
 @media only screen and (min-width: 64em) {
+  html.flexbox .flex-grid > .large-18 {
+    flex: 1 0 18%;
+    max-width: 18%;
+  }
+  html.flexbox .flex-grid > .large-20 {
+    flex: 1 0 20%;
+    max-width: 20%;
+  }
+  html.flexbox .flex-grid > .large-23 {
+    flex: 1 0 23%;
+    max-width: 23%;
+  }
   html.flexbox .flex-grid > .large-25 {
     flex: 1 0 25%;
     max-width: 25%;
+  }
+  html.flexbox .flex-grid > .large-31 {
+    flex: 1 0 31.3333%;
+    max-width: 31.3333%;
   }
   html.flexbox .flex-grid > .large-33 {
     flex: 1 0 33.3333%;
     max-width: 33.3333%;
   }
+  html.flexbox .flex-grid > .large-48 {
+    flex: 1 0 48%;
+    max-width: 48%;
+  }
   html.flexbox .flex-grid > .large-50 {
     flex: 1 0 50%;
     max-width: 50%;
   }
+  html.flexbox .flex-grid > .large-73 {
+    flex: 1 0 73%;
+    max-width: 73%;
+  }
   html.flexbox .flex-grid > .large-75 {
     flex: 1 0 75%;
     max-width: 75%;
+  }
+  html.flexbox .flex-grid > .large-98 {
+    flex: 1 0 98%;
+    max-width: 98%;
   }
   html.flexbox .flex-grid > .large-100 {
     flex: 1 0 100%;
@@ -10434,21 +10523,49 @@ html.flexbox .flex-grid > .cell.flex-space-between-stack {
 }
 
 @media only screen and (min-width: 90.063em) {
+  html.flexbox .flex-grid > .xlarge-18 {
+    flex: 1 0 18%;
+    max-width: 18%;
+  }
+  html.flexbox .flex-grid > .xlarge-20 {
+    flex: 1 0 20%;
+    max-width: 20%;
+  }
+  html.flexbox .flex-grid > .xlarge-23 {
+    flex: 1 0 23%;
+    max-width: 23%;
+  }
   html.flexbox .flex-grid > .xlarge-25 {
     flex: 1 0 25%;
     max-width: 25%;
+  }
+  html.flexbox .flex-grid > .xlarge-31 {
+    flex: 1 0 31.3333%;
+    max-width: 31.3333%;
   }
   html.flexbox .flex-grid > .xlarge-33 {
     flex: 1 0 33.3333%;
     max-width: 33.3333%;
   }
+  html.flexbox .flex-grid > .xlarge-48 {
+    flex: 1 0 48%;
+    max-width: 48%;
+  }
   html.flexbox .flex-grid > .xlarge-50 {
     flex: 1 0 50%;
     max-width: 50%;
   }
+  html.flexbox .flex-grid > .xlarge-73 {
+    flex: 1 0 73%;
+    max-width: 73%;
+  }
   html.flexbox .flex-grid > .xlarge-75 {
     flex: 1 0 75%;
     max-width: 75%;
+  }
+  html.flexbox .flex-grid > .xlarge-98 {
+    flex: 1 0 98%;
+    max-width: 98%;
   }
   html.flexbox .flex-grid > .xlarge-100 {
     flex: 1 0 100%;
@@ -10457,21 +10574,49 @@ html.flexbox .flex-grid > .cell.flex-space-between-stack {
 }
 
 @media only screen and (min-width: 120.063em) {
+  html.flexbox .flex-grid > .xxlarge-18 {
+    flex: 1 0 18%;
+    max-width: 18%;
+  }
+  html.flexbox .flex-grid > .xxlarge-20 {
+    flex: 1 0 20%;
+    max-width: 20%;
+  }
+  html.flexbox .flex-grid > .xxlarge-23 {
+    flex: 1 0 23%;
+    max-width: 23%;
+  }
   html.flexbox .flex-grid > .xxlarge-25 {
     flex: 1 0 25%;
     max-width: 25%;
+  }
+  html.flexbox .flex-grid > .xxlarge-31 {
+    flex: 1 0 31.3333%;
+    max-width: 31.3333%;
   }
   html.flexbox .flex-grid > .xxlarge-33 {
     flex: 1 0 33.3333%;
     max-width: 33.3333%;
   }
+  html.flexbox .flex-grid > .xxlarge-48 {
+    flex: 1 0 48%;
+    max-width: 48%;
+  }
   html.flexbox .flex-grid > .xxlarge-50 {
     flex: 1 0 50%;
     max-width: 50%;
   }
+  html.flexbox .flex-grid > .xxlarge-73 {
+    flex: 1 0 73%;
+    max-width: 73%;
+  }
   html.flexbox .flex-grid > .xxlarge-75 {
     flex: 1 0 75%;
     max-width: 75%;
+  }
+  html.flexbox .flex-grid > .xxlarge-98 {
+    flex: 1 0 98%;
+    max-width: 98%;
   }
   html.flexbox .flex-grid > .xxlarge-100 {
     flex: 1 0 100%;
@@ -10552,17 +10697,38 @@ html.no-flexbox .flex-grid {
 }
 
 @media only screen {
+  html.no-flexbox .flex-grid > .small-18 {
+    width: 18%;
+  }
+  html.no-flexbox .flex-grid > .small-20 {
+    width: 20%;
+  }
+  html.no-flexbox .flex-grid > .small-23 {
+    width: 23%;
+  }
   html.no-flexbox .flex-grid > .small-25 {
     width: 25%;
+  }
+  html.no-flexbox .flex-grid > .small-31 {
+    width: 31.3333%;
   }
   html.no-flexbox .flex-grid > .small-33 {
     width: 33.3333%;
   }
+  html.no-flexbox .flex-grid > .small-48 {
+    width: 48%;
+  }
   html.no-flexbox .flex-grid > .small-50 {
     width: 50%;
   }
+  html.no-flexbox .flex-grid > .small-73 {
+    width: 73%;
+  }
   html.no-flexbox .flex-grid > .small-75 {
     width: 75%;
+  }
+  html.no-flexbox .flex-grid > .small-98 {
+    width: 98%;
   }
   html.no-flexbox .flex-grid > .small-100 {
     width: 100%;
@@ -10570,17 +10736,38 @@ html.no-flexbox .flex-grid {
 }
 
 @media only screen and (min-width: 40.063em) {
+  html.no-flexbox .flex-grid > .medium-18 {
+    width: 18%;
+  }
+  html.no-flexbox .flex-grid > .medium-20 {
+    width: 20%;
+  }
+  html.no-flexbox .flex-grid > .medium-23 {
+    width: 23%;
+  }
   html.no-flexbox .flex-grid > .medium-25 {
     width: 25%;
+  }
+  html.no-flexbox .flex-grid > .medium-31 {
+    width: 31.3333%;
   }
   html.no-flexbox .flex-grid > .medium-33 {
     width: 33.3333%;
   }
+  html.no-flexbox .flex-grid > .medium-48 {
+    width: 48%;
+  }
   html.no-flexbox .flex-grid > .medium-50 {
     width: 50%;
   }
+  html.no-flexbox .flex-grid > .medium-73 {
+    width: 73%;
+  }
   html.no-flexbox .flex-grid > .medium-75 {
     width: 75%;
+  }
+  html.no-flexbox .flex-grid > .medium-98 {
+    width: 98%;
   }
   html.no-flexbox .flex-grid > .medium-100 {
     width: 100%;
@@ -10588,17 +10775,38 @@ html.no-flexbox .flex-grid {
 }
 
 @media only screen and (min-width: 64em) {
+  html.no-flexbox .flex-grid > .large-18 {
+    width: 18%;
+  }
+  html.no-flexbox .flex-grid > .large-20 {
+    width: 20%;
+  }
+  html.no-flexbox .flex-grid > .large-23 {
+    width: 23%;
+  }
   html.no-flexbox .flex-grid > .large-25 {
     width: 25%;
+  }
+  html.no-flexbox .flex-grid > .large-31 {
+    width: 31.3333%;
   }
   html.no-flexbox .flex-grid > .large-33 {
     width: 33.3333%;
   }
+  html.no-flexbox .flex-grid > .large-48 {
+    width: 48%;
+  }
   html.no-flexbox .flex-grid > .large-50 {
     width: 50%;
   }
+  html.no-flexbox .flex-grid > .large-73 {
+    width: 73%;
+  }
   html.no-flexbox .flex-grid > .large-75 {
     width: 75%;
+  }
+  html.no-flexbox .flex-grid > .large-98 {
+    width: 98%;
   }
   html.no-flexbox .flex-grid > .large-100 {
     width: 100%;
@@ -10606,17 +10814,38 @@ html.no-flexbox .flex-grid {
 }
 
 @media only screen and (min-width: 90.063em) {
+  html.no-flexbox .flex-grid > .xlarge-18 {
+    width: 18%;
+  }
+  html.no-flexbox .flex-grid > .xlarge-20 {
+    width: 20%;
+  }
+  html.no-flexbox .flex-grid > .xlarge-23 {
+    width: 23%;
+  }
   html.no-flexbox .flex-grid > .xlarge-25 {
     width: 25%;
+  }
+  html.no-flexbox .flex-grid > .xlarge-31 {
+    width: 31.3333%;
   }
   html.no-flexbox .flex-grid > .xlarge-33 {
     width: 33.3333%;
   }
+  html.no-flexbox .flex-grid > .xlarge-48 {
+    width: 48%;
+  }
   html.no-flexbox .flex-grid > .xlarge-50 {
     width: 50%;
   }
+  html.no-flexbox .flex-grid > .xlarge-73 {
+    width: 73%;
+  }
   html.no-flexbox .flex-grid > .xlarge-75 {
     width: 75%;
+  }
+  html.no-flexbox .flex-grid > .xlarge-98 {
+    width: 98%;
   }
   html.no-flexbox .flex-grid > .xlarge-100 {
     width: 100%;
@@ -10624,17 +10853,38 @@ html.no-flexbox .flex-grid {
 }
 
 @media only screen and (min-width: 120.063em) {
+  html.no-flexbox .flex-grid > .xxlarge-18 {
+    width: 18%;
+  }
+  html.no-flexbox .flex-grid > .xxlarge-20 {
+    width: 20%;
+  }
+  html.no-flexbox .flex-grid > .xxlarge-23 {
+    width: 23%;
+  }
   html.no-flexbox .flex-grid > .xxlarge-25 {
     width: 25%;
+  }
+  html.no-flexbox .flex-grid > .xxlarge-31 {
+    width: 31.3333%;
   }
   html.no-flexbox .flex-grid > .xxlarge-33 {
     width: 33.3333%;
   }
+  html.no-flexbox .flex-grid > .xxlarge-48 {
+    width: 48%;
+  }
   html.no-flexbox .flex-grid > .xxlarge-50 {
     width: 50%;
   }
+  html.no-flexbox .flex-grid > .xxlarge-73 {
+    width: 73%;
+  }
   html.no-flexbox .flex-grid > .xxlarge-75 {
     width: 75%;
+  }
+  html.no-flexbox .flex-grid > .xxlarge-98 {
+    width: 98%;
   }
   html.no-flexbox .flex-grid > .xxlarge-100 {
     width: 100%;
@@ -10918,7 +11168,6 @@ ul.arrow.defer li > *:first-child:before {
 }
 
 #body_content .section.demo-section .demo-result {
-  padding: 1rem;
   background: linear-gradient(-90deg, #f0f0f0 1px, transparent 1px), linear-gradient(#f0f0f0 1px, transparent 1px), linear-gradient(-90deg, #f0f0f0 1px, transparent 1px), linear-gradient(#f0f0f0 1px, transparent 1px), linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(-90deg, transparent 1px, transparent 1px), linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(transparent 1px, transparent 1px), transparent;
   background-size: 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
   border: 1px solid #e0e0e0;

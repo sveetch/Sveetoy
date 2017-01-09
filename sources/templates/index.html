@@ -7,7 +7,19 @@
     <div class="row large">
         <div class="small-12 columns">
             <h1 class="logo">Sveetoy</h1>
-            <p class="title-4">Sveetoy is a Sass library for programmatic rythm and some candies on top of Foundation5 for Sites (currently Foundation 5.5.3).</p>
+            <p class="title-3 text-center">A <a href="http://sass-lang.com/" target="blank">Sass</a> library for programmatic rythm and some candies on top of <a href="http://foundation.zurb.com/sites/docs/v/5.5.3/" target="blank">Foundation for Sites</a> (currently for Foundation 5.5.3).</p>
+
+            <div class="v-space-normal flex-grid marged text-center">
+                <div class="cell small-98 medium-31 flex-vertical-center-stack h-space-normal">
+                    <p>Responsive rhythm for your spaces and texts</p>
+                </div>
+                <div class="cell small-98 medium-31 flex-vertical-center-stack h-space-normal">
+                    <p>Enforce your color policy from settings</p>
+                </div>
+                <div class="cell small-98 medium-31 flex-vertical-center-stack h-space-normal">
+                    <p>Rapid prototypes</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -19,6 +31,7 @@
                 <dl class="sub-nav">
                     <dd data-magellan-arrival="typography"><a href="#typography">Typography</a></dd>
                     <dd data-magellan-arrival="buttons"><a href="#buttons">Buttons</a></dd>
+                    <dd data-magellan-arrival="spaces"><a href="#spaces">Spaces</a></dd>
                     <dd data-magellan-arrival="sections"><a href="#sections">Sections</a></dd>
                 </dl>
             </div>
@@ -28,5 +41,6 @@
 
 {% include 'components/typography.html' %}
 {% include 'components/buttons.html' %}
+{% include 'components/spaces.html' %}
 {% include 'components/sections.html' %}
 {% endblock %}
