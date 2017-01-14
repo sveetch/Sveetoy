@@ -12,6 +12,9 @@ help:
 	@echo "  demo-server          -- to start demonstration site server with CherryPie."
 	@echo "  demo-watcher         -- to start watchdog on sources in development mode."
 	@echo
+	@echo "  prod-build           -- to build demonstration site in production mode."
+	@echo "  github-build         -- to build demonstration site for github site."
+	@echo
 	@echo "  clean                -- to clean your local repository from all installed stuff."
 	@echo "  delpyc               -- to remove all *.pyc files, this is recursive from the current directory."
 	@echo
@@ -60,3 +63,11 @@ demo-server:
 
 demo-watcher:
 	cd project && ../bin/optimus-cli watch
+
+prod-build:
+	rm -Rf .webassets-cache
+	cd project && ../bin/optimus-cli build --settings prod_settings
+
+github-build:
+	rm -Rf .webassets-cache
+	cd project && ../bin/optimus-cli build --settings githubpages_settings

@@ -13,7 +13,7 @@ AVALAIBLE_BUNDLES = {
     # App bundle for Modernizr, compatible for all Foundation releases
     'app_modernizr_js': Bundle(
         "js/foundation5/vendor/modernizr.js",
-        filters='yui_js',
+        filters='closure_js',
         output='js/modernizr.min.js'
     ),
 
@@ -37,7 +37,7 @@ AVALAIBLE_BUNDLES = {
         "js/foundation5/foundation/foundation.tab.js",
         "js/foundation5/foundation/foundation.tooltip.js",
         "js/foundation5/foundation/foundation.topbar.js",
-        filters='yui_js',
+        filters='closure_js',
         output='js/app_foundation5.min.js'
     ),
 }
@@ -52,7 +52,7 @@ AVALAIBLE_BUNDLES.update({
         # Main CSS
         'css/app.css',
 
-        filters='yui_css',
+        filters=None,
         output='css/app.min.css'
     ),
 
@@ -70,7 +70,7 @@ AVALAIBLE_BUNDLES.update({
         # Main frontend script
         "js/app.js",
 
-        filters='yui_js',
+        filters='closure_js',
         output='js/app.min.js'
     ),
 })
