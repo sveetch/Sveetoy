@@ -4,6 +4,11 @@ Assets bundles
 """
 from webassets import Bundle
 
+# Register custom webasset filter for RCssMin minifier
+from webassets.filter import register_filter
+from rcssmin_webassets_filter import RCSSMin
+register_filter(RCSSMin)
+
 """
 BASE BUNDLES, contains common app/components bundles, do not register your
 main bundles here. However you can comment/uncomment some app files for your
@@ -52,7 +57,7 @@ AVALAIBLE_BUNDLES.update({
         # Main CSS
         'css/app.css',
 
-        filters=None,
+        filters='rcssmin',
         output='css/app.min.css'
     ),
 

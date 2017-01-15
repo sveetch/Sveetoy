@@ -65,9 +65,11 @@ demo-watcher:
 	cd project && ../bin/optimus-cli watch
 
 prod-build:
+	rm -Rf _build/prod
 	rm -Rf .webassets-cache
 	cd project && ../bin/optimus-cli build --settings prod_settings
 
 github-build:
+	rm -Rf docs
 	rm -Rf .webassets-cache
 	cd project && ../bin/optimus-cli build --settings githubpages_settings
