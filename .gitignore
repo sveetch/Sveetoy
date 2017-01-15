@@ -13,6 +13,7 @@ pip-selfcheck.json
 /include/
 /local/
 /lib/
+/share/
 *.egg-info
 
 # Unit test / coverage reports

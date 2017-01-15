@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Sveetoy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Overlock+SC%7CRoboto:100,400,700,900" rel="stylesheet">
+    <meta name="robots" content="index,follow,all">
+
+        <link rel="stylesheet" href="./static/css/app.min.css?0c228c7b">
+        
+        <script src="./static/js/modernizr.min.js?c9eb8d85"></script>
+        
+</head>
+
+<body>
+    <div id="body_content">
+        
+<div class="section snow1" id="intro">
+    <div class="row large">
+        <div class="small-12 columns">
+            <h1 class="logo">Sveetoy</h1>
+            <p class="title-3 text-center">A <a href="http://sass-lang.com/" target="blank">Sass</a> library for programmatic rythm and some candies on top of <a href="http://foundation.zurb.com/sites/docs/v/5.5.3/" target="blank">Foundation for Sites</a> (currently for Foundation 5.5.3).</p>
+
+            <div class="v-space-normal flex-grid marged text-center">
+                <div class="cell small-98 medium-31 flex-vertical-center-stack h-space-normal">
+                    <p>Responsive rhythm for your spaces and texts</p>
+                </div>
+                <div class="cell small-98 medium-31 flex-vertical-center-stack h-space-normal">
+                    <p>Enforce your color policy from settings</p>
+                </div>
+                <div class="cell small-98 medium-31 flex-vertical-center-stack h-space-normal">
+                    <p>Rapid prototypes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section snow1 unpadded" id="demo-menu">
+    <div class="row larger">
+        <div class="small-12 columns">
+            <div data-magellan-expedition="fixed" class="menu">
+                <dl class="sub-nav">
+                    <dd data-magellan-arrival="typography"><a href="#typography">Typography</a></dd>
+                    <dd data-magellan-arrival="buttons"><a href="#buttons">Buttons</a></dd>
+                    <dd data-magellan-arrival="spaces"><a href="#spaces">Spaces</a></dd>
+                    <dd data-magellan-arrival="sections"><a href="#sections">Sections</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section demo-section" data-magellan-destination="typography">
+    <a name="typography"></a>
+    <div class="row larger demo-introduction">
+        <div class="small-12 columns">
+            <h1 class="demo-title">Typography</h1>
+            <p>This components just add some minor things to the Foundation typography stuff.</p>
+            <p><strong>Location:</strong> <code>sveetoy/components/_type.scss</code></p>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Title element</h2>
+            <div class="demo-result v-space-thin">
+                
+                <h1>Titre 1</h1>
+                
+                <h2>Titre 2</h2>
+                
+                <h3>Titre 3</h3>
+                
+                <h4>Titre 4</h4>
+                
+                <h5>Titre 5</h5>
+                
+                <h6>Titre 6</h6>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Text colors</h2>
+            <div class="demo-result v-space-thin">
+                
+                <p class="text-white">.text-white</p>
+                
+                <p class="text-black">.text-black</p>
+                
+                <p class="text-gray25">.text-gray25</p>
+                
+                <p class="text-gray82">.text-gray82</p>
+                
+                <p class="text-gray88">.text-gray88</p>
+                
+                <p class="text-lightskyblue">.text-lightskyblue</p>
+                
+                <p class="text-deepskyblue4">.text-deepskyblue4</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Thickness</h2>
+            <div class="demo-result v-space-thin">
+                
+                <p class="text-thin">.text-thin</p>
+                
+                <p class="text-normal">.text-normal</p>
+                
+                <p class="text-strong">.text-strong</p>
+                
+                <p class="text-stronger">.text-stronger</p>
+                
+                <p><b>&lt;b&gt;</b></p>
+                <p><strong>&lt;strong&gt;</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Transform and decoration</h2>
+            <div class="demo-result v-space-thin">
+                <p class="text-upper">.text-upper</p>
+                <p class="text-important">.text-important</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Underline</h2>
+            <div class="demo-result v-space-thin">
+                <p class="title-4 underline">.underline</p>
+            </div>
+            <div class="demo-result v-space-thin">
+                <p class="title-4 underline text-center">.underline.text-center</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+
+        <div class="small-12 columns">
+            <h2 class="demo-title">Paragraph and inline markup</h2>
+            <div class="demo-result v-space-thin">
+                <p>
+                In ut cursus turpis. Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Aliquam metus metus, malesuada a nisl non, dignissim facilisis velit. Ut aliquet mattis mauris vel lobortis. Sed ut commodo lorem. </p>
+
+                <p>
+                Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus <code>some code</code> arcu elit, nec ullamcorper augue rutrum et. Suspendisse facilisis nec ex sit amet mollis. Phasellus ut massa a tortor tristique viverra. Proin blandit nunc id arcu congue; ut viverra lectus tincidunt? Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec vitae accumsan nisi! Cras tincidunt semper accumsan. Proin risus velit, bibendum et ornare in, auctor eget magna.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row larger">
+
+        <div class="small-12 columns">
+            <h2 class="demo-title">Bullet list</h2>
+            <div class="demo-result v-space-thin">
+                <ul>
+                    <li>Nullam auctor lorem.</li>
+                    <li>Duis et placerat massa. Integer.</li>
+                    <li>Vestibulum elementum, ex et.</li>
+                    <li>Cras tempus auctor neque, viverra sodales risus.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="small-12 columns">
+            <h2 class="demo-title">Numbered list</h2>
+            <div class="demo-result v-space-thin">
+                <ol>
+                    <li>Nullam auctor lorem.</li>
+                    <li>Duis et placerat massa. Integer.</li>
+                    <li>Vestibulum elementum, ex et.</li>
+                    <li>Cras tempus auctor neque, viverra sodales risus.</li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row larger">
+
+        <div class="small-12 columns">
+            <h2 class="demo-title">Bullet list</h2>
+            <div class="demo-result v-space-thin">
+                <ul>
+                    <li>Nullam auctor lorem.</li>
+                    <li>Duis et placerat massa. Integer.</li>
+                    <li>Vestibulum elementum, ex et.</li>
+                    <li>Cras tempus auctor neque, viverra sodales risus.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="small-12 columns">
+            <h2 class="demo-title">Numbered list</h2>
+            <div class="demo-result v-space-thin">
+                <ol>
+                    <li>Nullam auctor lorem.</li>
+                    <li>Duis et placerat massa. Integer.</li>
+                    <li>Vestibulum elementum, ex et.</li>
+                    <li>Cras tempus auctor neque, viverra sodales risus.</li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="section demo-section" data-magellan-destination="buttons">
+    <a name="buttons"></a>
+    <div class="row larger demo-introduction">
+        <div class="small-12 columns">
+            <h1 class="demo-title">Buttons</h1>
+            <p>Buttons are a common way to display important links, often called CTA (*Call To Action*).</p>
+            <p>They define a background, padding and font to be visually important.</p>
+            <p><strong>Location:</strong> <code>sveetoy/components/_buttons.scss</code></p>
+        </div>
+    </div>
+
+    <div class="row larger">
+
+        <div class="small-12 columns">
+            <h2 class="demo-title">Shapes</h2>
+            <div class="demo-result v-space-thin">
+                <div class="row">
+                    <div class="large-4 columns">
+                        <a href="" class="button">.button</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="" class="button radius">.button.radius</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="" class="button round">.button.round</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Sizes</h2>
+            <div class="demo-result v-space-thin">
+                <div class="row">
+                    <div class="large-4 columns">
+                        <a href="" class="button tiny">.button.tiny</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="" class="button small">.button.small</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="" class="button">.button</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="" class="button large">.button.large</a>
+                    </div>
+                    <div class="large-8 columns end">
+                        <a href="" class="button expand">.button.expand</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Paddings</h2>
+            <div class="demo-result v-space-thin">
+                <div class="row">
+                    <div class="large-4 columns">
+                        <a href="" class="button small">.button.small</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="" class="button">.button</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="" class="button large">.button.large</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="" class="button small modest">.button.small.modest</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="" class="button modest">.button.modest</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="" class="button large modest">.button.large.modest</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="" class="button small modest radius">.button.small.modest.radius</a>
+                    </div>
+                    <div class="large-4 columns end">
+                        <a href="" class="button modest round">.button.modest.round</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Colours</h2>
+            <div class="demo-result v-space-thin">
+                <div class="row">
+                    <div class="large-4 columns">
+                        <a href="" class="button">.button</a>
+                    </div>
+
+                    <div class="large-4 columns">
+                        <a href="" class="button success">.button.success</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="" class="button secondary">.button.secondary</a>
+                    </div>
+
+                    <div class="large-4 columns">
+                        <a href="" class="button alert">.button.alert</a>
+                    </div>
+
+                    <div class="large-4 columns">
+                        <a href="" class="button info">.button.info</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="" class="button disabled">.button.disabled</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Dropdowns</h2>
+            <div class="demo-result v-space-thin">
+                <div class="row">
+                    <div class="large-4 columns">
+                        <a href="" class="button">.button</a>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="#" class="button dropdown" data-dropdown="drop-1">button dropdown</a>
+                        <ul class="f-dropdown" id="drop-1" data-dropdown-content>
+                            <li><a href="#">This is a link</a></li>
+                            <li><a href="#">This is another</a></li>
+                            <li><a href="#">Yet another</a></li>
+                        </ul>
+                    </div>
+                    <div class="large-4 columns">
+                        <a href="#" class="button dropdown" data-dropdown="drop-2">.button.dropdown (overflow)</a>
+                        <ul class="f-dropdown overflow overflow-100" id="drop-2" data-dropdown-content>
+                            <li><a href="#">This is a link</a></li>
+                            <li><a href="#">This is another</a></li>
+                            <li><a href="#">Yet another</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="section demo-section" data-magellan-destination="spaces">
+    <a name="spaces"></a>
+    <div class="row larger demo-introduction">
+        <div class="small-12 columns">
+            <h1 class="demo-title">Spaces</h1>
+            <p>This about space rythmic surround element for both sides on vertical or horizontal axe and optionally on only one side.</p>
+            <p>There are many space sizes available and each of them have their own breakpoint sizes. Spaces scheme is defined from <code>$sveetoy-spaces</code>.</p>
+            <p><strong>Location:</strong> <code>sveetoy/components/_spaces.scss</code></p>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <hr>
+
+            <h2 class="demo-title">Vertical padding in element</h2>
+            <div class="flex-grid marged">
+                
+                <div class="cell small-98 medium-31 large-18">
+                    <div class="demo-result v-space-thin">
+                        <span class="button small full">.v-space-thin</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-31 large-18">
+                    <div class="demo-result v-space-tiny">
+                        <span class="button small full">.v-space-tiny</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-31 large-18">
+                    <div class="demo-result v-space-normal">
+                        <span class="button small full">.v-space-normal</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-31 large-18">
+                    <div class="demo-result v-space-wide">
+                        <span class="button small full">.v-space-wide</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-31 large-18">
+                    <div class="demo-result v-space-huge">
+                        <span class="button small full">.v-space-huge</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <h3 class="demo-title">Only top or bottom</h2>
+            <div class="flex-grid marged">
+                
+                <div class="cell small-98 medium-48">
+                    <div class="demo-result v-space-normal top-only">
+                        <span class="button small full">.v-space-normal.top-only</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48">
+                    <div class="demo-result v-space-normal bottom-only">
+                        <span class="button small full">.v-space-normal.bottom-only</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <hr>
+
+        <div class="small-12 columns">
+            <h2 class="demo-title">Horizontal padding in element</h2>
+            <div class="flex-grid marged">
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result h-space-thin">
+                        <span class="button small full">.v-space-thin</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result h-space-tiny">
+                        <span class="button small full">.v-space-tiny</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result h-space-normal">
+                        <span class="button small full">.v-space-normal</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result h-space-wide">
+                        <span class="button small full">.v-space-wide</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result h-space-huge">
+                        <span class="button small full">.v-space-huge</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <h3 class="demo-title">Only left or right</h2>
+            <div class="flex-grid marged">
+                
+                <div class="cell small-98 medium-48">
+                    <div class="demo-result h-space-normal left-only">
+                        <span class="button small full">.h-space-normal.left-only</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48">
+                    <div class="demo-result h-space-normal right-only">
+                        <span class="button small full">.h-space-normal.right-only</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <hr>
+
+        <div class="small-12 columns">
+            <h2 class="demo-title">Vertical margin divider</h2>
+            <div class="flex-grid marged">
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result">
+                        <span class="button small full v-divider-thin">.v-divider-thin</span>
+                        <span class="button small full secondary">Follower</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result">
+                        <span class="button small full v-divider-tiny">.v-divider-tiny</span>
+                        <span class="button small full secondary">Follower</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result">
+                        <span class="button small full v-divider-normal">.v-divider-normal</span>
+                        <span class="button small full secondary">Follower</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result">
+                        <span class="button small full v-divider-wide">.v-divider-wide</span>
+                        <span class="button small full secondary">Follower</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result">
+                        <span class="button small full v-divider-huge">.v-divider-huge</span>
+                        <span class="button small full secondary">Follower</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <hr>
+
+        <div class="small-12 columns">
+            <h2 class="demo-title">Horizontal margin divider</h2>
+            <div class="flex-grid marged">
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result">
+                        <span class="button small h-divider-thin">.h-divider-thin</span>
+                        <span class="button small secondary">Follower</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result">
+                        <span class="button small h-divider-tiny">.h-divider-tiny</span>
+                        <span class="button small secondary">Follower</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result">
+                        <span class="button small h-divider-normal">.h-divider-normal</span>
+                        <span class="button small secondary">Follower</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result">
+                        <span class="button small h-divider-wide">.h-divider-wide</span>
+                        <span class="button small secondary">Follower</span>
+                    </div>
+                </div>
+                
+                <div class="cell small-98 medium-48 large-31">
+                    <div class="demo-result">
+                        <span class="button small h-divider-huge">.h-divider-huge</span>
+                        <span class="button small secondary">Follower</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="section demo-section" data-magellan-destination="sections">
+    <a name="sections"></a>
+    <div class="row larger demo-introduction">
+        <div class="small-12 columns">
+            <h1 class="demo-title">Sections</h1>
+            <p>Section is just a full width container on top level of your body elements tree. There are useful for fluid design layouts but their first goal is to set background and font colors for their child elements.</p>
+            <p>Default section have vertical padding but you can use bigger or lower padding value or even null.</p>
+            <p>Section CSS rules enforce color for texts. You can set different font color for paragraph (lists inherit from it), each title level and links.</p>
+            <p><strong>Location:</strong> <code>sveetoy/components/_sections.scss</code></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="demo-title">Hey i'm a standard section</h2>
+                <p>And i give the <strong>default</strong> section behaviors, just black font color on top of white background color.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section black">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="demo-title">Hoo i'm so jazzy</h2>
+                <p>I'm just a <strong>black</strong> section, meaning white font on black background.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section lightskyblue">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="demo-title">Sky is blue and me too</h2>
+                <p>This is another sample based on some blue colors.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section tall">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="demo-title">I'm tall</h2>
+                <p>A simple section with <strong>tall</strong> padding.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+
+    
+
+    <script src="./static/js/app.min.js?786dab16"></script>
+</body>
+</html>
