@@ -2,3 +2,4 @@ Optimus
 treelib
 cherrypy
 closure
+rcssmin
