@@ -13,7 +13,7 @@
             <h2 class="demo-title">Title element</h2>
             <div class="demo-result v-space-thin">
                 {% for count in range(1, 7) %}
-                <h{{ count }}>Titre {{ count }}</h{{ count }}>
+                <h{{ count }}>h{{ count }}, .title-{{ count }}</h{{ count }}>
                 {% endfor %}
             </div>
         </div>
@@ -56,11 +56,17 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Underline</h2>
-            <div class="demo-result v-space-thin">
-                <p class="title-4 underline">.underline</p>
-            </div>
-            <div class="demo-result v-space-thin">
-                <p class="title-4 underline text-center">.underline.text-center</p>
+            <div class="flex-grid marged">
+                <div class="cell small-98 medium-48">
+                    <div class="demo-result v-space-thin">
+                        <p class="title-4 underline">.underline</p>
+                    </div>
+                </div>
+                <div class="cell small-98 medium-48">
+                    <div class="demo-result v-space-thin">
+                        <p class="title-4 underline text-center">.underline.text-center</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -70,12 +76,9 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Paragraph and inline markup</h2>
             <div class="demo-result v-space-thin">
-                <p>
-                In ut cursus turpis. Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Aliquam metus metus, malesuada a nisl non, dignissim facilisis velit. Ut aliquet mattis mauris vel lobortis. Sed ut commodo lorem. </p>
+                {% include '_includes/_inline_markup.html' %}
 
-                <p>
-                Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus <code>some code</code> arcu elit, nec ullamcorper augue rutrum et. Suspendisse facilisis nec ex sit amet mollis. Phasellus ut massa a tortor tristique viverra. Proin blandit nunc id arcu congue; ut viverra lectus tincidunt? Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec vitae accumsan nisi! Cras tincidunt semper accumsan. Proin risus velit, bibendum et ornare in, auctor eget magna.
-                </p>
+                {{ lipsum(n=2, html=True, min=20, max=50) }}
             </div>
         </div>
 

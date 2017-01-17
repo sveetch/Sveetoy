@@ -14,7 +14,9 @@
         <div class="row">
             <div class="small-12 columns">
                 <h2 class="demo-title">Hey i'm a standard section</h2>
-                <p>And i give the <strong>default</strong> section behaviors, just black font color on top of white background color.</p>
+                {% include '_includes/_inline_markup.html' %}
+
+                {{ lipsum(n=2, html=True, min=20, max=50) }}
             </div>
         </div>
     </div>
@@ -23,7 +25,9 @@
         <div class="row">
             <div class="small-12 columns">
                 <h2 class="demo-title">Hoo i'm so jazzy</h2>
-                <p>I'm just a <strong>black</strong> section, meaning white font on black background.</p>
+                {% include '_includes/_inline_markup.html' %}
+
+                {{ lipsum(n=2, html=True, min=20, max=50) }}
             </div>
         </div>
     </div>
@@ -32,7 +36,9 @@
         <div class="row">
             <div class="small-12 columns">
                 <h2 class="demo-title">Sky is blue and me too</h2>
-                <p>This is another sample based on some blue colors.</p>
+                {% include '_includes/_inline_markup.html' %}
+
+                {{ lipsum(n=2, html=True, min=20, max=50) }}
             </div>
         </div>
     </div>
@@ -41,7 +47,9 @@
         <div class="row">
             <div class="small-12 columns">
                 <h2 class="demo-title">I'm tall</h2>
-                <p>A simple section with <strong>tall</strong> padding.</p>
+                {% include '_includes/_inline_markup.html' %}
+
+                {{ lipsum(n=2, html=True, min=20, max=50) }}
             </div>
         </div>
     </div>
