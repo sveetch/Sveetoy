@@ -57,16 +57,13 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Underline</h2>
             <div class="flex-grid marged">
-                <div class="cell small-98 medium-48">
+                {% for name in ['', 'short', 'large', 'full', 'thin', 'bold', 'tiny', 'far', 'near', 'sticked', 'text-center'] %}
+                <div class="cell small-98 medium-48 large-31">
                     <div class="demo-result v-space-thin">
-                        <p class="title-4 underline">.underline</p>
+                        <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
                     </div>
                 </div>
-                <div class="cell small-98 medium-48">
-                    <div class="demo-result v-space-thin">
-                        <p class="title-4 underline text-center">.underline.text-center</p>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
