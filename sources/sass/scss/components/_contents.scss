@@ -1,8 +1,15 @@
 /*
  *
- * Various content styles
+ * Various Specific styles for Sveetoy demo
  *
  */
+
+///
+/// No bullet on sub-nav list
+///
+.sub-nav li {
+    list-style-type: none;
+}
 
 ///
 /// Introduction header

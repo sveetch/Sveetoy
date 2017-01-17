@@ -11118,9 +11118,13 @@ ul.arrow.defer li > *:first-child:before {
 #body_content {
   /*
  *
- * Various content styles
+ * Various Specific styles for Sveetoy demo
  *
  */
+}
+
+#body_content .sub-nav li {
+  list-style-type: none;
 }
 
 #body_content #intro .logo {
