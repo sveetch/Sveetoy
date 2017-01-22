@@ -10155,32 +10155,36 @@ h6, .title-6 {
   color: #00688b;
 }
 
-.section.snow1, #body_content .section.demo-section:nth-child(2n) {
+.section.lightskyblue a:not(.button) {
+  color: #ffffff;
+}
+
+.section.snow1 {
   color: #404040;
   background-color: #fffafa;
 }
 
-.section.snow1 h1, #body_content .section.demo-section:nth-child(2n) h1, .section.snow1 .title-1, #body_content .section.demo-section:nth-child(2n) .title-1 {
+.section.snow1 h1, .section.snow1 .title-1 {
   color: #404040;
 }
 
-.section.snow1 h2, #body_content .section.demo-section:nth-child(2n) h2, .section.snow1 .title-2, #body_content .section.demo-section:nth-child(2n) .title-2 {
+.section.snow1 h2, .section.snow1 .title-2 {
   color: #404040;
 }
 
-.section.snow1 h3, #body_content .section.demo-section:nth-child(2n) h3, .section.snow1 .title-3, #body_content .section.demo-section:nth-child(2n) .title-3 {
+.section.snow1 h3, .section.snow1 .title-3 {
   color: #404040;
 }
 
-.section.snow1 h4, #body_content .section.demo-section:nth-child(2n) h4, .section.snow1 .title-4, #body_content .section.demo-section:nth-child(2n) .title-4 {
+.section.snow1 h4, .section.snow1 .title-4 {
   color: #404040;
 }
 
-.section.snow1 h5, #body_content .section.demo-section:nth-child(2n) h5, .section.snow1 .title-5, #body_content .section.demo-section:nth-child(2n) .title-5 {
+.section.snow1 h5, .section.snow1 .title-5 {
   color: #404040;
 }
 
-.section.snow1 h6, #body_content .section.demo-section:nth-child(2n) h6, .section.snow1 .title-6, #body_content .section.demo-section:nth-child(2n) .title-6 {
+.section.snow1 h6, .section.snow1 .title-6 {
   color: #404040;
 }
 
@@ -10339,31 +10343,31 @@ html.flexbox .flex-grid > .cell > p:last-child {
   margin: 0;
 }
 
-html.flexbox .flex-grid > .cell.flex-vertical-start-stack {
+html.flexbox .flex-grid > .cell.align-start {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-html.flexbox .flex-grid > .cell.flex-vertical-end-stack {
+html.flexbox .flex-grid > .cell.align-end {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-html.flexbox .flex-grid > .cell.flex-vertical-center-stack {
+html.flexbox .flex-grid > .cell.align-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-html.flexbox .flex-grid > .cell.flex-space-around-stack {
+html.flexbox .flex-grid > .cell.align-around {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-html.flexbox .flex-grid > .cell.flex-space-between-stack {
+html.flexbox .flex-grid > .cell.align-between {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11115,70 +11119,75 @@ ul.arrow.defer li > *:first-child:before {
  * All stuff for page footer
  *
  */
-#body_content {
-  /*
+/*
  *
  * Various Specific styles for Sveetoy demo
  *
  */
-}
-
-#body_content .sub-nav li {
+.sub-nav li {
   list-style-type: none;
 }
 
-#body_content #intro .logo {
+#intro .logo {
   font-size: 4.5rem;
   font-family: "Overlock SC", cursive;
   text-align: center;
   text-transform: uppercase;
 }
 
-#body_content #demo-menu .menu {
+#demo-menu .menu {
   background-color: #fffafa;
 }
 
-#body_content #demo-menu .menu dd a {
+#demo-menu .menu dd a {
   color: #404040;
   text-transform: uppercase;
 }
 
-#body_content #demo-menu .menu dd a:hover {
+#demo-menu .menu dd a:hover {
   text-decoration: underline;
 }
 
-#body_content #demo-menu .menu.fixed {
+#demo-menu .menu.fixed {
   border-bottom: 1px solid #e0e0e0;
 }
 
-#body_content #demo-menu .menu.fixed dd.active a {
+#demo-menu .menu.fixed dd.active a {
   color: #ffffff;
 }
 
-#body_content #demo-menu .menu.fixed dd.active a:hover {
+#demo-menu .menu.fixed dd.active a:hover {
   text-decoration: none;
 }
 
-#body_content .section.demo-section {
+.demo-section {
   border-top: 1px solid #e0e0e0;
 }
 
-#body_content .section.demo-section .demo-introduction {
+.demo-section .demo-introduction {
   margin-bottom: 3rem;
 }
 
-#body_content .section.demo-section .demo-title {
+.demo-section .demo-title {
   font-family: "Overlock SC", cursive;
 }
 
-#body_content .section.demo-section .demo-result {
+.demo-section .demo-result {
   background: linear-gradient(-90deg, #f0f0f0 1px, transparent 1px), linear-gradient(#f0f0f0 1px, transparent 1px), linear-gradient(-90deg, #f0f0f0 1px, transparent 1px), linear-gradient(#f0f0f0 1px, transparent 1px), linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(-90deg, transparent 1px, transparent 1px), linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(transparent 1px, transparent 1px), transparent;
   background-size: 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
   border: 1px solid #e0e0e0;
 }
 
-#body_content .section.demo-section:nth-child(2n) .demo-result {
-  background-color: #ffffff;
+.demo-section .flex-grid.flex-demo .cell {
+  background-color: #d0d0d0;
+}
+
+.demo-section .flex-grid.flex-demo .cell:nth-child(2n) {
+  background-color: #e0e0e0;
+}
+
+.demo-section .flex-grid.flex-demo.align-demo .cell {
+  min-height: 200px;
 }
 
 /*

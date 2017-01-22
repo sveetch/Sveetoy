@@ -10,47 +10,16 @@
         </div>
     </div>
 
-    <div class="section">
+    {% for name in ['', 'black', 'lightskyblue', 'tall'] %}
+    <div class="section{% if name %} {{ name }}{% endif %}">
         <div class="row">
             <div class="small-12 columns">
-                <h2 class="demo-title">Hey i'm a standard section</h2>
+                <h2 class="demo-title">.section{% if name %}.{{ name }}{% endif %}</h2>
                 {% include '_includes/_inline_markup.html' %}
 
                 {{ lipsum(n=2, html=True, min=20, max=50) }}
             </div>
         </div>
     </div>
-
-    <div class="section black">
-        <div class="row">
-            <div class="small-12 columns">
-                <h2 class="demo-title">Hoo i'm so jazzy</h2>
-                {% include '_includes/_inline_markup.html' %}
-
-                {{ lipsum(n=2, html=True, min=20, max=50) }}
-            </div>
-        </div>
-    </div>
-
-    <div class="section lightskyblue">
-        <div class="row">
-            <div class="small-12 columns">
-                <h2 class="demo-title">Sky is blue and me too</h2>
-                {% include '_includes/_inline_markup.html' %}
-
-                {{ lipsum(n=2, html=True, min=20, max=50) }}
-            </div>
-        </div>
-    </div>
-
-    <div class="section tall">
-        <div class="row">
-            <div class="small-12 columns">
-                <h2 class="demo-title">I'm tall</h2>
-                {% include '_includes/_inline_markup.html' %}
-
-                {{ lipsum(n=2, html=True, min=20, max=50) }}
-            </div>
-        </div>
-    </div>
+    {% endfor %}
 </div>

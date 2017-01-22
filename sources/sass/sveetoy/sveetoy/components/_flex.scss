@@ -127,31 +127,31 @@ $include-sveetoy-flex: $include-sveetoy-classes !default;
                 * Some cell contents alignments
                 */
                 // All container elements are vertically stacked on center
-                &.flex-vertical-start-stack {
+                &.align-start{
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
                 }
                 // All container elements are vertically stacked on center
-                &.flex-vertical-end-stack {
+                &.align-end{
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
                 }
                 // All container elements are vertically stacked on center
-                &.flex-vertical-center-stack {
+                &.align-center{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                 }
                 // All container elements are stacked with space around
-                &.flex-space-around-stack {
+                &.align-around{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
                 }
                 // All container elements are stacked with space between
-                &.flex-space-between-stack {
+                &.align-between{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;

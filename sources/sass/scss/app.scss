@@ -19,10 +19,7 @@
 @import "components/addons";
 @import "components/header";
 @import "components/footer";
-
-#body_content{
-    @import "components/contents";
-}
+@import "components/contents";
 
 /*
  * Sometime, you need fallback hacks for some specific browsers, it should allways be

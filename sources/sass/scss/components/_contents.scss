@@ -55,46 +55,51 @@
 ///
 /// Specific demo layout
 ///
-.section{
-    &.demo-section{
-        border-top: 1px solid $gray88;
+.demo-section{
+    border-top: 1px solid $gray88;
 
-        .demo-introduction{
-            margin-bottom: 3rem;
+    .demo-introduction{
+        margin-bottom: 3rem;
+    }
+
+    .demo-title{
+        font-family: $font-family-overlock;
+    }
+
+    .demo-result{
+        background:
+            linear-gradient(-90deg, $gray94 1px, transparent 1px),
+            linear-gradient($gray94 1px, transparent 1px),
+            linear-gradient(-90deg, $gray94 1px, transparent 1px),
+            linear-gradient($gray94 1px, transparent 1px),
+            linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px),
+            linear-gradient(-90deg, transparent 1px, transparent 1px),
+            linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px),
+            linear-gradient(transparent 1px, transparent 1px), transparent;
+        background-size:
+            10px 10px,
+            10px 10px,
+            10px 10px,
+            10px 10px,
+            10px 10px,
+            10px 10px,
+            10px 10px,
+            10px 10px;
+        border: 1px solid $gray88;
+    }
+
+    .flex-grid.flex-demo{
+        .cell{
+            background-color: $gray82;
+
+            &:nth-child(2n) {
+                background-color: $gray88;
+            }
         }
 
-        .demo-title{
-            font-family: $font-family-overlock;
-        }
-
-        .demo-result{
-            background:
-                linear-gradient(-90deg, $gray94 1px, transparent 1px),
-                linear-gradient($gray94 1px, transparent 1px),
-                linear-gradient(-90deg, $gray94 1px, transparent 1px),
-                linear-gradient($gray94 1px, transparent 1px),
-                linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px),
-                linear-gradient(-90deg, transparent 1px, transparent 1px),
-                linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px),
-                linear-gradient(transparent 1px, transparent 1px), transparent;
-            background-size:
-                10px 10px,
-                10px 10px,
-                10px 10px,
-                10px 10px,
-                10px 10px,
-                10px 10px,
-                10px 10px,
-                10px 10px;
-            border: 1px solid $gray88;
-        }
-
-        // Even section
-        &:nth-child(2n) {
-            @extend .section.snow1;
-
-            .demo-result{
-                background-color: $white;
+        &.align-demo{
+            .cell{
+                min-height: 200px;
             }
         }
     }

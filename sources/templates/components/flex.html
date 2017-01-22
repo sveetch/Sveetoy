@@ -1,0 +1,103 @@
+<div class="section demo-section" data-magellan-destination="flex">
+    <a id="flex"></a>
+    <div class="row larger demo-introduction">
+        <div class="small-12 columns">
+            <h1 class="demo-title">Flexbox</h1>
+            <p>Foundation for site version 5 does not have any flexbox grid and version 6 force to choose between float and flexbox grid.</p>
+            <p>So here it is, a simple flexbox grid.</p>
+            <p>Alike <code>.row</code> in float grid, <code>.flex-grid</code> is the main container and <code>.cell</code> is equivalent to <code>.columns</code>.</p>
+            <p>Available cell sizes are builded from <code>$flex-grid-sizes</code> list and defined for each Foundation media query.</p>
+            <p><strong>Location:</strong> <code>sveetoy/components/_flex.scss</code></p>
+        </div>
+    </div>
+
+    <div class="row larger v-space-tiny">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Simple grid</h2>
+
+            <div class="demo-result">
+                <div class="flex-grid flex-demo">
+                    <div class="cell small-100 medium-33">
+                        <p>.cell.small-100.medium-33</p>
+                    </div>
+                    <div class="cell small-100 medium-33">
+                        <p>.cell.small-100.medium-33</p>
+                    </div>
+                    <div class="cell small-100 medium-33">
+                        <p>.cell.small-100.medium-33</p>
+                    </div>
+                    <div class="cell small-100 medium-33">
+                        <p>.cell.small-100.medium-33</p>
+                    </div>
+                    <div class="cell small-100 medium-33">
+                        <p>.cell.small-100.medium-33</p>
+                    </div>
+                    <div class="cell small-100 medium-33">
+                        <p>.cell.small-100.medium-33</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger v-space-tiny">
+        <div class="small-12 columns">
+            <h2 class="demo-title">With margin between cells</h2>
+
+            <div class="demo-result">
+                <div class="flex-grid marged flex-demo">
+                    <div class="cell small-100 medium-31">
+                        <p>.cell.small-100.medium-31</p>
+                    </div>
+                    <div class="cell small-100 medium-31">
+                        <p>.cell.small-100.medium-31</p>
+                    </div>
+                    <div class="cell small-100 medium-31">
+                        <p>.cell.small-100.medium-31</p>
+                    </div>
+                    <div class="cell small-100 medium-31">
+                        <p>.cell.small-100.medium-31</p>
+                    </div>
+                    <div class="cell small-100 medium-31">
+                        <p>.cell.small-100.medium-31</p>
+                    </div>
+                    <div class="cell small-100 medium-31">
+                        <p>.cell.small-100.medium-31</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger v-space-tiny">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Vertical content alignment</h2>
+
+            <div class="demo-result">
+                <div class="flex-grid flex-demo align-demo">
+                    <div class="cell small-100 medium-33 align-start">
+                        <p><code>.align-start</code></p>
+                        {{ lipsum(n=1, html=True, min=15, max=16) }}
+                    </div>
+                    <div class="cell small-100 medium-33 align-end">
+                        <p><code>.align-end</code></p>
+                        {{ lipsum(n=1, html=True, min=15, max=16) }}
+                    </div>
+                    <div class="cell small-100 medium-33 align-center">
+                        <p><code>.align-center</code></p>
+                        {{ lipsum(n=1, html=True, min=15, max=16) }}
+                    </div>
+                    <div class="cell small-100 medium-33 align-around">
+                        <p><code>.align-around</code></p>
+                        {{ lipsum(n=1, html=True, min=15, max=16) }}
+                    </div>
+                    <div class="cell small-100 medium-33 align-between">
+                        <p><code>.align-between</code></p>
+                        {{ lipsum(n=1, html=True, min=15, max=16) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
