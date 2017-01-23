@@ -15,15 +15,11 @@
             <h2 class="demo-title">Shapes</h2>
             <div class="demo-result v-space-thin">
                 <div class="row">
-                    <div class="large-4 columns">
-                        <a href="" class="button">.button</a>
+                    {% for name in ['', 'radius', 'round'] %}
+                    <div class="large-4 columns{% if loop.last %} end{% endif %}">
+                        <a href="" class="button{% if name %} {{ name }}{% endif %}">.button{% if name %}.{{ name }}{% endif %}</a>
                     </div>
-                    <div class="large-4 columns">
-                        <a href="" class="button radius">.button.radius</a>
-                    </div>
-                    <div class="large-4 columns">
-                        <a href="" class="button round">.button.round</a>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -34,21 +30,11 @@
             <h2 class="demo-title">Sizes</h2>
             <div class="demo-result v-space-thin">
                 <div class="row">
-                    <div class="large-4 columns">
-                        <a href="" class="button tiny">.button.tiny</a>
+                    {% for name in ['tiny', 'small', '', 'large', 'expand'] %}
+                    <div class="large-4 columns{% if loop.last %} end{% endif %}">
+                        <a href="" class="button{% if name %} {{ name }}{% endif %}">.button{% if name %}.{{ name }}{% endif %}</a>
                     </div>
-                    <div class="large-4 columns">
-                        <a href="" class="button small">.button.small</a>
-                    </div>
-                    <div class="large-4 columns">
-                        <a href="" class="button">.button</a>
-                    </div>
-                    <div class="large-4 columns">
-                        <a href="" class="button large">.button.large</a>
-                    </div>
-                    <div class="large-8 columns end">
-                        <a href="" class="button expand">.button.expand</a>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -59,30 +45,11 @@
             <h2 class="demo-title">Paddings</h2>
             <div class="demo-result v-space-thin">
                 <div class="row">
-                    <div class="large-4 columns">
-                        <a href="" class="button small">.button.small</a>
+                    {% for name in ['small', '', 'large', 'small.modest', 'modest', 'large.modest', 'small.modest.radius', 'modest.round'] %}
+                    <div class="large-4 columns{% if loop.last %} end{% endif %}">
+                        <a href="" class="button{% if name %} {{ name|replace(".", " ") }}{% endif %}">.button{% if name %}.{{ name }}{% endif %}</a>
                     </div>
-                    <div class="large-4 columns">
-                        <a href="" class="button">.button</a>
-                    </div>
-                    <div class="large-4 columns">
-                        <a href="" class="button large">.button.large</a>
-                    </div>
-                    <div class="large-4 columns">
-                        <a href="" class="button small modest">.button.small.modest</a>
-                    </div>
-                    <div class="large-4 columns">
-                        <a href="" class="button modest">.button.modest</a>
-                    </div>
-                    <div class="large-4 columns">
-                        <a href="" class="button large modest">.button.large.modest</a>
-                    </div>
-                    <div class="large-4 columns">
-                        <a href="" class="button small modest radius">.button.small.modest.radius</a>
-                    </div>
-                    <div class="large-4 columns end">
-                        <a href="" class="button modest round">.button.modest.round</a>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -93,27 +60,11 @@
             <h2 class="demo-title">Colours</h2>
             <div class="demo-result v-space-thin">
                 <div class="row">
-                    <div class="large-4 columns">
-                        <a href="" class="button">.button</a>
+                    {% for name in ['', 'success', 'secondary', 'alert', 'info', 'disabled'] %}
+                    <div class="large-4 columns{% if loop.last %} end{% endif %}">
+                        <a href="" class="button{% if name %} {{ name }}{% endif %}">.button{% if name %}.{{ name }}{% endif %}</a>
                     </div>
-
-                    <div class="large-4 columns">
-                        <a href="" class="button success">.button.success</a>
-                    </div>
-                    <div class="large-4 columns">
-                        <a href="" class="button secondary">.button.secondary</a>
-                    </div>
-
-                    <div class="large-4 columns">
-                        <a href="" class="button alert">.button.alert</a>
-                    </div>
-
-                    <div class="large-4 columns">
-                        <a href="" class="button info">.button.info</a>
-                    </div>
-                    <div class="large-4 columns">
-                        <a href="" class="button disabled">.button.disabled</a>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

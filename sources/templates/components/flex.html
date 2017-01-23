@@ -17,24 +17,11 @@
 
             <div class="demo-result">
                 <div class="flex-grid flex-demo">
+                    {% for count in range(1, 7) %}
                     <div class="cell small-100 medium-33">
                         <p>.cell.small-100.medium-33</p>
                     </div>
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
-                    </div>
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
-                    </div>
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
-                    </div>
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
-                    </div>
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -46,24 +33,11 @@
 
             <div class="demo-result">
                 <div class="flex-grid marged flex-demo">
+                    {% for count in range(1, 7) %}
                     <div class="cell small-100 medium-31">
                         <p>.cell.small-100.medium-31</p>
                     </div>
-                    <div class="cell small-100 medium-31">
-                        <p>.cell.small-100.medium-31</p>
-                    </div>
-                    <div class="cell small-100 medium-31">
-                        <p>.cell.small-100.medium-31</p>
-                    </div>
-                    <div class="cell small-100 medium-31">
-                        <p>.cell.small-100.medium-31</p>
-                    </div>
-                    <div class="cell small-100 medium-31">
-                        <p>.cell.small-100.medium-31</p>
-                    </div>
-                    <div class="cell small-100 medium-31">
-                        <p>.cell.small-100.medium-31</p>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -75,26 +49,12 @@
 
             <div class="demo-result">
                 <div class="flex-grid flex-demo align-demo">
-                    <div class="cell small-100 medium-33 align-start">
-                        <p><code>.align-start</code></p>
+                    {% for name in ['align-start', 'align-end', 'align-center', 'align-around', 'align-between'] %}
+                    <div class="cell small-100 medium-33 {{ name }}">
+                        <p><code>.{{ name }}</code></p>
                         {{ lipsum(n=1, html=True, min=15, max=16) }}
                     </div>
-                    <div class="cell small-100 medium-33 align-end">
-                        <p><code>.align-end</code></p>
-                        {{ lipsum(n=1, html=True, min=15, max=16) }}
-                    </div>
-                    <div class="cell small-100 medium-33 align-center">
-                        <p><code>.align-center</code></p>
-                        {{ lipsum(n=1, html=True, min=15, max=16) }}
-                    </div>
-                    <div class="cell small-100 medium-33 align-around">
-                        <p><code>.align-around</code></p>
-                        {{ lipsum(n=1, html=True, min=15, max=16) }}
-                    </div>
-                    <div class="cell small-100 medium-33 align-between">
-                        <p><code>.align-between</code></p>
-                        {{ lipsum(n=1, html=True, min=15, max=16) }}
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
