@@ -7,6 +7,7 @@
             <p>So here it is, a simple flexbox grid.</p>
             <p>Alike <code>.row</code> in float grid, <code>.flex-grid</code> is the main container and <code>.cell</code> is equivalent to <code>.columns</code>.</p>
             <p>Available cell sizes are builded from <code>$flex-grid-sizes</code> list and defined for each Foundation media query.</p>
+            <p><code>.margin</code> feature is defined through <code>$flex-grid-gutter</code>.</p>
 
             <dl>
                 <dt>Can be disabled with</dt>
@@ -41,8 +42,8 @@
             <div class="demo-result">
                 <div class="flex-grid marged flex-demo">
                     {% for count in range(1, 7) %}
-                    <div class="cell small-100 medium-31">
-                        <p>.cell.small-100.medium-31</p>
+                    <div class="cell small-100 medium-33">
+                        <p>.cell.small-100.medium-33</p>
                     </div>
                     {% endfor %}
                 </div>

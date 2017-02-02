@@ -10317,10 +10317,7 @@ html.flexbox .flex-grid {
             * Responsive cell sizes
             */
   /*
-            * Responsive padding in all contained cells
-            */
-  /*
-            * Responsive margin on all contained cells
+            * Responsive margin on every contained cells
             */
 }
 
@@ -10369,49 +10366,25 @@ html.flexbox .flex-grid > .cell.align-between {
 }
 
 @media only screen {
-  html.flexbox .flex-grid > .small-18 {
-    flex: 1 0 18%;
-    max-width: 18%;
-  }
   html.flexbox .flex-grid > .small-20 {
     flex: 1 0 20%;
     max-width: 20%;
-  }
-  html.flexbox .flex-grid > .small-23 {
-    flex: 1 0 23%;
-    max-width: 23%;
   }
   html.flexbox .flex-grid > .small-25 {
     flex: 1 0 25%;
     max-width: 25%;
   }
-  html.flexbox .flex-grid > .small-31 {
-    flex: 1 0 31.3333%;
-    max-width: 31.3333%;
-  }
   html.flexbox .flex-grid > .small-33 {
     flex: 1 0 33.3333%;
     max-width: 33.3333%;
-  }
-  html.flexbox .flex-grid > .small-48 {
-    flex: 1 0 48%;
-    max-width: 48%;
   }
   html.flexbox .flex-grid > .small-50 {
     flex: 1 0 50%;
     max-width: 50%;
   }
-  html.flexbox .flex-grid > .small-73 {
-    flex: 1 0 73%;
-    max-width: 73%;
-  }
   html.flexbox .flex-grid > .small-75 {
     flex: 1 0 75%;
     max-width: 75%;
-  }
-  html.flexbox .flex-grid > .small-98 {
-    flex: 1 0 98%;
-    max-width: 98%;
   }
   html.flexbox .flex-grid > .small-100 {
     flex: 1 0 100%;
@@ -10420,49 +10393,25 @@ html.flexbox .flex-grid > .cell.align-between {
 }
 
 @media only screen and (min-width: 40.063em) {
-  html.flexbox .flex-grid > .medium-18 {
-    flex: 1 0 18%;
-    max-width: 18%;
-  }
   html.flexbox .flex-grid > .medium-20 {
     flex: 1 0 20%;
     max-width: 20%;
-  }
-  html.flexbox .flex-grid > .medium-23 {
-    flex: 1 0 23%;
-    max-width: 23%;
   }
   html.flexbox .flex-grid > .medium-25 {
     flex: 1 0 25%;
     max-width: 25%;
   }
-  html.flexbox .flex-grid > .medium-31 {
-    flex: 1 0 31.3333%;
-    max-width: 31.3333%;
-  }
   html.flexbox .flex-grid > .medium-33 {
     flex: 1 0 33.3333%;
     max-width: 33.3333%;
-  }
-  html.flexbox .flex-grid > .medium-48 {
-    flex: 1 0 48%;
-    max-width: 48%;
   }
   html.flexbox .flex-grid > .medium-50 {
     flex: 1 0 50%;
     max-width: 50%;
   }
-  html.flexbox .flex-grid > .medium-73 {
-    flex: 1 0 73%;
-    max-width: 73%;
-  }
   html.flexbox .flex-grid > .medium-75 {
     flex: 1 0 75%;
     max-width: 75%;
-  }
-  html.flexbox .flex-grid > .medium-98 {
-    flex: 1 0 98%;
-    max-width: 98%;
   }
   html.flexbox .flex-grid > .medium-100 {
     flex: 1 0 100%;
@@ -10471,49 +10420,25 @@ html.flexbox .flex-grid > .cell.align-between {
 }
 
 @media only screen and (min-width: 64em) {
-  html.flexbox .flex-grid > .large-18 {
-    flex: 1 0 18%;
-    max-width: 18%;
-  }
   html.flexbox .flex-grid > .large-20 {
     flex: 1 0 20%;
     max-width: 20%;
-  }
-  html.flexbox .flex-grid > .large-23 {
-    flex: 1 0 23%;
-    max-width: 23%;
   }
   html.flexbox .flex-grid > .large-25 {
     flex: 1 0 25%;
     max-width: 25%;
   }
-  html.flexbox .flex-grid > .large-31 {
-    flex: 1 0 31.3333%;
-    max-width: 31.3333%;
-  }
   html.flexbox .flex-grid > .large-33 {
     flex: 1 0 33.3333%;
     max-width: 33.3333%;
-  }
-  html.flexbox .flex-grid > .large-48 {
-    flex: 1 0 48%;
-    max-width: 48%;
   }
   html.flexbox .flex-grid > .large-50 {
     flex: 1 0 50%;
     max-width: 50%;
   }
-  html.flexbox .flex-grid > .large-73 {
-    flex: 1 0 73%;
-    max-width: 73%;
-  }
   html.flexbox .flex-grid > .large-75 {
     flex: 1 0 75%;
     max-width: 75%;
-  }
-  html.flexbox .flex-grid > .large-98 {
-    flex: 1 0 98%;
-    max-width: 98%;
   }
   html.flexbox .flex-grid > .large-100 {
     flex: 1 0 100%;
@@ -10522,49 +10447,25 @@ html.flexbox .flex-grid > .cell.align-between {
 }
 
 @media only screen and (min-width: 90.063em) {
-  html.flexbox .flex-grid > .xlarge-18 {
-    flex: 1 0 18%;
-    max-width: 18%;
-  }
   html.flexbox .flex-grid > .xlarge-20 {
     flex: 1 0 20%;
     max-width: 20%;
-  }
-  html.flexbox .flex-grid > .xlarge-23 {
-    flex: 1 0 23%;
-    max-width: 23%;
   }
   html.flexbox .flex-grid > .xlarge-25 {
     flex: 1 0 25%;
     max-width: 25%;
   }
-  html.flexbox .flex-grid > .xlarge-31 {
-    flex: 1 0 31.3333%;
-    max-width: 31.3333%;
-  }
   html.flexbox .flex-grid > .xlarge-33 {
     flex: 1 0 33.3333%;
     max-width: 33.3333%;
-  }
-  html.flexbox .flex-grid > .xlarge-48 {
-    flex: 1 0 48%;
-    max-width: 48%;
   }
   html.flexbox .flex-grid > .xlarge-50 {
     flex: 1 0 50%;
     max-width: 50%;
   }
-  html.flexbox .flex-grid > .xlarge-73 {
-    flex: 1 0 73%;
-    max-width: 73%;
-  }
   html.flexbox .flex-grid > .xlarge-75 {
     flex: 1 0 75%;
     max-width: 75%;
-  }
-  html.flexbox .flex-grid > .xlarge-98 {
-    flex: 1 0 98%;
-    max-width: 98%;
   }
   html.flexbox .flex-grid > .xlarge-100 {
     flex: 1 0 100%;
@@ -10573,49 +10474,25 @@ html.flexbox .flex-grid > .cell.align-between {
 }
 
 @media only screen and (min-width: 120.063em) {
-  html.flexbox .flex-grid > .xxlarge-18 {
-    flex: 1 0 18%;
-    max-width: 18%;
-  }
   html.flexbox .flex-grid > .xxlarge-20 {
     flex: 1 0 20%;
     max-width: 20%;
-  }
-  html.flexbox .flex-grid > .xxlarge-23 {
-    flex: 1 0 23%;
-    max-width: 23%;
   }
   html.flexbox .flex-grid > .xxlarge-25 {
     flex: 1 0 25%;
     max-width: 25%;
   }
-  html.flexbox .flex-grid > .xxlarge-31 {
-    flex: 1 0 31.3333%;
-    max-width: 31.3333%;
-  }
   html.flexbox .flex-grid > .xxlarge-33 {
     flex: 1 0 33.3333%;
     max-width: 33.3333%;
-  }
-  html.flexbox .flex-grid > .xxlarge-48 {
-    flex: 1 0 48%;
-    max-width: 48%;
   }
   html.flexbox .flex-grid > .xxlarge-50 {
     flex: 1 0 50%;
     max-width: 50%;
   }
-  html.flexbox .flex-grid > .xxlarge-73 {
-    flex: 1 0 73%;
-    max-width: 73%;
-  }
   html.flexbox .flex-grid > .xxlarge-75 {
     flex: 1 0 75%;
     max-width: 75%;
-  }
-  html.flexbox .flex-grid > .xxlarge-98 {
-    flex: 1 0 98%;
-    max-width: 98%;
   }
   html.flexbox .flex-grid > .xxlarge-100 {
     flex: 1 0 100%;
@@ -10623,71 +10500,142 @@ html.flexbox .flex-grid > .cell.align-between {
   }
 }
 
-html.flexbox .flex-grid.padded .cell {
-  padding: 0 1%;
+html.flexbox .flex-grid.marged > .cell {
+  margin: 0.5rem;
 }
 
 @media only screen {
-  html.flexbox .flex-grid.small-padded .cell {
-    padding: 0 1%;
+  html.flexbox .flex-grid.marged > .small-20 {
+    flex: 1 0 calc(20% - 1rem);
+    max-width: calc(20% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .small-25 {
+    flex: 1 0 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .small-33 {
+    flex: 1 0 calc(33.3333% - 1rem);
+    max-width: calc(33.3333% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .small-50 {
+    flex: 1 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .small-75 {
+    flex: 1 0 calc(75% - 1rem);
+    max-width: calc(75% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .small-100 {
+    flex: 1 0 calc(100% - 1rem);
+    max-width: calc(100% - 1rem);
   }
 }
 
 @media only screen and (min-width: 40.063em) {
-  html.flexbox .flex-grid.medium-padded .cell {
-    padding: 0 1%;
+  html.flexbox .flex-grid.marged > .medium-20 {
+    flex: 1 0 calc(20% - 1rem);
+    max-width: calc(20% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .medium-25 {
+    flex: 1 0 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .medium-33 {
+    flex: 1 0 calc(33.3333% - 1rem);
+    max-width: calc(33.3333% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .medium-50 {
+    flex: 1 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .medium-75 {
+    flex: 1 0 calc(75% - 1rem);
+    max-width: calc(75% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .medium-100 {
+    flex: 1 0 calc(100% - 1rem);
+    max-width: calc(100% - 1rem);
   }
 }
 
 @media only screen and (min-width: 64em) {
-  html.flexbox .flex-grid.large-padded .cell {
-    padding: 0 1%;
+  html.flexbox .flex-grid.marged > .large-20 {
+    flex: 1 0 calc(20% - 1rem);
+    max-width: calc(20% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .large-25 {
+    flex: 1 0 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .large-33 {
+    flex: 1 0 calc(33.3333% - 1rem);
+    max-width: calc(33.3333% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .large-50 {
+    flex: 1 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .large-75 {
+    flex: 1 0 calc(75% - 1rem);
+    max-width: calc(75% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .large-100 {
+    flex: 1 0 calc(100% - 1rem);
+    max-width: calc(100% - 1rem);
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  html.flexbox .flex-grid.xlarge-padded .cell {
-    padding: 0 1%;
+  html.flexbox .flex-grid.marged > .xlarge-20 {
+    flex: 1 0 calc(20% - 1rem);
+    max-width: calc(20% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .xlarge-25 {
+    flex: 1 0 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .xlarge-33 {
+    flex: 1 0 calc(33.3333% - 1rem);
+    max-width: calc(33.3333% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .xlarge-50 {
+    flex: 1 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .xlarge-75 {
+    flex: 1 0 calc(75% - 1rem);
+    max-width: calc(75% - 1rem);
+  }
+  html.flexbox .flex-grid.marged > .xlarge-100 {
+    flex: 1 0 calc(100% - 1rem);
+    max-width: calc(100% - 1rem);
   }
 }
 
 @media only screen and (min-width: 120.063em) {
-  html.flexbox .flex-grid.xxlarge-padded .cell {
-    padding: 0 1%;
+  html.flexbox .flex-grid.marged > .xxlarge-20 {
+    flex: 1 0 calc(20% - 1rem);
+    max-width: calc(20% - 1rem);
   }
-}
-
-html.flexbox .flex-grid.marged .cell {
-  margin: 0 1%;
-}
-
-@media only screen {
-  html.flexbox .flex-grid.small-marged .cell {
-    margin: 0 1%;
+  html.flexbox .flex-grid.marged > .xxlarge-25 {
+    flex: 1 0 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
   }
-}
-
-@media only screen and (min-width: 40.063em) {
-  html.flexbox .flex-grid.medium-marged .cell {
-    margin: 0 1%;
+  html.flexbox .flex-grid.marged > .xxlarge-33 {
+    flex: 1 0 calc(33.3333% - 1rem);
+    max-width: calc(33.3333% - 1rem);
   }
-}
-
-@media only screen and (min-width: 64em) {
-  html.flexbox .flex-grid.large-marged .cell {
-    margin: 0 1%;
+  html.flexbox .flex-grid.marged > .xxlarge-50 {
+    flex: 1 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
   }
-}
-
-@media only screen and (min-width: 90.063em) {
-  html.flexbox .flex-grid.xlarge-marged .cell {
-    margin: 0 1%;
+  html.flexbox .flex-grid.marged > .xxlarge-75 {
+    flex: 1 0 calc(75% - 1rem);
+    max-width: calc(75% - 1rem);
   }
-}
-
-@media only screen and (min-width: 120.063em) {
-  html.flexbox .flex-grid.xxlarge-marged .cell {
-    margin: 0 1%;
+  html.flexbox .flex-grid.marged > .xxlarge-100 {
+    flex: 1 0 calc(100% - 1rem);
+    max-width: calc(100% - 1rem);
   }
 }
 
@@ -10696,38 +10644,20 @@ html.no-flexbox .flex-grid {
 }
 
 @media only screen {
-  html.no-flexbox .flex-grid > .small-18 {
-    width: 18%;
-  }
   html.no-flexbox .flex-grid > .small-20 {
     width: 20%;
-  }
-  html.no-flexbox .flex-grid > .small-23 {
-    width: 23%;
   }
   html.no-flexbox .flex-grid > .small-25 {
     width: 25%;
   }
-  html.no-flexbox .flex-grid > .small-31 {
-    width: 31.3333%;
-  }
   html.no-flexbox .flex-grid > .small-33 {
     width: 33.3333%;
-  }
-  html.no-flexbox .flex-grid > .small-48 {
-    width: 48%;
   }
   html.no-flexbox .flex-grid > .small-50 {
     width: 50%;
   }
-  html.no-flexbox .flex-grid > .small-73 {
-    width: 73%;
-  }
   html.no-flexbox .flex-grid > .small-75 {
     width: 75%;
-  }
-  html.no-flexbox .flex-grid > .small-98 {
-    width: 98%;
   }
   html.no-flexbox .flex-grid > .small-100 {
     width: 100%;
@@ -10735,38 +10665,20 @@ html.no-flexbox .flex-grid {
 }
 
 @media only screen and (min-width: 40.063em) {
-  html.no-flexbox .flex-grid > .medium-18 {
-    width: 18%;
-  }
   html.no-flexbox .flex-grid > .medium-20 {
     width: 20%;
-  }
-  html.no-flexbox .flex-grid > .medium-23 {
-    width: 23%;
   }
   html.no-flexbox .flex-grid > .medium-25 {
     width: 25%;
   }
-  html.no-flexbox .flex-grid > .medium-31 {
-    width: 31.3333%;
-  }
   html.no-flexbox .flex-grid > .medium-33 {
     width: 33.3333%;
-  }
-  html.no-flexbox .flex-grid > .medium-48 {
-    width: 48%;
   }
   html.no-flexbox .flex-grid > .medium-50 {
     width: 50%;
   }
-  html.no-flexbox .flex-grid > .medium-73 {
-    width: 73%;
-  }
   html.no-flexbox .flex-grid > .medium-75 {
     width: 75%;
-  }
-  html.no-flexbox .flex-grid > .medium-98 {
-    width: 98%;
   }
   html.no-flexbox .flex-grid > .medium-100 {
     width: 100%;
@@ -10774,38 +10686,20 @@ html.no-flexbox .flex-grid {
 }
 
 @media only screen and (min-width: 64em) {
-  html.no-flexbox .flex-grid > .large-18 {
-    width: 18%;
-  }
   html.no-flexbox .flex-grid > .large-20 {
     width: 20%;
-  }
-  html.no-flexbox .flex-grid > .large-23 {
-    width: 23%;
   }
   html.no-flexbox .flex-grid > .large-25 {
     width: 25%;
   }
-  html.no-flexbox .flex-grid > .large-31 {
-    width: 31.3333%;
-  }
   html.no-flexbox .flex-grid > .large-33 {
     width: 33.3333%;
-  }
-  html.no-flexbox .flex-grid > .large-48 {
-    width: 48%;
   }
   html.no-flexbox .flex-grid > .large-50 {
     width: 50%;
   }
-  html.no-flexbox .flex-grid > .large-73 {
-    width: 73%;
-  }
   html.no-flexbox .flex-grid > .large-75 {
     width: 75%;
-  }
-  html.no-flexbox .flex-grid > .large-98 {
-    width: 98%;
   }
   html.no-flexbox .flex-grid > .large-100 {
     width: 100%;
@@ -10813,38 +10707,20 @@ html.no-flexbox .flex-grid {
 }
 
 @media only screen and (min-width: 90.063em) {
-  html.no-flexbox .flex-grid > .xlarge-18 {
-    width: 18%;
-  }
   html.no-flexbox .flex-grid > .xlarge-20 {
     width: 20%;
-  }
-  html.no-flexbox .flex-grid > .xlarge-23 {
-    width: 23%;
   }
   html.no-flexbox .flex-grid > .xlarge-25 {
     width: 25%;
   }
-  html.no-flexbox .flex-grid > .xlarge-31 {
-    width: 31.3333%;
-  }
   html.no-flexbox .flex-grid > .xlarge-33 {
     width: 33.3333%;
-  }
-  html.no-flexbox .flex-grid > .xlarge-48 {
-    width: 48%;
   }
   html.no-flexbox .flex-grid > .xlarge-50 {
     width: 50%;
   }
-  html.no-flexbox .flex-grid > .xlarge-73 {
-    width: 73%;
-  }
   html.no-flexbox .flex-grid > .xlarge-75 {
     width: 75%;
-  }
-  html.no-flexbox .flex-grid > .xlarge-98 {
-    width: 98%;
   }
   html.no-flexbox .flex-grid > .xlarge-100 {
     width: 100%;
@@ -10852,38 +10728,20 @@ html.no-flexbox .flex-grid {
 }
 
 @media only screen and (min-width: 120.063em) {
-  html.no-flexbox .flex-grid > .xxlarge-18 {
-    width: 18%;
-  }
   html.no-flexbox .flex-grid > .xxlarge-20 {
     width: 20%;
-  }
-  html.no-flexbox .flex-grid > .xxlarge-23 {
-    width: 23%;
   }
   html.no-flexbox .flex-grid > .xxlarge-25 {
     width: 25%;
   }
-  html.no-flexbox .flex-grid > .xxlarge-31 {
-    width: 31.3333%;
-  }
   html.no-flexbox .flex-grid > .xxlarge-33 {
     width: 33.3333%;
-  }
-  html.no-flexbox .flex-grid > .xxlarge-48 {
-    width: 48%;
   }
   html.no-flexbox .flex-grid > .xxlarge-50 {
     width: 50%;
   }
-  html.no-flexbox .flex-grid > .xxlarge-73 {
-    width: 73%;
-  }
   html.no-flexbox .flex-grid > .xxlarge-75 {
     width: 75%;
-  }
-  html.no-flexbox .flex-grid > .xxlarge-98 {
-    width: 98%;
   }
   html.no-flexbox .flex-grid > .xxlarge-100 {
     width: 100%;
@@ -10967,6 +10825,8 @@ table.expand {
  * the bullet
  *
  * If needed you can use a webfont character instead of a character
+ *
+ * TODO: Move to mixins/_lists.scss
  */
 ul.arrow {
   list-style-type: none;

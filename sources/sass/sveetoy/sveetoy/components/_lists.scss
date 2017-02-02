@@ -11,6 +11,8 @@ $include-sveetoy-lists: $include-sveetoy-classes !default;
  * the bullet
  *
  * If needed you can use a webfont character instead of a character
+ *
+ * TODO: Move to mixins/_lists.scss
  */
 @mixin sveetoy-arrow-bullet(
     $width: rem-calc(12px),

@@ -9,17 +9,22 @@
 // Default available percentage sizes
 // Sizes like '18' is when you want a '20%' container but with '1%' horizontal
 // marging (ex: 1% + 18% + 1% = 20%)
-$flex-grid-sizes: 18 20 23 25 31.3333 33.3333 48 50 73 75 98 100 !default;
-//$flex-grid-sizes: 25 33.3333 50 75 100 !default;
+$flex-grid-sizes: 25 33.3333 50 75 100 !default;
+$flex-grid-gutter: 0.5rem !default;
 
 $include-sveetoy-flex: $include-sveetoy-classes !default;
 
 /*
  * Create flex cell width rules
  */
-@mixin sveetoy-flex-cell-width($width) {
-    flex: 1 0 $width;
-    max-width: $width;
+@mixin sveetoy-flex-cell-width($width, $less: null) {
+    @if $less == null {
+        flex: 1 0 $width;
+        max-width: $width;
+    } @else {
+        flex: 1 0 calc(#{$width} - #{$less});
+        max-width: calc(#{$width} - #{$less});
+    }
 }
 
 /*
@@ -35,13 +40,17 @@ $include-sveetoy-flex: $include-sveetoy-classes !default;
  *
  * Usable in conjunction with ".cell".
  */
-@mixin sveetoy-flex-grid-classes($sizes, $viewport: small) {
+@mixin sveetoy-flex-grid-classes($sizes, $viewport: small, $gutter: null) {
+    $gutter-substraction: null;
+    @if $gutter != null {
+        $gutter-substraction: $gutter*2;
+    }
     @each $size in $sizes {
         $width: percentage($size / 100);
         $name: floor($size);
         // Will name it like "&.small-50"
         & > .#{$viewport}-#{$name} {
-            @include sveetoy-flex-cell-width($width);
+            @include sveetoy-flex-cell-width($width, $less: $gutter-substraction);
         }
     }
 }
@@ -178,66 +187,27 @@ $include-sveetoy-flex: $include-sveetoy-classes !default;
             }
 
             /*
-            * Responsive padding in all contained cells
+            * Responsive margin on every contained cells
             */
-            &.padded .cell {
-                padding: 0 1%;
-            }
-            @media #{$small-up} {
-                &.small-padded .cell {
-                    padding: 0 1%;
+            &.marged{
+                &> .cell{
+                    margin: $flex-grid-gutter;
                 }
-            }
-            @media #{$medium-up} {
-                &.medium-padded .cell {
-                    padding: 0 1%;
-                }
-            }
-            @media #{$large-up} {
-                &.large-padded .cell {
-                    padding: 0 1%;
-                }
-            }
-            @media #{$xlarge-up} {
-                &.xlarge-padded .cell {
-                    padding: 0 1%;
-                }
-            }
-            @media #{$xxlarge-up} {
-                &.xxlarge-padded .cell {
-                    padding: 0 1%;
-                }
-            }
 
-            /*
-            * Responsive margin on all contained cells
-            */
-            &.marged .cell {
-                margin: 0 1%;
-            }
-            @media #{$small-up} {
-                &.small-marged .cell {
-                    margin: 0 1%;
+                @media #{$small-up} {
+                    @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: small, $gutter: $flex-grid-gutter);
                 }
-            }
-            @media #{$medium-up} {
-                &.medium-marged .cell {
-                    margin: 0 1%;
+                @media #{$medium-up} {
+                    @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: medium, $gutter: $flex-grid-gutter);
                 }
-            }
-            @media #{$large-up} {
-                &.large-marged .cell {
-                    margin: 0 1%;
+                @media #{$large-up} {
+                    @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: large, $gutter: $flex-grid-gutter);
                 }
-            }
-            @media #{$xlarge-up} {
-                &.xlarge-marged .cell {
-                    margin: 0 1%;
+                @media #{$xlarge-up} {
+                    @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: xlarge, $gutter: $flex-grid-gutter);
                 }
-            }
-            @media #{$xxlarge-up} {
-                &.xxlarge-marged .cell {
-                    margin: 0 1%;
+                @media #{$xxlarge-up} {
+                    @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: xxlarge, $gutter: $flex-grid-gutter);
                 }
             }
         }
