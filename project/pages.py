@@ -5,6 +5,7 @@ The project pages map for project
 from optimus.builder.pages import PageViewBase
 from optimus.conf import settings
 
+from project import __version__ as sveetoy_version
 from project.sitemap import PageSitemap, tree_from_directory_structure
 
 
@@ -22,6 +23,14 @@ class BasicPage(PageViewBase):
     title = "Index"
     template_name = "index.html"
     destination = "index.html"
+
+    def get_context(self):
+        context = super(BasicPage, self).get_context()
+
+        context.update({
+            'version': sveetoy_version,
+        })
+        return context
 
 
 class PageWithSitemap(BasicPage):

@@ -3,11 +3,9 @@
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title">Buttons</h1>
-            <p>Buttons are a common way to display important links, often called CTA (*Call To Action*).</p>
+            <p>Some addons to the buttons features.</p>
 
-            <p>They define a background, padding and font to be visually important.</p>
-
-            <p>This component only add <code>.modest</code> feature every other showed features are from Foundation and just for comparison.</p>
+            <p>Also there is a new rule that prevent buttons to have a bottom margin if their are the last child of a <code>div</code>, <code>p</code>, <code>dd</code>, <code>li</code> element.</p>
 
             <dl>
                 <dt>Can be disabled with</dt>
@@ -22,10 +20,10 @@
     <div class="row larger">
 
         <div class="small-12 columns">
-            <h2 class="demo-title">Shapes</h2>
+            <h2 class="demo-title">Various</h2>
             <div class="demo-result v-space-thin">
                 <div class="row">
-                    {% for name in ['', 'radius', 'round'] %}
+                    {% for name in ['', 'strong'] %}
                     <div class="large-4 columns{% if loop.last %} end{% endif %}">
                         <a href="" class="button{% if name %} {{ name }}{% endif %}">.button{% if name %}.{{ name }}{% endif %}</a>
                     </div>
@@ -38,13 +36,12 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Sizes</h2>
+            <p>Add <code>.full</code> feature that act like <code>.expand</code> but preserve normal horizontal padding.</p>
             <div class="demo-result v-space-thin">
                 <div class="row">
-                    {% for name in ['tiny', 'small', '', 'large', 'expand'] %}
-                    <div class="large-4 columns{% if loop.last %} end{% endif %}">
-                        <a href="" class="button{% if name %} {{ name }}{% endif %}">.button{% if name %}.{{ name }}{% endif %}</a>
+                    <div class="small-12 columns">
+                        <a href="" class="button full">.button.full</a>
                     </div>
-                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -53,9 +50,10 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Paddings</h2>
+            <p>Add <code>.modest</code> feature so the button padding are divided by two.</p>
             <div class="demo-result v-space-thin">
                 <div class="row">
-                    {% for name in ['small', '', 'large', 'small.modest', 'modest', 'large.modest', 'small.modest.radius', 'modest.round'] %}
+                    {% for name in ['', 'small.modest', 'modest', 'large.modest', 'small.modest.radius', 'modest.round'] %}
                     <div class="large-4 columns{% if loop.last %} end{% endif %}">
                         <a href="" class="button{% if name %} {{ name|replace(".", " ") }}{% endif %}">.button{% if name %}.{{ name }}{% endif %}</a>
                     </div>
@@ -67,27 +65,10 @@
 
     <div class="row larger">
         <div class="small-12 columns">
-            <h2 class="demo-title">Colours</h2>
+            <h2 class="demo-title">Dropdown overflow</h2>
+            <p>Add <code>.overflow</code> feature to <code>f-dropdown</code> so the dropdown is limited to a fixed size with automatic scrollbar.</p>
             <div class="demo-result v-space-thin">
                 <div class="row">
-                    {% for name in ['', 'success', 'secondary', 'alert', 'info', 'disabled'] %}
-                    <div class="large-4 columns{% if loop.last %} end{% endif %}">
-                        <a href="" class="button{% if name %} {{ name }}{% endif %}">.button{% if name %}.{{ name }}{% endif %}</a>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row larger">
-        <div class="small-12 columns">
-            <h2 class="demo-title">Dropdowns</h2>
-            <div class="demo-result v-space-thin">
-                <div class="row">
-                    <div class="large-4 columns">
-                        <a href="" class="button">.button</a>
-                    </div>
                     <div class="large-4 columns">
                         <a href="#" class="button dropdown" data-dropdown="drop-1">button dropdown</a>
                         <ul class="f-dropdown" id="drop-1" data-dropdown-content>
@@ -96,12 +77,13 @@
                             <li><a href="#">Yet another</a></li>
                         </ul>
                     </div>
-                    <div class="large-4 columns">
+                    <div class="large-4 columns end">
                         <a href="#" class="button dropdown" data-dropdown="drop-2">.button.dropdown (overflow)</a>
                         <ul class="f-dropdown overflow overflow-100" id="drop-2" data-dropdown-content>
                             <li><a href="#">This is a link</a></li>
                             <li><a href="#">This is another</a></li>
                             <li><a href="#">Yet another</a></li>
+                            <li><a href="#">Last one</a></li>
                         </ul>
                     </div>
                 </div>

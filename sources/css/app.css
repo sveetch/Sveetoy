@@ -9404,13 +9404,6 @@ img.expanded {
 /*
  * Button enhancements
  */
-button,
-.button {
-  /*
-        * Modest padding
-        */
-}
-
 button.unmarged,
 .button.unmarged {
   margin: 0;
@@ -9450,21 +9443,6 @@ button.modest.medium,
 button.modest.large,
 .button.modest.large {
   padding: 0.5625rem 1.125rem 0.625rem 1.125rem;
-}
-
-button.alpha-white,
-.button.alpha-white {
-  color: #ffffff;
-  background-color: transparent;
-  border-color: #ffffff;
-  border-width: 1px;
-}
-
-div.button,
-span.button,
-li.button,
-p.button {
-  cursor: default;
 }
 
 div button:last-child, div .button:last-child, p button:last-child, p .button:last-child, dd button:last-child, dd .button:last-child, li button:last-child, li .button:last-child {
@@ -10237,6 +10215,8 @@ h6, .title-6 {
  *
  * Flexbox
  *
+ * TODO: Move mixins to mixins/_flexbox.scss
+ *
  */
 /*
  * Create flex cell width rules
@@ -10819,7 +10799,7 @@ table.expand {
  * Bullet list using arrow icon as bullet
  */
 /*
- * Mixin to render list item pseudo element with custom bullet
+ * Mixin to render list item pseudo-element with a custom bullet
  *
  * Default behavior without any arguments is to simply add character '>' as
  * the bullet
@@ -10872,32 +10852,6 @@ ul.arrow.defer li > *:first-child:before {
   -o-transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
-}
-
-/*
- *
- * Panels
- *
- */
-.panel h1:first-child,
-.panel h2:first-child,
-.panel h3:first-child,
-.panel h4:first-child,
-.panel h5:first-child,
-.panel h6:first-child,
-.panel p:first-child {
-  margin-top: 0 !important;
-}
-
-.panel p:last-child {
-  margin-bottom: 0;
-}
-
-.panel > .row, html.no-flexbox .panel > .flex-grid,
-.panel > * > .row, html.no-flexbox
-.panel > * > .flex-grid {
-  margin-left: 0;
-  margin-right: 0;
 }
 
 /*

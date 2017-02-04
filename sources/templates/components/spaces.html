@@ -3,8 +3,9 @@
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title">Spaces</h1>
-            <p>This about space rythmic surround element for both sides on vertical or horizontal axe and optionally on only one side.</p>
-            <p>There are many space sizes available and each of them have their own breakpoint sizes. Spaces scheme is defined from <code>$sveetoy-spaces</code>.</p>
+            <p>This component add styles to apply paddings using space rythmic defined in map <code>$sveetoy-spaces</code>.</p>
+            <p>Padding can be applied for both sides on vertical or horizontal axes or optionally on only one side.</p>
+            <p>There are many space sizes available and each of them have their own breakpoint sizes.</p>
 
             <dl>
                 <dt>Can be disabled with</dt>
@@ -24,8 +25,9 @@
             <div class="flex-grid marged">
                 {% for thickness in ['thin', 'tiny', 'normal', 'wide', 'huge'] %}
                 <div class="cell small-100 medium-33 large-20">
+                    <code>.v-space-{{ thickness }}</code>
                     <div class="demo-result v-space-{{ thickness }}">
-                        <span class="button small full">.v-space-{{ thickness }}</span>
+                        <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
                 {% endfor %}
@@ -35,8 +37,9 @@
             <div class="flex-grid marged">
                 {% for side in ['top', 'bottom'] %}
                 <div class="cell small-100 medium-50">
+                    <code>.v-space-normal.{{ side }}-only</code>
                     <div class="demo-result v-space-normal {{ side }}-only">
-                        <span class="button small full">.v-space-normal.{{ side }}-only</span>
+                        <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
                 {% endfor %}
@@ -52,8 +55,9 @@
             <div class="flex-grid marged">
                 {% for thickness in ['thin', 'tiny', 'normal', 'wide', 'huge'] %}
                 <div class="cell small-100 medium-50 large-33">
+                    <code>.h-space-{{ thickness }}</code>
                     <div class="demo-result h-space-{{ thickness }}">
-                        <span class="button small full">.h-space-{{ thickness }}</span>
+                        <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
                 {% endfor %}
@@ -63,8 +67,9 @@
             <div class="flex-grid marged">
                 {% for side in ['left', 'right'] %}
                 <div class="cell small-100 medium-50">
+                    <code>.h-space-normal.{{ side }}-only</code>
                     <div class="demo-result h-space-normal {{ side }}-only">
-                        <span class="button small full">.h-space-normal.{{ side }}-only</span>
+                        <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
                 {% endfor %}

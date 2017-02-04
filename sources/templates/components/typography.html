@@ -3,7 +3,7 @@
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title">Typography</h1>
-            <p>This components just add some minor things to the Foundation typography stuff.</p>
+            <p>This components just some minor things to the Foundation typography stuff.</p>
 
             <dl>
                 <dt>Can be disabled with</dt>
@@ -18,6 +18,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Title element</h2>
+            <p>Title styles are not only anymore sticked to <code>hX</code> elements, now you can use them by the way of the <code>.title-X</code> classes on any other element to preserve semantic.</p>
             <div class="demo-result v-space-thin">
                 {% for count in range(1, 7) %}
                 <h{{ count }}>h{{ count }}, .title-{{ count }}</h{{ count }}>
@@ -29,6 +30,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Text colors</h2>
+            <p>Text colors are available for every color defined in map <code>$sveetoy-color-text-palette</code>. Properties are defined using <code>!important</code> flag so take care of their usage.</p>
             <div class="demo-result v-space-thin">
                 {% for name in ['white', 'black', 'gray25', 'gray82', 'gray88', 'lightskyblue', 'deepskyblue4'] %}
                 <p class="text-{{ name }}">.text-{{ name }}</p>
@@ -40,6 +42,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Thickness</h2>
+            <p>Two more thickness are available if their corresponding value is defined. <code>$font-weight-thin</code> for thinest thickness and <code>$font-weight-bolder</code> for boldest thickness.</p>
             <div class="demo-result v-space-thin">
                 {% for name in ['thin', 'normal', 'strong', 'stronger'] %}
                 <p class="text-{{ name }}">.text-{{ name }}</p>
@@ -53,6 +56,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Transform and decoration</h2>
+            <p><code>.text-upper</code> enables you to correctly write your texts in lowercase but render them as uppercase. <code>.text-important</code> just define the underline value for <code>text-decoration</code> property.</p>
             <div class="demo-result v-space-thin">
                 <p class="text-upper">.text-upper</p>
                 <p class="text-important">.text-important</p>
@@ -63,6 +67,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Underline</h2>
+            <p>Various underline position, thickness and widths. All of them are implemented with border properties on a pseudo-element.</p>
             <div class="flex-grid marged">
                 {% for name in ['', 'short', 'large', 'full', 'thin', 'bold', 'tiny', 'far', 'near', 'sticked', 'text-center'] %}
                 <div class="cell small-100 medium-50 large-33">
@@ -73,74 +78,5 @@
                 {% endfor %}
             </div>
         </div>
-    </div>
-
-    <div class="row larger">
-
-        <div class="small-12 columns">
-            <h2 class="demo-title">Paragraph and inline markup</h2>
-            <div class="demo-result v-space-thin">
-                {% include '_includes/_inline_markup.html' %}
-
-                {{ lipsum(n=2, html=True, min=20, max=50) }}
-            </div>
-        </div>
-
-    </div>
-
-    <div class="row larger">
-
-        <div class="small-12 columns">
-            <h2 class="demo-title">Bullet list</h2>
-            <div class="demo-result v-space-thin">
-                <ul>
-                    <li>Nullam auctor lorem.</li>
-                    <li>Duis et placerat massa. Integer.</li>
-                    <li>Vestibulum elementum, ex et.</li>
-                    <li>Cras tempus auctor neque, viverra sodales risus.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="small-12 columns">
-            <h2 class="demo-title">Numbered list</h2>
-            <div class="demo-result v-space-thin">
-                <ol>
-                    <li>Nullam auctor lorem.</li>
-                    <li>Duis et placerat massa. Integer.</li>
-                    <li>Vestibulum elementum, ex et.</li>
-                    <li>Cras tempus auctor neque, viverra sodales risus.</li>
-                </ol>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="row larger">
-
-        <div class="small-12 columns">
-            <h2 class="demo-title">Bullet list</h2>
-            <div class="demo-result v-space-thin">
-                <ul>
-                    <li>Nullam auctor lorem.</li>
-                    <li>Duis et placerat massa. Integer.</li>
-                    <li>Vestibulum elementum, ex et.</li>
-                    <li>Cras tempus auctor neque, viverra sodales risus.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="small-12 columns">
-            <h2 class="demo-title">Numbered list</h2>
-            <div class="demo-result v-space-thin">
-                <ol>
-                    <li>Nullam auctor lorem.</li>
-                    <li>Duis et placerat massa. Integer.</li>
-                    <li>Vestibulum elementum, ex et.</li>
-                    <li>Cras tempus auctor neque, viverra sodales risus.</li>
-                </ol>
-            </div>
-        </div>
-
     </div>
 </div>
