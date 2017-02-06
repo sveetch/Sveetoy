@@ -1,0 +1,88 @@
+/*
+ *
+ * Flexbox
+ */
+
+// Default available percentage sizes
+// Sizes like '18' is when you want a '20%' container but with '1%' horizontal
+// marging (ex: 1% + 18% + 1% = 20%)
+$flex-grid-sizes: 25 33.3333 50 75 100 !default;
+$flex-grid-gutter: 0.5rem !default;
+
+$include-sveetoy-flex: $include-sveetoy-classes !default;
+
+/*
+ * Create flex cell width rules
+ */
+@mixin sveetoy-flex-cell-width($width, $less: null) {
+    @if $less == null {
+        flex: 1 0 $width;
+        max-width: $width;
+    } @else {
+        flex: 1 0 calc(#{$width} - #{$less});
+        max-width: calc(#{$width} - #{$less});
+    }
+}
+
+/*
+ * Mixin to create cells widths with flexbox
+ *
+ * Will produce responsive class like:
+ *
+ *   .small-50{...}
+ *   .medium-50{...}
+ *   etc..
+ *
+ * Depending on mixin declarations.
+ *
+ * Usable in conjunction with ".cell".
+ */
+@mixin sveetoy-flex-grid-classes($sizes, $viewport: small, $gutter: null) {
+    $gutter-substraction: null;
+    @if $gutter != null {
+        $gutter-substraction: $gutter*2;
+    }
+    @each $size in $sizes {
+        $width: percentage($size / 100);
+        $name: floor($size);
+        // Will name it like "&.small-50"
+        & > .#{$viewport}-#{$name} {
+            @include sveetoy-flex-cell-width($width, $less: $gutter-substraction);
+        }
+    }
+}
+
+/*
+ * Mixin to create flexbox display property
+ *
+ * Will produce global and responsive classes like:
+ *
+ *   .flex{...}
+ *   .flex-small{...}
+ *   .flex-medium{...}
+ *   etc..
+ *
+ */
+@mixin sveetoy-flex-display($viewport: null) {
+    $suffix: if($viewport, "-#{$viewport}", "");
+    .flex#{$suffix} {
+        display: flex;
+    }
+}
+
+/*
+ * Mixin to create "simple" cells widths
+ * Mixin to simulate inline list, used as a fallback
+ *
+ * Reproduce the same name pattern as in mixin "sveetoy-flex-grid-classes"
+ */
+@mixin sveetoy-simulate-grid-columns($sizes, $viewport: small) {
+    @each $size in $sizes {
+        $width: $size / 100;
+        $name: floor($size);
+        // Will name it like "&.small-50"
+        & > .#{$viewport}-#{$name} {
+            width: percentage($width);
+        }
+    }
+}

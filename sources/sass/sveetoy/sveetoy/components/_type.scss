@@ -19,14 +19,13 @@ $font-weight-bolder: null !default;
         }
     }
 
-    /*
-    * Horizontal rule
-    */
-    hr{
+    /* TODO: Issue #4 */
+    /// Horizontal rule
+    /*hr{
         &.unmarged{
             margin: 0;
         }
-    }
+    }*/
 
     /*
     * Transform and decoration
@@ -69,17 +68,18 @@ $font-weight-bolder: null !default;
         }
     }
 
-    /*
-    * Various <small> modifier
-    */
+    /* TODO: Issue #5 */
+    ///
+    /// Various <small> modifier
+    ///
     small{
-        .small{
+        &.small{
             font-size: 40%;
         }
-        .medium{
+        &.medium{
             font-size: 60%; //equivalent to default <small> behavior
         }
-        .big{
+        &.big{
             font-size: 80%;
         }
     }
@@ -208,7 +208,7 @@ $font-weight-bolder: null !default;
         }
 
         // Border colors
-        // TODO: Automatic from $sveetoy-color-text-palette
+        /* TODO: Issue #6 */
         /*&.black:after{
             border-bottom-color: $black !important;
         }

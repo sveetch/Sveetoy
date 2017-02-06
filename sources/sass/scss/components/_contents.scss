@@ -3,6 +3,28 @@
  * Various Specific styles for Sveetoy demo
  *
  */
+///
+/// Some styling for this JS component stuff (read more on 'js/jquery.currentmediaquery.js')
+///
+#watch-for-current-mquery{
+    padding: 0.0rem 0.5rem;
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    font-size: 14px;
+    font-weight:bold;
+    line-height:1.4;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid $alert-color;
+    background-color: $white;
+    z-index: 9000;
+
+    small{
+        display: block;
+    }
+}
+
 
 ///
 /// No bullet on sub-nav list
@@ -101,6 +123,28 @@
             .cell{
                 min-height: 200px;
             }
+        }
+    }
+}
+
+
+/// Simple code container
+.code-container{
+    margin-bottom: $paragraph-margin-bottom;
+    background-color: $code-background-color;
+    border-color: $code-border-color;
+    border-style: $code-border-style;
+    border-width: $code-border-size;
+    color: $code-color;
+    font-family: $code-font-family;
+    font-weight: $code-font-weight;
+    padding: 0.5rem;
+
+    p{
+        margin-bottom: 0;
+
+        &+p{
+            margin-top: 0.5rem;
         }
     }
 }

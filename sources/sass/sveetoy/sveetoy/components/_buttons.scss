@@ -30,8 +30,8 @@ $include-sveetoy-buttons: $include-sveetoy-classes !default;
 
         ///
         /// Modest padding
-        /// TODO: divider values should be in a setting variable
         ///
+        /* TODO: Issue #9 */
         &.modest{
             $padding: $button-med / 2;
             padding: $padding ($padding * 2) ($padding + rem-calc(1)) ($padding * 2);
@@ -57,7 +57,7 @@ $include-sveetoy-buttons: $include-sveetoy-classes !default;
         ///
         /// Various color variants
         ///
-        // TODO: using color scheme, but lack of border color attribute for now
+        /* TODO: Issue #8 */
     }
 
     ///
@@ -71,11 +71,10 @@ $include-sveetoy-buttons: $include-sveetoy-classes !default;
         }
     }
 
+    /* TODO: Issue #7 */
     ///
     /// Visually transform a dropdown button into a select list with vertical
     /// scrollbar. This is useful for long list items that can impact on page size
-    ///
-    /// TODO: Should be responsive and controlled from setting variable.
     ///
     .f-dropdown.overflow {
         overflow: auto;

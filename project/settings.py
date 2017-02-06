@@ -32,6 +32,5 @@ from project.assets import PUBLISHED_BUNDLES as BUNDLES
 
 # Sources files or directory to synchronize within the static directory
 FILES_TO_SYNC = (
-    #(SOURCE, DESTINATION)
-    #('css', 'css'),
+    ('../dist', 'dist'),
 )

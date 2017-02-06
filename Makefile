@@ -1,4 +1,4 @@
-.PHONY: help install install-venv install-foundation5 clean delpyc demo-build demo-server demo-watcher
+.PHONY: help install install-venv install-foundation5 clean delpyc demo-build demo-server demo-watcher release
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -73,3 +73,7 @@ github-build:
 	rm -Rf docs
 	rm -Rf .webassets-cache
 	cd project && ../bin/optimus-cli build --settings githubpages_settings
+
+release: github-build
+	python release.py
+# 	git tag -a `cat RELEASED_VERSION` -m "Release `cat RELEASED_VERSION`"

@@ -3,3 +3,4 @@ treelib
 cherrypy
 closure
 rcssmin
+cmp_version

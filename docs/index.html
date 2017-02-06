@@ -10,7 +10,7 @@
     <link href="//fonts.googleapis.com/css?family=Overlock+SC%7CRoboto:100,400,700,900" rel="stylesheet">
     <meta name="robots" content="index,follow,all">
 
-        <link rel="stylesheet" href="./static/css/app.min.css?949a2e31">
+        <link rel="stylesheet" href="./static/css/app.min.css?343d5ef1">
         
         <script src="./static/js/modernizr.min.js?c9eb8d85"></script>
         
@@ -38,6 +38,19 @@
                     <p>Faster prototyping</p>
                 </div>
             </div>
+
+            <div>
+                <p class="text-center"><a href="http://sveetch.github.io/sveetoy/dist/Sveetoy-sass-0.5.1.zip" class="button">Download version 0.5.1 (ZIP)</a></p>
+                <p>We recommend you to use it as an imported library from your Sass compiler and avoid to include it in your Sass source files.</p>
+                <p>Once library is available with your compiler, import it in your sources:</p>
+                <div class="code-container">
+                    <p>@import "settings";</p>
+                    <p>@import "foundation";</p>
+                    <p>@import "sveetoy";</p>
+                </div>
+                <p>You may notice that Foundation components and settings must be loaded before Sveetoy (because some components use some of its settings).</p>
+                <p>In <code>settings</code> source, you can define Sveetoy settings you want to override.</p>
+            </div>
         </div>
     </div>
 </div>
@@ -63,7 +76,9 @@
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title">Typography</h1>
-            <p>This components just some minor things to the Foundation typography stuff.</p>
+            <p>This component adds some minor things to the Foundation typography stuff.</p>
+
+            <p>Also there is a new rule that prevent paragraphs to have a bottom margin if they are the last child of their parent.</p>
 
             <dl>
                 <dt>Can be disabled with</dt>
@@ -78,7 +93,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Title element</h2>
-            <p>Title styles are not only anymore sticked to <code>hX</code> elements, now you can use them by the way of the <code>.title-X</code> classes on any other element to preserve semantic.</p>
+            <p>Title styles are not anymore sticked to <code>hX</code> elements, now you can use them by the way of <code>.title-X</code> classes on any other element to preserve semantic.</p>
             <div class="demo-result v-space-thin">
                 
                 <h1>h1, .title-1</h1>
@@ -124,7 +139,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Thickness</h2>
-            <p>Two more thickness are available if their corresponding value is defined. <code>$font-weight-thin</code> for thinest thickness and <code>$font-weight-bolder</code> for boldest thickness.</p>
+            <p>Two more thickness are available if their corresponding variable is defined. <code>$font-weight-thin</code> for thinest thickness and <code>$font-weight-bolder</code> for boldest thickness.</p>
             <div class="demo-result v-space-thin">
                 
                 <p class="text-thin">.text-thin</p>
@@ -137,6 +152,23 @@
                 
                 <p><b>&lt;b&gt;</b></p>
                 <p><strong>&lt;strong&gt;</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Small</h2>
+            <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior.</p>
+            <div class="demo-result v-space-thin">
+                
+                <p><code>.small</code> <small class="small">Elementum non tempus dignissim velit nisl sed, scelerisque tincidunt varius molestie mi quam class, eleifend.</small></p>
+                
+                <p><code>.medium</code> <small class="medium">Elementum ridiculus ultricies vehicula nullam malesuada in, vivamus euismod aliquam sagittis sed, nascetur natoque eu.</small></p>
+                
+                <p><code>.big</code> <small class="big">Justo montes phasellus dui maecenas, pharetra consectetuer luctus placerat ipsum, sapien arcu mus iaculis diam.</small></p>
+                
+                <p>Sollicitudin aenean tellus duis orci curae lorem, torquent curabitur congue netus fusce, risus pulvinar tristique.</p>
             </div>
         </div>
     </div>
@@ -235,7 +267,7 @@
             <h1 class="demo-title">Buttons</h1>
             <p>Some addons to the buttons features.</p>
 
-            <p>Also there is a new rule that prevent buttons to have a bottom margin if their are the last child of a <code>div</code>, <code>p</code>, <code>dd</code>, <code>li</code> element.</p>
+            <p>Also there is a new rule that prevent buttons to have a bottom margin if they are the last child of a <code>div</code>, <code>p</code>, <code>dd</code>, <code>li</code> element.</p>
 
             <dl>
                 <dt>Can be disabled with</dt>
@@ -250,7 +282,8 @@
     <div class="row larger">
 
         <div class="small-12 columns">
-            <h2 class="demo-title">Various</h2>
+            <h2 class="demo-title">Stronger</h2>
+            <p>Make the button text stronger and uppercase.</p>
             <div class="demo-result v-space-thin">
                 <div class="row">
                     
@@ -615,8 +648,8 @@
                 <h2 class="demo-title">.section</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Sapien praesent consectetuer enim urna class accumsan condimentum, diam nostra lorem penatibus leo, nunc maecenas hendrerit amet sed, iaculis pede aliquet nam litora.</p>
-<p>Habitasse interdum congue euismod justo nonummy purus faucibus, id adipiscing litora congue dis dictum, class magna sociis. Varius euismod habitasse.</p>
+                <p>Sodales lobortis faucibus euismod nisl conubia lacinia, inceptos aliquet laoreet posuere non congue, et sagittis mollis. Cursus elit fames magna magnis nunc, auctor hendrerit montes consequat orci habitasse, consequat malesuada lacinia blandit, purus. Platea augue aliquam tristique, ante.</p>
+<p>Ipsum ultrices integer fringilla convallis, adipiscing a pulvinar platea eros, erat donec pharetra orci parturient bibendum, aliquam felis. Molestie ultrices leo vehicula tortor nibh, mattis dictumst posuere tempus metus, laoreet posuere fringilla sapien. Cum aliquet imperdiet ipsum libero.</p>
             </div>
         </div>
     </div>
@@ -627,8 +660,8 @@
                 <h2 class="demo-title">.section.black</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Sagittis semper eu habitasse dis, sodales penatibus ultricies justo aliquam natoque, pede laoreet magna imperdiet nascetur, elit justo fringilla integer. Etiam vitae turpis libero vitae euismod, auctor non varius eros tempus, nullam nunc torquent.</p>
-<p>Natoque amet venenatis ullamcorper venenatis, elit auctor scelerisque hendrerit mattis, habitasse cubilia ac quisque montes, senectus sem conubia torquent cras quisque. Gravida vestibulum facilisi proin tristique eu laoreet orci, leo sociis mollis.</p>
+                <p>Ad dictum fringilla purus maecenas malesuada, est sagittis vulputate consequat nonummy quam etiam consectetuer, integer donec rhoncus ullamcorper, vivamus aenean condimentum. Congue diam vel vitae rhoncus, mattis quis pharetra tincidunt, maecenas dignissim donec litora.</p>
+<p>Taciti dictum aliquam nulla dictumst, porta suspendisse quis eget magna, in aliquam penatibus donec, nam risus ullamcorper primis rhoncus, nisl senectus. Parturient at arcu libero non morbi pellentesque.</p>
             </div>
         </div>
     </div>
@@ -639,8 +672,8 @@
                 <h2 class="demo-title">.section.lightskyblue</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Porta ipsum consequat pharetra volutpat turpis blandit, magna dui laoreet porta curabitur nec, dapibus imperdiet habitant placerat erat, sociis urna. Cursus cubilia aptent suspendisse, nisi potenti vehicula tortor eget aenean mollis, imperdiet erat class ultrices augue. Non mattis arcu.</p>
-<p>Dictumst ullamcorper sapien hendrerit dui litora lobortis, hac cum sapien litora facilisi faucibus, fringilla ut phasellus vitae. Ipsum conubia pellentesque sociis, purus ullamcorper molestie tempor curabitur, ornare.</p>
+                <p>Nisl nisi fermentum praesent amet pellentesque consectetuer, purus sit diam auctor nam, ipsum adipiscing pretium facilisi iaculis sem. Convallis dis taciti dapibus sagittis.</p>
+<p>Libero imperdiet et ornare adipiscing rutrum ultricies euismod, metus dui mi iaculis dui malesuada quisque, malesuada viverra lectus cras neque montes a,. Nisi feugiat rhoncus blandit, imperdiet cras dui etiam fusce nulla maecenas, mattis auctor convallis in. Blandit suspendisse vel aptent class vitae pellentesque, integer inceptos lectus.</p>
             </div>
         </div>
     </div>
@@ -651,8 +684,8 @@
                 <h2 class="demo-title">.section.tall</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Torquent lobortis platea est porta sodales vehicula tempus, mus proin purus vulputate mattis, nisi eros dignissim donec praesent, dignissim hac fringilla est. Nunc egestas aenean fringilla vitae justo, orci sociosqu bibendum purus nam massa, proin nonummy placerat commodo. Leo dapibus proin iaculis massa mollis.</p>
-<p>Nisl congue fusce convallis praesent ante cum eros, volutpat arcu libero tortor magnis laoreet, lobortis egestas pulvinar volutpat vitae taciti, ornare.</p>
+                <p>Non leo magna in ornare, eros turpis et phasellus duis, nonummy ridiculus dui duis venenatis curabitur, potenti nascetur habitasse dapibus nostra,. Nonummy risus consequat luctus porttitor pharetra, hymenaeos nonummy facilisi pellentesque cursus facilisi duis, congue morbi tortor sagittis,. Vehicula tristique iaculis ipsum rhoncus, orci commodo elit non.</p>
+<p>Habitasse fames facilisis felis tellus primis lobortis, cubilia per vestibulum enim, sit ultrices dis feugiat porttitor pede semper, magnis felis. Nam bibendum cubilia nibh sociosqu hac senectus, eget aptent tellus adipiscing mi, dictum non fringilla pellentesque consectetuer. Nulla maecenas quam dapibus ac, magna parturient nec etiam porttitor, arcu.</p>
             </div>
         </div>
     </div>
@@ -761,27 +794,27 @@
                     
                     <div class="cell small-100 medium-33 align-start">
                         <p><code>.align-start</code></p>
-                        <p>Metus sociosqu rhoncus natoque curae, blandit venenatis molestie mattis tristique, feugiat risus hac accumsan sociis.</p>
+                        <p>Tortor faucibus tempor bibendum magnis velit cum, ante nisl eleifend vulputate, nulla urna tempor nisl.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 align-end">
                         <p><code>.align-end</code></p>
-                        <p>Ut vulputate id non tempor bibendum lorem, nibh curae interdum netus pellentesque aptent ut, imperdiet.</p>
+                        <p>Blandit varius ipsum malesuada viverra placerat, vivamus ante cum aenean nonummy amet tempor, nisl ante.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 align-center">
                         <p><code>.align-center</code></p>
-                        <p>Erat nam varius viverra sed aliquet et, ultricies donec aliquam nostra curae magnis ultricies, at.</p>
+                        <p>Ac ligula primis quis fames justo aenean, aliquam imperdiet scelerisque penatibus class fusce justo. Lobortis.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 align-around">
                         <p><code>.align-around</code></p>
-                        <p>Accumsan sagittis phasellus sodales accumsan, id faucibus fusce proin donec, parturient dolor habitant vitae montes.</p>
+                        <p>Dolor viverra ullamcorper pellentesque ipsum adipiscing class eu, condimentum odio nunc lobortis hac, duis dignissim.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 align-between">
                         <p><code>.align-between</code></p>
-                        <p>Primis rhoncus donec pellentesque luctus pellentesque primis conubia, ornare sem arcu libero ante dolor. Leo.</p>
+                        <p>Ac dolor cubilia fermentum torquent ridiculus semper sociosqu, lacinia metus torquent placerat sit, a habitant.</p>
                     </div>
                     
                 </div>

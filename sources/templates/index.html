@@ -20,6 +20,19 @@
                     <p>Faster prototyping</p>
                 </div>
             </div>
+
+            <div>
+                <p class="text-center"><a href="{{ SITE.web_url }}/dist/Sveetoy-sass-{{ version }}.zip" class="button">Download version {{ version }} (ZIP)</a></p>
+                <p>We recommend you to use it as an imported library from your Sass compiler and avoid to include it in your Sass source files.</p>
+                <p>Once library is available with your compiler, import it in your sources:</p>
+                <div class="code-container">
+                    <p>@import "settings";</p>
+                    <p>@import "foundation";</p>
+                    <p>@import "sveetoy";</p>
+                </div>
+                <p>You may notice that Foundation components and settings must be loaded before Sveetoy (because some components use some of its settings).</p>
+                <p>In <code>settings</code> source, you can define Sveetoy settings you want to override.</p>
+            </div>
         </div>
     </div>
 </div>

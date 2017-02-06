@@ -3,7 +3,9 @@
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title">Typography</h1>
-            <p>This components just some minor things to the Foundation typography stuff.</p>
+            <p>This component adds some minor things to the Foundation typography stuff.</p>
+
+            <p>Also there is a new rule that prevent paragraphs to have a bottom margin if they are the last child of their parent.</p>
 
             <dl>
                 <dt>Can be disabled with</dt>
@@ -18,7 +20,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Title element</h2>
-            <p>Title styles are not only anymore sticked to <code>hX</code> elements, now you can use them by the way of the <code>.title-X</code> classes on any other element to preserve semantic.</p>
+            <p>Title styles are not anymore sticked to <code>hX</code> elements, now you can use them by the way of <code>.title-X</code> classes on any other element to preserve semantic.</p>
             <div class="demo-result v-space-thin">
                 {% for count in range(1, 7) %}
                 <h{{ count }}>h{{ count }}, .title-{{ count }}</h{{ count }}>
@@ -42,13 +44,26 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Thickness</h2>
-            <p>Two more thickness are available if their corresponding value is defined. <code>$font-weight-thin</code> for thinest thickness and <code>$font-weight-bolder</code> for boldest thickness.</p>
+            <p>Two more thickness are available if their corresponding variable is defined. <code>$font-weight-thin</code> for thinest thickness and <code>$font-weight-bolder</code> for boldest thickness.</p>
             <div class="demo-result v-space-thin">
                 {% for name in ['thin', 'normal', 'strong', 'stronger'] %}
                 <p class="text-{{ name }}">.text-{{ name }}</p>
                 {% endfor %}
                 <p><b>&lt;b&gt;</b></p>
                 <p><strong>&lt;strong&gt;</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Small</h2>
+            <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior.</p>
+            <div class="demo-result v-space-thin">
+                {% for name in ['small', 'medium', 'big'] %}
+                <p><code>.{{ name }}</code> <small class="{{ name }}">{{ lipsum(n=1, html=False, min=15, max=16) }}</small></p>
+                {% endfor %}
+                <p>{{ lipsum(n=1, html=False, min=15, max=16) }}</p>
             </div>
         </div>
     </div>
