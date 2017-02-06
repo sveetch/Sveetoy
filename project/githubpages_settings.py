@@ -6,7 +6,7 @@ from project.settings import *
 
 DEBUG = False
 
-SITE_DOMAIN = 'sveetch.github.io/sveetoy'
+SITE_DOMAIN = 'sveetch.github.io/Sveetoy'
 
 # Directory where all stuff will be builded
 PUBLISH_DIR = os.path.join(PROJECT_DIR, '../docs')
