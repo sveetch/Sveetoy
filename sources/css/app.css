@@ -10080,6 +10080,19 @@ h6, .title-6 {
  *
  */
 /*
+ * Mixin to create flexbox direction property
+ *
+ * Will produce global and responsive classes like:
+ *
+ *   .direction-row{...}
+ *   .direction-small-row{...}
+ *   .direction-medium-row{...}
+ *   etc..
+ *
+ * For every direction.
+ *
+ */
+/*
  * Mixin to create "simple" cells widths
  * Mixin to simulate inline list, used as a fallback
  *
@@ -10090,54 +10103,11 @@ h6, .title-6 {
  * Flexbox
  *
  */
-/*
-    * Inline list with flexbox
-    */
-html.flexbox .flex {
-  display: flex;
-}
-
-@media only screen {
-  html.flexbox .flex-small {
-    display: flex;
-  }
-}
-
-@media only screen and (min-width: 40.063em) {
-  html.flexbox .flex-medium {
-    display: flex;
-  }
-}
-
-@media only screen and (min-width: 64em) {
-  html.flexbox .flex-large {
-    display: flex;
-  }
-}
-
-@media only screen and (min-width: 90.063em) {
-  html.flexbox .flex-xlarge {
-    display: flex;
-  }
-}
-
-@media only screen and (min-width: 120.063em) {
-  html.flexbox .flex-xxlarge {
-    display: flex;
-  }
-}
-
 html.flexbox .flex-grid {
   display: flex;
   flex-wrap: wrap;
   margin-left: 0;
   margin-right: 0;
-  /*
-            * Responsive cell sizes
-            */
-  /*
-            * Responsive margin on every contained cells
-            */
 }
 
 html.flexbox .flex-grid > .cell {
@@ -10145,9 +10115,6 @@ html.flexbox .flex-grid > .cell {
   max-width: auto;
   margin: 0;
   list-style-type: none;
-  /*
-                * Some cell contents alignments
-                */
 }
 
 html.flexbox .flex-grid > .cell > p:last-child {
@@ -10292,33 +10259,6 @@ html.flexbox .flex-grid > .cell.align-between {
   }
 }
 
-@media only screen and (min-width: 120.063em) {
-  html.flexbox .flex-grid > .xxlarge-20 {
-    flex: 1 0 20%;
-    max-width: 20%;
-  }
-  html.flexbox .flex-grid > .xxlarge-25 {
-    flex: 1 0 25%;
-    max-width: 25%;
-  }
-  html.flexbox .flex-grid > .xxlarge-33 {
-    flex: 1 0 33.3333%;
-    max-width: 33.3333%;
-  }
-  html.flexbox .flex-grid > .xxlarge-50 {
-    flex: 1 0 50%;
-    max-width: 50%;
-  }
-  html.flexbox .flex-grid > .xxlarge-75 {
-    flex: 1 0 75%;
-    max-width: 75%;
-  }
-  html.flexbox .flex-grid > .xxlarge-100 {
-    flex: 1 0 100%;
-    max-width: 100%;
-  }
-}
-
 html.flexbox .flex-grid.marged > .cell {
   margin: 0.5rem;
 }
@@ -10431,30 +10371,95 @@ html.flexbox .flex-grid.marged > .cell {
   }
 }
 
-@media only screen and (min-width: 120.063em) {
-  html.flexbox .flex-grid.marged > .xxlarge-20 {
-    flex: 1 0 calc(20% - 1rem);
-    max-width: calc(20% - 1rem);
+html.flexbox .flex-grid .direction- {
+  display: flex;
+}
+
+html.flexbox .flex-grid.direction-row {
+  flex-direction: row;
+}
+
+html.flexbox .flex-grid.direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+html.flexbox .flex-grid.direction-column {
+  flex-direction: column;
+}
+
+html.flexbox .flex-grid.direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+@media only screen {
+  html.flexbox .flex-grid .direction--small {
+    display: flex;
   }
-  html.flexbox .flex-grid.marged > .xxlarge-25 {
-    flex: 1 0 calc(25% - 1rem);
-    max-width: calc(25% - 1rem);
+  html.flexbox .flex-grid.direction-small-row {
+    flex-direction: row;
   }
-  html.flexbox .flex-grid.marged > .xxlarge-33 {
-    flex: 1 0 calc(33.3333% - 1rem);
-    max-width: calc(33.3333% - 1rem);
+  html.flexbox .flex-grid.direction-small-row-reverse {
+    flex-direction: row-reverse;
   }
-  html.flexbox .flex-grid.marged > .xxlarge-50 {
-    flex: 1 0 calc(50% - 1rem);
-    max-width: calc(50% - 1rem);
+  html.flexbox .flex-grid.direction-small-column {
+    flex-direction: column;
   }
-  html.flexbox .flex-grid.marged > .xxlarge-75 {
-    flex: 1 0 calc(75% - 1rem);
-    max-width: calc(75% - 1rem);
+  html.flexbox .flex-grid.direction-small-column-reverse {
+    flex-direction: column-reverse;
   }
-  html.flexbox .flex-grid.marged > .xxlarge-100 {
-    flex: 1 0 calc(100% - 1rem);
-    max-width: calc(100% - 1rem);
+}
+
+@media only screen and (min-width: 40.063em) {
+  html.flexbox .flex-grid .direction--medium {
+    display: flex;
+  }
+  html.flexbox .flex-grid.direction-medium-row {
+    flex-direction: row;
+  }
+  html.flexbox .flex-grid.direction-medium-row-reverse {
+    flex-direction: row-reverse;
+  }
+  html.flexbox .flex-grid.direction-medium-column {
+    flex-direction: column;
+  }
+  html.flexbox .flex-grid.direction-medium-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  html.flexbox .flex-grid .direction--large {
+    display: flex;
+  }
+  html.flexbox .flex-grid.direction-large-row {
+    flex-direction: row;
+  }
+  html.flexbox .flex-grid.direction-large-row-reverse {
+    flex-direction: row-reverse;
+  }
+  html.flexbox .flex-grid.direction-large-column {
+    flex-direction: column;
+  }
+  html.flexbox .flex-grid.direction-large-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  html.flexbox .flex-grid .direction--xlarge {
+    display: flex;
+  }
+  html.flexbox .flex-grid.direction-xlarge-row {
+    flex-direction: row;
+  }
+  html.flexbox .flex-grid.direction-xlarge-row-reverse {
+    flex-direction: row-reverse;
+  }
+  html.flexbox .flex-grid.direction-xlarge-column {
+    flex-direction: column;
+  }
+  html.flexbox .flex-grid.direction-xlarge-column-reverse {
+    flex-direction: column-reverse;
   }
 }
 

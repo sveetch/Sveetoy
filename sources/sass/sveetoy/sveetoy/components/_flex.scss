@@ -1,32 +1,22 @@
 @import "../mixins/flexbox";
 
+// Default available percentage sizes
+$flex-grid-sizes: 25 33.3333 50 75 100 !default;
+$flex-grid-gutter: 0.5rem !default;
+
+$include-sveetoy-flex: $include-sveetoy-classes !default;
+
 /*
  *
  * Flexbox
  *
  */
 @if $include-sveetoy-flex {
-    /*
-    * Inline list with flexbox
-    */
-    // For browser with flexbox capability (detected from modernizr)
+    // For browser with flexbox capability (from a modernizr classname)
     html.flexbox {
-        @include sveetoy-flex-display;
-        @media #{$small-up} {
-            @include sveetoy-flex-display($viewport: small);
-        }
-        @media #{$medium-up} {
-            @include sveetoy-flex-display($viewport: medium);
-        }
-        @media #{$large-up} {
-            @include sveetoy-flex-display($viewport: large);
-        }
-        @media #{$xlarge-up} {
-            @include sveetoy-flex-display($viewport: xlarge);
-        }
-        @media #{$xxlarge-up} {
-            @include sveetoy-flex-display($viewport: xxlarge);
-        }
+        ///
+        /// Common flexbox grid
+        ///
         .flex-grid {
             display: flex;
             flex-wrap: wrap;
@@ -35,8 +25,9 @@
             margin-right: 0;
 
             & > .cell {
-                // Default is to have the same width and height for all items using
-                // the largest value from all items (default flex display behavior)
+                // Default is to have the same width and height for all items
+                // using the largest value from all items (default flex display
+                // behavior)
                 flex: 1 0 auto;
                 max-width: auto;
                 margin: 0;
@@ -47,9 +38,9 @@
                     margin: 0;
                 }
 
-                /*
-                * Some cell contents alignments
-                */
+                ///
+                /// Some cell contents alignments
+                ///
                 // All container elements are vertically stacked on center
                 &.align-start{
                     display: flex;
@@ -82,47 +73,37 @@
                 }
             }
 
-            /*
-            * Responsive cell sizes
-            */
-            @media #{$small-up} {
-                @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: small);
-            }
-            @media #{$medium-up} {
-                @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: medium);
-            }
-            @media #{$large-up} {
-                @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: large);
-            }
-            @media #{$xlarge-up} {
-                @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: xlarge);
-            }
-            @media #{$xxlarge-up} {
-                @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: xxlarge);
+            ///
+            /// Responsive cell sizes
+            ///
+            @each $name, $query in $sveetoy-breakpoints{
+                @media #{$query} {
+                    @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: $name);
+                }
             }
 
-            /*
-            * Responsive margin on every contained cells
-            */
+            ///
+            /// Responsive margin on every contained cells
+            ///
             &.marged{
                 &> .cell{
                     margin: $flex-grid-gutter;
                 }
 
-                @media #{$small-up} {
-                    @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: small, $gutter: $flex-grid-gutter);
+                @each $name, $query in $sveetoy-breakpoints{
+                    @media #{$query} {
+                        @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: $name, $gutter: $flex-grid-gutter);
+                    }
                 }
-                @media #{$medium-up} {
-                    @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: medium, $gutter: $flex-grid-gutter);
-                }
-                @media #{$large-up} {
-                    @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: large, $gutter: $flex-grid-gutter);
-                }
-                @media #{$xlarge-up} {
-                    @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: xlarge, $gutter: $flex-grid-gutter);
-                }
-                @media #{$xxlarge-up} {
-                    @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: xxlarge, $gutter: $flex-grid-gutter);
+            }
+
+            ///
+            /// Responsive directions
+            ///
+            @include sveetoy-flex-direction;
+            @each $name, $query in $sveetoy-breakpoints{
+                @media #{$query} {
+                    @include sveetoy-flex-direction($viewport: $name);
                 }
             }
         }

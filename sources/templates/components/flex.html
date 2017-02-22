@@ -69,4 +69,60 @@
         </div>
     </div>
 
+    <div class="row larger v-space-tiny">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Container items direction</h2>
+
+            {% for name in ['row', 'row-reverse', 'column', 'column-reverse'] %}
+            <h3 class="demo-title">.direction-{{ name }}</h3>
+            <div class="demo-result">
+                <div class="flex-grid flex-demo direction-{{ name }}">
+                    {% for count in range(1, 4) %}
+                    <div class="cell small-33 text-center">
+                        {{ count }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+
+            <h3 class="demo-title">Using responsive classes</h3>
+
+            <p>Every direction classname is available for each Foundation media query names, you can combine them to change direction behavior between media queries, like the following sample with <code>.direction-column.direction-large-row</code> which use column direction from small to medium then switch to row direction from large to infinite.</p>
+            <div class="demo-result">
+                <div class="flex-grid flex-demo direction-column direction-large-row">
+                    {% for count in range(1, 4) %}
+                    <div class="cell small-33 text-center">
+                        {{ count }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="v-space-thin">
+                <p>Classnames are builded using enabled media queries from <code>$sveetoy-breakpoints</code>.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            {% for name in ['row', 'row reverse', 'column', 'column reverse'] %}
+                            <th>{{ name|capitalize }}</th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for breakpoint in ['', 'small', 'medium', 'large', 'xlarge', 'xxlarge'] %}
+                        <tr>
+                            <th>{% if breakpoint %}{{ breakpoint|capitalize }}{% endif %}</th>
+                            {% for name in ['row', 'row-reverse', 'column', 'column-reverse'] %}
+                                <td>.direction-{{ breakpoint }}{% if breakpoint %}-{% endif %}{{ name }}</td>
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
 </div>

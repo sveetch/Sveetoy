@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Version 0.5.2 - Unreleased
+--------------------------
+
+* Added flexbox direction classes, close #2;
+* Use ``$sveetoy-breakpoints`` to build every flexbox media query classnames;
 
 Version 0.5.1 - 2017/02/06
 --------------------------

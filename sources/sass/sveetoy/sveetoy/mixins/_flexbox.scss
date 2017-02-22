@@ -3,14 +3,6 @@
  * Flexbox
  */
 
-// Default available percentage sizes
-// Sizes like '18' is when you want a '20%' container but with '1%' horizontal
-// marging (ex: 1% + 18% + 1% = 20%)
-$flex-grid-sizes: 25 33.3333 50 75 100 !default;
-$flex-grid-gutter: 0.5rem !default;
-
-$include-sveetoy-flex: $include-sveetoy-classes !default;
-
 /*
  * Create flex cell width rules
  */
@@ -67,6 +59,38 @@ $include-sveetoy-flex: $include-sveetoy-classes !default;
     $suffix: if($viewport, "-#{$viewport}", "");
     .flex#{$suffix} {
         display: flex;
+    }
+}
+
+/*
+ * Mixin to create flexbox direction property
+ *
+ * Will produce global and responsive classes like:
+ *
+ *   .direction-row{...}
+ *   .direction-small-row{...}
+ *   .direction-medium-row{...}
+ *   etc..
+ *
+ * For every direction.
+ *
+ */
+@mixin sveetoy-flex-direction($viewport: null) {
+    $suffix: if($viewport, "-#{$viewport}", "");
+    .direction-#{$suffix} {
+        display: flex;
+    }
+    &.direction#{$suffix}-row{
+        flex-direction: row;
+    }
+    &.direction#{$suffix}-row-reverse{
+        flex-direction: row-reverse;
+    }
+    &.direction#{$suffix}-column{
+        flex-direction: column;
+    }
+    &.direction#{$suffix}-column-reverse{
+        flex-direction: column-reverse;
     }
 }
 

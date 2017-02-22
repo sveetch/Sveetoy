@@ -59,7 +59,7 @@ $sveetoy-color-text-palette: () !default;
         }
     }
 
-    // Link but in buttons
+    // Link but not buttons
     @if $link-color {
         a:not(.button){
             color: if($link-color, $link-color, inherit);
