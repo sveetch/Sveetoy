@@ -9236,11 +9236,6 @@ img.expanded {
 /*
  * Button enhancements
  */
-button,
-.button {
-  /* TODO: Issue #8 */
-}
-
 button.unmarged,
 .button.unmarged {
   margin: 0;
@@ -9378,11 +9373,11 @@ p:last-child {
   font-weight: 400 !important;
 }
 
-b, .text-strong {
+b, .text-bold {
   font-weight: 700 !important;
 }
 
-strong, .text-stronger {
+strong, .text-strong {
   font-weight: 900;
 }
 

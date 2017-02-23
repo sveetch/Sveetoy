@@ -44,13 +44,11 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Thickness</h2>
-            <p>Two more thickness are available if their corresponding variable is defined. <code>$font-weight-thin</code> for thinest thickness and <code>$font-weight-bolder</code> for boldest thickness.</p>
+            <p>Two more thickness are available if their corresponding variable is defined. <code>$font-weight-thin</code> for thinest thickness and <code>$font-weight-strong</code> for boldest thickness.</p>
             <div class="demo-result v-space-thin">
-                {% for name in ['thin', 'normal', 'strong', 'stronger'] %}
-                <p class="text-{{ name }}">.text-{{ name }}</p>
+                {% for name in ['thin', 'normal', 'bold', 'strong'] %}
+                <p class="text-{{ name }}">{% if name == 'bold' %}<b>&lt;b&gt;</b>, {% elif name == 'strong' %}<strong>&lt;strong&gt;</strong>, {% endif %}.text-{{ name }}</p>
                 {% endfor %}
-                <p><b>&lt;b&gt;</b></p>
-                <p><strong>&lt;strong&gt;</strong></p>
             </div>
         </div>
     </div>

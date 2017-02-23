@@ -53,9 +53,8 @@ $sveetoy-button-modests: (
         }
 
         ///
-        /// Various color variants
+        /// Various color variants from color schemes
         ///
-        /* TODO: Issue #8 */
         @each $name, $scheme in $sveetoy-button-colors-schemes{
             &.#{$name}{
                 @include sveetoy-button-colors($scheme);
