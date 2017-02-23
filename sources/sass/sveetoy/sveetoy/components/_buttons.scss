@@ -3,6 +3,14 @@
  */
 $include-sveetoy-buttons: $include-sveetoy-classes !default;
 
+// Depends from foundation variables, default should be empty or fixed value
+$sveetoy-button-modests: (
+    tiny: $button-tny / 2,
+    small: $button-sml / 2,
+    medium: $button-med / 2,
+    large: $button-lrg / 2,
+) !default;
+
 @if $include-sveetoy-buttons {
     button,
     .button{
@@ -31,26 +39,14 @@ $include-sveetoy-buttons: $include-sveetoy-classes !default;
         ///
         /// Modest padding
         ///
-        /* TODO: Issue #9 */
         &.modest{
-            $padding: $button-med / 2;
-            padding: $padding ($padding * 2) ($padding + rem-calc(1)) ($padding * 2);
+            $default-padding: map-get($sveetoy-button-modests, "medium");
+            padding: $default-padding ($default-padding * 2) $default-padding ($default-padding * 2);
 
-            &.tiny{
-                $padding: $button-tny / 2;
-                padding: $padding ($padding * 2) ($padding + rem-calc(1)) ($padding * 2);
-            }
-            &.small{
-                $padding: $button-sml / 2;
-                padding: $padding ($padding * 2) ($padding + rem-calc(1)) ($padding * 2);
-            }
-            &.medium{
-                $padding: $button-med / 2;
-                padding: $padding ($padding * 2) ($padding + rem-calc(1)) ($padding * 2);
-            }
-            &.large{
-                $padding: $button-lrg / 2;
-                padding: $padding ($padding * 2) ($padding + rem-calc(1)) ($padding * 2);
+            @each $name, $padding in $sveetoy-button-modests{
+                &.#{$name}{
+                    padding: $padding ($padding * 2) $padding ($padding * 2);
+                }
             }
         }
 

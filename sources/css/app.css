@@ -9238,7 +9238,6 @@ img.expanded {
  */
 button,
 .button {
-  /* TODO: Issue #9 */
   /* TODO: Issue #8 */
 }
 
@@ -9260,27 +9259,27 @@ button.full,
 
 button.modest,
 .button.modest {
-  padding: 0.5rem 1rem 0.5625rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 button.modest.tiny,
 .button.modest.tiny {
-  padding: 0.3125rem 0.625rem 0.375rem 0.625rem;
+  padding: 0.3125rem 0.625rem 0.3125rem 0.625rem;
 }
 
 button.modest.small,
 .button.modest.small {
-  padding: 0.4375rem 0.875rem 0.5rem 0.875rem;
+  padding: 0.4375rem 0.875rem 0.4375rem 0.875rem;
 }
 
 button.modest.medium,
 .button.modest.medium {
-  padding: 0.5rem 1rem 0.5625rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 button.modest.large,
 .button.modest.large {
-  padding: 0.5625rem 1.125rem 0.625rem 1.125rem;
+  padding: 0.5625rem 1.125rem 0.5625rem 1.125rem;
 }
 
 div button:last-child, div .button:last-child, p button:last-child, p .button:last-child, dd button:last-child, dd .button:last-child, li button:last-child, li .button:last-child {
