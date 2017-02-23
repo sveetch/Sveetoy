@@ -9282,6 +9282,34 @@ button.modest.large,
   padding: 0.5625rem 1.125rem 0.5625rem 1.125rem;
 }
 
+button.white,
+.button.white {
+  color: #404040;
+  background-color: #ffffff;
+  border-color: #404040;
+}
+
+button.black,
+.button.black {
+  color: white;
+  background-color: #000000;
+  border-color: white;
+}
+
+button.lightskyblue,
+.button.lightskyblue {
+  color: #00688b;
+  background-color: #87cefa;
+  border-color: #00688b;
+}
+
+button.snow1,
+.button.snow1 {
+  color: #404040;
+  background-color: #fffafa;
+  border-color: #404040;
+}
+
 div button:last-child, div .button:last-child, p button:last-child, p .button:last-child, dd button:last-child, dd .button:last-child, li button:last-child, li .button:last-child {
   margin-bottom: 0;
 }
@@ -9338,6 +9366,7 @@ p:last-child {
   text-decoration: underline !important;
 }
 
+/* TODO: Issue #12 */
 /*
     * Various font weights
     */

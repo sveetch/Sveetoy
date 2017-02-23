@@ -71,3 +71,25 @@ $sveetoy-color-text-palette: () !default;
         }
     }
 }
+
+///
+/// Apply color scheme for a button
+///
+/// Same behavior than 'sveetoy-scheme-colors' but don't care about link color.
+///
+/// Also apply a border color, it's value come from 'border-color' option is
+/// given, else use the value from 'font-color' option.
+///
+@mixin sveetoy-button-colors($scheme) {
+    $background-color: map-get($scheme, "background-color");
+
+    $font-item: map-get($scheme, "font-color");
+    $font-color: if($font-item, $font-item, invert($background-color));
+
+    $border-item: map-get($scheme, "font-color");
+    $border-color: if($border-item, $border-item, $font-color);
+
+    color: $font-color;
+    background-color: $background-color;
+    border-color: $border-color;
+}

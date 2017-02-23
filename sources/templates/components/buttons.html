@@ -66,6 +66,22 @@
 
     <div class="row larger">
         <div class="small-12 columns">
+            <h2 class="demo-title">Colors</h2>
+            <p>Button color features are builded from <code>$sveetoy-button-colors-schemes</code> that is on the same format than <code>$sveetoy-colors-schemes</code> except additional (and optionnal) <code>border-color</code> option.</p>
+            <div class="demo-result v-space-thin">
+                <div class="row">
+                    {% for name in ['', 'white', 'black', 'snow1', 'lightskyblue'] %}
+                    <div class="large-4 columns{% if loop.last %} end{% endif %}">
+                        <a href="" class="button{% if name %} {{ name|replace(".", " ") }}{% endif %}">.button{% if name %}.{{ name }}{% endif %}</a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
             <h2 class="demo-title">Dropdown overflow</h2>
             <p>Add <code>.overflow</code> feature to <code>f-dropdown</code> so the dropdown is limited to a fixed size with automatic scrollbar.</p>
             <div class="demo-result v-space-thin">

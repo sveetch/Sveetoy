@@ -8,6 +8,7 @@ Version 0.5.2 - Unreleased
 * Added flexbox direction classes, close #2;
 * Use ``$sveetoy-breakpoints`` to build every flexbox media query classnames;
 
+* Build button color features from variable ``$sveetoy-button-colors-schemes``, close #8;
 * Build button ``.modest`` features from variable ``$sveetoy-button-modests``, close #9;
 
 Version 0.5.1 - 2017/02/06
