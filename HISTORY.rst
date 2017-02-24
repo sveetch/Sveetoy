@@ -8,9 +8,10 @@ Version 0.5.2 - Unreleased
 * Added flexbox direction classes, close #2;
 * Use ``$sveetoy-breakpoints`` to build every flexbox media query classnames;
 
+* Dropped button feature ``f-dropdown.overflow``, close #7;
 * Build button color features from variable ``$sveetoy-button-colors-schemes``, close #8;
 * Build button ``.modest`` features from variable ``$sveetoy-button-modests``, close #9;
-* Rename text thickness features for better consistency, issue #12 :
+* Rename text thickness features for better consistency, close #12 :
 
   * ``.text-strong`` becomes ``.text-bold``;
   * ``.text-stronger`` becomes ``.text-strong``;
