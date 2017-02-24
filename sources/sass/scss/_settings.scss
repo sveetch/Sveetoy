@@ -152,6 +152,49 @@ $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 // ZZ. Sveetoys Various
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
+
+// Defines default space sizes with their breakpoint values
+$sveetoy-space-thin: (
+    small: 0.5rem,
+    medium: 0.75rem,
+    large: 1rem,
+    xlarge: 1.5rem,
+) !default;
+$sveetoy-space-tiny: (
+    small: 1rem,
+    medium: 1.25rem,
+    large: 2rem,
+    xlarge: 2.5rem,
+) !default;
+$sveetoy-space-normal: (
+    small: 1.5rem,
+    medium: 2rem,
+    large: 3rem,
+    xlarge: 4rem,
+) !default;
+$sveetoy-space-wide: (
+    small: 2rem,
+    medium: 3rem,
+    large: 4rem,
+    xlarge: 5rem,
+) !default;
+$sveetoy-space-huge: (
+    small: 3rem,
+    medium: 4.5rem,
+    large: 6rem,
+    xlarge: 8rem,
+) !default;
+
+// Space scheme
+$sveetoy-spaces: (
+    thin: $sveetoy-space-thin,
+    tiny: $sveetoy-space-tiny,
+    normal: $sveetoy-space-normal,
+    wide: $sveetoy-space-wide,
+    huge: $sveetoy-space-huge,
+) !default;
+
+
 // Common available breakpoints taken from Foundation breakpoints
 $sveetoy-breakpoints: (
     small: $small-up,

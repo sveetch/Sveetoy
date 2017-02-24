@@ -5,45 +5,14 @@
 $include-sveetoy-spaces: true !default;
 
 // Defines default space sizes with their breakpoint values
-$sveetoy-space-thin: (
-    small: 0.5rem,
-    medium: 0.75rem,
-    large: 1rem,
-    xlarge: 1.5rem,
-) !default;
-$sveetoy-space-tiny: (
-    small: 1rem,
-    medium: 1.25rem,
-    large: 2rem,
-    xlarge: 2.5rem,
-) !default;
-$sveetoy-space-normal: (
-    small: 1.5rem,
-    medium: 2rem,
-    large: 3rem,
-    xlarge: 4rem,
-) !default;
-$sveetoy-space-wide: (
-    small: 2rem,
-    medium: 3rem,
-    large: 4rem,
-    xlarge: 5rem,
-) !default;
-$sveetoy-space-huge: (
-    small: 3rem,
-    medium: 4.5rem,
-    large: 6rem,
-    xlarge: 8rem,
-) !default;
+$sveetoy-space-thin: () !default;
+$sveetoy-space-tiny: () !default;
+$sveetoy-space-normal: () !default;
+$sveetoy-space-wide: () !default;
+$sveetoy-space-huge: () !default;
 
 // New thickness names to apply: thin, tiny, normal, wide, huge
-$sveetoy-spaces: (
-    thin: $sveetoy-space-thin,
-    tiny: $sveetoy-space-tiny,
-    normal: $sveetoy-space-normal,
-    wide: $sveetoy-space-wide,
-    huge: $sveetoy-space-huge,
-) !default;
+$sveetoy-spaces: () !default;
 
 // Map of breakpoints, usually mapped on those Foundation ones
 $sveetoy-breakpoints: () !default;
@@ -86,28 +55,30 @@ $sveetoy-breakpoints: () !default;
         $space-end: right;
     }
 
-    @if map-get($definitions, $default) == null {
-        @error "Given space definition must contain at least the '#{$default}' key";
-    }
+    @if $definitions != null {
+        @if map-get($definitions, $default) == null {
+            @error "Given space definition must contain at least the '#{$default}' key";
+        }
 
-    // Default size comes from 'small'
-    @if index($sides, "start"){
-        #{$prop}-#{$space-start}: map-get($definitions, $default);
-    }
-    @if index($sides, "end"){
-        #{$prop}-#{$space-end}: map-get($definitions, $default);
-    }
+        // Default size comes from 'small'
+        @if index($sides, "start"){
+            #{$prop}-#{$space-start}: map-get($definitions, $default);
+        }
+        @if index($sides, "end"){
+            #{$prop}-#{$space-end}: map-get($definitions, $default);
+        }
 
-    // Breakpoints
-    @each $name, $size in $definitions {
-        // Ignore default size, also dont try to use an unknowed breakpoint
-        @if $name != $default and map-get($sveetoy-breakpoints, $name){
-            @media #{map-get($sveetoy-breakpoints, $name)} {
-                @if index($sides, "start"){
-                    #{$prop}-#{$space-start}: $size;
-                }
-                @if index($sides, "end"){
-                    #{$prop}-#{$space-end}: $size;
+        // Breakpoints
+        @each $name, $size in $definitions {
+            // Ignore default size, also dont try to use an unknowed breakpoint
+            @if $name != $default and map-get($sveetoy-breakpoints, $name){
+                @media #{map-get($sveetoy-breakpoints, $name)} {
+                    @if index($sides, "start"){
+                        #{$prop}-#{$space-start}: $size;
+                    }
+                    @if index($sides, "end"){
+                        #{$prop}-#{$space-end}: $size;
+                    }
                 }
             }
         }

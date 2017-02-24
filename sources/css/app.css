@@ -9311,11 +9311,10 @@ p:last-child {
 }
 
 /* TODO: Issue #4 */
-/*hr{
-        &.unmarged{
-            margin: 0;
-        }
-    }*/
+hr.unmarged {
+  margin: 0;
+}
+
 /*
     * Transform and decoration
     */
@@ -9346,11 +9345,6 @@ strong, .text-strong {
   font-weight: 900;
 }
 
-/*
-    * Text colors
-    *
-    * Produces some classes like '.text-black' to enforce text color
-    */
 .text-white {
   color: #ffffff !important;
 }
@@ -9379,7 +9373,6 @@ strong, .text-strong {
   color: #00688b !important;
 }
 
-/* TODO: Issue #5 */
 small.small {
   font-size: 40%;
 }

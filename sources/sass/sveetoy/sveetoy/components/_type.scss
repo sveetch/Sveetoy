@@ -23,11 +23,11 @@ $sveetoy-smalls: () !default;
 
     /* TODO: Issue #4 */
     /// Horizontal rule
-    /*hr{
+    hr{
         &.unmarged{
             margin: 0;
         }
-    }*/
+    }
 
     /*
     * Transform and decoration
@@ -59,18 +59,15 @@ $sveetoy-smalls: () !default;
         }
     }
 
-    /*
-    * Text colors
-    *
-    * Produces some classes like '.text-black' to enforce text color
-    */
+    ///
+    /// Text colors
+    ///
     @each $name, $color in $sveetoy-color-text-palette {
         &.text-#{$name} {
             color: $color !important;
         }
     }
 
-    /* TODO: Issue #5 */
     ///
     /// Various <small> modifier
     ///
