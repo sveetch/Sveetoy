@@ -56,7 +56,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Small</h2>
-            <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior.</p>
+            <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are builded from <code>$sveetoy-smalls</code>.</p>
             <div class="demo-result v-space-thin">
                 {% for name in ['small', 'medium', 'big'] %}
                 <p><code>.{{ name }}</code> <small class="{{ name }}">{{ lipsum(n=1, html=False, min=15, max=16) }}</small></p>

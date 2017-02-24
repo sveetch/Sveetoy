@@ -5,13 +5,7 @@
  */
 $include-sveetoy-buttons: $include-sveetoy-classes !default;
 
-// Depends from foundation variables, default should be empty or fixed value
-$sveetoy-button-modests: (
-    tiny: $button-tny / 2,
-    small: $button-sml / 2,
-    medium: $button-med / 2,
-    large: $button-lrg / 2,
-) !default;
+$sveetoy-button-modests: () !default;
 
 @if $include-sveetoy-buttons {
     button,

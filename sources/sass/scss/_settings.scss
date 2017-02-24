@@ -82,10 +82,10 @@ $sveetoy-color-text-palette: (
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$font-weight-thin: 100;
+$font-weight-thin: 100; // sveetoy addon
 $font-weight-normal: 400;
 $font-weight-bold: 700;
-$font-weight-strong: 900;
+$font-weight-strong: 900; // sveetoy addon
 
 //$font-family-opensans: 'Open Sans', sans-serif;
 $font-family-roboto: 'Roboto', sans-serif;
@@ -152,20 +152,33 @@ $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 // ZZ. Sveetoys Various
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
+// Common available breakpoints taken from Foundation breakpoints
 $sveetoy-breakpoints: (
     small: $small-up,
     medium: $medium-up,
     large: $large-up,
     xlarge: $xlarge-up,
-) !default;
+);
 
-/*
-// Some font weight in addition of Foundation ones
-$font-weight-thin: null !default;
-$font-weight-bolder: null !default;
+// Define button variables using default Foundation values
+$button-tny: rem-calc(10);
+$button-sml: rem-calc(14);
+$button-med: rem-calc(16);
+$button-lrg: rem-calc(18);
+// Use button variables for .modest feature
+$sveetoy-button-modests: (
+    tiny: $button-tny / 2,
+    small: $button-sml / 2,
+    medium: $button-med / 2,
+    large: $button-lrg / 2,
+);
 
-// Text color palette
-$sveetoy-color-text-palette: () !default;
-*/
+// <small/> sizes
+$sveetoy-smalls: (
+    small: 40%,
+    big: 60%,
+    large: 80%,
+);
 
+// Fleg grid cell sizes
 $flex-grid-sizes: 20 25 33.3333 50 75 100;

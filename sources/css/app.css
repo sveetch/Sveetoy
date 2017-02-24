@@ -1,12 +1,4 @@
 /*
-// Some font weight in addition of Foundation ones
-$font-weight-thin: null !default;
-$font-weight-bolder: null !default;
-
-// Text color palette
-$sveetoy-color-text-palette: () !default;
-*/
-/*
  * Full Foundation components import for development process
  */
 meta.foundation-version {
@@ -9335,7 +9327,6 @@ p:last-child {
   text-decoration: underline !important;
 }
 
-/* TODO: Issue #12 */
 /*
     * Various font weights
     */
@@ -9393,11 +9384,11 @@ small.small {
   font-size: 40%;
 }
 
-small.medium {
+small.big {
   font-size: 60%;
 }
 
-small.big {
+small.large {
   font-size: 80%;
 }
 

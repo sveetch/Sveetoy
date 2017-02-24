@@ -11,6 +11,8 @@ $include-sveetoy-typography: $include-sveetoy-classes !default;
 $font-weight-thin: null !default;
 $font-weight-strong: null !default;
 
+$sveetoy-smalls: () !default;
+
 @if $include-sveetoy-typography {
     // No trailing margin on last paragraph in their container
     p {
@@ -37,7 +39,6 @@ $font-weight-strong: null !default;
         text-decoration: underline !important;
     }
 
-    /* TODO: Issue #12 */
     /*
     * Various font weights
     */
@@ -74,14 +75,10 @@ $font-weight-strong: null !default;
     /// Various <small> modifier
     ///
     small{
-        &.small{
-            font-size: 40%;
-        }
-        &.medium{
-            font-size: 60%; //equivalent to default <small> behavior
-        }
-        &.big{
-            font-size: 80%;
+        @each $name, $size in $sveetoy-smalls {
+            &.#{$name} {
+                font-size: $size;
+            }
         }
     }
 
