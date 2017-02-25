@@ -226,16 +226,16 @@ $sveetoy-smalls: (
 // .underline features
 $sveetoy-underline-thickness: (
     thin: (
-        height: rem-calc(1px),
-        border: rem-calc(1px) solid $black,
+        size: rem-calc(1px),
+        style: solid,
     ),
     normal: (
-        height: rem-calc(2px),
-        border: rem-calc(3px) solid $black,
+        size: rem-calc(3px),
+        style: solid,
     ),
     bold: (
-        height: rem-calc(4px),
-        border: rem-calc(5px) solid $black,
+        size: rem-calc(5px),
+        style: solid,
     ),
 );
 $sveetoy-underline-widths: (
@@ -252,6 +252,12 @@ $sveetoy-underline-distances: (
     sticked: 0,
 );
 $sveetoy-underline-colors: $sveetoy-color-text-palette;
+$sveetoy-underline-default-color: $black;
+
+$sveetoy-hr-thickness: $sveetoy-underline-thickness;
+$sveetoy-hr-distances: $sveetoy-underline-distances;
+$sveetoy-hr-colors: $sveetoy-underline-colors;
+$sveetoy-hr-default-color: $sveetoy-underline-default-color;
 
 // Fleg grid cell sizes
 $flex-grid-sizes: 20 25 33.3333 50 75 100;

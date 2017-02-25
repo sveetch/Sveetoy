@@ -9310,11 +9310,6 @@ p:last-child {
   margin-bottom: 0;
 }
 
-/* TODO: Issue #4 */
-hr.unmarged {
-  margin: 0;
-}
-
 /*
     * Transform and decoration
     */
@@ -9446,11 +9441,11 @@ h6, .title-6 {
   content: "";
   display: block;
   width: 40%;
-  height: 0.125rem;
   margin-top: 1rem;
   margin-left: 0;
   margin-right: 0;
-  border-bottom: 0.1875rem solid #000000;
+  border: solid #000000;
+  border-width: 0 0 0.1875rem;
 }
 
 .underline.text-center:after {
@@ -9459,18 +9454,18 @@ h6, .title-6 {
 }
 
 .underline.thin:after {
-  height: 0.0625rem;
-  border-bottom: 0.0625rem solid #000000;
+  border: solid #000000;
+  border-width: 0 0 0.0625rem;
 }
 
 .underline.normal:after {
-  height: 0.125rem;
-  border-bottom: 0.1875rem solid #000000;
+  border: solid #000000;
+  border-width: 0 0 0.1875rem;
 }
 
 .underline.bold:after {
-  height: 0.25rem;
-  border-bottom: 0.3125rem solid #000000;
+  border: solid #000000;
+  border-width: 0 0 0.3125rem;
 }
 
 .underline.tiny:after {
@@ -9566,6 +9561,73 @@ h6, .title-6 {
 }
 
 .underline.deepskyblue4:after {
+  border-color: #00688b;
+}
+
+hr {
+  border: solid #000000;
+  border-width: 0.1875rem 0 0;
+  clear: both;
+  height: 0;
+  margin: 1rem 0;
+}
+
+hr.thin {
+  border: solid #000000;
+  border-width: 0.0625rem 0 0;
+}
+
+hr.normal {
+  border: solid #000000;
+  border-width: 0.1875rem 0 0;
+}
+
+hr.bold {
+  border: solid #000000;
+  border-width: 0.3125rem 0 0;
+}
+
+hr.far {
+  margin: 2rem 0;
+}
+
+hr.near {
+  margin: 0.5rem 0;
+}
+
+hr.normal {
+  margin: 1rem 0;
+}
+
+hr.sticked {
+  margin: 0;
+}
+
+hr.white {
+  border-color: #ffffff;
+}
+
+hr.black {
+  border-color: #000000;
+}
+
+hr.gray25 {
+  border-color: #404040;
+}
+
+hr.gray82 {
+  border-color: #d0d0d0;
+}
+
+hr.gray88 {
+  border-color: #e0e0e0;
+}
+
+hr.lightskyblue {
+  border-color: #87cefa;
+}
+
+hr.deepskyblue4 {
   border-color: #00688b;
 }
 

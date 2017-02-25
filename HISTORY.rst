@@ -8,6 +8,7 @@ Version 0.5.2 - Unreleased
 * Added flexbox direction classes, close #2;
 * Use ``$sveetoy-breakpoints`` to build every flexbox media query classnames;
 
+* Build ``<hr>`` features from schemes, close #4;
 * Build ``<small>`` element size features from ``$sveetoy-smalls``, close #5;
 * Build ``.underline`` features from schemes, close #6;
 * Dropped button feature ``f-dropdown.overflow``, close #7;
