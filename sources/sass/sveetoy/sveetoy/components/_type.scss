@@ -13,6 +13,11 @@ $font-weight-strong: null !default;
 
 $sveetoy-smalls: () !default;
 
+$sveetoy-underline-thickness: () !default;
+$sveetoy-underline-distances: () !default;
+$sveetoy-underline-widths: () !default;
+$sveetoy-underline-colors: () !default;
+
 @if $include-sveetoy-typography {
     // No trailing margin on last paragraph in their container
     p {
@@ -114,16 +119,33 @@ $sveetoy-smalls: () !default;
         h6, .title-6 { font-size: $h6-font-size; }
     }
 
-    // Underlined element
+    ///
+    /// Underlined element
+    ///
     .underline{
+        @if map-get($sveetoy-underline-thickness, 'normal') == null {
+            @error "$sveetoy-underline-thickness must contain at least the 'normal' key";
+        }
+        @if map-get($sveetoy-underline-widths, 'normal') == null {
+            @error "$sveetoy-underline-widths must contain at least the 'normal' key";
+        }
+        @if map-get($sveetoy-underline-distances, 'normal') == null {
+            @error "$sveetoy-underline-distances must contain at least the 'normal' key";
+        }
         // Base
         &:after{
+            $thickness: map-get($sveetoy-underline-thickness, 'normal');
+            $width: map-get($sveetoy-underline-widths, 'normal');
+            $distance: map-get($sveetoy-underline-distances, 'normal');
+
             content:"";
             display: block;
-            width: 40%;
-            height: rem-calc(2px);
-            margin: 1rem 0;
-            border-bottom: rem-calc(3px) solid $black;
+            width: $width;
+            height: map-get($thickness, 'height');
+            margin-top: $distance;
+            margin-left: 0;
+            margin-right: 0;
+            border-bottom: map-get($thickness, 'border');
         }
 
         // On centered text
@@ -134,81 +156,44 @@ $sveetoy-smalls: () !default;
             }
         }
 
-        // Border weight
-        &.thin{
-            &:after{
-                height: rem-calc(1px);
-                border-bottom: rem-calc(1px) solid $black;
-            }
-        }
-        &.bold{
-            &:after{
-                height: rem-calc(4px);
-                border-bottom: rem-calc(5px) solid $black;
+        // Border thickness
+        @each $name, $definitions in $sveetoy-underline-thickness {
+            &.#{$name}:after {
+                height: map-get($definitions, 'height');
+                border-bottom: map-get($definitions, 'border');
             }
         }
 
         // Border width size
-        &.tiny{
-            &:after{
-                width: 5%;
-            }
-        }
-        &.short{
-            &:after{
-                width: 15%;
-            }
-        }
-        &.large{
-            &:after{
-                width: 70%;
-            }
-        }
-        &.full{
-            &:after{
-                width: 100%;
+        @each $name, $size in $sveetoy-underline-widths {
+            &.#{$name}:after {
+                width: $size;
             }
         }
 
         // Border distance from text
-        &.far{
-            &:after{
-                margin: 2rem 0;
-            }
-            &.text-center{
+        @each $name, $distance in $sveetoy-underline-distances {
+            &.#{$name}{
                 &:after{
-                    margin: 2rem auto;
+                    margin-top: $distance;
+                    margin-left: 0;
+                    margin-right: 0;
                 }
-            }
-        }
-        &.near{
-            &:after{
-                margin: 0.5rem 0;
-            }
-            &.text-center{
-                &:after{
-                    margin: 0.5rem auto;
-                }
-            }
-        }
-        &.sticked{
-            &:after{
-                margin: 0 0;
-            }
-            &.text-center{
-                &:after{
-                    margin: 0 auto;
+                &.text-center{
+                    &:after{
+                        margin-top: $distance;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
                 }
             }
         }
 
         // Border colors
-        /* TODO: Issue #6 */
-        /*&.black:after{
-            border-bottom-color: $black !important;
+        @each $name, $color in $sveetoy-underline-colors {
+            &.#{$name}:after {
+                border-color: $color;
+            }
         }
-        &.white:after{
-            border-bottom-color: $white !important;
-        }*/
     }
 }

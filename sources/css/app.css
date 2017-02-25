@@ -9442,22 +9442,14 @@ h6, .title-6 {
   }
 }
 
-.underline {
-  /* TODO: Issue #6 */
-  /*&.black:after{
-            border-bottom-color: $black !important;
-        }
-        &.white:after{
-            border-bottom-color: $white !important;
-        }*/
-}
-
 .underline:after {
   content: "";
   display: block;
   width: 40%;
   height: 0.125rem;
-  margin: 1rem 0;
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-right: 0;
   border-bottom: 0.1875rem solid #000000;
 }
 
@@ -9469,6 +9461,11 @@ h6, .title-6 {
 .underline.thin:after {
   height: 0.0625rem;
   border-bottom: 0.0625rem solid #000000;
+}
+
+.underline.normal:after {
+  height: 0.125rem;
+  border-bottom: 0.1875rem solid #000000;
 }
 
 .underline.bold:after {
@@ -9484,6 +9481,10 @@ h6, .title-6 {
   width: 15%;
 }
 
+.underline.normal:after {
+  width: 40%;
+}
+
 .underline.large:after {
   width: 70%;
 }
@@ -9493,27 +9494,79 @@ h6, .title-6 {
 }
 
 .underline.far:after {
-  margin: 2rem 0;
+  margin-top: 2rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .underline.far.text-center:after {
-  margin: 2rem auto;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .underline.near:after {
-  margin: 0.5rem 0;
+  margin-top: 0.5rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .underline.near.text-center:after {
-  margin: 0.5rem auto;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.underline.normal:after {
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.underline.normal.text-center:after {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .underline.sticked:after {
-  margin: 0 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .underline.sticked.text-center:after {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.underline.white:after {
+  border-color: #ffffff;
+}
+
+.underline.black:after {
+  border-color: #000000;
+}
+
+.underline.gray25:after {
+  border-color: #404040;
+}
+
+.underline.gray82:after {
+  border-color: #d0d0d0;
+}
+
+.underline.gray88:after {
+  border-color: #e0e0e0;
+}
+
+.underline.lightskyblue:after {
+  border-color: #87cefa;
+}
+
+.underline.deepskyblue4:after {
+  border-color: #00688b;
 }
 
 /*

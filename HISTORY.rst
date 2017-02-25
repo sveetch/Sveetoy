@@ -9,14 +9,16 @@ Version 0.5.2 - Unreleased
 * Use ``$sveetoy-breakpoints`` to build every flexbox media query classnames;
 
 * Build ``<small>`` element size features from ``$sveetoy-smalls``, close #5;
+* Build ``.underline`` features from schemes, close #6;
 * Dropped button feature ``f-dropdown.overflow``, close #7;
 * Build button color features from variable ``$sveetoy-button-colors-schemes``, close #8;
 * Build button ``.modest`` features from variable ``$sveetoy-button-modests``, close #9;
-* Rename text thickness features for better consistency, close #12 :
+* Renamed text thickness features for better consistency, close #12 :
 
   * ``.text-strong`` becomes ``.text-bold``;
   * ``.text-stronger`` becomes ``.text-strong``;
   * ``$font-weight-stronger`` becomes ``$font-weight-strong``;
+
 
 Version 0.5.1 - 2017/02/06
 --------------------------

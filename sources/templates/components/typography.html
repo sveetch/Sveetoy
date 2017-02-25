@@ -56,7 +56,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Small</h2>
-            <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are builded from <code>$sveetoy-smalls</code>.</p>
+            <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are built from <code>$sveetoy-smalls</code>.</p>
             <div class="demo-result v-space-thin">
                 {% for name in ['small', 'medium', 'big'] %}
                 <p><code>.{{ name }}</code> <small class="{{ name }}">{{ lipsum(n=1, html=False, min=15, max=16) }}</small></p>
@@ -80,9 +80,60 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Underline</h2>
-            <p>Various underline position, thickness and widths. All of them are implemented with border properties on a pseudo-element.</p>
+            <p>Various underline position, thickness and widths. All of them are implemented with border properties on a pseudo-element <code>:after</code>.</p>
+
+            <h3>Width</h3>
+            <p>Built from list <code>$sveetoy-underline-widths</code>.</p>
             <div class="flex-grid marged">
-                {% for name in ['', 'short', 'large', 'full', 'thin', 'bold', 'tiny', 'far', 'near', 'sticked', 'text-center'] %}
+                {% for name in ['short', 'tiny', 'normal', 'large', 'full'] %}
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-thin">
+                        <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <h3>Thickness</h3>
+            <p>Built from map <code>$sveetoy-underline-thickness</code>.</p>
+            <div class="flex-grid marged">
+                {% for name in ['thin', 'normal', 'bold'] %}
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-thin">
+                        <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <h3>Distance</h3>
+            <p>Built from list <code>$sveetoy-underline-distances</code>.</p>
+            <div class="flex-grid marged">
+                {% for name in ['sticked', 'near', 'normal', 'far'] %}
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-thin">
+                        <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <h3>Alignment</h3>
+            <p>No variable is used to build this single feature.</p>
+            <div class="flex-grid marged">
+                {% for name in ['normal', 'text-center'] %}
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-thin">
+                        <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <h3>Color</h3>
+            <p>Built from list <code>$sveetoy-underline-colors</code>.</p>
+            <div class="flex-grid marged">
+                {% for name in ['normal', 'white', 'black', 'gray25', 'gray82', 'gray88', 'lightskyblue', 'deepskyblue4'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-thin">
                         <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
