@@ -55,6 +55,9 @@ $lightskyblue-color-scheme: (
     font-color: $deepskyblue4,
     link-color: $white,
     background-color: $lightskyblue,
+    border-width: 1px,
+    border-style: solid,
+    border-color: $deepskyblue4,
 );
 
 $sveetoy-colors-scheme-default: $white-color-scheme;
@@ -258,6 +261,8 @@ $sveetoy-hr-thickness: $sveetoy-underline-thickness;
 $sveetoy-hr-distances: $sveetoy-underline-distances;
 $sveetoy-hr-colors: $sveetoy-underline-colors;
 $sveetoy-hr-default-color: $sveetoy-underline-default-color;
+
+$sveetoy-boxes-thickness: $sveetoy-underline-thickness;
 
 // Fleg grid cell sizes
 $flex-grid-sizes: 20 25 33.3333 50 75 100;

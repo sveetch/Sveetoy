@@ -18,9 +18,9 @@ $sveetoy-button-modests: () !default;
         }
 
         ///
-        /// Make stronger button
+        /// Make important button
         ///
-        &.strong{
+        &.important{
             font-weight: bold;
             text-transform: uppercase;
         }
@@ -51,7 +51,7 @@ $sveetoy-button-modests: () !default;
         ///
         @each $name, $scheme in $sveetoy-button-colors-schemes{
             &.#{$name}{
-                @include sveetoy-button-colors($scheme);
+                @include sveetoy-button-colors($scheme, $apply-border: true);
             }
         }
     }

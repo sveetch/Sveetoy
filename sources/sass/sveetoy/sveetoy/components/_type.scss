@@ -26,7 +26,7 @@ $sveetoy-hr-default-color: #000000;
 
 @if $include-sveetoy-typography {
     // No trailing margin on last paragraph in their container
-    p {
+    p{
         &:last-child{
             margin-bottom: 0;
         }
@@ -66,7 +66,7 @@ $sveetoy-hr-default-color: #000000;
     /// Text colors
     ///
     @each $name, $color in $sveetoy-color-text-palette {
-        &.text-#{$name} {
+        &.text-#{$name}{
             color: $color !important;
         }
     }
@@ -76,7 +76,7 @@ $sveetoy-hr-default-color: #000000;
     ///
     small{
         @each $name, $size in $sveetoy-smalls {
-            &.#{$name} {
+            &.#{$name}{
                 font-size: $size;
             }
         }
@@ -87,7 +87,7 @@ $sveetoy-hr-default-color: #000000;
     /// behaviors without troubling SEO/semantic
     ///
     h1, h2, h3, h4, h5, h6,
-    .title-1, .title-2, .title-3, .title-4, .title-5, .title-6 {
+    .title-1, .title-2, .title-3, .title-4, .title-5, .title-6{
         font-family: $header-font-family;
         font-weight: $header-font-weight;
         font-style: $header-font-style;
@@ -100,21 +100,21 @@ $sveetoy-hr-default-color: #000000;
 
     // From small size to upper
     //p, li, dd, dt{ font-size: $paragraph-font-size; }
-    h1, .title-1 { font-size: $h1-font-size - $h1-font-reduction; }
-    h2, .title-2 { font-size: $h2-font-size - $h2-font-reduction; }
-    h3, .title-3 { font-size: $h3-font-size - $h3-font-reduction; }
-    h4, .title-4 { font-size: $h4-font-size - $h4-font-reduction; }
-    h5, .title-5 { font-size: $h5-font-size - $h5-font-reduction; }
-    h6, .title-6 { font-size: $h6-font-size - $h6-font-reduction; }
+    h1, .title-1{ font-size: $h1-font-size - $h1-font-reduction; }
+    h2, .title-2{ font-size: $h2-font-size - $h2-font-reduction; }
+    h3, .title-3{ font-size: $h3-font-size - $h3-font-reduction; }
+    h4, .title-4{ font-size: $h4-font-size - $h4-font-reduction; }
+    h5, .title-5{ font-size: $h5-font-size - $h5-font-reduction; }
+    h6, .title-6{ font-size: $h6-font-size - $h6-font-reduction; }
 
     // Final size for large screen and up
     @media #{$xlarge-up} {
-        h1, .title-1 { font-size: $h1-font-size; }
-        h2, .title-2 { font-size: $h2-font-size; }
-        h3, .title-3 { font-size: $h3-font-size; }
-        h4, .title-4 { font-size: $h4-font-size; }
-        h5, .title-5 { font-size: $h5-font-size; }
-        h6, .title-6 { font-size: $h6-font-size; }
+        h1, .title-1{ font-size: $h1-font-size; }
+        h2, .title-2{ font-size: $h2-font-size; }
+        h3, .title-3{ font-size: $h3-font-size; }
+        h4, .title-4{ font-size: $h4-font-size; }
+        h5, .title-5{ font-size: $h5-font-size; }
+        h6, .title-6{ font-size: $h6-font-size; }
     }
 
     ///
@@ -156,7 +156,7 @@ $sveetoy-hr-default-color: #000000;
 
         // Border thickness
         @each $name, $definitions in $sveetoy-underline-thickness {
-            &.#{$name}:after {
+            &.#{$name}:after{
                 border: map-get($definitions, 'style') $sveetoy-underline-default-color;
                 border-width: 0 0 map-get($definitions, 'size');
             }
@@ -164,7 +164,7 @@ $sveetoy-hr-default-color: #000000;
 
         // Border width size
         @each $name, $size in $sveetoy-underline-widths {
-            &.#{$name}:after {
+            &.#{$name}:after{
                 width: $size;
             }
         }
@@ -189,7 +189,7 @@ $sveetoy-hr-default-color: #000000;
 
         // Border colors
         @each $name, $color in $sveetoy-underline-colors {
-            &.#{$name}:after {
+            &.#{$name}:after{
                 border-color: $color;
             }
         }

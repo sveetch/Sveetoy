@@ -9233,8 +9233,8 @@ button.unmarged,
   margin: 0;
 }
 
-button.strong,
-.button.strong {
+button.important,
+.button.important {
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -9288,6 +9288,8 @@ button.lightskyblue,
   color: #00688b;
   background-color: #87cefa;
   border-color: #00688b;
+  border-width: 1px;
+  border-style: solid;
 }
 
 button.snow1,
@@ -10097,6 +10099,485 @@ hr.deepskyblue4 {
 
 .section.snow1 h6, .section.snow1 .title-6 {
   color: #404040;
+}
+
+/*
+ *
+ * Boxes
+ *
+ */
+.box {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #404040;
+  background-color: #ffffff;
+  border-color: #404040;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .box {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .box {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .box {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .box {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .box {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .box {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.box > *:first-child {
+  margin-top: 0;
+}
+
+.box > *:last-child {
+  margin-bottom: 0;
+}
+
+.box.thin {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .box.thin {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .box.thin {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .box.thin {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .box.thin {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .box.thin {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .box.thin {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.box.tiny {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .box.tiny {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .box.tiny {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .box.tiny {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .box.tiny {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .box.tiny {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .box.tiny {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.box.normal {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .box.normal {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .box.normal {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .box.normal {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .box.normal {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .box.normal {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .box.normal {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.box.wide {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .box.wide {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .box.wide {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .box.wide {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .box.wide {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .box.wide {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .box.wide {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.box.huge {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .box.huge {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .box.huge {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .box.huge {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .box.huge {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .box.huge {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .box.huge {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.box.unpadded {
+  padding: 0;
+}
+
+.box h1, .box .title-1 {
+  color: #404040;
+}
+
+.box h2, .box .title-2 {
+  color: #404040;
+}
+
+.box h3, .box .title-3 {
+  color: #404040;
+}
+
+.box h4, .box .title-4 {
+  color: #404040;
+}
+
+.box h5, .box .title-5 {
+  color: #404040;
+}
+
+.box h6, .box .title-6 {
+  color: #404040;
+}
+
+.box.white {
+  color: #404040;
+  background-color: #ffffff;
+  border-color: #404040;
+}
+
+.box.white h1, .box.white .title-1 {
+  color: #404040;
+}
+
+.box.white h2, .box.white .title-2 {
+  color: #404040;
+}
+
+.box.white h3, .box.white .title-3 {
+  color: #404040;
+}
+
+.box.white h4, .box.white .title-4 {
+  color: #404040;
+}
+
+.box.white h5, .box.white .title-5 {
+  color: #404040;
+}
+
+.box.white h6, .box.white .title-6 {
+  color: #404040;
+}
+
+.box.black {
+  color: white;
+  background-color: #000000;
+  border-color: white;
+}
+
+.box.black h1, .box.black .title-1 {
+  color: white;
+}
+
+.box.black h2, .box.black .title-2 {
+  color: white;
+}
+
+.box.black h3, .box.black .title-3 {
+  color: white;
+}
+
+.box.black h4, .box.black .title-4 {
+  color: white;
+}
+
+.box.black h5, .box.black .title-5 {
+  color: white;
+}
+
+.box.black h6, .box.black .title-6 {
+  color: white;
+}
+
+.box.lightskyblue {
+  color: #00688b;
+  background-color: #87cefa;
+  border-color: #00688b;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.box.lightskyblue h1, .box.lightskyblue .title-1 {
+  color: #00688b;
+}
+
+.box.lightskyblue h2, .box.lightskyblue .title-2 {
+  color: #00688b;
+}
+
+.box.lightskyblue h3, .box.lightskyblue .title-3 {
+  color: #00688b;
+}
+
+.box.lightskyblue h4, .box.lightskyblue .title-4 {
+  color: #00688b;
+}
+
+.box.lightskyblue h5, .box.lightskyblue .title-5 {
+  color: #00688b;
+}
+
+.box.lightskyblue h6, .box.lightskyblue .title-6 {
+  color: #00688b;
+}
+
+.box.lightskyblue a:not(.button) {
+  color: #ffffff;
+}
+
+.box.snow1 {
+  color: #404040;
+  background-color: #fffafa;
+  border-color: #404040;
+}
+
+.box.snow1 h1, .box.snow1 .title-1 {
+  color: #404040;
+}
+
+.box.snow1 h2, .box.snow1 .title-2 {
+  color: #404040;
+}
+
+.box.snow1 h3, .box.snow1 .title-3 {
+  color: #404040;
+}
+
+.box.snow1 h4, .box.snow1 .title-4 {
+  color: #404040;
+}
+
+.box.snow1 h5, .box.snow1 .title-5 {
+  color: #404040;
+}
+
+.box.snow1 h6, .box.snow1 .title-6 {
+  color: #404040;
+}
+
+.box.border-thin {
+  border-style: solid;
+  border-width: 0.0625rem;
+}
+
+.box.border-normal {
+  border-style: solid;
+  border-width: 0.1875rem;
+}
+
+.box.border-bold {
+  border-style: solid;
+  border-width: 0.3125rem;
 }
 
 /*

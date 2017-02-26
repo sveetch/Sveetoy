@@ -7,7 +7,7 @@ Version 0.5.2 - Unreleased
 
 * Added flexbox direction classes, close #2;
 * Use ``$sveetoy-breakpoints`` to build every flexbox media query classnames;
-
+* Added ``boxes`` component that combine spaces and color schemes, close #3;
 * Build ``<hr>`` features from schemes, close #4;
 * Build ``<small>`` element size features from ``$sveetoy-smalls``, close #5;
 * Build ``.underline`` features from schemes, close #6;
@@ -20,6 +20,7 @@ Version 0.5.2 - Unreleased
   * ``.text-stronger`` becomes ``.text-strong``;
   * ``$font-weight-stronger`` becomes ``$font-weight-strong``;
 
+* Renamed button feature ``.strong`` to ``.important``;
 
 Version 0.5.1 - 2017/02/06
 --------------------------
