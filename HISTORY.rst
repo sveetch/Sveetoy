@@ -20,6 +20,7 @@ Version 0.5.2 - Unreleased
   * ``.text-stronger`` becomes ``.text-strong``;
   * ``$font-weight-stronger`` becomes ``$font-weight-strong``;
 
+* Renamed ``.section`` to ``.block``, close #15;
 * Renamed button feature ``.strong`` to ``.important``;
 
 Version 0.5.1 - 2017/02/06

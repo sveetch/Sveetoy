@@ -7,7 +7,6 @@ help:
 	@echo "  install-venv         -- to install the Python virtual environment. Will require 'virtualenv'."
 	@echo "  install-foundation5  -- to install last Foundation5 sources. Will require 'wget' and 'bower'."
 	@echo
-	@echo "  demo-clean           -- to build demonstration site in development mode."
 	@echo "  demo-build           -- to build demonstration site in development mode."
 	@echo "  demo-server          -- to start demonstration site server with CherryPie."
 	@echo "  demo-watcher         -- to start watchdog on sources in development mode."

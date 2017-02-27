@@ -3,7 +3,7 @@
 {% block head_title %}{{ SITE.name }}{% endblock %}
 
 {% block base_content %}
-<div class="section snow1" id="intro">
+<div class="block snow1" id="intro">
     <div class="row large">
         <div class="small-12 columns">
             <h1 class="logo">Sveetoy</h1>
@@ -37,7 +37,7 @@
     </div>
 </div>
 
-<div class="section snow1 unpadded" id="demo-menu">
+<div class="block snow1 unpadded" id="demo-menu">
     <div class="row larger">
         <div class="small-12 columns">
             <div data-magellan-expedition="fixed" class="menu">
@@ -45,7 +45,7 @@
                     <li data-magellan-arrival="typography"><a href="#typography">Typography</a></li>
                     <li data-magellan-arrival="buttons"><a href="#buttons">Buttons</a></li>
                     <li data-magellan-arrival="spaces"><a href="#spaces">Spaces</a></li>
-                    <li data-magellan-arrival="sections"><a href="#sections">Sections</a></li>
+                    <li data-magellan-arrival="blocks"><a href="#blocks">Blocks</a></li>
                     <li data-magellan-arrival="boxes"><a href="#boxes">Boxes</a></li>
                     <li data-magellan-arrival="flex"><a href="#flex">Flexbox</a></li>
                 </ul>
@@ -57,7 +57,7 @@
 {% include 'components/typography.html' %}
 {% include 'components/buttons.html' %}
 {% include 'components/spaces.html' %}
-{% include 'components/sections.html' %}
+{% include 'components/blocks.html' %}
 {% include 'components/boxes.html' %}
 {% include 'components/flex.html' %}
 {% endblock %}

@@ -6,10 +6,10 @@
  * Sections
  *
  */
-$include-sveetoy-sections: $include-sveetoy-classes !default;
+$include-sveetoy-blocks: $include-sveetoy-classes !default;
 
-@if $include-sveetoy-sections {
-    .section {
+@if $include-sveetoy-blocks {
+    .block {
         @include sveetoy-apply-spaces(map-get($sveetoy-spaces, "normal"));
 
         @each $name, $definitions in $sveetoy-spaces{
@@ -19,7 +19,7 @@ $include-sveetoy-sections: $include-sveetoy-classes !default;
         }
 
         ///
-        /// Replicate section spacing to direct inner element
+        /// Replicate block spacing to direct inner element
         ///
         .inner{
             @include sveetoy-apply-spaces(map-get($sveetoy-spaces, "normal"));
@@ -32,7 +32,7 @@ $include-sveetoy-sections: $include-sveetoy-classes !default;
         }
 
         ///
-        /// Unpadded section or inner element
+        /// Unpadded block or inner element
         ///
         &.unpadded,
         & > .inner.unpadded{

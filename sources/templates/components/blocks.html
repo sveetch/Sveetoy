@@ -1,27 +1,26 @@
-<div class="section demo-section" data-magellan-destination="sections">
-    <a id="sections"></a>
+<div class="block demo-block" data-magellan-destination="blocks">
+    <a id="blocks"></a>
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title">Sections</h1>
-            <p>A section is a full width container useful for fluid design layouts but with first goal to set background and font colors.</p>
+            <h1 class="demo-title">Blocks</h1>
+            <p>A block is a full width container useful for fluid design layouts but with first goal to set background and font colors.</p>
             <p>Available features can apply various vertical padding using rythmic space from <code>$sveetoy-spaces</code> and various color schemes from <code>$sveetoy-colors-schemes</code>.</p>
-            <p><code>.section</code> does not have any links with <code>&lt;section&gt;</code> element although you can mix them if you want.
 
             <dl>
                 <dt>Can be disabled with</dt>
-                <dd><code>$include-sveetoy-sections: false;</code></dd>
+                <dd><code>$include-sveetoy-blocks: false;</code></dd>
 
                 <dt>Source location</dt>
-                <dd><code>sveetoy/components/_sections.scss</code></dd>
+                <dd><code>sveetoy/components/_blocks.scss</code></dd>
             </dl>
         </div>
     </div>
 
     {% for name in ['', 'black', 'lightskyblue', 'snow1', 'tall'] %}
-    <div class="section{% if name %} {{ name }}{% endif %}">
+    <div class="block{% if name %} {{ name }}{% endif %}">
         <div class="row">
             <div class="small-12 columns">
-                <h2 class="demo-title">.section{% if name %}.{{ name }}{% endif %}</h2>
+                <h2 class="demo-title">.block{% if name %}.{{ name }}{% endif %}</h2>
                 {% include '_includes/_inline_markup.html' %}
 
                 {{ lipsum(n=2, html=True, min=20, max=50) }}

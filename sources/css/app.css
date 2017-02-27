@@ -9638,7 +9638,7 @@ hr.deepskyblue4 {
  * Sections
  *
  */
-.section {
+.block {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   color: #404040;
@@ -9646,458 +9646,458 @@ hr.deepskyblue4 {
 }
 
 @media only screen and (min-width: 40.063em) {
-  .section {
+  .block {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .section {
+  .block {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .section {
+  .block {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
-.section.thin {
+.block.thin {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .section.thin {
+  .block.thin {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .section.thin {
+  .block.thin {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .section.thin {
+  .block.thin {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
 }
 
-.section.tiny {
+.block.tiny {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .section.tiny {
+  .block.tiny {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .section.tiny {
+  .block.tiny {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .section.tiny {
+  .block.tiny {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
 }
 
-.section.normal {
+.block.normal {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .section.normal {
+  .block.normal {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .section.normal {
+  .block.normal {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .section.normal {
+  .block.normal {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
-.section.wide {
+.block.wide {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .section.wide {
+  .block.wide {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .section.wide {
+  .block.wide {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .section.wide {
+  .block.wide {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
 
-.section.huge {
+.block.huge {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .section.huge {
+  .block.huge {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .section.huge {
+  .block.huge {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .section.huge {
+  .block.huge {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
 }
 
-.section .inner {
+.block .inner {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .section .inner {
+  .block .inner {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .section .inner {
+  .block .inner {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .section .inner {
+  .block .inner {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
-.section .inner.thin {
+.block .inner.thin {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .section .inner.thin {
+  .block .inner.thin {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .section .inner.thin {
+  .block .inner.thin {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .section .inner.thin {
+  .block .inner.thin {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
 }
 
-.section .inner.tiny {
+.block .inner.tiny {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .section .inner.tiny {
+  .block .inner.tiny {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .section .inner.tiny {
+  .block .inner.tiny {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .section .inner.tiny {
+  .block .inner.tiny {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
 }
 
-.section .inner.normal {
+.block .inner.normal {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .section .inner.normal {
+  .block .inner.normal {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .section .inner.normal {
+  .block .inner.normal {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .section .inner.normal {
+  .block .inner.normal {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
-.section .inner.wide {
+.block .inner.wide {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .section .inner.wide {
+  .block .inner.wide {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .section .inner.wide {
+  .block .inner.wide {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .section .inner.wide {
+  .block .inner.wide {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
 
-.section .inner.huge {
+.block .inner.huge {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .section .inner.huge {
+  .block .inner.huge {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .section .inner.huge {
+  .block .inner.huge {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .section .inner.huge {
+  .block .inner.huge {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
 }
 
-.section.unpadded,
-.section > .inner.unpadded {
+.block.unpadded,
+.block > .inner.unpadded {
   padding: 0;
 }
 
-.section h1, .section .title-1 {
+.block h1, .block .title-1 {
   color: #404040;
 }
 
-.section h2, .section .title-2 {
+.block h2, .block .title-2 {
   color: #404040;
 }
 
-.section h3, .section .title-3 {
+.block h3, .block .title-3 {
   color: #404040;
 }
 
-.section h4, .section .title-4 {
+.block h4, .block .title-4 {
   color: #404040;
 }
 
-.section h5, .section .title-5 {
+.block h5, .block .title-5 {
   color: #404040;
 }
 
-.section h6, .section .title-6 {
+.block h6, .block .title-6 {
   color: #404040;
 }
 
-.section.white {
+.block.white {
   color: #404040;
   background-color: #ffffff;
 }
 
-.section.white h1, .section.white .title-1 {
+.block.white h1, .block.white .title-1 {
   color: #404040;
 }
 
-.section.white h2, .section.white .title-2 {
+.block.white h2, .block.white .title-2 {
   color: #404040;
 }
 
-.section.white h3, .section.white .title-3 {
+.block.white h3, .block.white .title-3 {
   color: #404040;
 }
 
-.section.white h4, .section.white .title-4 {
+.block.white h4, .block.white .title-4 {
   color: #404040;
 }
 
-.section.white h5, .section.white .title-5 {
+.block.white h5, .block.white .title-5 {
   color: #404040;
 }
 
-.section.white h6, .section.white .title-6 {
+.block.white h6, .block.white .title-6 {
   color: #404040;
 }
 
-.section.black {
+.block.black {
   color: white;
   background-color: #000000;
 }
 
-.section.black h1, .section.black .title-1 {
+.block.black h1, .block.black .title-1 {
   color: white;
 }
 
-.section.black h2, .section.black .title-2 {
+.block.black h2, .block.black .title-2 {
   color: white;
 }
 
-.section.black h3, .section.black .title-3 {
+.block.black h3, .block.black .title-3 {
   color: white;
 }
 
-.section.black h4, .section.black .title-4 {
+.block.black h4, .block.black .title-4 {
   color: white;
 }
 
-.section.black h5, .section.black .title-5 {
+.block.black h5, .block.black .title-5 {
   color: white;
 }
 
-.section.black h6, .section.black .title-6 {
+.block.black h6, .block.black .title-6 {
   color: white;
 }
 
-.section.lightskyblue {
+.block.lightskyblue {
   color: #00688b;
   background-color: #87cefa;
 }
 
-.section.lightskyblue h1, .section.lightskyblue .title-1 {
+.block.lightskyblue h1, .block.lightskyblue .title-1 {
   color: #00688b;
 }
 
-.section.lightskyblue h2, .section.lightskyblue .title-2 {
+.block.lightskyblue h2, .block.lightskyblue .title-2 {
   color: #00688b;
 }
 
-.section.lightskyblue h3, .section.lightskyblue .title-3 {
+.block.lightskyblue h3, .block.lightskyblue .title-3 {
   color: #00688b;
 }
 
-.section.lightskyblue h4, .section.lightskyblue .title-4 {
+.block.lightskyblue h4, .block.lightskyblue .title-4 {
   color: #00688b;
 }
 
-.section.lightskyblue h5, .section.lightskyblue .title-5 {
+.block.lightskyblue h5, .block.lightskyblue .title-5 {
   color: #00688b;
 }
 
-.section.lightskyblue h6, .section.lightskyblue .title-6 {
+.block.lightskyblue h6, .block.lightskyblue .title-6 {
   color: #00688b;
 }
 
-.section.lightskyblue a:not(.button) {
+.block.lightskyblue a:not(.button) {
   color: #ffffff;
 }
 
-.section.snow1 {
+.block.snow1 {
   color: #404040;
   background-color: #fffafa;
 }
 
-.section.snow1 h1, .section.snow1 .title-1 {
+.block.snow1 h1, .block.snow1 .title-1 {
   color: #404040;
 }
 
-.section.snow1 h2, .section.snow1 .title-2 {
+.block.snow1 h2, .block.snow1 .title-2 {
   color: #404040;
 }
 
-.section.snow1 h3, .section.snow1 .title-3 {
+.block.snow1 h3, .block.snow1 .title-3 {
   color: #404040;
 }
 
-.section.snow1 h4, .section.snow1 .title-4 {
+.block.snow1 h4, .block.snow1 .title-4 {
   color: #404040;
 }
 
-.section.snow1 h5, .section.snow1 .title-5 {
+.block.snow1 h5, .block.snow1 .title-5 {
   color: #404040;
 }
 
-.section.snow1 h6, .section.snow1 .title-6 {
+.block.snow1 h6, .block.snow1 .title-6 {
   color: #404040;
 }
 
@@ -11295,33 +11295,33 @@ ul.arrow.defer li > *:first-child:before {
   text-decoration: none;
 }
 
-.demo-section {
+.demo-block {
   border-top: 1px solid #e0e0e0;
 }
 
-.demo-section .demo-introduction {
+.demo-block .demo-introduction {
   margin-bottom: 3rem;
 }
 
-.demo-section .demo-title {
+.demo-block .demo-title {
   font-family: "Overlock SC", cursive;
 }
 
-.demo-section .demo-result {
+.demo-block .demo-result {
   background: linear-gradient(-90deg, #f0f0f0 1px, transparent 1px), linear-gradient(#f0f0f0 1px, transparent 1px), linear-gradient(-90deg, #f0f0f0 1px, transparent 1px), linear-gradient(#f0f0f0 1px, transparent 1px), linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(-90deg, transparent 1px, transparent 1px), linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(transparent 1px, transparent 1px), transparent;
   background-size: 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
   border: 1px solid #e0e0e0;
 }
 
-.demo-section .flex-grid.flex-demo .cell {
+.demo-block .flex-grid.flex-demo .cell {
   background-color: #d0d0d0;
 }
 
-.demo-section .flex-grid.flex-demo .cell:nth-child(2n) {
+.demo-block .flex-grid.flex-demo .cell:nth-child(2n) {
   background-color: #e0e0e0;
 }
 
-.demo-section .flex-grid.flex-demo.align-demo .cell {
+.demo-block .flex-grid.flex-demo.align-demo .cell {
   min-height: 200px;
 }
 
