@@ -2,7 +2,7 @@
     <a id="typography"></a>
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title">Typography</h1>
+            <h1 class="demo-title text-upper">Typography</h1>
             <p>This component adds some minor things to the Foundation typography stuff.</p>
 
             <p>Also there is a new rule that prevent paragraphs to have a bottom margin if they are the last child of their parent.</p>
@@ -21,7 +21,7 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Title element</h2>
             <p>Title styles are not anymore sticked to <code>hX</code> elements, now you can use them by the way of <code>.title-X</code> classes on any other element to preserve semantic. You may even use a <code>.title-X</code> class on <code>hX</code> element.</p>
-            <div class="demo-result v-space-thin">
+            <div class="demo-result v-space-tiny">
                 {% for count in range(1, 7) %}
                 <h{{ count }}>h{{ count }}, .title-{{ count }}</h{{ count }}>
                 {% endfor %}
@@ -33,7 +33,7 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Text colors</h2>
             <p>Text colors are available for every color defined in map <code>$sveetoy-color-text-palette</code>. Properties are defined using <code>!important</code> flag so take care of their usage.</p>
-            <div class="demo-result v-space-thin">
+            <div class="demo-result v-space-tiny">
                 {% for name in ['white', 'black', 'gray25', 'gray82', 'gray88', 'lightskyblue', 'deepskyblue4'] %}
                 <p class="text-{{ name }}">.text-{{ name }}</p>
                 {% endfor %}
@@ -45,7 +45,7 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Thickness</h2>
             <p>Two more thickness are available if their corresponding variable is defined. <code>$font-weight-thin</code> for thinest thickness and <code>$font-weight-strong</code> for boldest thickness.</p>
-            <div class="demo-result v-space-thin">
+            <div class="demo-result v-space-tiny">
                 {% for name in ['thin', 'normal', 'bold', 'strong'] %}
                 <p class="text-{{ name }}">{% if name == 'bold' %}<b>&lt;b&gt;</b>, {% elif name == 'strong' %}<strong>&lt;strong&gt;</strong>, {% endif %}.text-{{ name }}</p>
                 {% endfor %}
@@ -57,7 +57,7 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Small</h2>
             <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are built from <code>$sveetoy-smalls</code>.</p>
-            <div class="demo-result v-space-thin">
+            <div class="demo-result v-space-tiny">
                 {% for name in ['small', 'medium', 'big'] %}
                 <p><code>.{{ name }}</code> <small class="{{ name }}">{{ lipsum(n=1, html=False, min=15, max=16) }}</small></p>
                 {% endfor %}
@@ -70,7 +70,7 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Transform and decoration</h2>
             <p><code>.text-upper</code> enables you to correctly write your texts in lowercase but render them as uppercase. <code>.text-important</code> just define the underline value for <code>text-decoration</code> property.</p>
-            <div class="demo-result v-space-thin">
+            <div class="demo-result v-space-tiny">
                 <p class="text-upper">.text-upper</p>
                 <p class="text-important">.text-important</p>
             </div>
@@ -82,60 +82,60 @@
             <h2 class="demo-title">Underline</h2>
             <p>Various underline positions, thickness and widths. All of them are implemented with border properties on a pseudo-element <code>:after</code>.</p>
 
-            <h3>Width</h3>
+            <h3 class="demo-title">Width</h3>
             <p>Built from list <code>$sveetoy-underline-widths</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['tiny', 'short', 'normal', 'large', 'full'] %}
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
+                    <div class="demo-result v-space-tiny">
                         <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
                     </div>
                 </div>
                 {% endfor %}
             </div>
 
-            <h3>Thickness</h3>
+            <h3 class="demo-title">Thickness</h3>
             <p>Built from map <code>$sveetoy-underline-thickness</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['thin', 'normal', 'bold'] %}
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
+                    <div class="demo-result v-space-tiny">
                         <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
                     </div>
                 </div>
                 {% endfor %}
             </div>
 
-            <h3>Distance</h3>
+            <h3 class="demo-title">Distance</h3>
             <p>Built from list <code>$sveetoy-underline-distances</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['sticked', 'near', 'normal', 'far'] %}
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
+                    <div class="demo-result v-space-tiny">
                         <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
                     </div>
                 </div>
                 {% endfor %}
             </div>
 
-            <h3>Alignment</h3>
+            <h3 class="demo-title">Alignment</h3>
             <p>No variable is used to build this single feature.</p>
             <div class="flex-grid marged">
                 {% for name in ['normal', 'text-center'] %}
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
+                    <div class="demo-result v-space-tiny">
                         <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
                     </div>
                 </div>
                 {% endfor %}
             </div>
 
-            <h3>Color</h3>
+            <h3 class="demo-title">Color</h3>
             <p>Built from list <code>$sveetoy-underline-colors</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['normal', 'white', 'black', 'gray25', 'gray82', 'gray88', 'lightskyblue', 'deepskyblue4'] %}
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
+                    <div class="demo-result v-space-tiny">
                         <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
                     </div>
                 </div>
@@ -149,12 +149,12 @@
             <h2 class="demo-title">Horizontal rule</h2>
             <p>Various horizontal rule positions, thickness and widths. Following the same scheme formats than <code>.underline</code> features.</p>
 
-            <h3>Thickness</h3>
+            <h3 class="demo-title">Thickness</h3>
             <p>Built from map <code>$sveetoy-hr-thickness</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['thin', 'normal', 'bold'] %}
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
+                    <div class="demo-result v-space-tiny">
                         <p>hr{% if name %}.{{ name }}{% endif %}</p>
                         <hr class="{{ name }}">
                     </div>
@@ -162,12 +162,12 @@
                 {% endfor %}
             </div>
 
-            <h3>Distance</h3>
+            <h3 class="demo-title">Distance</h3>
             <p>Built from list <code>$sveetoy-hr-distances</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['sticked', 'near', 'normal', 'far'] %}
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
+                    <div class="demo-result v-space-tiny">
                         <p>hr{% if name %}.{{ name }}{% endif %}</p>
                         <hr class="{{ name }}">
                     </div>
@@ -175,12 +175,12 @@
                 {% endfor %}
             </div>
 
-            <h3>Color</h3>
+            <h3 class="demo-title">Color</h3>
             <p>Built from list <code>$sveetoy-hr-colors</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['normal', 'white', 'black', 'gray25', 'gray82', 'gray88', 'lightskyblue', 'deepskyblue4'] %}
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
+                    <div class="demo-result v-space-tiny">
                         <p>hr{% if name %}.{{ name }}{% endif %}</p>
                         <hr class="{{ name }}">
                     </div>

@@ -21,6 +21,7 @@ Version 0.5.2 - Unreleased
   * ``$font-weight-stronger`` becomes ``$font-weight-strong``;
 
 * Renamed ``.section`` to ``.block``, close #15;
+* Added vocabulary references and accorded ``spaces`` component features to width terms, close #16;
 * Renamed button feature ``.strong`` to ``.important``;
 
 Version 0.5.1 - 2017/02/06

@@ -2,7 +2,7 @@
     <a id="blocks"></a>
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title">Blocks</h1>
+            <h1 class="demo-title text-upper">Blocks</h1>
             <p>A block is a full width container useful for fluid design layouts but with first goal to set background and font colors.</p>
             <p>Available features can apply various vertical padding using rythmic space from <code>$sveetoy-spaces</code> and various color schemes from <code>$sveetoy-colors-schemes</code>.</p>
 
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    {% for name in ['', 'black', 'lightskyblue', 'snow1', 'tall'] %}
+    {% for name in ['', 'black', 'lightskyblue', 'snow1', 'wide'] %}
     <div class="block{% if name %} {{ name }}{% endif %}">
         <div class="row">
             <div class="small-12 columns">

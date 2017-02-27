@@ -2,7 +2,7 @@
     <a id="spaces"></a>
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title">Spaces</h1>
+            <h1 class="demo-title text-upper">Spaces</h1>
             <p>This component add styles to apply paddings using space rythmic defined in map <code>$sveetoy-spaces</code>.</p>
             <p>Padding can be applied for both sides on vertical or horizontal axes or optionally on only one side.</p>
             <p>There are many space sizes available and each of them have their own breakpoint sizes.</p>
@@ -23,7 +23,7 @@
 
             <h2 class="demo-title">Vertical padding in element</h2>
             <div class="flex-grid marged">
-                {% for thickness in ['thin', 'tiny', 'normal', 'wide', 'huge'] %}
+                {% for thickness in ['tiny', 'short', 'normal', 'large', 'wide'] %}
                 <div class="cell small-100 medium-33 large-20">
                     <code>.v-space-{{ thickness }}</code>
                     <div class="demo-result v-space-{{ thickness }}">
@@ -53,7 +53,7 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Horizontal padding in element</h2>
             <div class="flex-grid marged">
-                {% for thickness in ['thin', 'tiny', 'normal', 'wide', 'huge'] %}
+                {% for thickness in ['tiny', 'short', 'normal', 'large', 'wide'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <code>.h-space-{{ thickness }}</code>
                     <div class="demo-result h-space-{{ thickness }}">
@@ -83,7 +83,7 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Vertical margin divider</h2>
             <div class="flex-grid marged">
-                {% for thickness in ['thin', 'tiny', 'normal', 'wide', 'huge'] %}
+                {% for thickness in ['tiny', 'short', 'normal', 'large', 'wide'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result">
                         <span class="button small full v-divider-{{ thickness }}">.v-divider-{{ thickness }}</span>
@@ -101,7 +101,7 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Horizontal margin divider</h2>
             <div class="flex-grid marged">
-                {% for thickness in ['thin', 'tiny', 'normal', 'wide', 'huge'] %}
+                {% for thickness in ['tiny', 'short', 'normal', 'large', 'wide'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result">
                         <span class="button small h-divider-{{ thickness }}">.h-divider-{{ thickness }}</span>

@@ -155,13 +155,13 @@ $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 
 
 // Defines default space sizes with their breakpoint values
-$sveetoy-space-thin: (
+$sveetoy-space-tiny: (
     small: 0.5rem,
     medium: 0.75rem,
     large: 1rem,
     xlarge: 1.5rem,
 ) !default;
-$sveetoy-space-tiny: (
+$sveetoy-space-short: (
     small: 1rem,
     medium: 1.25rem,
     large: 2rem,
@@ -173,13 +173,13 @@ $sveetoy-space-normal: (
     large: 3rem,
     xlarge: 4rem,
 ) !default;
-$sveetoy-space-wide: (
+$sveetoy-space-large: (
     small: 2rem,
     medium: 3rem,
     large: 4rem,
     xlarge: 5rem,
 ) !default;
-$sveetoy-space-huge: (
+$sveetoy-space-wide: (
     small: 3rem,
     medium: 4.5rem,
     large: 6rem,
@@ -188,11 +188,11 @@ $sveetoy-space-huge: (
 
 // Space scheme
 $sveetoy-spaces: (
-    thin: $sveetoy-space-thin,
     tiny: $sveetoy-space-tiny,
+    short: $sveetoy-space-short,
     normal: $sveetoy-space-normal,
+    large: $sveetoy-space-large,
     wide: $sveetoy-space-wide,
-    huge: $sveetoy-space-huge,
 ) !default;
 
 

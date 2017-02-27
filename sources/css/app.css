@@ -8721,90 +8721,90 @@ img.expanded {
  * Spaces
  *
  */
-.v-divider-thin {
+.v-divider-tiny {
   margin-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .v-divider-thin {
+  .v-divider-tiny {
     margin-bottom: 0.75rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .v-divider-thin {
+  .v-divider-tiny {
     margin-bottom: 1rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .v-divider-thin {
+  .v-divider-tiny {
     margin-bottom: 1.5rem;
   }
 }
 
-.h-divider-thin {
+.h-divider-tiny {
   margin-right: 0.5rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .h-divider-thin {
+  .h-divider-tiny {
     margin-right: 0.75rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .h-divider-thin {
+  .h-divider-tiny {
     margin-right: 1rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .h-divider-thin {
+  .h-divider-tiny {
     margin-right: 1.5rem;
   }
 }
 
-.v-divider-tiny {
+.v-divider-short {
   margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .v-divider-tiny {
+  .v-divider-short {
     margin-bottom: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .v-divider-tiny {
+  .v-divider-short {
     margin-bottom: 2rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .v-divider-tiny {
+  .v-divider-short {
     margin-bottom: 2.5rem;
   }
 }
 
-.h-divider-tiny {
+.h-divider-short {
   margin-right: 1rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .h-divider-tiny {
+  .h-divider-short {
     margin-right: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .h-divider-tiny {
+  .h-divider-short {
     margin-right: 2rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .h-divider-tiny {
+  .h-divider-short {
     margin-right: 2.5rem;
   }
 }
@@ -8853,141 +8853,141 @@ img.expanded {
   }
 }
 
-.v-divider-wide {
+.v-divider-large {
   margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .v-divider-wide {
+  .v-divider-large {
     margin-bottom: 3rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .v-divider-wide {
+  .v-divider-large {
     margin-bottom: 4rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .v-divider-wide {
+  .v-divider-large {
     margin-bottom: 5rem;
   }
 }
 
-.h-divider-wide {
+.h-divider-large {
   margin-right: 2rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .h-divider-wide {
+  .h-divider-large {
     margin-right: 3rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .h-divider-wide {
+  .h-divider-large {
     margin-right: 4rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .h-divider-wide {
+  .h-divider-large {
     margin-right: 5rem;
   }
 }
 
-.v-divider-huge {
+.v-divider-wide {
   margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .v-divider-huge {
+  .v-divider-wide {
     margin-bottom: 4.5rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .v-divider-huge {
+  .v-divider-wide {
     margin-bottom: 6rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .v-divider-huge {
+  .v-divider-wide {
     margin-bottom: 8rem;
   }
 }
 
-.h-divider-huge {
+.h-divider-wide {
   margin-right: 3rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .h-divider-huge {
+  .h-divider-wide {
     margin-right: 4.5rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .h-divider-huge {
+  .h-divider-wide {
     margin-right: 6rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .h-divider-huge {
+  .h-divider-wide {
     margin-right: 8rem;
   }
 }
 
-.v-space-thin {
+.v-space-tiny {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .v-space-thin {
+  .v-space-tiny {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .v-space-thin {
+  .v-space-tiny {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .v-space-thin {
+  .v-space-tiny {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
 }
 
-.v-space-tiny {
+.v-space-short {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .v-space-tiny {
+  .v-space-short {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .v-space-tiny {
+  .v-space-short {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .v-space-tiny {
+  .v-space-short {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
@@ -9019,53 +9019,53 @@ img.expanded {
   }
 }
 
-.v-space-wide {
+.v-space-large {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .v-space-wide {
+  .v-space-large {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .v-space-wide {
+  .v-space-large {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .v-space-wide {
+  .v-space-large {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
 
-.v-space-huge {
+.v-space-wide {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .v-space-huge {
+  .v-space-wide {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .v-space-huge {
+  .v-space-wide {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .v-space-huge {
+  .v-space-wide {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
@@ -9079,53 +9079,53 @@ img.expanded {
   padding-top: 0;
 }
 
-.h-space-thin {
+.h-space-tiny {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .h-space-thin {
+  .h-space-tiny {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .h-space-thin {
+  .h-space-tiny {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .h-space-thin {
+  .h-space-tiny {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
-.h-space-tiny {
+.h-space-short {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .h-space-tiny {
+  .h-space-short {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .h-space-tiny {
+  .h-space-short {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .h-space-tiny {
+  .h-space-short {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
@@ -9157,53 +9157,53 @@ img.expanded {
   }
 }
 
-.h-space-wide {
+.h-space-large {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .h-space-wide {
+  .h-space-large {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .h-space-wide {
+  .h-space-large {
     padding-left: 4rem;
     padding-right: 4rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .h-space-wide {
+  .h-space-large {
     padding-left: 5rem;
     padding-right: 5rem;
   }
 }
 
-.h-space-huge {
+.h-space-wide {
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .h-space-huge {
+  .h-space-wide {
     padding-left: 4.5rem;
     padding-right: 4.5rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .h-space-huge {
+  .h-space-wide {
     padding-left: 6rem;
     padding-right: 6rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .h-space-huge {
+  .h-space-wide {
     padding-left: 8rem;
     padding-right: 8rem;
   }
@@ -9666,53 +9666,53 @@ hr.deepskyblue4 {
   }
 }
 
-.block.thin {
+.block.tiny {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .block.thin {
+  .block.tiny {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .block.thin {
+  .block.tiny {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .block.thin {
+  .block.tiny {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
 }
 
-.block.tiny {
+.block.short {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .block.tiny {
+  .block.short {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .block.tiny {
+  .block.short {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .block.tiny {
+  .block.short {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
@@ -9744,53 +9744,53 @@ hr.deepskyblue4 {
   }
 }
 
-.block.wide {
+.block.large {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .block.wide {
+  .block.large {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .block.wide {
+  .block.large {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .block.wide {
+  .block.large {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
 
-.block.huge {
+.block.wide {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .block.huge {
+  .block.wide {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .block.huge {
+  .block.wide {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .block.huge {
+  .block.wide {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
@@ -9822,53 +9822,53 @@ hr.deepskyblue4 {
   }
 }
 
-.block .inner.thin {
+.block .inner.tiny {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .block .inner.thin {
+  .block .inner.tiny {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .block .inner.thin {
+  .block .inner.tiny {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .block .inner.thin {
+  .block .inner.tiny {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
 }
 
-.block .inner.tiny {
+.block .inner.short {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .block .inner.tiny {
+  .block .inner.short {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .block .inner.tiny {
+  .block .inner.short {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .block .inner.tiny {
+  .block .inner.short {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
@@ -9900,53 +9900,53 @@ hr.deepskyblue4 {
   }
 }
 
-.block .inner.wide {
+.block .inner.large {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .block .inner.wide {
+  .block .inner.large {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .block .inner.wide {
+  .block .inner.large {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .block .inner.wide {
+  .block .inner.large {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
 
-.block .inner.huge {
+.block .inner.wide {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .block .inner.huge {
+  .block .inner.wide {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .block .inner.huge {
+  .block .inner.wide {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .block .inner.huge {
+  .block .inner.wide {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
@@ -10166,7 +10166,7 @@ hr.deepskyblue4 {
   margin-bottom: 0;
 }
 
-.box.thin {
+.box.tiny {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.5rem;
@@ -10174,48 +10174,48 @@ hr.deepskyblue4 {
 }
 
 @media only screen and (min-width: 40.063em) {
-  .box.thin {
+  .box.tiny {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .box.thin {
+  .box.tiny {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .box.thin {
+  .box.tiny {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
 @media only screen and (min-width: 40.063em) {
-  .box.thin {
+  .box.tiny {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .box.thin {
+  .box.tiny {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .box.thin {
+  .box.tiny {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
 }
 
-.box.tiny {
+.box.short {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1rem;
@@ -10223,42 +10223,42 @@ hr.deepskyblue4 {
 }
 
 @media only screen and (min-width: 40.063em) {
-  .box.tiny {
+  .box.short {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .box.tiny {
+  .box.short {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .box.tiny {
+  .box.short {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
 }
 
 @media only screen and (min-width: 40.063em) {
-  .box.tiny {
+  .box.short {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .box.tiny {
+  .box.short {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .box.tiny {
+  .box.short {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
@@ -10313,7 +10313,7 @@ hr.deepskyblue4 {
   }
 }
 
-.box.wide {
+.box.large {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2rem;
@@ -10321,48 +10321,48 @@ hr.deepskyblue4 {
 }
 
 @media only screen and (min-width: 40.063em) {
-  .box.wide {
+  .box.large {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .box.wide {
+  .box.large {
     padding-left: 4rem;
     padding-right: 4rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .box.wide {
+  .box.large {
     padding-left: 5rem;
     padding-right: 5rem;
   }
 }
 
 @media only screen and (min-width: 40.063em) {
-  .box.wide {
+  .box.large {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .box.wide {
+  .box.large {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .box.wide {
+  .box.large {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
 
-.box.huge {
+.box.wide {
   padding-left: 3rem;
   padding-right: 3rem;
   padding-top: 3rem;
@@ -10370,42 +10370,42 @@ hr.deepskyblue4 {
 }
 
 @media only screen and (min-width: 40.063em) {
-  .box.huge {
+  .box.wide {
     padding-left: 4.5rem;
     padding-right: 4.5rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .box.huge {
+  .box.wide {
     padding-left: 6rem;
     padding-right: 6rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .box.huge {
+  .box.wide {
     padding-left: 8rem;
     padding-right: 8rem;
   }
 }
 
 @media only screen and (min-width: 40.063em) {
-  .box.huge {
+  .box.wide {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .box.huge {
+  .box.wide {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
 @media only screen and (min-width: 90.063em) {
-  .box.huge {
+  .box.wide {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
