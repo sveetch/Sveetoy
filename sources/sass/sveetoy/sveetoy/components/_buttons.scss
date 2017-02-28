@@ -6,6 +6,7 @@
 $include-sveetoy-buttons: $include-sveetoy-classes !default;
 
 $sveetoy-button-modests: () !default;
+$sveetoy-button-colors-schemes: () !default;
 
 @if $include-sveetoy-buttons {
     button,
@@ -37,11 +38,15 @@ $sveetoy-button-modests: () !default;
         ///
         &.modest{
             $default-padding: map-get($sveetoy-button-modests, "medium");
-            padding: $default-padding ($default-padding * 2) $default-padding ($default-padding * 2);
+            @if $default-padding{
+                padding: $default-padding ($default-padding * 2) $default-padding ($default-padding * 2);
+            }
 
             @each $name, $padding in $sveetoy-button-modests{
                 &.#{$name}{
-                    padding: $padding ($padding * 2) $padding ($padding * 2);
+                    @if $default-padding{
+                        padding: $padding ($padding * 2) $padding ($padding * 2);
+                    }
                 }
             }
         }
@@ -49,9 +54,11 @@ $sveetoy-button-modests: () !default;
         ///
         /// Various color variants from color schemes
         ///
-        @each $name, $scheme in $sveetoy-button-colors-schemes{
-            &.#{$name}{
-                @include sveetoy-button-colors($scheme, $apply-border: true);
+        @if $sveetoy-button-colors-schemes{
+            @each $name, $scheme in $sveetoy-button-colors-schemes{
+                &.#{$name}{
+                    @include sveetoy-button-colors($scheme, $apply-border: true);
+                }
             }
         }
     }

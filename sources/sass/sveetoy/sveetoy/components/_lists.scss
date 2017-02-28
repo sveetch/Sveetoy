@@ -1,56 +1,9 @@
+@import "../mixins/lists";
+
 /*
  * Bullet list using arrow icon as bullet
  */
 $include-sveetoy-lists: $include-sveetoy-classes !default;
-
-
-/*
- * Mixin to render list item pseudo-element with a custom bullet
- *
- * Default behavior without any arguments is to simply add character '>' as
- * the bullet
- *
- * If needed you can use a webfont character instead of a character
- *
- * TODO: Move to mixins/_lists.scss
- */
-@mixin sveetoy-arrow-bullet(
-    $width: rem-calc(12px),
-    $top-position: 0.75rem,
-    $left-position: 0,
-    $font-size: null,
-    $font-weight: null,
-    $content: ">",
-    $content-color: null,
-    $vertical-translate: true,
-    $extended-icon: null
-) {
-    position: absolute;
-    @if $top-position {
-        top: $top-position;
-    }
-    left: $left-position;
-    width: $width;
-    font-family: icomoon;
-    @if $font-size {
-        font-size: $font-size;
-    }
-    @if $font-weight {
-        font-weight: $font-weight;
-    }
-    @if $extended-icon {
-        @extend #{$extended-icon};
-    } @else {
-        content: $content;
-    }
-    @if $content-color {
-        color: $content-color;
-    }
-    @if $vertical-translate {
-        @include sveetranslate(0%, -50%);
-    }
-}
-
 
 @if $include-sveetoy-lists {
     ul.arrow{

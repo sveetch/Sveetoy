@@ -1,92 +1,14 @@
 @import "foundation/functions";
 
-//
-// FOUNDATION SETTINGS
-// See utils/_sample_settings.scss for a full list of available settings
-//
-
-//
-// Settings overrides goes below
-//
-
-
-// a. Base
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-
-// This is the default html and body font-size for the base rem value.
-// $rem-base: 16px;
-
-// Allows the use of rem-calc() or lower-bound() in your settings
-@import 'foundation/functions';
-
-// The default font-size is set to 100% of the browser style sheet (usually 16px)
-// for compatibility with browser-based text zoom or user-set defaults.
-
-// If false, will silent all deprecation warning for Compass mixins
-// in 'utils/deprecations'
-$emencia-compass-deprecation-warning: false;
-
-
-// ZZ. Sveetoys colors
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-
-$white: #ffffff;
-$black: #000000;
-$lightskyblue: #87cefa;
-$deepskyblue4: #00688b;
-$gray25: #404040;
-$gray82: #d0d0d0;
-$gray88: #e0e0e0;
-$gray94: #f0f0f0;
-$snow1: #fffafa;
-
-$white-color-scheme: (
-    font-color: $gray25,
-    background-color: $white,
-);
-$black-color-scheme: (
-    background-color: $black,
-);
-$snow1-color-scheme: (
-    font-color: $gray25,
-    background-color: $snow1,
-);
-$lightskyblue-color-scheme: (
-    font-color: $deepskyblue4,
-    link-color: $white,
-    background-color: $lightskyblue,
-    border-width: 1px,
-    border-style: solid,
-    border-color: $deepskyblue4,
-);
-
-$sveetoy-colors-scheme-default: $white-color-scheme;
-
-$sveetoy-colors-schemes: (
-    white: $white-color-scheme,
-    black: $black-color-scheme,
-    lightskyblue: $lightskyblue-color-scheme,
-    snow1: $snow1-color-scheme,
-);
-
-$sveetoy-color-text-palette: (
-    white: $white,
-    black: $black,
-    gray25: $gray25,
-    gray82: $gray82,
-    gray88: $gray88,
-    lightskyblue: $lightskyblue,
-    deepskyblue4: $deepskyblue4,
-);
-
+///
+/// FOUNDATION SETTINGS
+///
 
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$font-weight-thin: 100; // sveetoy addon
 $font-weight-normal: 400;
 $font-weight-bold: 700;
-$font-weight-strong: 900; // sveetoy addon
 
 //$font-family-opensans: 'Open Sans', sans-serif;
 $font-family-roboto: 'Roboto', sans-serif;
@@ -101,14 +23,8 @@ $body-font-family: $font-family-roboto;
 // Enable xlarge and xxlarge columns class names into the grid
 $include-xl-html-grid-classes: false;
 
-// Uncomment to use rem-calc() in your settings
-@import "foundation/functions";
-
 // Larger row width for xlarge screens and more
 $row-larger-width: rem-calc(1328px);
-
-//@debug "foo: #{em-calc(1023px)}";
-//@debug "mediumup: #{em-calc(1024px)}";
 
 // Media Query Ranges
 $small-range: (0em, 40em);
@@ -149,120 +65,3 @@ $large: $large-up;
 // Using rem-calc for the below breakpoint causes issues with top bar
 $topbar-breakpoint: #{upper-bound($medium-range)}; // Change to 9999px for always mobile layout
 $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
-
-// ZZ. Sveetoys Various
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-
-
-// Defines default space sizes with their breakpoint values
-$sveetoy-space-tiny: (
-    small: 0.5rem,
-    medium: 0.75rem,
-    large: 1rem,
-    xlarge: 1.5rem,
-) !default;
-$sveetoy-space-short: (
-    small: 1rem,
-    medium: 1.25rem,
-    large: 2rem,
-    xlarge: 2.5rem,
-) !default;
-$sveetoy-space-normal: (
-    small: 1.5rem,
-    medium: 2rem,
-    large: 3rem,
-    xlarge: 4rem,
-) !default;
-$sveetoy-space-large: (
-    small: 2rem,
-    medium: 3rem,
-    large: 4rem,
-    xlarge: 5rem,
-) !default;
-$sveetoy-space-wide: (
-    small: 3rem,
-    medium: 4.5rem,
-    large: 6rem,
-    xlarge: 8rem,
-) !default;
-
-// Space scheme
-$sveetoy-spaces: (
-    tiny: $sveetoy-space-tiny,
-    short: $sveetoy-space-short,
-    normal: $sveetoy-space-normal,
-    large: $sveetoy-space-large,
-    wide: $sveetoy-space-wide,
-) !default;
-
-
-// Common available breakpoints taken from Foundation breakpoints
-$sveetoy-breakpoints: (
-    small: $small-up,
-    medium: $medium-up,
-    large: $large-up,
-    xlarge: $xlarge-up,
-);
-
-// Define button variables using default Foundation values
-$button-tny: rem-calc(10);
-$button-sml: rem-calc(14);
-$button-med: rem-calc(16);
-$button-lrg: rem-calc(18);
-// Use button variables for .modest feature
-$sveetoy-button-modests: (
-    tiny: $button-tny / 2,
-    small: $button-sml / 2,
-    medium: $button-med / 2,
-    large: $button-lrg / 2,
-);
-// Button color scheme
-$sveetoy-button-colors-schemes: $sveetoy-colors-schemes;
-
-// <small/> sizes
-$sveetoy-smalls: (
-    small: 40%,
-    big: 60%,
-    large: 80%,
-);
-
-// .underline features
-$sveetoy-underline-thickness: (
-    thin: (
-        size: rem-calc(1px),
-        style: solid,
-    ),
-    normal: (
-        size: rem-calc(3px),
-        style: solid,
-    ),
-    bold: (
-        size: rem-calc(5px),
-        style: solid,
-    ),
-);
-$sveetoy-underline-widths: (
-    tiny: 5%,
-    short: 15%,
-    normal: 40%, //default
-    large: 70%,
-    full: 100%,
-);
-$sveetoy-underline-distances: (
-    far: 2rem,
-    near: 0.5rem,
-    normal: 1rem, //default
-    sticked: 0,
-);
-$sveetoy-underline-colors: $sveetoy-color-text-palette;
-$sveetoy-underline-default-color: $black;
-
-$sveetoy-hr-thickness: $sveetoy-underline-thickness;
-$sveetoy-hr-distances: $sveetoy-underline-distances;
-$sveetoy-hr-colors: $sveetoy-underline-colors;
-$sveetoy-hr-default-color: $sveetoy-underline-default-color;
-
-$sveetoy-boxes-thickness: $sveetoy-underline-thickness;
-
-// Fleg grid cell sizes
-$flex-grid-sizes: 20 25 33.3333 50 75 100;

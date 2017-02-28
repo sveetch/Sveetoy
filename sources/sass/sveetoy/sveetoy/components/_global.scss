@@ -1,11 +1,11 @@
+@import '../utils/functions';
+
 /*
  * Global stuff
  */
 $include-sveetoy-classes: true !default;
 
 $include-sveetoy-global: $include-sveetoy-classes !default;
-
-@import '../utils/functions';
 
 
 @if $include-sveetoy-global {

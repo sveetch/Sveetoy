@@ -1,16 +1,17 @@
 @import "../mixins/flexbox";
 
-// Default available percentage sizes
-$flex-grid-sizes: 25 33.3333 50 75 100 !default;
-$flex-grid-gutter: 0.5rem !default;
-
-$include-sveetoy-flex: $include-sveetoy-classes !default;
-
 /*
  *
  * Flexbox
  *
  */
+$include-sveetoy-flex: $include-sveetoy-classes !default;
+
+// Default available percentage sizes
+$flex-grid-sizes: 25 33.3333 50 75 100 !default;
+$flex-grid-gutter: 0.5rem !default;
+
+
 @if $include-sveetoy-flex {
     // For browser with flexbox capability (from a modernizr classname)
     html.flexbox {

@@ -8694,12 +8694,12 @@ th.hide-for-touch {
  * Sveetoy library
  */
 /*
- * Global stuff
- */
-/*
  *
  * Some useful common functions
  *
+ */
+/*
+ * Global stuff
  */
 .position-relative {
   position: relative;
@@ -9442,10 +9442,10 @@ h6, .title-6 {
 .underline:after {
   content: "";
   display: block;
-  width: 40%;
   margin-top: 1rem;
   margin-left: 0;
   margin-right: 0;
+  width: 40%;
   border: solid #000000;
   border-width: 0 0 0.1875rem;
 }
@@ -9567,10 +9567,10 @@ h6, .title-6 {
 }
 
 hr {
-  border: solid #000000;
-  border-width: 0.1875rem 0 0;
   clear: both;
   height: 0;
+  border: solid #000000;
+  border-width: 0.1875rem 0 0;
   margin: 1rem 0;
 }
 
@@ -11108,17 +11108,15 @@ table.expand {
 }
 
 /*
- * Bullet list using arrow icon as bullet
- */
-/*
  * Mixin to render list item pseudo-element with a custom bullet
  *
  * Default behavior without any arguments is to simply add character '>' as
  * the bullet
  *
  * If needed you can use a webfont character instead of a character
- *
- * TODO: Move to mixins/_lists.scss
+ */
+/*
+ * Bullet list using arrow icon as bullet
  */
 ul.arrow {
   list-style-type: none;

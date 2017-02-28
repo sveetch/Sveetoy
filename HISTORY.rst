@@ -23,6 +23,9 @@ Version 0.5.2 - Unreleased
 * Renamed ``.section`` to ``.block``, close #15;
 * Added vocabulary references and accorded ``spaces`` component features to width terms, close #16;
 * Renamed button feature ``.strong`` to ``.important``;
+* Added ``sveetoy/_settings.scss`` to include some default settings and keep components only with ``!default`` values, close #13;
+* Fixed ``buttons`` and ``type`` components to work nice with empty default values;
+* Added "Install" part in demo;
 
 Version 0.5.1 - 2017/02/06
 --------------------------
