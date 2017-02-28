@@ -22,7 +22,7 @@
             <p>Space features are built from <code>$sveetoy-spaces</code> (except for <code>.unpadded</code> that just set padding to 0). Default box colors comes from <code>normal</code> item from <code>$sveetoy-spaces</code>.</p>
             <p>Note than first direct child element does not have a margin top and last direct child element does not have a margin bottom.</p>
             <div class="flex-grid marged demo-result">
-                {% for name in ['unpadded', 'thin', 'tiny', '', 'wide', 'huge'] %}
+                {% for name in ['unpadded', 'tiny', 'short', '', 'large', 'wide'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box{% if name %} {{ name }}{% endif %}">
                         <h3 class="demo-title">.box{% if name %}.{{ name }}{% endif %}</h3>
