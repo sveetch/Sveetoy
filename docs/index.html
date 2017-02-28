@@ -10,7 +10,7 @@
     <link href="//fonts.googleapis.com/css?family=Overlock+SC%7CRoboto:100,400,700,900" rel="stylesheet">
     <meta name="robots" content="index,follow,all">
 
-        <link rel="stylesheet" href="./static/css/app.min.css?343d5ef1">
+        <link rel="stylesheet" href="./static/css/app.min.css?0a433068">
         
         <script src="./static/js/modernizr.min.js?c9eb8d85"></script>
         
@@ -21,7 +21,7 @@
 
     <div id="body_content">
         
-<div class="section snow1" id="intro">
+<div class="block snow1" id="intro">
     <div class="row large">
         <div class="small-12 columns">
             <h1 class="logo">Sveetoy</h1>
@@ -40,30 +40,24 @@
             </div>
 
             <div>
-                <p class="text-center"><a href="http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.5.1.zip" class="button">Download version 0.5.1 (ZIP)</a></p>
-                <p>We recommend you to use it as an imported library from your Sass compiler and avoid to include it in your Sass source files.</p>
-                <p>Once library is available with your compiler, import it in your sources:</p>
-                <div class="code-container">
-                    <p>@import "settings";</p>
-                    <p>@import "foundation";</p>
-                    <p>@import "sveetoy";</p>
-                </div>
-                <p>You may notice that Foundation components and settings must be loaded before Sveetoy (because some components use some of its settings).</p>
-                <p>In <code>settings</code> source, you can define Sveetoy settings you want to override.</p>
+                <p class="text-center"><a href="http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.5.2.zip" class="button">Download version 0.5.2 (ZIP)</a></p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="section snow1 unpadded" id="demo-menu">
+<div class="block snow1 unpadded" id="demo-menu">
     <div class="row larger">
         <div class="small-12 columns">
             <div data-magellan-expedition="fixed" class="menu">
                 <ul class="sub-nav">
+                    <li data-magellan-arrival="install"><a href="#install">Install</a></li>
+                    <li data-magellan-arrival="vocabulary"><a href="#vocabulary">Vocabulary</a></li>
                     <li data-magellan-arrival="typography"><a href="#typography">Typography</a></li>
                     <li data-magellan-arrival="buttons"><a href="#buttons">Buttons</a></li>
                     <li data-magellan-arrival="spaces"><a href="#spaces">Spaces</a></li>
-                    <li data-magellan-arrival="sections"><a href="#sections">Sections</a></li>
+                    <li data-magellan-arrival="blocks"><a href="#blocks">Blocks</a></li>
+                    <li data-magellan-arrival="boxes"><a href="#boxes">Boxes</a></li>
                     <li data-magellan-arrival="flex"><a href="#flex">Flexbox</a></li>
                 </ul>
             </div>
@@ -71,11 +65,80 @@
     </div>
 </div>
 
-<div class="section demo-section" data-magellan-destination="typography">
+<div class="block demo-block" data-magellan-destination="install">
+    <a id="install"></a>
+    <div class="row larger demo-introduction">
+        <div class="small-12 columns">
+            <h1 class="demo-title text-upper">Install</h1>
+
+            <p>We recommend you to use it as an imported library from your Sass compiler and avoid to include it inside your project Sass sources.</p>
+
+            <p>Once library is available with your compiler, import it in your sources:</p>
+
+            <div class="code-container">
+                <p>@import "settings";</p>
+                <p>@import "foundation";</p>
+                <p>@import "sveetoy";</p>
+            </div>
+
+            <p>Alike with Foundation, you must load the settings first then libraries. In your settings you can define both Foundation and Sveetoy settings or you may split them in two or more settings files.</p>
+
+            <p>Include file <code>sveetoy/_settings.scss</code> contains some sample settings you may use and adjust to your needs. Be aware that some of its values are linked to some Foundation setting values.</p>
+
+        </div>
+    </div>
+</div>
+<div class="block demo-block" data-magellan-destination="vocabulary">
+    <a id="vocabulary"></a>
+    <div class="row larger demo-introduction">
+        <div class="small-12 columns">
+            <h1 class="demo-title text-upper">Vocabulary</h1>
+            <p>Components features share the same vocabulary depending of feature kind.</p>
+
+            <p>The following vocabulary kinds are listing every word from the lesser value to higher.</p>
+
+            <div class="flex-grid marged">
+
+                <div class="cell small-100 medium-33 box">
+                    <h2 class="demo-title">Thickness</h2>
+                    <ul>
+                        <li>thin</li>
+                        <li>normal</li>
+                        <li>bold</li>
+                        <li>strong</li>
+                    </ul>
+                </div>
+
+                <div class="cell small-100 medium-33 box">
+                    <h2 class="demo-title">Distance</h2>
+                    <ul>
+                        <li>sticked</li>
+                        <li>near</li>
+                        <li>normal</li>
+                        <li>far</li>
+                    </ul>
+                </div>
+
+                <div class="cell small-100 medium-33 box">
+                    <h2 class="demo-title">Width</h2>
+                    <ul>
+                        <li>tiny</li>
+                        <li>short</li>
+                        <li>normal</li>
+                        <li>large</li>
+                        <li>wide</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block demo-block" data-magellan-destination="typography">
     <a id="typography"></a>
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title">Typography</h1>
+            <h1 class="demo-title text-upper">Typography</h1>
             <p>This component adds some minor things to the Foundation typography stuff.</p>
 
             <p>Also there is a new rule that prevent paragraphs to have a bottom margin if they are the last child of their parent.</p>
@@ -93,8 +156,8 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Title element</h2>
-            <p>Title styles are not anymore sticked to <code>hX</code> elements, now you can use them by the way of <code>.title-X</code> classes on any other element to preserve semantic.</p>
-            <div class="demo-result v-space-thin">
+            <p>Title styles are not anymore sticked to <code>hX</code> elements, now you can use them by the way of <code>.title-X</code> classes on any other element to preserve semantic. You may even use a <code>.title-X</code> class on <code>hX</code> element.</p>
+            <div class="demo-result v-space-tiny">
                 
                 <h1>h1, .title-1</h1>
                 
@@ -116,7 +179,7 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Text colors</h2>
             <p>Text colors are available for every color defined in map <code>$sveetoy-color-text-palette</code>. Properties are defined using <code>!important</code> flag so take care of their usage.</p>
-            <div class="demo-result v-space-thin">
+            <div class="demo-result v-space-tiny">
                 
                 <p class="text-white">.text-white</p>
                 
@@ -139,19 +202,17 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Thickness</h2>
-            <p>Two more thickness are available if their corresponding variable is defined. <code>$font-weight-thin</code> for thinest thickness and <code>$font-weight-bolder</code> for boldest thickness.</p>
-            <div class="demo-result v-space-thin">
+            <p>Two more thickness are available if their corresponding variable is defined. <code>$font-weight-thin</code> for thinest thickness and <code>$font-weight-strong</code> for boldest thickness.</p>
+            <div class="demo-result v-space-tiny">
                 
                 <p class="text-thin">.text-thin</p>
                 
                 <p class="text-normal">.text-normal</p>
                 
-                <p class="text-strong">.text-strong</p>
+                <p class="text-bold"><b>&lt;b&gt;</b>, .text-bold</p>
                 
-                <p class="text-stronger">.text-stronger</p>
+                <p class="text-strong"><strong>&lt;strong&gt;</strong>, .text-strong</p>
                 
-                <p><b>&lt;b&gt;</b></p>
-                <p><strong>&lt;strong&gt;</strong></p>
             </div>
         </div>
     </div>
@@ -159,16 +220,16 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Small</h2>
-            <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior.</p>
-            <div class="demo-result v-space-thin">
+            <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are built from <code>$sveetoy-smalls</code>.</p>
+            <div class="demo-result v-space-tiny">
                 
-                <p><code>.small</code> <small class="small">Magnis ligula nisi vel aliquam lectus semper sodales habitasse, nonummy mus pellentesque faucibus velit, accumsan.</small></p>
+                <p><code>.small</code> <small class="small">At eu non ullamcorper posuere aliquet tincidunt placerat, nisl senectus tincidunt egestas eleifend, arcu dignissim.</small></p>
                 
-                <p><code>.medium</code> <small class="medium">Mattis sodales conubia sapien felis dolor hendrerit mi, ornare cum massa tempus suspendisse, pulvinar hendrerit.</small></p>
+                <p><code>.medium</code> <small class="medium">Semper placerat risus in cubilia purus curae, ipsum dolor hendrerit vestibulum suscipit odio aliquet, interdum.</small></p>
                 
-                <p><code>.big</code> <small class="big">Nonummy phasellus ipsum aliquet ultricies, bibendum vel hymenaeos leo libero, nec torquent mauris commodo elementum.</small></p>
+                <p><code>.big</code> <small class="big">Fringilla sem cubilia in mus hymenaeos felis, neque lobortis scelerisque dui class fermentum, hendrerit justo.</small></p>
                 
-                <p>Id vivamus penatibus venenatis augue dui rhoncus dignissim, justo platea hendrerit ante nostra praesent ornare.</p>
+                <p>Massa nulla massa praesent dui curabitur iaculis, aptent interdum curae commodo quam iaculis phasellus, sodales.</p>
             </div>
         </div>
     </div>
@@ -177,7 +238,7 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Transform and decoration</h2>
             <p><code>.text-upper</code> enables you to correctly write your texts in lowercase but render them as uppercase. <code>.text-important</code> just define the underline value for <code>text-decoration</code> property.</p>
-            <div class="demo-result v-space-thin">
+            <div class="demo-result v-space-tiny">
                 <p class="text-upper">.text-upper</p>
                 <p class="text-important">.text-important</p>
             </div>
@@ -187,72 +248,295 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Underline</h2>
-            <p>Various underline position, thickness and widths. All of them are implemented with border properties on a pseudo-element.</p>
+            <p>Various underline positions, thickness and widths. All of them are implemented with border properties on a pseudo-element <code>:after</code>.</p>
+
+            <h3 class="demo-title">Width</h3>
+            <p>Built from list <code>$sveetoy-underline-widths</code>.</p>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
-                        <p class="title-4 underline ">.underline</p>
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
-                        <p class="title-4 underline short">.underline.short</p>
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
-                        <p class="title-4 underline large">.underline.large</p>
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
-                        <p class="title-4 underline full">.underline.full</p>
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
-                        <p class="title-4 underline thin">.underline.thin</p>
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
-                        <p class="title-4 underline bold">.underline.bold</p>
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
+                    <div class="demo-result v-space-tiny">
                         <p class="title-4 underline tiny">.underline.tiny</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
-                        <p class="title-4 underline far">.underline.far</p>
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline short">.underline.short</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
-                        <p class="title-4 underline near">.underline.near</p>
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline normal">.underline.normal</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline large">.underline.large</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline full">.underline.full</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <h3 class="demo-title">Thickness</h3>
+            <p>Built from map <code>$sveetoy-underline-thickness</code>.</p>
+            <div class="flex-grid marged">
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline thin">.underline.thin</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline normal">.underline.normal</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline bold">.underline.bold</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <h3 class="demo-title">Distance</h3>
+            <p>Built from list <code>$sveetoy-underline-distances</code>.</p>
+            <div class="flex-grid marged">
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
                         <p class="title-4 underline sticked">.underline.sticked</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-thin">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline near">.underline.near</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline normal">.underline.normal</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline far">.underline.far</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <h3 class="demo-title">Alignment</h3>
+            <p>No variable is used to build this single feature.</p>
+            <div class="flex-grid marged">
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline normal">.underline.normal</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
                         <p class="title-4 underline text-center">.underline.text-center</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <h3 class="demo-title">Color</h3>
+            <p>Built from list <code>$sveetoy-underline-colors</code>.</p>
+            <div class="flex-grid marged">
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline normal">.underline.normal</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline white">.underline.white</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline black">.underline.black</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline gray25">.underline.gray25</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline gray82">.underline.gray82</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline gray88">.underline.gray88</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline lightskyblue">.underline.lightskyblue</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline deepskyblue4">.underline.deepskyblue4</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Horizontal rule</h2>
+            <p>Various horizontal rule positions, thickness and widths. Following the same scheme formats than <code>.underline</code> features.</p>
+
+            <h3 class="demo-title">Thickness</h3>
+            <p>Built from map <code>$sveetoy-hr-thickness</code>.</p>
+            <div class="flex-grid marged">
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.thin</p>
+                        <hr class="thin">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.normal</p>
+                        <hr class="normal">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.bold</p>
+                        <hr class="bold">
+                    </div>
+                </div>
+                
+            </div>
+
+            <h3 class="demo-title">Distance</h3>
+            <p>Built from list <code>$sveetoy-hr-distances</code>.</p>
+            <div class="flex-grid marged">
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.sticked</p>
+                        <hr class="sticked">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.near</p>
+                        <hr class="near">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.normal</p>
+                        <hr class="normal">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.far</p>
+                        <hr class="far">
+                    </div>
+                </div>
+                
+            </div>
+
+            <h3 class="demo-title">Color</h3>
+            <p>Built from list <code>$sveetoy-hr-colors</code>.</p>
+            <div class="flex-grid marged">
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.normal</p>
+                        <hr class="normal">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.white</p>
+                        <hr class="white">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.black</p>
+                        <hr class="black">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.gray25</p>
+                        <hr class="gray25">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.gray82</p>
+                        <hr class="gray82">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.gray88</p>
+                        <hr class="gray88">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.lightskyblue</p>
+                        <hr class="lightskyblue">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.deepskyblue4</p>
+                        <hr class="deepskyblue4">
                     </div>
                 </div>
                 
@@ -260,11 +544,11 @@
         </div>
     </div>
 </div>
-<div class="section demo-section" data-magellan-destination="buttons">
+<div class="block demo-block" data-magellan-destination="buttons">
     <a id="buttons"></a>
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title">Buttons</h1>
+            <h1 class="demo-title text-upper">Buttons</h1>
             <p>Some addons to the buttons features.</p>
 
             <p>Also there is a new rule that prevent buttons to have a bottom margin if they are the last child of a <code>div</code>, <code>p</code>, <code>dd</code>, <code>li</code> element.</p>
@@ -282,9 +566,9 @@
     <div class="row larger">
 
         <div class="small-12 columns">
-            <h2 class="demo-title">Stronger</h2>
+            <h2 class="demo-title">Important</h2>
             <p>Make the button text stronger and uppercase.</p>
-            <div class="demo-result v-space-thin">
+            <div class="demo-result v-space-tiny">
                 <div class="row">
                     
                     <div class="large-4 columns">
@@ -292,7 +576,7 @@
                     </div>
                     
                     <div class="large-4 columns end">
-                        <a href="" class="button strong">.button.strong</a>
+                        <a href="" class="button important">.button.important</a>
                     </div>
                     
                 </div>
@@ -304,7 +588,7 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Sizes</h2>
             <p>Add <code>.full</code> feature that act like <code>.expand</code> but preserve normal horizontal padding.</p>
-            <div class="demo-result v-space-thin">
+            <div class="demo-result v-space-tiny">
                 <div class="row">
                     <div class="small-12 columns">
                         <a href="" class="button full">.button.full</a>
@@ -317,8 +601,8 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Paddings</h2>
-            <p>Add <code>.modest</code> feature so the button padding are divided by two.</p>
-            <div class="demo-result v-space-thin">
+            <p>Add <code>.modest</code> feature so the button padding are divided by two or less, it depend from size definitions in <code>$sveetoy-button-modests</code>.</p>
+            <div class="demo-result v-space-tiny">
                 <div class="row">
                     
                     <div class="large-4 columns">
@@ -352,39 +636,42 @@
 
     <div class="row larger">
         <div class="small-12 columns">
-            <h2 class="demo-title">Dropdown overflow</h2>
-            <p>Add <code>.overflow</code> feature to <code>f-dropdown</code> so the dropdown is limited to a fixed size with automatic scrollbar.</p>
-            <div class="demo-result v-space-thin">
+            <h2 class="demo-title">Colors</h2>
+            <p>Button color features are builded from <code>$sveetoy-button-colors-schemes</code> that is on the same format than <code>$sveetoy-colors-schemes</code> except additional (and optionnal) <code>border-color</code> option.</p>
+            <div class="demo-result v-space-tiny">
                 <div class="row">
+                    
                     <div class="large-4 columns">
-                        <a href="#" class="button dropdown" data-dropdown="drop-1">button dropdown</a>
-                        <ul class="f-dropdown" id="drop-1" data-dropdown-content>
-                            <li><a href="#">This is a link</a></li>
-                            <li><a href="#">This is another</a></li>
-                            <li><a href="#">Yet another</a></li>
-                        </ul>
+                        <a href="" class="button">.button</a>
                     </div>
+                    
+                    <div class="large-4 columns">
+                        <a href="" class="button white">.button.white</a>
+                    </div>
+                    
+                    <div class="large-4 columns">
+                        <a href="" class="button black">.button.black</a>
+                    </div>
+                    
+                    <div class="large-4 columns">
+                        <a href="" class="button snow1">.button.snow1</a>
+                    </div>
+                    
                     <div class="large-4 columns end">
-                        <a href="#" class="button dropdown" data-dropdown="drop-2">.button.dropdown (overflow)</a>
-                        <ul class="f-dropdown overflow overflow-100" id="drop-2" data-dropdown-content>
-                            <li><a href="#">This is a link</a></li>
-                            <li><a href="#">This is another</a></li>
-                            <li><a href="#">Yet another</a></li>
-                            <li><a href="#">Last one</a></li>
-                        </ul>
+                        <a href="" class="button lightskyblue">.button.lightskyblue</a>
                     </div>
+                    
                 </div>
             </div>
         </div>
-
     </div>
 
 </div>
-<div class="section demo-section" data-magellan-destination="spaces">
+<div class="block demo-block" data-magellan-destination="spaces">
     <a id="spaces"></a>
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title">Spaces</h1>
+            <h1 class="demo-title text-upper">Spaces</h1>
             <p>This component add styles to apply paddings using space rythmic defined in map <code>$sveetoy-spaces</code>.</p>
             <p>Padding can be applied for both sides on vertical or horizontal axes or optionally on only one side.</p>
             <p>There are many space sizes available and each of them have their own breakpoint sizes.</p>
@@ -401,21 +688,21 @@
 
     <div class="row larger">
         <div class="small-12 columns">
-            <hr>
+            <hr class="gray82 thin">
 
             <h2 class="demo-title">Vertical padding in element</h2>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-33 large-20">
-                    <code>.v-space-thin</code>
-                    <div class="demo-result v-space-thin">
+                    <code>.v-space-tiny</code>
+                    <div class="demo-result v-space-tiny">
                         <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-33 large-20">
-                    <code>.v-space-tiny</code>
-                    <div class="demo-result v-space-tiny">
+                    <code>.v-space-short</code>
+                    <div class="demo-result v-space-short">
                         <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
@@ -428,15 +715,15 @@
                 </div>
                 
                 <div class="cell small-100 medium-33 large-20">
-                    <code>.v-space-wide</code>
-                    <div class="demo-result v-space-wide">
+                    <code>.v-space-large</code>
+                    <div class="demo-result v-space-large">
                         <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-33 large-20">
-                    <code>.v-space-huge</code>
-                    <div class="demo-result v-space-huge">
+                    <code>.v-space-wide</code>
+                    <div class="demo-result v-space-wide">
                         <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
@@ -465,22 +752,22 @@
     </div>
 
     <div class="row larger">
-        <hr>
+        <hr class="gray82 thin">
 
         <div class="small-12 columns">
             <h2 class="demo-title">Horizontal padding in element</h2>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50 large-33">
-                    <code>.h-space-thin</code>
-                    <div class="demo-result h-space-thin">
+                    <code>.h-space-tiny</code>
+                    <div class="demo-result h-space-tiny">
                         <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
-                    <code>.h-space-tiny</code>
-                    <div class="demo-result h-space-tiny">
+                    <code>.h-space-short</code>
+                    <div class="demo-result h-space-short">
                         <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
@@ -493,15 +780,15 @@
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
-                    <code>.h-space-wide</code>
-                    <div class="demo-result h-space-wide">
+                    <code>.h-space-large</code>
+                    <div class="demo-result h-space-large">
                         <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
-                    <code>.h-space-huge</code>
-                    <div class="demo-result h-space-huge">
+                    <code>.h-space-wide</code>
+                    <div class="demo-result h-space-wide">
                         <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
@@ -530,7 +817,7 @@
     </div>
 
     <div class="row larger">
-        <hr>
+        <hr class="gray82 thin">
 
         <div class="small-12 columns">
             <h2 class="demo-title">Vertical margin divider</h2>
@@ -538,14 +825,14 @@
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result">
-                        <span class="button small full v-divider-thin">.v-divider-thin</span>
+                        <span class="button small full v-divider-tiny">.v-divider-tiny</span>
                         <span class="button small full secondary">Follower</span>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result">
-                        <span class="button small full v-divider-tiny">.v-divider-tiny</span>
+                        <span class="button small full v-divider-short">.v-divider-short</span>
                         <span class="button small full secondary">Follower</span>
                     </div>
                 </div>
@@ -559,14 +846,14 @@
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result">
-                        <span class="button small full v-divider-wide">.v-divider-wide</span>
+                        <span class="button small full v-divider-large">.v-divider-large</span>
                         <span class="button small full secondary">Follower</span>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result">
-                        <span class="button small full v-divider-huge">.v-divider-huge</span>
+                        <span class="button small full v-divider-wide">.v-divider-wide</span>
                         <span class="button small full secondary">Follower</span>
                     </div>
                 </div>
@@ -576,7 +863,7 @@
     </div>
 
     <div class="row larger">
-        <hr>
+        <hr class="gray82 thin">
 
         <div class="small-12 columns">
             <h2 class="demo-title">Horizontal margin divider</h2>
@@ -584,14 +871,14 @@
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result">
-                        <span class="button small h-divider-thin">.h-divider-thin</span>
+                        <span class="button small h-divider-tiny">.h-divider-tiny</span>
                         <span class="button small secondary">Follower</span>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result">
-                        <span class="button small h-divider-tiny">.h-divider-tiny</span>
+                        <span class="button small h-divider-short">.h-divider-short</span>
                         <span class="button small secondary">Follower</span>
                     </div>
                 </div>
@@ -605,14 +892,14 @@
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result">
-                        <span class="button small h-divider-wide">.h-divider-wide</span>
+                        <span class="button small h-divider-large">.h-divider-large</span>
                         <span class="button small secondary">Follower</span>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result">
-                        <span class="button small h-divider-huge">.h-divider-huge</span>
+                        <span class="button small h-divider-wide">.h-divider-wide</span>
                         <span class="button small secondary">Follower</span>
                     </div>
                 </div>
@@ -622,80 +909,231 @@
     </div>
 
 </div>
-<div class="section demo-section" data-magellan-destination="sections">
-    <a id="sections"></a>
+<div class="block demo-block" data-magellan-destination="blocks">
+    <a id="blocks"></a>
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title">Sections</h1>
-            <p>A section is a full width container useful for fluid design layouts but with first goal to set background and font colors.</p>
+            <h1 class="demo-title text-upper">Blocks</h1>
+            <p>A block is a full width container useful for fluid design layouts but with first goal to set background and font colors.</p>
             <p>Available features can apply various vertical padding using rythmic space from <code>$sveetoy-spaces</code> and various color schemes from <code>$sveetoy-colors-schemes</code>.</p>
-            <p><code>.section</code> does not have any links with <code>&lt;section&gt;</code> element although you can mix them if you want.
 
             <dl>
                 <dt>Can be disabled with</dt>
-                <dd><code>$include-sveetoy-sections: false;</code></dd>
+                <dd><code>$include-sveetoy-blocks: false;</code></dd>
 
                 <dt>Source location</dt>
-                <dd><code>sveetoy/components/_sections.scss</code></dd>
+                <dd><code>sveetoy/components/_blocks.scss</code></dd>
             </dl>
         </div>
     </div>
 
     
-    <div class="section">
+    <div class="block">
         <div class="row">
             <div class="small-12 columns">
-                <h2 class="demo-title">.section</h2>
+                <h2 class="demo-title">.block</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Mus fames habitasse venenatis risus integer hendrerit, mollis pede ridiculus sociosqu vitae dignissim, auctor eleifend consequat praesent tincidunt dapibus hac, ad nonummy. Malesuada conubia convallis elementum nibh, nam pulvinar pede dis egestas.</p>
-<p>Bibendum vel vivamus vulputate mattis fermentum laoreet, euismod lacus lectus in, facilisis duis sociis lorem inceptos. Mi malesuada non erat integer id dolor facilisis, auctor venenatis suscipit vulputate hendrerit facilisis, sem ligula netus eleifend aenean nostra varius. In.</p>
+                <p>Primis elementum eu fames porttitor tristique ante, morbi posuere habitant consectetuer purus, mauris iaculis imperdiet tortor cubilia diam sagittis pretium,. Ligula ad et ad phasellus quis, velit sapien.</p>
+<p>Maecenas felis tortor dui quisque, duis laoreet dis consectetuer quisque libero, tincidunt lacus quis arcu nisi bibendum, penatibus ac nisi cubilia convallis, ullamcorper porttitor. Habitasse.</p>
             </div>
         </div>
     </div>
     
-    <div class="section black">
+    <div class="block black">
         <div class="row">
             <div class="small-12 columns">
-                <h2 class="demo-title">.section.black</h2>
+                <h2 class="demo-title">.block.black</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Tortor sed eu pharetra id malesuada varius ante, dictum consequat condimentum lorem dui, pretium etiam nam fames ornare parturient, phasellus nec sem tristique. Mollis morbi vivamus est, mollis amet erat fringilla phasellus, massa tempus arcu luctus, dui eget ad et, pharetra lectus. Torquent sagittis rhoncus.</p>
-<p>Fames lacus vitae consequat porttitor erat, primis ornare pharetra quis iaculis molestie nam, dolor nisl cras cum, accumsan mi sociis nonummy etiam faucibus, sapien. Quam ullamcorper ante pellentesque per tempor, mauris felis cras pharetra velit ante, ac quisque rhoncus congue.</p>
+                <p>Sit semper vel pretium dui hymenaeos vehicula, malesuada fusce class vulputate, curae nunc ridiculus fusce penatibus facilisis, vestibulum lacinia sociis tempus, nascetur magnis. Dis interdum odio non porttitor dictumst, tortor molestie vel lacinia, cubilia nisi.</p>
+<p>Velit suscipit euismod vel lacus eu velit per, blandit lobortis nibh imperdiet, montes nostra primis ridiculus ligula imperdiet. Habitant porta auctor blandit nec lectus suspendisse, pellentesque libero semper imperdiet, class elementum ultricies pellentesque eros, risus maecenas.</p>
             </div>
         </div>
     </div>
     
-    <div class="section lightskyblue">
+    <div class="block lightskyblue">
         <div class="row">
             <div class="small-12 columns">
-                <h2 class="demo-title">.section.lightskyblue</h2>
+                <h2 class="demo-title">.block.lightskyblue</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Pulvinar ornare torquent senectus habitant magna, primis aliquet potenti eleifend, nullam conubia nam varius interdum, inceptos dictumst sem placerat penatibus, tellus suspendisse adipiscing nibh. Massa fusce orci curae, potenti dis sem sociosqu ut.</p>
-<p>Nunc mauris turpis urna curae mattis eget leo, dis tortor luctus ad proin suspendisse vitae accumsan, pede. Ornare curabitur mi a facilisis, ullamcorper porttitor neque cras tincidunt, sollicitudin in tortor metus senectus, fringilla id varius platea. Suspendisse erat sodales parturient, ridiculus.</p>
+                <p>Nec nam tincidunt libero integer hymenaeos, tempor aliquet varius molestie id, nisi aliquam fringilla platea mus, ullamcorper posuere hendrerit. Placerat luctus pharetra mollis rutrum adipiscing sem, rhoncus bibendum ac sed dictumst, lectus eget sociosqu ullamcorper vel.</p>
+<p>Vitae quis quam vitae primis, ultrices pharetra massa dui volutpat, nam sodales curae in dui, quis massa feugiat semper torquent, pellentesque est sit diam. Euismod blandit gravida diam vivamus, magna libero sapien non orci.</p>
             </div>
         </div>
     </div>
     
-    <div class="section tall">
+    <div class="block snow1">
         <div class="row">
             <div class="small-12 columns">
-                <h2 class="demo-title">.section.tall</h2>
+                <h2 class="demo-title">.block.snow1</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Eleifend taciti duis nullam malesuada, cum elementum rhoncus molestie nonummy, fringilla congue mi netus, sociis praesent ullamcorper potenti ipsum, quis tortor quam fusce pharetra curae, consectetuer aliquam.</p>
-<p>Justo consectetuer molestie semper pellentesque commodo magnis, sem dignissim adipiscing nisi tincidunt nec, nam proin aliquam. Sollicitudin mauris habitant cras duis nisi, commodo egestas in velit sem tellus per, egestas.</p>
+                <p>Laoreet magna massa tempus elementum ligula tempor, tristique gravida eget cursus, dignissim ante semper non, lectus massa mattis curabitur semper augue, leo. Vel urna nibh natoque sollicitudin conubia, duis porta habitasse aliquam, rutrum sociis.</p>
+<p>Sodales ligula congue felis hac, magna proin class aenean fermentum hac, eu tellus netus etiam suspendisse. Viverra elit sed ornare egestas, morbi semper penatibus.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="block wide">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="demo-title">.block.wide</h2>
+                <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+
+                <p>Tempus interdum quam dui nisl faucibus penatibus purus, habitasse ornare quam vel vestibulum, inceptos cum cursus turpis egestas velit, at cursus tellus. Vehicula sit gravida phasellus.</p>
+<p>Mollis turpis tincidunt cras auctor augue nascetur potenti, sociosqu ac class lectus laoreet velit, sociis ridiculus habitasse. Conubia hac est metus magnis pulvinar, dolor dapibus lectus semper egestas leo, nostra enim id congue inceptos, in malesuada. Fringilla feugiat eros volutpat erat elementum, sed quis cum habitant consequat, porttitor venenatis.</p>
             </div>
         </div>
     </div>
     
 </div>
-<div class="section demo-section" data-magellan-destination="flex">
+<div class="block demo-block" data-magellan-destination="boxes">
+    <a id="boxes"></a>
+    <div class="row larger demo-introduction">
+        <div class="small-12 columns">
+            <h1 class="demo-title text-upper">Boxes</h1>
+            <p>Box component is a combination of spaces and colors settings, alike <code>.block</code> but with both horizontal and vertical padding and optional borders.
+
+            <dl>
+                <dt>Can be disabled with</dt>
+                <dd><code>$include-sveetoy-boxes: false;</code></dd>
+
+                <dt>Source location</dt>
+                <dd><code>sveetoy/components/_boxes.scss</code></dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+
+            <h2 class="demo-title">Spaces</h2>
+            <p>Space features are built from <code>$sveetoy-spaces</code> (except for <code>.unpadded</code> that just set padding to 0). Default box colors comes from <code>normal</code> item from <code>$sveetoy-spaces</code>.</p>
+            <p>Note than first direct child element does not have a margin top and last direct child element does not have a margin bottom.</p>
+            <div class="flex-grid marged demo-result">
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box unpadded">
+                        <h3 class="demo-title">.box.unpadded</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box tiny">
+                        <h3 class="demo-title">.box.tiny</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box short">
+                        <h3 class="demo-title">.box.short</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box">
+                        <h3 class="demo-title">.box</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box large">
+                        <h3 class="demo-title">.box.large</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box wide">
+                        <h3 class="demo-title">.box.wide</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <h2 class="demo-title">Colors</h2>
+            <p>Color features are built from <code>$sveetoy-colors-schemes</code>. Default box colors comes from <code>$sveetoy-colors-scheme-default</code>.</p>
+            <div class="flex-grid marged demo-result">
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box">
+                        <h3 class="demo-title">.box</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box white">
+                        <h3 class="demo-title">.box.white</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box black">
+                        <h3 class="demo-title">.box.black</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box lightskyblue">
+                        <h3 class="demo-title">.box.lightskyblue</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box snow1">
+                        <h3 class="demo-title">.box.snow1</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <h2 class="demo-title">Border thickness</h2>
+            <p>Optionally if your color scheme support borders you can change its thickness using some features.</p>
+            <div class="flex-grid marged demo-result">
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box lightskyblue border-thin">
+                        <h3 class="demo-title">.box.border-thin</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box lightskyblue border-normal">
+                        <h3 class="demo-title">.box.border-normal</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box lightskyblue border-bold">
+                        <h3 class="demo-title">.box.border-bold</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="block demo-block" data-magellan-destination="flex">
     <a id="flex"></a>
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title">Flexbox</h1>
+            <h1 class="demo-title text-upper">Flexbox</h1>
             <p>Foundation for site version 5 does not have any flexbox grid and version 6 force to choose between float and flexbox grid.</p>
             <p>So here it is, a simple flexbox grid.</p>
             <p>Alike <code>.row</code> in float grid, <code>.flex-grid</code> is the main container and <code>.cell</code> is equivalent to <code>.columns</code>.</p>
@@ -794,30 +1232,236 @@
                     
                     <div class="cell small-100 medium-33 align-start">
                         <p><code>.align-start</code></p>
-                        <p>Mus nunc scelerisque proin tempor hac, vivamus venenatis viverra duis posuere integer, erat luctus ante.</p>
+                        <p>Dapibus etiam fringilla quam vivamus ridiculus, senectus primis nascetur curabitur, erat tempus nisl ante dolor.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 align-end">
                         <p><code>.align-end</code></p>
-                        <p>Montes curabitur fermentum aliquet nonummy, odio placerat aliquet donec torquent tempus etiam, iaculis fusce porttitor.</p>
+                        <p>Varius malesuada venenatis conubia taciti metus, vestibulum facilisis amet ut, enim vel suspendisse cubilia sodales.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 align-center">
                         <p><code>.align-center</code></p>
-                        <p>Imperdiet ultricies aliquam facilisi primis urna scelerisque molestie suspendisse, sed aenean consectetuer tristique urna morbi.</p>
+                        <p>Nulla luctus vivamus litora leo etiam per, aliquam euismod sed aliquet litora, rhoncus sollicitudin ligula.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 align-around">
                         <p><code>.align-around</code></p>
-                        <p>Nascetur praesent ut ac eu arcu dolor ipsum, libero faucibus dictumst tellus suscipit, habitant velit.</p>
+                        <p>Morbi mauris sociis fusce etiam nec primis, odio vitae suspendisse tortor, vitae praesent neque lectus.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 align-between">
                         <p><code>.align-between</code></p>
-                        <p>Nec curae in taciti venenatis ipsum quis, maecenas habitasse a at ultrices, quam facilisis montes.</p>
+                        <p>Mus quis porttitor nec libero, feugiat integer vehicula potenti odio nam, ullamcorper porta primis dictum.</p>
                     </div>
                     
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger v-space-tiny">
+        <div class="small-12 columns">
+            <h2 class="demo-title">Container items direction</h2>
+
+            
+            <h3 class="demo-title">.direction-row</h3>
+            <div class="demo-result">
+                <div class="flex-grid flex-demo direction-row">
+                    
+                    <div class="cell small-33 text-center">
+                        1
+                    </div>
+                    
+                    <div class="cell small-33 text-center">
+                        2
+                    </div>
+                    
+                    <div class="cell small-33 text-center">
+                        3
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <h3 class="demo-title">.direction-row-reverse</h3>
+            <div class="demo-result">
+                <div class="flex-grid flex-demo direction-row-reverse">
+                    
+                    <div class="cell small-33 text-center">
+                        1
+                    </div>
+                    
+                    <div class="cell small-33 text-center">
+                        2
+                    </div>
+                    
+                    <div class="cell small-33 text-center">
+                        3
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <h3 class="demo-title">.direction-column</h3>
+            <div class="demo-result">
+                <div class="flex-grid flex-demo direction-column">
+                    
+                    <div class="cell small-33 text-center">
+                        1
+                    </div>
+                    
+                    <div class="cell small-33 text-center">
+                        2
+                    </div>
+                    
+                    <div class="cell small-33 text-center">
+                        3
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <h3 class="demo-title">.direction-column-reverse</h3>
+            <div class="demo-result">
+                <div class="flex-grid flex-demo direction-column-reverse">
+                    
+                    <div class="cell small-33 text-center">
+                        1
+                    </div>
+                    
+                    <div class="cell small-33 text-center">
+                        2
+                    </div>
+                    
+                    <div class="cell small-33 text-center">
+                        3
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+            <h3 class="demo-title">Using responsive classes</h3>
+
+            <p>Every direction classname is available for each Foundation media query names, you can combine them to change direction behavior between media queries, like the following sample with <code>.direction-column.direction-large-row</code> which use column direction from small to medium then switch to row direction from large to infinite.</p>
+            <div class="demo-result">
+                <div class="flex-grid flex-demo direction-column direction-large-row">
+                    
+                    <div class="cell small-33 text-center">
+                        1
+                    </div>
+                    
+                    <div class="cell small-33 text-center">
+                        2
+                    </div>
+                    
+                    <div class="cell small-33 text-center">
+                        3
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="v-space-thin">
+                <p>Classnames are builded using enabled media queries from <code>$sveetoy-breakpoints</code>.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            
+                            <th>Row</th>
+                            
+                            <th>Row reverse</th>
+                            
+                            <th>Column</th>
+                            
+                            <th>Column reverse</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <th></th>
+                            
+                                <td>.direction-row</td>
+                            
+                                <td>.direction-row-reverse</td>
+                            
+                                <td>.direction-column</td>
+                            
+                                <td>.direction-column-reverse</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th>Small</th>
+                            
+                                <td>.direction-small-row</td>
+                            
+                                <td>.direction-small-row-reverse</td>
+                            
+                                <td>.direction-small-column</td>
+                            
+                                <td>.direction-small-column-reverse</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th>Medium</th>
+                            
+                                <td>.direction-medium-row</td>
+                            
+                                <td>.direction-medium-row-reverse</td>
+                            
+                                <td>.direction-medium-column</td>
+                            
+                                <td>.direction-medium-column-reverse</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th>Large</th>
+                            
+                                <td>.direction-large-row</td>
+                            
+                                <td>.direction-large-row-reverse</td>
+                            
+                                <td>.direction-large-column</td>
+                            
+                                <td>.direction-large-column-reverse</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th>Xlarge</th>
+                            
+                                <td>.direction-xlarge-row</td>
+                            
+                                <td>.direction-xlarge-row-reverse</td>
+                            
+                                <td>.direction-xlarge-column</td>
+                            
+                                <td>.direction-xlarge-column-reverse</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th>Xxlarge</th>
+                            
+                                <td>.direction-xxlarge-row</td>
+                            
+                                <td>.direction-xxlarge-row-reverse</td>
+                            
+                                <td>.direction-xxlarge-column</td>
+                            
+                                <td>.direction-xxlarge-column-reverse</td>
+                            
+                        </tr>
+                        
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

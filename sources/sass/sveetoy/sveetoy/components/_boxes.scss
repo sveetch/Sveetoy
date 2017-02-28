@@ -27,7 +27,6 @@ $sveetoy-boxes-thickness: () !default;
 
         @each $name, $definitions in $sveetoy-spaces{
             &.#{$name}{
-                @debug $name;
                 @include sveetoy-apply-spaces($definitions, $axis: "horizontal");
                 @include sveetoy-apply-spaces($definitions, $axis: "vertical");
             }

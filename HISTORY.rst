@@ -2,7 +2,7 @@
 Changelog
 =========
 
-Version 0.5.2 - Unreleased
+Version 0.5.2 - 2017/02/28
 --------------------------
 
 * Added flexbox direction classes, close #2;
