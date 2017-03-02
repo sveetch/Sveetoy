@@ -1,63 +1,17 @@
-@import 'util/util';
-
-//
-// SVEETOY SETTINGS FOR FOUNDATION5
-// Here are sample settings with Foundation5 values
-//
-
-// Declare which foundation version we have to support
-$sveetoy_foundation_support: 5;
-
-// d. Media Query Ranges
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-// This part is a copy of some required Foundation settings used in Sveetoy
-// settings. You may not need to include them depending from your Foundation
-// usage.
-$small-range: (0em, 40em);
-$medium-range: (40.063em, 63.9375em);
-$large-range: (64em, 90em);
-$xlarge-range: (90.063em, 120em);
-$xxlarge-range: (120.063em);
-
-$screen: "only screen";
-
-$small-up: $screen;
-$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
-$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
-$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
-$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
-
-
-// A0. Sveetoys component enabler
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-
-// Global include switcher
-$include-sveetoy-classes: true;
-
-// Include switcher for every component
-$include-sveetoy-global: $include-sveetoy-classes;
-$include-sveetoy-blocks: $include-sveetoy-classes;
-$include-sveetoy-boxes: $include-sveetoy-classes;
-$include-sveetoy-buttons: $include-sveetoy-classes;
-$include-sveetoy-flex: $include-sveetoy-classes;
-$include-sveetoy-grid: $include-sveetoy-classes;
-$include-sveetoy-lists: $include-sveetoy-classes;
-$include-sveetoy-spaces: $include-sveetoy-classes;
-$include-sveetoy-tables: $include-sveetoy-classes;
-$include-sveetoy-topbar: $include-sveetoy-classes;
-$include-sveetoy-typography: $include-sveetoy-classes;
-
+///
+/// SVEETOY SETTINGS FOR DEMONSTRATION
+///
 
 // A1. Sveetoys Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // Common available breakpoints taken from Foundation breakpoints
-$sveetoy-breakpoints: (
+/*$sveetoy-breakpoints: (
     small: $small-up,
     medium: $medium-up,
     large: $large-up,
     xlarge: $xlarge-up,
-);
+);*/
 
 
 // A2. Sveetoys colors
@@ -65,6 +19,13 @@ $sveetoy-breakpoints: (
 
 $white: #ffffff;
 $black: #000000;
+$lightskyblue: #87cefa;
+$deepskyblue4: #00688b;
+$gray25: #404040;
+$gray82: #d0d0d0;
+$gray88: #e0e0e0;
+$gray94: #f0f0f0;
+$snow1: #fffafa;
 
 $white-color-scheme: (
     font-color: $gray25,
@@ -73,17 +34,36 @@ $white-color-scheme: (
 $black-color-scheme: (
     background-color: $black,
 );
+$snow1-color-scheme: (
+    font-color: $gray25,
+    background-color: $snow1,
+);
+$lightskyblue-color-scheme: (
+    font-color: $deepskyblue4,
+    link-color: $white,
+    background-color: $lightskyblue,
+    border-width: 1px,
+    border-style: solid,
+    border-color: $deepskyblue4,
+);
 
 $sveetoy-colors-scheme-default: $white-color-scheme;
 
 $sveetoy-colors-schemes: (
     white: $white-color-scheme,
     black: $black-color-scheme,
+    lightskyblue: $lightskyblue-color-scheme,
+    snow1: $snow1-color-scheme,
 );
 
 $sveetoy-color-text-palette: (
     white: $white,
     black: $black,
+    gray25: $gray25,
+    gray82: $gray82,
+    gray88: $gray88,
+    lightskyblue: $lightskyblue,
+    deepskyblue4: $deepskyblue4,
 );
 
 
@@ -147,31 +127,31 @@ $sveetoy-space-tiny: (
     medium: 0.75rem,
     large: 1rem,
     xlarge: 1.5rem,
-) !default;
+);
 $sveetoy-space-short: (
     small: 1rem,
     medium: 1.25rem,
     large: 2rem,
     xlarge: 2.5rem,
-) !default;
+);
 $sveetoy-space-normal: (
     small: 1.5rem,
     medium: 2rem,
     large: 3rem,
     xlarge: 4rem,
-) !default;
+);
 $sveetoy-space-large: (
     small: 2rem,
     medium: 3rem,
     large: 4rem,
     xlarge: 5rem,
-) !default;
+);
 $sveetoy-space-wide: (
     small: 3rem,
     medium: 4.5rem,
     large: 6rem,
     xlarge: 8rem,
-) !default;
+);
 
 // Space scheme
 $sveetoy-spaces: (
@@ -180,7 +160,7 @@ $sveetoy-spaces: (
     normal: $sveetoy-space-normal,
     large: $sveetoy-space-large,
     wide: $sveetoy-space-wide,
-) !default;
+);
 
 
 // Define button variables using default Foundation values

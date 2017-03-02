@@ -1,4 +1,4 @@
-.PHONY: help install install-venv install-foundation5 clean delpyc demo-build demo-server demo-watcher release
+.PHONY: help install install-venv install-foundation5 install-foundation6 clean delpyc demo-build demo-server demo-watcher release
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -6,6 +6,7 @@ help:
 	@echo "  install              -- to proceed to a new install of this project. Will require 'git' client. Use clean command before if you want to reset a current install."
 	@echo "  install-venv         -- to install the Python virtual environment. Will require 'virtualenv'."
 	@echo "  install-foundation5  -- to install last Foundation5 sources. Will require 'wget' and 'bower'."
+	@echo "  install-foundation6  -- to install last Foundation6 sources. Will require 'wget' and 'bower'."
 	@echo
 	@echo "  demo-build           -- to build demonstration site in development mode."
 	@echo "  demo-server          -- to start demonstration site server with CherryPie."

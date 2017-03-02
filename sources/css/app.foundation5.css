@@ -9382,63 +9382,6 @@ small.large {
   font-size: 80%;
 }
 
-h1, h2, h3, h4, h5, h6,
-.title-1, .title-2, .title-3, .title-4, .title-5, .title-6 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #222222;
-  text-rendering: optimizeLegibility;
-  margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
-}
-
-h1, .title-1 {
-  font-size: 2.125rem;
-}
-
-h2, .title-2 {
-  font-size: 1.6875rem;
-}
-
-h3, .title-3 {
-  font-size: 1.375rem;
-}
-
-h4, .title-4 {
-  font-size: 1.125rem;
-}
-
-h5, .title-5 {
-  font-size: 1.125rem;
-}
-
-h6, .title-6 {
-  font-size: 1rem;
-}
-
-@media only screen and (min-width: 90.063em) {
-  h1, .title-1 {
-    font-size: 2.75rem;
-  }
-  h2, .title-2 {
-    font-size: 2.3125rem;
-  }
-  h3, .title-3 {
-    font-size: 1.6875rem;
-  }
-  h4, .title-4 {
-    font-size: 1.4375rem;
-  }
-  h5, .title-5 {
-    font-size: 1.125rem;
-  }
-  h6, .title-6 {
-    font-size: 1rem;
-  }
-}
-
 .underline:after {
   content: "";
   display: block;
@@ -10585,46 +10528,6 @@ hr.deepskyblue4 {
  * For top-bar elements
  *
  */
-.top-bar-section ul li > .item-box {
-  color: #ffffff;
-  display: block;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.8125rem;
-  font-weight: 400;
-  padding-left: 0.9375rem;
-  padding: 12px 0 12px 0.9375rem;
-  text-transform: none;
-  width: 100%;
-}
-
-@media only screen and (min-width: 63.9375em) {
-  .top-bar-section ul li > .item-box {
-    background: #333333;
-    line-height: 2.8125rem;
-    padding: 0 0.9375rem;
-  }
-}
-
-.top-bar .name p {
-  line-height: 2.8125rem;
-  font-size: 1.0625rem;
-  margin: 0;
-}
-
-.top-bar .name p a {
-  font-weight: 400;
-  color: #ffffff;
-  width: 75%;
-  display: block;
-  padding: 0 0.9375rem;
-}
-
-@media only screen and (min-width: 63.9375em) {
-  .top-bar .name p a {
-    width: auto;
-  }
-}
-
 /*
  *
  * Flexbox
@@ -11074,39 +10977,6 @@ table.expand {
   max-width: 100%;
 }
 
-@media only screen and (min-width: 90.063em) {
-  .row.larger {
-    max-width: 83rem;
-  }
-}
-
-.row .columns > .row-inner {
-  margin-left: -0.9375rem;
-  margin-right: -0.9375rem;
-}
-
-.row .columns.unpadded {
-  padding: 0;
-}
-
-@media only screen and (max-width: 40em) {
-  .row .columns.small-unpadded {
-    padding: 0;
-  }
-}
-
-@media only screen and (min-width: 40.063em) and (max-width: 63.9375em) {
-  .row .columns.medium-unpadded {
-    padding: 0;
-  }
-}
-
-@media only screen and (min-width: 64em) and (max-width: 90em) {
-  .row .columns.large-unpadded {
-    padding: 0;
-  }
-}
-
 /*
  * Mixin to render list item pseudo-element with a custom bullet
  *
@@ -11169,51 +11039,13 @@ ul.arrow.defer li > *:first-child:before {
  * For top-bar elements
  *
  */
-.top-bar-section ul li > .item-box {
-  color: #ffffff;
-  display: block;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.8125rem;
-  font-weight: 400;
-  padding-left: 0.9375rem;
-  padding: 12px 0 12px 0.9375rem;
-  text-transform: none;
-  width: 100%;
-}
-
-@media only screen and (min-width: 63.9375em) {
-  .top-bar-section ul li > .item-box {
-    background: #333333;
-    line-height: 2.8125rem;
-    padding: 0 0.9375rem;
-  }
-}
-
-.top-bar .name p {
-  line-height: 2.8125rem;
-  font-size: 1.0625rem;
-  margin: 0;
-}
-
-.top-bar .name p a {
-  font-weight: 400;
-  color: #ffffff;
-  width: 75%;
-  display: block;
-  padding: 0 0.9375rem;
-}
-
-@media only screen and (min-width: 63.9375em) {
-  .top-bar .name p a {
-    width: auto;
-  }
-}
-
 /*
- * Used components
+ * Demo stuff
  */
 /*
- * Various content styles
+ *
+ * Various Specific styles for Sveetoy demo
+ *
  */
 .text-family-overlock {
   font-family: "Overlock SC", cursive;
@@ -11223,21 +11055,6 @@ ul.arrow.defer li > *:first-child:before {
   font-family: "Roboto", sans-serif;
 }
 
-/*
- *
- * All stuff for page header
- *
- */
-/*
- *
- * All stuff for page footer
- *
- */
-/*
- *
- * Various Specific styles for Sveetoy demo
- *
- */
 #watch-for-current-mquery {
   padding: 0.0rem 0.5rem;
   position: absolute;

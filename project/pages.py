@@ -23,12 +23,14 @@ class BasicPage(PageViewBase):
     title = "Index"
     template_name = "index.html"
     destination = "index.html"
+    foundation_version = 6
 
     def get_context(self):
         context = super(BasicPage, self).get_context()
 
         context.update({
             'version': sveetoy_version,
+            'foundation_version': self.foundation_version,
         })
         return context
 
@@ -50,4 +52,8 @@ class PageWithSitemap(BasicPage):
 
 # Enabled pages to build
 #PAGES = PageSitemap(sitemap_tree, PageWithSitemap).ressources
-PAGES = [BasicPage()]
+PAGES = [
+    BasicPage(),
+    BasicPage(foundation_version=5, destination="f5/index.html"),
+    BasicPage(foundation_version=6, destination="f6/index.html"),
+]

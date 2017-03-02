@@ -13,13 +13,21 @@
             <meta name="robots" content="index,follow,all">
         {%- endblock %}
 
-        {% block base_css -%}{%- assets "main_css" -%}
-            <link rel="stylesheet" href="{{ page_relative_position }}{{ ASSET_URL }}">
-        {%- endassets -%}{%- endblock %}
+        {% block base_css -%}
+            {% if foundation_version == 5 %}
+                {%- assets "main_f5_css" -%}<link rel="stylesheet" href="{{ page_relative_position }}{{ ASSET_URL }}">{%- endassets -%}
+            {% else %}
+                {%- assets "main_f6_css" -%}<link rel="stylesheet" href="{{ page_relative_position }}{{ ASSET_URL }}">{%- endassets -%}
+            {% endif %}
+        {%- endblock %}
         {% block more_css %}{% endblock %}
-        {% block base_js -%}{%- assets "app_modernizr_js" -%}
-            <script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>
-        {%- endassets -%}{%- endblock %}
+        {% block base_js -%}
+            {% if foundation_version == 5 %}
+                {%- assets "modernizr_f5_js" -%}<script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>{%- endassets -%}
+            {% else %}
+                {%- assets "modernizr_f6_js" -%}<script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>{%- endassets -%}
+            {% endif %}
+        {%- endblock %}
         {% block head_more_links %}{% endblock %}
     {%- endblock %}
 </head>
@@ -47,8 +55,12 @@
 
     {% if debug %}<div id="watch-for-current-mquery"><small>Current MQuery</small><span class="value"></span></div>{% endif %}
 
-    {% block more_js -%}{%- assets "main_js" -%}
-        <script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>
-    {%- endassets -%}{%- endblock %}
+    {% block more_js -%}
+        {% if foundation_version == 5 %}
+            {%- assets "main_f5_js" -%}<script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>{%- endassets -%}
+        {% else %}
+            {%- assets "main_f6_js" -%}<script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>{%- endassets -%}
+        {% endif %}
+    {%- endblock %}
 </body>
 </html>

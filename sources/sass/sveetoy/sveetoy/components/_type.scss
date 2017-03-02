@@ -86,35 +86,42 @@ $sveetoy-hr-default-color: #000000;
     /// Rewrite titles adding paragraph classes so we can have the same
     /// behaviors without troubling SEO/semantic
     ///
-    h1, h2, h3, h4, h5, h6,
-    .title-1, .title-2, .title-3, .title-4, .title-5, .title-6{
-        font-family: $header-font-family;
-        font-weight: $header-font-weight;
-        font-style: $header-font-style;
-        color: $header-font-color;
-        text-rendering: $header-text-rendering;
-        margin-top: $header-top-margin;
-        margin-bottom: $header-bottom-margin;
-        line-height: $header-line-height;
-    }
+    /// This is almost a copy'n'rewrite from foundation code. Depending from
+    /// foundation support since code is totally different between version 5
+    /// and 6.
+    ///
+    @if $sveetoy_foundation_support == '5'{
+        h1, h2, h3, h4, h5, h6,
+        .title-1, .title-2, .title-3, .title-4, .title-5, .title-6{
+            font-family: $header-font-family;
+            font-weight: $header-font-weight;
+            font-style: $header-font-style;
+            color: $header-font-color;
+            text-rendering: $header-text-rendering;
+            margin-top: $header-top-margin;
+            margin-bottom: $header-bottom-margin;
+            line-height: $header-line-height;
+        }
 
-    // From small size to upper
-    //p, li, dd, dt{ font-size: $paragraph-font-size; }
-    h1, .title-1{ font-size: $h1-font-size - $h1-font-reduction; }
-    h2, .title-2{ font-size: $h2-font-size - $h2-font-reduction; }
-    h3, .title-3{ font-size: $h3-font-size - $h3-font-reduction; }
-    h4, .title-4{ font-size: $h4-font-size - $h4-font-reduction; }
-    h5, .title-5{ font-size: $h5-font-size - $h5-font-reduction; }
-    h6, .title-6{ font-size: $h6-font-size - $h6-font-reduction; }
+        // From small size to upper
+        //p, li, dd, dt{ font-size: $paragraph-font-size; }
+        h1, .title-1{ font-size: $h1-font-size - $h1-font-reduction; }
+        h2, .title-2{ font-size: $h2-font-size - $h2-font-reduction; }
+        h3, .title-3{ font-size: $h3-font-size - $h3-font-reduction; }
+        h4, .title-4{ font-size: $h4-font-size - $h4-font-reduction; }
+        h5, .title-5{ font-size: $h5-font-size - $h5-font-reduction; }
+        h6, .title-6{ font-size: $h6-font-size - $h6-font-reduction; }
 
-    // Final size for large screen and up
-    @media #{$xlarge-up} {
-        h1, .title-1{ font-size: $h1-font-size; }
-        h2, .title-2{ font-size: $h2-font-size; }
-        h3, .title-3{ font-size: $h3-font-size; }
-        h4, .title-4{ font-size: $h4-font-size; }
-        h5, .title-5{ font-size: $h5-font-size; }
-        h6, .title-6{ font-size: $h6-font-size; }
+        // Final size for large screen and up
+        @media #{$xlarge-up} {
+            h1, .title-1{ font-size: $h1-font-size; }
+            h2, .title-2{ font-size: $h2-font-size; }
+            h3, .title-3{ font-size: $h3-font-size; }
+            h4, .title-4{ font-size: $h4-font-size; }
+            h5, .title-5{ font-size: $h5-font-size; }
+            h6, .title-6{ font-size: $h6-font-size; }
+        }
+    } @else {
     }
 
     ///

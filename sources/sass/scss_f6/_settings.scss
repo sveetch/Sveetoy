@@ -1,0 +1,23 @@
+@import 'util/util';
+
+///
+/// FOUNDATION6 SETTINGS
+///
+
+// Available font families
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-overlock: 'Overlock SC', cursive;
+
+// 1. Global
+// ---------
+
+$body-font-family: $font-family-roboto;
+$global-font-size: 14px;
+
+// Font weight
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// F6 support
+$global-weight-normal: $font-weight-normal;
+$global-weight-bold: $font-weight-bold;

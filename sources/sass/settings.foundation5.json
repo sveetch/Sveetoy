@@ -1,5 +1,5 @@
 {
-    "SOURCES_PATH": "scss",
+    "SOURCES_PATH": "scss_f5",
     "LIBRARY_PATHS": [
         "../../foundation-sites-5.5.3/scss",
         "sveetoy"

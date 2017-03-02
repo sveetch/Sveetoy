@@ -1,5 +1,5 @@
 {
-    "SOURCES_PATH": "scss",
+    "SOURCES_PATH": "scss_f6",
     "LIBRARY_PATHS": [
         "../../foundation-sites-6.3.1/scss",
         "sveetoy"
