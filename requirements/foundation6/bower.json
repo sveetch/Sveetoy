@@ -1,9 +1,10 @@
 {
-  "name": "sveetoy-demo",
+  "name": "sveetoy-demo-f6",
   "ignore": [
   ],
   "dependencies": {
-    "jquery": ">= 2.1.0 <3.0.0",
+    "jquery": ">= 2.2.0",
+    "what-input": "4.0.3",
     "modernizr": "2.8.3",
     "jquery.cookie": "~1.4.0"
   },

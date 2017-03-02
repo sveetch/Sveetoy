@@ -26,6 +26,11 @@ clean-foundation5:
 	rm -Rf sources/js/foundation5/foundation
 	rm -Rf sources/js/foundation5/vendor/*.js
 
+clean-foundation6:
+	rm -Rf foundation-sites-6.3.1
+	rm -Rf sources/js/foundation6/foundation
+	rm -Rf sources/js/foundation6/vendor/*.js
+
 clean-demo:
 	rm -Rf project/_build project/.webassets-cache
 
@@ -39,7 +44,7 @@ install-venv:
 	bin/pip install -r requirements/dev.txt
 	@echo "Install done. You should execute 'bin/activate' to start environment."
 
-install-foundation5:
+install-foundation5: clean-foundation5
 	@echo "* Download Foundation 5.5.3 archive;"
 	wget https://github.com/zurb/foundation-sites/archive/v5.5.3.tar.gz
 	@echo "* Open archive;"
@@ -47,12 +52,28 @@ install-foundation5:
 	@echo "* Delete archive;"
 	rm -Rf v5.5.3.tar.gz
 	@echo "* Use 'bower' to get Foundation dependencies"
-	cd requirements && bower install
+	cd requirements/foundation5 && bower install
 	@echo "* Link Foundation Javascript files into project sources"
 	cd sources/js/foundation5 && ln -s ../../../foundation-sites-5.5.3/js/foundation
 	cd sources/js/foundation5/vendor && ln -s ../../../../foundation-sites-5.5.3/vendor/jquery/dist/jquery.js
 	cd sources/js/foundation5/vendor && ln -s ../../../../foundation-sites-5.5.3/vendor/modernizr/modernizr.js
 	cd sources/js/foundation5/vendor && ln -s ../../../../foundation-sites-5.5.3/vendor/jquery.cookie/jquery.cookie.js
+
+install-foundation6: clean-foundation6
+	@echo "* Download Foundation 6.3.1 archive;"
+	wget https://github.com/zurb/foundation-sites/archive/6.3.1.tar.gz
+	@echo "* Open archive;"
+	tar xvzf 6.3.1.tar.gz
+	@echo "* Delete archive;"
+	rm -Rf 6.3.1.tar.gz
+	@echo "* Use 'bower' to get Foundation dependencies"
+	cd requirements/foundation6 && bower install
+	@echo "* Link Foundation Javascript files into project sources"
+	cd sources/js/foundation6 && ln -s ../../../foundation-sites-6.3.1/dist/js foundation
+	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.3.1/vendor/jquery/dist/jquery.js
+	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.3.1/vendor/modernizr/modernizr.js
+	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.3.1/vendor/jquery.cookie/jquery.cookie.js
+	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.3.1/vendor/what-input/dist/what-input.js
 
 demo-build:
 	cd project && ../bin/optimus-cli build

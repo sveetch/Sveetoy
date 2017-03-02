@@ -2,6 +2,14 @@
 Changelog
 =========
 
+Version 0.6.0 - Unreleased
+--------------------------
+
+Foundation6 support, close #14:
+
+* Include makefile action to install Foundation6 sources using Foundation 6.3.1;
+
+
 Version 0.5.2 - 2017/02/28
 --------------------------
 

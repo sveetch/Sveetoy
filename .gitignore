@@ -35,6 +35,9 @@ coverage.xml
 /foundation-sites-5.5.3/
 /sources/js/foundation5/foundation
 /sources/js/foundation5/vendor/*.js
+/foundation-sites-6.3.1/
+/sources/js/foundation6/foundation
+/sources/js/foundation6/vendor/*.js
 
 # Various
 /cherrypy/
