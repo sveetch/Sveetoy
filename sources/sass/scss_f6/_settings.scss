@@ -12,7 +12,7 @@ $font-family-overlock: 'Overlock SC', cursive;
 // ---------
 
 $body-font-family: $font-family-roboto;
-$global-font-size: 14px;
+$global-font-size: 16px;
 
 // Font weight
 $font-weight-normal: 400;
@@ -21,3 +21,15 @@ $font-weight-bold: 700;
 // F6 support
 $global-weight-normal: $font-weight-normal;
 $global-weight-bold: $font-weight-bold;
+
+// 2. Breakpoints
+// --------------
+
+$breakpoint-classes: (small medium large xlarge xxlarge);
+
+// Legacy media queries
+$small-up: screen;
+$medium-up: unquote('screen and #{breakpoint(medium)}');
+$large-up: unquote('screen and #{breakpoint(large)}');
+$xlarge-up: unquote('screen and #{breakpoint(xlarge)}');
+$xxlarge-up: unquote('screen and #{breakpoint(xxlarge)}');

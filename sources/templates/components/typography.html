@@ -21,10 +21,21 @@
         <div class="small-12 columns">
             <h2 class="demo-title">Title element</h2>
             <p>Title styles are not anymore sticked to <code>hX</code> elements, now you can use them by the way of <code>.title-X</code> classes on any other element to preserve semantic. You may even use a <code>.title-X</code> class on <code>hX</code> element.</p>
-            <div class="demo-result v-space-tiny">
-                {% for count in range(1, 7) %}
-                <h{{ count }}>h{{ count }}, .title-{{ count }}</h{{ count }}>
-                {% endfor %}
+            <div class="row larger">
+                <div class="small-12 medium-6 columns">
+                    <div class="demo-result v-space-tiny">
+                        {% for count in range(1, 7) %}
+                        <h{{ count }}>h{{ count }}</h{{ count }}>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="small-12 medium-6 columns">
+                    <div class="demo-result v-space-tiny">
+                        {% for count in range(1, 7) %}
+                        <p class="title-{{ count }}">.title-{{ count }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -44,7 +55,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2 class="demo-title">Thickness</h2>
-            <p>Two more thickness are available if their corresponding variable is defined. <code>$font-weight-thin</code> for thinest thickness and <code>$font-weight-strong</code> for boldest thickness.</p>
+            <p>Two more thickness are available if their corresponding variable is defined. <code>$font-weight-thin</code> for thinest thickness and <code>$font-weight-strong</code> for strongest thickness.</p>
             <div class="demo-result v-space-tiny">
                 {% for name in ['thin', 'normal', 'bold', 'strong'] %}
                 <p class="text-{{ name }}">{% if name == 'bold' %}<b>&lt;b&gt;</b>, {% elif name == 'strong' %}<strong>&lt;strong&gt;</strong>, {% endif %}.text-{{ name }}</p>

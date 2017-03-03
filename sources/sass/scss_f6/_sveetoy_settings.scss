@@ -2,17 +2,19 @@
 /// SVEETOY SETTINGS FOR DEMONSTRATION
 ///
 
+// Declare which foundation version we have to support
+$sveetoy_foundation_support: 6;
+
 // A1. Sveetoys Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // Common available breakpoints taken from Foundation breakpoints
-/*$sveetoy-breakpoints: (
+$sveetoy-breakpoints: (
     small: $small-up,
     medium: $medium-up,
     large: $large-up,
     xlarge: $xlarge-up,
-);*/
-
+);
 
 // A2. Sveetoys colors
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -179,7 +181,7 @@ $sveetoy-button-modests: (
 $sveetoy-button-colors-schemes: $sveetoy-colors-schemes;
 
 
-// A5. Sveetoys Grid
+// A5. Sveetoys Boxes
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 $sveetoy-boxes-thickness: $sveetoy-underline-thickness;
 

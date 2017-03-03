@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 @import "settings";
-@import "sveetoy_settings";
-
 @import 'foundation';
 // @import 'motion-ui';
 
@@ -48,19 +46,22 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 // @include foundation-flex-classes;
-
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
+
 
 /*
  * Sveetoy library
  */
+@import "sveetoy_settings";
 @import "sveetoy";
+
 
 /*
  * Demo stuff
  */
 @import "components/contents";
+
 
 /*
  * Sometime, you need fallback hacks for some specific browsers, it should allways be

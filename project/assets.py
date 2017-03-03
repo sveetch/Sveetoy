@@ -71,7 +71,7 @@ AVALAIBLE_BUNDLES.update({
     ),
 
     'main_f6_css': Bundle(
-        'css/app.foundation5.css',
+        'css/app.foundation6.css',
         filters='rcssmin',
         output='css/app.foundation6.min.css'
     ),

@@ -23,9 +23,6 @@ $body-font-family: $font-family-roboto;
 // Enable xlarge and xxlarge columns class names into the grid
 $include-xl-html-grid-classes: false;
 
-// Larger row width for xlarge screens and more
-$row-larger-width: rem-calc(1328px);
-
 // Media Query Ranges
 $small-range: (0em, 40em);
 $medium-range: (40.063em, 63.9375em);

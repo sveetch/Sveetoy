@@ -6,8 +6,8 @@
 $include-sveetoy-topbar: $include-sveetoy-classes !default;
 
 @if $include-sveetoy-topbar {
-    // Topbar adjustment does have sense with Foundation6
-    @if $sveetoy_foundation_support == '5'{
+    // Topbar adjustment does not have any sense with Foundation6
+    @if $sveetoy_foundation_support == 5{
         ///
         /// Reproduce link behavior for non link item
         ///

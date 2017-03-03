@@ -2,6 +2,10 @@
 /// SVEETOY SETTINGS FOR DEMONSTRATION
 ///
 
+// Declare which foundation version we have to support
+$sveetoy_foundation_support: 5;
+
+
 // A1. Sveetoys Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -179,7 +183,7 @@ $sveetoy-button-modests: (
 $sveetoy-button-colors-schemes: $sveetoy-colors-schemes;
 
 
-// A5. Sveetoys Grid
+// A5. Sveetoys Boxes
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 $sveetoy-boxes-thickness: $sveetoy-underline-thickness;
 
