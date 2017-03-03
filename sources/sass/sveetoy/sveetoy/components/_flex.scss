@@ -14,6 +14,7 @@ $flex-grid-gutter: 0.5rem !default;
 @debug $flex-grid-sizes;
 @if $include-sveetoy-flex {
     // For browser with flexbox capability (from a modernizr classname)
+    /* TODO: Issue #17 */
     html.flexbox {
         ///
         /// Common flexbox grid

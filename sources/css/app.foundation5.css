@@ -10680,6 +10680,7 @@ hr.deepskyblue4 {
  * Flexbox
  *
  */
+/* TODO: Issue #17 */
 html.flexbox .flex-grid {
   display: flex;
   flex-wrap: wrap;
