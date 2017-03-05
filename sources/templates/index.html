@@ -13,7 +13,7 @@
         </div>
         <div id="responsive-menu">
             <div class="top-bar-left">
-                <ul class="vertical large-horizontal menu">
+                <ul class="vertical large-horizontal menu" data-magellan data-animation-duration="0">
                     {% for name in ['install', 'vocabulary', 'typography', 'buttons', 'spaces', 'blocks', 'boxes', 'flex'] %}
                     <li><a href="#{{ name }}">{{ name|capitalize }}</a></li>
                     {% endfor %}
@@ -43,9 +43,9 @@
                 </div>
             </div>
 
-            <div>
-                <p class="text-center"><a href="{{ SITE.web_url }}/dist/Sveetoy-sass-{{ version }}.zip" class="button">Download version {{ version }} (ZIP)</a></p>
-            </div>
+            <p class="text-center"><a href="{{ SITE.web_url }}/dist/Sveetoy-sass-{{ version }}.zip" class="button">Download version {{ version }} (ZIP)</a></p>
+
+            <p class="text-center v-space-tiny"><small>This is default demonstration built with Foundation 6, <a href="f5/">Foundation 5 demonstration</a> is still available.</small></p>
         </div>
     </div>
 </div>

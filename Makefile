@@ -95,6 +95,9 @@ github-build:
 	rm -Rf .webassets-cache
 	cd project && ../bin/optimus-cli build --settings githubpages_settings
 
+github-server:
+	cd project && ../bin/optimus-cli runserver 0.0.0.0:8001 --settings githubpages_settings
+
 release: github-build
 	python release.py
 # 	git tag -a `cat RELEASED_VERSION` -m "Release `cat RELEASED_VERSION`"
