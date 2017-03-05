@@ -1,4 +1,4 @@
-.PHONY: help install install-venv install-foundation5 install-foundation6 clean delpyc demo-build demo-server demo-watcher release
+.PHONY: help install install-venv install-foundation5 install-foundation6 clean delpyc demo-build demo-server demo-clean demo-watcher github-build github-server github-clean release
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -8,12 +8,14 @@ help:
 	@echo "  install-foundation5  -- to install last Foundation5 sources. Will require 'wget' and 'bower'."
 	@echo "  install-foundation6  -- to install last Foundation6 sources. Will require 'wget' and 'bower'."
 	@echo
-	@echo "  demo-build           -- to build demonstration site in development mode."
+	@echo "  demo-build           -- to build demonstration site in development env."
 	@echo "  demo-server          -- to start demonstration site server with CherryPie."
-	@echo "  demo-watcher         -- to start watchdog on sources in development mode."
+	@echo "  demo-watcher         -- to start watchdog on sources in development env."
+	@echo "  demo-clean           -- to clean builded HTML and assets from development env."
 	@echo
-	@echo "  prod-build           -- to build demonstration site in production mode."
-	@echo "  github-build         -- to build demonstration site for github site."
+	@echo "  github-build         -- to build demonstration site for Github site."
+	@echo "  github-server        -- to start demonstration site server with CherryPie for Github site."
+	@echo "  github-clean         -- to clean builded HTML and assets from Github site."
 	@echo
 	@echo "  clean                -- to clean your local repository from all installed stuff."
 	@echo "  delpyc               -- to remove all *.pyc files, this is recursive from the current directory."
@@ -32,10 +34,10 @@ clean-foundation6:
 	rm -Rf sources/js/foundation6/foundation
 	rm -Rf sources/js/foundation6/vendor/*.js
 
-clean-demo:
+demo-clean:
 	rm -Rf project/_build project/.webassets-cache
 
-clean: delpyc clean-foundation5 clean-demo
+clean: delpyc clean-foundation5 demo-clean github-clean
 	rm -Rf bin include lib local pip-selfcheck.json
 
 install: install-venv install-foundation5
@@ -76,7 +78,7 @@ install-foundation6: clean-foundation6
 	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.3.1/vendor/jquery.cookie/jquery.cookie.js
 	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.3.1/vendor/what-input/dist/what-input.js
 
-demo-build:
+demo-build: demo-clean
 	cd project && ../bin/optimus-cli build
 
 demo-server:
@@ -90,14 +92,16 @@ prod-build:
 	rm -Rf .webassets-cache
 	cd project && ../bin/optimus-cli build --settings prod_settings
 
-github-build:
+github-clean:
 	rm -Rf docs
 	rm -Rf .webassets-cache
+
+github-build: github-clean
 	cd project && ../bin/optimus-cli build --settings githubpages_settings
 
 github-server:
 	cd project && ../bin/optimus-cli runserver 0.0.0.0:8001 --settings githubpages_settings
 
-release: github-build
-	python release.py
+release:
+	bin/python release.py
 # 	git tag -a `cat RELEASED_VERSION` -m "Release `cat RELEASED_VERSION`"

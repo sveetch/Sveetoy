@@ -3,7 +3,7 @@
 {% block head_title %}{{ SITE.name }}{% endblock %}
 
 {% block base_content %}
-<div class="block snow1" id="intro">
+<div class="block snow1" id="introduction" data-magellan-destination="introduction">
     <div class="row large">
         <div class="small-12 columns">
             <h1 class="logo">Sveetoy</h1>
@@ -33,7 +33,7 @@
         <div class="small-12 columns">
             <div data-magellan-expedition="fixed" class="menu">
                 <ul class="sub-nav">
-                    {% for name in ['install', 'vocabulary', 'typography', 'buttons', 'spaces', 'blocks', 'boxes', 'flex'] %}
+                    {% for name in ['introduction', 'install', 'vocabulary', 'typography', 'buttons', 'spaces', 'blocks', 'boxes', 'flex'] %}
                     <li data-magellan-arrival="{{ name }}"><a href="#{{ name }}">{{ name|capitalize }}</a></li>
                     {% endfor %}
                 </ul>

@@ -63,6 +63,9 @@ $sveetoy-breakpoints: (
 // A2. Sveetoys colors
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
+// NOTE: You should put these color names (not the schemes) at top of your
+// Foundation settings file so they are available for both Foundation and
+// Sveetoy settings
 $white: #ffffff;
 $black: #000000;
 

@@ -4,12 +4,25 @@
  *
  */
 
+// "Fork me on github" badge
+.github-badge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5000;
+}
+
 /// Header topbar
 #main-top-bar{
     padding: 0;
 
     .top-bar-title{
         padding: 0;
+
+        .menu-icon::after{
+            top: rem-calc(-2px);
+            left: rem-calc(8px);
+        }
 
         .brand{
             font-family: $font-family-overlock;

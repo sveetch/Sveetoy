@@ -10,9 +10,9 @@
     <link href="//fonts.googleapis.com/css?family=Overlock+SC%7CRoboto:100,400,700,900" rel="stylesheet">
     <meta name="robots" content="index,follow,all">
 
-        <link rel="stylesheet" href="./static/css/app.foundation6.min.css?292b86d3">
+        <link rel="stylesheet" href="../static/css/app.foundation5.min.css?d6dae0fc">
         
-        <script src="./static/js/modernizr_f6.min.js?c9eb8d85"></script>
+        <script src="../static/js/modernizr_f5.min.js?c9eb8d85"></script>
         
 </head>
 
@@ -20,50 +20,14 @@
     <a class="github-badge" href="https://github.com/sveetch/Sveetoy"><img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 
     
-<div data-sticky-container>
-    <div class="top-bar" data-sticky data-options="marginTop:0;" id="main-top-bar" style="width:100%">
-        <div class="top-bar-title">
-            <span data-responsive-toggle="responsive-menu" data-hide-for="large">
-                <button class="menu-icon" type="button" data-toggle></button>
-            </span>
-            <p class="brand"><a href="//sveetch.github.io/Sveetoy">Sveetoy</a></p>
-        </div>
-        <div id="responsive-menu">
-            <div class="top-bar-left">
-                <ul class="vertical large-horizontal menu" data-magellan data-animation-duration="0">
-                    
-                    <li><a href="#introduction">Introduction</a></li>
-                    
-                    <li><a href="#install">Install</a></li>
-                    
-                    <li><a href="#vocabulary">Vocabulary</a></li>
-                    
-                    <li><a href="#typography">Typography</a></li>
-                    
-                    <li><a href="#buttons">Buttons</a></li>
-                    
-                    <li><a href="#spaces">Spaces</a></li>
-                    
-                    <li><a href="#blocks">Blocks</a></li>
-                    
-                    <li><a href="#boxes">Boxes</a></li>
-                    
-                    <li><a href="#flex">Flex</a></li>
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
 
     <div id="body_content">
         
-<div class="block snow1" id="introduction" data-magellan-target="introduction">
+<div class="block snow1" id="introduction" data-magellan-destination="introduction">
     <div class="row large">
         <div class="small-12 columns">
             <h1 class="logo">Sveetoy</h1>
-            <p class="title-3 text-center">A <a href="http://sass-lang.com/" target="blank">Sass</a> library for programmatic rythm and some candies on top of <a href="http://foundation.zurb.com/sites/docs/v/5.5.3/" target="blank">Foundation for Sites</a> version <b>5.5.3</b> and <b>6.3.0</b> or better.</p>
+            <p class="title-3 text-center">A <a href="http://sass-lang.com/" target="blank">Sass</a> library for programmatic rythm and some candies on top of <a href="http://foundation.zurb.com/sites/docs/v/5.5.3/" target="blank">Foundation for Sites</a> version <b>5.5.3</b> or <b>6.3.1</b>.</p>
 
             <div class="v-space-normal flex-grid marged text-center">
                 <div class="cell small-100 medium-33 align-center h-space-normal">
@@ -79,12 +43,42 @@
 
             <p class="text-center"><a href="http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.6.0.zip" class="button">Download version 0.6.0 (ZIP)</a></p>
 
-            <p class="text-center v-space-tiny"><small>This is default demonstration built with Foundation 6, <a href="f5/">Foundation 5 demonstration</a> is still available.</small></p>
+            <p class="text-center v-space-tiny"><small>This is demonstration built with Foundation 5, see <a href="../">Foundation 6 demonstration</a> for defaul demonstration.</small></p>
         </div>
     </div>
 </div>
 
-<div id="install" class="block demo-block" data-magellan-target="install">
+<div class="block snow1 unpadded" id="demo-menu">
+    <div class="row larger">
+        <div class="small-12 columns">
+            <div data-magellan-expedition="fixed" class="menu">
+                <ul class="sub-nav">
+                    
+                    <li data-magellan-arrival="introduction"><a href="#introduction">Introduction</a></li>
+                    
+                    <li data-magellan-arrival="install"><a href="#install">Install</a></li>
+                    
+                    <li data-magellan-arrival="vocabulary"><a href="#vocabulary">Vocabulary</a></li>
+                    
+                    <li data-magellan-arrival="typography"><a href="#typography">Typography</a></li>
+                    
+                    <li data-magellan-arrival="buttons"><a href="#buttons">Buttons</a></li>
+                    
+                    <li data-magellan-arrival="spaces"><a href="#spaces">Spaces</a></li>
+                    
+                    <li data-magellan-arrival="blocks"><a href="#blocks">Blocks</a></li>
+                    
+                    <li data-magellan-arrival="boxes"><a href="#boxes">Boxes</a></li>
+                    
+                    <li data-magellan-arrival="flex"><a href="#flex">Flex</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="install" class="block demo-block" data-magellan-destination="install">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title text-upper">Install</h1>
@@ -101,14 +95,20 @@
 
             <p>Alike with Foundation, you must load the settings first then libraries. In your settings you can define both Foundation and Sveetoy settings or you may split them in two or more settings files.</p>
 
-            <p>Included file <code>sveetoy/_f6_settings.scss</code> contains some sample settings you may include in at end of your main settings file and adjust to your needs. Be aware that some of its values are linked to some Foundation setting values.</p>
+            <p>Included file <code>sveetoy/_f5_settings.scss</code> contains some sample settings you may include in at end of your main settings file and adjust to your needs. Be aware that some of its values are linked to some Foundation setting values.</p>
 
+            
+            <p>Since Sveetoy <code>0.6.0</code>, default enabled support is for Foundation 6, for Foundation 5 support you will need to activate it in your settings with following variable to place before Sveetoy import:</p>
+
+            <div class="code-container">
+                <p>$sveetoy_foundation_support: 5;</p>
+            </div>
             
 
         </div>
     </div>
 </div>
-<div id="vocabulary" class="block demo-block" data-magellan-target="vocabulary">
+<div id="vocabulary" class="block demo-block" data-magellan-destination="vocabulary">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title text-upper">Vocabulary</h1>
@@ -153,7 +153,7 @@
         </div>
     </div>
 </div>
-<div id="typography" class="block demo-block" data-magellan-target="typography">
+<div id="typography" class="block demo-block" data-magellan-destination="typography">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title text-upper">Typography</h1>
@@ -262,13 +262,13 @@
             <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are built from <code>$sveetoy-smalls</code>.</p>
             <div class="demo-result v-space-tiny">
                 
-                <p><code>.small</code> <small class="small">Pulvinar donec vestibulum maecenas tincidunt dictum tortor, mauris tellus netus scelerisque, condimentum fames habitant ad.</small></p>
+                <p><code>.small</code> <small class="small">Nullam malesuada velit magna venenatis nisi, suspendisse aliquam lacus penatibus euismod netus pharetra, tellus vestibulum.</small></p>
                 
-                <p><code>.medium</code> <small class="medium">Dolor hymenaeos turpis aliquam phasellus hac, dignissim vel euismod quisque velit blandit, sed ullamcorper potenti.</small></p>
+                <p><code>.medium</code> <small class="medium">Interdum vestibulum blandit accumsan fermentum purus, ridiculus aenean porttitor amet, purus posuere tortor natoque sodales.</small></p>
                 
-                <p><code>.big</code> <small class="big">Massa commodo pede elementum semper, praesent nam aenean leo dis ornare dui, ante penatibus ultricies.</small></p>
+                <p><code>.big</code> <small class="big">Congue torquent aliquam nam magnis, volutpat egestas proin pede congue, sed per suscipit ligula habitant.</small></p>
                 
-                <p>Consequat venenatis vulputate dis cubilia adipiscing morbi, neque nostra torquent sed scelerisque, quis placerat laoreet.</p>
+                <p>Egestas montes elementum taciti fusce tellus, at auctor non luctus cum, sociosqu nunc vulputate porta.</p>
             </div>
         </div>
     </div>
@@ -583,7 +583,7 @@
         </div>
     </div>
 </div>
-<div id="buttons" class="block demo-block" data-magellan-target="buttons">
+<div id="buttons" class="block demo-block" data-magellan-destination="buttons">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title text-upper">Buttons</h1>
@@ -705,7 +705,7 @@
     </div>
 
 </div>
-<div id="spaces" class="block demo-block" data-magellan-target="spaces">
+<div id="spaces" class="block demo-block" data-magellan-destination="spaces">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title text-upper">Spaces</h1>
@@ -946,7 +946,7 @@
     </div>
 
 </div>
-<div id="blocks" class="block demo-block" data-magellan-target="blocks">
+<div id="blocks" class="block demo-block" data-magellan-destination="blocks">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title text-upper">Blocks</h1>
@@ -970,8 +970,8 @@
                 <h2 class="demo-title">.block</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Pellentesque mauris gravida consectetuer morbi, etiam ultrices volutpat est, tincidunt dictumst ultrices lectus, pede varius proin purus tristique class pretium morbi, fermentum neque. Vitae etiam vivamus nisl imperdiet porta vestibulum, nisl hendrerit fringilla varius nonummy, nascetur fusce mauris quam, vel cras magna pharetra, ullamcorper. Habitasse morbi consectetuer habitant ad.</p>
-<p>Id vulputate suspendisse leo dictum, sollicitudin hendrerit nunc sapien diam aptent penatibus, praesent tempor lobortis et tempor metus. Urna massa habitant.</p>
+                <p>Venenatis a maecenas non turpis, imperdiet lorem viverra convallis ad porttitor, lectus a class senectus nullam, lacus elit leo ultricies bibendum.</p>
+<p>Platea tortor euismod augue tortor maecenas, litora habitasse mi ante lacinia mi habitant porta, adipiscing vitae cubilia dictum, mus et. Id ante augue habitant dolor metus, est ipsum vehicula tortor cras, phasellus accumsan lectus arcu, sed sociis.</p>
             </div>
         </div>
     </div>
@@ -982,8 +982,8 @@
                 <h2 class="demo-title">.block.black</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Ac sociis augue fusce non neque blandit, risus mus nisi netus curabitur potenti eros, convallis dis id vulputate dolor molestie hendrerit, nascetur. Consectetuer molestie at quisque rutrum senectus pellentesque, sagittis habitasse quis nostra id pretium accumsan, volutpat cras. Est lectus ut eleifend suscipit, elementum justo aliquet urna.</p>
-<p>Eu mi fringilla metus molestie nam tristique, parturient et neque mollis ut nulla vehicula, pulvinar accumsan et netus ipsum eu, dictumst gravida. Facilisi euismod mollis sollicitudin in, nunc aenean porttitor feugiat quam rutrum, tincidunt viverra ante luctus fusce, quisque eu. Quam consectetuer per et proin.</p>
+                <p>Lacinia suscipit praesent nisi donec ridiculus sagittis, hendrerit eleifend adipiscing vitae pretium, morbi volutpat luctus a per. Netus facilisi parturient nam nullam, accumsan ante aliquet hymenaeos inceptos hendrerit netus, posuere vehicula interdum vulputate sed, imperdiet rhoncus fringilla. Eu curabitur parturient penatibus.</p>
+<p>Tempus odio risus pharetra sociis mollis, iaculis consectetuer metus libero et, in felis nonummy faucibus quisque, senectus ullamcorper placerat nostra ac. Arcu tempus nascetur facilisi gravida fringilla lacinia, auctor egestas dui platea morbi vehicula, pretium mattis posuere. Id vulputate.</p>
             </div>
         </div>
     </div>
@@ -994,8 +994,8 @@
                 <h2 class="demo-title">.block.lightskyblue</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Quis non elementum lectus fermentum congue porttitor ante, metus praesent fames habitant suscipit sagittis orci, dapibus mauris hac gravida, senectus proin vivamus. Augue odio ridiculus interdum vivamus elementum, nullam interdum faucibus vel, proin nisl magnis dictum ut, condimentum habitasse.</p>
-<p>Duis consequat nulla vehicula nulla pede, praesent nisi taciti egestas imperdiet consectetuer fusce, curabitur vulputate morbi metus vestibulum velit, libero sagittis. Purus tincidunt enim eros convallis iaculis tempus nunc, consectetuer.</p>
+                <p>Augue rutrum sollicitudin luctus per ligula, adipiscing neque felis nullam commodo, aenean sociis interdum malesuada iaculis augue. Velit tincidunt diam ut parturient sollicitudin fermentum, condimentum sem adipiscing a senectus, eros imperdiet sem est vehicula aptent.</p>
+<p>Elementum aliquam phasellus consectetuer viverra dictum mattis metus sit, facilisis ac facilisi nascetur erat nisi, habitasse fermentum vestibulum proin pretium elementum,. Velit.</p>
             </div>
         </div>
     </div>
@@ -1006,8 +1006,8 @@
                 <h2 class="demo-title">.block.snow1</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Lorem mi massa eleifend duis nec et nulla senectus, imperdiet fermentum viverra magna arcu nibh habitasse, torquent hendrerit. In fusce id metus etiam, vivamus sollicitudin lacus taciti, vestibulum elementum mauris sagittis.</p>
-<p>Tempus dolor vel duis congue habitasse semper, urna lacinia rutrum tellus sed habitasse, justo vel inceptos varius, laoreet sodales ante. Odio et in donec velit nibh fusce, erat dui condimentum nostra, diam dictum.</p>
+                <p>Mus iaculis proin curae maecenas, nascetur accumsan euismod dignissim curabitur, orci fermentum sodales nostra suspendisse, justo tincidunt mi gravida malesuada, maecenas dictumst ligula commodo, cubilia vivamus fames. Dictum donec nam nullam, ut sit urna litora, pede nisi.</p>
+<p>Sagittis urna mi amet adipiscing amet urna orci, sodales donec mi id porttitor magnis proin, posuere id neque. Lacinia habitasse ac velit a penatibus tristique, cras purus tellus phasellus nulla conubia, aptent integer dictum blandit, egestas accumsan porttitor. Penatibus.</p>
             </div>
         </div>
     </div>
@@ -1018,14 +1018,14 @@
                 <h2 class="demo-title">.block.wide</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Tristique nonummy curabitur platea aenean integer imperdiet, faucibus id justo sapien, habitant tempor habitant volutpat phasellus, mattis lobortis posuere rutrum. Molestie odio.</p>
-<p>Vitae sem imperdiet suscipit curae hac, conubia congue sagittis morbi nisi, ridiculus pharetra rhoncus tellus lectus, arcu tincidunt interdum maecenas, eros vitae adipiscing. Ipsum lorem tristique eu vehicula, urna porta lacus euismod eget hac justo molestie, volutpat convallis platea dapibus parturient vel. Lorem aenean mus praesent, euismod.</p>
+                <p>Nec neque id habitant elit sociis platea id nonummy, parturient integer tortor eleifend ultrices sociosqu, sit quis sociis rhoncus proin, diam leo amet hymenaeos. Sollicitudin molestie diam habitasse orci vulputate, ante justo tortor ante nonummy posuere tortor, proin nunc ornare.</p>
+<p>Hymenaeos praesent diam mollis tempus porta lectus, suspendisse mus semper pulvinar vitae lacus adipiscing, netus accumsan quis varius pede vestibulum, ante. Libero.</p>
             </div>
         </div>
     </div>
     
 </div>
-<div id="boxes" class="block demo-block" data-magellan-target="boxes">
+<div id="boxes" class="block demo-block" data-magellan-destination="boxes">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title text-upper">Boxes</h1>
@@ -1164,7 +1164,7 @@
         </div>
     </div>
 </div>
-<div id="flex" class="block demo-block" data-magellan-target="flex">
+<div id="flex" class="block demo-block" data-magellan-destination="flex">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title text-upper">Flexbox</h1>
@@ -1266,27 +1266,27 @@
                     
                     <div class="cell small-100 medium-33 align-start">
                         <p><code>.align-start</code></p>
-                        <p>Est sagittis vulputate vitae proin et cras per purus, integer taciti auctor commodo nam scelerisque.</p>
+                        <p>Libero curae hac justo massa elit conubia at, netus non iaculis tellus sapien sociosqu orci.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 align-end">
                         <p><code>.align-end</code></p>
-                        <p>Facilisi turpis libero cras ornare, sodales sed in vehicula sagittis habitant, amet sodales non porta.</p>
+                        <p>Rutrum et fames eleifend donec egestas, dolor sem lobortis etiam per quam, blandit est nullam.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 align-center">
                         <p><code>.align-center</code></p>
-                        <p>Ullamcorper at ultricies vitae iaculis pulvinar sed magnis, erat tortor ac condimentum massa nisi, tortor.</p>
+                        <p>Vulputate pulvinar eleifend dictumst erat torquent, laoreet tempor lacus praesent parturient, sagittis aenean feugiat blandit.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 align-around">
                         <p><code>.align-around</code></p>
-                        <p>Eros potenti diam sollicitudin pulvinar, porta bibendum dolor porttitor, semper malesuada neque praesent, eros eu.</p>
+                        <p>A volutpat tempus dignissim tortor justo tellus et, habitasse magna sem varius fringilla luctus sollicitudin.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 align-between">
                         <p><code>.align-between</code></p>
-                        <p>Aliquam elementum hendrerit augue aptent turpis nam, dictum vehicula venenatis habitant vivamus hac, congue parturient.</p>
+                        <p>Nonummy curae mattis imperdiet porttitor et, augue felis dis consectetuer nec, risus at curabitur tristique.</p>
                     </div>
                     
                 </div>
@@ -1506,7 +1506,6 @@
 
     
 
-    <script src="./static/js/app.foundation6.min.js?73004b6d"></script>
-        
+    <script src="../static/js/app.foundation5.min.js?0ae7add1"></script>
 </body>
 </html>

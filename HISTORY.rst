@@ -2,13 +2,15 @@
 Changelog
 =========
 
-Version 0.6.0 - Unreleased
+Version 0.6.0 - 2017/03/05
 --------------------------
 
 Foundation6 support, close #14:
 
 * Include makefile action to install Foundation6 sources using Foundation 6.3.1;
-
+* Default demonstration page is built with Foundation6, Foundation5 demo is still available;
+* Added Foundation6 assets;
+* Fixed components grid, flex and typography to build CSS with Foundation6;
 
 Version 0.5.2 - 2017/02/28
 --------------------------

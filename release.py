@@ -1,9 +1,13 @@
 """
 Script to build Sass lib release and ZIP archive with correct release version
+
+Accept either '-f' or '--force' argument to force release even if past
+released version is inferior, equal or superior.
 """
 import os
 import io
 import zipfile
+import sys
 
 from cmp_version import cmp_version, VersionString
 
@@ -102,7 +106,7 @@ def build_sasslib_archive(sourcepath, new_version, past_version_file,
         print("  - Using sources from: {}".format(sourcedir))
         make_zip(sourcedir, archive_path, arcdir=archive_indir)
 
-        # TODO: update RELEASED_VERSION file content
+        # Update RELEASED_VERSION file content
         with io.open(past_version_file, 'w', encoding='utf-8') as f:
             f.write(unicode(new_version))
 
@@ -123,6 +127,13 @@ if __name__ == "__main__":
     print("* Current pkg version: {}".format(current_pkg_version))
     print("* Past released version: {}".format(past_released_version))
 
+    # If force arg is given, reset past released version counter so current
+    # package version is allways valid
+    if '-f' in sys.argv[1:] or '--force' in sys.argv[1:]:
+        print("* Forcing release ('--force' arg used) to: {}".format(current_pkg_version))
+        past_released_version = 0
+
+    # Validate than current version is superior to past released version
     if current_pkg_version > past_released_version:
         msg = "* New version to release: {}"
         print(msg.format(current_pkg_version))
@@ -131,7 +142,7 @@ if __name__ == "__main__":
                               archive_path, archive_indir)
 
     elif current_pkg_version == past_released_version:
-        msg = "Current version has allready be released: {}"
+        msg = "Current version has allready been released: {}"
         raise Exception(msg.format(current_pkg_version))
 
     elif current_pkg_version < past_released_version:
