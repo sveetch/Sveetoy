@@ -2,28 +2,6 @@
 
 {% block head_title %}{{ SITE.name }}{% endblock %}
 
-{% block header_container %}
-<div data-sticky-container>
-    <div class="top-bar" data-sticky data-options="marginTop:0;" id="main-top-bar" style="width:100%">
-        <div class="top-bar-title">
-            <span data-responsive-toggle="responsive-menu" data-hide-for="large">
-                <button class="menu-icon" type="button" data-toggle></button>
-            </span>
-            <p class="brand"><a href="//{{ SITE.domain }}">Sveetoy</a></p>
-        </div>
-        <div id="responsive-menu">
-            <div class="top-bar-left">
-                <ul class="vertical large-horizontal menu">
-                    {% for name in ['install', 'vocabulary', 'typography', 'buttons', 'spaces', 'blocks', 'boxes', 'flex'] %}
-                    <li><a href="#{{ name }}">{{ name|capitalize }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-{% endblock %}
-
 {% block base_content %}
 <div class="block snow1" id="intro">
     <div class="row large">
@@ -45,6 +23,20 @@
 
             <div>
                 <p class="text-center"><a href="{{ SITE.web_url }}/dist/Sveetoy-sass-{{ version }}.zip" class="button">Download version {{ version }} (ZIP)</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block snow1 unpadded" id="demo-menu">
+    <div class="row larger">
+        <div class="small-12 columns">
+            <div data-magellan-expedition="fixed" class="menu">
+                <ul class="sub-nav">
+                    {% for name in ['install', 'vocabulary', 'typography', 'buttons', 'spaces', 'blocks', 'boxes', 'flex'] %}
+                    <li data-magellan-arrival="{{ name }}"><a href="#{{ name }}">{{ name|capitalize }}</a></li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>

@@ -54,6 +54,5 @@ class PageWithSitemap(BasicPage):
 #PAGES = PageSitemap(sitemap_tree, PageWithSitemap).ressources
 PAGES = [
     BasicPage(),
-    BasicPage(foundation_version=5, destination="f5/index.html"),
-    BasicPage(foundation_version=6, destination="f6/index.html"),
+    BasicPage(foundation_version=5, template_name="index_f5.html", destination="f5/index.html"),
 ]

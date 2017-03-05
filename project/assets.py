@@ -111,12 +111,6 @@ AVALAIBLE_BUNDLES.update({
         # Foundation bundle
         AVALAIBLE_BUNDLES['foundation5_js'],
 
-        # Debounce event from jquery-smartresize
-        "js/jquery.debouncedresize.js",
-
-        # Media query debug box
-        "js/jquery.currentmediaquery.js",
-
         # Main frontend script
         "js/app.js",
 
@@ -126,12 +120,6 @@ AVALAIBLE_BUNDLES.update({
     'main_f6_js': Bundle(
         # Foundation bundle
         AVALAIBLE_BUNDLES['foundation6_js'],
-
-        # Debounce event from jquery-smartresize
-        "js/jquery.debouncedresize.js",
-
-        # Media query debug box
-        "js/jquery.currentmediaquery.js",
 
         # Main frontend script
         "js/app.js",

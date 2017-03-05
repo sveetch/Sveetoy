@@ -1,12 +1,26 @@
 @import 'util/util';
 
-///
-/// FOUNDATION6 SETTINGS
-///
+/// Global settings which Foundation and Sveetoy depend from
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$lightskyblue: #87cefa;
+$deepskyblue4: #00688b;
+$gray25: #404040;
+$gray82: #d0d0d0;
+$gray88: #e0e0e0;
+$gray94: #f0f0f0;
+$snow1: #fffafa;
 
 // Available font families
 $font-family-roboto: 'Roboto', sans-serif;
 $font-family-overlock: 'Overlock SC', cursive;
+
+///
+/// FOUNDATION6 SETTINGS
+///
+
 
 // 1. Global
 // ---------
@@ -22,6 +36,7 @@ $font-weight-bold: 700;
 $global-weight-normal: $font-weight-normal;
 $global-weight-bold: $font-weight-bold;
 
+
 // 2. Breakpoints
 // --------------
 
@@ -33,3 +48,10 @@ $medium-up: unquote('screen and #{breakpoint(medium)}');
 $large-up: unquote('screen and #{breakpoint(large)}');
 $xlarge-up: unquote('screen and #{breakpoint(xlarge)}');
 $xxlarge-up: unquote('screen and #{breakpoint(xxlarge)}');
+
+
+// 37. Top Bar
+// -----------
+
+$topbar-unstack-breakpoint: large;
+$topbar-background: $gray25;

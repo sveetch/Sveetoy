@@ -11,7 +11,6 @@ $include-sveetoy-flex: $include-sveetoy-classes !default;
 $flex-grid-sizes: 25 33.3333 50 75 100 !default;
 $flex-grid-gutter: 0.5rem !default;
 
-@debug $flex-grid-sizes;
 @if $include-sveetoy-flex {
     // For browser with flexbox capability (from a modernizr classname)
     /* TODO: Issue #17 */

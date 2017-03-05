@@ -1,0 +1,44 @@
+/*
+ *
+ * Header styles for Sveetoy demo
+ *
+ */
+
+/// Header topbar
+#main-top-bar{
+    padding: 0;
+
+    .top-bar-title{
+        padding: 0;
+
+        .brand{
+            font-family: $font-family-overlock;
+            font-size: 1.5rem;
+            font-weight: $font-weight-bold;
+            line-height: rem-calc(60px);
+            color: $white;
+            display: inline-block;
+            margin-left: 1rem;
+
+            a{
+                color: $white;
+            }
+        }
+
+    }
+
+    .menu{
+        margin-left: 2rem;
+
+        li a{
+            padding-top: 0;
+            padding-bottom: 0;
+            color: $white;
+            line-height: rem-calc(60px);
+
+            &:hover{
+                background-color: lighten($topbar-background, 5%);
+            }
+        }
+    }
+}
