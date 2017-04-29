@@ -7098,321 +7098,324 @@ hr.deepskyblue4 {
  *
  */
 .block {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
   color: #404040;
   background-color: #ffffff;
 }
 
+.block:not(.delegate) {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 @media screen and (min-width: 40em) {
-  .block {
+  .block:not(.delegate) {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  .block {
+  .block:not(.delegate) {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .block {
+  .block:not(.delegate) {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
-.block.tiny {
+.block:not(.delegate).tiny {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 40em) {
-  .block.tiny {
+  .block:not(.delegate).tiny {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  .block.tiny {
+  .block:not(.delegate).tiny {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .block.tiny {
+  .block:not(.delegate).tiny {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
 }
 
-.block.short {
+.block:not(.delegate).short {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 @media screen and (min-width: 40em) {
-  .block.short {
+  .block:not(.delegate).short {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  .block.short {
+  .block:not(.delegate).short {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .block.short {
+  .block:not(.delegate).short {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
 }
 
-.block.normal {
+.block:not(.delegate).normal {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 40em) {
-  .block.normal {
+  .block:not(.delegate).normal {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  .block.normal {
+  .block:not(.delegate).normal {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .block.normal {
+  .block:not(.delegate).normal {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
-.block.large {
+.block:not(.delegate).large {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 40em) {
-  .block.large {
+  .block:not(.delegate).large {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  .block.large {
+  .block:not(.delegate).large {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .block.large {
+  .block:not(.delegate).large {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
 
-.block.wide {
+.block:not(.delegate).wide {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 @media screen and (min-width: 40em) {
-  .block.wide {
+  .block:not(.delegate).wide {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  .block.wide {
+  .block:not(.delegate).wide {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .block.wide {
+  .block:not(.delegate).wide {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
 }
 
-.block .inner {
+.block.delegate > .inner {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 40em) {
-  .block .inner {
+  .block.delegate > .inner {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  .block .inner {
+  .block.delegate > .inner {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .block .inner {
+  .block.delegate > .inner {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
-.block .inner.tiny {
+.block.delegate > .inner.tiny {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 40em) {
-  .block .inner.tiny {
+  .block.delegate > .inner.tiny {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  .block .inner.tiny {
+  .block.delegate > .inner.tiny {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .block .inner.tiny {
+  .block.delegate > .inner.tiny {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
 }
 
-.block .inner.short {
+.block.delegate > .inner.short {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 @media screen and (min-width: 40em) {
-  .block .inner.short {
+  .block.delegate > .inner.short {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  .block .inner.short {
+  .block.delegate > .inner.short {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .block .inner.short {
+  .block.delegate > .inner.short {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
 }
 
-.block .inner.normal {
+.block.delegate > .inner.normal {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 40em) {
-  .block .inner.normal {
+  .block.delegate > .inner.normal {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  .block .inner.normal {
+  .block.delegate > .inner.normal {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .block .inner.normal {
+  .block.delegate > .inner.normal {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
-.block .inner.large {
+.block.delegate > .inner.large {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 40em) {
-  .block .inner.large {
+  .block.delegate > .inner.large {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  .block .inner.large {
+  .block.delegate > .inner.large {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .block .inner.large {
+  .block.delegate > .inner.large {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
 
-.block .inner.wide {
+.block.delegate > .inner.wide {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 @media screen and (min-width: 40em) {
-  .block .inner.wide {
+  .block.delegate > .inner.wide {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  .block .inner.wide {
+  .block.delegate > .inner.wide {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .block .inner.wide {
+  .block.delegate > .inner.wide {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
 }
 
-.block.unpadded,
-.block > .inner.unpadded {
+.block:not(.delegate).unpadded,
+.block.delegate > .inner.unpadded {
   padding: 0;
 }
 

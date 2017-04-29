@@ -10,18 +10,20 @@ $include-sveetoy-blocks: $include-sveetoy-classes !default;
 
 @if $include-sveetoy-blocks {
     .block {
-        @include sveetoy-apply-spaces(map-get($sveetoy-spaces, "normal"));
+        &:not(.delegate){
+            @include sveetoy-apply-spaces(map-get($sveetoy-spaces, "normal"));
 
-        @each $name, $definitions in $sveetoy-spaces{
-            &.#{$name}{
-                @include sveetoy-apply-spaces($definitions, $axis: "vertical");
+            @each $name, $definitions in $sveetoy-spaces{
+                &.#{$name}{
+                    @include sveetoy-apply-spaces($definitions, $axis: "vertical");
+                }
             }
         }
 
         ///
-        /// Replicate block spacing to direct inner element
+        /// Delegate spacing to inner element
         ///
-        .inner{
+        &.delegate > .inner{
             @include sveetoy-apply-spaces(map-get($sveetoy-spaces, "normal"));
 
             @each $name, $definitions in $sveetoy-spaces{
@@ -34,8 +36,8 @@ $include-sveetoy-blocks: $include-sveetoy-classes !default;
         ///
         /// Unpadded block or inner element
         ///
-        &.unpadded,
-        & > .inner.unpadded{
+        &:not(.delegate).unpadded,
+        &.delegate > .inner.unpadded{
             padding: 0;
         }
 
