@@ -5,9 +5,10 @@ Changelog
 Version 0.6.1 - Unreleased
 --------------------------
 
+* Added missing ``$sveetoy-row-larger-width`` in default settings;
+* Dropped Modernizr condition on flexbox class in Flexbox component, close #17;
 * Fixed inconvenient parent selector on spaces features so it should build with Compass again, close #19;
 * ``.inner`` blocks feature only work as direct child of a ``.block.delegate``, close #21;
-* Added missing ``$sveetoy-row-larger-width`` in default settings;
 
 Version 0.6.0 - 2017/03/05
 --------------------------
