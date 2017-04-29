@@ -2,7 +2,7 @@
 Changelog
 =========
 
-Version 0.6.1 - Unreleased
+Version 0.6.1 - 2017/03/05
 --------------------------
 
 * Added missing ``$sveetoy-row-larger-width`` in default settings;

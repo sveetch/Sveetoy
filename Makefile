@@ -20,6 +20,8 @@ help:
 	@echo "  clean                -- to clean your local repository from all installed stuff."
 	@echo "  delpyc               -- to remove all *.pyc files, this is recursive from the current directory."
 	@echo
+	@echo "  release              -- to build ZIP archive for last library version and rebuild the demonstration site for Github."
+	@echo
 
 delpyc:
 	find . -name "*\.pyc"|xargs rm -f
@@ -102,6 +104,7 @@ github-build: github-clean
 github-server:
 	cd project && ../bin/optimus-cli runserver 0.0.0.0:8001 --settings githubpages_settings
 
-release:
+zip-release:
 	bin/python release.py
-# 	git tag -a `cat RELEASED_VERSION` -m "Release `cat RELEASED_VERSION`"
+
+release: zip-release github-build
