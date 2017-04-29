@@ -13,10 +13,10 @@ $include-sveetoy-spaces: $include-sveetoy-classes !default;
     /// Apply dividers
     ///
     @each $name, $definitions in $sveetoy-spaces{
-        &.v-divider-#{$name}{
+        .v-divider-#{$name}{
             @include sveetoy-apply-spaces($definitions, $axis: "vertical", $sides: ("end"), $prop: "margin");
         }
-        &.h-divider-#{$name}{
+        .h-divider-#{$name}{
             @include sveetoy-apply-spaces($definitions, $axis: "horizontal", $sides: ("end"), $prop: "margin");
         }
     }
@@ -25,7 +25,7 @@ $include-sveetoy-spaces: $include-sveetoy-classes !default;
     /// Apply vertical spaces
     ///
     @each $name, $definitions in $sveetoy-spaces{
-        &.v-space-#{$name}{
+        .v-space-#{$name}{
             @include sveetoy-apply-spaces($definitions, $axis: "vertical");
         }
     }
@@ -43,7 +43,7 @@ $include-sveetoy-spaces: $include-sveetoy-classes !default;
     /// Apply horizontal spaces
     ///
     @each $name, $definitions in $sveetoy-spaces{
-        &.h-space-#{$name}{
+        .h-space-#{$name}{
             @include sveetoy-apply-spaces($definitions, $axis: "horizontal");
         }
     }
