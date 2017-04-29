@@ -1,4 +1,4 @@
-.. _Foundation5 for Sites: http://foundation.zurb.com/sites/docs/v/5.5.3/
+.. _Foundation for Sites: http://foundation.zurb.com/sites/docs/
 .. _Sveetoy demonstration: https://sveetch.github.io/Sveetoy/
 
 =======
@@ -6,10 +6,9 @@ Sveetoy
 =======
 
 A Sass library for programmatic rythm and some candies on top of
-`Foundation5 for Sites`_ (currently Foundation 5.5.3).
+`Foundation for Sites`_ (version 5.5.3 and 6.3.x).
 
-Currently in development, you should watch the `Sveetoy demonstration`_ for
-more details.
+See the `Sveetoy demonstration`_ for more details and documentation.
 
 This repository includes everything to develop and publish the Sass library,
 just download the sources archive from `Sveetoy demonstration`_ if you just
