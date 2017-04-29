@@ -67,17 +67,23 @@
  *
  * Will produce global and responsive classes like:
  *
+ *   .direction{...}
  *   .direction-row{...}
- *   .direction-small-row{...}
- *   .direction-medium-row{...}
+ *   .direction-row-reversed{...}
  *   etc..
+ *
+ * Or, if $viewport attribute is defined, like with 'medium':
+ *
+ *   .direction-medium{...}
+ *   .direction-medium-row{...}
+ *   .direction-medium-row-reversed{...}
  *
  * For every direction.
  *
  */
 @mixin sveetoy-flex-direction($viewport: null) {
     $suffix: if($viewport, "-#{$viewport}", "");
-    .direction-#{$suffix} {
+    &.direction#{$suffix} {
         display: flex;
     }
     &.direction#{$suffix}-row{
@@ -91,6 +97,62 @@
     }
     &.direction#{$suffix}-column-reverse{
         flex-direction: column-reverse;
+    }
+}
+
+/*
+ * Mixin to create flexbox vertical alignments
+ *
+ * Will produce global and responsive classes like:
+ *
+ *   .v-align-start{...}
+ *   .v-align-end{...}
+ *   .v-align-center{...}
+ *   etc..
+ *
+ * Or, if $viewport attribute is defined, like with 'medium':
+ *
+ *   .v-align-medium-start{...}
+ *   .v-align-medium-end{...}
+ *   .v-align-medium-center{...}
+ *   etc..
+ *
+ * Optional '$parent' attribute can be given to prefix every alignment
+ * selector.
+ *
+ */
+@mixin sveetoy-flex-vertical-alignment($viewport: null, $parent: null) {
+    $suffix: if($viewport, "-#{$viewport}", "");
+    $parentsel: if($parent, "{$parent}", "");
+    // All container elements are vertically stacked on center
+    #{$parent}.v-align#{$suffix}-start{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    // All container elements are vertically stacked on center
+    #{$parent}.v-align#{$suffix}-end{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    // All container elements are vertically stacked on center
+    #{$parent}.v-align#{$suffix}-center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    // All container elements are stacked with space around
+    #{$parent}.v-align#{$suffix}-around{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    // All container elements are stacked with space between
+    #{$parent}.v-align#{$suffix}-between{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 

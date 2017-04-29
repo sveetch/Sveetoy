@@ -35,40 +35,6 @@ $flex-grid-gutter: 0.5rem !default;
             & > p:last-child {
                 margin: 0;
             }
-
-            ///
-            /// Some cell contents alignments
-            ///
-            // All container elements are vertically stacked on center
-            &.align-start{
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-            }
-            // All container elements are vertically stacked on center
-            &.align-end{
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-            }
-            // All container elements are vertically stacked on center
-            &.align-center{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-            // All container elements are stacked with space around
-            &.align-around{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-            }
-            // All container elements are stacked with space between
-            &.align-between{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
         }
 
         ///
@@ -104,5 +70,15 @@ $flex-grid-gutter: 0.5rem !default;
                 @include sveetoy-flex-direction($viewport: $name);
             }
         }
+    }
+}
+
+///
+/// Vertical content alignments
+///
+@include sveetoy-flex-vertical-alignment;
+@each $name, $query in $sveetoy-breakpoints{
+    @media #{$query} {
+        @include sveetoy-flex-vertical-alignment($viewport: $name);
     }
 }

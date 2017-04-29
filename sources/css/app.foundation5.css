@@ -10664,12 +10664,39 @@ hr.deepskyblue4 {
  *
  * Will produce global and responsive classes like:
  *
+ *   .direction{...}
  *   .direction-row{...}
- *   .direction-small-row{...}
- *   .direction-medium-row{...}
+ *   .direction-row-reversed{...}
  *   etc..
  *
+ * Or, if $viewport attribute is defined, like with 'medium':
+ *
+ *   .direction-medium{...}
+ *   .direction-medium-row{...}
+ *   .direction-medium-row-reversed{...}
+ *
  * For every direction.
+ *
+ */
+/*
+ * Mixin to create flexbox vertical alignments
+ *
+ * Will produce global and responsive classes like:
+ *
+ *   .v-align-start{...}
+ *   .v-align-end{...}
+ *   .v-align-center{...}
+ *   etc..
+ *
+ * Or, if $viewport attribute is defined, like with 'medium':
+ *
+ *   .v-align-medium-start{...}
+ *   .v-align-medium-end{...}
+ *   .v-align-medium-center{...}
+ *   etc..
+ *
+ * Optional '$parent' attribute can be given to prefix every alignment
+ * selector.
  *
  */
 /*
@@ -10699,36 +10726,6 @@ hr.deepskyblue4 {
 
 .flex-grid > .cell > p:last-child {
   margin: 0;
-}
-
-.flex-grid > .cell.align-start {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.flex-grid > .cell.align-end {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.flex-grid > .cell.align-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.flex-grid > .cell.align-around {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.flex-grid > .cell.align-between {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 @media only screen {
@@ -10951,7 +10948,7 @@ hr.deepskyblue4 {
   }
 }
 
-.flex-grid .direction- {
+.flex-grid.direction {
   display: flex;
 }
 
@@ -10972,7 +10969,7 @@ hr.deepskyblue4 {
 }
 
 @media only screen {
-  .flex-grid .direction--small {
+  .flex-grid.direction-small {
     display: flex;
   }
   .flex-grid.direction-small-row {
@@ -10990,7 +10987,7 @@ hr.deepskyblue4 {
 }
 
 @media only screen and (min-width: 40.063em) {
-  .flex-grid .direction--medium {
+  .flex-grid.direction-medium {
     display: flex;
   }
   .flex-grid.direction-medium-row {
@@ -11008,7 +11005,7 @@ hr.deepskyblue4 {
 }
 
 @media only screen and (min-width: 64em) {
-  .flex-grid .direction--large {
+  .flex-grid.direction-large {
     display: flex;
   }
   .flex-grid.direction-large-row {
@@ -11026,7 +11023,7 @@ hr.deepskyblue4 {
 }
 
 @media only screen and (min-width: 90.063em) {
-  .flex-grid .direction--xlarge {
+  .flex-grid.direction-xlarge {
     display: flex;
   }
   .flex-grid.direction-xlarge-row {
@@ -11040,6 +11037,148 @@ hr.deepskyblue4 {
   }
   .flex-grid.direction-xlarge-column-reverse {
     flex-direction: column-reverse;
+  }
+}
+
+.v-align-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.v-align-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.v-align-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.v-align-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.v-align-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen {
+  .v-align-small-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .v-align-small-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .v-align-small-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .v-align-small-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .v-align-small-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .v-align-medium-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .v-align-medium-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .v-align-medium-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .v-align-medium-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .v-align-medium-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .v-align-large-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .v-align-large-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .v-align-large-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .v-align-large-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .v-align-large-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .v-align-xlarge-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .v-align-xlarge-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .v-align-xlarge-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .v-align-xlarge-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .v-align-xlarge-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 

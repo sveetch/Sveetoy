@@ -57,13 +57,41 @@
 
             <div class="demo-result">
                 <div class="flex-grid flex-demo align-demo">
-                    {% for name in ['align-start', 'align-end', 'align-center', 'align-around', 'align-between'] %}
+                    {% for name in ['v-align-start', 'v-align-end', 'v-align-center', 'v-align-around', 'v-align-between'] %}
                     <div class="cell small-100 medium-33 {{ name }}">
                         <p><code>.{{ name }}</code></p>
                         {{ lipsum(n=1, html=True, min=15, max=16) }}
                     </div>
                     {% endfor %}
                 </div>
+            </div>
+
+            <h3 class="demo-title">Using responsive classes</h3>
+
+            <p>Every alignment classname is available for each Foundation media query names, you can combine them to change alignment behavior between media queries.</p>
+
+            <div class="v-space-thin">
+                <p>Classnames are builded using enabled media queries from <code>$sveetoy-breakpoints</code>.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            {% for name in ['start', 'end', 'center', 'around', 'between'] %}
+                            <th>{{ name|capitalize }}</th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for breakpoint in ['', 'small', 'medium', 'large', 'xlarge', 'xxlarge'] %}
+                        <tr>
+                            <th>{% if breakpoint %}{{ breakpoint|capitalize }}{% endif %}</th>
+                            {% for name in ['start', 'end', 'center', 'around', 'between'] %}
+                                <td>.v-align-{{ breakpoint }}{% if breakpoint %}-{% endif %}{{ name }}</td>
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -87,7 +115,7 @@
 
             <h3 class="demo-title">Using responsive classes</h3>
 
-            <p>Every direction classname is available for each Foundation media query names, you can combine them to change direction behavior between media queries, like the following sample with <code>.direction-column.direction-large-row</code> which use column direction from small to medium then switch to row direction from large to infinite.</p>
+            <p>Every direction classname is available for each Foundation media query names, you can combine them to change direction behavior between media queries.</p>
             <div class="demo-result">
                 <div class="flex-grid flex-demo direction-column direction-large-row">
                     {% for count in range(1, 4) %}

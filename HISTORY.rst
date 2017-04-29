@@ -8,6 +8,7 @@ Version 0.6.1 - Unreleased
 * Added missing ``$sveetoy-row-larger-width`` in default settings;
 * Dropped Modernizr condition on flexbox class in Flexbox component, close #17;
 * Fixed inconvenient parent selector on spaces features so it should build with Compass again, close #19;
+* Renamed flexbox vertical alignments from ``.align-[ALIGNMENT]`` to ``.v-align-[ALIGNMENT]`` and moved them out of ``.flex-grid`` so they can be used everywhere, close #20;
 * ``.inner`` blocks feature only work as direct child of a ``.block.delegate``, close #21;
 
 Version 0.6.0 - 2017/03/05
