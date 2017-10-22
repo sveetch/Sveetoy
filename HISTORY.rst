@@ -2,8 +2,15 @@
 Changelog
 =========
 
+Version 0.7.0 - Unreleased
+--------------------------
+
+* Dropped Foundation5 support;
+
 Version 0.6.1 - 2017/03/05
 --------------------------
+
+`Download ZIP package for version 0.6.1 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.6.1.zip>`_
 
 * Added missing ``$sveetoy-row-larger-width`` in default settings;
 * Dropped Modernizr condition on flexbox class in Flexbox component, close #17;
@@ -14,8 +21,9 @@ Version 0.6.1 - 2017/03/05
 Version 0.6.0 - 2017/03/05
 --------------------------
 
-Foundation6 support, close #14:
+`Download ZIP package for version 0.6.0 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.6.0.zip>`_
 
+* Foundation6 support, close #14:
 * Include makefile action to install Foundation6 sources using Foundation 6.3.1;
 * Default demonstration page is built with Foundation6, Foundation5 demo is still available;
 * Added Foundation6 assets;
@@ -23,6 +31,8 @@ Foundation6 support, close #14:
 
 Version 0.5.2 - 2017/02/28
 --------------------------
+
+`Download ZIP package for version 0.5.2 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.5.2.zip>`_
 
 * Added flexbox direction classes, close #2;
 * Use ``$sveetoy-breakpoints`` to build every flexbox media query classnames;
@@ -49,6 +59,8 @@ Version 0.5.2 - 2017/02/28
 Version 0.5.1 - 2017/02/06
 --------------------------
 
+`Download ZIP package for version 0.5.1 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.5.1.zip>`_
+
 * Continued to improve demo;
 * Some cleaning in sources;
 * Moved every TODO in a github issue;
@@ -57,5 +69,7 @@ Version 0.5.1 - 2017/02/06
 
 Version 0.5.0 - 2017/02/04
 --------------------------
+
+`Download ZIP package for version 0.5.0 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.5.0.zip>`_
 
 First release but without an archive yet.
