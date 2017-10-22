@@ -1,7 +1,7 @@
 <div id="blocks" class="block unpadded demo-block"{% if foundation_version == 6 %} data-magellan-target="blocks"{% endif %}>
     <div class="row larger demo-introduction">
         <div class="small-12 columns box">
-            <h1 class="demo-title text-upper">Blocks</h1>
+            <h1 class="text-upper">Blocks</h1>
             <p>A block is a full width container useful for fluid design layouts but with first goal to set background and font colors.</p>
             <p>Available features can apply various vertical padding using rythmic space from <code>$sveetoy-spaces</code> and various color schemes from <code>$sveetoy-colors-schemes</code>.</p>
 
@@ -21,7 +21,7 @@
     <div class="block{% if name %} {{ name }}{% endif %}">
         <div class="row">
             <div class="small-12 columns">
-                <h2 class="demo-title">.block{% if name %}.{{ name }}{% endif %}</h2>
+                <h2>.block{% if name %}.{{ name }}{% endif %}</h2>
                 {% include '_includes/_inline_markup.html' %}
 
                 {{ lipsum(n=2, html=True, min=20, max=50) }}
@@ -33,7 +33,7 @@
         <div class="inner">
             <div class="row">
                 <div class="small-12 columns">
-                    <h2 class="demo-title">.block.delegate and .inner child</h2>
+                    <h2>.block.delegate and .inner child</h2>
 
                     <p>You can delegate spacing behavior to a <code>.inner</code> in a <code>.block.delegate</code>, the latter will only retains the color features.</p>
 

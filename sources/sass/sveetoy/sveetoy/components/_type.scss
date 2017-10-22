@@ -8,8 +8,8 @@
 $include-sveetoy-typography: $include-sveetoy-classes !default;
 
 // Some font weight in addition of Foundation ones
-$font-weight-thin: null !default;
-$font-weight-strong: null !default;
+$global-weight-thin: null !default;
+$global-weight-strong: null !default;
 
 $sveetoy-smalls: () !default;
 
@@ -45,20 +45,20 @@ $sveetoy-hr-default-color: #000000;
     /*
     * Various font weights
     */
-    @if $font-weight-thin{
+    @if $global-weight-thin{
         .text-thin{
-            font-weight: $font-weight-thin !important;
+            font-weight: $global-weight-thin !important;
         }
     }
     .text-normal{
-        font-weight: $font-weight-normal !important;
+        font-weight: $global-weight-normal !important;
     }
     b, .text-bold{
-        font-weight: $font-weight-bold !important;
+        font-weight: $global-weight-bold !important;
     }
-    @if $font-weight-strong{
+    @if $global-weight-strong{
         strong, .text-strong{
-            font-weight: $font-weight-strong;
+            font-weight: $global-weight-strong;
         }
     }
 

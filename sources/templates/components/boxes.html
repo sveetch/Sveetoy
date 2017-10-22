@@ -1,7 +1,7 @@
 <div id="boxes" class="block demo-block"{% if foundation_version == 6 %} data-magellan-target="boxes"{% endif %}>
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title text-upper">Boxes</h1>
+            <h1 class="text-upper">Boxes</h1>
             <p>Box component is a combination of spaces and colors settings, alike <code>.block</code> but with both horizontal and vertical padding and optional borders.
 
             <dl>
@@ -17,40 +17,40 @@
     <div class="row larger">
         <div class="small-12 columns">
 
-            <h2 class="demo-title">Spaces</h2>
+            <h2>Spaces</h2>
             <p>Space features are built from <code>$sveetoy-spaces</code> (except for <code>.unpadded</code> that just set padding to 0). Default box colors comes from <code>normal</code> item from <code>$sveetoy-spaces</code>.</p>
             <p>Note than first direct child element does not have a margin top and last direct child element does not have a margin bottom.</p>
             <div class="flex-grid marged demo-result">
                 {% for name in ['unpadded', 'tiny', 'short', '', 'large', 'wide'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box{% if name %} {{ name }}{% endif %}">
-                        <h3 class="demo-title">.box{% if name %}.{{ name }}{% endif %}</h3>
+                        <h3>.box{% if name %}.{{ name }}{% endif %}</h3>
                         {% include '_includes/_inline_markup.html' %}
                     </div>
                 </div>
                 {% endfor %}
             </div>
 
-            <h2 class="demo-title">Colors</h2>
+            <h2>Colors</h2>
             <p>Color features are built from <code>$sveetoy-colors-schemes</code>. Default box colors comes from <code>$sveetoy-colors-scheme-default</code>.</p>
             <div class="flex-grid marged demo-result">
                 {% for name in ['', 'white', 'black', 'lightskyblue', 'snow1'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box{% if name %} {{ name }}{% endif %}">
-                        <h3 class="demo-title">.box{% if name %}.{{ name }}{% endif %}</h3>
+                        <h3>.box{% if name %}.{{ name }}{% endif %}</h3>
                         {% include '_includes/_inline_markup.html' %}
                     </div>
                 </div>
                 {% endfor %}
             </div>
 
-            <h2 class="demo-title">Border thickness</h2>
+            <h2>Border thickness</h2>
             <p>Optionally if your color scheme support borders you can change its thickness using some features.</p>
             <div class="flex-grid marged demo-result">
                 {% for name in ['border-thin', 'border-normal', 'border-bold'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box lightskyblue{% if name %} {{ name }}{% endif %}">
-                        <h3 class="demo-title">.box{% if name %}.{{ name }}{% endif %}</h3>
+                        <h3>.box{% if name %}.{{ name }}{% endif %}</h3>
                         {% include '_includes/_inline_markup.html' %}
                     </div>
                 </div>
