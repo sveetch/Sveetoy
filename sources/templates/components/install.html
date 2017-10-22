@@ -1,4 +1,4 @@
-<div id="install" class="block demo-block"{% if foundation_version == 5 %} data-magellan-destination="install"{% else %} data-magellan-target="install"{% endif %}>
+<div id="install" class="block demo-block"{% if foundation_version == 6 %} data-magellan-target="install"{% endif %}>
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="demo-title text-upper">Install</h1>
@@ -13,18 +13,9 @@
                 <p>@import "sveetoy";</p>
             </div>
 
-            <p>Alike with Foundation, you must load the settings first then libraries. In your settings you can define both Foundation and Sveetoy settings or you may split them in two or more settings files.</p>
+            <p>Alike with Foundation, you must load the settings first then libraries. In your settings you can define both Foundation and Sveetoy settings or you may split them in two or more settings files. Sveetoy allways come after Foundation since it relies on some of its mixins and settings.</p>
 
-            <p>Included file <code>sveetoy/{% if foundation_version == 5 %}_f5_settings{% else %}_f6_settings{% endif %}.scss</code> contains some sample settings you may include in at end of your main settings file and adjust to your needs. Be aware that some of its values are linked to some Foundation setting values.</p>
-
-            {% if foundation_version == 5 %}
-            <p>Since Sveetoy <code>0.6.0</code>, default enabled support is for Foundation 6, for Foundation 5 support you will need to activate it in your settings with following variable to place before Sveetoy import:</p>
-
-            <div class="code-container">
-                <p>$sveetoy_foundation_support: 5;</p>
-            </div>
-            {% endif %}
-
+            <p><code>sveetoy/_f6_settings.scss</code> contains a sample setting file you may include in at end of your main settings file and adjust to your needs. Be aware that some of its values are linked to some Foundation setting values.</p>
         </div>
     </div>
 </div>

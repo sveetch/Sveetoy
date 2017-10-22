@@ -6,6 +6,7 @@ Version 0.7.0 - Unreleased
 --------------------------
 
 * Dropped Foundation5 support;
+* Added older package version links in changelog;
 
 Version 0.6.1 - 2017/03/05
 --------------------------

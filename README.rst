@@ -6,7 +6,7 @@ Sveetoy
 =======
 
 A Sass library for programmatic rythm and some candies on top of
-`Foundation for Sites`_ (version 5.5.3 and 6.3.x).
+`Foundation for Sites`_ (version 6.3.x).
 
 See the `Sveetoy demonstration`_ for more details and documentation.
 

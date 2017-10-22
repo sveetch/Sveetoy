@@ -29,61 +29,29 @@ $include-sveetoy-grid: $include-sveetoy-classes !default;
         /// More larger rows
         ///
         /// Currently only for Foundation5
-        @if $sveetoy_foundation_support == 5{
-            &.larger{
-                @media #{$xlarge-up} {
+        @if map-has-key($breakpoints, xlarge) {
+            @include breakpoint(xlarge) {
+                &.larger{
                     max-width: $sveetoy-row-larger-width;
                 }
             }
+        }
 
-            .columns{
-                ///
-                /// Remove padding on columns
-                ///
-                &.unpadded {
-                    padding: 0;
-                }
-                @media #{$small-only} {
-                    &.small-unpadded{
-                        padding: 0;
-                    }
-                }
-                @media #{$medium-only} {
-                    &.medium-unpadded{
-                        padding: 0;
-                    }
-                }
-                @media #{$large-only} {
-                    &.large-unpadded{
+        .columns{
+            ///
+            /// Remove padding on columns
+            ///
+            &.unpadded{
+                padding: 0;
+            }
+            @each $name, $size in $breakpoints {
+                @include breakpoint($name only) {
+                    &.unpadded{
                         padding: 0;
                     }
                 }
             }
-        } @else {
-            @if map-has-key($breakpoints, xlarge) {
-                @include breakpoint(xlarge) {
-                    &.larger{
-                        max-width: $sveetoy-row-larger-width;
-                    }
-                }
-            }
 
-            .columns{
-                ///
-                /// Remove padding on columns
-                ///
-                &.unpadded{
-                    padding: 0;
-                }
-                @each $name, $size in $breakpoints {
-                    @include breakpoint($name only) {
-                        &.unpadded{
-                            padding: 0;
-                        }
-                    }
-                }
-
-            }
         }
     }
 }

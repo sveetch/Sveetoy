@@ -9,6 +9,8 @@ $include-sveetoy-global: $include-sveetoy-classes !default;
 
 // Declare which foundation version we have to support
 // Foundation6 is the default supported version
+// Unused since dropped support for Foundation5, will eventually happen again
+// for next Foundation release
 $sveetoy_foundation_support: 6 !default;
 
 

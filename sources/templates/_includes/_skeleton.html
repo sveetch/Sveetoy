@@ -14,17 +14,13 @@
         {%- endblock %}
 
         {% block base_css -%}
-            {% if foundation_version == 5 %}
-                {%- assets "main_f5_css" -%}<link rel="stylesheet" href="{{ page_relative_position }}{{ ASSET_URL }}">{%- endassets -%}
-            {% else %}
+            {% if foundation_version == 6 %}
                 {%- assets "main_f6_css" -%}<link rel="stylesheet" href="{{ page_relative_position }}{{ ASSET_URL }}">{%- endassets -%}
             {% endif %}
         {%- endblock %}
         {% block more_css %}{% endblock %}
         {% block base_js -%}
-            {% if foundation_version == 5 %}
-                {%- assets "modernizr_f5_js" -%}<script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>{%- endassets -%}
-            {% else %}
+            {% if foundation_version == 6 %}
                 {%- assets "modernizr_f6_js" -%}<script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>{%- endassets -%}
             {% endif %}
         {%- endblock %}
@@ -56,9 +52,7 @@
     {% endblock %}#}
 
     {% block more_js -%}
-        {% if foundation_version == 5 %}
-            {%- assets "main_f5_js" -%}<script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>{%- endassets -%}
-        {% else %}
+        {% if foundation_version == 6 %}
             {%- assets "main_f6_js" -%}<script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>{%- endassets %}
         {% endif %}
     {%- endblock %}

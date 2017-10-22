@@ -5,9 +5,6 @@
 // Here are sample settings with Foundation5 values
 //
 
-// Declare which foundation version we have to support
-$sveetoy_foundation_support: 5;
-
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 // This part is a copy of some required Foundation settings used in Sveetoy
@@ -68,6 +65,7 @@ $sveetoy-breakpoints: (
 // Sveetoy settings
 $white: #ffffff;
 $black: #000000;
+$gray25: #404040;
 
 $white-color-scheme: (
     font-color: $gray25,

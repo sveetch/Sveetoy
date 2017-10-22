@@ -86,80 +86,48 @@ $sveetoy-hr-default-color: #000000;
     /// Rewrite titles adding paragraph classes so we can have the same
     /// behaviors without troubling SEO/semantic
     ///
-    /// This is almost a copy'n'rewrite from foundation code. Depending from
-    /// foundation support since code is totally different between version 5
-    /// and 6.
+    /// This is almost a copy'n'rewrite from foundation code.
     ///
-    @if $sveetoy_foundation_support == 5{
-        h1, h2, h3, h4, h5, h6,
-        .title-1, .title-2, .title-3, .title-4, .title-5, .title-6{
-            font-family: $header-font-family;
-            font-weight: $header-font-weight;
-            font-style: $header-font-style;
-            color: $header-font-color;
-            text-rendering: $header-text-rendering;
-            margin-top: $header-top-margin;
-            margin-bottom: $header-bottom-margin;
-            line-height: $header-line-height;
-        }
+    // Heading styles
+    @each $size, $headers in $header-styles {
+        @include breakpoint($size) {
+        @each $header, $header-defs in $headers {
+            $font-size-temp: 1rem;
+            #{$header}, .title-#{str-slice($header, 2)} {
 
-        h1, .title-1{ font-size: $h1-font-size - $h1-font-reduction; }
-        h2, .title-2{ font-size: $h2-font-size - $h2-font-reduction; }
-        h3, .title-3{ font-size: $h3-font-size - $h3-font-reduction; }
-        h4, .title-4{ font-size: $h4-font-size - $h4-font-reduction; }
-        h5, .title-5{ font-size: $h5-font-size - $h5-font-reduction; }
-        h6, .title-6{ font-size: $h6-font-size - $h6-font-reduction; }
+            @if map-has-key($header-defs, font-size) {
+                $font-size-temp: rem-calc(map-get($header-defs, font-size));
+                font-size: $font-size-temp;
+            } @else if map-has-key($header-defs, fs) {
+                $font-size-temp: rem-calc(map-get($header-defs, fs));
+                font-size: $font-size-temp;
+            } @else if $size == $-zf-zero-breakpoint {
+                font-size: $font-size-temp;
+            }
+            @if map-has-key($header-defs, line-height) {
+                line-height: unitless-calc(map-get($header-defs, line-height), $font-size-temp);
+            } @else if map-has-key($header-defs, lh) {
+                line-height: unitless-calc(map-get($header-defs, lh), $font-size-temp);
+            } @else if $size == $-zf-zero-breakpoint {
+                line-height: unitless-calc($header-lineheight, $font-size-temp);
+            }
 
-        @media #{$xlarge-up} {
-            h1, .title-1{ font-size: $h1-font-size; }
-            h2, .title-2{ font-size: $h2-font-size; }
-            h3, .title-3{ font-size: $h3-font-size; }
-            h4, .title-4{ font-size: $h4-font-size; }
-            h5, .title-5{ font-size: $h5-font-size; }
-            h6, .title-6{ font-size: $h6-font-size; }
-        }
-    } @else {
-        // Heading styles
-        @each $size, $headers in $header-styles {
-            @include breakpoint($size) {
-            @each $header, $header-defs in $headers {
-                $font-size-temp: 1rem;
-                #{$header}, .title-#{str-slice($header, 2)} {
-
-                @if map-has-key($header-defs, font-size) {
-                    $font-size-temp: rem-calc(map-get($header-defs, font-size));
-                    font-size: $font-size-temp;
-                } @else if map-has-key($header-defs, fs) {
-                    $font-size-temp: rem-calc(map-get($header-defs, fs));
-                    font-size: $font-size-temp;
-                } @else if $size == $-zf-zero-breakpoint {
-                    font-size: $font-size-temp;
-                }
-                @if map-has-key($header-defs, line-height) {
-                    line-height: unitless-calc(map-get($header-defs, line-height), $font-size-temp);
-                } @else if map-has-key($header-defs, lh) {
-                    line-height: unitless-calc(map-get($header-defs, lh), $font-size-temp);
-                } @else if $size == $-zf-zero-breakpoint {
-                    line-height: unitless-calc($header-lineheight, $font-size-temp);
-                }
-
-                @if map-has-key($header-defs, margin-top) {
-                    margin-top: rem-calc(map-get($header-defs, margin-top));
-                } @else if map-has-key($header-defs, mt) {
-                    margin-top: rem-calc(map-get($header-defs, mt));
-                } @else if $size == $-zf-zero-breakpoint {
-                    margin-top: 0;
-                }
-                @if map-has-key($header-defs, margin-bottom) {
-                    margin-bottom: rem-calc(map-get($header-defs, margin-bottom));
-                } @else if map-has-key($header-defs, mb) {
-                    margin-bottom: rem-calc(map-get($header-defs, mb));
-                } @else if $size == $-zf-zero-breakpoint {
-                    margin-bottom: rem-calc($header-margin-bottom);
-                }
-                }
+            @if map-has-key($header-defs, margin-top) {
+                margin-top: rem-calc(map-get($header-defs, margin-top));
+            } @else if map-has-key($header-defs, mt) {
+                margin-top: rem-calc(map-get($header-defs, mt));
+            } @else if $size == $-zf-zero-breakpoint {
+                margin-top: 0;
+            }
+            @if map-has-key($header-defs, margin-bottom) {
+                margin-bottom: rem-calc(map-get($header-defs, margin-bottom));
+            } @else if map-has-key($header-defs, mb) {
+                margin-bottom: rem-calc(map-get($header-defs, mb));
+            } @else if $size == $-zf-zero-breakpoint {
+                margin-bottom: rem-calc($header-margin-bottom);
             }
             }
+        }
         }
     }
 
