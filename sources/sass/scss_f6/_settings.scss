@@ -49,6 +49,11 @@ $large-up: unquote('screen and #{breakpoint(large)}');
 $xlarge-up: unquote('screen and #{breakpoint(xlarge)}');
 $xxlarge-up: unquote('screen and #{breakpoint(xxlarge)}');
 
+// 4. Base Typography
+// ------------------
+
+$header-font-family: $font-family-overlock;
+
 
 // 37. Top Bar
 // -----------

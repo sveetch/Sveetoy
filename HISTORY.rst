@@ -5,8 +5,9 @@ Changelog
 Version 0.7.0 - Unreleased
 --------------------------
 
-* Dropped Foundation5 support;
 * Added older package version links in changelog;
+* Dropped Foundation5 support, close #28;
+* Fixed headers missing font family, close #27;
 
 Version 0.6.1 - 2017/03/05
 --------------------------
