@@ -8,6 +8,13 @@ Version 0.7.0 - Unreleased
 * Added older package version links in changelog;
 * Dropped Foundation5 support, close #28;
 * Fixed headers missing font family, close #27;
+* Fixed invalid sample settings, close #26
+* To enforce naming cohesion with Foundation:
+
+  * ``$font-weight-normal`` have been removed;
+  * ``$font-weight-bold`` have been removed;
+  * ``$font-weight-thin`` have been renamed to ``$global-weight-thin``;
+  * ``$font-weight-strong`` have been renamed to ``$global-weight-strong``;
 
 Version 0.6.1 - 2017/03/05
 --------------------------

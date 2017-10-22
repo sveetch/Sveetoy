@@ -39,6 +39,9 @@ coverage.xml
 /sources/js/foundation6/foundation
 /sources/js/foundation6/vendor/*.js
 
+# Ignored sample stuff
+/sources/css/sample.foundation6.css
+
 # Various
 /cherrypy/
 RELEASED_VERSION
