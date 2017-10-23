@@ -4,14 +4,14 @@
 ///
 $include-sveetoy-spaces: true !default;
 
-// Defines default space sizes with their breakpoint values
+// Space sizes with their breakpoint values
 $sveetoy-space-thin: () !default;
 $sveetoy-space-tiny: () !default;
 $sveetoy-space-normal: () !default;
 $sveetoy-space-wide: () !default;
 $sveetoy-space-huge: () !default;
 
-// New thickness names to apply: thin, tiny, normal, wide, huge
+// Enabled size schemes
 $sveetoy-spaces: () !default;
 
 // Map of breakpoints, usually mapped on those Foundation ones
