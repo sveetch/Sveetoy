@@ -2,7 +2,7 @@
 Changelog
 =========
 
-Version 0.7.0 - Unreleased
+Version 0.7.0 - 2017/10/23
 --------------------------
 
 * Added older package version links in changelog;

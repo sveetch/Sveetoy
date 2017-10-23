@@ -10,7 +10,7 @@
     <link href="//fonts.googleapis.com/css?family=Overlock+SC%7CRoboto:100,400,700,900" rel="stylesheet">
     <meta name="robots" content="index,follow,all">
 
-        <link rel="stylesheet" href="./static/css/app.foundation6.min.css?d9137887">
+        <link rel="stylesheet" href="./static/css/app.foundation6.min.css?d8bfce46">
         
         <script src="./static/js/modernizr_f6.min.js?c9eb8d85"></script>
         
@@ -63,7 +63,7 @@
     <div class="row large">
         <div class="small-12 columns">
             <h1 class="logo">Sveetoy</h1>
-            <p class="title-3 text-center">A <a href="http://sass-lang.com/" target="blank">Sass</a> library for programmatic rythm and some candies on top of <a href="http://foundation.zurb.com/sites/docs/" target="blank">Foundation for Sites</a> version <b>5.5.3</b> and <b>6.3.0</b> or better.</p>
+            <p class="title-3 text-center">A <a href="http://sass-lang.com/" target="blank">Sass</a> library for programmatic rythm and some candies on top of <a href="http://foundation.zurb.com/sites/docs/" target="blank">Foundation for Sites</a> version <b>6.3.x</b> or better.</p>
 
             <div class="v-space-normal flex-grid marged text-center">
                 <div class="cell small-100 medium-33 align-center h-space-normal">
@@ -77,9 +77,10 @@
                 </div>
             </div>
 
-            <p class="text-center"><a href="http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.6.1.zip" class="button">Download version 0.6.1 (ZIP)</a></p>
-
-            <p class="text-center v-space-tiny"><small>This is default demonstration built with Foundation 6, <a href="f5/">Foundation 5 demonstration</a> is still available.</small></p>
+            <p class="text-center">
+                <a href="http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.7.0.zip" class="button">Download version 0.7.0 (ZIP)</a>
+                <br><small><a href="https://github.com/sveetch/Sveetoy/blob/master/HISTORY.rst" target="blank">See changelog and older packages in history file</a></small>
+            </p>
         </div>
     </div>
 </div>
@@ -87,7 +88,7 @@
 <div id="install" class="block demo-block" data-magellan-target="install">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title text-upper">Install</h1>
+            <h1 class="text-upper">Install</h1>
 
             <p>We recommend you to use it as an imported library from your Sass compiler and avoid to include it inside your project Sass sources.</p>
 
@@ -99,19 +100,16 @@
                 <p>@import "sveetoy";</p>
             </div>
 
-            <p>Alike with Foundation, you must load the settings first then libraries. In your settings you can define both Foundation and Sveetoy settings or you may split them in two or more settings files.</p>
+            <p>Alike with Foundation, you must load the settings first then libraries. In your settings you can define both Foundation and Sveetoy settings or you may split them in two or more settings files. Sveetoy allways come after Foundation since it relies on some of its mixins and settings.</p>
 
-            <p>Included file <code>sveetoy/_f6_settings.scss</code> contains some sample settings you may include in at end of your main settings file and adjust to your needs. Be aware that some of its values are linked to some Foundation setting values.</p>
-
-            
-
+            <p><code>sveetoy/_f6_settings.scss</code> contains a sample setting file you may include in at end of your main settings file and adjust to your needs. Be aware that some of its values are linked to some Foundation setting values.</p>
         </div>
     </div>
 </div>
 <div id="vocabulary" class="block demo-block" data-magellan-target="vocabulary">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title text-upper">Vocabulary</h1>
+            <h1 class="text-upper">Vocabulary</h1>
             <p>Components features share the same vocabulary depending of feature kind.</p>
 
             <p>The following vocabulary kinds are listing every word from the lesser value to higher.</p>
@@ -119,7 +117,7 @@
             <div class="flex-grid marged">
 
                 <div class="cell small-100 medium-33 box">
-                    <h2 class="demo-title">Thickness</h2>
+                    <h2>Thickness</h2>
                     <ul>
                         <li>thin</li>
                         <li>normal</li>
@@ -129,7 +127,7 @@
                 </div>
 
                 <div class="cell small-100 medium-33 box">
-                    <h2 class="demo-title">Distance</h2>
+                    <h2>Distance</h2>
                     <ul>
                         <li>sticked</li>
                         <li>near</li>
@@ -139,7 +137,7 @@
                 </div>
 
                 <div class="cell small-100 medium-33 box">
-                    <h2 class="demo-title">Width</h2>
+                    <h2>Width</h2>
                     <ul>
                         <li>tiny</li>
                         <li>short</li>
@@ -156,7 +154,7 @@
 <div id="typography" class="block demo-block" data-magellan-target="typography">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title text-upper">Typography</h1>
+            <h1 class="text-upper">Typography</h1>
             <p>This component adds some minor things to the Foundation typography stuff.</p>
 
             <p>Also there is a new rule that prevent paragraphs to have a bottom margin if they are the last child of their parent.</p>
@@ -173,7 +171,7 @@
 
     <div class="row larger">
         <div class="small-12 columns">
-            <h2 class="demo-title">Title element</h2>
+            <h2>Title element</h2>
             <p>Title styles are not anymore sticked to <code>hX</code> elements, now you can use them by the way of <code>.title-X</code> classes on any other element to preserve semantic. You may even use a <code>.title-X</code> class on <code>hX</code> element.</p>
             <div class="row larger">
                 <div class="small-12 medium-6 columns">
@@ -216,7 +214,7 @@
 
     <div class="row larger">
         <div class="small-12 columns">
-            <h2 class="demo-title">Text colors</h2>
+            <h2>Text colors</h2>
             <p>Text colors are available for every color defined in map <code>$sveetoy-color-text-palette</code>. Properties are defined using <code>!important</code> flag so take care of their usage.</p>
             <div class="demo-result v-space-tiny">
                 
@@ -240,8 +238,12 @@
 
     <div class="row larger">
         <div class="small-12 columns">
-            <h2 class="demo-title">Thickness</h2>
-            <p>Two more thickness are available if their corresponding variable is defined. <code>$font-weight-thin</code> for thinest thickness and <code>$font-weight-strong</code> for strongest thickness.</p>
+            <h2>Thickness</h2>
+            <p>Two more thickness are available if their corresponding variable is defined:</p>
+            <ul>
+                <li><code>$global-weight-thin</code> for thinest thickness;</li>
+                <li><code>$global-weight-strong</code> for strongest thickness.</li>
+            </ul>
             <div class="demo-result v-space-tiny">
                 
                 <p class="text-thin">.text-thin</p>
@@ -258,24 +260,24 @@
 
     <div class="row larger">
         <div class="small-12 columns">
-            <h2 class="demo-title">Small</h2>
+            <h2>Small</h2>
             <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are built from <code>$sveetoy-smalls</code>.</p>
             <div class="demo-result v-space-tiny">
                 
-                <p><code>.small</code> <small class="small">A eget varius metus primis cras habitant sagittis, nonummy inceptos odio porttitor ipsum, varius volutpat.</small></p>
+                <p><code>.small</code> <small class="small">Morbi dapibus leo purus odio velit, ac porttitor quis id maecenas, netus volutpat metus ante.</small></p>
                 
-                <p><code>.medium</code> <small class="medium">Amet curabitur elementum leo inceptos interdum, facilisi nisi donec dictum habitant, ipsum diam at donec.</small></p>
+                <p><code>.medium</code> <small class="medium">Torquent duis nec aenean parturient suscipit imperdiet eu phasellus, malesuada venenatis auctor natoque, suscipit neque.</small></p>
                 
-                <p><code>.big</code> <small class="big">Iaculis feugiat ullamcorper vel penatibus ullamcorper, placerat proin nascetur nulla justo morbi, cum at cum.</small></p>
+                <p><code>.big</code> <small class="big">Rutrum risus euismod eros tellus, pede sociis proin elit conubia, aliquet amet massa purus, vestibulum.</small></p>
                 
-                <p>Vel sociosqu ut nulla rutrum, mi placerat auctor aliquet potenti quam, lacus euismod dictum feugiat.</p>
+                <p>Aliquam tellus in maecenas augue, felis egestas est sit tristique lorem, risus feugiat luctus hendrerit.</p>
             </div>
         </div>
     </div>
 
     <div class="row larger">
         <div class="small-12 columns">
-            <h2 class="demo-title">Transform and decoration</h2>
+            <h2>Transform and decoration</h2>
             <p><code>.text-upper</code> enables you to correctly write your texts in lowercase but render them as uppercase. <code>.text-important</code> just define the underline value for <code>text-decoration</code> property.</p>
             <div class="demo-result v-space-tiny">
                 <p class="text-upper">.text-upper</p>
@@ -286,10 +288,10 @@
 
     <div class="row larger">
         <div class="small-12 columns">
-            <h2 class="demo-title">Underline</h2>
+            <h2>Underline</h2>
             <p>Various underline positions, thickness and widths. All of them are implemented with border properties on a pseudo-element <code>:after</code>.</p>
 
-            <h3 class="demo-title">Width</h3>
+            <h3>Width</h3>
             <p>Built from list <code>$sveetoy-underline-widths</code>.</p>
             <div class="flex-grid marged">
                 
@@ -325,7 +327,7 @@
                 
             </div>
 
-            <h3 class="demo-title">Thickness</h3>
+            <h3>Thickness</h3>
             <p>Built from map <code>$sveetoy-underline-thickness</code>.</p>
             <div class="flex-grid marged">
                 
@@ -349,7 +351,7 @@
                 
             </div>
 
-            <h3 class="demo-title">Distance</h3>
+            <h3>Distance</h3>
             <p>Built from list <code>$sveetoy-underline-distances</code>.</p>
             <div class="flex-grid marged">
                 
@@ -379,7 +381,7 @@
                 
             </div>
 
-            <h3 class="demo-title">Alignment</h3>
+            <h3>Alignment</h3>
             <p>No variable is used to build this single feature.</p>
             <div class="flex-grid marged">
                 
@@ -397,7 +399,7 @@
                 
             </div>
 
-            <h3 class="demo-title">Color</h3>
+            <h3>Color</h3>
             <p>Built from list <code>$sveetoy-underline-colors</code>.</p>
             <div class="flex-grid marged">
                 
@@ -455,10 +457,10 @@
 
     <div class="row larger">
         <div class="small-12 columns">
-            <h2 class="demo-title">Horizontal rule</h2>
+            <h2>Horizontal rule</h2>
             <p>Various horizontal rule positions, thickness and widths. Following the same scheme formats than <code>.underline</code> features.</p>
 
-            <h3 class="demo-title">Thickness</h3>
+            <h3>Thickness</h3>
             <p>Built from map <code>$sveetoy-hr-thickness</code>.</p>
             <div class="flex-grid marged">
                 
@@ -485,7 +487,7 @@
                 
             </div>
 
-            <h3 class="demo-title">Distance</h3>
+            <h3>Distance</h3>
             <p>Built from list <code>$sveetoy-hr-distances</code>.</p>
             <div class="flex-grid marged">
                 
@@ -519,7 +521,7 @@
                 
             </div>
 
-            <h3 class="demo-title">Color</h3>
+            <h3>Color</h3>
             <p>Built from list <code>$sveetoy-hr-colors</code>.</p>
             <div class="flex-grid marged">
                 
@@ -586,7 +588,7 @@
 <div id="buttons" class="block demo-block" data-magellan-target="buttons">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title text-upper">Buttons</h1>
+            <h1 class="text-upper">Buttons</h1>
             <p>Some addons to the buttons features.</p>
 
             <p>Also there is a new rule that prevent buttons to have a bottom margin if they are the last child of a <code>div</code>, <code>p</code>, <code>dd</code>, <code>li</code> element.</p>
@@ -604,7 +606,7 @@
     <div class="row larger">
 
         <div class="small-12 columns">
-            <h2 class="demo-title">Important</h2>
+            <h2>Important</h2>
             <p>Make the button text stronger and uppercase.</p>
             <div class="demo-result v-space-tiny">
                 <div class="row">
@@ -624,7 +626,7 @@
 
     <div class="row larger">
         <div class="small-12 columns">
-            <h2 class="demo-title">Sizes</h2>
+            <h2>Sizes</h2>
             <p>Add <code>.full</code> feature that act like <code>.expand</code> but preserve normal horizontal padding.</p>
             <div class="demo-result v-space-tiny">
                 <div class="row">
@@ -638,7 +640,7 @@
 
     <div class="row larger">
         <div class="small-12 columns">
-            <h2 class="demo-title">Paddings</h2>
+            <h2>Paddings</h2>
             <p>Add <code>.modest</code> feature so the button padding are divided by two or less, it depend from size definitions in <code>$sveetoy-button-modests</code>.</p>
             <div class="demo-result v-space-tiny">
                 <div class="row">
@@ -674,7 +676,7 @@
 
     <div class="row larger">
         <div class="small-12 columns">
-            <h2 class="demo-title">Colors</h2>
+            <h2>Colors</h2>
             <p>Button color features are builded from <code>$sveetoy-button-colors-schemes</code> that is on the same format than <code>$sveetoy-colors-schemes</code> except additional (and optionnal) <code>border-color</code> option.</p>
             <div class="demo-result v-space-tiny">
                 <div class="row">
@@ -708,7 +710,7 @@
 <div id="spaces" class="block demo-block" data-magellan-target="spaces">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title text-upper">Spaces</h1>
+            <h1 class="text-upper">Spaces</h1>
             <p>This component add styles to apply paddings using space rythmic defined in map <code>$sveetoy-spaces</code>.</p>
             <p>Padding can be applied for both sides on vertical or horizontal axes or optionally on only one side.</p>
             <p>There are many space sizes available and each of them have their own breakpoint sizes.</p>
@@ -727,7 +729,7 @@
         <div class="small-12 columns">
             <hr class="gray82 thin">
 
-            <h2 class="demo-title">Vertical padding in element</h2>
+            <h2>Vertical padding in element</h2>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-33 large-20">
@@ -767,7 +769,7 @@
                 
             </div>
 
-            <h3 class="demo-title">Only top or bottom</h3>
+            <h3>Only top or bottom</h3>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50">
@@ -792,7 +794,7 @@
         <hr class="gray82 thin">
 
         <div class="small-12 columns">
-            <h2 class="demo-title">Horizontal padding in element</h2>
+            <h2>Horizontal padding in element</h2>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50 large-33">
@@ -832,7 +834,7 @@
                 
             </div>
 
-            <h3 class="demo-title">Only left or right</h3>
+            <h3>Only left or right</h3>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50">
@@ -857,7 +859,7 @@
         <hr class="gray82 thin">
 
         <div class="small-12 columns">
-            <h2 class="demo-title">Vertical margin divider</h2>
+            <h2>Vertical margin divider</h2>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50 large-33">
@@ -903,7 +905,7 @@
         <hr class="gray82 thin">
 
         <div class="small-12 columns">
-            <h2 class="demo-title">Horizontal margin divider</h2>
+            <h2>Horizontal margin divider</h2>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50 large-33">
@@ -949,7 +951,7 @@
 <div id="blocks" class="block unpadded demo-block" data-magellan-target="blocks">
     <div class="row larger demo-introduction">
         <div class="small-12 columns box">
-            <h1 class="demo-title text-upper">Blocks</h1>
+            <h1 class="text-upper">Blocks</h1>
             <p>A block is a full width container useful for fluid design layouts but with first goal to set background and font colors.</p>
             <p>Available features can apply various vertical padding using rythmic space from <code>$sveetoy-spaces</code> and various color schemes from <code>$sveetoy-colors-schemes</code>.</p>
 
@@ -969,11 +971,11 @@
     <div class="block">
         <div class="row">
             <div class="small-12 columns">
-                <h2 class="demo-title">.block</h2>
+                <h2>.block</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Est hendrerit fusce quis venenatis senectus, blandit fringilla id rutrum nunc nam, non vel praesent ligula, nam ante. Auctor ultrices varius erat, fames potenti vulputate pretium lobortis quisque, vivamus.</p>
-<p>Dictumst ante cursus molestie torquent dis elit, sagittis euismod in id consequat facilisi turpis, suspendisse sem tempus accumsan donec posuere mus.</p>
+                <p>Morbi viverra nascetur massa dis habitasse platea, justo hendrerit ligula felis porttitor dui habitasse, natoque rhoncus urna dictumst habitasse,. Habitant et tristique tellus ultrices, ornare parturient proin interdum lacus, velit integer cum vitae interdum, condimentum nibh vulputate cursus luctus. Quis lorem habitasse sagittis massa.</p>
+<p>Lacus primis lacus dolor mattis, ornare volutpat fringilla at, magna sagittis placerat mattis viverra malesuada cursus, justo proin. Tempor malesuada ac porttitor proin scelerisque, ridiculus nulla lectus dictumst aliquam, habitasse euismod porta.</p>
             </div>
         </div>
     </div>
@@ -981,11 +983,11 @@
     <div class="block black">
         <div class="row">
             <div class="small-12 columns">
-                <h2 class="demo-title">.block.black</h2>
+                <h2>.block.black</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Eleifend hac ridiculus non neque pellentesque, eget auctor tincidunt sagittis quisque quis, convallis suspendisse ridiculus metus, maecenas penatibus non. Quam tempus sapien cursus posuere, etiam urna dignissim commodo ante volutpat, eget a odio cras, mus consectetuer sociosqu est lorem, elit scelerisque consectetuer metus. Cubilia hac dolor.</p>
-<p>Nibh ultrices non proin ridiculus diam gravida hendrerit, fermentum magnis tempus et, aenean elit magna ac eget montes, donec augue cursus. Faucibus augue facilisis vivamus hymenaeos pellentesque potenti, porta cras nec convallis dui bibendum nisi, auctor quisque pede ut quam. Tincidunt lacus interdum.</p>
+                <p>Elit fermentum leo nisi donec non nisl nonummy, tincidunt netus condimentum orci pede, condimentum odio felis. Nibh ridiculus at cubilia lorem molestie, pede proin commodo ante at iaculis fermentum, dictum non. Tempus condimentum dictum ridiculus consequat imperdiet, at orci ad posuere, scelerisque sagittis.</p>
+<p>Faucibus tortor sed semper eros, aptent montes est morbi ligula pretium, mattis ut accumsan est litora, aenean quisque lacus egestas, per at magnis. Sociosqu scelerisque suspendisse condimentum lobortis metus, nulla euismod turpis orci, maecenas.</p>
             </div>
         </div>
     </div>
@@ -993,11 +995,11 @@
     <div class="block lightskyblue">
         <div class="row">
             <div class="small-12 columns">
-                <h2 class="demo-title">.block.lightskyblue</h2>
+                <h2>.block.lightskyblue</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Venenatis imperdiet urna dui ultricies nonummy commodo, dui nec sodales vulputate id aliquam, nostra orci blandit hac, pede fringilla tempor vivamus mus montes dignissim,. Aptent luctus nisl leo morbi, purus torquent metus auctor mus, fringilla pellentesque ipsum ante ad, a auctor nunc bibendum. Tortor mollis ad sapien lacus a.</p>
-<p>Ultrices sapien tortor ridiculus faucibus, sagittis hendrerit molestie vitae porttitor mattis, iaculis dapibus vel facilisis dapibus rhoncus diam, ut aliquam diam. Mollis vitae elit hymenaeos, tempor dapibus nisl eleifend luctus, cras turpis lorem dui, ante amet augue posuere.</p>
+                <p>Commodo placerat consequat inceptos interdum sem imperdiet, dapibus aenean litora rhoncus vulputate, ante nostra quis congue egestas, laoreet mauris. Arcu duis inceptos blandit nibh, hendrerit dui purus pulvinar aenean venenatis, scelerisque fusce pede blandit.</p>
+<p>Penatibus facilisi egestas nonummy ut iaculis et sollicitudin, faucibus natoque ridiculus faucibus taciti, fusce condimentum cras condimentum augue, rhoncus vel.</p>
             </div>
         </div>
     </div>
@@ -1005,11 +1007,11 @@
     <div class="block snow1">
         <div class="row">
             <div class="small-12 columns">
-                <h2 class="demo-title">.block.snow1</h2>
+                <h2>.block.snow1</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Quam fringilla praesent semper mus, dapibus nunc semper feugiat, mollis dolor vehicula placerat risus lorem, bibendum aptent maecenas montes ligula proin ac. Fermentum ipsum purus ornare platea, montes mus lorem rutrum nascetur, tempor primis fermentum nisl nonummy eros montes, mus pharetra. Eget phasellus orci.</p>
-<p>Imperdiet accumsan justo hymenaeos ac urna mauris, elit praesent cubilia vitae pharetra, dolor sociosqu integer at, euismod eget adipiscing tempus lectus. Litora velit ad suscipit, vitae hendrerit pharetra dictumst proin, mi dictumst quis proin aenean euismod hendrerit, nisl etiam lacus ipsum. Eros id gravida netus fringilla.</p>
+                <p>Fringilla penatibus odio augue curabitur rhoncus, ac aliquam torquent aliquam bibendum, quisque libero augue tortor metus pretium, maecenas lacus phasellus class amet. Enim ultrices gravida sollicitudin nunc nec justo, viverra sed suscipit potenti mattis, etiam curae ornare integer.</p>
+<p>Nostra suscipit sit luctus augue adipiscing, magnis hac porttitor morbi fermentum, ad facilisi erat pede cras. Facilisis habitasse blandit dignissim erat, feugiat vivamus natoque eleifend amet mauris, mi interdum integer sagittis lectus luctus, feugiat.</p>
             </div>
         </div>
     </div>
@@ -1017,11 +1019,11 @@
     <div class="block wide">
         <div class="row">
             <div class="small-12 columns">
-                <h2 class="demo-title">.block.wide</h2>
+                <h2>.block.wide</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Etiam enim per hac sed sem, vulputate sodales tincidunt elit class, sapien venenatis sed leo nisl, eget justo nibh hendrerit, amet euismod nec rutrum, aliquam. Quisque a morbi elementum.</p>
-<p>Placerat hendrerit lacus etiam aenean urna quisque, mauris mollis dui adipiscing morbi, aliquet cras semper mauris mattis, imperdiet quisque eu. Porttitor euismod convallis primis lorem faucibus, varius fermentum in tempor sodales, luctus hac leo luctus bibendum, nostra. Vivamus porttitor ad augue volutpat sed ligula, id faucibus cubilia tristique.</p>
+                <p>Iaculis viverra semper vel primis malesuada turpis, curae taciti quisque consequat cum volutpat, donec in dapibus placerat fringilla, torquent blandit. Dignissim cubilia montes arcu, ad arcu viverra mi eget est semper, quisque porta inceptos platea, eleifend nec imperdiet. Enim pretium.</p>
+<p>Sociosqu habitant tincidunt tellus porta habitant, commodo cras potenti aenean placerat amet rhoncus, tempus nisl penatibus cubilia turpis urna nunc netus,. Ac lobortis magna sagittis mus blandit, enim semper.</p>
             </div>
         </div>
     </div>
@@ -1030,14 +1032,14 @@
         <div class="inner">
             <div class="row">
                 <div class="small-12 columns">
-                    <h2 class="demo-title">.block.delegate and .inner child</h2>
+                    <h2>.block.delegate and .inner child</h2>
 
                     <p>You can delegate spacing behavior to a <code>.inner</code> in a <code>.block.delegate</code>, the latter will only retains the color features.</p>
 
                     <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                    <p>Diam pretium at turpis nulla, quisque ligula id pede, tempus hendrerit urna maecenas ullamcorper justo sem proin, bibendum ad ullamcorper consectetuer, nibh mus. Velit volutpat ultrices eu odio, sodales dapibus class metus magnis, platea tempus justo rutrum ridiculus, ullamcorper lobortis morbi praesent pharetra parturient,. Sociosqu.</p>
-<p>Cras ultrices potenti amet consequat, odio interdum taciti justo ullamcorper, placerat netus mollis ut, nonummy euismod duis et dictumst. Dignissim facilisi consequat porttitor, sollicitudin porttitor cum mauris arcu dictum natoque, morbi platea lectus lacinia, primis molestie. Iaculis gravida elit risus felis massa placerat, mus volutpat nec convallis nullam, id.</p>
+                    <p>Cum fames suscipit sodales suscipit nec justo, magnis laoreet diam nunc, sociis ad montes justo sollicitudin massa dapibus, hac. Ipsum netus at.</p>
+<p>Ligula scelerisque aptent proin augue mollis parturient primis, vulputate sagittis urna maecenas laoreet diam metus dictum, sociosqu porttitor suspendisse sem. Varius pellentesque dui mi facilisis posuere, velit sem elit ultrices odio.</p>
                 </div>
             </div>
         </div>
@@ -1046,7 +1048,7 @@
 <div id="boxes" class="block demo-block" data-magellan-target="boxes">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title text-upper">Boxes</h1>
+            <h1 class="text-upper">Boxes</h1>
             <p>Box component is a combination of spaces and colors settings, alike <code>.block</code> but with both horizontal and vertical padding and optional borders.
 
             <dl>
@@ -1062,117 +1064,117 @@
     <div class="row larger">
         <div class="small-12 columns">
 
-            <h2 class="demo-title">Spaces</h2>
+            <h2>Spaces</h2>
             <p>Space features are built from <code>$sveetoy-spaces</code> (except for <code>.unpadded</code> that just set padding to 0). Default box colors comes from <code>normal</code> item from <code>$sveetoy-spaces</code>.</p>
             <p>Note than first direct child element does not have a margin top and last direct child element does not have a margin bottom.</p>
             <div class="flex-grid marged demo-result">
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box unpadded">
-                        <h3 class="demo-title">.box.unpadded</h3>
+                        <h3>.box.unpadded</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box tiny">
-                        <h3 class="demo-title">.box.tiny</h3>
+                        <h3>.box.tiny</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box short">
-                        <h3 class="demo-title">.box.short</h3>
+                        <h3>.box.short</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box">
-                        <h3 class="demo-title">.box</h3>
+                        <h3>.box</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box large">
-                        <h3 class="demo-title">.box.large</h3>
+                        <h3>.box.large</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box wide">
-                        <h3 class="demo-title">.box.wide</h3>
+                        <h3>.box.wide</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
             </div>
 
-            <h2 class="demo-title">Colors</h2>
+            <h2>Colors</h2>
             <p>Color features are built from <code>$sveetoy-colors-schemes</code>. Default box colors comes from <code>$sveetoy-colors-scheme-default</code>.</p>
             <div class="flex-grid marged demo-result">
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box">
-                        <h3 class="demo-title">.box</h3>
+                        <h3>.box</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box white">
-                        <h3 class="demo-title">.box.white</h3>
+                        <h3>.box.white</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box black">
-                        <h3 class="demo-title">.box.black</h3>
+                        <h3>.box.black</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box lightskyblue">
-                        <h3 class="demo-title">.box.lightskyblue</h3>
+                        <h3>.box.lightskyblue</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box snow1">
-                        <h3 class="demo-title">.box.snow1</h3>
+                        <h3>.box.snow1</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
             </div>
 
-            <h2 class="demo-title">Border thickness</h2>
+            <h2>Border thickness</h2>
             <p>Optionally if your color scheme support borders you can change its thickness using some features.</p>
             <div class="flex-grid marged demo-result">
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box lightskyblue border-thin">
-                        <h3 class="demo-title">.box.border-thin</h3>
+                        <h3>.box.border-thin</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box lightskyblue border-normal">
-                        <h3 class="demo-title">.box.border-normal</h3>
+                        <h3>.box.border-normal</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box lightskyblue border-bold">
-                        <h3 class="demo-title">.box.border-bold</h3>
+                        <h3>.box.border-bold</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
@@ -1185,9 +1187,8 @@
 <div id="flex" class="block demo-block" data-magellan-target="flex">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
-            <h1 class="demo-title text-upper">Flexbox</h1>
-            <p>Foundation for site version 5 does not have any flexbox grid and version 6 force to choose between float and flexbox grid.</p>
-            <p>So here it is, a simple flexbox grid.</p>
+            <h1 class="text-upper">Flexbox</h1>
+            <p>A simple flexbox grid.</p>
             <p>Alike <code>.row</code> in float grid, <code>.flex-grid</code> is the main container and <code>.cell</code> is equivalent to <code>.columns</code>.</p>
             <p>Available cell sizes are builded from <code>$flex-grid-sizes</code> list and defined for each Foundation media query.</p>
             <p><code>.margin</code> feature is defined from <code>$flex-grid-gutter</code>.</p>
@@ -1206,7 +1207,7 @@
 
     <div class="row larger v-space-tiny">
         <div class="small-12 columns">
-            <h2 class="demo-title">Simple grid</h2>
+            <h2>Simple grid</h2>
             <div class="demo-result">
                 <div class="flex-grid flex-demo">
                     
@@ -1241,7 +1242,7 @@
 
     <div class="row larger v-space-tiny">
         <div class="small-12 columns">
-            <h2 class="demo-title">With margin between cells</h2>
+            <h2>With margin between cells</h2>
 
             <div class="demo-result">
                 <div class="flex-grid marged flex-demo">
@@ -1277,40 +1278,40 @@
 
     <div class="row larger v-space-tiny">
         <div class="small-12 columns">
-            <h2 class="demo-title">Vertical content alignment</h2>
+            <h2>Vertical content alignment</h2>
 
             <div class="demo-result">
                 <div class="flex-grid flex-demo align-demo">
                     
                     <div class="cell small-100 medium-33 v-align-start">
                         <p><code>.v-align-start</code></p>
-                        <p>Duis porta nostra velit vulputate at rhoncus, iaculis etiam quisque volutpat nec, venenatis eu mollis.</p>
+                        <p>Sodales curae tempus enim eros aenean, torquent facilisi ultrices cursus risus turpis, semper placerat id.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-end">
                         <p><code>.v-align-end</code></p>
-                        <p>Egestas adipiscing lobortis imperdiet integer ridiculus montes, nullam elit feugiat porta cursus faucibus sociis, nam.</p>
+                        <p>Justo rutrum porta curabitur viverra inceptos ornare, convallis leo cum elementum parturient nascetur, class vivamus.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-center">
                         <p><code>.v-align-center</code></p>
-                        <p>Dapibus tempus ligula fames ipsum sociis, accumsan dolor eros rutrum mi, id vestibulum elementum suspendisse.</p>
+                        <p>Pretium libero phasellus eros dictum dictumst litora, quam integer purus ridiculus aenean, cursus sodales facilisis.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-around">
                         <p><code>.v-align-around</code></p>
-                        <p>Dui proin feugiat massa aliquet auctor aliquam nec, interdum orci fames eleifend hymenaeos, aliquet nonummy.</p>
+                        <p>Per lobortis vitae phasellus lobortis, nisi accumsan lectus proin cras pede nullam, ultrices vitae dapibus.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-between">
                         <p><code>.v-align-between</code></p>
-                        <p>Duis purus tellus augue eros, habitant ut nec velit sit phasellus, porta ac nec placerat.</p>
+                        <p>Sagittis convallis rhoncus diam scelerisque vestibulum ipsum adipiscing, eget justo parturient cras euismod, sociosqu ultrices.</p>
                     </div>
                     
                 </div>
             </div>
 
-            <h3 class="demo-title">Using responsive classes</h3>
+            <h3>Using responsive classes</h3>
 
             <p>Every alignment classname is available for each Foundation media query names, you can combine them to change alignment behavior between media queries.</p>
 
@@ -1433,10 +1434,10 @@
 
     <div class="row larger v-space-tiny">
         <div class="small-12 columns">
-            <h2 class="demo-title">Container items direction</h2>
+            <h2>Container items direction</h2>
 
             
-            <h3 class="demo-title">.direction-row</h3>
+            <h3>.direction-row</h3>
             <div class="demo-result">
                 <div class="flex-grid flex-demo direction-row">
                     
@@ -1455,7 +1456,7 @@
                 </div>
             </div>
             
-            <h3 class="demo-title">.direction-row-reverse</h3>
+            <h3>.direction-row-reverse</h3>
             <div class="demo-result">
                 <div class="flex-grid flex-demo direction-row-reverse">
                     
@@ -1474,7 +1475,7 @@
                 </div>
             </div>
             
-            <h3 class="demo-title">.direction-column</h3>
+            <h3>.direction-column</h3>
             <div class="demo-result">
                 <div class="flex-grid flex-demo direction-column">
                     
@@ -1493,7 +1494,7 @@
                 </div>
             </div>
             
-            <h3 class="demo-title">.direction-column-reverse</h3>
+            <h3>.direction-column-reverse</h3>
             <div class="demo-result">
                 <div class="flex-grid flex-demo direction-column-reverse">
                     
@@ -1513,7 +1514,7 @@
             </div>
             
 
-            <h3 class="demo-title">Using responsive classes</h3>
+            <h3>Using responsive classes</h3>
 
             <p>Every direction classname is available for each Foundation media query names, you can combine them to change direction behavior between media queries.</p>
             <div class="demo-result">
