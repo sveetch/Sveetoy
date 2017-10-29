@@ -43,5 +43,6 @@ coverage.xml
 /sources/css/sample.foundation6.css
 
 # Various
+/node_modules/
 /cherrypy/
 RELEASED_VERSION

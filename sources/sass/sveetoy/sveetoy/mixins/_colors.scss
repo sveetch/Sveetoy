@@ -1,40 +1,197 @@
-// Color schemes
-$sveetoy-colors-schemes: () !default;
 
-// Color scheme for default section
+///
+/// This documentate model for available properties in a color scheme.
+///
+/// Either `font-color` or `background-color` are required, every other
+/// properties are optional.
+///
+/// `background-color` is the only required property and possibly also
+/// `font-color` if `background-color` is set to `transparent` or `inherit`.
+///
+/// For consistent naming, we recommend to allways name your color scheme
+/// based on their background color, like `$white-color-scheme` for a scheme
+/// with a white background.
+///
+/// @name Color scheme model
+///
+/// @type map
+///
+/// @group settings
+///
+/// @prop {Color} background-color [null]
+///   Background color to apply.
+///
+/// @prop {Color} font-color [null]
+///   Font color to apply.
+///
+/// @prop {Color} link-color [null]
+///   Enforce font color on link. This does not apply on links with `.button`
+///   class since buttons have their own definition apart.
+///
+/// @prop {Color} link-color-hover [null]
+///   Enforce font color on link hover event. Alike `link-color`, this does
+///   not apply on buttons.
+///
+/// @prop {Color} h1-color [null]
+///   Font color to apply on title level 1 (like `h1` or `.title-1`).
+///
+///   A `false` value should be understood by mixin as "Do not define any
+///   color for this title level" since default behavior is to use font-color
+///   when title level is `null`. This behavior is available for every title
+///   levels.
+///
+/// @prop {Color} h2-color [null]
+///   Font color to apply on title level 2 (like `h2` or `.title-2`).
+///
+/// @prop {Color} h3-color [null]
+///   Font color to apply on title level 3 (like `h3` or `.title-3`).
+///
+/// @prop {Color} h4-color [null]
+///   Font color to apply on title level 4 (like `h4` or `.title-4`).
+///
+/// @prop {Color} h5-color [null]
+///   Font color to apply on title level 5 (like `h5` or `.title-5`).
+///
+/// @prop {Color} h6-color [null]
+///   Font color to apply on title level 6 (like `h6` or `.title-6`).
+///
+/// @prop {Color} border-color [null]
+///   Border color to apply.
+///
+/// @prop {Number} border-width [null]
+///   Border width to apply.
+///
+/// @prop {String} border-style [null]
+///   Border style to apply.
+///
+///
+/// @example scss
+///   $white-color-scheme: (
+///       font-color: #000000,
+///       background-color: #ffffff,
+///   );
+///
+///   $black-color-scheme: (
+///       font-color: #ffffff,
+///       background-color: #000000,
+///       link-color: #ff0000,
+///       link-color-hover: #ff00ee,
+///       h1-color: #f0f0f0,
+///       h2-color: #e8e8e8,
+///       h3-color: #e7e7e7,
+///       h4-color: #e6e6e6,
+///       h5-color: #e5e5e5,
+///       h6-color: #e6e6e6,
+///       border-color: #d0d0d0,
+///       border-width: 2px,
+///       border-style: solid,
+///   );
+///
+$sveetoy-model-color-scheme: () !default;
+
+
+/// Default color scheme to use (like on `.block` or
+/// `.box`).
+///
+/// See **Color scheme model** for property definitions.
+///
+/// @type map
+///
+/// @group settings
+///
+/// @example scss
+///   $sveetoy-colors-scheme-default: $white-color-scheme;
+///
 $sveetoy-colors-scheme-default: null !default;
 
-// Text color palette
+
+/// Enabled color schemes for component classes creation (like `.block` or
+/// `.box`).
+///
+/// Each property is a named **Color scheme model**.
+///
+/// @type map
+///
+/// @group settings
+///
+/// @example scss
+///   $sveetoy-colors-schemes: (
+///       white: $white-color-scheme,
+///       black: $black-color-scheme,
+///   );
+///
+$sveetoy-colors-schemes: () !default;
+
+
+/// Enabled text colors.
+///
+/// Each item create a CSS classes `.text-NAME` classes where `NAME` is the
+/// item name.
+///
+/// @type map
+///
+/// @group settings
+///
+/// @example scss
+///   $sveetoy-color-text-palette: (
+///       white: #ffffff,
+///       black: #000000,
+///   );
+///
 $sveetoy-color-text-palette: () !default;
 
+
 ///
-/// Scheme colors
+/// Include properties from a scheme color to an element.
 ///
-/// Includes properties to define background and font color on an element.
+/// @arg {Map} $scheme [null]
+///   A **Color scheme model**.
 ///
-/// Require only one argument: a map of color options.
+/// @arg {Bool} $apply-border [false]
+///   If set to `true`, scheme border properties will be used, else they are
+///   ignored.
 ///
-/// Given map require at least the 'background-color' key and eventually
-/// require the 'font-color' key if 'background-color' is 'transparent' or
-/// 'inherit'.
+/// @example scss
+///   $white-color-scheme: (
+///       font-color: #000000,
+///       background-color: #ffffff,
+///       h1-color: #f0f0f0,
+///       h2-color: false,
+///   );
 ///
-/// If 'font-color' is not given, its value will be the inverted background
-/// color.
+///   div{
+///       @include sveetoy-scheme-colors($white-color-scheme);
+///   }
 ///
-/// Automatically apply font-color on title elements (h1, .title-1, etc..), or
-/// their specific color if given in map (as options 'h1-color', 'h2-color',
-/// etc..). If a title color option value is 'false', no color property is
-/// applied.
+/// @example css
+///   div{
+///       color: #000000;
+///       background-color: #ffffff;
 ///
-/// Also accept 'link-color' and '$link-color-hover' to apply color to link
-/// and its 'hover' event.
+///       h1, .title-1{
+///           color: #f0f0f0;
+///       }
+///       h2, .title-2{}
+///       h3, .title-3{
+///           color: #000000;
+///       }
+///       h4, .title-4{
+///           color: #000000;
+///       }
+///       h5, .title-5{
+///           color: #000000;
+///       }
+///       h6, .title-6{
+///           color: #000000;
+///       }
+///   }
 ///
 @mixin sveetoy-scheme-colors($scheme, $apply-border: false) {
     // Raise error if background-color item is not in scheme
     @if map-get($scheme, "background-color") == null {
-        @error "A scheme color must define the 'background-color' item";
+        @error "A scheme color must define the background-color item";
     } @else if (map-get($scheme, "background-color") == transparent or map-get($scheme, "background-color") == inherit) and map-get($scheme, "font-color") == null {
-        @error "A scheme color must define the 'font-color' item if background-color is 'transparent' or 'inherit'";
+        @error "A scheme color must define the font-color item if background-color value is transparent or inherit";
     }
 
     $background-color: map-get($scheme, "background-color");
@@ -78,15 +235,17 @@ $sveetoy-color-text-palette: () !default;
 }
 
 ///
-/// Apply color scheme for a button
+/// Include properties from a scheme color to a button element.
 ///
-/// Same behavior than 'sveetoy-scheme-colors' but don't care about link color.
+/// Work like `sveetoy-scheme-colors()` mixin except properties for links and
+/// titles are ignored.
 ///
-/// Also apply border parameters 'border-color', 'border-width', 'border-type'
-/// if given and '$apply-border' is true
+/// @arg {Map} $scheme [null]
+///   A **Color scheme model**.
 ///
-/// Note that if '$apply-border' is true but 'border-color' is not given,
-/// 'font-color' value is used.
+/// @arg {Bool} $apply-border [false]
+///   If set to `true`, scheme border properties will be used, else they are
+///   ignored.
 ///
 @mixin sveetoy-button-colors($scheme, $apply-border: false) {
     $background-color: map-get($scheme, "background-color");
@@ -105,6 +264,11 @@ $sveetoy-color-text-palette: () !default;
 ///
 /// Apply border properties for given scheme.
 ///
+/// @arg {Map} $scheme [null]
+///   A **Color scheme model**.
+///
+/// If `border-color` is null, `font-color` reverse value is used instead
+/// using Sass function `invert()`.
 ///
 @mixin sveetoy-apply-border($scheme) {
     $background-color: map-get($scheme, "background-color");

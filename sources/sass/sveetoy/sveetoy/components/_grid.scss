@@ -9,9 +9,9 @@ $include-sveetoy-grid: $include-sveetoy-classes !default;
 
 @if $include-sveetoy-grid {
     .row{
-        ///
-        /// Fluid row, take the full width but keep normal row and columns behaviors
-        ///
+        //
+        // Fluid row, take the full width but keep normal row and columns behaviors
+        //
         &.fluid {
             max-width: 100%;
             // Restore the initial behavior restrained to the grid
@@ -25,10 +25,10 @@ $include-sveetoy-grid: $include-sveetoy-classes !default;
             }
         }
 
-        ///
-        /// More larger rows
-        ///
-        /// Currently only for Foundation5
+        //
+        // More larger rows
+        //
+        // Currently only for Foundation5
         @if map-has-key($breakpoints, xlarge) {
             @include breakpoint(xlarge) {
                 &.larger{
@@ -38,9 +38,9 @@ $include-sveetoy-grid: $include-sveetoy-classes !default;
         }
 
         .columns{
-            ///
-            /// Remove padding on columns
-            ///
+            //
+            // Remove padding on columns
+            //
             &.unpadded{
                 padding: 0;
             }

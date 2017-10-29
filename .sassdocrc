@@ -1,0 +1,8 @@
+{
+    "dest": "./project/_build/dev/api",
+    "groups": {
+        "undefined": "General",
+        "settings": "Settings"
+    },
+    "verbose": true
+}

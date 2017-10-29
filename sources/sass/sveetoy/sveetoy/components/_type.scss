@@ -62,18 +62,18 @@ $sveetoy-hr-default-color: #000000;
         }
     }
 
-    ///
-    /// Text colors
-    ///
+    //
+    // Text colors
+    //
     @each $name, $color in $sveetoy-color-text-palette {
         &.text-#{$name}{
             color: $color !important;
         }
     }
 
-    ///
-    /// Various <small> modifier
-    ///
+    //
+    // Various <small> modifier
+    //
     small{
         @each $name, $size in $sveetoy-smalls {
             &.#{$name}{
@@ -82,12 +82,12 @@ $sveetoy-hr-default-color: #000000;
         }
     }
 
-    ///
-    /// Rewrite titles adding paragraph classes so we can have the same
-    /// behaviors without troubling SEO/semantic
-    ///
-    /// This is almost a copy'n'rewrite from foundation code.
-    ///
+    //
+    // Rewrite titles adding paragraph classes so we can have the same
+    // behaviors without troubling SEO/semantic
+    //
+    // This is almost a copy'n'rewrite from foundation code.
+    //
     // Heading styles
     @each $size, $headers in $header-styles {
         @include breakpoint($size) {
@@ -132,9 +132,9 @@ $sveetoy-hr-default-color: #000000;
         }
     }
 
-    ///
-    /// Underlined element
-    ///
+    //
+    // Underlined element
+    //
     @if $sveetoy-underline-thickness{
         .underline{
             // Base
@@ -211,9 +211,9 @@ $sveetoy-hr-default-color: #000000;
         }
     }
 
-    ///
-    /// Horizontal rule
-    ///
+    //
+    // Horizontal rule
+    //
     hr{
         clear: both;
         height: 0;

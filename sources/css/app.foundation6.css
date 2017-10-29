@@ -6170,6 +6170,9 @@ img.expanded {
 }
 
 /*
+ * Default component settings
+ */
+/*
  *
  * Spaces
  *
@@ -7105,6 +7108,9 @@ hr.deepskyblue4 {
 }
 
 /*
+ * Default component settings
+ */
+/*
  *
  * Sections
  *
@@ -7575,6 +7581,9 @@ hr.deepskyblue4 {
   color: #404040;
 }
 
+/*
+ * Default component settings
+ */
 /*
  *
  * Boxes
@@ -8062,22 +8071,6 @@ hr.deepskyblue4 {
 /*
  *
  * Flexbox
- */
-/*
- * Create flex cell width rules
- */
-/*
- * Mixin to create cells widths with flexbox
- *
- * Will produce responsive class like:
- *
- *   .small-50{...}
- *   .medium-50{...}
- *   etc..
- *
- * Depending on mixin declarations.
- *
- * Usable in conjunction with ".cell".
  */
 /*
  * Mixin to create flexbox display property
@@ -8688,14 +8681,6 @@ table.expand {
 }
 
 /*
- * Mixin to render list item pseudo-element with a custom bullet
- *
- * Default behavior without any arguments is to simply add character '>' as
- * the bullet
- *
- * If needed you can use a webfont character instead of a character
- */
-/*
  * Bullet list using arrow icon as bullet
  */
 ul.arrow {
@@ -8711,7 +8696,7 @@ ul.arrow:not(.defer) li:before {
   position: absolute;
   top: 0.75rem;
   left: 0;
-  width: 0.75rem;
+  width: 1rem;
   font-family: icomoon;
   content: ">";
   -webkit-transform: translate(0%, -50%);
@@ -8734,7 +8719,7 @@ ul.arrow.defer li > *:first-child:before {
   position: absolute;
   top: 0.6rem;
   left: 0;
-  width: 0.75rem;
+  width: 1rem;
   font-family: icomoon;
   content: ">";
   -webkit-transform: translate(0%, -50%);

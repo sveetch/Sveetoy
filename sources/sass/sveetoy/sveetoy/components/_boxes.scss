@@ -32,32 +32,32 @@ $sveetoy-boxes-thickness: () !default;
             }
         }
 
-        ///
-        /// Unpadded section or inner element
-        ///
+        //
+        // Unpadded section or inner element
+        //
         &.unpadded{
             padding: 0;
         }
 
-        ///
-        /// Default colors
-        ///
+        //
+        // Default colors
+        //
         @if $sveetoy-colors-scheme-default != null {
             @include sveetoy-scheme-colors($sveetoy-colors-scheme-default, $apply-border: true);
         }
 
-        ///
-        /// Color variants
-        ///
+        //
+        // Color variants
+        //
         @each $name, $scheme in $sveetoy-colors-schemes {
             &.#{$name}{
                 @include sveetoy-scheme-colors($scheme, $apply-border: true);
             }
         }
 
-        ///
-        /// Border thickness
-        ///
+        //
+        // Border thickness
+        //
         @each $name, $definitions in $sveetoy-boxes-thickness {
             &.border-#{$name}{
                 border-style: map-get($definitions, 'style');

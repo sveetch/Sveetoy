@@ -6,12 +6,69 @@
  *
  */
 
+/// Enable spacing classes creation when `spaces` component is imported.
+///
+/// @type boolean
+///
+/// @group settings
+///
 $include-sveetoy-spaces: $include-sveetoy-classes !default;
 
+/// Enabled size schemes
+///
+/// Each property is a map of a space size with its enabled breakpoint (which
+/// rely on breakpoints from `$sveetoy-breakpoints`).
+///
+/// @type map
+///
+/// @group settings
+///
+/// @example scss
+///   $sveetoy-space-tiny: (
+///       small: 0.5rem,
+///       medium: 0.75rem,
+///       large: 1rem,
+///       xlarge: 1.5rem,
+///   );
+///   $sveetoy-space-short: (
+///       small: 1rem,
+///       medium: 1.25rem,
+///       large: 2rem,
+///       xlarge: 2.5rem,
+///   );
+///   $sveetoy-space-normal: (
+///       small: 1.5rem,
+///       medium: 2rem,
+///       large: 3rem,
+///       xlarge: 4rem,
+///   );
+///   $sveetoy-space-large: (
+///       small: 2rem,
+///       medium: 3rem,
+///       large: 4rem,
+///       xlarge: 5rem,
+///   );
+///   $sveetoy-space-wide: (
+///       small: 3rem,
+///       medium: 4.5rem,
+///       large: 6rem,
+///       xlarge: 8rem,
+///   );
+///
+///   $sveetoy-spaces: (
+///       tiny: $sveetoy-space-tiny,
+///       short: $sveetoy-space-short,
+///       normal: $sveetoy-space-normal,
+///       large: $sveetoy-space-large,
+///       wide: $sveetoy-space-wide,
+///   );
+$sveetoy-spaces: () !default;
+
+
 @if $include-sveetoy-spaces {
-    ///
-    /// Apply dividers
-    ///
+    //
+    // Apply dividers
+    //
     @each $name, $definitions in $sveetoy-spaces{
         .v-divider-#{$name}{
             @include sveetoy-apply-spaces($definitions, $axis: "vertical", $sides: ("end"), $prop: "margin");
@@ -21,9 +78,9 @@ $include-sveetoy-spaces: $include-sveetoy-classes !default;
         }
     }
 
-    ///
-    /// Apply vertical spaces
-    ///
+    //
+    // Apply vertical spaces
+    //
     @each $name, $definitions in $sveetoy-spaces{
         .v-space-#{$name}{
             @include sveetoy-apply-spaces($definitions, $axis: "vertical");
@@ -39,9 +96,9 @@ $include-sveetoy-spaces: $include-sveetoy-classes !default;
         }
     }
 
-    ///
-    /// Apply horizontal spaces
-    ///
+    //
+    // Apply horizontal spaces
+    //
     @each $name, $definitions in $sveetoy-spaces{
         .h-space-#{$name}{
             @include sveetoy-apply-spaces($definitions, $axis: "horizontal");
@@ -57,16 +114,16 @@ $include-sveetoy-spaces: $include-sveetoy-classes !default;
         }
     }
 
-    ///
-    /// Remove all margin
-    ///
+    //
+    // Remove all margin
+    //
     .unmarged {
         margin: 0 !important;
     }
 
-    ///
-    /// Remove all padding
-    ///
+    //
+    // Remove all padding
+    //
     .unpadded {
         padding: 0 !important;
     }

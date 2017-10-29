@@ -3,9 +3,38 @@
  * Flexbox
  */
 
-/*
- * Create flex cell width rules
- */
+///
+/// Create flex shortand (grow, shrink, basis) rule.
+///
+/// @arg {Number} $width [null]
+///   Width for flex basis and max width.
+///
+/// @arg {Number} $less [null]
+///   If not null, width will be a `calc()` function where `$less` is
+///   substracted to `$width`.
+///
+/// @example scss
+///   div{
+///       @include sveetoy-flex-cell-width(25%);
+///   }
+///
+///   // Output
+///   div{
+///       flex: 1 0 25%;
+///       max-width: 25%;
+///   }
+///
+/// @example scss
+///   div{
+///       @include sveetoy-flex-cell-width(25%, $less:10px);
+///   }
+///
+///   // Output
+///   div{
+///       flex: 1 0 calc(25% - 10px);
+///       max-width: calc(25% - 10px);
+///   }
+///
 @mixin sveetoy-flex-cell-width($width, $less: null) {
     @if $less == null {
         flex: 1 0 $width;
@@ -16,19 +45,45 @@
     }
 }
 
-/*
- * Mixin to create cells widths with flexbox
- *
- * Will produce responsive class like:
- *
- *   .small-50{...}
- *   .medium-50{...}
- *   etc..
- *
- * Depending on mixin declarations.
- *
- * Usable in conjunction with ".cell".
- */
+
+///
+/// Create direct child selectors for flex width classes.
+///
+/// @arg {List} $sizes [null]
+///   List of unitless number to create various flex cell widths. Value can be
+///   a float number but class name will ignore everything after decimal such
+///   as `33.333` will produce `33`.
+///
+/// @arg {String} $viewport [small]
+///   Breakpoint name to prefix produced class names.
+///
+/// @arg {Number} $gutter [null]
+///   Gutter to apply around width. Value is multiplied by two then
+///   substracted to each size.
+///
+/// @example scss
+///   div{
+///       @each $size in 25 33.3333 50 {
+///           @include sveetoy-flex-grid-classes($size);
+///       }
+///   }
+///
+///   // Output
+///   div{
+///       & > .small-25{
+///           flex: 1 0 25%;
+///           max-width: 25%;
+///       }
+///       & > .small-33{
+///           flex: 1 0 33.3333%;
+///           max-width: 33.3333%;
+///       }
+///       & > .small-50{
+///           flex: 1 0 50%;
+///           max-width: 50%;
+///       }
+///   }
+///
 @mixin sveetoy-flex-grid-classes($sizes, $viewport: small, $gutter: null) {
     $gutter-substraction: null;
     @if $gutter != null {

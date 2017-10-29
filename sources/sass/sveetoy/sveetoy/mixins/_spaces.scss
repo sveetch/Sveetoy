@@ -1,53 +1,53 @@
 
+/*
+ * Default component settings
+ */
+
+
+/// Map of available breakpoints for space features, usually mapped on
+/// Foundation ones.
 ///
-/// Default component settings
+/// Each property is a breakpoint.
 ///
-$include-sveetoy-spaces: true !default;
-
-// Space sizes with their breakpoint values
-$sveetoy-space-thin: () !default;
-$sveetoy-space-tiny: () !default;
-$sveetoy-space-normal: () !default;
-$sveetoy-space-wide: () !default;
-$sveetoy-space-huge: () !default;
-
-// Enabled size schemes
-$sveetoy-spaces: () !default;
-
-// Map of breakpoints, usually mapped on those Foundation ones
+/// @type map
+///
+/// @group settings
+///
+/// @example scss
+///   $sveetoy-breakpoints: (
+///       small: $small-up,
+///       medium: $medium-up,
+///       large: $large-up,
+///       xlarge: $xlarge-up,
+///   );
+///
 $sveetoy-breakpoints: () !default;
 
-/// Common sample
-/// $sveetoy-breakpoints: (
-///     small: $small-up,
-///     medium: $medium-up,
-///     large: $large-up,
-///     xlarge: $xlarge-up,
-/// ) !default;
 
-
-///
-/// Spaces around mixin
 ///
 /// Includes properties to apply vertical/horizontal spacing on an
 /// element for various breakpoints
 ///
-/// Arguments:
-///     $definitions (map): space sizes map which define at least
-///         the keyword name from '$default'.
+/// @arg {Map} $definitions [null]
+///   space sizes map which define at least the keyword name from '$default'.
 ///
-/// Keyword Arguments:
-///     $axis (string): axis to apply spaces, can ben either 'horizontal' or
-///         'vertical'.
-///     $default (string): Breakpoint name to use as as default class spacing.
-///         Won't be included in media queries.
-///     $sides (list): Sides to apply spacing depending from $axis, 'start'
-///         means 'top' or 'left' and 'end' means 'right' or 'bottom'. Both
-///         sides are enabled by default.
-///     $prop (string): Property name to define, default is 'padding' but it
-///         can 'margin' also.
+/// @arg {String} $axis [vertical]
+///   axis to apply spaces, can ben either 'horizontal' or 'vertical'.
 ///
-@mixin sveetoy-apply-spaces($definitions, $axis: "vertical", $default: "small", $sides: ("start", "end"), $prop: "padding") {
+/// @arg {String} $default [small]
+///   Breakpoint name to use as as default class spacing. Won't be included in
+///   media queries.
+///
+/// @arg {List} $sides [("start", "end")]
+///   Sides to apply spacing depending from $axis, 'start' means 'top' or
+///   'left' and 'end' means 'right' or 'bottom'. Both sides are enabled by
+///   default.
+///
+/// @arg {String} $prop [padding]
+///   Property name to define, default is 'padding' but it can be 'margin' also.
+///
+@mixin sveetoy-apply-spaces($definitions, $axis: "vertical", $default: "small",
+                            $sides: ("start", "end"), $prop: "padding") {
     $space-start: top;
     $space-end: bottom;
     @if $axis == "horizontal" {

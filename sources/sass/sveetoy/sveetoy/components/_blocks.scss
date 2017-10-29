@@ -20,9 +20,9 @@ $include-sveetoy-blocks: $include-sveetoy-classes !default;
             }
         }
 
-        ///
-        /// Delegate spacing to inner element
-        ///
+        //
+        // Delegate spacing to inner element
+        //
         &.delegate > .inner{
             @include sveetoy-apply-spaces(map-get($sveetoy-spaces, "normal"));
 
@@ -33,23 +33,23 @@ $include-sveetoy-blocks: $include-sveetoy-classes !default;
             }
         }
 
-        ///
-        /// Unpadded block or inner element
-        ///
+        //
+        // Unpadded block or inner element
+        //
         &:not(.delegate).unpadded,
         &.delegate > .inner.unpadded{
             padding: 0;
         }
 
-        ///
-        /// Default colors
-        ///
+        //
+        // Default colors
+        //
         @if $sveetoy-colors-scheme-default != null {
             @include sveetoy-scheme-colors($sveetoy-colors-scheme-default);
         }
-        ///
-        /// Color variants
-        ///
+        //
+        // Color variants
+        //
         @each $name, $scheme in $sveetoy-colors-schemes {
             &.#{$name}{
                 @include sveetoy-scheme-colors($scheme);

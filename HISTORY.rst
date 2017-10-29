@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Version 0.7.1 - Unreleased
+--------------------------
+
+Usage of `sassdoc <http://sassdoc.com>`_ to build API documentation for settings and mixins.
+
 Version 0.7.0 - 2017/10/23
 --------------------------
 

@@ -1,0 +1,23 @@
+{
+  "name": "Sveetoy",
+  "version": "0.7.1",
+  "description": "A Sass library for programmatic rythm and some candies on top of 'Foundation for Sites'",
+  "keywords": [
+    "sass",
+    "scss",
+    "foundation"
+  ],
+  "homepage": "https://sveetch.github.io/Sveetoy/",
+  "bugs": {
+    "url": "https://github.com/sveetch/Sveetoy/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "David Thenon",
+    "url": "https://github.com/sveetch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sveetch/Sveetoy"
+  }
+}

@@ -12,9 +12,9 @@ $flex-grid-sizes: 25 33.3333 50 75 100 !default;
 $flex-grid-gutter: 0.5rem !default;
 
 @if $include-sveetoy-flex {
-    ///
-    /// Common flexbox grid
-    ///
+    //
+    // Common flexbox grid
+    //
     .flex-grid {
         display: flex;
         flex-wrap: wrap;
@@ -37,18 +37,18 @@ $flex-grid-gutter: 0.5rem !default;
             }
         }
 
-        ///
-        /// Responsive cell sizes
-        ///
+        //
+        // Responsive cell sizes
+        //
         @each $name, $query in $sveetoy-breakpoints{
             @media #{$query} {
                 @include sveetoy-flex-grid-classes($flex-grid-sizes, $viewport: $name);
             }
         }
 
-        ///
-        /// Responsive margin on every contained cells
-        ///
+        //
+        // Responsive margin on every contained cells
+        //
         &.marged{
             &> .cell{
                 margin: $flex-grid-gutter;
@@ -61,9 +61,9 @@ $flex-grid-gutter: 0.5rem !default;
             }
         }
 
-        ///
-        /// Responsive directions
-        ///
+        //
+        // Responsive directions
+        //
         @include sveetoy-flex-direction;
         @each $name, $query in $sveetoy-breakpoints{
             @media #{$query} {
@@ -73,9 +73,9 @@ $flex-grid-gutter: 0.5rem !default;
     }
 }
 
-///
-/// Vertical content alignments
-///
+//
+// Vertical content alignments
+//
 @include sveetoy-flex-vertical-alignment;
 @each $name, $query in $sveetoy-breakpoints{
     @media #{$query} {

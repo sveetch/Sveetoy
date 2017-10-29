@@ -15,17 +15,17 @@ $sveetoy_foundation_support: 6 !default;
 
 
 @if $include-sveetoy-global {
-    ///
-    /// Shortcut relative position
-    ///
+    //
+    // Shortcut relative position
+    //
     .position-relative {
         position: relative;
     }
 
 
-    ///
-    /// Image element
-    ///
+    //
+    // Image element
+    //
     img{
         &.centered{
             display: block;
