@@ -8073,63 +8073,6 @@ hr.deepskyblue4 {
  * Flexbox
  */
 /*
- * Mixin to create flexbox display property
- *
- * Will produce global and responsive classes like:
- *
- *   .flex{...}
- *   .flex-small{...}
- *   .flex-medium{...}
- *   etc..
- *
- */
-/*
- * Mixin to create flexbox direction property
- *
- * Will produce global and responsive classes like:
- *
- *   .direction{...}
- *   .direction-row{...}
- *   .direction-row-reversed{...}
- *   etc..
- *
- * Or, if $viewport attribute is defined, like with 'medium':
- *
- *   .direction-medium{...}
- *   .direction-medium-row{...}
- *   .direction-medium-row-reversed{...}
- *
- * For every direction.
- *
- */
-/*
- * Mixin to create flexbox vertical alignments
- *
- * Will produce global and responsive classes like:
- *
- *   .v-align-start{...}
- *   .v-align-end{...}
- *   .v-align-center{...}
- *   etc..
- *
- * Or, if $viewport attribute is defined, like with 'medium':
- *
- *   .v-align-medium-start{...}
- *   .v-align-medium-end{...}
- *   .v-align-medium-center{...}
- *   etc..
- *
- * Optional '$parent' attribute can be given to prefix every alignment
- * selector.
- *
- */
-/*
- * Mixin to create "simple" cells widths
- * Mixin to simulate inline list, used as a fallback
- *
- * Reproduce the same name pattern as in mixin "sveetoy-flex-grid-classes"
- */
-/*
  *
  * Flexbox
  *

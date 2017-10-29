@@ -29,7 +29,7 @@
 ///       @include sveetoy-flex-cell-width(25%, $less:10px);
 ///   }
 ///
-///   // Output
+///   // Output CSS
 ///   div{
 ///       flex: 1 0 calc(25% - 10px);
 ///       max-width: calc(25% - 10px);
@@ -47,7 +47,7 @@
 
 
 ///
-/// Create direct child selectors for flex width classes.
+/// Create direct child selectors for responsive flex width classes.
 ///
 /// @arg {List} $sizes [null]
 ///   List of unitless number to create various flex cell widths. Value can be
@@ -68,20 +68,18 @@
 ///       }
 ///   }
 ///
-///   // Output
-///   div{
-///       & > .small-25{
-///           flex: 1 0 25%;
-///           max-width: 25%;
-///       }
-///       & > .small-33{
-///           flex: 1 0 33.3333%;
-///           max-width: 33.3333%;
-///       }
-///       & > .small-50{
-///           flex: 1 0 50%;
-///           max-width: 50%;
-///       }
+///   // Output CSS
+///   div > .small-25{
+///       flex: 1 0 25%;
+///       max-width: 25%;
+///   }
+///   div > .small-33{
+///       flex: 1 0 33.3333%;
+///       max-width: 33.3333%;
+///   }
+///   div > .small-50{
+///       flex: 1 0 50%;
+///       max-width: 50%;
 ///   }
 ///
 @mixin sveetoy-flex-grid-classes($sizes, $viewport: small, $gutter: null) {
@@ -99,17 +97,30 @@
     }
 }
 
-/*
- * Mixin to create flexbox display property
- *
- * Will produce global and responsive classes like:
- *
- *   .flex{...}
- *   .flex-small{...}
- *   .flex-medium{...}
- *   etc..
- *
- */
+
+///
+/// Create a CSS class for a flex display rule with optionnal suffix.
+///
+/// @arg {String} $viewport [null]
+///   Optional suffix to add to class name.
+///
+///
+/// @example scss
+///   div.foo{
+///       @include sveetoy-flex-display();
+///   }
+///   div.bar{
+///       @include sveetoy-flex-display(small);
+///   }
+///
+///   // Output CSS
+///   div.foo .flex{
+///       display: flex;
+///   }
+///   div.bar .flex-small{
+///       display: flex;
+///   }
+///
 @mixin sveetoy-flex-display($viewport: null) {
     $suffix: if($viewport, "-#{$viewport}", "");
     .flex#{$suffix} {
@@ -117,25 +128,56 @@
     }
 }
 
-/*
- * Mixin to create flexbox direction property
- *
- * Will produce global and responsive classes like:
- *
- *   .direction{...}
- *   .direction-row{...}
- *   .direction-row-reversed{...}
- *   etc..
- *
- * Or, if $viewport attribute is defined, like with 'medium':
- *
- *   .direction-medium{...}
- *   .direction-medium-row{...}
- *   .direction-medium-row-reversed{...}
- *
- * For every direction.
- *
- */
+
+///
+/// Create CSS classes for flex direction rules with optionnal responsive
+/// suffix.
+///
+/// @arg {String} $viewport [null]
+///   Optional suffix to add to class names.
+///
+///
+/// @example scss
+///   div.foo{
+///       @include sveetoy-flex-direction();
+///   }
+///   div.bar{
+///       @include sveetoy-flex-direction(small);
+///   }
+///
+///   // Output CSS
+///   div.foo .direction{
+///       display: flex;
+///   }
+///   div.foo .direction-row{
+///       flex-direction: row;
+///   }
+///   div.foo .direction-row-reverse{
+///       flex-direction: row-reverse;
+///   }
+///   div.foo .direction-column{
+///       flex-direction: column;
+///   }
+///   div.foo .direction-column-reverse{
+///       flex-direction: column-reverse;
+///   }
+///
+///   div.bar .direction-small{
+///       display: flex;
+///   }
+///   div.bar .direction-small-row{
+///       flex-direction: row;
+///   }
+///   div.bar .direction-small-row-reverse{
+///       flex-direction: row-reverse;
+///   }
+///   div.bar .direction-small-column{
+///       flex-direction: column;
+///   }
+///   div.bar .direction-small-column-reverse{
+///       flex-direction: column-reverse;
+///   }
+///
 @mixin sveetoy-flex-direction($viewport: null) {
     $suffix: if($viewport, "-#{$viewport}", "");
     &.direction#{$suffix} {
@@ -155,27 +197,107 @@
     }
 }
 
-/*
- * Mixin to create flexbox vertical alignments
- *
- * Will produce global and responsive classes like:
- *
- *   .v-align-start{...}
- *   .v-align-end{...}
- *   .v-align-center{...}
- *   etc..
- *
- * Or, if $viewport attribute is defined, like with 'medium':
- *
- *   .v-align-medium-start{...}
- *   .v-align-medium-end{...}
- *   .v-align-medium-center{...}
- *   etc..
- *
- * Optional '$parent' attribute can be given to prefix every alignment
- * selector.
- *
- */
+
+///
+/// Create CSS classes to apply vertical alignments through flex rules
+///
+/// @arg {String} $viewport [null]
+///   Optional suffix to add to class names.
+///
+/// @arg {String} $parent [null]
+///   Optional prefix to attach to class selectors.
+///
+///
+/// @example scss
+///   div.foo{
+///       @include sveetoy-flex-vertical-alignment();
+///   }
+///   div.suffixed{
+///       @include sveetoy-flex-vertical-alignment(small);
+///   }
+///   div.prexixed-n-suffixed{
+///       @include sveetoy-flex-vertical-alignment(small, '.ping');
+///   }
+///
+///   // Output CSS
+///   div.foo .v-align-start {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: flex-start;
+///   }
+///   div.foo .v-align-end {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: flex-end;
+///   }
+///   div.foo .v-align-center {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: center;
+///   }
+///   div.foo .v-align-around {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: space-around;
+///   }
+///   div.foo .v-align-between {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: space-between;
+///   }
+///
+///   div.suffixed .v-align-small-start {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: flex-start;
+///   }
+///   div.suffixed .v-align-small-end {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: flex-end;
+///   }
+///   div.suffixed .v-align-small-center {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: center;
+///   }
+///   div.suffixed .v-align-small-around {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: space-around;
+///   }
+///   div.suffixed .v-align-small-between {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: space-between;
+///   }
+///
+///   div.prexixed-n-suffixed .ping.v-align-small-start {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: flex-start;
+///   }
+///   div.prexixed-n-suffixed .ping.v-align-small-end {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: flex-end;
+///   }
+///   div.prexixed-n-suffixed .ping.v-align-small-center {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: center;
+///   }
+///   div.prexixed-n-suffixed .ping.v-align-small-around {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: space-around;
+///   }
+///   div.prexixed-n-suffixed .ping.v-align-small-between {
+///       display: flex;
+///       flex-direction: column;
+///       justify-content: space-between;
+///   }
+///
 @mixin sveetoy-flex-vertical-alignment($viewport: null, $parent: null) {
     $suffix: if($viewport, "-#{$viewport}", "");
     $parentsel: if($parent, "{$parent}", "");
@@ -211,12 +333,22 @@
     }
 }
 
-/*
- * Mixin to create "simple" cells widths
- * Mixin to simulate inline list, used as a fallback
- *
- * Reproduce the same name pattern as in mixin "sveetoy-flex-grid-classes"
- */
+///
+/// Create direct child selectors for responsive width classes.
+///
+/// This aimed to be a fallback for browser without flebox support, used in
+/// conjunction with float property.
+///
+/// This is deprecated now and may be removed soon.
+///
+/// @arg {List} $sizes [null]
+///   List of unitless number to create various flex cell widths. Value can be
+///   a float number but class name will ignore everything after decimal such
+///   as `33.333` will produce `33`.
+///
+/// @arg {String} $viewport [small]
+///   Breakpoint name to prefix produced class names.
+///
 @mixin sveetoy-simulate-grid-columns($sizes, $viewport: small) {
     @each $size in $sizes {
         $width: $size / 100;
