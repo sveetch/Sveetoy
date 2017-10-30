@@ -7,9 +7,23 @@
  *
  */
 
+/// Enable boxes classes creation when `boxes` component is imported.
+///
+/// @type Bool
+///
+/// @group settings
+///
 $include-sveetoy-boxes: $include-sveetoy-classes !default;
 
+
+/// Enabled **Thickness scheme model** to create CSS classes for boxes
+///
+/// @type map
+///
+/// @group settings
+///
 $sveetoy-boxes-thickness: () !default;
+
 
 @if $include-sveetoy-boxes {
     .box{

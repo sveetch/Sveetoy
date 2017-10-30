@@ -5,11 +5,38 @@
  * Flexbox
  *
  */
+
+/// Enable flexbox classes creation when `flex` component is imported.
+///
+/// @type Bool
+///
+/// @group settings
+///
 $include-sveetoy-flex: $include-sveetoy-classes !default;
 
-// Default available percentage sizes
+
+/// Enabled widths to create for flex-grid cells.
+///
+/// Each item is an unitless number which will be converted to a percentage.
+///
+/// Default value cover basic grid cell needs.
+///
+/// @type List
+///
+/// @group settings
+///
 $flex-grid-sizes: 25 33.3333 50 75 100 !default;
+
+
+///
+/// Grid gutter when `marged` class name is combined with `flex-grid`.
+///
+/// @type Number
+///
+/// @group settings
+///
 $flex-grid-gutter: 0.5rem !default;
+
 
 @if $include-sveetoy-flex {
     //

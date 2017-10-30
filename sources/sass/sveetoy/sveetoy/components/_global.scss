@@ -2,15 +2,41 @@
 
 /*
  * Global stuff
+ *
+ * TODO: This is undocumented from demo. Also it may be renamed to basic,
+ *       common or base.
  */
+/// Default value for variables which enable components creations like
+/// `$include-sveetoy-grid`, `$include-sveetoy-spaces`, etc..
+///
+/// Default is `true` so every component CSS stuff are created. If you want
+/// to disable some component set their own value to `False`.
+///
+/// @type Bool
+///
+/// @group settings
+///
 $include-sveetoy-classes: true !default;
 
+
+/// Enable classes creation when `global` component is imported.
+///
+/// @type Bool
+///
+/// @group settings
+///
 $include-sveetoy-global: $include-sveetoy-classes !default;
 
-// Declare which foundation version we have to support
-// Foundation6 is the default supported version
-// Unused since dropped support for Foundation5, will eventually happen again
-// for next Foundation release
+
+/// Foundation version to support. Pastly this was used to support both
+/// Foundation 5 and 6 which have different class names to manage.
+///
+/// For now you can ignore this setting since Foundation 5 support has been
+/// dropped.
+///
+/// @type Number
+///
+/// @group settings
 $sveetoy_foundation_support: 6 !default;
 
 

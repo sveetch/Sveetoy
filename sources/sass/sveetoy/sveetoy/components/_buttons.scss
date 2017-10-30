@@ -3,6 +3,13 @@
 /*
  * Button enhancements
  */
+
+/// Enable buttons classes creation when `buttons` component is imported.
+///
+/// @type Bool
+///
+/// @group settings
+///
 $include-sveetoy-buttons: $include-sveetoy-classes !default;
 
 $sveetoy-button-modests: () !default;

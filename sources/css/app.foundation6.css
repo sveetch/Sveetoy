@@ -6148,11 +6148,14 @@ a.thumbnail image {
  */
 /*
  *
- * Some useful common functions
+ * Some useful basic functions and mixins
  *
  */
 /*
  * Global stuff
+ *
+ * TODO: This is undocumented from demo. Also it may be renamed to basic,
+ *       common or base.
  */
 .position-relative {
   position: relative;
