@@ -14,7 +14,7 @@
 ///
 /// @name Color scheme model
 ///
-/// @type map
+/// @type Map
 ///
 /// @group settings
 ///
@@ -95,7 +95,7 @@ $sveetoy-model-color-scheme: () !default;
 ///
 /// See **Color scheme model** for property definitions.
 ///
-/// @type map
+/// @type Map
 ///
 /// @group settings
 ///
@@ -110,7 +110,7 @@ $sveetoy-colors-scheme-default: null !default;
 ///
 /// Each property is a named **Color scheme model**.
 ///
-/// @type map
+/// @type Map
 ///
 /// @group settings
 ///
@@ -128,7 +128,7 @@ $sveetoy-colors-schemes: () !default;
 /// Each item create a CSS classes `.text-NAME` classes where `NAME` is the
 /// item name.
 ///
-/// @type map
+/// @type Map
 ///
 /// @group settings
 ///

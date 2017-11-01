@@ -5,12 +5,57 @@
  * Typography
  *
  */
+
+/// Enable typographic classes creation when `typography` component is
+/// imported.
+///
+/// @type Bool
+///
+/// @group settings
+///
 $include-sveetoy-typography: $include-sveetoy-classes !default;
 
-// Some font weight in addition of Foundation ones
+
+/// Additional global font weight thinner than `$global-weight-normal`.
+///
+/// @type Number
+///
+/// @group settings
+///
+/// @example scss
+///   $global-weight-thin: 100;
+///
 $global-weight-thin: null !default;
+
+
+/// Additional global font weight stronger than `$global-weight-bold`.
+///
+/// @type Number
+///
+/// @group settings
+///
+/// @example scss
+///   $global-weight-strong: 900;
+///
 $global-weight-strong: null !default;
 
+
+///
+/// Enabled `<small>` element sizes.
+///
+/// Each property is size feature.
+///
+/// @type Map
+///
+/// @group settings
+///
+/// @example scss
+///   $sveetoy-smalls: (
+///       small: 40%,
+///       big: 60%,
+///       large: 80%,
+///   );
+///
 $sveetoy-smalls: () !default;
 
 $sveetoy-underline-colors: () !default;

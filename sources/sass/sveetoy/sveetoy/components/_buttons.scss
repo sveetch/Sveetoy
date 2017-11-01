@@ -12,7 +12,51 @@
 ///
 $include-sveetoy-buttons: $include-sveetoy-classes !default;
 
+
+/// Enabled button sizes for modest feature
+///
+/// Modest button have lesser padding than original button behavior.
+///
+/// Each item is an enabled size for modest feature, so it should accord names
+/// to available ones from original button.
+///
+/// @type Map
+///
+/// @group settings
+///
+/// @example scss
+///   $sveetoy-button-modests: (
+///       tiny: 5px,
+///       small: 7px,
+///       medium: 8px,
+///       large: 10px,
+///   );
+///
 $sveetoy-button-modests: () !default;
+
+///
+/// Enabled color schemes for button in addition to original button
+///
+/// Each property is a named **Color scheme model**.
+///
+/// @type Map
+///
+/// @group settings
+///
+/// @example scss
+///   $transparent-color-scheme: (
+///       font-color: #000000,
+///       border-color: #000000,
+///       background-color: transparent,
+///   );
+///
+///   $sveetoy-button-colors-schemes: (
+///       transparent: $transparent-color-scheme,
+///   );
+///
+///   // Or simply components color schemes
+///   $sveetoy-button-colors-schemes: $sveetoy-colors-schemes;
+///
 $sveetoy-button-colors-schemes: () !default;
 
 @if $include-sveetoy-buttons {
