@@ -5,22 +5,42 @@
  * Typography
  *
  */
+////
+/// @group typography
+////
+
 
 /// Enable typographic classes creation when `typography` component is
 /// imported.
 ///
 /// @type Bool
 ///
-/// @group settings
-///
 $include-sveetoy-typography: $include-sveetoy-classes !default;
+
+
+///
+/// This documentate model for available properties in a thickness scheme.
+///
+/// `size` and `style` are both required properties.
+///
+/// @name Thickness scheme model
+///
+/// @type Map
+///
+/// @group models
+///
+/// @prop {Number} size [null]
+///   Thickness size.
+///
+/// @prop {String} style [null]
+///   Line style according to border style (`solid`, `dotted`, `dashed`).
+///
+$sveetoy-model-thickness: () !default;
 
 
 /// Additional global font weight thinner than `$global-weight-normal`.
 ///
 /// @type Number
-///
-/// @group settings
 ///
 /// @example scss
 ///   $global-weight-thin: 100;
@@ -32,22 +52,34 @@ $global-weight-thin: null !default;
 ///
 /// @type Number
 ///
-/// @group settings
-///
 /// @example scss
 ///   $global-weight-strong: 900;
 ///
 $global-weight-strong: null !default;
 
 
+/// Enabled text colors.
 ///
-/// Enabled `<small>` element sizes.
+/// Each item create a CSS classes `.text-NAME` classes where `NAME` is the
+/// item name.
+///
+/// @type Map
+///
+/// @example scss
+///   $sveetoy-color-text-palette: (
+///       white: #ffffff,
+///       black: #000000,
+///   );
+///
+$sveetoy-color-text-palette: () !default;
+
+
+///
+/// Available `<small>` element sizes.
 ///
 /// Each property is size feature.
 ///
 /// @type Map
-///
-/// @group settings
 ///
 /// @example scss
 ///   $sveetoy-smalls: (
@@ -58,16 +90,157 @@ $global-weight-strong: null !default;
 ///
 $sveetoy-smalls: () !default;
 
-$sveetoy-underline-colors: () !default;
-$sveetoy-underline-distances: () !default;
+
+/// Available [`Thickness scheme model`](#models-variable-Thickness scheme model)
+/// items for underline features
+///
+/// If this setting is empty, underline classes will not be created. You must
+/// fill at least a `normal` property.
+///
+/// @type Map
+///
+/// @group underline
+///
+///
 $sveetoy-underline-thickness: () !default;
-$sveetoy-underline-widths: () !default;
+
+
+/// Available colors for underline features
+///
+/// @type Map
+///
+/// @group underline
+///
+/// @example scss
+///   $sveetoy-underline-colors: (
+///       white: #ffffff,
+///       black: #000000,
+///   );
+///
+///   // Or inheriting from text colors
+///   $sveetoy-underline-colors: $sveetoy-color-text-palette;
+///
+$sveetoy-underline-colors: () !default;
+
+
+/// Enabled default color value for underline
+///
+/// @type String
+///
+/// @group underline
+///
 $sveetoy-underline-default-color: #000000;
 
-$sveetoy-hr-colors: () !default;
-$sveetoy-hr-distances: () !default;
+
+/// Available distances for underline features
+///
+/// Distance define space height between a text and its underline.
+///
+/// It should contains a `normal` property name which will be used as
+/// default distance when no distance feature class is used.
+///
+/// @type Map
+///
+/// @group underline
+///
+/// @example scss
+///   $sveetoy-underline-distances: (
+///       far: 2rem,
+///       near: 0.5rem,
+///       normal: 1rem,
+///       sticked: 0,
+///   );
+///
+$sveetoy-underline-distances: () !default;
+
+
+///
+/// Available underline widths.
+///
+/// Each property is a width feature.
+///
+/// It should contains a `normal` property name which will be used as
+/// default value when no width feature class is used.
+///
+/// @type Map
+///
+/// @group underline
+///
+/// @example scss
+///   $sveetoy-underline-widths: (
+///       tiny: 5%,
+///       short: 15%,
+///       normal: 40%,
+///       large: 70%,
+///       full: 100%,
+///   );
+///
+$sveetoy-underline-widths: () !default;
+
+
+/// Available [`Thickness scheme model`](#models-variable-Thickness scheme model)
+/// items for `<hr>` features
+///
+/// You must fill at least a `normal` property.
+///
+/// @type Map
+///
+/// @group hr
+///
 $sveetoy-hr-thickness: () !default;
+
+
+/// Available colors for `<hr>` features
+///
+/// @type Map
+///
+/// @group hr
+///
+/// @example scss
+///   $sveetoy-hr-colors: (
+///       white: #ffffff,
+///       black: #000000,
+///   );
+///
+///   // Or inheriting from text colors
+///   $sveetoy-hr-colors: $sveetoy-color-text-palette;
+///
+$sveetoy-hr-colors: () !default;
+
+
+/// Enabled default color value for `<hr>`
+///
+/// @type String
+///
+/// @group hr
+///
 $sveetoy-hr-default-color: #000000;
+
+
+/// Available distances for `<hr>` features
+///
+/// Distance define space height between a text and its underline.
+///
+/// It should contains a `normal` property name which will be used as
+/// default distance when no distance feature class is used.
+///
+/// @type Map
+///
+/// @group hr
+///
+/// @example scss
+///   $sveetoy-hr-distances: (
+///       far: 2rem,
+///       near: 0.5rem,
+///       normal: 1rem,
+///       sticked: 0,
+///   );
+///
+///   // Or inheriting from underline distances
+///   $sveetoy-hr-distances: $sveetoy-underline-distances;
+///
+$sveetoy-hr-distances: () !default;
+
 
 @if $include-sveetoy-typography {
     // No trailing margin on last paragraph in their container

@@ -3,12 +3,14 @@
 /*
  * Button enhancements
  */
+////
+/// @group buttons
+////
+
 
 /// Enable buttons classes creation when `buttons` component is imported.
 ///
 /// @type Bool
-///
-/// @group settings
 ///
 $include-sveetoy-buttons: $include-sveetoy-classes !default;
 
@@ -22,8 +24,6 @@ $include-sveetoy-buttons: $include-sveetoy-classes !default;
 ///
 /// @type Map
 ///
-/// @group settings
-///
 /// @example scss
 ///   $sveetoy-button-modests: (
 ///       tiny: 5px,
@@ -34,14 +34,14 @@ $include-sveetoy-buttons: $include-sveetoy-classes !default;
 ///
 $sveetoy-button-modests: () !default;
 
+
 ///
 /// Enabled color schemes for button in addition to original button
 ///
-/// Each property is a named **Color scheme model**.
+/// Each property is a named
+/// [`Color scheme model`](#models-variable-Color scheme model).
 ///
 /// @type Map
-///
-/// @group settings
 ///
 /// @example scss
 ///   $transparent-color-scheme: (
@@ -58,6 +58,7 @@ $sveetoy-button-modests: () !default;
 ///   $sveetoy-button-colors-schemes: $sveetoy-colors-schemes;
 ///
 $sveetoy-button-colors-schemes: () !default;
+
 
 @if $include-sveetoy-buttons {
     button,

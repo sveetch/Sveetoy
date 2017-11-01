@@ -14,16 +14,12 @@
 ///
 /// @type Bool
 ///
-/// @group settings
-///
 $include-sveetoy-classes: true !default;
 
 
 /// Enable classes creation when `global` component is imported.
 ///
 /// @type Bool
-///
-/// @group settings
 ///
 $include-sveetoy-global: $include-sveetoy-classes !default;
 
@@ -35,8 +31,6 @@ $include-sveetoy-global: $include-sveetoy-classes !default;
 /// dropped.
 ///
 /// @type Number
-///
-/// @group settings
 $sveetoy_foundation_support: 6 !default;
 
 

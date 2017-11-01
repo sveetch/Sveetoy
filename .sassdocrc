@@ -2,7 +2,19 @@
     "dest": "./project/_build/dev/api",
     "groups": {
         "undefined": "General",
-        "settings": "Settings"
+        "blocks": "Blocks",
+        "boxes": "Boxes",
+        "buttons": "Buttons",
+        "flexbox": "Flexbox",
+        "grid": "Grid",
+        "lists": "Lists",
+        "spaces": "Spaces",
+        "tables": "Tables",
+        "typography": "Typography",
+        "hr": "Horizontal rule",
+        "underline": "Underline",
+        "models": "Models",
+        "colors": "Colors"
     },
     "verbose": true
 }

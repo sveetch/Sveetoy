@@ -6,12 +6,14 @@
  * Sections
  *
  */
+////
+/// @group blocks
+////
+
 
 /// Enable blocks classes creation when `blocks` component is imported.
 ///
 /// @type Bool
-///
-/// @group settings
 ///
 $include-sveetoy-blocks: $include-sveetoy-classes !default;
 

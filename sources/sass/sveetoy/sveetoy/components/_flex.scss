@@ -5,12 +5,14 @@
  * Flexbox
  *
  */
+////
+/// @group flexbox
+////
+
 
 /// Enable flexbox classes creation when `flex` component is imported.
 ///
 /// @type Bool
-///
-/// @group settings
 ///
 $include-sveetoy-flex: $include-sveetoy-classes !default;
 
@@ -23,8 +25,6 @@ $include-sveetoy-flex: $include-sveetoy-classes !default;
 ///
 /// @type List
 ///
-/// @group settings
-///
 $flex-grid-sizes: 25 33.3333 50 75 100 !default;
 
 
@@ -32,8 +32,6 @@ $flex-grid-sizes: 25 33.3333 50 75 100 !default;
 /// Grid gutter when `marged` class name is combined with `flex-grid`.
 ///
 /// @type Number
-///
-/// @group settings
 ///
 $flex-grid-gutter: 0.5rem !default;
 

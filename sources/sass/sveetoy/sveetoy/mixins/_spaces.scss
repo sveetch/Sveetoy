@@ -2,6 +2,9 @@
 /*
  * Default component settings
  */
+////
+/// @group spaces
+////
 
 
 /// Map of available breakpoints for space features, usually mapped on
@@ -10,8 +13,6 @@
 /// Each property is a breakpoint.
 ///
 /// @type map
-///
-/// @group settings
 ///
 /// @example scss
 ///   $sveetoy-breakpoints: (

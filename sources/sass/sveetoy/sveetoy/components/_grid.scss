@@ -1,6 +1,9 @@
 /*
  * Some usefull stuff for Grids
  */
+////
+/// @group grid
+////
 
 
 /// Larger row max width, default is `83rem` that should be around `1328px`
@@ -11,16 +14,12 @@
 ///
 /// @type boolean
 ///
-/// @group settings
-///
 $sveetoy-row-larger-width: 83rem !default;
 
 
 /// Enable grid classes creation when `grid` component is imported.
 ///
 /// @type Bool
-///
-/// @group settings
 ///
 $include-sveetoy-grid: $include-sveetoy-classes !default;
 

@@ -5,12 +5,14 @@
  * Spaces
  *
  */
+////
+/// @group spaces
+////
+
 
 /// Enable spacing classes creation when `spaces` component is imported.
 ///
 /// @type Bool
-///
-/// @group settings
 ///
 $include-sveetoy-spaces: $include-sveetoy-classes !default;
 
@@ -21,8 +23,6 @@ $include-sveetoy-spaces: $include-sveetoy-classes !default;
 /// rely on breakpoints from `$sveetoy-breakpoints`).
 ///
 /// @type map
-///
-/// @group settings
 ///
 /// @example scss
 ///   $sveetoy-space-tiny: (

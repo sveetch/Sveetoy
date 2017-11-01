@@ -1,12 +1,14 @@
 /*
  * Tables
  */
+////
+/// @group tables
+////
+
 
 /// Enable table classes creation when `tables` component is imported.
 ///
 /// @type Bool
-///
-/// @group settings
 ///
 $include-sveetoy-tables: $include-sveetoy-classes !default;
 

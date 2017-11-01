@@ -3,12 +3,14 @@
 /*
  * Bullet list using arrow icon as bullet
  */
+////
+/// @group lists
+////
+
 
 /// Enable list classes creation when `list` component is imported.
 ///
 /// @type Bool
-///
-/// @group settings
 ///
 $include-sveetoy-lists: $include-sveetoy-classes !default;
 

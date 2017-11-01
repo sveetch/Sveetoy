@@ -1,3 +1,7 @@
+////
+/// @group colors
+////
+
 
 ///
 /// This documentate model for available properties in a color scheme.
@@ -16,7 +20,7 @@
 ///
 /// @type Map
 ///
-/// @group settings
+/// @group models
 ///
 /// @prop {Color} background-color [null]
 ///   Background color to apply.
@@ -93,11 +97,9 @@ $sveetoy-model-color-scheme: () !default;
 /// Default color scheme to use (like on `.block` or
 /// `.box`).
 ///
-/// See **Color scheme model** for property definitions.
+/// See [`Color scheme model`](#models-variable-Color scheme model) for property definitions.
 ///
 /// @type Map
-///
-/// @group settings
 ///
 /// @example scss
 ///   $sveetoy-colors-scheme-default: $white-color-scheme;
@@ -108,11 +110,9 @@ $sveetoy-colors-scheme-default: null !default;
 /// Enabled color schemes for component classes creation (like `.block` or
 /// `.box`).
 ///
-/// Each property is a named **Color scheme model**.
+/// Each property is a named [`Color scheme model`](#models-variable-Color scheme model).
 ///
 /// @type Map
-///
-/// @group settings
 ///
 /// @example scss
 ///   $sveetoy-colors-schemes: (
@@ -123,29 +123,11 @@ $sveetoy-colors-scheme-default: null !default;
 $sveetoy-colors-schemes: () !default;
 
 
-/// Enabled text colors.
-///
-/// Each item create a CSS classes `.text-NAME` classes where `NAME` is the
-/// item name.
-///
-/// @type Map
-///
-/// @group settings
-///
-/// @example scss
-///   $sveetoy-color-text-palette: (
-///       white: #ffffff,
-///       black: #000000,
-///   );
-///
-$sveetoy-color-text-palette: () !default;
-
-
 ///
 /// Include properties from a scheme color to an element.
 ///
 /// @arg {Map} $scheme [null]
-///   A **Color scheme model**.
+///   A [`Color scheme model`](#models-variable-Color scheme model).
 ///
 /// @arg {Bool} $apply-border [false]
 ///   If set to `true`, scheme border properties will be used, else they are
@@ -241,7 +223,7 @@ $sveetoy-color-text-palette: () !default;
 /// titles are ignored.
 ///
 /// @arg {Map} $scheme [null]
-///   A **Color scheme model**.
+///   A [`Color scheme model`](#models-variable-Color scheme model).
 ///
 /// @arg {Bool} $apply-border [false]
 ///   If set to `true`, scheme border properties will be used, else they are
@@ -265,7 +247,7 @@ $sveetoy-color-text-palette: () !default;
 /// Apply border properties for given scheme.
 ///
 /// @arg {Map} $scheme [null]
-///   A **Color scheme model**.
+///   A [`Color scheme model`](#models-variable-Color scheme model).
 ///
 /// If `border-color` is null, `font-color` reverse value is used instead
 /// using Sass function `invert()`.
