@@ -6991,13 +6991,13 @@ h6, .title-6 {
   margin-right: auto;
 }
 
-.underline.normal:after {
+.underline.default:after {
   margin-top: 1rem;
   margin-left: 0;
   margin-right: 0;
 }
 
-.underline.normal.text-center:after {
+.underline.default.text-center:after {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -7074,7 +7074,7 @@ hr.near {
   margin: 0.5rem 0;
 }
 
-hr.normal {
+hr.default {
   margin: 1rem 0;
 }
 

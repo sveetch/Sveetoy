@@ -95,7 +95,7 @@ $sveetoy-underline-widths: (
 $sveetoy-underline-distances: (
     far: 2rem,
     near: 0.5rem,
-    normal: 1rem, //default
+    default: 1rem, //default
     sticked: 0,
 );
 $sveetoy-underline-colors: $sveetoy-color-text-palette;

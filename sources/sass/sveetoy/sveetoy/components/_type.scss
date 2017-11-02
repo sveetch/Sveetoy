@@ -232,7 +232,7 @@ $sveetoy-hr-default-color: #000000;
 ///   $sveetoy-hr-distances: (
 ///       far: 2rem,
 ///       near: 0.5rem,
-///       normal: 1rem,
+///       default: 1rem,
 ///       sticked: 0,
 ///   );
 ///
@@ -360,8 +360,8 @@ $sveetoy-hr-distances: () !default;
                 content:"";
                 display: block;
 
-                @if map-get($sveetoy-underline-distances, 'normal') {
-                    $distance: map-get($sveetoy-underline-distances, 'normal');
+                @if map-get($sveetoy-underline-distances, 'default') {
+                    $distance: map-get($sveetoy-underline-distances, 'default');
                     margin-top: $distance;
                     margin-left: 0;
                     margin-right: 0;
@@ -442,8 +442,8 @@ $sveetoy-hr-distances: () !default;
             border-width: map-get($thickness, 'size') 0 0;
         }
 
-        @if map-get($sveetoy-hr-distances, 'normal') {
-            $distance: map-get($sveetoy-hr-distances, 'normal');
+        @if map-get($sveetoy-hr-distances, 'default') {
+            $distance: map-get($sveetoy-hr-distances, 'default');
             @if $distance == 0{
                 margin: 0;
             } @else if $distance > 0{

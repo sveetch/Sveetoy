@@ -5,7 +5,8 @@ Changelog
 Version 0.7.1 - Unreleased
 --------------------------
 
-Usage of `sassdoc <http://sassdoc.com>`_ to build API documentation for settings and mixins.
+* Usage of `sassdoc <http://sassdoc.com>`_ to build API documentation for variables and mixins;
+* [Backward incompatible] Default distance word has changed from ``normal`` to ``default``, it affects underline and horizontal rule features;
 
 Version 0.7.0 - 2017/10/23
 --------------------------

@@ -123,7 +123,7 @@
             <h3>Distance</h3>
             <p>Built from list <code>$sveetoy-underline-distances</code>.</p>
             <div class="flex-grid marged">
-                {% for name in ['sticked', 'near', 'normal', 'far'] %}
+                {% for name in ['sticked', 'near', 'default', 'far'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
                         <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
@@ -179,10 +179,10 @@
             <h3>Distance</h3>
             <p>Built from list <code>$sveetoy-hr-distances</code>.</p>
             <div class="flex-grid marged">
-                {% for name in ['sticked', 'near', 'normal', 'far'] %}
+                {% for name in ['sticked', 'near', 'default', 'far'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
-                        <p>hr{% if name %}.{{ name }}{% endif %}</p>
+                        <span>hr{% if name %}.{{ name }}{% endif %}</span>
                         <hr class="{{ name }}">
                     </div>
                 </div>
