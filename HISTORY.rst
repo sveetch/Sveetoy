@@ -5,11 +5,15 @@ Changelog
 Version 0.7.1 - Unreleased
 --------------------------
 
+`Download ZIP package for version 0.7.1 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.7.1.zip>`_
+
 * Usage of `sassdoc <http://sassdoc.com>`_ to build API documentation for variables and mixins;
-* [Backward incompatible] Default distance word has changed from ``normal`` to ``default``, it affects underline and horizontal rule features;
+* [Backward incompatible] Default distance word has changed from ``normal`` to ``default``, it affects underline and horizontal rule features, close #24;
 
 Version 0.7.0 - 2017/10/23
 --------------------------
+
+`Download ZIP package for version 0.7.0 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.7.0.zip>`_
 
 * Added older package version links in changelog;
 * Dropped Foundation5 support, close #28;

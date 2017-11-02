@@ -1,5 +1,5 @@
 {
-    "dest": "./project/_build/dev/api",
+    "dest": "./docs/api",
     "groups": {
         "undefined": "General",
         "blocks": "Blocks",
