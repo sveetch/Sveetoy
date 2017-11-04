@@ -110,6 +110,11 @@ $sveetoy-button-colors-schemes: () !default;
             @each $name, $scheme in $sveetoy-button-colors-schemes{
                 &.#{$name}{
                     @include sveetoy-button-colors($scheme, $apply-border: true);
+                    // For now we just enforce colors opposed to default
+                    // disabled behavior that apply primary colors
+                    &.disabled{
+                        @include sveetoy-button-colors($scheme, $apply-border: true);
+                    }
                 }
             }
         }

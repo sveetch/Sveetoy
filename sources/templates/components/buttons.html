@@ -2,7 +2,7 @@
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="text-upper">Buttons</h1>
-            <p>Some addons to the buttons features.</p>
+            <p>This component provides some features for buttons.</p>
 
             <p>Also there is a new rule that prevent buttons to have a bottom margin if they are the last child of a <code>div</code>, <code>p</code>, <code>dd</code>, <code>li</code> element.</p>
 
@@ -69,7 +69,7 @@
             <p>Button color features are builded from <code>$sveetoy-button-colors-schemes</code> that is on the same format than <code>$sveetoy-colors-schemes</code> except additional (and optionnal) <code>border-color</code> option.</p>
             <div class="demo-result v-space-tiny">
                 <div class="row">
-                    {% for name in ['', 'white', 'black', 'snow1', 'lightskyblue'] %}
+                    {% for name in ['', 'white', 'black', 'snow1', 'snow1.disabled', 'lightskyblue', 'lightskyblue.disabled'] %}
                     <div class="large-4 columns{% if loop.last %} end{% endif %}">
                         <a href="" class="button{% if name %} {{ name|replace(".", " ") }}{% endif %}">.button{% if name %}.{{ name }}{% endif %}</a>
                     </div>

@@ -6735,8 +6735,22 @@ button.white,
   border-color: #404040;
 }
 
+button.white.disabled,
+.button.white.disabled {
+  color: #404040;
+  background-color: #ffffff;
+  border-color: #404040;
+}
+
 button.black,
 .button.black {
+  color: white;
+  background-color: #000000;
+  border-color: white;
+}
+
+button.black.disabled,
+.button.black.disabled {
   color: white;
   background-color: #000000;
   border-color: white;
@@ -6751,8 +6765,24 @@ button.lightskyblue,
   border-style: solid;
 }
 
+button.lightskyblue.disabled,
+.button.lightskyblue.disabled {
+  color: #00688b;
+  background-color: #87cefa;
+  border-color: #00688b;
+  border-width: 1px;
+  border-style: solid;
+}
+
 button.snow1,
 .button.snow1 {
+  color: #404040;
+  background-color: #fffafa;
+  border-color: #404040;
+}
+
+button.snow1.disabled,
+.button.snow1.disabled {
   color: #404040;
   background-color: #fffafa;
   border-color: #404040;
