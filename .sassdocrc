@@ -14,6 +14,7 @@
         "hr": "Horizontal rule",
         "underline": "Underline",
         "models": "Models",
+        "medias": "Medias",
         "colors": "Colors"
     },
     "verbose": true
