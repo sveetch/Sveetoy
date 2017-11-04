@@ -2,7 +2,7 @@
 Changelog
 =========
 
-Version 0.7.1 - Unreleased
+Version 0.7.1 - 2017/11/04
 --------------------------
 
 `Download ZIP package for version 0.7.1 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.7.1.zip>`_

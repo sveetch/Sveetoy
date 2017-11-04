@@ -93,4 +93,4 @@ prod-sassdoc:
 zip-release:
 	bin/python release.py
 
-release: zip-release prod-build
+release: zip-release prod-build prod-sassdoc
