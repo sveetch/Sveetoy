@@ -10,6 +10,7 @@ Version 0.7.1 - Unreleased
 * Usage of `sassdoc <http://sassdoc.com>`_ to build API documentation for variables and mixins;
 * [Backward incompatible] Default distance word has changed from ``normal`` to ``default``, it affects underline and horizontal rule features, close #24;
 * Button color scheme should override ``disabled`` feature default behavior, close #22;
+* Move ``global`` to ``globals``, remove unused ``.position-relative``, added ``medias`` component, close #33;
 
 Version 0.7.0 - 2017/10/23
 --------------------------

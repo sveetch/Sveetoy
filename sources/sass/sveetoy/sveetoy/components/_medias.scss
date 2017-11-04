@@ -1,0 +1,29 @@
+/*
+ * TODO: Undocumented from demonstration
+ */
+
+/// Enable classes creation when `medias` component is imported.
+///
+/// @type Bool
+///
+$include-sveetoy-medias: $include-sveetoy-classes !default;
+
+
+@if $include-sveetoy-medias {
+    //
+    // Image element
+    //
+    img{
+        // Center image as a block
+        &.centered{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        // Expand image to 100% of its container
+        &.expanded{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

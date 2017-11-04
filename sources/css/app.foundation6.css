@@ -6147,31 +6147,8 @@ a.thumbnail image {
  * Sveetoy library
  */
 /*
- *
- * Some useful basic functions and mixins
- *
+ * Globals
  */
-/*
- * Global stuff
- *
- * TODO: This is undocumented from demo. Also it may be renamed to basic,
- *       common or base.
- */
-.position-relative {
-  position: relative;
-}
-
-img.centered {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-img.expanded {
-  width: 100%;
-  height: auto;
-}
-
 /*
  * Default component settings
  */
@@ -7138,6 +7115,20 @@ hr.lightskyblue {
 
 hr.deepskyblue4 {
   border-color: #00688b;
+}
+
+/*
+ * TODO: Undocumented from demonstration
+ */
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.expanded {
+  width: 100%;
+  height: auto;
 }
 
 /*
@@ -8658,6 +8649,11 @@ table.expand {
 
 /*
  * Bullet list using arrow icon as bullet
+ */
+/*
+ *
+ * Some useful basic functions and mixins
+ *
  */
 ul.arrow {
   list-style-type: none;
