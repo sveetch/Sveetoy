@@ -74,6 +74,7 @@ $sveetoy-spaces: () !default;
         .v-divider-#{$name}{
             @include sveetoy-apply-spaces($definitions, $axis: "vertical", $sides: ("end"), $prop: "margin");
         }
+
         .h-divider-#{$name}{
             @include sveetoy-apply-spaces($definitions, $axis: "horizontal", $sides: ("end"), $prop: "margin");
         }
@@ -92,6 +93,7 @@ $sveetoy-spaces: () !default;
         &.top-only{
             padding-bottom: 0;
         }
+
         &.bottom-only{
             padding-top: 0;
         }
@@ -110,6 +112,7 @@ $sveetoy-spaces: () !default;
         &.left-only{
             padding-right: 0;
         }
+
         &.right-only{
             padding-left: 0;
         }

@@ -256,6 +256,7 @@ $sveetoy-hr-distances: () !default;
     .text-upper{
         text-transform: uppercase !important;
     }
+
     .text-important{
         text-decoration: underline !important;
     }
@@ -268,12 +269,15 @@ $sveetoy-hr-distances: () !default;
             font-weight: $global-weight-thin !important;
         }
     }
+
     .text-normal{
         font-weight: $global-weight-normal !important;
     }
+
     b, .text-bold{
         font-weight: $global-weight-bold !important;
     }
+
     @if $global-weight-strong{
         strong, .text-strong{
             font-weight: $global-weight-strong;
@@ -309,44 +313,48 @@ $sveetoy-hr-distances: () !default;
     // Heading styles
     @each $size, $headers in $header-styles {
         @include breakpoint($size) {
-        @each $header, $header-defs in $headers {
-            $font-size-temp: 1rem;
-            #{$header}, .title-#{str-slice($header, 2)} {
-                font-family: $header-font-family;
+            @each $header, $header-defs in $headers {
+                $font-size-temp: 1rem;
 
-                @if map-has-key($header-defs, font-size) {
-                    $font-size-temp: rem-calc(map-get($header-defs, font-size));
-                    font-size: $font-size-temp;
-                } @else if map-has-key($header-defs, fs) {
-                    $font-size-temp: rem-calc(map-get($header-defs, fs));
-                    font-size: $font-size-temp;
-                } @else if $size == $-zf-zero-breakpoint {
-                    font-size: $font-size-temp;
-                }
-                @if map-has-key($header-defs, line-height) {
-                    line-height: unitless-calc(map-get($header-defs, line-height), $font-size-temp);
-                } @else if map-has-key($header-defs, lh) {
-                    line-height: unitless-calc(map-get($header-defs, lh), $font-size-temp);
-                } @else if $size == $-zf-zero-breakpoint {
-                    line-height: unitless-calc($header-lineheight, $font-size-temp);
-                }
+                #{$header},
+                .title-#{str-slice($header, 2)} {
+                    font-family: $header-font-family;
 
-                @if map-has-key($header-defs, margin-top) {
-                    margin-top: rem-calc(map-get($header-defs, margin-top));
-                } @else if map-has-key($header-defs, mt) {
-                    margin-top: rem-calc(map-get($header-defs, mt));
-                } @else if $size == $-zf-zero-breakpoint {
-                    margin-top: 0;
-                }
-                @if map-has-key($header-defs, margin-bottom) {
-                    margin-bottom: rem-calc(map-get($header-defs, margin-bottom));
-                } @else if map-has-key($header-defs, mb) {
-                    margin-bottom: rem-calc(map-get($header-defs, mb));
-                } @else if $size == $-zf-zero-breakpoint {
-                    margin-bottom: rem-calc($header-margin-bottom);
+                    @if map-has-key($header-defs, font-size) {
+                        $font-size-temp: rem-calc(map-get($header-defs, font-size));
+                        font-size: $font-size-temp;
+                    } @else if map-has-key($header-defs, fs) {
+                        $font-size-temp: rem-calc(map-get($header-defs, fs));
+                        font-size: $font-size-temp;
+                    } @else if $size == $-zf-zero-breakpoint {
+                        font-size: $font-size-temp;
+                    }
+
+                    @if map-has-key($header-defs, line-height) {
+                        line-height: unitless-calc(map-get($header-defs, line-height), $font-size-temp);
+                    } @else if map-has-key($header-defs, lh) {
+                        line-height: unitless-calc(map-get($header-defs, lh), $font-size-temp);
+                    } @else if $size == $-zf-zero-breakpoint {
+                        line-height: unitless-calc($header-lineheight, $font-size-temp);
+                    }
+
+                    @if map-has-key($header-defs, margin-top) {
+                        margin-top: rem-calc(map-get($header-defs, margin-top));
+                    } @else if map-has-key($header-defs, mt) {
+                        margin-top: rem-calc(map-get($header-defs, mt));
+                    } @else if $size == $-zf-zero-breakpoint {
+                        margin-top: 0;
+                    }
+
+                    @if map-has-key($header-defs, margin-bottom) {
+                        margin-bottom: rem-calc(map-get($header-defs, margin-bottom));
+                    } @else if map-has-key($header-defs, mb) {
+                        margin-bottom: rem-calc(map-get($header-defs, mb));
+                    } @else if $size == $-zf-zero-breakpoint {
+                        margin-bottom: rem-calc($header-margin-bottom);
+                    }
                 }
             }
-        }
         }
     }
 
@@ -356,32 +364,32 @@ $sveetoy-hr-distances: () !default;
     @if $sveetoy-underline-thickness{
         .underline{
             // Base
-            &:after{
-                content:"";
+            &::after{
+                content: "";
                 display: block;
 
-                @if map-get($sveetoy-underline-distances, 'default') {
-                    $distance: map-get($sveetoy-underline-distances, 'default');
+                @if map-get($sveetoy-underline-distances, "default") {
+                    $distance: map-get($sveetoy-underline-distances, "default");
                     margin-top: $distance;
                     margin-left: 0;
                     margin-right: 0;
                 }
 
-                @if map-get($sveetoy-underline-widths, 'normal') {
-                    $width: map-get($sveetoy-underline-widths, 'normal');
+                @if map-get($sveetoy-underline-widths, "normal") {
+                    $width: map-get($sveetoy-underline-widths, "normal");
                     width: $width;
                 }
 
-                @if map-get($sveetoy-underline-thickness, 'normal') {
-                    $thickness: map-get($sveetoy-underline-thickness, 'normal');
-                    border: map-get($thickness, 'style') $sveetoy-underline-default-color;
-                    border-width: 0 0 map-get($thickness, 'size');
+                @if map-get($sveetoy-underline-thickness, "normal") {
+                    $thickness: map-get($sveetoy-underline-thickness, "normal");
+                    border: map-get($thickness, "style") $sveetoy-underline-default-color;
+                    border-width: 0 0 map-get($thickness, "size");
                 }
             }
 
             // On centered text
             &.text-center{
-                &:after{
+                &::after{
                     margin-left: auto;
                     margin-right: auto;
                 }
@@ -389,15 +397,15 @@ $sveetoy-hr-distances: () !default;
 
             // Border thickness
             @each $name, $definitions in $sveetoy-underline-thickness {
-                &.#{$name}:after{
-                    border: map-get($definitions, 'style') $sveetoy-underline-default-color;
-                    border-width: 0 0 map-get($definitions, 'size');
+                &.#{$name}::after{
+                    border: map-get($definitions, "style") $sveetoy-underline-default-color;
+                    border-width: 0 0 map-get($definitions, "size");
                 }
             }
 
             // Border width size
             @each $name, $size in $sveetoy-underline-widths {
-                &.#{$name}:after{
+                &.#{$name}::after{
                     width: $size;
                 }
             }
@@ -405,13 +413,14 @@ $sveetoy-hr-distances: () !default;
             // Border distance from text
             @each $name, $distance in $sveetoy-underline-distances {
                 &.#{$name}{
-                    &:after{
+                    &::after{
                         margin-top: $distance;
                         margin-left: 0;
                         margin-right: 0;
                     }
+
                     &.text-center{
-                        &:after{
+                        &::after{
                             margin-top: $distance;
                             margin-left: auto;
                             margin-right: auto;
@@ -422,7 +431,7 @@ $sveetoy-hr-distances: () !default;
 
             // Border colors
             @each $name, $color in $sveetoy-underline-colors {
-                &.#{$name}:after{
+                &.#{$name}::after{
                     border-color: $color;
                 }
             }
@@ -436,14 +445,14 @@ $sveetoy-hr-distances: () !default;
         clear: both;
         height: 0;
 
-        @if map-get($sveetoy-hr-thickness, 'normal') {
-            $thickness: map-get($sveetoy-hr-thickness, 'normal');
-            border: map-get($thickness, 'style') $sveetoy-hr-default-color;
-            border-width: map-get($thickness, 'size') 0 0;
+        @if map-get($sveetoy-hr-thickness, "normal") {
+            $thickness: map-get($sveetoy-hr-thickness, "normal");
+            border: map-get($thickness, "style") $sveetoy-hr-default-color;
+            border-width: map-get($thickness, "size") 0 0;
         }
 
-        @if map-get($sveetoy-hr-distances, 'default') {
-            $distance: map-get($sveetoy-hr-distances, 'default');
+        @if map-get($sveetoy-hr-distances, "default") {
+            $distance: map-get($sveetoy-hr-distances, "default");
             @if $distance == 0{
                 margin: 0;
             } @else if $distance > 0{
@@ -454,8 +463,8 @@ $sveetoy-hr-distances: () !default;
         // Border thickness
         @each $name, $definitions in $sveetoy-hr-thickness {
             &.#{$name}{
-                border: map-get($definitions, 'style') $sveetoy-hr-default-color;
-                border-width: map-get($definitions, 'size') 0 0;
+                border: map-get($definitions, "style") $sveetoy-hr-default-color;
+                border-width: map-get($definitions, "size") 0 0;
             }
         }
 

@@ -27,17 +27,13 @@
 ///   Optional. Define font weight.
 ///
 /// @arg {String} $content [>]
-///   String to include as content, not used if `$extended-icon` is set.
+///   String to include as content.
 ///
 /// @arg {Color} $content-color [null]
 ///   Optional. Define font color.
 ///
 /// @arg {Bool} $vertical-translate [true]
 ///   Optional. Apply a vertical translation to enforce centered alignment.
-///
-/// @arg {Selector} $extended-icon [null]
-///   Optional. Selector to extend, like to extend a selector that allready
-///   define a content.
 ///
 /// @example scss
 ///   li::before{
@@ -76,18 +72,16 @@
     }
     left: $left-position;
     width: $width;
-    font-family: icomoon;
+    font-family: "icomoon";
     @if $font-size {
         font-size: $font-size;
     }
     @if $font-weight {
         font-weight: $font-weight;
     }
-    @if $extended-icon {
-        @extend #{$extended-icon};
-    } @else {
-        content: $content;
-    }
+
+    content: $content;
+
     @if $content-color {
         color: $content-color;
     }

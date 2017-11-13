@@ -47,8 +47,13 @@ $sveetoy-breakpoints: () !default;
 /// @arg {String} $prop [padding]
 ///   Property name to define, default is 'padding' but it can be 'margin' also.
 ///
-@mixin sveetoy-apply-spaces($definitions, $axis: "vertical", $default: "small",
-                            $sides: ("start", "end"), $prop: "padding") {
+@mixin sveetoy-apply-spaces(
+    $definitions,
+    $axis: "vertical",
+    $default: "small",
+    $sides: ("start", "end"),
+    $prop: "padding"
+) {
     $space-start: top;
     $space-end: bottom;
     @if $axis == "horizontal" {

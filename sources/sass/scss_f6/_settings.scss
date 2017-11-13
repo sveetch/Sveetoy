@@ -1,4 +1,4 @@
-@import 'util/util';
+@import "util/util";
 
 /// Global settings which Foundation and Sveetoy depend from
 
@@ -14,8 +14,8 @@ $gray94: #f0f0f0;
 $snow1: #fffafa;
 
 // Available font families
-$font-family-roboto: 'Roboto', sans-serif;
-$font-family-overlock: 'Overlock SC', cursive;
+$font-family-roboto: "Roboto", sans-serif;
+$font-family-overlock: "Overlock SC", cursive;
 
 ///
 /// FOUNDATION6 SETTINGS
@@ -40,10 +40,10 @@ $breakpoint-classes: (small medium large xlarge xxlarge);
 
 // Legacy media queries
 $small-up: screen;
-$medium-up: unquote('screen and #{breakpoint(medium)}');
-$large-up: unquote('screen and #{breakpoint(large)}');
-$xlarge-up: unquote('screen and #{breakpoint(xlarge)}');
-$xxlarge-up: unquote('screen and #{breakpoint(xxlarge)}');
+$medium-up: unquote("screen and #{breakpoint(medium)}");
+$large-up: unquote("screen and #{breakpoint(large)}");
+$xlarge-up: unquote("screen and #{breakpoint(xlarge)}");
+$xxlarge-up: unquote("screen and #{breakpoint(xxlarge)}");
 
 // 4. Base Typography
 // ------------------

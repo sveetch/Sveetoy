@@ -51,7 +51,7 @@
 
             &.active{
                 color: $white;
-                background-color: map-get($foundation-palette, 'primary');
+                background-color: map-get($foundation-palette, "primary");
             }
 
             &:not(.active):hover{

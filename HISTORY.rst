@@ -2,6 +2,15 @@
 Changelog
 =========
 
+Version 0.7.2 - 2017/11/13
+--------------------------
+
+`Download ZIP package for version 0.7.2 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.7.2.zip>`_
+
+* Added `Stylelint <https://stylelint.io/>`_ rules configuration from `Sass syntax guide with Stylelint <https://github.com/emencia/stylelint-guide>`_;
+* Fixed every syntax warnings from Stylelint;
+
+
 Version 0.7.1 - 2017/11/04
 --------------------------
 

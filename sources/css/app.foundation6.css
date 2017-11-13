@@ -6848,7 +6848,8 @@ small.large {
   font-size: 80%;
 }
 
-h1, .title-1 {
+h1,
+.title-1 {
   font-family: "Overlock SC", cursive;
   font-size: 1.5rem;
   line-height: 1.4;
@@ -6856,7 +6857,8 @@ h1, .title-1 {
   margin-bottom: 0.5rem;
 }
 
-h2, .title-2 {
+h2,
+.title-2 {
   font-family: "Overlock SC", cursive;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -6864,7 +6866,8 @@ h2, .title-2 {
   margin-bottom: 0.5rem;
 }
 
-h3, .title-3 {
+h3,
+.title-3 {
   font-family: "Overlock SC", cursive;
   font-size: 1.1875rem;
   line-height: 1.4;
@@ -6872,7 +6875,8 @@ h3, .title-3 {
   margin-bottom: 0.5rem;
 }
 
-h4, .title-4 {
+h4,
+.title-4 {
   font-family: "Overlock SC", cursive;
   font-size: 1.125rem;
   line-height: 1.4;
@@ -6880,7 +6884,8 @@ h4, .title-4 {
   margin-bottom: 0.5rem;
 }
 
-h5, .title-5 {
+h5,
+.title-5 {
   font-family: "Overlock SC", cursive;
   font-size: 1.0625rem;
   line-height: 1.4;
@@ -6888,7 +6893,8 @@ h5, .title-5 {
   margin-bottom: 0.5rem;
 }
 
-h6, .title-6 {
+h6,
+.title-6 {
   font-family: "Overlock SC", cursive;
   font-size: 1rem;
   line-height: 1.4;
@@ -6897,33 +6903,39 @@ h6, .title-6 {
 }
 
 @media print, screen and (min-width: 40em) {
-  h1, .title-1 {
+  h1,
+  .title-1 {
     font-family: "Overlock SC", cursive;
     font-size: 3rem;
   }
-  h2, .title-2 {
+  h2,
+  .title-2 {
     font-family: "Overlock SC", cursive;
     font-size: 2.5rem;
   }
-  h3, .title-3 {
+  h3,
+  .title-3 {
     font-family: "Overlock SC", cursive;
     font-size: 1.9375rem;
   }
-  h4, .title-4 {
+  h4,
+  .title-4 {
     font-family: "Overlock SC", cursive;
     font-size: 1.5625rem;
   }
-  h5, .title-5 {
+  h5,
+  .title-5 {
     font-family: "Overlock SC", cursive;
     font-size: 1.25rem;
   }
-  h6, .title-6 {
+  h6,
+  .title-6 {
     font-family: "Overlock SC", cursive;
     font-size: 1rem;
   }
 }
 
-.underline:after {
+.underline::after {
   content: "";
   display: block;
   margin-top: 1rem;
@@ -6934,119 +6946,119 @@ h6, .title-6 {
   border-width: 0 0 0.1875rem;
 }
 
-.underline.text-center:after {
+.underline.text-center::after {
   margin-left: auto;
   margin-right: auto;
 }
 
-.underline.thin:after {
+.underline.thin::after {
   border: solid #000000;
   border-width: 0 0 0.0625rem;
 }
 
-.underline.normal:after {
+.underline.normal::after {
   border: solid #000000;
   border-width: 0 0 0.1875rem;
 }
 
-.underline.bold:after {
+.underline.bold::after {
   border: solid #000000;
   border-width: 0 0 0.3125rem;
 }
 
-.underline.tiny:after {
+.underline.tiny::after {
   width: 5%;
 }
 
-.underline.short:after {
+.underline.short::after {
   width: 15%;
 }
 
-.underline.normal:after {
+.underline.normal::after {
   width: 40%;
 }
 
-.underline.large:after {
+.underline.large::after {
   width: 70%;
 }
 
-.underline.full:after {
+.underline.full::after {
   width: 100%;
 }
 
-.underline.far:after {
+.underline.far::after {
   margin-top: 2rem;
   margin-left: 0;
   margin-right: 0;
 }
 
-.underline.far.text-center:after {
+.underline.far.text-center::after {
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.underline.near:after {
+.underline.near::after {
   margin-top: 0.5rem;
   margin-left: 0;
   margin-right: 0;
 }
 
-.underline.near.text-center:after {
+.underline.near.text-center::after {
   margin-top: 0.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.underline.default:after {
+.underline.default::after {
   margin-top: 1rem;
   margin-left: 0;
   margin-right: 0;
 }
 
-.underline.default.text-center:after {
+.underline.default.text-center::after {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.underline.sticked:after {
+.underline.sticked::after {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
 }
 
-.underline.sticked.text-center:after {
+.underline.sticked.text-center::after {
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
 }
 
-.underline.white:after {
+.underline.white::after {
   border-color: #ffffff;
 }
 
-.underline.black:after {
+.underline.black::after {
   border-color: #000000;
 }
 
-.underline.gray25:after {
+.underline.gray25::after {
   border-color: #404040;
 }
 
-.underline.gray82:after {
+.underline.gray82::after {
   border-color: #d0d0d0;
 }
 
-.underline.gray88:after {
+.underline.gray88::after {
   border-color: #e0e0e0;
 }
 
-.underline.lightskyblue:after {
+.underline.lightskyblue::after {
   border-color: #87cefa;
 }
 
-.underline.deepskyblue4:after {
+.underline.deepskyblue4::after {
   border-color: #00688b;
 }
 
@@ -8648,12 +8660,12 @@ table.expand {
 }
 
 /*
- * Bullet list using arrow icon as bullet
- */
-/*
  *
  * Some useful basic functions and mixins
  *
+ */
+/*
+ * Bullet list using arrow icon as bullet
  */
 ul.arrow {
   list-style-type: none;
@@ -8664,12 +8676,12 @@ ul.arrow:not(.defer) li {
   padding-left: 1.5rem;
 }
 
-ul.arrow:not(.defer) li:before {
+ul.arrow:not(.defer) li::before {
   position: absolute;
   top: 0.75rem;
   left: 0;
   width: 1rem;
-  font-family: icomoon;
+  font-family: "icomoon";
   content: ">";
   -webkit-transform: translate(0%, -50%);
   -moz-transform: translate(0%, -50%);
@@ -8687,12 +8699,12 @@ ul.arrow.defer li > *:first-child {
   padding-left: 2rem;
 }
 
-ul.arrow.defer li > *:first-child:before {
+ul.arrow.defer li > *:first-child::before {
   position: absolute;
   top: 0.6rem;
   left: 0;
   width: 1rem;
-  font-family: icomoon;
+  font-family: "icomoon";
   content: ">";
   -webkit-transform: translate(0%, -50%);
   -moz-transform: translate(0%, -50%);

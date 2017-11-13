@@ -75,7 +75,7 @@ $flex-grid-gutter: 0.5rem !default;
         // Responsive margin on every contained cells
         //
         &.marged{
-            &> .cell{
+            & > .cell{
                 margin: $flex-grid-gutter;
             }
 

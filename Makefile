@@ -94,3 +94,6 @@ zip-release:
 	bin/python release.py
 
 release: zip-release prod-build prod-sassdoc
+
+stylelint:
+	@stylelint "sources/sass/**/*.scss" --formatter verbose
