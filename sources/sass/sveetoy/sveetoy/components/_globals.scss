@@ -3,14 +3,14 @@
  */
 
 /// Default value for variables which enable components creations like
-/// `$include-sveetoy-grid`, `$include-sveetoy-spaces`, etc..
+/// `$include-sv-grid`, `$include-sv-spaces`, etc..
 ///
 /// Default is `true` so every component CSS stuff are created. If you want
 /// to disable some component set their own value to `False`.
 ///
 /// @type Bool
 ///
-$include-sveetoy-classes: true !default;
+$include-sv-classes: true !default;
 
 
 /// Foundation version to support. Pastly this was used to support both
@@ -20,4 +20,4 @@ $include-sveetoy-classes: true !default;
 /// dropped.
 ///
 /// @type Number
-$sveetoy_foundation_support: 6 !default;
+$sv_foundation_support: 6 !default;

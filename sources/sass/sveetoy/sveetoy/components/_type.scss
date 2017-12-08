@@ -15,7 +15,7 @@
 ///
 /// @type Bool
 ///
-$include-sveetoy-typography: $include-sveetoy-classes !default;
+$include-sv-typography: $include-sv-classes !default;
 
 
 ///
@@ -35,7 +35,7 @@ $include-sveetoy-typography: $include-sveetoy-classes !default;
 /// @prop {String} style [null]
 ///   Line style according to border style (`solid`, `dotted`, `dashed`).
 ///
-$sveetoy-model-thickness: () !default;
+$sv-model-thickness: () !default;
 
 
 /// Additional global font weight thinner than `$global-weight-normal`.
@@ -66,12 +66,12 @@ $global-weight-strong: null !default;
 /// @type Map
 ///
 /// @example scss
-///   $sveetoy-color-text-palette: (
+///   $sv-color-text-palette: (
 ///       white: #ffffff,
 ///       black: #000000,
 ///   );
 ///
-$sveetoy-color-text-palette: () !default;
+$sv-color-text-palette: () !default;
 
 
 ///
@@ -82,13 +82,13 @@ $sveetoy-color-text-palette: () !default;
 /// @type Map
 ///
 /// @example scss
-///   $sveetoy-smalls: (
+///   $sv-smalls: (
 ///       small: 40%,
 ///       big: 60%,
 ///       large: 80%,
 ///   );
 ///
-$sveetoy-smalls: () !default;
+$sv-smalls: () !default;
 
 
 /// Available [`Thickness scheme model`](#models-variable-Thickness scheme model)
@@ -102,7 +102,7 @@ $sveetoy-smalls: () !default;
 /// @group underline
 ///
 ///
-$sveetoy-underline-thickness: () !default;
+$sv-underline-thickness: () !default;
 
 
 /// Available colors for underline features
@@ -112,15 +112,15 @@ $sveetoy-underline-thickness: () !default;
 /// @group underline
 ///
 /// @example scss
-///   $sveetoy-underline-colors: (
+///   $sv-underline-colors: (
 ///       white: #ffffff,
 ///       black: #000000,
 ///   );
 ///
 ///   // Or inheriting from text colors
-///   $sveetoy-underline-colors: $sveetoy-color-text-palette;
+///   $sv-underline-colors: $sv-color-text-palette;
 ///
-$sveetoy-underline-colors: () !default;
+$sv-underline-colors: () !default;
 
 
 /// Enabled default color value for underline
@@ -129,7 +129,7 @@ $sveetoy-underline-colors: () !default;
 ///
 /// @group underline
 ///
-$sveetoy-underline-default-color: #000000;
+$sv-underline-default-color: #000000;
 
 
 /// Available distances for underline features
@@ -144,14 +144,14 @@ $sveetoy-underline-default-color: #000000;
 /// @group underline
 ///
 /// @example scss
-///   $sveetoy-underline-distances: (
+///   $sv-underline-distances: (
 ///       far: 2rem,
 ///       near: 0.5rem,
 ///       normal: 1rem,
 ///       sticked: 0,
 ///   );
 ///
-$sveetoy-underline-distances: () !default;
+$sv-underline-distances: () !default;
 
 
 ///
@@ -167,7 +167,7 @@ $sveetoy-underline-distances: () !default;
 /// @group underline
 ///
 /// @example scss
-///   $sveetoy-underline-widths: (
+///   $sv-underline-widths: (
 ///       tiny: 5%,
 ///       short: 15%,
 ///       normal: 40%,
@@ -175,7 +175,7 @@ $sveetoy-underline-distances: () !default;
 ///       full: 100%,
 ///   );
 ///
-$sveetoy-underline-widths: () !default;
+$sv-underline-widths: () !default;
 
 
 /// Available [`Thickness scheme model`](#models-variable-Thickness scheme model)
@@ -187,7 +187,7 @@ $sveetoy-underline-widths: () !default;
 ///
 /// @group hr
 ///
-$sveetoy-hr-thickness: () !default;
+$sv-hr-thickness: () !default;
 
 
 /// Available colors for `<hr>` features
@@ -197,15 +197,15 @@ $sveetoy-hr-thickness: () !default;
 /// @group hr
 ///
 /// @example scss
-///   $sveetoy-hr-colors: (
+///   $sv-hr-colors: (
 ///       white: #ffffff,
 ///       black: #000000,
 ///   );
 ///
 ///   // Or inheriting from text colors
-///   $sveetoy-hr-colors: $sveetoy-color-text-palette;
+///   $sv-hr-colors: $sv-color-text-palette;
 ///
-$sveetoy-hr-colors: () !default;
+$sv-hr-colors: () !default;
 
 
 /// Enabled default color value for `<hr>`
@@ -214,7 +214,7 @@ $sveetoy-hr-colors: () !default;
 ///
 /// @group hr
 ///
-$sveetoy-hr-default-color: #000000;
+$sv-hr-default-color: #000000;
 
 
 /// Available distances for `<hr>` features
@@ -229,7 +229,7 @@ $sveetoy-hr-default-color: #000000;
 /// @group hr
 ///
 /// @example scss
-///   $sveetoy-hr-distances: (
+///   $sv-hr-distances: (
 ///       far: 2rem,
 ///       near: 0.5rem,
 ///       default: 1rem,
@@ -237,12 +237,12 @@ $sveetoy-hr-default-color: #000000;
 ///   );
 ///
 ///   // Or inheriting from underline distances
-///   $sveetoy-hr-distances: $sveetoy-underline-distances;
+///   $sv-hr-distances: $sv-underline-distances;
 ///
-$sveetoy-hr-distances: () !default;
+$sv-hr-distances: () !default;
 
 
-@if $include-sveetoy-typography {
+@if $include-sv-typography {
     // No trailing margin on last paragraph in their container
     p{
         &:last-child{
@@ -287,7 +287,7 @@ $sveetoy-hr-distances: () !default;
     //
     // Text colors
     //
-    @each $name, $color in $sveetoy-color-text-palette {
+    @each $name, $color in $sv-color-text-palette {
         &.text-#{$name}{
             color: $color !important;
         }
@@ -297,7 +297,7 @@ $sveetoy-hr-distances: () !default;
     // Various <small> modifier
     //
     small{
-        @each $name, $size in $sveetoy-smalls {
+        @each $name, $size in $sv-smalls {
             &.#{$name}{
                 font-size: $size;
             }
@@ -361,28 +361,28 @@ $sveetoy-hr-distances: () !default;
     //
     // Underlined element
     //
-    @if $sveetoy-underline-thickness{
+    @if $sv-underline-thickness{
         .underline{
             // Base
             &::after{
                 content: "";
                 display: block;
 
-                @if map-get($sveetoy-underline-distances, "default") {
-                    $distance: map-get($sveetoy-underline-distances, "default");
+                @if map-get($sv-underline-distances, "default") {
+                    $distance: map-get($sv-underline-distances, "default");
                     margin-top: $distance;
                     margin-left: 0;
                     margin-right: 0;
                 }
 
-                @if map-get($sveetoy-underline-widths, "normal") {
-                    $width: map-get($sveetoy-underline-widths, "normal");
+                @if map-get($sv-underline-widths, "normal") {
+                    $width: map-get($sv-underline-widths, "normal");
                     width: $width;
                 }
 
-                @if map-get($sveetoy-underline-thickness, "normal") {
-                    $thickness: map-get($sveetoy-underline-thickness, "normal");
-                    border: map-get($thickness, "style") $sveetoy-underline-default-color;
+                @if map-get($sv-underline-thickness, "normal") {
+                    $thickness: map-get($sv-underline-thickness, "normal");
+                    border: map-get($thickness, "style") $sv-underline-default-color;
                     border-width: 0 0 map-get($thickness, "size");
                 }
             }
@@ -396,22 +396,22 @@ $sveetoy-hr-distances: () !default;
             }
 
             // Border thickness
-            @each $name, $definitions in $sveetoy-underline-thickness {
+            @each $name, $definitions in $sv-underline-thickness {
                 &.#{$name}::after{
-                    border: map-get($definitions, "style") $sveetoy-underline-default-color;
+                    border: map-get($definitions, "style") $sv-underline-default-color;
                     border-width: 0 0 map-get($definitions, "size");
                 }
             }
 
             // Border width size
-            @each $name, $size in $sveetoy-underline-widths {
+            @each $name, $size in $sv-underline-widths {
                 &.#{$name}::after{
                     width: $size;
                 }
             }
 
             // Border distance from text
-            @each $name, $distance in $sveetoy-underline-distances {
+            @each $name, $distance in $sv-underline-distances {
                 &.#{$name}{
                     &::after{
                         margin-top: $distance;
@@ -430,7 +430,7 @@ $sveetoy-hr-distances: () !default;
             }
 
             // Border colors
-            @each $name, $color in $sveetoy-underline-colors {
+            @each $name, $color in $sv-underline-colors {
                 &.#{$name}::after{
                     border-color: $color;
                 }
@@ -445,14 +445,14 @@ $sveetoy-hr-distances: () !default;
         clear: both;
         height: 0;
 
-        @if map-get($sveetoy-hr-thickness, "normal") {
-            $thickness: map-get($sveetoy-hr-thickness, "normal");
-            border: map-get($thickness, "style") $sveetoy-hr-default-color;
+        @if map-get($sv-hr-thickness, "normal") {
+            $thickness: map-get($sv-hr-thickness, "normal");
+            border: map-get($thickness, "style") $sv-hr-default-color;
             border-width: map-get($thickness, "size") 0 0;
         }
 
-        @if map-get($sveetoy-hr-distances, "default") {
-            $distance: map-get($sveetoy-hr-distances, "default");
+        @if map-get($sv-hr-distances, "default") {
+            $distance: map-get($sv-hr-distances, "default");
             @if $distance == 0{
                 margin: 0;
             } @else if $distance > 0{
@@ -461,15 +461,15 @@ $sveetoy-hr-distances: () !default;
         }
 
         // Border thickness
-        @each $name, $definitions in $sveetoy-hr-thickness {
+        @each $name, $definitions in $sv-hr-thickness {
             &.#{$name}{
-                border: map-get($definitions, "style") $sveetoy-hr-default-color;
+                border: map-get($definitions, "style") $sv-hr-default-color;
                 border-width: map-get($definitions, "size") 0 0;
             }
         }
 
         // Margin
-        @each $name, $distance in $sveetoy-hr-distances {
+        @each $name, $distance in $sv-hr-distances {
             @if $distance{
                 &.#{$name}{
                     @if $distance == 0{
@@ -482,7 +482,7 @@ $sveetoy-hr-distances: () !default;
         }
 
         // Border colors
-        @each $name, $color in $sveetoy-hr-colors {
+        @each $name, $color in $sv-hr-colors {
             &.#{$name}{
                 border-color: $color;
             }

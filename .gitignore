@@ -43,6 +43,7 @@ coverage.xml
 /sources/css/sample.foundation6.css
 
 # Various
+/sveetoy-cli
 /node_modules/
 /cherrypy/
 RELEASED_VERSION

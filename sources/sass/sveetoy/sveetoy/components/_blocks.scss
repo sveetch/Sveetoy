@@ -15,16 +15,16 @@
 ///
 /// @type Bool
 ///
-$include-sveetoy-blocks: $include-sveetoy-classes !default;
+$include-sv-blocks: $include-sv-classes !default;
 
-@if $include-sveetoy-blocks {
+@if $include-sv-blocks {
     .block {
         &:not(.delegate){
-            @include sveetoy-apply-spaces(map-get($sveetoy-spaces, "normal"));
+            @include sv-apply-spaces(map-get($sv-spaces, "normal"));
 
-            @each $name, $definitions in $sveetoy-spaces{
+            @each $name, $definitions in $sv-spaces{
                 &.#{$name}{
-                    @include sveetoy-apply-spaces($definitions, $axis: "vertical");
+                    @include sv-apply-spaces($definitions, $axis: "vertical");
                 }
             }
         }
@@ -33,11 +33,11 @@ $include-sveetoy-blocks: $include-sveetoy-classes !default;
         // Delegate spacing to inner element
         //
         &.delegate > .inner{
-            @include sveetoy-apply-spaces(map-get($sveetoy-spaces, "normal"));
+            @include sv-apply-spaces(map-get($sv-spaces, "normal"));
 
-            @each $name, $definitions in $sveetoy-spaces{
+            @each $name, $definitions in $sv-spaces{
                 &.#{$name}{
-                    @include sveetoy-apply-spaces($definitions, $axis: "vertical");
+                    @include sv-apply-spaces($definitions, $axis: "vertical");
                 }
             }
         }
@@ -53,15 +53,15 @@ $include-sveetoy-blocks: $include-sveetoy-classes !default;
         //
         // Default colors
         //
-        @if $sveetoy-colors-scheme-default != null {
-            @include sveetoy-scheme-colors($sveetoy-colors-scheme-default);
+        @if $sv-colors-scheme-default != null {
+            @include sv-scheme-colors($sv-colors-scheme-default);
         }
         //
         // Color variants
         //
-        @each $name, $scheme in $sveetoy-colors-schemes {
+        @each $name, $scheme in $sv-colors-schemes {
             &.#{$name}{
-                @include sveetoy-scheme-colors($scheme);
+                @include sv-scheme-colors($scheme);
             }
         }
     }

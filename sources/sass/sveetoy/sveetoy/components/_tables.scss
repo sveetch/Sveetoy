@@ -10,10 +10,10 @@
 ///
 /// @type Bool
 ///
-$include-sveetoy-tables: $include-sveetoy-classes !default;
+$include-sv-tables: $include-sv-classes !default;
 
 
-@if $include-sveetoy-tables {
+@if $include-sv-tables {
     table{
         //
         // Enable table to take full width

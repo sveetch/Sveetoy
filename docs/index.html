@@ -82,7 +82,7 @@
                     <a href="http://sveetch.github.io/Sveetoy/api/" class="button lightskyblue" target="blank">Mixins and variables documentation</a>
                 </div>
                 <div class="small-12 medium-6 columns medium-text-left v-space-tiny">
-                    <a href="http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.7.2.zip" class="button">Download version 0.7.2 (ZIP)</a>
+                    <a href="http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.8.0-pre.1.zip" class="button">Download version 0.8.0-pre.1 (ZIP)</a>
                 </div>
                 <div class="small-12 columns text-center v-space-tiny">
                     <a href="https://github.com/sveetch/Sveetoy/blob/master/HISTORY.rst" class="button snow1" target="blank">See changelog and older packages in history file</a>
@@ -169,7 +169,7 @@
 
             <dl>
                 <dt>Can be disabled with</dt>
-                <dd><code>$include-sveetoy-typography: false;</code></dd>
+                <dd><code>$include-sv-typography: false;</code></dd>
 
                 <dt>Source location</dt>
                 <dd><code>sveetoy/components/_type.scss</code></dd>
@@ -223,7 +223,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2>Text colors</h2>
-            <p>Text colors are available for every color defined in map <code>$sveetoy-color-text-palette</code>. Properties are defined using <code>!important</code> flag so take care of their usage.</p>
+            <p>Text colors are available for every color defined in map <code>$sv-color-text-palette</code>. Properties are defined using <code>!important</code> flag so take care of their usage.</p>
             <div class="demo-result v-space-tiny">
                 
                 <p class="text-white">.text-white</p>
@@ -269,16 +269,16 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2>Small</h2>
-            <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are built from <code>$sveetoy-smalls</code>.</p>
+            <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are built from <code>$sv-smalls</code>.</p>
             <div class="demo-result v-space-tiny">
                 
-                <p><code>.small</code> <small class="small">Vivamus ad non pellentesque scelerisque curae maecenas, montes tincidunt dis viverra, lacinia posuere faucibus proin.</small></p>
+                <p><code>.small</code> <small class="small">Cras lectus pulvinar platea vel augue, dolor neque a auctor ligula fringilla gravida, accumsan fermentum.</small></p>
                 
-                <p><code>.medium</code> <small class="medium">Aptent pellentesque nascetur nullam nunc praesent, eu praesent porta fringilla scelerisque molestie quam, luctus faucibus.</small></p>
+                <p><code>.medium</code> <small class="medium">Quam nulla nam aenean enim rutrum, nullam posuere vitae praesent sollicitudin, fermentum faucibus pellentesque cubilia.</small></p>
                 
-                <p><code>.big</code> <small class="big">Cubilia sociosqu pretium laoreet porta mattis aliquet, potenti fusce molestie eu ac feugiat inceptos, cubilia.</small></p>
+                <p><code>.big</code> <small class="big">Nisi mollis inceptos fringilla varius etiam scelerisque rhoncus, dapibus mi libero ultricies, est ipsum hymenaeos.</small></p>
                 
-                <p>Malesuada aptent erat sodales tempor ligula, lobortis vel eleifend odio tortor, sem tempor urna suspendisse.</p>
+                <p>Luctus litora aptent habitant cras cum, mauris platea per congue, sem dictum hymenaeos suspendisse turpis.</p>
             </div>
         </div>
     </div>
@@ -300,7 +300,7 @@
             <p>Various underline positions, thickness and widths. All of them are implemented with border properties on a pseudo-element <code>:after</code>.</p>
 
             <h3>Width</h3>
-            <p>Built from list <code>$sveetoy-underline-widths</code>.</p>
+            <p>Built from list <code>$sv-underline-widths</code>.</p>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50 large-33">
@@ -336,7 +336,7 @@
             </div>
 
             <h3>Thickness</h3>
-            <p>Built from map <code>$sveetoy-underline-thickness</code>.</p>
+            <p>Built from map <code>$sv-underline-thickness</code>.</p>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50 large-33">
@@ -360,7 +360,7 @@
             </div>
 
             <h3>Distance</h3>
-            <p>Built from list <code>$sveetoy-underline-distances</code>.</p>
+            <p>Built from list <code>$sv-underline-distances</code>.</p>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50 large-33">
@@ -408,7 +408,7 @@
             </div>
 
             <h3>Color</h3>
-            <p>Built from list <code>$sveetoy-underline-colors</code>.</p>
+            <p>Built from list <code>$sv-underline-colors</code>.</p>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50 large-33">
@@ -469,7 +469,7 @@
             <p>Various horizontal rule positions, thickness and widths. Following the same scheme formats than <code>.underline</code> features.</p>
 
             <h3>Thickness</h3>
-            <p>Built from map <code>$sveetoy-hr-thickness</code>.</p>
+            <p>Built from map <code>$sv-hr-thickness</code>.</p>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50 large-33">
@@ -496,7 +496,7 @@
             </div>
 
             <h3>Distance</h3>
-            <p>Built from list <code>$sveetoy-hr-distances</code>.</p>
+            <p>Built from list <code>$sv-hr-distances</code>.</p>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50 large-33">
@@ -530,7 +530,7 @@
             </div>
 
             <h3>Color</h3>
-            <p>Built from list <code>$sveetoy-hr-colors</code>.</p>
+            <p>Built from list <code>$sv-hr-colors</code>.</p>
             <div class="flex-grid marged">
                 
                 <div class="cell small-100 medium-50 large-33">
@@ -603,7 +603,7 @@
 
             <dl>
                 <dt>Can be disabled with</dt>
-                <dd><code>$include-sveetoy-buttons: false;</code></dd>
+                <dd><code>$include-sv-buttons: false;</code></dd>
 
                 <dt>Source location</dt>
                 <dd><code>sveetoy/components/_buttons.scss</code></dd>
@@ -649,7 +649,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2>Paddings</h2>
-            <p>Add <code>.modest</code> feature so the button padding are divided by two or less, it depend from size definitions in <code>$sveetoy-button-modests</code>.</p>
+            <p>Add <code>.modest</code> feature so the button padding are divided by two or less, it depend from size definitions in <code>$sv-button-modests</code>.</p>
             <div class="demo-result v-space-tiny">
                 <div class="row">
                     
@@ -685,7 +685,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2>Colors</h2>
-            <p>Button color features are builded from <code>$sveetoy-button-colors-schemes</code> that is on the same format than <code>$sveetoy-colors-schemes</code> except additional (and optionnal) <code>border-color</code> option.</p>
+            <p>Button color features are builded from <code>$sv-button-colors-schemes</code> that is on the same format than <code>$sv-colors-schemes</code> except additional (and optionnal) <code>border-color</code> option.</p>
             <div class="demo-result v-space-tiny">
                 <div class="row">
                     
@@ -727,13 +727,13 @@
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="text-upper">Spaces</h1>
-            <p>This component add styles to apply paddings using space rythmic defined in map <code>$sveetoy-spaces</code>.</p>
+            <p>This component add styles to apply paddings using space rythmic defined in map <code>$sv-spaces</code>.</p>
             <p>Padding can be applied for both sides on vertical or horizontal axes or optionally on only one side.</p>
             <p>There are many space sizes available and each of them have their own breakpoint sizes.</p>
 
             <dl>
                 <dt>Can be disabled with</dt>
-                <dd><code>$include-sveetoy-spaces: false;</code></dd>
+                <dd><code>$include-sv-spaces: false;</code></dd>
 
                 <dt>Source location</dt>
                 <dd><code>sveetoy/components/_spaces.scss</code></dd>
@@ -969,13 +969,13 @@
         <div class="small-12 columns box">
             <h1 class="text-upper">Blocks</h1>
             <p>A block is a full width container useful for fluid design layouts but with first goal to set background and font colors.</p>
-            <p>Available features can apply various vertical padding using rythmic space from <code>$sveetoy-spaces</code> and various color schemes from <code>$sveetoy-colors-schemes</code>.</p>
+            <p>Available features can apply various vertical padding using rythmic space from <code>$sv-spaces</code> and various color schemes from <code>$sv-colors-schemes</code>.</p>
 
             <p>See Box component for available spacing features.</p>
 
             <dl>
                 <dt>Can be disabled with</dt>
-                <dd><code>$include-sveetoy-blocks: false;</code></dd>
+                <dd><code>$include-sv-blocks: false;</code></dd>
 
                 <dt>Source location</dt>
                 <dd><code>sveetoy/components/_blocks.scss</code></dd>
@@ -990,8 +990,8 @@
                 <h2>.block</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Nullam congue nibh donec praesent senectus dolor, neque venenatis eros vulputate curabitur, venenatis felis aptent purus turpis, dolor dis. Interdum eros nullam lacus elit, hac maecenas tellus orci taciti at, porttitor.</p>
-<p>Luctus ipsum morbi rutrum scelerisque ornare, amet elit aptent consectetuer posuere, fames non dui ante nascetur, pellentesque vestibulum et montes hymenaeos, dapibus dis. Porta eleifend convallis praesent rhoncus, libero in orci litora.</p>
+                <p>Magna aliquet ultricies dictumst venenatis integer iaculis duis, mus conubia arcu ut condimentum, quisque natoque nisl magna aenean, sapien tortor vestibulum torquent,. Malesuada hymenaeos nibh natoque, torquent ad dui.</p>
+<p>Semper sagittis nisi aenean ipsum, cubilia integer semper elementum ad nec, et semper sagittis nascetur scelerisque, mauris aliquam dictum potenti taciti, euismod sollicitudin. Accumsan laoreet inceptos augue felis non lorem, risus hendrerit fames nam magna, tellus felis risus nostra litora, ullamcorper id tincidunt posuere,. Magna.</p>
             </div>
         </div>
     </div>
@@ -1002,8 +1002,8 @@
                 <h2>.block.black</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Litora pretium magnis convallis inceptos sit auctor, gravida nisl ut malesuada, turpis aenean blandit torquent adipiscing, taciti est volutpat duis blandit. Dignissim justo taciti vehicula, fusce in parturient tincidunt magna ut, ac sed adipiscing primis malesuada tellus, nascetur odio neque. Laoreet platea libero dignissim.</p>
-<p>Imperdiet pulvinar diam nunc lorem, platea semper orci nulla congue maecenas elit, amet rutrum venenatis tempor quam, senectus torquent ut vulputate. Justo suspendisse nullam aliquam vel, vivamus sagittis imperdiet lacinia neque congue arcu, libero posuere aliquam. Ornare aliquet lorem nostra ad, ligula augue euismod suspendisse praesent hendrerit consectetuer.</p>
+                <p>Quis duis fusce malesuada mauris, dui elit magna penatibus nam eros pretium, vivamus morbi sagittis est. Dictum ut varius odio blandit urna, interdum lacinia sagittis aliquam at convallis, nec volutpat pharetra vel dolor, ante nibh. Aenean vehicula mollis duis integer ipsum mauris eu, lectus facilisis eros torquent, morbi.</p>
+<p>Convallis cum molestie dapibus ridiculus pretium, tempor scelerisque sociis libero curae, posuere primis cras litora ultrices purus, litora ridiculus molestie inceptos. Sodales lorem curabitur convallis leo, erat nonummy euismod est risus, senectus eget natoque lorem quam ornare, interdum nulla. Etiam nunc luctus inceptos mus nibh, orci nullam.</p>
             </div>
         </div>
     </div>
@@ -1014,8 +1014,8 @@
                 <h2>.block.lightskyblue</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Vivamus nisl neque vehicula proin, tortor nibh est sit sagittis, dui est turpis sem, mus eget fusce blandit tellus, class amet vel maecenas.</p>
-<p>Class ad duis nam hac euismod egestas dolor, etiam aliquet arcu turpis sollicitudin, tempor enim natoque imperdiet. Placerat justo hendrerit fermentum, molestie ornare sociosqu platea penatibus cum, sociis feugiat donec montes nulla, nibh iaculis posuere. Sed dictum semper sed.</p>
+                <p>Natoque phasellus nibh ac natoque netus molestie nunc, eros in pharetra risus tempor conubia, fermentum elementum. Consequat dignissim lacinia elementum porta pulvinar, maecenas est dictumst adipiscing sociosqu hac, quisque fames magna arcu eget nullam, in. Vehicula ultricies potenti orci mus, montes.</p>
+<p>Suscipit imperdiet est quam metus fames ornare, fames sem risus parturient, lobortis bibendum viverra nibh nisl eleifend sit urna,. Pede torquent volutpat ullamcorper proin iaculis, sodales curae iaculis natoque nullam, imperdiet primis ullamcorper adipiscing vehicula metus, sem risus.</p>
             </div>
         </div>
     </div>
@@ -1026,8 +1026,8 @@
                 <h2>.block.snow1</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Aliquet aliquam consectetuer viverra turpis praesent, auctor vitae fames quisque orci cubilia, dictum id vivamus mollis diam porta bibendum, quisque habitasse. Lorem fringilla eget sem leo vulputate, consectetuer orci phasellus pulvinar massa, facilisi tempus fusce semper, aliquet.</p>
-<p>Rhoncus dui primis quam porttitor torquent id nibh, facilisis purus et per, non vivamus nullam fusce quis enim, sodales cras.</p>
+                <p>Nullam maecenas massa litora fringilla elit consectetuer sociis, faucibus fermentum posuere aenean dui luctus, metus tristique eros massa arcu. Odio sapien varius venenatis taciti sem, praesent parturient feugiat torquent nascetur et augue, consequat ut mi sociosqu. Rhoncus cursus hendrerit odio, pede nam facilisis.</p>
+<p>Pretium taciti malesuada ultricies pede elementum, bibendum arcu natoque viverra, porttitor praesent enim nec posuere libero, urna varius hymenaeos felis erat, montes consequat vel nisi,. Bibendum nullam hymenaeos et phasellus penatibus pretium, nulla felis et sollicitudin non, duis.</p>
             </div>
         </div>
     </div>
@@ -1038,8 +1038,8 @@
                 <h2>.block.wide</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Egestas dapibus suspendisse sodales ultricies habitasse nibh elementum, sed magna hymenaeos id convallis auctor per, sit dui netus conubia, diam. Magna maecenas primis fermentum facilisi ornare, diam vivamus quam pulvinar varius scelerisque, eros nostra libero id, nibh litora conubia.</p>
-<p>Conubia etiam ullamcorper augue integer eleifend pretium, dolor sagittis class conubia, hac interdum tortor penatibus, augue et lorem malesuada. Nascetur class accumsan convallis.</p>
+                <p>Hac commodo ante elementum est iaculis nullam, eu praesent neque faucibus lacus ultricies facilisis, nam faucibus semper. Mattis quis hendrerit cum consequat venenatis tellus risus, nullam lobortis pede ac pharetra sem, posuere. Malesuada nunc turpis quisque hac id euismod, aptent tellus nam aenean fames, viverra.</p>
+<p>Nec metus porta dignissim lorem morbi velit, nullam pellentesque montes etiam senectus fusce pharetra, scelerisque mus fermentum. Risus ridiculus purus facilisis commodo, posuere egestas pellentesque sagittis tortor magna, pharetra hac cras nisi facilisis. Mi ante.</p>
             </div>
         </div>
     </div>
@@ -1054,8 +1054,8 @@
 
                     <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                    <p>Ultrices consequat blandit massa vehicula sit felis, volutpat consectetuer semper nostra, lacinia commodo pharetra primis vestibulum turpis porta donec, lacinia dui ligula penatibus. Amet ullamcorper dignissim duis eget suspendisse pharetra ut, quam etiam purus viverra interdum ornare. Accumsan eget sodales turpis amet, eleifend erat est.</p>
-<p>Iaculis torquent turpis per hymenaeos elementum, purus eget libero maecenas velit, tincidunt amet dignissim etiam tortor, sem mus natoque ac. Ipsum augue nibh amet, elit pharetra libero et, sapien cras habitasse posuere purus, libero cubilia eros aliquet auctor felis, sociis enim sem. Sit senectus sapien luctus vulputate congue, eget.</p>
+                    <p>Molestie fermentum nascetur massa curae quisque semper, eu commodo hymenaeos habitant nec suscipit, tortor nisi elementum posuere, aptent nunc. Ac mauris penatibus dui tincidunt, at fames scelerisque primis nisi.</p>
+<p>Orci nonummy dictumst sollicitudin ultricies id nascetur tincidunt, nascetur netus tincidunt nonummy nec elementum, cubilia dictum maecenas quis mus,. Elit nulla donec placerat porta, maecenas sed ad accumsan, sollicitudin lacus eleifend feugiat, primis orci elementum fames varius enim magna, facilisis. Dui ornare proin bibendum, per arcu fusce etiam.</p>
                 </div>
             </div>
         </div>
@@ -1069,7 +1069,7 @@
 
             <dl>
                 <dt>Can be disabled with</dt>
-                <dd><code>$include-sveetoy-boxes: false;</code></dd>
+                <dd><code>$include-sv-boxes: false;</code></dd>
 
                 <dt>Source location</dt>
                 <dd><code>sveetoy/components/_boxes.scss</code></dd>
@@ -1081,7 +1081,7 @@
         <div class="small-12 columns">
 
             <h2>Spaces</h2>
-            <p>Space features are built from <code>$sveetoy-spaces</code> (except for <code>.unpadded</code> that just set padding to 0). Default box colors comes from <code>normal</code> item from <code>$sveetoy-spaces</code>.</p>
+            <p>Space features are built from <code>$sv-spaces</code> (except for <code>.unpadded</code> that just set padding to 0). Default box colors comes from <code>normal</code> item from <code>$sv-spaces</code>.</p>
             <p>Note than first direct child element does not have a margin top and last direct child element does not have a margin bottom.</p>
             <div class="flex-grid marged demo-result">
                 
@@ -1130,7 +1130,7 @@
             </div>
 
             <h2>Colors</h2>
-            <p>Color features are built from <code>$sveetoy-colors-schemes</code>. Default box colors comes from <code>$sveetoy-colors-scheme-default</code>.</p>
+            <p>Color features are built from <code>$sv-colors-schemes</code>. Default box colors comes from <code>$sv-colors-scheme-default</code>.</p>
             <div class="flex-grid marged demo-result">
                 
                 <div class="cell small-100 medium-50 large-33">
@@ -1206,14 +1206,14 @@
             <h1 class="text-upper">Flexbox</h1>
             <p>A simple flexbox grid.</p>
             <p>Alike <code>.row</code> in float grid, <code>.flex-grid</code> is the main container and <code>.cell</code> is equivalent to <code>.columns</code>.</p>
-            <p>Available cell sizes are builded from <code>$flex-grid-sizes</code> list and defined for each Foundation media query.</p>
-            <p><code>.margin</code> feature is defined from <code>$flex-grid-gutter</code>.</p>
+            <p>Available cell sizes are builded from <code>$sv-flex-grid-sizes</code> list and defined for each Foundation media query.</p>
+            <p><code>.margin</code> feature is defined from <code>$sv-flex-grid-gutter</code>.</p>
 
-            <p>Available cell width sizes are builded from list <code>$flex-grid-sizes</code>, note that size decimals are removed from the size class name, so value 33.333 will build a class name like <code>.small-33</code>, <code>.medium-33</code>, etc..</p>
+            <p>Available cell width sizes are builded from list <code>$sv-flex-grid-sizes</code>, note that size decimals are removed from the size class name, so value 33.333 will build a class name like <code>.small-33</code>, <code>.medium-33</code>, etc..</p>
 
             <dl>
                 <dt>Can be disabled with</dt>
-                <dd><code>$include-sveetoy-flex: false;</code></dd>
+                <dd><code>$include-sv-flex: false;</code></dd>
 
                 <dt>Source location</dt>
                 <dd><code>sveetoy/components/_flex.scss</code></dd>
@@ -1301,27 +1301,27 @@
                     
                     <div class="cell small-100 medium-33 v-align-start">
                         <p><code>.v-align-start</code></p>
-                        <p>Sociis dis placerat nascetur netus cubilia, ultrices cras consequat tempus gravida posuere volutpat, pharetra pede.</p>
+                        <p>Praesent volutpat enim ullamcorper cum potenti semper, justo lectus cras aliquam tempor, penatibus pellentesque gravida.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-end">
                         <p><code>.v-align-end</code></p>
-                        <p>Hac lectus hymenaeos class diam morbi tempor, non diam dui sagittis, bibendum risus commodo est.</p>
+                        <p>Metus eleifend dolor platea vitae lacus erat, metus conubia nam congue eleifend risus, felis fames.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-center">
                         <p><code>.v-align-center</code></p>
-                        <p>Cubilia sodales ipsum suscipit lobortis class condimentum, integer facilisis nibh mi eget hymenaeos, montes litora.</p>
+                        <p>Placerat leo mus rutrum porttitor mus, nonummy nulla inceptos senectus nullam, fermentum semper fusce volutpat.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-around">
                         <p><code>.v-align-around</code></p>
-                        <p>Volutpat aptent sociosqu per taciti, fermentum sodales laoreet pretium arcu, accumsan nascetur congue orci id.</p>
+                        <p>Duis platea augue magna duis cras magnis, congue eget natoque nonummy habitant penatibus cursus primis.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-between">
                         <p><code>.v-align-between</code></p>
-                        <p>Aptent nisi tempor nisi senectus aenean ornare, felis nonummy aliquet venenatis, habitant sodales tellus amet.</p>
+                        <p>Facilisis per tempor lobortis eros nisl urna mollis, quis primis feugiat nisi egestas tincidunt nunc.</p>
                     </div>
                     
                 </div>
@@ -1332,7 +1332,7 @@
             <p>Every alignment classname is available for each Foundation media query names, you can combine them to change alignment behavior between media queries.</p>
 
             <div class="v-space-thin">
-                <p>Classnames are builded using enabled media queries from <code>$sveetoy-breakpoints</code>.</p>
+                <p>Classnames are builded using enabled media queries from <code>$sv-breakpoints</code>.</p>
                 <table>
                     <thead>
                         <tr>
@@ -1552,7 +1552,7 @@
             </div>
 
             <div class="v-space-thin">
-                <p>Classnames are builded using enabled media queries from <code>$sveetoy-breakpoints</code>.</p>
+                <p>Classnames are builded using enabled media queries from <code>$sv-breakpoints</code>.</p>
                 <table>
                     <thead>
                         <tr>

@@ -8,7 +8,7 @@
 
             <dl>
                 <dt>Can be disabled with</dt>
-                <dd><code>$include-sveetoy-typography: false;</code></dd>
+                <dd><code>$include-sv-typography: false;</code></dd>
 
                 <dt>Source location</dt>
                 <dd><code>sveetoy/components/_type.scss</code></dd>
@@ -42,7 +42,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2>Text colors</h2>
-            <p>Text colors are available for every color defined in map <code>$sveetoy-color-text-palette</code>. Properties are defined using <code>!important</code> flag so take care of their usage.</p>
+            <p>Text colors are available for every color defined in map <code>$sv-color-text-palette</code>. Properties are defined using <code>!important</code> flag so take care of their usage.</p>
             <div class="demo-result v-space-tiny">
                 {% for name in ['white', 'black', 'gray25', 'gray82', 'gray88', 'lightskyblue', 'deepskyblue4'] %}
                 <p class="text-{{ name }}">.text-{{ name }}</p>
@@ -70,7 +70,7 @@
     <div class="row larger">
         <div class="small-12 columns">
             <h2>Small</h2>
-            <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are built from <code>$sveetoy-smalls</code>.</p>
+            <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are built from <code>$sv-smalls</code>.</p>
             <div class="demo-result v-space-tiny">
                 {% for name in ['small', 'medium', 'big'] %}
                 <p><code>.{{ name }}</code> <small class="{{ name }}">{{ lipsum(n=1, html=False, min=15, max=16) }}</small></p>
@@ -97,7 +97,7 @@
             <p>Various underline positions, thickness and widths. All of them are implemented with border properties on a pseudo-element <code>:after</code>.</p>
 
             <h3>Width</h3>
-            <p>Built from list <code>$sveetoy-underline-widths</code>.</p>
+            <p>Built from list <code>$sv-underline-widths</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['tiny', 'short', 'normal', 'large', 'full'] %}
                 <div class="cell small-100 medium-50 large-33">
@@ -109,7 +109,7 @@
             </div>
 
             <h3>Thickness</h3>
-            <p>Built from map <code>$sveetoy-underline-thickness</code>.</p>
+            <p>Built from map <code>$sv-underline-thickness</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['thin', 'normal', 'bold'] %}
                 <div class="cell small-100 medium-50 large-33">
@@ -121,7 +121,7 @@
             </div>
 
             <h3>Distance</h3>
-            <p>Built from list <code>$sveetoy-underline-distances</code>.</p>
+            <p>Built from list <code>$sv-underline-distances</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['sticked', 'near', 'default', 'far'] %}
                 <div class="cell small-100 medium-50 large-33">
@@ -145,7 +145,7 @@
             </div>
 
             <h3>Color</h3>
-            <p>Built from list <code>$sveetoy-underline-colors</code>.</p>
+            <p>Built from list <code>$sv-underline-colors</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['normal', 'white', 'black', 'gray25', 'gray82', 'gray88', 'lightskyblue', 'deepskyblue4'] %}
                 <div class="cell small-100 medium-50 large-33">
@@ -164,7 +164,7 @@
             <p>Various horizontal rule positions, thickness and widths. Following the same scheme formats than <code>.underline</code> features.</p>
 
             <h3>Thickness</h3>
-            <p>Built from map <code>$sveetoy-hr-thickness</code>.</p>
+            <p>Built from map <code>$sv-hr-thickness</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['thin', 'normal', 'bold'] %}
                 <div class="cell small-100 medium-50 large-33">
@@ -177,7 +177,7 @@
             </div>
 
             <h3>Distance</h3>
-            <p>Built from list <code>$sveetoy-hr-distances</code>.</p>
+            <p>Built from list <code>$sv-hr-distances</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['sticked', 'near', 'default', 'far'] %}
                 <div class="cell small-100 medium-50 large-33">
@@ -190,7 +190,7 @@
             </div>
 
             <h3>Color</h3>
-            <p>Built from list <code>$sveetoy-hr-colors</code>.</p>
+            <p>Built from list <code>$sv-hr-colors</code>.</p>
             <div class="flex-grid marged">
                 {% for name in ['normal', 'white', 'black', 'gray25', 'gray82', 'gray88', 'lightskyblue', 'deepskyblue4'] %}
                 <div class="cell small-100 medium-50 large-33">

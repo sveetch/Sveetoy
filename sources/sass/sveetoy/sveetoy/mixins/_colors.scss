@@ -91,7 +91,7 @@
 ///       border-style: solid,
 ///   );
 ///
-$sveetoy-model-color-scheme: () !default;
+$sv-model-color-scheme: () !default;
 
 
 /// Default color scheme to use (like on `.block` or
@@ -102,9 +102,9 @@ $sveetoy-model-color-scheme: () !default;
 /// @type Map
 ///
 /// @example scss
-///   $sveetoy-colors-scheme-default: $white-color-scheme;
+///   $sv-colors-scheme-default: $white-color-scheme;
 ///
-$sveetoy-colors-scheme-default: null !default;
+$sv-colors-scheme-default: null !default;
 
 
 /// Enabled color schemes for component classes creation (like `.block` or
@@ -115,12 +115,12 @@ $sveetoy-colors-scheme-default: null !default;
 /// @type Map
 ///
 /// @example scss
-///   $sveetoy-colors-schemes: (
+///   $sv-colors-schemes: (
 ///       white: $white-color-scheme,
 ///       black: $black-color-scheme,
 ///   );
 ///
-$sveetoy-colors-schemes: () !default;
+$sv-colors-schemes: () !default;
 
 
 ///
@@ -142,7 +142,7 @@ $sveetoy-colors-schemes: () !default;
 ///   );
 ///
 ///   div{
-///       @include sveetoy-scheme-colors($white-color-scheme);
+///       @include sv-scheme-colors($white-color-scheme);
 ///   }
 ///
 /// @example css
@@ -168,7 +168,7 @@ $sveetoy-colors-schemes: () !default;
 ///       }
 ///   }
 ///
-@mixin sveetoy-scheme-colors($scheme, $apply-border: false) {
+@mixin sv-scheme-colors($scheme, $apply-border: false) {
     // Raise error if background-color item is not in scheme
     @if map-get($scheme, "background-color") == null {
         @error "A scheme color must define the background-color item";
@@ -187,7 +187,7 @@ $sveetoy-colors-schemes: () !default;
 
     // Optional border
     @if $apply-border{
-        @include sveetoy-apply-border($scheme);
+        @include sv-apply-border($scheme);
     }
 
     // Titles
@@ -219,7 +219,7 @@ $sveetoy-colors-schemes: () !default;
 ///
 /// Include properties from a scheme color to a button element.
 ///
-/// Work like `sveetoy-scheme-colors()` mixin except properties for links and
+/// Work like `sv-scheme-colors()` mixin except properties for links and
 /// titles are ignored.
 ///
 /// @arg {Map} $scheme [null]
@@ -229,7 +229,7 @@ $sveetoy-colors-schemes: () !default;
 ///   If set to `true`, scheme border properties will be used, else they are
 ///   ignored.
 ///
-@mixin sveetoy-button-colors($scheme, $apply-border: false) {
+@mixin sv-button-colors($scheme, $apply-border: false) {
     $background-color: map-get($scheme, "background-color");
 
     $font-item: map-get($scheme, "font-color");
@@ -239,7 +239,7 @@ $sveetoy-colors-schemes: () !default;
     background-color: $background-color;
 
     @if $apply-border{
-        @include sveetoy-apply-border($scheme);
+        @include sv-apply-border($scheme);
     }
 }
 
@@ -252,7 +252,7 @@ $sveetoy-colors-schemes: () !default;
 /// If `border-color` is null, `font-color` reverse value is used instead
 /// using Sass function `invert()`.
 ///
-@mixin sveetoy-apply-border($scheme) {
+@mixin sv-apply-border($scheme) {
     $background-color: map-get($scheme, "background-color");
     $font-item: map-get($scheme, "font-color");
     $font-color: if($font-item, $font-item, invert($background-color));

@@ -14,10 +14,10 @@
 ///
 /// @type Bool
 ///
-$include-sveetoy-lists: $include-sveetoy-classes !default;
+$include-sv-lists: $include-sv-classes !default;
 
 
-@if $include-sveetoy-lists {
+@if $include-sv-lists {
     ul.arrow{
         list-style-type: none;
 
@@ -27,7 +27,7 @@ $include-sveetoy-lists: $include-sveetoy-classes !default;
                 padding-left: 1.5rem;
 
                 &::before {
-                    @include sveetoy-arrow-bullet();
+                    @include sv-arrow-bullet();
                 }
             }
         }
@@ -41,7 +41,7 @@ $include-sveetoy-lists: $include-sveetoy-classes !default;
                     padding-left: 2rem;
 
                     &::before {
-                        @include sveetoy-arrow-bullet($top-position: 0.60rem);
+                        @include sv-arrow-bullet($top-position: 0.60rem);
                     }
                 }
             }

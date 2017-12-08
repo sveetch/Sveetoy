@@ -14,17 +14,17 @@
 ///
 /// @type boolean
 ///
-$sveetoy-row-larger-width: 83rem !default;
+$sv-row-larger-width: 83rem !default;
 
 
 /// Enable grid classes creation when `grid` component is imported.
 ///
 /// @type Bool
 ///
-$include-sveetoy-grid: $include-sveetoy-classes !default;
+$include-sv-grid: $include-sv-classes !default;
 
 
-@if $include-sveetoy-grid {
+@if $include-sv-grid {
     .row{
         //
         // Fluid row, take the full width but keep normal row and columns behaviors
@@ -49,7 +49,7 @@ $include-sveetoy-grid: $include-sveetoy-classes !default;
         @if map-has-key($breakpoints, xlarge) {
             @include breakpoint(xlarge) {
                 &.larger{
-                    max-width: $sveetoy-row-larger-width;
+                    max-width: $sv-row-larger-width;
                 }
             }
         }

@@ -6,7 +6,7 @@
 
             <dl>
                 <dt>Can be disabled with</dt>
-                <dd><code>$include-sveetoy-boxes: false;</code></dd>
+                <dd><code>$include-sv-boxes: false;</code></dd>
 
                 <dt>Source location</dt>
                 <dd><code>sveetoy/components/_boxes.scss</code></dd>
@@ -18,7 +18,7 @@
         <div class="small-12 columns">
 
             <h2>Spaces</h2>
-            <p>Space features are built from <code>$sveetoy-spaces</code> (except for <code>.unpadded</code> that just set padding to 0). Default box colors comes from <code>normal</code> item from <code>$sveetoy-spaces</code>.</p>
+            <p>Space features are built from <code>$sv-spaces</code> (except for <code>.unpadded</code> that just set padding to 0). Default box colors comes from <code>normal</code> item from <code>$sv-spaces</code>.</p>
             <p>Note than first direct child element does not have a margin top and last direct child element does not have a margin bottom.</p>
             <div class="flex-grid marged demo-result">
                 {% for name in ['unpadded', 'tiny', 'short', '', 'large', 'wide'] %}
@@ -32,7 +32,7 @@
             </div>
 
             <h2>Colors</h2>
-            <p>Color features are built from <code>$sveetoy-colors-schemes</code>. Default box colors comes from <code>$sveetoy-colors-scheme-default</code>.</p>
+            <p>Color features are built from <code>$sv-colors-schemes</code>. Default box colors comes from <code>$sv-colors-scheme-default</code>.</p>
             <div class="flex-grid marged demo-result">
                 {% for name in ['', 'white', 'black', 'lightskyblue', 'snow1'] %}
                 <div class="cell small-100 medium-50 large-33">

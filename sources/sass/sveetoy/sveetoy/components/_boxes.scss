@@ -15,7 +15,7 @@
 ///
 /// @type Bool
 ///
-$include-sveetoy-boxes: $include-sveetoy-classes !default;
+$include-sv-boxes: $include-sv-classes !default;
 
 
 /// Enabled [`Thickness scheme model`](#models-variable-Thickness scheme model)
@@ -23,13 +23,13 @@ $include-sveetoy-boxes: $include-sveetoy-classes !default;
 ///
 /// @type map
 ///
-$sveetoy-boxes-thickness: () !default;
+$sv-boxes-thickness: () !default;
 
 
-@if $include-sveetoy-boxes {
+@if $include-sv-boxes {
     .box{
-        @include sveetoy-apply-spaces(map-get($sveetoy-spaces, "normal"), $axis: "horizontal");
-        @include sveetoy-apply-spaces(map-get($sveetoy-spaces, "normal"), $axis: "vertical");
+        @include sv-apply-spaces(map-get($sv-spaces, "normal"), $axis: "horizontal");
+        @include sv-apply-spaces(map-get($sv-spaces, "normal"), $axis: "vertical");
 
         & > *{
             &:first-child{
@@ -41,10 +41,10 @@ $sveetoy-boxes-thickness: () !default;
             }
         }
 
-        @each $name, $definitions in $sveetoy-spaces{
+        @each $name, $definitions in $sv-spaces{
             &.#{$name}{
-                @include sveetoy-apply-spaces($definitions, $axis: "horizontal");
-                @include sveetoy-apply-spaces($definitions, $axis: "vertical");
+                @include sv-apply-spaces($definitions, $axis: "horizontal");
+                @include sv-apply-spaces($definitions, $axis: "vertical");
             }
         }
 
@@ -58,23 +58,23 @@ $sveetoy-boxes-thickness: () !default;
         //
         // Default colors
         //
-        @if $sveetoy-colors-scheme-default != null {
-            @include sveetoy-scheme-colors($sveetoy-colors-scheme-default, $apply-border: true);
+        @if $sv-colors-scheme-default != null {
+            @include sv-scheme-colors($sv-colors-scheme-default, $apply-border: true);
         }
 
         //
         // Color variants
         //
-        @each $name, $scheme in $sveetoy-colors-schemes {
+        @each $name, $scheme in $sv-colors-schemes {
             &.#{$name}{
-                @include sveetoy-scheme-colors($scheme, $apply-border: true);
+                @include sv-scheme-colors($scheme, $apply-border: true);
             }
         }
 
         //
         // Border thickness
         //
-        @each $name, $definitions in $sveetoy-boxes-thickness {
+        @each $name, $definitions in $sv-boxes-thickness {
             &.border-#{$name}{
                 border-style: map-get($definitions, "style");
                 border-width: map-get($definitions, "size");

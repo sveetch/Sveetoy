@@ -12,7 +12,7 @@
 ///
 /// @type Bool
 ///
-$include-sveetoy-buttons: $include-sveetoy-classes !default;
+$include-sv-buttons: $include-sv-classes !default;
 
 
 /// Enabled button sizes for modest feature
@@ -25,14 +25,14 @@ $include-sveetoy-buttons: $include-sveetoy-classes !default;
 /// @type Map
 ///
 /// @example scss
-///   $sveetoy-button-modests: (
+///   $sv-button-modests: (
 ///       tiny: 5px,
 ///       small: 7px,
 ///       medium: 8px,
 ///       large: 10px,
 ///   );
 ///
-$sveetoy-button-modests: () !default;
+$sv-button-modests: () !default;
 
 
 ///
@@ -50,17 +50,17 @@ $sveetoy-button-modests: () !default;
 ///       background-color: transparent,
 ///   );
 ///
-///   $sveetoy-button-colors-schemes: (
+///   $sv-button-colors-schemes: (
 ///       transparent: $transparent-color-scheme,
 ///   );
 ///
 ///   // Or simply components color schemes
-///   $sveetoy-button-colors-schemes: $sveetoy-colors-schemes;
+///   $sv-button-colors-schemes: $sv-colors-schemes;
 ///
-$sveetoy-button-colors-schemes: () !default;
+$sv-button-colors-schemes: () !default;
 
 
-@if $include-sveetoy-buttons {
+@if $include-sv-buttons {
     button,
     .button{
         //
@@ -89,12 +89,12 @@ $sveetoy-button-colors-schemes: () !default;
         // Modest padding
         //
         &.modest{
-            $default-padding: map-get($sveetoy-button-modests, "medium");
+            $default-padding: map-get($sv-button-modests, "medium");
             @if $default-padding{
                 padding: $default-padding ($default-padding * 2) $default-padding ($default-padding * 2);
             }
 
-            @each $name, $padding in $sveetoy-button-modests{
+            @each $name, $padding in $sv-button-modests{
                 &.#{$name}{
                     @if $default-padding{
                         padding: $padding ($padding * 2) $padding ($padding * 2);
@@ -106,14 +106,14 @@ $sveetoy-button-colors-schemes: () !default;
         //
         // Various color variants from color schemes
         //
-        @if $sveetoy-button-colors-schemes{
-            @each $name, $scheme in $sveetoy-button-colors-schemes{
+        @if $sv-button-colors-schemes{
+            @each $name, $scheme in $sv-button-colors-schemes{
                 &.#{$name}{
-                    @include sveetoy-button-colors($scheme, $apply-border: true);
+                    @include sv-button-colors($scheme, $apply-border: true);
                     // For now we just enforce colors opposed to default
                     // disabled behavior that apply primary colors
                     &.disabled{
-                        @include sveetoy-button-colors($scheme, $apply-border: true);
+                        @include sv-button-colors($scheme, $apply-border: true);
                     }
                 }
             }

@@ -37,7 +37,7 @@
 ///
 /// @example scss
 ///   li::before{
-///     @include sveetoy-arrow-bullet();
+///     @include sv-arrow-bullet();
 ///   }
 ///
 /// /* Render */
@@ -55,7 +55,7 @@
 ///     transform: translate(0%, -50%);
 ///   }
 ///
-@mixin sveetoy-arrow-bullet(
+@mixin sv-arrow-bullet(
     $width: 1rem,
     $top-position: 0.75rem,
     $left-position: 0,
