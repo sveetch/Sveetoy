@@ -2,6 +2,18 @@
 Changelog
 =========
 
+Version 0.8.0 - Unreleased
+--------------------------
+
+`Download ZIP package for version 0.8.0 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.8.0.zip>`_
+
+* Renamed every ``sveetoy`` to ``sv`` in variables, mixins and classes, did the same for ``flexbox`` to ``flex``;
+* Renamed every breakpoint suffix like ``foo-medium`` to ``medium-foo`` for consistent naming;
+* Removed useless patch for Foundation5;
+* Removed useless ``topbar`` component;
+* Removed deprecated mixin ``sveetoy-simulate-grid-columns``;
+
+
 Version 0.7.2 - 2017/11/13
 --------------------------
 
@@ -21,6 +33,7 @@ Version 0.7.1 - 2017/11/04
 * Button color scheme should override ``disabled`` feature default behavior, close #22;
 * Move ``global`` to ``globals``, remove unused ``.position-relative``, added ``medias`` component, close #33;
 
+
 Version 0.7.0 - 2017/10/23
 --------------------------
 
@@ -37,6 +50,7 @@ Version 0.7.0 - 2017/10/23
   * ``$font-weight-thin`` have been renamed to ``$global-weight-thin``;
   * ``$font-weight-strong`` have been renamed to ``$global-weight-strong``;
 
+
 Version 0.6.1 - 2017/03/05
 --------------------------
 
@@ -48,6 +62,7 @@ Version 0.6.1 - 2017/03/05
 * Renamed flexbox vertical alignments from ``.align-[ALIGNMENT]`` to ``.v-align-[ALIGNMENT]`` and moved them out of ``.flex-grid`` so they can be used everywhere, close #20;
 * ``.inner`` blocks feature only work as direct child of a ``.block.delegate``, close #21;
 
+
 Version 0.6.0 - 2017/03/05
 --------------------------
 
@@ -58,6 +73,7 @@ Version 0.6.0 - 2017/03/05
 * Default demonstration page is built with Foundation6, Foundation5 demo is still available;
 * Added Foundation6 assets;
 * Fixed components grid, flex and typography to build CSS with Foundation6;
+
 
 Version 0.5.2 - 2017/02/28
 --------------------------
@@ -86,6 +102,7 @@ Version 0.5.2 - 2017/02/28
 * Fixed ``buttons`` and ``type`` components to work nice with empty default values;
 * Added "Install" part in demo;
 
+
 Version 0.5.1 - 2017/02/06
 --------------------------
 
@@ -96,6 +113,7 @@ Version 0.5.1 - 2017/02/06
 * Moved every TODO in a github issue;
 * Add a script to correctly release with correct version and create an archive;
 * Publish the first sources archive in ``dist/``;
+
 
 Version 0.5.0 - 2017/02/04
 --------------------------
