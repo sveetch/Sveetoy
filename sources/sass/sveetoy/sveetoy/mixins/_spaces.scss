@@ -7,24 +7,6 @@
 ////
 
 
-/// Map of available breakpoints for space features, usually mapped on
-/// Foundation ones.
-///
-/// Each property is a breakpoint.
-///
-/// @type map
-///
-/// @example scss
-///   $sv-breakpoints: (
-///       small: $small-up,
-///       medium: $medium-up,
-///       large: $large-up,
-///       xlarge: $xlarge-up,
-///   );
-///
-$sv-breakpoints: () !default;
-
-
 ///
 /// Includes properties to apply vertical/horizontal spacing on an
 /// element for various breakpoints

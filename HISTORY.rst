@@ -12,7 +12,8 @@ Version 0.8.0 - Unreleased
 * Removed useless patch for Foundation5;
 * Removed useless ``topbar`` component;
 * Removed deprecated mixin ``sveetoy-simulate-grid-columns``;
-
+* Moved ``components/_global.scss`` to ``_global.scss``;
+* Moved every variables from mixins to ``_global.scss`` file;
 
 Version 0.7.2 - 2017/11/13
 --------------------------
