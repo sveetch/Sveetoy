@@ -18,8 +18,8 @@
         <div class="small-12 columns">
 
             <h2>Spaces</h2>
-            <p>Space features are built from <code>$sv-spaces</code> (except for <code>.unpadded</code> that just set padding to 0). Default box colors comes from <code>normal</code> item from <code>$sv-spaces</code>.</p>
-            <p>Note than first direct child element does not have a margin top and last direct child element does not have a margin bottom.</p>
+            <p>Space features are built from <code>$sv-spaces</code> (except for <code>.unpadded</code> that just set padding to 0). Default box spaces comes from <code>normal</code> item from <code>$sv-spaces</code>.</p>
+            <p>Additionaly, to respect visual spaces, first direct child never have a margin and last direct child never have a margin bottom.</p>
             <div class="flex-grid marged demo-result">
                 {% for name in ['unpadded', 'tiny', 'short', '', 'large', 'wide'] %}
                 <div class="cell small-100 medium-50 large-33">
@@ -45,7 +45,7 @@
             </div>
 
             <h2>Border thickness</h2>
-            <p>Optionally if your color scheme support borders you can change its thickness using some features.</p>
+            <p>Optionally if your color scheme support borders you can change its thickness using some features. These thickness are built from <code>$sv-boxes-thickness</code>.</p>
             <div class="flex-grid marged demo-result">
                 {% for name in ['border-thin', 'border-normal', 'border-bold'] %}
                 <div class="cell small-100 medium-50 large-33">

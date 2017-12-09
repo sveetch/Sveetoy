@@ -124,14 +124,14 @@
 ///   div.foo .flex{
 ///       display: flex;
 ///   }
-///   div.bar .flex-small{
+///   div.bar .small-flex{
 ///       display: flex;
 ///   }
 ///
 @mixin sv-flex-display($breakpoint: null) {
-    $suffix: if($breakpoint, "-#{$breakpoint}", "");
+    $suffix: if($breakpoint, "#{$breakpoint}-", "");
 
-    .flex#{$suffix} {
+    .#{$suffix}flex {
         display: flex;
     }
 }
@@ -170,42 +170,42 @@
 ///       flex-direction: column-reverse;
 ///   }
 ///
-///   div.bar .direction-small{
+///   div.bar .small-direction{
 ///       display: flex;
 ///   }
-///   div.bar .direction-small-row{
+///   div.bar .small-direction-row{
 ///       flex-direction: row;
 ///   }
-///   div.bar .direction-small-row-reverse{
+///   div.bar .small-direction-row-reverse{
 ///       flex-direction: row-reverse;
 ///   }
-///   div.bar .direction-small-column{
+///   div.bar .small-direction-column{
 ///       flex-direction: column;
 ///   }
-///   div.bar .direction-small-column-reverse{
+///   div.bar .small-direction-column-reverse{
 ///       flex-direction: column-reverse;
 ///   }
 ///
 @mixin sv-flex-direction($breakpoint: null) {
-    $suffix: if($breakpoint, "-#{$breakpoint}", "");
+    $suffix: if($breakpoint, "#{$breakpoint}-", "");
 
-    &.direction#{$suffix} {
+    &.#{$suffix}direction {
         display: flex;
     }
 
-    &.direction#{$suffix}-row{
+    &.#{$suffix}direction-row{
         flex-direction: row;
     }
 
-    &.direction#{$suffix}-row-reverse{
+    &.#{$suffix}direction-row-reverse{
         flex-direction: row-reverse;
     }
 
-    &.direction#{$suffix}-column{
+    &.#{$suffix}direction-column{
         flex-direction: column;
     }
 
-    &.direction#{$suffix}-column-reverse{
+    &.#{$suffix}direction-column-reverse{
         flex-direction: column-reverse;
     }
 }
@@ -259,122 +259,94 @@
 ///       justify-content: space-between;
 ///   }
 ///
-///   div.suffixed .v-align-small-start {
+///   div.suffixed .small-v-align-start {
 ///       display: flex;
 ///       flex-direction: column;
 ///       justify-content: flex-start;
 ///   }
-///   div.suffixed .v-align-small-end {
+///   div.suffixed .small-v-align-end {
 ///       display: flex;
 ///       flex-direction: column;
 ///       justify-content: flex-end;
 ///   }
-///   div.suffixed .v-align-small-center {
+///   div.suffixed .small-v-align-center {
 ///       display: flex;
 ///       flex-direction: column;
 ///       justify-content: center;
 ///   }
-///   div.suffixed .v-align-small-around {
+///   div.suffixed .small-v-align-around {
 ///       display: flex;
 ///       flex-direction: column;
 ///       justify-content: space-around;
 ///   }
-///   div.suffixed .v-align-small-between {
+///   div.suffixed .small-v-align-between {
 ///       display: flex;
 ///       flex-direction: column;
 ///       justify-content: space-between;
 ///   }
 ///
-///   div.prexixed-n-suffixed .ping.v-align-small-start {
+///   div.prexixed-n-suffixed .ping.small-v-align-start {
 ///       display: flex;
 ///       flex-direction: column;
 ///       justify-content: flex-start;
 ///   }
-///   div.prexixed-n-suffixed .ping.v-align-small-end {
+///   div.prexixed-n-suffixed .ping.small-v-align-end {
 ///       display: flex;
 ///       flex-direction: column;
 ///       justify-content: flex-end;
 ///   }
-///   div.prexixed-n-suffixed .ping.v-align-small-center {
+///   div.prexixed-n-suffixed .ping.small-v-align-center {
 ///       display: flex;
 ///       flex-direction: column;
 ///       justify-content: center;
 ///   }
-///   div.prexixed-n-suffixed .ping.v-align-small-around {
+///   div.prexixed-n-suffixed .ping.small-v-align-around {
 ///       display: flex;
 ///       flex-direction: column;
 ///       justify-content: space-around;
 ///   }
-///   div.prexixed-n-suffixed .ping.v-align-small-between {
+///   div.prexixed-n-suffixed .ping.small-v-align-between {
 ///       display: flex;
 ///       flex-direction: column;
 ///       justify-content: space-between;
 ///   }
 ///
 @mixin sv-flex-vertical-alignment($breakpoint: null, $parent: null) {
-    $suffix: if($breakpoint, "-#{$breakpoint}", "");
+    $suffix: if($breakpoint, "#{$breakpoint}-", "");
     $parentsel: if($parent, "{$parent}", "");
 
     // All container elements are vertically stacked on center
-    #{$parent}.v-align#{$suffix}-start{
+    #{$parent}.#{$suffix}v-align-start{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
 
     // All container elements are vertically stacked on center
-    #{$parent}.v-align#{$suffix}-end{
+    #{$parent}.#{$suffix}v-align-end{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
     }
 
     // All container elements are vertically stacked on center
-    #{$parent}.v-align#{$suffix}-center{
+    #{$parent}.#{$suffix}v-align-center{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     // All container elements are stacked with space around
-    #{$parent}.v-align#{$suffix}-around{
+    #{$parent}.#{$suffix}v-align-around{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
     // All container elements are stacked with space between
-    #{$parent}.v-align#{$suffix}-between{
+    #{$parent}.#{$suffix}v-align-between{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-}
-
-///
-/// Create direct child selectors for responsive width classes.
-///
-/// This aimed to be a fallback for browser without flebox support, used in
-/// conjunction with float property.
-///
-/// This is deprecated now and may be removed soon.
-///
-/// @arg {List} $sizes [null]
-///   List of unitless number to create various flex cell widths. Value can be
-///   a float number but class name will ignore everything after decimal such
-///   as `33.333` will produce `33`.
-///
-/// @arg {String} $breakpoint [small]
-///   Breakpoint name to prefix produced class names.
-///
-@mixin sv-simulate-grid-columns($sizes, $breakpoint: small) {
-    @each $size in $sizes {
-        $width: $size / 100;
-        $name: floor($size);
-
-        // Will name it like "&.small-50"
-        & > .#{$breakpoint}-#{$name} {
-            width: percentage($width);
-        }
     }
 }

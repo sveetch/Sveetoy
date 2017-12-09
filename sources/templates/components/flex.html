@@ -85,7 +85,7 @@
                         <tr>
                             <th>{% if breakpoint %}{{ breakpoint|capitalize }}{% endif %}</th>
                             {% for name in ['start', 'end', 'center', 'around', 'between'] %}
-                                <td>.v-align-{{ breakpoint }}{% if breakpoint %}-{% endif %}{{ name }}</td>
+                                <td>.{{ breakpoint }}{% if breakpoint %}-{% endif %}v-align-{{ name }}</td>
                             {% endfor %}
                         </tr>
                         {% endfor %}
@@ -141,7 +141,7 @@
                         <tr>
                             <th>{% if breakpoint %}{{ breakpoint|capitalize }}{% endif %}</th>
                             {% for name in ['row', 'row-reverse', 'column', 'column-reverse'] %}
-                                <td>.direction-{{ breakpoint }}{% if breakpoint %}-{% endif %}{{ name }}</td>
+                                <td>.{{ breakpoint }}{% if breakpoint %}-{% endif %}direction-{{ name }}</td>
                             {% endfor %}
                         </tr>
                         {% endfor %}

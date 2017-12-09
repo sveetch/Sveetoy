@@ -8372,73 +8372,73 @@ img.expanded {
 }
 
 @media screen {
-  .flex-grid.direction-small {
+  .flex-grid.small-direction {
     display: flex;
   }
-  .flex-grid.direction-small-row {
+  .flex-grid.small-direction-row {
     flex-direction: row;
   }
-  .flex-grid.direction-small-row-reverse {
+  .flex-grid.small-direction-row-reverse {
     flex-direction: row-reverse;
   }
-  .flex-grid.direction-small-column {
+  .flex-grid.small-direction-column {
     flex-direction: column;
   }
-  .flex-grid.direction-small-column-reverse {
+  .flex-grid.small-direction-column-reverse {
     flex-direction: column-reverse;
   }
 }
 
 @media screen and (min-width: 40em) {
-  .flex-grid.direction-medium {
+  .flex-grid.medium-direction {
     display: flex;
   }
-  .flex-grid.direction-medium-row {
+  .flex-grid.medium-direction-row {
     flex-direction: row;
   }
-  .flex-grid.direction-medium-row-reverse {
+  .flex-grid.medium-direction-row-reverse {
     flex-direction: row-reverse;
   }
-  .flex-grid.direction-medium-column {
+  .flex-grid.medium-direction-column {
     flex-direction: column;
   }
-  .flex-grid.direction-medium-column-reverse {
+  .flex-grid.medium-direction-column-reverse {
     flex-direction: column-reverse;
   }
 }
 
 @media screen and (min-width: 64em) {
-  .flex-grid.direction-large {
+  .flex-grid.large-direction {
     display: flex;
   }
-  .flex-grid.direction-large-row {
+  .flex-grid.large-direction-row {
     flex-direction: row;
   }
-  .flex-grid.direction-large-row-reverse {
+  .flex-grid.large-direction-row-reverse {
     flex-direction: row-reverse;
   }
-  .flex-grid.direction-large-column {
+  .flex-grid.large-direction-column {
     flex-direction: column;
   }
-  .flex-grid.direction-large-column-reverse {
+  .flex-grid.large-direction-column-reverse {
     flex-direction: column-reverse;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .flex-grid.direction-xlarge {
+  .flex-grid.xlarge-direction {
     display: flex;
   }
-  .flex-grid.direction-xlarge-row {
+  .flex-grid.xlarge-direction-row {
     flex-direction: row;
   }
-  .flex-grid.direction-xlarge-row-reverse {
+  .flex-grid.xlarge-direction-row-reverse {
     flex-direction: row-reverse;
   }
-  .flex-grid.direction-xlarge-column {
+  .flex-grid.xlarge-direction-column {
     flex-direction: column;
   }
-  .flex-grid.direction-xlarge-column-reverse {
+  .flex-grid.xlarge-direction-column-reverse {
     flex-direction: column-reverse;
   }
 }
@@ -8474,27 +8474,27 @@ img.expanded {
 }
 
 @media screen {
-  .v-align-small-start {
+  .small-v-align-start {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
-  .v-align-small-end {
+  .small-v-align-end {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
-  .v-align-small-center {
+  .small-v-align-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .v-align-small-around {
+  .small-v-align-around {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-  .v-align-small-between {
+  .small-v-align-between {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -8502,27 +8502,27 @@ img.expanded {
 }
 
 @media screen and (min-width: 40em) {
-  .v-align-medium-start {
+  .medium-v-align-start {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
-  .v-align-medium-end {
+  .medium-v-align-end {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
-  .v-align-medium-center {
+  .medium-v-align-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .v-align-medium-around {
+  .medium-v-align-around {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-  .v-align-medium-between {
+  .medium-v-align-between {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -8530,27 +8530,27 @@ img.expanded {
 }
 
 @media screen and (min-width: 64em) {
-  .v-align-large-start {
+  .large-v-align-start {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
-  .v-align-large-end {
+  .large-v-align-end {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
-  .v-align-large-center {
+  .large-v-align-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .v-align-large-around {
+  .large-v-align-around {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-  .v-align-large-between {
+  .large-v-align-between {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -8558,27 +8558,27 @@ img.expanded {
 }
 
 @media screen and (min-width: 75em) {
-  .v-align-xlarge-start {
+  .xlarge-v-align-start {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
-  .v-align-xlarge-end {
+  .xlarge-v-align-end {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
-  .v-align-xlarge-center {
+  .xlarge-v-align-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .v-align-xlarge-around {
+  .xlarge-v-align-around {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-  .v-align-xlarge-between {
+  .xlarge-v-align-between {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
