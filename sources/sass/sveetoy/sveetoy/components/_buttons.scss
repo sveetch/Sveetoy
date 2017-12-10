@@ -109,9 +109,15 @@ $sv-button-colors-schemes: () !default;
         @if $sv-button-colors-schemes{
             @each $name, $scheme in $sv-button-colors-schemes{
                 &.#{$name}{
-                    @include sv-button-colors($scheme, $apply-border: true);
-                    // For now we just enforce colors opposed to default
-                    // disabled behavior that apply primary colors
+                    &:not(.disabled){
+                        @include sv-button-colors($scheme, $apply-border: true);
+
+                        &:hover{
+                            @include sv-button-colors($scheme, $apply-border: true, $prefix: "hover");
+                        }
+                    }
+                    // Enforce colors opposed to avoid framework 'disabled'
+                    // selector to win
                     &.disabled{
                         @include sv-button-colors($scheme, $apply-border: true);
                     }

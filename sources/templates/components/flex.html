@@ -24,6 +24,15 @@
             <h2>Simple grid</h2>
             <div class="demo-result">
                 <div class="flex-grid flex-demo">
+                    <div class="cell">
+                        <p>.cell</p>
+                    </div>
+                    <div class="cell small-100 medium-50">
+                        <p>.cell.small-100.medium-50</p>
+                    </div>
+                    <div class="cell small-100 medium-50">
+                        <p>.cell.small-100.medium-50</p>
+                    </div>
                     {% for count in range(1, 7) %}
                     <div class="cell small-100 medium-33">
                         <p>.cell.small-100.medium-33</p>
@@ -40,6 +49,15 @@
 
             <div class="demo-result">
                 <div class="flex-grid marged flex-demo">
+                    <div class="cell">
+                        <p>.cell</p>
+                    </div>
+                    <div class="cell small-100 medium-50">
+                        <p>.cell.small-100.medium-50</p>
+                    </div>
+                    <div class="cell small-100 medium-50">
+                        <p>.cell.small-100.medium-50</p>
+                    </div>
                     {% for count in range(1, 7) %}
                     <div class="cell small-100 medium-33">
                         <p>.cell.small-100.medium-33</p>
@@ -69,29 +87,28 @@
 
             <p>Every alignment classname is available for each Foundation media query names, you can combine them to change alignment behavior between media queries.</p>
 
-            <div class="v-space-thin">
-                <p>Classnames are builded using enabled media queries from <code>$sv-breakpoints</code>.</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            {% for name in ['start', 'end', 'center', 'around', 'between'] %}
-                            <th>{{ name|capitalize }}</th>
-                            {% endfor %}
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for breakpoint in ['', 'small', 'medium', 'large', 'xlarge', 'xxlarge'] %}
-                        <tr>
-                            <th>{% if breakpoint %}{{ breakpoint|capitalize }}{% endif %}</th>
-                            {% for name in ['start', 'end', 'center', 'around', 'between'] %}
-                                <td>.{{ breakpoint }}{% if breakpoint %}-{% endif %}v-align-{{ name }}</td>
-                            {% endfor %}
-                        </tr>
+            <p>Classnames are builded using enabled media queries from <code>$sv-breakpoints</code>.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        {% for name in ['start', 'end', 'center', 'around', 'between'] %}
+                        <th>{{ name|capitalize }}</th>
                         {% endfor %}
-                    </tbody>
-                </table>
-            </div>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for breakpoint in ['', 'small', 'medium', 'large', 'xlarge', 'xxlarge'] %}
+                    <tr>
+                        <th>{% if breakpoint %}{{ breakpoint|capitalize }}{% endif %}</th>
+                        {% for name in ['start', 'end', 'center', 'around', 'between'] %}
+                            <td>.{{ breakpoint }}{% if breakpoint %}-{% endif %}v-align-{{ name }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -115,8 +132,9 @@
             <h3>Using responsive classes</h3>
 
             <p>Every direction classname is available for each Foundation media query names, you can combine them to change direction behavior between media queries.</p>
+            <p>Like below with <code>.direction-column.large-direction-row</code>:</p>
             <div class="demo-result">
-                <div class="flex-grid flex-demo direction-column direction-large-row">
+                <div class="flex-grid flex-demo direction-column large-direction-row">
                     {% for count in range(1, 4) %}
                     <div class="cell small-33 text-center">
                         {{ count }}
@@ -125,7 +143,7 @@
                 </div>
             </div>
 
-            <div class="v-space-thin">
+            <div class="v-space-tiny">
                 <p>Classnames are builded using enabled media queries from <code>$sv-breakpoints</code>.</p>
                 <table>
                     <thead>

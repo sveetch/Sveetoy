@@ -6705,64 +6705,96 @@ button.modest.large,
   padding: 0.5625rem 1.125rem 0.5625rem 1.125rem;
 }
 
-button.white,
-.button.white {
+button.white:not(.disabled),
+.button.white:not(.disabled) {
   color: #404040;
   background-color: #ffffff;
-  border-color: #404040;
 }
 
 button.white.disabled,
 .button.white.disabled {
   color: #404040;
   background-color: #ffffff;
-  border-color: #404040;
 }
 
-button.black,
-.button.black {
+button.black:not(.disabled),
+.button.black:not(.disabled) {
   color: white;
   background-color: #000000;
-  border-color: white;
 }
 
 button.black.disabled,
 .button.black.disabled {
   color: white;
   background-color: #000000;
-  border-color: white;
 }
 
-button.lightskyblue,
-.button.lightskyblue {
+button.lightskyblue:not(.disabled),
+.button.lightskyblue:not(.disabled) {
   color: #00688b;
   background-color: #87cefa;
-  border-color: #00688b;
-  border-width: 1px;
-  border-style: solid;
 }
 
 button.lightskyblue.disabled,
 .button.lightskyblue.disabled {
   color: #00688b;
   background-color: #87cefa;
-  border-color: #00688b;
-  border-width: 1px;
-  border-style: solid;
 }
 
-button.snow1,
-.button.snow1 {
+button.snow1:not(.disabled),
+.button.snow1:not(.disabled) {
   color: #404040;
   background-color: #fffafa;
-  border-color: #404040;
 }
 
 button.snow1.disabled,
 .button.snow1.disabled {
   color: #404040;
   background-color: #fffafa;
-  border-color: #404040;
+}
+
+button.lightskyblue-bordered:not(.disabled),
+.button.lightskyblue-bordered:not(.disabled) {
+  color: #00688b;
+  background-color: #87cefa;
+  border: 1px solid #00688b;
+}
+
+button.lightskyblue-bordered:not(.disabled):hover,
+.button.lightskyblue-bordered:not(.disabled):hover {
+  color: #ffffff;
+  background-color: #00688b;
+  border: 1px solid #00688b;
+}
+
+button.lightskyblue-bordered.disabled,
+.button.lightskyblue-bordered.disabled {
+  color: #00688b;
+  background-color: #87cefa;
+  border: 1px solid #00688b;
+}
+
+button.snow1-bordered:not(.disabled),
+.button.snow1-bordered:not(.disabled) {
+  color: #404040;
+  background-color: #fffafa;
+  border: 1px solid;
+  border-width: 1px 3px;
+}
+
+button.snow1-bordered:not(.disabled):hover,
+.button.snow1-bordered:not(.disabled):hover {
+  background-color: #fff0f0;
+  border: 1px solid;
+  border-width: 1px 3px;
+}
+
+button.snow1-bordered.disabled,
+.button.snow1-bordered.disabled {
+  color: #404040;
+  background-color: #fffafa;
+  border: 1px solid;
+  border-width: 1px 3px;
 }
 
 div button:last-child, div .button:last-child, p button:last-child, p .button:last-child, dd button:last-child, dd .button:last-child, li button:last-child, li .button:last-child {
@@ -7617,6 +7649,68 @@ img.expanded {
   color: #404040;
 }
 
+.block.lightskyblue-bordered {
+  color: #00688b;
+  background-color: #87cefa;
+}
+
+.block.lightskyblue-bordered h1, .block.lightskyblue-bordered .title-1 {
+  color: #00688b;
+}
+
+.block.lightskyblue-bordered h2, .block.lightskyblue-bordered .title-2 {
+  color: #00688b;
+}
+
+.block.lightskyblue-bordered h3, .block.lightskyblue-bordered .title-3 {
+  color: #00688b;
+}
+
+.block.lightskyblue-bordered h4, .block.lightskyblue-bordered .title-4 {
+  color: #00688b;
+}
+
+.block.lightskyblue-bordered h5, .block.lightskyblue-bordered .title-5 {
+  color: #00688b;
+}
+
+.block.lightskyblue-bordered h6, .block.lightskyblue-bordered .title-6 {
+  color: #00688b;
+}
+
+.block.lightskyblue-bordered a:not(.button) {
+  color: #ffffff;
+}
+
+.block.snow1-bordered {
+  color: #404040;
+  background-color: #fffafa;
+}
+
+.block.snow1-bordered h1, .block.snow1-bordered .title-1 {
+  color: #404040;
+}
+
+.block.snow1-bordered h2, .block.snow1-bordered .title-2 {
+  color: #404040;
+}
+
+.block.snow1-bordered h3, .block.snow1-bordered .title-3 {
+  color: #404040;
+}
+
+.block.snow1-bordered h4, .block.snow1-bordered .title-4 {
+  color: #404040;
+}
+
+.block.snow1-bordered h5, .block.snow1-bordered .title-5 {
+  color: #404040;
+}
+
+.block.snow1-bordered h6, .block.snow1-bordered .title-6 {
+  color: #404040;
+}
+
 /*
  * Default component settings
  */
@@ -7632,7 +7726,6 @@ img.expanded {
   padding-bottom: 1.5rem;
   color: #404040;
   background-color: #ffffff;
-  border-color: #404040;
 }
 
 @media screen and (min-width: 40em) {
@@ -7961,7 +8054,6 @@ img.expanded {
 .box.white {
   color: #404040;
   background-color: #ffffff;
-  border-color: #404040;
 }
 
 .box.white h1, .box.white .title-1 {
@@ -7991,7 +8083,6 @@ img.expanded {
 .box.black {
   color: white;
   background-color: #000000;
-  border-color: white;
 }
 
 .box.black h1, .box.black .title-1 {
@@ -8021,9 +8112,6 @@ img.expanded {
 .box.lightskyblue {
   color: #00688b;
   background-color: #87cefa;
-  border-color: #00688b;
-  border-width: 1px;
-  border-style: solid;
 }
 
 .box.lightskyblue h1, .box.lightskyblue .title-1 {
@@ -8057,7 +8145,6 @@ img.expanded {
 .box.snow1 {
   color: #404040;
   background-color: #fffafa;
-  border-color: #404040;
 }
 
 .box.snow1 h1, .box.snow1 .title-1 {
@@ -8082,6 +8169,107 @@ img.expanded {
 
 .box.snow1 h6, .box.snow1 .title-6 {
   color: #404040;
+}
+
+.box.lightskyblue-bordered {
+  color: #00688b;
+  background-color: #87cefa;
+  border: 1px solid #00688b;
+}
+
+.box.lightskyblue-bordered h1, .box.lightskyblue-bordered .title-1 {
+  color: #00688b;
+}
+
+.box.lightskyblue-bordered h2, .box.lightskyblue-bordered .title-2 {
+  color: #00688b;
+}
+
+.box.lightskyblue-bordered h3, .box.lightskyblue-bordered .title-3 {
+  color: #00688b;
+}
+
+.box.lightskyblue-bordered h4, .box.lightskyblue-bordered .title-4 {
+  color: #00688b;
+}
+
+.box.lightskyblue-bordered h5, .box.lightskyblue-bordered .title-5 {
+  color: #00688b;
+}
+
+.box.lightskyblue-bordered h6, .box.lightskyblue-bordered .title-6 {
+  color: #00688b;
+}
+
+.box.lightskyblue-bordered a:not(.button) {
+  color: #ffffff;
+}
+
+.box.lightskyblue-bordered:hover {
+  color: #ffffff;
+  background-color: #00688b;
+  border: 1px solid #00688b;
+}
+
+.box.lightskyblue-bordered:hover h1, .box.lightskyblue-bordered:hover .title-1 {
+  color: #ffffff;
+}
+
+.box.lightskyblue-bordered:hover h2, .box.lightskyblue-bordered:hover .title-2 {
+  color: #ffffff;
+}
+
+.box.lightskyblue-bordered:hover h3, .box.lightskyblue-bordered:hover .title-3 {
+  color: #ffffff;
+}
+
+.box.lightskyblue-bordered:hover h4, .box.lightskyblue-bordered:hover .title-4 {
+  color: #ffffff;
+}
+
+.box.lightskyblue-bordered:hover h5, .box.lightskyblue-bordered:hover .title-5 {
+  color: #ffffff;
+}
+
+.box.lightskyblue-bordered:hover h6, .box.lightskyblue-bordered:hover .title-6 {
+  color: #ffffff;
+}
+
+.box.snow1-bordered {
+  color: #404040;
+  background-color: #fffafa;
+  border: 1px solid;
+  border-width: 1px 3px;
+}
+
+.box.snow1-bordered h1, .box.snow1-bordered .title-1 {
+  color: #404040;
+}
+
+.box.snow1-bordered h2, .box.snow1-bordered .title-2 {
+  color: #404040;
+}
+
+.box.snow1-bordered h3, .box.snow1-bordered .title-3 {
+  color: #404040;
+}
+
+.box.snow1-bordered h4, .box.snow1-bordered .title-4 {
+  color: #404040;
+}
+
+.box.snow1-bordered h5, .box.snow1-bordered .title-5 {
+  color: #404040;
+}
+
+.box.snow1-bordered h6, .box.snow1-bordered .title-6 {
+  color: #404040;
+}
+
+.box.snow1-bordered:hover {
+  background-color: #fff0f0;
+  border: 1px solid;
+  border-width: 1px 3px;
 }
 
 .box.border-thin {
@@ -8116,8 +8304,8 @@ img.expanded {
 }
 
 .flex-grid > .cell {
-  flex: 1 0 auto;
-  max-width: auto;
+  flex: 1 0 100%;
+  max-width: 100%;
   margin: 0;
   list-style-type: none;
 }
@@ -8235,6 +8423,8 @@ img.expanded {
 }
 
 .flex-grid.marged > .cell {
+  flex: 1 0 calc(100% - (0.5rem * 2));
+  max-width: calc(100% - (0.5rem * 2));
   margin: 0.5rem;
 }
 

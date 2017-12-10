@@ -13,6 +13,9 @@
 ///   If set to `true`, scheme border properties will be used, else they are
 ///   ignored.
 ///
+/// @arg {String} $prefix [null]
+///   If not null will prefix the property names to search.
+///
 /// @example scss
 ///   $white-color-scheme: (
 ///       font-color: #000000,
@@ -48,22 +51,42 @@
 ///       }
 ///   }
 ///
-@mixin sv-scheme-colors($scheme, $apply-border: false) {
-    // Raise error if background-color item is not in scheme
-    @if map-get($scheme, "background-color") == null {
-        @error "A scheme color must define the background-color item";
-    } @else if (map-get($scheme, "background-color") == transparent or map-get($scheme, "background-color") == inherit) and map-get($scheme, "font-color") == null {
-        @error "A scheme color must define the font-color item if background-color value is transparent or inherit";
+@mixin sv-scheme-colors($scheme, $apply-border: false, $prefix: null) {
+    // Raise error if background-color item is not in scheme but not in
+    // prefixed mode
+    @if not $prefix{
+        @if map-get($scheme, "background-color") == null {
+            @error "A scheme color must define the background-color item";
+        } @else if (map-get($scheme, "background-color") == transparent or map-get($scheme, "background-color") == inherit) and map-get($scheme, "font-color") == null {
+            @error "A scheme color must define the font-color item if background-color value is transparent or inherit";
+        }
     }
 
-    $background-color: map-get($scheme, "background-color");
-    $font_item: map-get($scheme, "font-color");
-    $font-color: if($font_item, $font_item, invert($background-color));
-    $link-color: map-get($scheme, "link-color");
-    $link-color-hover: map-get($scheme, "link-color-hover");
+    // Prepare property prefix if any
+    $props-prefix: "";
+    @if $prefix{
+        $props-prefix: $prefix + "-";
+    }
 
-    color: $font-color;
-    background-color: $background-color;
+    $background-color: map-get($scheme, $props-prefix+"background-color");
+    $font_item: map-get($scheme, $props-prefix+"font-color");
+    $font-color: $font_item;
+    $link-color: null;
+    $link-color-hover: null;
+
+    // Dont try to apply default colors when in prefixed mode
+    @if not $prefix{
+        $font-color: if($font_item, $font_item, invert($background-color));
+        $link-color: map-get($scheme, $props-prefix+"link-color");
+        $link-color-hover: map-get($scheme, $props-prefix+"link-color-hover");
+    }
+
+    @if $font-color{
+        color: $font-color;
+    }
+    @if $background-color{
+        background-color: $background-color;
+    }
 
     // Optional border
     @if $apply-border{
@@ -73,12 +96,12 @@
     // Titles
     @for $i from 1 through 6 {
         h#{$i}, .title-#{$i} {
-            @if map-get($scheme, "h#{$i}-color") == null {
+            @if map-get($scheme, $props-prefix+"h#{$i}-color") == null {
                 color: $font-color;
-            } @else if map-get($scheme, "h#{$i}-color") == false {
+            } @else if map-get($scheme, $props-prefix+"h#{$i}-color") == false {
                 // 'false' means "Do not define any color on this"
             } @else {
-                color: map-get($scheme, "h#{$i}-color");
+                color: map-get($scheme, $props-prefix+"h#{$i}-color");
             }
         }
     }
@@ -109,14 +132,31 @@
 ///   If set to `true`, scheme border properties will be used, else they are
 ///   ignored.
 ///
-@mixin sv-button-colors($scheme, $apply-border: false) {
-    $background-color: map-get($scheme, "background-color");
+/// @arg {String} $prefix [null]
+///   If not null will prefix the property names to search.
+///
+@mixin sv-button-colors($scheme, $apply-border: false, $prefix: null) {
+     // Prepare property prefix if any
+    $props-prefix: "";
+    @if $prefix{
+        $props-prefix: $prefix + "-";
+    }
 
-    $font-item: map-get($scheme, "font-color");
-    $font-color: if($font-item, $font-item, invert($background-color));
+    $background-color: map-get($scheme, $props-prefix+"background-color");
 
-    color: $font-color;
-    background-color: $background-color;
+    $font-item: map-get($scheme, $props-prefix+"font-color");
+
+    $font-color: $font_item;
+    @if not $prefix{
+        $font-color: if($font-item, $font-item, invert($background-color));
+    }
+
+    @if $font-color{
+        color: $font-color;
+    }
+    @if $background-color{
+        background-color: $background-color;
+    }
 
     @if $apply-border{
         @include sv-apply-border($scheme);
@@ -129,19 +169,26 @@
 /// @arg {Map} $scheme [null]
 ///   A [`Color scheme model`](#models-variable-Color scheme model).
 ///
-/// If `border-color` is null, `font-color` reverse value is used instead
-/// using Sass function `invert()`.
+/// @arg {String} $prefix [null]
+///   If not null will prefix the property names to search.
 ///
-@mixin sv-apply-border($scheme) {
-    $background-color: map-get($scheme, "background-color");
-    $font-item: map-get($scheme, "font-color");
-    $font-color: if($font-item, $font-item, invert($background-color));
+@mixin sv-apply-border($scheme, $prefix: null) {
+    $props-prefix: "";
+    @if $prefix{
+        $props-prefix: $prefix + "-";
+    }
 
-    $border-color: map-get($scheme, "border-color");
-    $border-width: map-get($scheme, "border-width");
-    $border-style: map-get($scheme, "border-style");
+    $border-shortand: map-get($scheme, $props-prefix+"border");
+    $border-color: map-get($scheme, $props-prefix+"border-color");
+    $border-width: map-get($scheme, $props-prefix+"border-width");
+    $border-style: map-get($scheme, $props-prefix+"border-style");
 
-    border-color: if($border-color, $border-color, $font-color);
+    @if $border-shortand{
+        border: $border-shortand;
+    }
+    @if $border-color{
+        border-color: $border-color;
+    }
     @if $border-width{
         border-width: $border-width;
     }

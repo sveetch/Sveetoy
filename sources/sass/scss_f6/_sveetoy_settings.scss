@@ -31,10 +31,19 @@ $lightskyblue-color-scheme: (
     font-color: $deepskyblue4,
     link-color: $white,
     background-color: $lightskyblue,
-    border-width: 1px,
-    border-style: solid,
-    border-color: $deepskyblue4,
 );
+
+$snow1-bordered-color-scheme: map-merge($snow1-color-scheme, (
+    border: 1px solid,
+    border-width: 1px 3px,
+    hover-background-color: darken($snow1, 2%),
+));
+
+$lightskyblue-bordered-color-scheme: map-merge($lightskyblue-color-scheme, (
+    border: 1px solid $deepskyblue4,
+    hover-background-color: $deepskyblue4,
+    hover-font-color: $white,
+));
 
 $sv-colors-scheme-default: $white-color-scheme;
 
@@ -43,6 +52,8 @@ $sv-colors-schemes: (
     black: $black-color-scheme,
     lightskyblue: $lightskyblue-color-scheme,
     snow1: $snow1-color-scheme,
+    lightskyblue-bordered: $lightskyblue-bordered-color-scheme,
+    snow1-bordered: $snow1-bordered-color-scheme,
 );
 
 $sv-color-text-palette: (

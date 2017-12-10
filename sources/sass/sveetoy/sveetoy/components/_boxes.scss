@@ -68,6 +68,10 @@ $sv-boxes-thickness: () !default;
         @each $name, $scheme in $sv-colors-schemes {
             &.#{$name}{
                 @include sv-scheme-colors($scheme, $apply-border: true);
+
+                &:hover{
+                    @include sv-scheme-colors($scheme, $apply-border: true, $prefix: "hover");
+                }
             }
         }
 

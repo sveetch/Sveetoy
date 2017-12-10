@@ -2,7 +2,7 @@
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="text-upper">Boxes</h1>
-            <p>Box component is a combination of spaces and colors settings, alike <code>.block</code> but with both horizontal and vertical padding and optional borders.
+            <p>Box component is combinates spaces and colors settings alike blocks but with both horizontal and vertical padding and optional borders.
 
             <dl>
                 <dt>Can be disabled with</dt>
@@ -33,11 +33,12 @@
 
             <h2>Colors</h2>
             <p>Color features are built from <code>$sv-colors-schemes</code>. Default box colors comes from <code>$sv-colors-scheme-default</code>.</p>
+            <p>Alike Button component border and hover properties are supported.</p>
             <div class="flex-grid marged demo-result">
-                {% for name in ['', 'white', 'black', 'lightskyblue', 'snow1'] %}
+                {% for name in ['', 'white', 'black', 'lightskyblue', 'snow1', 'snow1-bordered'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box{% if name %} {{ name }}{% endif %}">
-                        <h3>.box{% if name %}.{{ name }}{% endif %}</h3>
+                        <h3>{% if name %}.{{ name }}{% endif %}</h3>
                         {% include '_includes/_inline_markup.html' %}
                     </div>
                 </div>
@@ -50,7 +51,7 @@
                 {% for name in ['border-thin', 'border-normal', 'border-bold'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box lightskyblue{% if name %} {{ name }}{% endif %}">
-                        <h3>.box{% if name %}.{{ name }}{% endif %}</h3>
+                        <h3>{% if name %}.{{ name }}{% endif %}</h3>
                         {% include '_includes/_inline_markup.html' %}
                     </div>
                 </div>

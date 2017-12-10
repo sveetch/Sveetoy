@@ -7,13 +7,20 @@ Version 0.8.0 - Unreleased
 
 `Download ZIP package for version 0.8.0 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.8.0.zip>`_
 
-* Renamed every ``sveetoy`` to ``sv`` in variables, mixins and classes, did the same for ``flexbox`` to ``flex``;
-* Renamed every breakpoint suffix like ``foo-medium`` to ``medium-foo`` for consistent naming;
-* Removed useless patch for Foundation5;
-* Removed useless ``topbar`` component;
-* Removed deprecated mixin ``sveetoy-simulate-grid-columns``;
-* Moved ``components/_global.scss`` to ``_global.scss``;
-* Moved every variables from mixins to ``_global.scss`` file;
+* Bunch of renaming and tidying up, close #31 :
+
+  * Renamed every ``sveetoy`` to ``sv`` in variables, mixins and classes, did the same for ``flexbox`` to ``flex``;
+  * Renamed every breakpoint suffix like ``foo-medium`` to ``medium-foo`` for consistent naming;
+  * Removed useless patch for Foundation5;
+  * Removed useless ``topbar`` component;
+  * Removed deprecated mixin ``sveetoy-simulate-grid-columns``;
+  * Moved ``components/_global.scss`` to ``_global.scss``;
+  * Moved every variables from mixins to ``_global.scss`` file;
+
+* Changed default ``.flex-grid`` cell size to ``100%``, close #25;
+* Changed border properties support in color schemes so we can use ``border`` shortand, ``border-style``, ``border-width`` and ``border-color``.
+* Changed border properties support in color schemes so font color is not used anymore as a default value;
+* Added behavior to color schemes for button and boxes to support ``hover-`` prefix properties to define rules for ``:hover`` event, close #32;
 
 Version 0.7.2 - 2017/11/13
 --------------------------

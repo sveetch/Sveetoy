@@ -32,6 +32,16 @@ $sv_foundation_support: 6 !default;
 /// `background-color` is the only required property and possibly also
 /// `font-color` if `background-color` is set to `transparent` or `inherit`.
 ///
+/// `border` property is the recommended way to define borders but it defines
+/// the same values to every side. If you need to define different values for
+/// different sides, you will need to do it throught `border-color`,
+/// `border-width` and `border-style`.
+///
+/// Every properties starting with `hover-` are obviously used for hover event.
+/// We recommend you to never define hover properties on default color
+/// scheme else it will apply hover property values as default and force you
+/// to define hover properties for every other color schemes.
+///
 /// For consistent naming, we recommend to allways name your color scheme
 /// based on their background color, like `$white-color-scheme` for a scheme
 /// with a white background.
@@ -44,6 +54,9 @@ $sv_foundation_support: 6 !default;
 ///
 /// @prop {Color} background-color [null]
 ///   Background color to apply.
+///
+/// @prop {Color} hover-background-color [null]
+///   Background color to apply on hover event.
 ///
 /// @prop {Color} font-color [null]
 ///   Font color to apply.
@@ -79,6 +92,9 @@ $sv_foundation_support: 6 !default;
 /// @prop {Color} h6-color [null]
 ///   Font color to apply on title level 6 (like `h6` or `.title-6`).
 ///
+/// @prop {Color} border [null]
+///   Border shortand properties to define every values for every sides.
+///
 /// @prop {Color} border-color [null]
 ///   Border color to apply.
 ///
@@ -87,6 +103,18 @@ $sv_foundation_support: 6 !default;
 ///
 /// @prop {String} border-style [null]
 ///   Border style to apply.
+///
+/// @prop {Color} hover-border [null]
+///   Border shortand properties to define every values for every sides on hover event.
+///
+/// @prop {Color} hover-border-color [null]
+///   Border color to apply on hover event.
+///
+/// @prop {Number} hover-border-width [null]
+///   Border width to apply on hover event.
+///
+/// @prop {String} hover-border-style [null]
+///   Border style to apply on hover event.
 ///
 ///
 /// @example scss
@@ -98,6 +126,7 @@ $sv_foundation_support: 6 !default;
 ///   $black-color-scheme: (
 ///       font-color: #ffffff,
 ///       background-color: #000000,
+///       hover-background-color: #ffffff,
 ///       link-color: #ff0000,
 ///       link-color-hover: #ff00ee,
 ///       h1-color: #f0f0f0,
@@ -106,9 +135,14 @@ $sv_foundation_support: 6 !default;
 ///       h4-color: #e6e6e6,
 ///       h5-color: #e5e5e5,
 ///       h6-color: #e6e6e6,
+///       border: 1px solid #ff0000,
 ///       border-color: #d0d0d0,
 ///       border-width: 2px,
 ///       border-style: solid,
+///       border: 1px solid #0000ff,
+///       hover-border-color: #606060,
+///       hover-border-width: 2px,
+///       hover-border-style: solid,
 ///   );
 ///
 $sv-model-color-scheme: () !default;
