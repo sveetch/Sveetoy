@@ -1,0 +1,21 @@
+<div id="colors" class="block demo-block"{% if foundation_version == 6 %} data-magellan-target="colors"{% endif %}>
+    <div class="row larger demo-introduction">
+        <div class="small-12 columns">
+            <h1 class="text-upper">Colors</h1>
+            <p>Sveetoy enforce color policy by defining every color stuff in color schemes so they are usable in other components like blocks, boxes, buttons, etc..</p>
+
+            <p>There is also a basic component that just generate helper class like <code>.bg-NAME</code> where <code>NAME</code> is the color scheme name. These classes are only created for color scheme with a <code>background</code> property.</p>
+
+            <p>You can find every available color scheme property from <a href="{{ SITE.web_url }}/api/#models-variable-Color scheme model" target="blank">color scheme model documentation</a>.</p>
+
+            <dl>
+                <dt>Helper classes can be disabled with</dt>
+                <dd><code>$include-sv-colors: false;</code></dd>
+
+                <dt>Helper classes source location</dt>
+                <dd><code>sveetoy/components/_colors.scss</code></dd>
+            </dl>
+        </div>
+    </div>
+
+</div>

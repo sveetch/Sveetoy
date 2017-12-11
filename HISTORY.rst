@@ -17,13 +17,13 @@ Version 0.8.0 - Unreleased
   * Moved ``components/_global.scss`` to ``_global.scss``;
   * Moved every variables from mixins to ``_global.scss`` file;
 
+* Added behavior to color schemes for button and boxes to support ``hover-`` prefix properties to define rules for ``:hover`` event, close #32;
+* Added ``.bg-***`` classes for every color scheme with ``background`` property, ``hover-background`` is supported also for these classes, close #36;
 * Changed default ``.flex-grid`` cell size to ``100%``, close #25;
 * Changed border properties support in color schemes so we can use ``border`` shortand, ``border-style``, ``border-width`` and ``border-color``.
 * Changed border properties support in color schemes so font color is not used anymore as a default value;
-* Added behavior to color schemes for button and boxes to support ``hover-`` prefix properties to define rules for ``:hover`` event, close #32;
-* Renamed ``background-color`` property from color scheme to ``background`` so now we can define more complex background;
 * Changed ``font-color``  behavior so it is not defined anymore automatically with inverted color from ``background`` since it may not contain correct color, close #35;
-
+* Renamed ``background-color`` property from color scheme to ``background`` so now we can define more complex background;
 
 Version 0.7.2 - 2017/11/13
 --------------------------

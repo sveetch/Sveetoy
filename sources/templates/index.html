@@ -14,7 +14,7 @@
         <div id="responsive-menu">
             <div class="top-bar-left">
                 <ul class="vertical large-horizontal menu" data-magellan data-animation-duration="0">
-                    {% for name in ['introduction', 'install', 'vocabulary', 'typography', 'buttons', 'spaces', 'blocks', 'boxes', 'flex'] %}
+                    {% for name in ['introduction', 'install', 'vocabulary', 'colors', 'typography', 'spaces', 'buttons', 'blocks', 'boxes', 'flex'] %}
                     <li><a href="#{{ name }}">{{ name|capitalize }}</a></li>
                     {% endfor %}
                 </ul>
@@ -60,9 +60,10 @@
 
 {% include 'components/install.html' %}
 {% include 'components/vocabulary.html' %}
+{% include 'components/colors.html' %}
 {% include 'components/typography.html' %}
-{% include 'components/buttons.html' %}
 {% include 'components/spaces.html' %}
+{% include 'components/buttons.html' %}
 {% include 'components/blocks.html' %}
 {% include 'components/boxes.html' %}
 {% include 'components/flex.html' %}

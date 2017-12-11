@@ -38,9 +38,7 @@ $sv_foundation_support: 6 !default;
 /// `border-width` and `border-style`.
 ///
 /// Every properties starting with `hover-` are obviously used for hover event.
-/// We recommend you to never define hover properties on default color
-/// scheme else it will apply hover property values as default and force you
-/// to define hover properties for every other color schemes.
+/// Hover properties are not used with default color scheme.
 ///
 /// For consistent naming, we recommend to allways name your color scheme
 /// based on their background color, like `$white-color-scheme` for a scheme
@@ -53,10 +51,10 @@ $sv_foundation_support: 6 !default;
 /// @group models
 ///
 /// @prop {Color} background [null]
-///   Background color to apply.
+///   Background to apply.
 ///
 /// @prop {Color} hover-background [null]
-///   Background color to apply on hover event.
+///   Background to apply on hover event.
 ///
 /// @prop {Color} font-color [null]
 ///   Font color to apply.

@@ -6150,6 +6150,43 @@ a.thumbnail image {
  * Globals for variables that don't fit in any specific component
  */
 /*
+ *
+ * Base colors
+ *
+ */
+.bg-white {
+  background: #ffffff !important;
+}
+
+.bg-black {
+  background: #000000 !important;
+}
+
+.bg-lightskyblue {
+  background: #87cefa !important;
+}
+
+.bg-snow1 {
+  background: #fffafa !important;
+}
+
+.bg-lightskyblue-bordered {
+  background: #87cefa !important;
+}
+
+.bg-lightskyblue-bordered:hover {
+  background: #00688b !important;
+}
+
+.bg-snow1-bordered {
+  background: #fffafa !important;
+}
+
+.bg-snow1-bordered:hover {
+  background: #fff0f0 !important;
+}
+
+/*
  * Default component settings
  */
 /*
