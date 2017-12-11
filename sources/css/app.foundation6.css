@@ -7220,11 +7220,6 @@ img.expanded {
  * Sections
  *
  */
-.block {
-  color: #404040;
-  background: #ffffff;
-}
-
 .block:not(.delegate) {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -7542,209 +7537,214 @@ img.expanded {
   padding: 0;
 }
 
-.block h1, .block .title-1 {
-  color: #404040;
-}
-
-.block h2, .block .title-2 {
-  color: #404040;
-}
-
-.block h3, .block .title-3 {
-  color: #404040;
-}
-
-.block h4, .block .title-4 {
-  color: #404040;
-}
-
-.block h5, .block .title-5 {
-  color: #404040;
-}
-
-.block h6, .block .title-6 {
-  color: #404040;
-}
-
-.block.white {
+.block:not(.transparent) {
   color: #404040;
   background: #ffffff;
 }
 
-.block.white h1, .block.white .title-1 {
+.block:not(.transparent) h1, .block:not(.transparent) .title-1 {
   color: #404040;
 }
 
-.block.white h2, .block.white .title-2 {
+.block:not(.transparent) h2, .block:not(.transparent) .title-2 {
   color: #404040;
 }
 
-.block.white h3, .block.white .title-3 {
+.block:not(.transparent) h3, .block:not(.transparent) .title-3 {
   color: #404040;
 }
 
-.block.white h4, .block.white .title-4 {
+.block:not(.transparent) h4, .block:not(.transparent) .title-4 {
   color: #404040;
 }
 
-.block.white h5, .block.white .title-5 {
+.block:not(.transparent) h5, .block:not(.transparent) .title-5 {
   color: #404040;
 }
 
-.block.white h6, .block.white .title-6 {
+.block:not(.transparent) h6, .block:not(.transparent) .title-6 {
   color: #404040;
 }
 
-.block.black {
+.block:not(.transparent).white {
+  color: #404040;
+  background: #ffffff;
+}
+
+.block:not(.transparent).white h1, .block:not(.transparent).white .title-1 {
+  color: #404040;
+}
+
+.block:not(.transparent).white h2, .block:not(.transparent).white .title-2 {
+  color: #404040;
+}
+
+.block:not(.transparent).white h3, .block:not(.transparent).white .title-3 {
+  color: #404040;
+}
+
+.block:not(.transparent).white h4, .block:not(.transparent).white .title-4 {
+  color: #404040;
+}
+
+.block:not(.transparent).white h5, .block:not(.transparent).white .title-5 {
+  color: #404040;
+}
+
+.block:not(.transparent).white h6, .block:not(.transparent).white .title-6 {
+  color: #404040;
+}
+
+.block:not(.transparent).black {
   color: #ffffff;
   background: #000000;
 }
 
-.block.black h1, .block.black .title-1 {
+.block:not(.transparent).black h1, .block:not(.transparent).black .title-1 {
   color: #ffffff;
 }
 
-.block.black h2, .block.black .title-2 {
+.block:not(.transparent).black h2, .block:not(.transparent).black .title-2 {
   color: #ffffff;
 }
 
-.block.black h3, .block.black .title-3 {
+.block:not(.transparent).black h3, .block:not(.transparent).black .title-3 {
   color: #ffffff;
 }
 
-.block.black h4, .block.black .title-4 {
+.block:not(.transparent).black h4, .block:not(.transparent).black .title-4 {
   color: #ffffff;
 }
 
-.block.black h5, .block.black .title-5 {
+.block:not(.transparent).black h5, .block:not(.transparent).black .title-5 {
   color: #ffffff;
 }
 
-.block.black h6, .block.black .title-6 {
+.block:not(.transparent).black h6, .block:not(.transparent).black .title-6 {
   color: #ffffff;
 }
 
-.block.lightskyblue {
+.block:not(.transparent).lightskyblue {
   color: #00688b;
   background: #87cefa;
 }
 
-.block.lightskyblue h1, .block.lightskyblue .title-1 {
+.block:not(.transparent).lightskyblue h1, .block:not(.transparent).lightskyblue .title-1 {
   color: #00688b;
 }
 
-.block.lightskyblue h2, .block.lightskyblue .title-2 {
+.block:not(.transparent).lightskyblue h2, .block:not(.transparent).lightskyblue .title-2 {
   color: #00688b;
 }
 
-.block.lightskyblue h3, .block.lightskyblue .title-3 {
+.block:not(.transparent).lightskyblue h3, .block:not(.transparent).lightskyblue .title-3 {
   color: #00688b;
 }
 
-.block.lightskyblue h4, .block.lightskyblue .title-4 {
+.block:not(.transparent).lightskyblue h4, .block:not(.transparent).lightskyblue .title-4 {
   color: #00688b;
 }
 
-.block.lightskyblue h5, .block.lightskyblue .title-5 {
+.block:not(.transparent).lightskyblue h5, .block:not(.transparent).lightskyblue .title-5 {
   color: #00688b;
 }
 
-.block.lightskyblue h6, .block.lightskyblue .title-6 {
+.block:not(.transparent).lightskyblue h6, .block:not(.transparent).lightskyblue .title-6 {
   color: #00688b;
 }
 
-.block.lightskyblue a:not(.button) {
+.block:not(.transparent).lightskyblue a:not(.button) {
   color: #ffffff;
 }
 
-.block.snow1 {
+.block:not(.transparent).snow1 {
   color: #404040;
   background: #fffafa;
 }
 
-.block.snow1 h1, .block.snow1 .title-1 {
+.block:not(.transparent).snow1 h1, .block:not(.transparent).snow1 .title-1 {
   color: #404040;
 }
 
-.block.snow1 h2, .block.snow1 .title-2 {
+.block:not(.transparent).snow1 h2, .block:not(.transparent).snow1 .title-2 {
   color: #404040;
 }
 
-.block.snow1 h3, .block.snow1 .title-3 {
+.block:not(.transparent).snow1 h3, .block:not(.transparent).snow1 .title-3 {
   color: #404040;
 }
 
-.block.snow1 h4, .block.snow1 .title-4 {
+.block:not(.transparent).snow1 h4, .block:not(.transparent).snow1 .title-4 {
   color: #404040;
 }
 
-.block.snow1 h5, .block.snow1 .title-5 {
+.block:not(.transparent).snow1 h5, .block:not(.transparent).snow1 .title-5 {
   color: #404040;
 }
 
-.block.snow1 h6, .block.snow1 .title-6 {
+.block:not(.transparent).snow1 h6, .block:not(.transparent).snow1 .title-6 {
   color: #404040;
 }
 
-.block.lightskyblue-bordered {
+.block:not(.transparent).lightskyblue-bordered {
   color: #00688b;
   background: #87cefa;
 }
 
-.block.lightskyblue-bordered h1, .block.lightskyblue-bordered .title-1 {
+.block:not(.transparent).lightskyblue-bordered h1, .block:not(.transparent).lightskyblue-bordered .title-1 {
   color: #00688b;
 }
 
-.block.lightskyblue-bordered h2, .block.lightskyblue-bordered .title-2 {
+.block:not(.transparent).lightskyblue-bordered h2, .block:not(.transparent).lightskyblue-bordered .title-2 {
   color: #00688b;
 }
 
-.block.lightskyblue-bordered h3, .block.lightskyblue-bordered .title-3 {
+.block:not(.transparent).lightskyblue-bordered h3, .block:not(.transparent).lightskyblue-bordered .title-3 {
   color: #00688b;
 }
 
-.block.lightskyblue-bordered h4, .block.lightskyblue-bordered .title-4 {
+.block:not(.transparent).lightskyblue-bordered h4, .block:not(.transparent).lightskyblue-bordered .title-4 {
   color: #00688b;
 }
 
-.block.lightskyblue-bordered h5, .block.lightskyblue-bordered .title-5 {
+.block:not(.transparent).lightskyblue-bordered h5, .block:not(.transparent).lightskyblue-bordered .title-5 {
   color: #00688b;
 }
 
-.block.lightskyblue-bordered h6, .block.lightskyblue-bordered .title-6 {
+.block:not(.transparent).lightskyblue-bordered h6, .block:not(.transparent).lightskyblue-bordered .title-6 {
   color: #00688b;
 }
 
-.block.lightskyblue-bordered a:not(.button) {
+.block:not(.transparent).lightskyblue-bordered a:not(.button) {
   color: #ffffff;
 }
 
-.block.snow1-bordered {
+.block:not(.transparent).snow1-bordered {
   color: #404040;
   background: #fffafa;
 }
 
-.block.snow1-bordered h1, .block.snow1-bordered .title-1 {
+.block:not(.transparent).snow1-bordered h1, .block:not(.transparent).snow1-bordered .title-1 {
   color: #404040;
 }
 
-.block.snow1-bordered h2, .block.snow1-bordered .title-2 {
+.block:not(.transparent).snow1-bordered h2, .block:not(.transparent).snow1-bordered .title-2 {
   color: #404040;
 }
 
-.block.snow1-bordered h3, .block.snow1-bordered .title-3 {
+.block:not(.transparent).snow1-bordered h3, .block:not(.transparent).snow1-bordered .title-3 {
   color: #404040;
 }
 
-.block.snow1-bordered h4, .block.snow1-bordered .title-4 {
+.block:not(.transparent).snow1-bordered h4, .block:not(.transparent).snow1-bordered .title-4 {
   color: #404040;
 }
 
-.block.snow1-bordered h5, .block.snow1-bordered .title-5 {
+.block:not(.transparent).snow1-bordered h5, .block:not(.transparent).snow1-bordered .title-5 {
   color: #404040;
 }
 
-.block.snow1-bordered h6, .block.snow1-bordered .title-6 {
+.block:not(.transparent).snow1-bordered h6, .block:not(.transparent).snow1-bordered .title-6 {
   color: #404040;
 }
 
@@ -7761,8 +7761,6 @@ img.expanded {
   padding-right: 1.5rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  color: #404040;
-  background: #ffffff;
 }
 
 @media screen and (min-width: 40em) {
@@ -8064,246 +8062,251 @@ img.expanded {
   padding: 0;
 }
 
-.box h1, .box .title-1 {
-  color: #404040;
-}
-
-.box h2, .box .title-2 {
-  color: #404040;
-}
-
-.box h3, .box .title-3 {
-  color: #404040;
-}
-
-.box h4, .box .title-4 {
-  color: #404040;
-}
-
-.box h5, .box .title-5 {
-  color: #404040;
-}
-
-.box h6, .box .title-6 {
-  color: #404040;
-}
-
-.box.white {
+.box:not(.transparent) {
   color: #404040;
   background: #ffffff;
 }
 
-.box.white h1, .box.white .title-1 {
+.box:not(.transparent) h1, .box:not(.transparent) .title-1 {
   color: #404040;
 }
 
-.box.white h2, .box.white .title-2 {
+.box:not(.transparent) h2, .box:not(.transparent) .title-2 {
   color: #404040;
 }
 
-.box.white h3, .box.white .title-3 {
+.box:not(.transparent) h3, .box:not(.transparent) .title-3 {
   color: #404040;
 }
 
-.box.white h4, .box.white .title-4 {
+.box:not(.transparent) h4, .box:not(.transparent) .title-4 {
   color: #404040;
 }
 
-.box.white h5, .box.white .title-5 {
+.box:not(.transparent) h5, .box:not(.transparent) .title-5 {
   color: #404040;
 }
 
-.box.white h6, .box.white .title-6 {
+.box:not(.transparent) h6, .box:not(.transparent) .title-6 {
   color: #404040;
 }
 
-.box.black {
+.box.white:not(.transparent) {
+  color: #404040;
+  background: #ffffff;
+}
+
+.box.white:not(.transparent) h1, .box.white:not(.transparent) .title-1 {
+  color: #404040;
+}
+
+.box.white:not(.transparent) h2, .box.white:not(.transparent) .title-2 {
+  color: #404040;
+}
+
+.box.white:not(.transparent) h3, .box.white:not(.transparent) .title-3 {
+  color: #404040;
+}
+
+.box.white:not(.transparent) h4, .box.white:not(.transparent) .title-4 {
+  color: #404040;
+}
+
+.box.white:not(.transparent) h5, .box.white:not(.transparent) .title-5 {
+  color: #404040;
+}
+
+.box.white:not(.transparent) h6, .box.white:not(.transparent) .title-6 {
+  color: #404040;
+}
+
+.box.black:not(.transparent) {
   color: #ffffff;
   background: #000000;
 }
 
-.box.black h1, .box.black .title-1 {
+.box.black:not(.transparent) h1, .box.black:not(.transparent) .title-1 {
   color: #ffffff;
 }
 
-.box.black h2, .box.black .title-2 {
+.box.black:not(.transparent) h2, .box.black:not(.transparent) .title-2 {
   color: #ffffff;
 }
 
-.box.black h3, .box.black .title-3 {
+.box.black:not(.transparent) h3, .box.black:not(.transparent) .title-3 {
   color: #ffffff;
 }
 
-.box.black h4, .box.black .title-4 {
+.box.black:not(.transparent) h4, .box.black:not(.transparent) .title-4 {
   color: #ffffff;
 }
 
-.box.black h5, .box.black .title-5 {
+.box.black:not(.transparent) h5, .box.black:not(.transparent) .title-5 {
   color: #ffffff;
 }
 
-.box.black h6, .box.black .title-6 {
+.box.black:not(.transparent) h6, .box.black:not(.transparent) .title-6 {
   color: #ffffff;
 }
 
-.box.lightskyblue {
+.box.lightskyblue:not(.transparent) {
   color: #00688b;
   background: #87cefa;
 }
 
-.box.lightskyblue h1, .box.lightskyblue .title-1 {
+.box.lightskyblue:not(.transparent) h1, .box.lightskyblue:not(.transparent) .title-1 {
   color: #00688b;
 }
 
-.box.lightskyblue h2, .box.lightskyblue .title-2 {
+.box.lightskyblue:not(.transparent) h2, .box.lightskyblue:not(.transparent) .title-2 {
   color: #00688b;
 }
 
-.box.lightskyblue h3, .box.lightskyblue .title-3 {
+.box.lightskyblue:not(.transparent) h3, .box.lightskyblue:not(.transparent) .title-3 {
   color: #00688b;
 }
 
-.box.lightskyblue h4, .box.lightskyblue .title-4 {
+.box.lightskyblue:not(.transparent) h4, .box.lightskyblue:not(.transparent) .title-4 {
   color: #00688b;
 }
 
-.box.lightskyblue h5, .box.lightskyblue .title-5 {
+.box.lightskyblue:not(.transparent) h5, .box.lightskyblue:not(.transparent) .title-5 {
   color: #00688b;
 }
 
-.box.lightskyblue h6, .box.lightskyblue .title-6 {
+.box.lightskyblue:not(.transparent) h6, .box.lightskyblue:not(.transparent) .title-6 {
   color: #00688b;
 }
 
-.box.lightskyblue a:not(.button) {
+.box.lightskyblue:not(.transparent) a:not(.button) {
   color: #ffffff;
 }
 
-.box.snow1 {
+.box.snow1:not(.transparent) {
   color: #404040;
   background: #fffafa;
 }
 
-.box.snow1 h1, .box.snow1 .title-1 {
+.box.snow1:not(.transparent) h1, .box.snow1:not(.transparent) .title-1 {
   color: #404040;
 }
 
-.box.snow1 h2, .box.snow1 .title-2 {
+.box.snow1:not(.transparent) h2, .box.snow1:not(.transparent) .title-2 {
   color: #404040;
 }
 
-.box.snow1 h3, .box.snow1 .title-3 {
+.box.snow1:not(.transparent) h3, .box.snow1:not(.transparent) .title-3 {
   color: #404040;
 }
 
-.box.snow1 h4, .box.snow1 .title-4 {
+.box.snow1:not(.transparent) h4, .box.snow1:not(.transparent) .title-4 {
   color: #404040;
 }
 
-.box.snow1 h5, .box.snow1 .title-5 {
+.box.snow1:not(.transparent) h5, .box.snow1:not(.transparent) .title-5 {
   color: #404040;
 }
 
-.box.snow1 h6, .box.snow1 .title-6 {
+.box.snow1:not(.transparent) h6, .box.snow1:not(.transparent) .title-6 {
   color: #404040;
 }
 
-.box.lightskyblue-bordered {
+.box.lightskyblue-bordered:not(.transparent) {
   color: #00688b;
   background: #87cefa;
   border: 1px solid #00688b;
 }
 
-.box.lightskyblue-bordered h1, .box.lightskyblue-bordered .title-1 {
+.box.lightskyblue-bordered:not(.transparent) h1, .box.lightskyblue-bordered:not(.transparent) .title-1 {
   color: #00688b;
 }
 
-.box.lightskyblue-bordered h2, .box.lightskyblue-bordered .title-2 {
+.box.lightskyblue-bordered:not(.transparent) h2, .box.lightskyblue-bordered:not(.transparent) .title-2 {
   color: #00688b;
 }
 
-.box.lightskyblue-bordered h3, .box.lightskyblue-bordered .title-3 {
+.box.lightskyblue-bordered:not(.transparent) h3, .box.lightskyblue-bordered:not(.transparent) .title-3 {
   color: #00688b;
 }
 
-.box.lightskyblue-bordered h4, .box.lightskyblue-bordered .title-4 {
+.box.lightskyblue-bordered:not(.transparent) h4, .box.lightskyblue-bordered:not(.transparent) .title-4 {
   color: #00688b;
 }
 
-.box.lightskyblue-bordered h5, .box.lightskyblue-bordered .title-5 {
+.box.lightskyblue-bordered:not(.transparent) h5, .box.lightskyblue-bordered:not(.transparent) .title-5 {
   color: #00688b;
 }
 
-.box.lightskyblue-bordered h6, .box.lightskyblue-bordered .title-6 {
+.box.lightskyblue-bordered:not(.transparent) h6, .box.lightskyblue-bordered:not(.transparent) .title-6 {
   color: #00688b;
 }
 
-.box.lightskyblue-bordered a:not(.button) {
+.box.lightskyblue-bordered:not(.transparent) a:not(.button) {
   color: #ffffff;
 }
 
-.box.lightskyblue-bordered:hover {
+.box.lightskyblue-bordered:not(.transparent):hover {
   color: #ffffff;
   background: #00688b;
   border: 1px solid #00688b;
 }
 
-.box.lightskyblue-bordered:hover h1, .box.lightskyblue-bordered:hover .title-1 {
+.box.lightskyblue-bordered:not(.transparent):hover h1, .box.lightskyblue-bordered:not(.transparent):hover .title-1 {
   color: #ffffff;
 }
 
-.box.lightskyblue-bordered:hover h2, .box.lightskyblue-bordered:hover .title-2 {
+.box.lightskyblue-bordered:not(.transparent):hover h2, .box.lightskyblue-bordered:not(.transparent):hover .title-2 {
   color: #ffffff;
 }
 
-.box.lightskyblue-bordered:hover h3, .box.lightskyblue-bordered:hover .title-3 {
+.box.lightskyblue-bordered:not(.transparent):hover h3, .box.lightskyblue-bordered:not(.transparent):hover .title-3 {
   color: #ffffff;
 }
 
-.box.lightskyblue-bordered:hover h4, .box.lightskyblue-bordered:hover .title-4 {
+.box.lightskyblue-bordered:not(.transparent):hover h4, .box.lightskyblue-bordered:not(.transparent):hover .title-4 {
   color: #ffffff;
 }
 
-.box.lightskyblue-bordered:hover h5, .box.lightskyblue-bordered:hover .title-5 {
+.box.lightskyblue-bordered:not(.transparent):hover h5, .box.lightskyblue-bordered:not(.transparent):hover .title-5 {
   color: #ffffff;
 }
 
-.box.lightskyblue-bordered:hover h6, .box.lightskyblue-bordered:hover .title-6 {
+.box.lightskyblue-bordered:not(.transparent):hover h6, .box.lightskyblue-bordered:not(.transparent):hover .title-6 {
   color: #ffffff;
 }
 
-.box.snow1-bordered {
+.box.snow1-bordered:not(.transparent) {
   color: #404040;
   background: #fffafa;
   border: 1px solid;
   border-width: 1px 3px;
 }
 
-.box.snow1-bordered h1, .box.snow1-bordered .title-1 {
+.box.snow1-bordered:not(.transparent) h1, .box.snow1-bordered:not(.transparent) .title-1 {
   color: #404040;
 }
 
-.box.snow1-bordered h2, .box.snow1-bordered .title-2 {
+.box.snow1-bordered:not(.transparent) h2, .box.snow1-bordered:not(.transparent) .title-2 {
   color: #404040;
 }
 
-.box.snow1-bordered h3, .box.snow1-bordered .title-3 {
+.box.snow1-bordered:not(.transparent) h3, .box.snow1-bordered:not(.transparent) .title-3 {
   color: #404040;
 }
 
-.box.snow1-bordered h4, .box.snow1-bordered .title-4 {
+.box.snow1-bordered:not(.transparent) h4, .box.snow1-bordered:not(.transparent) .title-4 {
   color: #404040;
 }
 
-.box.snow1-bordered h5, .box.snow1-bordered .title-5 {
+.box.snow1-bordered:not(.transparent) h5, .box.snow1-bordered:not(.transparent) .title-5 {
   color: #404040;
 }
 
-.box.snow1-bordered h6, .box.snow1-bordered .title-6 {
+.box.snow1-bordered:not(.transparent) h6, .box.snow1-bordered:not(.transparent) .title-6 {
   color: #404040;
 }
 
-.box.snow1-bordered:hover {
+.box.snow1-bordered:not(.transparent):hover {
   background: #fff0f0;
   border: 1px solid;
   border-width: 1px 3px;

@@ -59,14 +59,16 @@ $sv-boxes-thickness: () !default;
         // Default colors
         //
         @if $sv-colors-scheme-default != null {
-            @include sv-scheme-colors($sv-colors-scheme-default, $apply-border: true);
+            &:not(.transparent){
+                @include sv-scheme-colors($sv-colors-scheme-default, $apply-border: true);
+            }
         }
 
         //
         // Color variants
         //
         @each $name, $scheme in $sv-colors-schemes {
-            &.#{$name}{
+            &.#{$name}:not(.transparent){
                 @include sv-scheme-colors($scheme, $apply-border: true);
 
                 &:hover{

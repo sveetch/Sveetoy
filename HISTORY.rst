@@ -19,6 +19,7 @@ Version 0.8.0 - Unreleased
 
 * Added behavior to color schemes for button and boxes to support ``hover-`` prefix properties to define rules for ``:hover`` event, close #32;
 * Added ``.bg-***`` classes for every color scheme with ``background`` property, ``hover-background`` is supported also for these classes, close #36;
+* Added transparent feature for block and box, close #37;
 * Changed default ``.flex-grid`` cell size to ``100%``, close #25;
 * Changed border properties support in color schemes so we can use ``border`` shortand, ``border-style``, ``border-width`` and ``border-color``.
 * Changed border properties support in color schemes so font color is not used anymore as a default value;

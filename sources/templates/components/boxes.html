@@ -58,6 +58,31 @@
                 {% endfor %}
             </div>
 
+            <h2>Transparent</h2>
+            <p>Color scheme is only applied to element without <code>.transparent</code> feature so they can just inherit from parent properties.</p>
+            <div class="flex-grid marged demo-result">
+                <div class="cell small-100 large-50">
+                    <div class="box lightskyblue">
+                        <h3>.lightskyblue</h3>
+                        {% include '_includes/_inline_markup.html' %}
+                        <div class="box">
+                            <h4>Default color</h4>
+                            {% include '_includes/_inline_markup.html' %}
+                        </div>
+                    </div>
+                </div>
+                <div class="cell small-100 large-50">
+                    <div class="box lightskyblue">
+                        <h3>.lightskyblue</h3>
+                        {% include '_includes/_inline_markup.html' %}
+                        <div class="box transparent">
+                            <h4>.transparent</h4>
+                            {% include '_includes/_inline_markup.html' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

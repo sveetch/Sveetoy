@@ -50,18 +50,20 @@ $include-sv-blocks: $include-sv-classes !default;
             padding: 0;
         }
 
-        //
-        // Default colors
-        //
-        @if $sv-colors-scheme-default != null {
-            @include sv-scheme-colors($sv-colors-scheme-default);
-        }
-        //
-        // Color variants
-        //
-        @each $name, $scheme in $sv-colors-schemes {
-            &.#{$name}{
-                @include sv-scheme-colors($scheme);
+        &:not(.transparent){
+            //
+            // Default colors
+            //
+            @if $sv-colors-scheme-default != null {
+                @include sv-scheme-colors($sv-colors-scheme-default);
+            }
+            //
+            // Color variants
+            //
+            @each $name, $scheme in $sv-colors-schemes {
+                &.#{$name}{
+                    @include sv-scheme-colors($scheme);
+                }
             }
         }
     }
