@@ -10,7 +10,7 @@
     <link href="//fonts.googleapis.com/css?family=Overlock+SC%7CRoboto:100,400,700,900" rel="stylesheet">
     <meta name="robots" content="index,follow,all">
 
-        <link rel="stylesheet" href="./static/css/app.foundation6.min.css?e1e00d1a">
+        <link rel="stylesheet" href="./static/css/app.foundation6.min.css?29f0cff0">
         
         <script src="./static/js/modernizr_f6.min.js?c9eb8d85"></script>
         
@@ -38,11 +38,13 @@
                     
                     <li><a href="#vocabulary">Vocabulary</a></li>
                     
+                    <li><a href="#colors">Colors</a></li>
+                    
                     <li><a href="#typography">Typography</a></li>
                     
-                    <li><a href="#buttons">Buttons</a></li>
-                    
                     <li><a href="#spaces">Spaces</a></li>
+                    
+                    <li><a href="#buttons">Buttons</a></li>
                     
                     <li><a href="#blocks">Blocks</a></li>
                     
@@ -82,7 +84,7 @@
                     <a href="http://sveetch.github.io/Sveetoy/api/" class="button lightskyblue" target="blank">Mixins and variables documentation</a>
                 </div>
                 <div class="small-12 medium-6 columns medium-text-left v-space-tiny">
-                    <a href="http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.8.0-pre.4.zip" class="button">Download version 0.8.0-pre.4 (ZIP)</a>
+                    <a href="http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.8.0.zip" class="button">Download version 0.8.0 (ZIP)</a>
                 </div>
                 <div class="small-12 columns text-center v-space-tiny">
                     <a href="https://github.com/sveetch/Sveetoy/blob/master/HISTORY.rst" class="button snow1" target="blank">See changelog and older packages in history file</a>
@@ -160,6 +162,30 @@
             </div>
         </div>
     </div>
+</div>
+<div id="colors" class="block demo-block" data-magellan-target="colors">
+    <div class="row larger demo-introduction">
+        <div class="small-12 columns">
+            <h1 class="text-upper">Colors</h1>
+            <p>Sveetoy enforce color policy by defining every color stuff in color schemes so they are usable in other components like blocks, boxes, buttons, etc..</p>
+
+            <p>There is also a basic component that just generate helper class like <code>.bg-NAME</code> where <code>NAME</code> is the color scheme name. These classes are only created for color scheme with a <code>background</code> property.</p>
+
+            <p>You can find every available color scheme property from <a href="http://sveetch.github.io/Sveetoy/api/#models-variable-Color scheme model" target="blank">color scheme model documentation</a>.</p>
+
+            <p>Colors you will see in this page is just a demonstration, Sveetoy default settings has no color scheme defined and sample settings only define a black and a white color schemes.</p>
+
+            <p>Note than <code>transparent</code> is a reserved keyword than you should not use to define your color scheme names. Commonly this word is used as a feature in some component to avoid using any color and just inherit from parent rules.</p>
+            <dl>
+                <dt>Helper classes can be disabled with</dt>
+                <dd><code>$include-sv-colors: false;</code></dd>
+
+                <dt>Helper classes source location</dt>
+                <dd><code>sveetoy/components/_colors.scss</code></dd>
+            </dl>
+        </div>
+    </div>
+
 </div>
 <div id="typography" class="block demo-block" data-magellan-target="typography">
     <div class="row larger demo-introduction">
@@ -274,13 +300,13 @@
             <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are built from <code>$sv-smalls</code>.</p>
             <div class="demo-result v-space-tiny">
                 
-                <p><code>.small</code> <small class="small">Imperdiet nibh auctor nisi vulputate leo dis, ultricies feugiat nisi pretium dolor, aptent curae viverra.</small></p>
+                <p><code>.small</code> <small class="small">Aliquet magnis tristique nostra quam lorem nisl est, et donec amet mi eget, condimentum turpis.</small></p>
                 
-                <p><code>.medium</code> <small class="medium">Aliquet ridiculus aliquam quam ut, nisl viverra auctor pharetra habitasse, fermentum hymenaeos per justo et.</small></p>
+                <p><code>.medium</code> <small class="medium">Per curae venenatis potenti metus fusce potenti, scelerisque ullamcorper sociosqu placerat, luctus natoque at fames.</small></p>
                 
-                <p><code>.big</code> <small class="big">Rutrum enim accumsan bibendum nascetur primis, hymenaeos id sapien lectus lobortis, ridiculus viverra accumsan litora.</small></p>
+                <p><code>.big</code> <small class="big">Duis accumsan lacinia vivamus sociosqu senectus, nullam sodales dictum pellentesque pede, rutrum vel at lobortis.</small></p>
                 
-                <p>Condimentum eros dolor rutrum dignissim curae varius quisque, platea per congue class hymenaeos, et erat.</p>
+                <p>Ligula suspendisse netus nec egestas leo tincidunt nec, cubilia ligula turpis fusce lacinia, nec adipiscing.</p>
             </div>
         </div>
     </div>
@@ -595,145 +621,6 @@
         </div>
     </div>
 </div>
-<div id="buttons" class="block demo-block" data-magellan-target="buttons">
-    <div class="row larger demo-introduction">
-        <div class="small-12 columns">
-            <h1 class="text-upper">Buttons</h1>
-            <p>This component provides some features for buttons.</p>
-
-            <p>Also there is a new rule that prevent buttons to have a bottom margin if they are the last child of a <code>div</code>, <code>p</code>, <code>dd</code>, <code>li</code> element.</p>
-
-            <dl>
-                <dt>Can be disabled with</dt>
-                <dd><code>$include-sv-buttons: false;</code></dd>
-
-                <dt>Source location</dt>
-                <dd><code>sveetoy/components/_buttons.scss</code></dd>
-            </dl>
-        </div>
-    </div>
-
-    <div class="row larger">
-
-        <div class="small-12 columns">
-            <h2>Important</h2>
-            <p>Make the button text stronger and uppercase.</p>
-            <div class="demo-result v-space-tiny">
-                <div class="row">
-                    
-                    <div class="large-4 columns">
-                        <a href="" class="button">.button</a>
-                    </div>
-                    
-                    <div class="large-4 columns end">
-                        <a href="" class="button important">.button.important</a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row larger">
-        <div class="small-12 columns">
-            <h2>Sizes</h2>
-            <p>Add <code>.full</code> feature that act like <code>.expand</code> but preserve normal horizontal padding.</p>
-            <div class="demo-result v-space-tiny">
-                <div class="row">
-                    <div class="small-12 columns">
-                        <a href="" class="button full">.button.full</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row larger">
-        <div class="small-12 columns">
-            <h2>Paddings</h2>
-            <p>Add <code>.modest</code> feature so the button padding are divided by two or less, it depend from size definitions in <code>$sv-button-modests</code>.</p>
-            <div class="demo-result v-space-tiny">
-                <div class="row">
-                    
-                    <div class="large-4 columns">
-                        <a href="" class="button">.button</a>
-                    </div>
-                    
-                    <div class="large-4 columns">
-                        <a href="" class="button small modest">.button.small.modest</a>
-                    </div>
-                    
-                    <div class="large-4 columns">
-                        <a href="" class="button modest">.button.modest</a>
-                    </div>
-                    
-                    <div class="large-4 columns">
-                        <a href="" class="button large modest">.button.large.modest</a>
-                    </div>
-                    
-                    <div class="large-4 columns">
-                        <a href="" class="button small modest radius">.button.small.modest.radius</a>
-                    </div>
-                    
-                    <div class="large-4 columns end">
-                        <a href="" class="button modest round">.button.modest.round</a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row larger">
-        <div class="small-12 columns">
-            <h2>Colors</h2>
-            <p>Button color features are builded from <code>$sv-button-colors-schemes</code> that is on the same format than <code>$sv-colors-schemes</code> and support border and hover properties from color schemes.</p>
-            <div class="demo-result v-space-tiny">
-                <div class="row">
-                    
-                    <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button">.button</a>
-                    </div>
-                    
-                    <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button white">.button.white</a>
-                    </div>
-                    
-                    <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button black">.button.black</a>
-                    </div>
-                    
-                    <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button snow1">.button.snow1</a>
-                    </div>
-                    
-                    <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button snow1 disabled">.button.snow1.disabled</a>
-                    </div>
-                    
-                    <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button snow1-bordered">.button.snow1-bordered</a>
-                    </div>
-                    
-                    <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button lightskyblue">.button.lightskyblue</a>
-                    </div>
-                    
-                    <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button lightskyblue disabled">.button.lightskyblue.disabled</a>
-                    </div>
-                    
-                    <div class="large-4 columns end v-space-tiny">
-                        <a href="" class="button lightskyblue-bordered">.button.lightskyblue-bordered</a>
-                    </div>
-                    
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</div>
 <div id="spaces" class="block demo-block" data-magellan-target="spaces">
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
@@ -975,6 +862,145 @@
     </div>
 
 </div>
+<div id="buttons" class="block demo-block" data-magellan-target="buttons">
+    <div class="row larger demo-introduction">
+        <div class="small-12 columns">
+            <h1 class="text-upper">Buttons</h1>
+            <p>This component provides some features for buttons.</p>
+
+            <p>Also there is a new rule that prevent buttons to have a bottom margin if they are the last child of a <code>div</code>, <code>p</code>, <code>dd</code>, <code>li</code> element.</p>
+
+            <dl>
+                <dt>Can be disabled with</dt>
+                <dd><code>$include-sv-buttons: false;</code></dd>
+
+                <dt>Source location</dt>
+                <dd><code>sveetoy/components/_buttons.scss</code></dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="row larger">
+
+        <div class="small-12 columns">
+            <h2>Important</h2>
+            <p>Make the button text stronger and uppercase.</p>
+            <div class="demo-result v-space-tiny">
+                <div class="row">
+                    
+                    <div class="large-4 columns">
+                        <a href="" class="button">.button</a>
+                    </div>
+                    
+                    <div class="large-4 columns end">
+                        <a href="" class="button important">.button.important</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2>Sizes</h2>
+            <p>Add <code>.full</code> feature that act like <code>.expand</code> but preserve normal horizontal padding.</p>
+            <div class="demo-result v-space-tiny">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <a href="" class="button full">.button.full</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2>Paddings</h2>
+            <p>Add <code>.modest</code> feature so the button padding are divided by two or less, it depend from size definitions in <code>$sv-button-modests</code>.</p>
+            <div class="demo-result v-space-tiny">
+                <div class="row">
+                    
+                    <div class="large-4 columns">
+                        <a href="" class="button">.button</a>
+                    </div>
+                    
+                    <div class="large-4 columns">
+                        <a href="" class="button small modest">.button.small.modest</a>
+                    </div>
+                    
+                    <div class="large-4 columns">
+                        <a href="" class="button modest">.button.modest</a>
+                    </div>
+                    
+                    <div class="large-4 columns">
+                        <a href="" class="button large modest">.button.large.modest</a>
+                    </div>
+                    
+                    <div class="large-4 columns">
+                        <a href="" class="button small modest radius">.button.small.modest.radius</a>
+                    </div>
+                    
+                    <div class="large-4 columns end">
+                        <a href="" class="button modest round">.button.modest.round</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row larger">
+        <div class="small-12 columns">
+            <h2>Colors</h2>
+            <p>Button color features are builded from <code>$sv-button-colors-schemes</code> that is on the same format than <code>$sv-colors-schemes</code> and support border and hover properties from color schemes.</p>
+            <div class="demo-result v-space-tiny">
+                <div class="row">
+                    
+                    <div class="large-4 columns v-space-tiny">
+                        <a href="" class="button">.button</a>
+                    </div>
+                    
+                    <div class="large-4 columns v-space-tiny">
+                        <a href="" class="button white">.button.white</a>
+                    </div>
+                    
+                    <div class="large-4 columns v-space-tiny">
+                        <a href="" class="button black">.button.black</a>
+                    </div>
+                    
+                    <div class="large-4 columns v-space-tiny">
+                        <a href="" class="button snow1">.button.snow1</a>
+                    </div>
+                    
+                    <div class="large-4 columns v-space-tiny">
+                        <a href="" class="button snow1 disabled">.button.snow1.disabled</a>
+                    </div>
+                    
+                    <div class="large-4 columns v-space-tiny">
+                        <a href="" class="button snow1-bordered">.button.snow1-bordered</a>
+                    </div>
+                    
+                    <div class="large-4 columns v-space-tiny">
+                        <a href="" class="button lightskyblue">.button.lightskyblue</a>
+                    </div>
+                    
+                    <div class="large-4 columns v-space-tiny">
+                        <a href="" class="button lightskyblue disabled">.button.lightskyblue.disabled</a>
+                    </div>
+                    
+                    <div class="large-4 columns end v-space-tiny">
+                        <a href="" class="button lightskyblue-bordered">.button.lightskyblue-bordered</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
 <div id="blocks" class="block unpadded demo-block" data-magellan-target="blocks">
     <div class="row larger demo-introduction">
         <div class="small-12 columns box">
@@ -1001,8 +1027,8 @@
                 <h2>.block</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Scelerisque pede dictumst sit at dolor ad etiam, turpis venenatis in eleifend, nunc congue mollis sem, scelerisque laoreet gravida nec, pretium sodales. Litora hymenaeos a maecenas, adipiscing consectetuer in est.</p>
-<p>Libero hendrerit sollicitudin pretium sociis varius praesent cum, congue ad eros libero varius, arcu dapibus duis. Sapien elit facilisis tempus fermentum et, orci per odio netus fringilla non, hac congue cum volutpat bibendum. Primis aenean natoque ipsum, sociis duis quam ipsum mattis.</p>
+                <p>A curabitur integer metus parturient id, tincidunt class natoque nibh, lacinia nonummy aliquam placerat primis, hymenaeos consequat tempor integer maecenas, erat vivamus nisl eros. Pellentesque risus praesent vestibulum dis, torquent pellentesque pretium curabitur, libero enim curabitur molestie sociosqu laoreet.</p>
+<p>Velit facilisi facilisis viverra ligula diam semper neque, eget leo convallis mattis consectetuer, at fames leo semper praesent mauris ullamcorper,. Proin feugiat lacinia ipsum dolor ornare nec, aliquam nisi augue ut etiam, per dictumst augue aliquam taciti, diam rhoncus. Class dignissim ullamcorper mattis vivamus, mollis.</p>
             </div>
         </div>
     </div>
@@ -1013,8 +1039,20 @@
                 <h2>.block.black</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Pede non est aenean eros erat turpis, massa dignissim pede ac sit, iaculis conubia ridiculus sociosqu, sodales diam. Auctor dis inceptos arcu purus nibh lacus, iaculis malesuada egestas magnis erat, augue euismod ipsum curabitur. Eros sollicitudin nisi dis tortor, risus sociosqu montes cras, adipiscing lobortis conubia amet.</p>
-<p>Quis nascetur gravida non parturient eget, cursus commodo convallis risus hendrerit leo cum, dui id enim sit conubia, tempus laoreet donec. Sapien dis nibh tincidunt conubia aliquam, turpis sem hac bibendum eleifend, diam posuere nisl consequat, laoreet nostra eu metus.</p>
+                <p>Proin ipsum netus lacus quisque elementum vulputate, imperdiet fermentum sociosqu nonummy, cras semper potenti sodales blandit hendrerit risus, scelerisque hymenaeos eget at, quisque iaculis. Malesuada varius commodo egestas mollis massa, per venenatis posuere parturient, praesent bibendum pulvinar urna, tincidunt magna venenatis.</p>
+<p>Pharetra imperdiet auctor curabitur arcu ut consequat, accumsan pharetra tristique platea molestie magna dui, tristique odio neque gravida. Pede nibh sem parturient volutpat pellentesque, fringilla urna sem tempus quam libero, interdum lobortis lorem pede cum scelerisque, ad. Aptent class parturient.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="block transparent">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2>.block.transparent</h2>
+                <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+
+                <p>Id dis ridiculus montes blandit commodo pharetra, varius cubilia duis primis, viverra mi dignissim diam pellentesque, penatibus enim consectetuer velit nec. Massa fermentum adipiscing eget molestie lorem, in cubilia nam per cras lacinia facilisis, viverra imperdiet sollicitudin mi orci.</p>
+<p>Erat curabitur natoque sagittis viverra mus, placerat netus pede sociis metus, consequat a eleifend phasellus, purus dictum vivamus lacinia. Eleifend elit parturient nisi congue, purus dolor sem litora interdum, volutpat vivamus dictum vestibulum neque id cubilia primis, justo phasellus inceptos. Nullam risus a.</p>
             </div>
         </div>
     </div>
@@ -1025,8 +1063,8 @@
                 <h2>.block.lightskyblue</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Potenti mollis mauris eu turpis mi eros, porta lorem non ad enim egestas, suscipit sociosqu parturient torquent lobortis pede, vestibulum. Pretium donec lorem vestibulum, mattis parturient natoque varius, ipsum ullamcorper feugiat vel est sodales erat, aenean fringilla curae vehicula, dignissim tempus.</p>
-<p>Tincidunt curae pretium consequat varius facilisi viverra tristique, sodales neque aenean condimentum accumsan, justo sapien ornare urna senectus,. Porta convallis consectetuer sollicitudin, blandit ullamcorper venenatis semper, nisi sit vestibulum sagittis fusce, viverra felis leo commodo. Penatibus enim vestibulum interdum class, donec velit aliquam bibendum, donec hac.</p>
+                <p>Nulla euismod adipiscing erat duis nibh hymenaeos quam, vel sollicitudin lectus porta commodo nam feugiat, consectetuer magnis interdum neque sagittis ultricies, nonummy. Mattis nascetur sem cubilia, phasellus gravida maecenas sapien cras lacinia, volutpat adipiscing mauris commodo, est bibendum placerat aliquet, pellentesque nec.</p>
+<p>Netus cras integer posuere laoreet dictumst egestas, ullamcorper mi nisi hendrerit semper, proin tortor dignissim venenatis quisque, sollicitudin malesuada est at turpis. Torquent tempor sagittis arcu, nec vivamus quisque sapien, cum tempor ipsum tempus auctor, cubilia blandit.</p>
             </div>
         </div>
     </div>
@@ -1037,8 +1075,8 @@
                 <h2>.block.snow1</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Parturient ut congue ac nonummy pharetra aliquet consequat, commodo mus consequat hymenaeos, ad scelerisque etiam nam pede, eleifend aenean in eu,. Senectus integer odio in cursus praesent, convallis felis tempus nibh platea proin risus, et eget per suspendisse torquent ut, phasellus nam.</p>
-<p>Litora mollis sed accumsan non sociis, semper eros facilisis quam curae, ullamcorper vitae libero augue sodales, pulvinar arcu. Vestibulum congue elementum.</p>
+                <p>Class fermentum pede risus diam mattis condimentum, dictum sodales arcu dolor, dui in convallis cubilia, lacus nunc habitasse. Urna molestie lacus suscipit lacinia, eleifend nam convallis commodo, metus venenatis tortor sociis faucibus, montes netus.</p>
+<p>Pulvinar placerat nunc penatibus lacinia nisl fusce, vel quis nisi lacinia venenatis class facilisis, faucibus vulputate senectus. Proin habitasse felis eleifend facilisi quis, congue accumsan porta aptent libero ipsum facilisis. Aenean sapien curae consectetuer dui montes.</p>
             </div>
         </div>
     </div>
@@ -1049,8 +1087,8 @@
                 <h2>.block.wide</h2>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Et lobortis enim consequat morbi amet natoque, magna eu lorem torquent non tortor gravida, nonummy diam felis. Platea cras fringilla tempus ultrices aliquet, mollis nec aliquam nostra, facilisis libero luctus quis, enim tincidunt pellentesque nostra.</p>
-<p>Feugiat vivamus neque class cras sollicitudin pellentesque cum hac, senectus potenti blandit vitae penatibus, dictum per congue lobortis. Dapibus hendrerit a urna diam, elementum nibh class nisl consectetuer nonummy, orci iaculis eros.</p>
+                <p>Nulla odio eros elit porttitor nunc arcu, ultrices penatibus ante vitae, suscipit proin hac in tellus non, adipiscing duis integer mattis dui. Interdum turpis accumsan vestibulum, senectus metus sit curae id duis, pede ipsum egestas.</p>
+<p>Volutpat justo inceptos sit nonummy hendrerit, netus imperdiet turpis ornare aptent ultricies cursus, porttitor tortor pede platea odio, vivamus neque. Fames per fusce egestas dui enim, pharetra praesent dapibus molestie libero montes, morbi pellentesque massa torquent mus ultricies,. Mauris placerat duis dapibus elit urna, vulputate semper aptent class.</p>
             </div>
         </div>
     </div>
@@ -1065,8 +1103,8 @@
 
                     <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                    <p>Neque primis sociis lectus risus velit platea tempor, eros neque mattis ultricies luctus litora, tempor sapien nullam leo habitant odio,. Mi diam penatibus ac faucibus auctor ligula, pede sit justo facilisi.</p>
-<p>Odio duis nostra venenatis tristique eget, ut dignissim volutpat vel lobortis venenatis, ante tincidunt potenti sociis, interdum purus maecenas vulputate. Commodo senectus tincidunt urna tempus varius.</p>
+                    <p>Sapien dapibus lectus dolor posuere facilisis, auctor senectus litora duis primis tellus vulputate sodales, quisque mattis cras quis. Aliquet ultricies amet.</p>
+<p>Morbi quisque primis justo dui conubia, sollicitudin nisi condimentum rutrum, sed arcu faucibus consectetuer cum auctor congue. Lacinia cum nullam.</p>
                 </div>
             </div>
         </div>
@@ -1216,6 +1254,31 @@
                 
             </div>
 
+            <h2>Transparent</h2>
+            <p>Color scheme is only applied to element without <code>.transparent</code> feature so they can just inherit from parent properties.</p>
+            <div class="flex-grid marged demo-result">
+                <div class="cell small-100 large-50">
+                    <div class="box lightskyblue">
+                        <h3>.lightskyblue</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                        <div class="box">
+                            <h4>Default color</h4>
+                            <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell small-100 large-50">
+                    <div class="box lightskyblue">
+                        <h3>.lightskyblue</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                        <div class="box transparent">
+                            <h4>.transparent</h4>
+                            <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
@@ -1338,27 +1401,27 @@
                     
                     <div class="cell small-100 medium-33 v-align-start">
                         <p><code>.v-align-start</code></p>
-                        <p>Fringilla montes eleifend lectus aptent in, vulputate quis purus curae, curabitur condimentum mi consectetuer nascetur.</p>
+                        <p>Venenatis phasellus ipsum risus mus nibh, pulvinar fermentum litora auctor faucibus dapibus, at consectetuer arcu.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-end">
                         <p><code>.v-align-end</code></p>
-                        <p>Mauris platea risus sagittis odio enim, felis sed aliquam commodo, nullam ipsum felis maecenas, tristique.</p>
+                        <p>Fringilla viverra elementum integer sagittis id mus, suscipit consectetuer curabitur adipiscing, id faucibus curae justo.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-center">
                         <p><code>.v-align-center</code></p>
-                        <p>Porttitor ante venenatis cras condimentum nascetur, ac tellus vulputate class volutpat, nascetur id vivamus lacinia.</p>
+                        <p>Cubilia fusce in arcu nulla ullamcorper, torquent felis nam quam fringilla, potenti nisi dapibus vulputate.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-around">
                         <p><code>.v-align-around</code></p>
-                        <p>Penatibus lorem quam non curabitur nibh inceptos nisl, ante iaculis morbi iaculis lectus per, lacinia.</p>
+                        <p>Tristique ornare pulvinar pede natoque hymenaeos, habitant augue erat ligula sagittis nunc pede, nostra scelerisque.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-between">
                         <p><code>.v-align-between</code></p>
-                        <p>Facilisis eget suscipit odio montes, velit pulvinar lorem risus, aenean nam convallis egestas, curae hac.</p>
+                        <p>Tristique cum lobortis fames duis nostra hymenaeos, ultrices morbi imperdiet eleifend donec proin lectus, id.</p>
                     </div>
                     
                 </div>
