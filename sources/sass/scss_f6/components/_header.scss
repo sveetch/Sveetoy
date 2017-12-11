@@ -51,11 +51,11 @@
 
             &.active{
                 color: $white;
-                background-color: map-get($foundation-palette, "primary");
+                background: map-get($foundation-palette, "primary");
             }
 
             &:not(.active):hover{
-                background-color: lighten($topbar-background, 5%);
+                background: lighten($topbar-background, 5%);
             }
         }
     }

@@ -21,6 +21,9 @@ Version 0.8.0 - Unreleased
 * Changed border properties support in color schemes so we can use ``border`` shortand, ``border-style``, ``border-width`` and ``border-color``.
 * Changed border properties support in color schemes so font color is not used anymore as a default value;
 * Added behavior to color schemes for button and boxes to support ``hover-`` prefix properties to define rules for ``:hover`` event, close #32;
+* Renamed ``background-color`` property from color scheme to ``background`` so now we can define more complex background;
+* Changed ``font-color``  behavior so it is not defined anymore automatically with inverted color from ``background`` since it may not contain correct color, close #35;
+
 
 Version 0.7.2 - 2017/11/13
 --------------------------

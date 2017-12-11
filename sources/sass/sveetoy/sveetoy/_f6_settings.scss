@@ -69,11 +69,12 @@ $gray25: #404040;
 
 $white-color-scheme: (
     font-color: $gray25,
-    background-color: $white,
+    background: $white,
 );
 
 $black-color-scheme: (
-    background-color: $black,
+    font-color: $white,
+    background: $black,
 );
 
 $sv-colors-scheme-default: $white-color-scheme;

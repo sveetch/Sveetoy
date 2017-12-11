@@ -18,30 +18,31 @@ $sv-breakpoints: (
 
 $white-color-scheme: (
     font-color: $gray25,
-    background-color: $white,
+    background: $white,
 );
 $black-color-scheme: (
-    background-color: $black,
+    font-color: $white,
+    background: $black,
 );
 $snow1-color-scheme: (
     font-color: $gray25,
-    background-color: $snow1,
+    background: $snow1,
 );
 $lightskyblue-color-scheme: (
     font-color: $deepskyblue4,
     link-color: $white,
-    background-color: $lightskyblue,
+    background: $lightskyblue,
 );
 
 $snow1-bordered-color-scheme: map-merge($snow1-color-scheme, (
     border: 1px solid,
     border-width: 1px 3px,
-    hover-background-color: darken($snow1, 2%),
+    hover-background: darken($snow1, 2%),
 ));
 
 $lightskyblue-bordered-color-scheme: map-merge($lightskyblue-color-scheme, (
     border: 1px solid $deepskyblue4,
-    hover-background-color: $deepskyblue4,
+    hover-background: $deepskyblue4,
     hover-font-color: $white,
 ));
 

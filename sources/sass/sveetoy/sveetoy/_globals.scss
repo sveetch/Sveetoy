@@ -26,11 +26,11 @@ $sv_foundation_support: 6 !default;
 ///
 /// This documentate model for available properties in a color scheme.
 ///
-/// Either `font-color` or `background-color` are required, every other
+/// Either `font-color` or `background` are required, every other
 /// properties are optional.
 ///
-/// `background-color` is the only required property and possibly also
-/// `font-color` if `background-color` is set to `transparent` or `inherit`.
+/// `background` is the only required property and possibly also
+/// `font-color` if `background` is set to `transparent` or `inherit`.
 ///
 /// `border` property is the recommended way to define borders but it defines
 /// the same values to every side. If you need to define different values for
@@ -52,10 +52,10 @@ $sv_foundation_support: 6 !default;
 ///
 /// @group models
 ///
-/// @prop {Color} background-color [null]
+/// @prop {Color} background [null]
 ///   Background color to apply.
 ///
-/// @prop {Color} hover-background-color [null]
+/// @prop {Color} hover-background [null]
 ///   Background color to apply on hover event.
 ///
 /// @prop {Color} font-color [null]
@@ -120,13 +120,13 @@ $sv_foundation_support: 6 !default;
 /// @example scss
 ///   $white-color-scheme: (
 ///       font-color: #000000,
-///       background-color: #ffffff,
+///       background: #ffffff,
 ///   );
 ///
 ///   $black-color-scheme: (
 ///       font-color: #ffffff,
-///       background-color: #000000,
-///       hover-background-color: #ffffff,
+///       background: #000000,
+///       hover-background: #ffffff,
 ///       link-color: #ff0000,
 ///       link-color-hover: #ff00ee,
 ///       h1-color: #f0f0f0,
@@ -199,5 +199,3 @@ $sv-colors-schemes: () !default;
 ///   );
 ///
 $sv-breakpoints: () !default;
-
-
