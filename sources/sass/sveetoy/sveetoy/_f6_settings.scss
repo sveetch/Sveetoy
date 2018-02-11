@@ -8,7 +8,7 @@
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 // This part is a copy of some required Foundation settings used in Sveetoy
-// settings. You may not need to include them depending from your Foundation
+// settings. You should not need to include them depending from your Foundation
 // usage.
 $small-range: (0em, 40em);
 $medium-range: (40.063em, 63.9375em);
@@ -18,11 +18,11 @@ $xxlarge-range: (120.063em);
 
 $screen: "only screen";
 
-$small-up: $screen;
-$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
-$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
-$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
-$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
+$small-up: screen;
+$medium-up: unquote("screen and #{breakpoint(medium)}");
+$large-up: unquote("screen and #{breakpoint(large)}");
+$xlarge-up: unquote("screen and #{breakpoint(xlarge)}");
+$xxlarge-up: unquote("screen and #{breakpoint(xxlarge)}");
 
 
 // A0. Sveetoys component enabler
