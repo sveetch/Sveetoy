@@ -2,6 +2,12 @@
 Changelog
 =========
 
+Version 0.8.1 - Unreleased
+--------------------------
+
+* Added component ``styleguide`` with helper classes ``styleguide-schemes-background-COLORNAME``, close #41;
+
+
 Version 0.8.0 - 2017/12/11
 --------------------------
 

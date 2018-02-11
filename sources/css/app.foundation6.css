@@ -8939,6 +8939,43 @@ ul.arrow.defer li > *:first-child::before {
 }
 
 /*
+ *
+ * Styleguide helpers
+ *
+ */
+.styleguide-schemes-background-white::before {
+  content: "#ffffff";
+}
+
+.styleguide-schemes-background-black::before {
+  content: "#000000";
+}
+
+.styleguide-schemes-background-lightskyblue::before {
+  content: "#87cefa";
+}
+
+.styleguide-schemes-background-snow1::before {
+  content: "#fffafa";
+}
+
+.styleguide-schemes-background-lightskyblue-bordered::before {
+  content: "#87cefa";
+}
+
+.styleguide-schemes-background-lightskyblue-bordered:hover::before {
+  content: "#00688b";
+}
+
+.styleguide-schemes-background-snow1-bordered::before {
+  content: "#fffafa";
+}
+
+.styleguide-schemes-background-snow1-bordered:hover::before {
+  content: "#fff0f0";
+}
+
+/*
  * Demo stuff
  */
 /*

@@ -21,4 +21,19 @@
         </div>
     </div>
 
+
+    <div class="column row larger">
+        <h2>Color backgrounds</h2>
+
+        <div class="flex-grid marged">
+            {% for name in ['black',  'transparent', 'lightskyblue', 'snow1'] %}
+                <div class="cell medium-50 large-33 xlarge-20 v-align-between">
+                    <p><em>.bg-{{ name }}</em> :</p>
+                    <p><small class="styleguide-schemes-background-{% if name %}{{ name }}{% else %}default{% endif %}"></small></p>
+                    <div class="bg-{{ name }}" style="width: 100%; height: 75px;"></div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
 </div>

@@ -22,6 +22,7 @@
         <div class="row">
             <div class="small-12 columns">
                 <h2>.block{% if name %}.{{ name }}{% endif %}</h2>
+                <p><small class="styleguide-schemes-background-{% if name %}{{ name }}{% else %}default{% endif %}"></small></p>
                 {% include '_includes/_inline_markup.html' %}
 
                 {{ lipsum(n=2, html=True, min=20, max=50) }}
