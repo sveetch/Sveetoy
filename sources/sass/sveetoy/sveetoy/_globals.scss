@@ -37,8 +37,9 @@ $sv_foundation_support: 6 !default;
 /// different sides, you will need to do it throught `border-color`,
 /// `border-width` and `border-style`.
 ///
-/// Every properties starting with `hover-` are obviously used for hover event.
-/// Hover properties are not used with default color scheme.
+/// Note that every properties can have a prefixed version like `hover-****`
+/// to use on hover event from container. This is especially used from some
+/// components such as boxes and buttons.
 ///
 /// For consistent naming, we recommend to allways name your color scheme
 /// based on their background color, like `$white-color-scheme` for a scheme
@@ -52,9 +53,6 @@ $sv_foundation_support: 6 !default;
 ///
 /// @prop {Color} background [null]
 ///   Background to apply.
-///
-/// @prop {Color} hover-background [null]
-///   Background to apply on hover event.
 ///
 /// @prop {Color} font-color [null]
 ///   Font color to apply.
@@ -102,18 +100,6 @@ $sv_foundation_support: 6 !default;
 /// @prop {String} border-style [null]
 ///   Border style to apply.
 ///
-/// @prop {Color} hover-border [null]
-///   Border shortand properties to define every values for every sides on hover event.
-///
-/// @prop {Color} hover-border-color [null]
-///   Border color to apply on hover event.
-///
-/// @prop {Number} hover-border-width [null]
-///   Border width to apply on hover event.
-///
-/// @prop {String} hover-border-style [null]
-///   Border style to apply on hover event.
-///
 ///
 /// @example scss
 ///   $white-color-scheme: (
@@ -124,7 +110,6 @@ $sv_foundation_support: 6 !default;
 ///   $black-color-scheme: (
 ///       font-color: #ffffff,
 ///       background: #000000,
-///       hover-background: #ffffff,
 ///       link-color: #ff0000,
 ///       link-color-hover: #ff00ee,
 ///       h1-color: #f0f0f0,
@@ -138,9 +123,6 @@ $sv_foundation_support: 6 !default;
 ///       border-width: 2px,
 ///       border-style: solid,
 ///       border: 1px solid #0000ff,
-///       hover-border-color: #606060,
-///       hover-border-width: 2px,
-///       hover-border-style: solid,
 ///   );
 ///
 $sv-model-color-scheme: () !default;

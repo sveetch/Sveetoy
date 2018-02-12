@@ -22,7 +22,7 @@ help:
 	@echo "  clean                -- to clean your local repository from all installed stuff."
 	@echo "  delpyc               -- to remove all *.pyc files, this is recursive from the current directory."
 	@echo
-	@echo "  release              -- to build ZIP archive for last library version and rebuild the demonstration site for Github."
+	@echo "  release              -- to build ZIP archive for last library version with everything ready and rebuilt for demonstration on Github."
 	@echo
 
 delpyc:

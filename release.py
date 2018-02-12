@@ -18,7 +18,7 @@ from project import __version__
 HEADERS = [
     "// Sveetoy {version}\n",
     "// https://sveetch.github.io/Sveetoy/\n",
-    "// Copyright 2017 David Thenon.\n",
+    "// Copyright 2017-2018 David Thenon.\n",
     "// MIT License\n",
 ]
 

@@ -2,11 +2,13 @@
 Changelog
 =========
 
-Version 0.8.1 - Unreleased
+Version 0.8.1 - 2018/02/12
 --------------------------
 
+* Added some lines about 'hover' support for color scheme model usage in box and button, close #40;
 * Added component ``styleguide`` with helper classes ``styleguide-schemes-background-COLORNAME``, close #41;
-
+* Added ``!important`` mark to all helper classes values, close #42;
+* Fixed wrong mquery in sample settings, close #39;
 
 Version 0.8.0 - 2017/12/11
 --------------------------

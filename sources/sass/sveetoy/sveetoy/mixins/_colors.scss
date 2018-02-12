@@ -4,7 +4,8 @@
 
 
 ///
-/// Include properties from a scheme color to an element.
+/// Include properties from a scheme color to an element. Mainly used to build
+/// blocks and boxes color properties.
 ///
 /// @arg {Map} $scheme [null]
 ///   A [`Color scheme model`](#models-variable-Color scheme model).
@@ -14,7 +15,9 @@
 ///   ignored.
 ///
 /// @arg {String} $prefix [null]
-///   If not null will prefix the property names to search.
+///   If not null will prefix the property names to search. This is used in
+///   some component like boxes and buttons to apply `hover` behaviors for
+///   every scheme properties.
 ///
 /// @example scss
 ///   $white-color-scheme: (

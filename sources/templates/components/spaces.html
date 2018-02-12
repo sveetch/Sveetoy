@@ -2,16 +2,23 @@
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="text-upper">Spaces</h1>
-            <p>This component add styles to apply paddings using space rythmic defined in map <code>$sv-spaces</code>.</p>
-            <p>Padding can be applied for both sides on vertical or horizontal axes or optionally on only one side.</p>
+            <p>This component create some class helpers to apply paddings or margins using space rythmic
+            defined in map <code>$sv-spaces</code>. All of these classes use the <code>!important</code>.</p>
+
             <p>There are many space sizes available and each of them have their own breakpoint sizes.</p>
 
             <dl>
                 <dt>Can be disabled with</dt>
                 <dd><code>$include-sv-spaces: false;</code></dd>
 
+                <dt>Create size classes from</dt>
+                <dd><code>$sv-spaces</code></dd>
+
                 <dt>Source location</dt>
                 <dd><code>sveetoy/components/_spaces.scss</code></dd>
+
+                <dt>!important mark usage can be disabled with</dt>
+                <dd><code>$sv-spaces-helpers-important: false;</code></dd>
             </dl>
         </div>
     </div>

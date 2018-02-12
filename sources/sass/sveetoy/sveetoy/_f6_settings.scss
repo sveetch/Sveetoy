@@ -151,31 +151,31 @@ $sv-space-tiny: (
     medium: 0.75rem,
     large: 1rem,
     xlarge: 1.5rem,
-) !default;
+);
 $sv-space-short: (
     small: 1rem,
     medium: 1.25rem,
     large: 2rem,
     xlarge: 2.5rem,
-) !default;
+);
 $sv-space-normal: (
     small: 1.5rem,
     medium: 2rem,
     large: 3rem,
     xlarge: 4rem,
-) !default;
+);
 $sv-space-large: (
     small: 2rem,
     medium: 3rem,
     large: 4rem,
     xlarge: 5rem,
-) !default;
+);
 $sv-space-wide: (
     small: 3rem,
     medium: 4.5rem,
     large: 6rem,
     xlarge: 8rem,
-) !default;
+);
 
 // Space scheme
 $sv-spaces: (
@@ -184,7 +184,9 @@ $sv-spaces: (
     normal: $sv-space-normal,
     large: $sv-space-large,
     wide: $sv-space-wide,
-) !default;
+);
+
+$sv-spaces-helpers-important: true;
 
 
 // Define button variables using default Foundation values

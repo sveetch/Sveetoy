@@ -17,6 +17,13 @@
 $include-sv-spaces: $include-sv-classes !default;
 
 
+/// Mark all spaces helpers with `!important` or not. Default is `true`.
+///
+/// @type Bool
+///
+$sv-spaces-helpers-important: true !default;
+
+
 /// Enabled size schemes
 ///
 /// Each property is a map of a space size with its enabled breakpoint (which
@@ -72,11 +79,11 @@ $sv-spaces: () !default;
     //
     @each $name, $definitions in $sv-spaces{
         .v-divider-#{$name}{
-            @include sv-apply-spaces($definitions, $axis: "vertical", $sides: ("end"), $prop: "margin");
+            @include sv-apply-spaces($definitions, $axis: "vertical", $sides: ("end"), $prop: "margin", $important: $sv-spaces-helpers-important);
         }
 
         .h-divider-#{$name}{
-            @include sv-apply-spaces($definitions, $axis: "horizontal", $sides: ("end"), $prop: "margin");
+            @include sv-apply-spaces($definitions, $axis: "horizontal", $sides: ("end"), $prop: "margin", $important: $sv-spaces-helpers-important);
         }
     }
 
@@ -85,17 +92,7 @@ $sv-spaces: () !default;
     //
     @each $name, $definitions in $sv-spaces{
         .v-space-#{$name}{
-            @include sv-apply-spaces($definitions, $axis: "vertical");
-        }
-    }
-    // 'Top/Bottom only' for vertical spaces
-    [class^="v-space-"], [class*=" v-space-"]{
-        &.top-only{
-            padding-bottom: 0;
-        }
-
-        &.bottom-only{
-            padding-top: 0;
+            @include sv-apply-spaces($definitions, $axis: "vertical", $important: $sv-spaces-helpers-important);
         }
     }
 
@@ -104,17 +101,31 @@ $sv-spaces: () !default;
     //
     @each $name, $definitions in $sv-spaces{
         .h-space-#{$name}{
-            @include sv-apply-spaces($definitions, $axis: "horizontal");
+            @include sv-apply-spaces($definitions, $axis: "horizontal", $important: $sv-spaces-helpers-important);
         }
     }
+
+    $important-mark: if($sv-spaces-helpers-important, !important, null);
+
+    // 'Top/Bottom only' for vertical spaces
+    [class^="v-space-"], [class*=" v-space-"]{
+        &.top-only{
+            padding-bottom: 0 $important-mark;
+        }
+
+        &.bottom-only{
+            padding-top: 0 $important-mark;
+        }
+    }
+
     // 'Left/Right only' for horizontal spaces
     [class^="h-space-"], [class*=" h-space-"]{
         &.left-only{
-            padding-right: 0;
+            padding-right: 0 $important-mark;
         }
 
         &.right-only{
-            padding-left: 0;
+            padding-left: 0 $important-mark;
         }
     }
 
