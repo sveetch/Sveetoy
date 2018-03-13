@@ -214,7 +214,7 @@ $sv-hr-colors: () !default;
 ///
 /// @group hr
 ///
-$sv-hr-default-color: #000000;
+$sv-hr-default-color: #000000 !default;
 
 
 /// Available distances for `<hr>` features

@@ -2,6 +2,12 @@
 Changelog
 =========
 
+Version 0.8.2 - 2018/03/13
+--------------------------
+
+* ``$sv-hr-default-color`` miss ``!default`` mark, close #43;
+* Don't use anymore shortand ``flex`` property to avoid a `bug from IE11 <https://github.com/philipwalton/flexbugs#flexbug-8>`_, close #45;
+
 Version 0.8.1 - 2018/02/12
 --------------------------
 
