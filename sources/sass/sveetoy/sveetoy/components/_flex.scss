@@ -101,14 +101,14 @@ $sv-flex-grid-gutter: 0.5rem !default;
             }
         }
     }
-}
 
-//
-// Vertical content alignments
-//
-@include sv-flex-vertical-alignment;
-@each $name, $query in $sv-breakpoints{
-    @media #{$query} {
-        @include sv-flex-vertical-alignment($breakpoint: $name);
+    //
+    // Vertical content alignments
+    //
+    @include sv-flex-vertical-alignment;
+    @each $name, $query in $sv-breakpoints{
+        @media #{$query} {
+            @include sv-flex-vertical-alignment($breakpoint: $name);
+        }
     }
 }

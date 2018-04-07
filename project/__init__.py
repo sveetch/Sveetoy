@@ -4,4 +4,4 @@ Sveetoy Demo project to build with Optimus
 
 ``__version__`` define the Sass library version, not the demo.
 """
-__version__ = "0.8.3"
+__version__ = "0.8.4-pre.1"
