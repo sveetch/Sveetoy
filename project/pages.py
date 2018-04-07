@@ -2,12 +2,16 @@
 """
 The project pages map for project
 """
+import io
+import os
+
 from optimus.builder.pages import PageViewBase
 from optimus.conf import settings
 
 from project import __version__ as sveetoy_version
 from project.sitemap import PageSitemap, tree_from_directory_structure
 
+from py_css_styleguide.model import Manifest
 
 #sitemap_tree = tree_from_directory_structure(settings.TEMPLATES_DIR)
 ##sitemap_tree.show()
@@ -28,7 +32,13 @@ class BasicPage(PageViewBase):
     def get_context(self):
         context = super(BasicPage, self).get_context()
 
+        manifest = Manifest()
+        manifest_filepath = os.path.join(settings.SOURCES_DIR, 'css', 'styleguide_manifest.css')
+        with io.open(manifest_filepath, 'r') as fp:
+            manifest.load(fp)
+
         context.update({
+            'styleguide': manifest,
             'version': sveetoy_version,
             'foundation_version': self.foundation_version,
         })

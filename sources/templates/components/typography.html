@@ -44,8 +44,8 @@
             <h2>Text colors</h2>
             <p>Text colors are available for every color defined in map <code>$sv-color-text-palette</code>. Properties are defined using <code>!important</code> flag so take care of their usage.</p>
             <div class="demo-result v-space-tiny">
-                {% for name in ['white', 'black', 'gray25', 'gray82', 'gray88', 'lightskyblue', 'deepskyblue4'] %}
-                <p class="text-{{ name }}">.text-{{ name }}</p>
+                {% for k,v in styleguide.text_colors.items() %}
+                <p class="text-{{ k }}">.text-{{ k }}</p>
                 {% endfor %}
             </div>
         </div>

@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import "settings";
+@import "foundation";
+
+// We don't want any of sveetoy classes to be writed
+$include-sv-classes: false;
+
+@import "sveetoy";
+
+@import "vendor/styleguide_helpers";
+
+// TODO: Add these functions to PyCssStyleguide helpers
+///
+/// Get numbers from a list to return a string of floor number separated by an
+/// empty space.
+///
+/// Floor number can so be used as valid class names, since decimals are not
+/// valid selector.
+///
+/// @arg {List} $list [null]
+///   A list of number.
+///
+/// @arg {String} $prefix ['']
+///   A string to preprend to each item.
+///
+@function floor-number-items($list, $prefix: "") {
+    $values: ();
+    @each $number in $list {
+        $number: floor($number);
+        $values: append($values, $prefix+$number);
+    }
+    @return to-string($values, $glue: ' ');
+}
+
+
+.styleguide-metas-references{
+    --names: "palette text_colors underline_colors row_widths flex_grid_sizes color_schemes";
+}
+
+.styleguide-reference-palette{
+    --flat: "true";
+    --keys: "#{get-names($site-palette)}";
+    --values: "#{get-values($site-palette)}";
+}
+
+.styleguide-reference-text_colors{
+    --flat: "true";
+    --keys: "#{get-names($sv-color-text-palette)}";
+    --values: "#{get-values($sv-color-text-palette)}";
+}
+
+.styleguide-reference-underline_colors{
+    --flat: "true";
+    --keys: "#{get-names($sv-underline-colors)}";
+    --values: "#{get-values($sv-underline-colors)}";
+}
+
+.styleguide-reference-row_widths{
+    --keys: "default larger";
+    --rem: "#{$grid-row-width} #{$sv-row-larger-width}";
+    --pixel: "#{unitless-calc($grid-row-width)} #{unitless-calc($sv-row-larger-width)}";
+}
+
+.styleguide-reference-flex_grid_sizes{
+    --flat: "true";
+    --keys: "#{floor-number-items($sv-flex-grid-sizes)}";
+    --values: "#{to-string($sv-flex-grid-sizes, $glue: ' ')}";
+}
+
+.styleguide-reference-color_schemes{
+    --keys: "#{get-names($sv-colors-schemes)}";
+    --selector: "#{get-names($sv-colors-schemes, '.')}";
+    --background: "#{get-props($sv-colors-schemes, 'background')}";
+}
+
+// TODO: New mode to implement from PyCssStyleguide
+// Serialize to a simple list in an unique property of item separated with an empty string
+// Enable these rules when done with PyCssStyleguide update
+
+// Assume every thickness are the same for all components
+.styleguide-reference-thickness{
+    --mode: "list";
+    --items: "#{get-names($sv-underline-thickness)}";
+}
+
+.styleguide-reference-distance{
+    --mode: "list";
+    --items: "#{get-names($sv-underline-distances)}";
+}
+
+.styleguide-reference-spaces{
+    --mode: "list";
+    --items: "#{get-names($sv-spaces)}";
+}
+
+// TODO: Need a mixin helper to merge two lists (or maps?) only for non existing item in the first element
+/*.styleguide-reference-widths{
+    --mode: "list";
+    --items: "";
+}*/

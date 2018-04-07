@@ -6,6 +6,7 @@ Version 0.8.4 - Unreleased
 --------------------------
 
 * Fix flexbox component where some rules was allways created even ``$include-sv-flex`` was disabled;
+* Implement usage of PyCssStyleguide to build some component demos from styleguide;
 
 Version 0.8.3 - 2018/03/13
 --------------------------

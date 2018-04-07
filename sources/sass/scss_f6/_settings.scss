@@ -1,17 +1,8 @@
+/*
+ * Global settings
+ */
 @import "util/util";
-
-/// Global settings which Foundation and Sveetoy depend from
-
-// Colors
-$white: #ffffff;
-$black: #000000;
-$lightskyblue: #87cefa;
-$deepskyblue4: #00688b;
-$gray25: #404040;
-$gray82: #d0d0d0;
-$gray88: #e0e0e0;
-$gray94: #f0f0f0;
-$snow1: #fffafa;
+@import "colors";
 
 // Available font families
 $font-family-roboto: "Roboto", sans-serif;
@@ -55,4 +46,138 @@ $header-font-family: $font-family-overlock;
 // -----------
 
 $topbar-unstack-breakpoint: large;
-$topbar-background: $gray25;
+
+
+// A1. Sveetoys Query Ranges
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Common available breakpoints taken from Foundation breakpoints
+$sv-breakpoints: (
+    small: $small-up,
+    medium: $medium-up,
+    large: $large-up,
+    xlarge: $xlarge-up,
+);
+
+
+// A3. Sveetoys typography
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Thickness
+$global-weight-thin: 100;
+$global-weight-strong: 900;
+
+// <small/> sizes
+$sv-smalls: (
+    small: 40%,
+    big: 60%,
+    large: 80%,
+);
+
+// .underline features
+$sv-underline-thickness: (
+    thin: (
+        size: rem-calc(1px),
+        style: solid,
+    ),
+    normal: (
+        size: rem-calc(3px),
+        style: solid,
+    ),
+    bold: (
+        size: rem-calc(5px),
+        style: solid,
+    ),
+);
+$sv-underline-widths: (
+    tiny: 5%,
+    short: 15%,
+    normal: 40%, //default
+    large: 70%,
+    full: 100%,
+);
+$sv-underline-distances: (
+    far: 2rem,
+    near: 0.5rem,
+    default: 1rem, //default
+    sticked: 0,
+);
+
+// Horizontal rule
+$sv-hr-thickness: $sv-underline-thickness;
+$sv-hr-distances: $sv-underline-distances;
+
+
+// A4. Sveetoys spaces
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Defines default space sizes with their breakpoint values
+$sv-space-tiny: (
+    small: 0.5rem,
+    medium: 0.75rem,
+    large: 1rem,
+    xlarge: 1.5rem,
+);
+$sv-space-short: (
+    small: 1rem,
+    medium: 1.25rem,
+    large: 2rem,
+    xlarge: 2.5rem,
+);
+$sv-space-normal: (
+    small: 1.5rem,
+    medium: 2rem,
+    large: 3rem,
+    xlarge: 4rem,
+);
+$sv-space-large: (
+    small: 2rem,
+    medium: 3rem,
+    large: 4rem,
+    xlarge: 5rem,
+);
+$sv-space-wide: (
+    small: 3rem,
+    medium: 4.5rem,
+    large: 6rem,
+    xlarge: 8rem,
+);
+
+// Space scheme
+$sv-spaces: (
+    tiny: $sv-space-tiny,
+    short: $sv-space-short,
+    normal: $sv-space-normal,
+    large: $sv-space-large,
+    wide: $sv-space-wide,
+);
+
+
+// Define button variables using default Foundation values
+$button-tny: rem-calc(10);
+$button-sml: rem-calc(14);
+$button-med: rem-calc(16);
+$button-lrg: rem-calc(18);
+// Use button variables for .modest feature
+$sv-button-modests: (
+    tiny: $button-tny / 2,
+    small: $button-sml / 2,
+    medium: $button-med / 2,
+    large: $button-lrg / 2,
+);
+
+
+// A5. Sveetoys Boxes
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+$sv-boxes-thickness: $sv-underline-thickness;
+
+
+// A6. Sveetoys Grid
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Larger row width for xlarge screens and more
+$sv-row-larger-width: rem-calc(1328px);
+
+
+// A7. Sveetoys Flexbox
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Fleg grid cell sizes
+$sv-flex-grid-sizes: 20 25 33.3333 50 75 100;

@@ -4,3 +4,4 @@ cherrypy
 closure
 rcssmin
 cmp_version
+py-css-styleguide

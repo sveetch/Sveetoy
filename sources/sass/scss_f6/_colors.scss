@@ -1,0 +1,101 @@
+/*
+ * Color settings
+ */
+@import "util/util";
+
+/// Global settings which Foundation and Sveetoy depend from
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$gray25: #404040;
+$gray82: #d0d0d0;
+$gray88: #e0e0e0;
+$gray94: #f0f0f0;
+$snow1: #fffafa;
+$lightskyblue: #87cefa;
+$deepskyblue4: #00688b;
+
+// Global palette so we expose everything from a list
+$site-palette: (
+    white: $white,
+    black: $black,
+    gray25: $gray25,
+    gray82: $gray82,
+    gray88: $gray88,
+    gray94: $gray94,
+    snow1: $snow1,
+    lightskyblue: $lightskyblue,
+    deepskyblue4: $deepskyblue4,
+);
+
+// 37. Top Bar
+// -----------
+$topbar-background: $gray25;
+
+
+// Color schemes
+// ---------
+
+$white-color-scheme: (
+    font-color: $gray25,
+    background: $white,
+);
+$black-color-scheme: (
+    font-color: $white,
+    background: $black,
+);
+$snow1-color-scheme: (
+    font-color: $gray25,
+    background: $snow1,
+);
+$lightskyblue-color-scheme: (
+    font-color: $deepskyblue4,
+    link-color: $white,
+    background: $lightskyblue,
+);
+
+$snow1-bordered-color-scheme: map-merge($snow1-color-scheme, (
+    border: 1px solid,
+    border-width: 1px 3px,
+    hover-background: darken($snow1, 2%),
+));
+
+$lightskyblue-bordered-color-scheme: map-merge($lightskyblue-color-scheme, (
+    border: 1px solid $deepskyblue4,
+    hover-background: $deepskyblue4,
+    hover-font-color: $white,
+));
+
+$sv-colors-scheme-default: $white-color-scheme;
+
+$sv-colors-schemes: (
+    white: $white-color-scheme,
+    black: $black-color-scheme,
+    lightskyblue: $lightskyblue-color-scheme,
+    snow1: $snow1-color-scheme,
+    lightskyblue-bordered: $lightskyblue-bordered-color-scheme,
+    snow1-bordered: $snow1-bordered-color-scheme,
+);
+
+$sv-color-text-palette: (
+    white: $white,
+    black: $black,
+    gray25: $gray25,
+    gray82: $gray82,
+    gray88: $gray88,
+    lightskyblue: $lightskyblue,
+    deepskyblue4: $deepskyblue4,
+);
+
+// .underline features
+$sv-underline-colors: $sv-color-text-palette;
+$sv-underline-default-color: $black;
+
+// Horizontal rule
+$sv-hr-colors: $sv-underline-colors;
+$sv-hr-default-color: $sv-underline-default-color;
+
+// Button color scheme
+$sv-button-colors-schemes: $sv-colors-schemes;
+
