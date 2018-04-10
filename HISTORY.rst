@@ -1,3 +1,5 @@
+.. _PyCssStyleguide: https://github.com/sveetch/py-css-styleguide
+
 =========
 Changelog
 =========
@@ -6,7 +8,8 @@ Version 0.8.4 - Unreleased
 --------------------------
 
 * Fix flexbox component where some rules was allways created even ``$include-sv-flex`` was disabled;
-* Implement usage of PyCssStyleguide to build some component demos from styleguide;
+* Implement usage of `PyCssStyleguide`_ to build some component demos from styleguide;
+* Common color backgrounds classes (aka ``.bg-NAME``) are now builded from ``$sv-color-background-palette`` which default value is ``$sv-colors-schemes``;
 
 Version 0.8.3 - 2018/03/13
 --------------------------

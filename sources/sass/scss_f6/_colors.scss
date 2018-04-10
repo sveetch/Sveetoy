@@ -29,6 +29,7 @@ $site-palette: (
     deepskyblue4: $deepskyblue4,
 );
 
+
 // 37. Top Bar
 // -----------
 $topbar-background: $gray25;
@@ -77,6 +78,9 @@ $sv-colors-schemes: (
     lightskyblue-bordered: $lightskyblue-bordered-color-scheme,
     snow1-bordered: $snow1-bordered-color-scheme,
 );
+
+
+$sv-color-background-palette: map_remove($sv-colors-schemes, "lightskyblue-bordered", "snow1-bordered");
 
 $sv-color-text-palette: (
     white: $white,

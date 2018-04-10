@@ -82,23 +82,23 @@
  *
  */
 .styleguide-metas-references {
-  --names: "palette text_colors underline_colors row_widths flex_grid_sizes color_schemes";
+  --names: "palette text_colors underline_colors row_widths flex_grid_sizes color_schemes thickness distance spaces";
 }
 
 .styleguide-reference-palette {
-  --flat: "true";
-  --keys: "white black gray25 gray82 gray88 gray94 snow1 lightskyblue deepskyblue4";
-  --values: "#ffffff #000000 #404040 #d0d0d0 #e0e0e0 #f0f0f0 #fffafa #87cefa #00688b";
+  --structure: "flat";
+  --keys: "white black lightskyblue snow1";
+  --values: "#ffffff #000000 #87cefa #fffafa";
 }
 
 .styleguide-reference-text_colors {
-  --flat: "true";
+  --structure: "flat";
   --keys: "white black gray25 gray82 gray88 lightskyblue deepskyblue4";
   --values: "#ffffff #000000 #404040 #d0d0d0 #e0e0e0 #87cefa #00688b";
 }
 
 .styleguide-reference-underline_colors {
-  --flat: "true";
+  --structure: "flat";
   --keys: "white black gray25 gray82 gray88 lightskyblue deepskyblue4";
   --values: "#ffffff #000000 #404040 #d0d0d0 #e0e0e0 #87cefa #00688b";
 }
@@ -110,7 +110,7 @@
 }
 
 .styleguide-reference-flex_grid_sizes {
-  --flat: "true";
+  --structure: "flat";
   --keys: "20 25 33 50 75 100";
   --values: "20 25 33.3333 50 75 100";
 }
@@ -122,21 +122,21 @@
 }
 
 .styleguide-reference-thickness {
-  --mode: "list";
+  --structure: "list";
   --items: "thin normal bold";
 }
 
 .styleguide-reference-distance {
-  --mode: "list";
+  --structure: "list";
   --items: "far near default sticked";
 }
 
 .styleguide-reference-spaces {
-  --mode: "list";
+  --structure: "list";
   --items: "tiny short normal large wide";
 }
 
 /*.styleguide-reference-widths{
-    --mode: "list";
+    --structure: "list";
     --items: "";
 }*/

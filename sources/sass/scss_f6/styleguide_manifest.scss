@@ -35,23 +35,23 @@ $include-sv-classes: false;
 
 
 .styleguide-metas-references{
-    --names: "palette text_colors underline_colors row_widths flex_grid_sizes color_schemes";
+    --names: "palette text_colors underline_colors row_widths flex_grid_sizes color_schemes thickness distance spaces";
 }
 
 .styleguide-reference-palette{
-    --flat: "true";
-    --keys: "#{get-names($site-palette)}";
-    --values: "#{get-values($site-palette)}";
+    --structure: "flat";
+    --keys: "#{get-names($sv-color-background-palette)}";
+    --values: "#{get-props($sv-color-background-palette, 'background')}";
 }
 
 .styleguide-reference-text_colors{
-    --flat: "true";
+    --structure: "flat";
     --keys: "#{get-names($sv-color-text-palette)}";
     --values: "#{get-values($sv-color-text-palette)}";
 }
 
 .styleguide-reference-underline_colors{
-    --flat: "true";
+    --structure: "flat";
     --keys: "#{get-names($sv-underline-colors)}";
     --values: "#{get-values($sv-underline-colors)}";
 }
@@ -63,7 +63,7 @@ $include-sv-classes: false;
 }
 
 .styleguide-reference-flex_grid_sizes{
-    --flat: "true";
+    --structure: "flat";
     --keys: "#{floor-number-items($sv-flex-grid-sizes)}";
     --values: "#{to-string($sv-flex-grid-sizes, $glue: ' ')}";
 }
@@ -74,28 +74,25 @@ $include-sv-classes: false;
     --background: "#{get-props($sv-colors-schemes, 'background')}";
 }
 
-// TODO: New mode to implement from PyCssStyleguide
-// Serialize to a simple list in an unique property of item separated with an empty string
-// Enable these rules when done with PyCssStyleguide update
-
 // Assume every thickness are the same for all components
 .styleguide-reference-thickness{
-    --mode: "list";
+    --structure: "list";
     --items: "#{get-names($sv-underline-thickness)}";
 }
 
+// Assume every distance are the same for all components
 .styleguide-reference-distance{
-    --mode: "list";
+    --structure: "list";
     --items: "#{get-names($sv-underline-distances)}";
 }
 
 .styleguide-reference-spaces{
-    --mode: "list";
+    --structure: "list";
     --items: "#{get-names($sv-spaces)}";
 }
 
 // TODO: Need a mixin helper to merge two lists (or maps?) only for non existing item in the first element
 /*.styleguide-reference-widths{
-    --mode: "list";
+    --structure: "list";
     --items: "";
 }*/
