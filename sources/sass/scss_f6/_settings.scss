@@ -97,10 +97,10 @@ $sv-underline-widths: (
     full: 100%,
 );
 $sv-underline-distances: (
-    far: 2rem,
+    sticked: 0,
     near: 0.5rem,
     default: 1rem, //default
-    sticked: 0,
+    far: 2rem,
 );
 
 // Horizontal rule

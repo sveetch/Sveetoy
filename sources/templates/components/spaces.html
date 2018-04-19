@@ -29,10 +29,10 @@
 
             <h2>Vertical padding in element</h2>
             <div class="flex-grid marged">
-                {% for thickness in ['tiny', 'short', 'normal', 'large', 'wide'] %}
+                {% for name in styleguide.space_widths %}
                 <div class="cell small-100 medium-33 large-20">
-                    <code>.v-space-{{ thickness }}</code>
-                    <div class="demo-result v-space-{{ thickness }}">
+                    <code>.v-space-{{ name }}</code>
+                    <div class="demo-result v-space-{{ name }}">
                         <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
@@ -59,10 +59,10 @@
         <div class="small-12 columns">
             <h2>Horizontal padding in element</h2>
             <div class="flex-grid marged">
-                {% for thickness in ['tiny', 'short', 'normal', 'large', 'wide'] %}
+                {% for name in styleguide.space_widths %}
                 <div class="cell small-100 medium-50 large-33">
-                    <code>.h-space-{{ thickness }}</code>
-                    <div class="demo-result h-space-{{ thickness }}">
+                    <code>.h-space-{{ name }}</code>
+                    <div class="demo-result h-space-{{ name }}">
                         <span class="button secondary small full">Foo</span>
                     </div>
                 </div>
@@ -89,10 +89,10 @@
         <div class="small-12 columns">
             <h2>Vertical margin divider</h2>
             <div class="flex-grid marged">
-                {% for thickness in ['tiny', 'short', 'normal', 'large', 'wide'] %}
+                {% for name in styleguide.space_widths %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result">
-                        <span class="button small full v-divider-{{ thickness }}">.v-divider-{{ thickness }}</span>
+                        <span class="button small full v-divider-{{ name }}">.v-divider-{{ name }}</span>
                         <span class="button small full secondary">Follower</span>
                     </div>
                 </div>
@@ -107,10 +107,10 @@
         <div class="small-12 columns">
             <h2>Horizontal margin divider</h2>
             <div class="flex-grid marged">
-                {% for thickness in ['tiny', 'short', 'normal', 'large', 'wide'] %}
+                {% for name in styleguide.space_widths %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result">
-                        <span class="button small h-divider-{{ thickness }}">.h-divider-{{ thickness }}</span>
+                        <span class="button small h-divider-{{ name }}">.h-divider-{{ name }}</span>
                         <span class="button small secondary">Follower</span>
                     </div>
                 </div>

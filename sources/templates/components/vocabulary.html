@@ -11,31 +11,27 @@
                 <div class="cell small-100 medium-33 box">
                     <h2>Thickness</h2>
                     <ul>
-                        <li>thin</li>
-                        <li>normal</li>
-                        <li>bold</li>
-                        <li>strong</li>
+                        {% for name in styleguide.vocabulary_thickness %}
+                        <li>{{ name }}</li>
+                        {% endfor %}
                     </ul>
                 </div>
 
                 <div class="cell small-100 medium-33 box">
                     <h2>Distance</h2>
                     <ul>
-                        <li>sticked</li>
-                        <li>near</li>
-                        <li>default</li>
-                        <li>far</li>
+                        {% for name in styleguide.vocabulary_distance %}
+                        <li>{{ name }}</li>
+                        {% endfor %}
                     </ul>
                 </div>
 
                 <div class="cell small-100 medium-33 box">
                     <h2>Width</h2>
                     <ul>
-                        <li>tiny</li>
-                        <li>short</li>
-                        <li>normal</li>
-                        <li>large</li>
-                        <li>wide</li>
+                        {% for name in styleguide.vocabulary_spaces %}
+                        <li>{{ name }}</li>
+                        {% endfor %}
                         <li>full</li>
                     </ul>
                 </div>

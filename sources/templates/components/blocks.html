@@ -20,12 +20,23 @@
         </div>
     </div>
 
-    {% for name in ['', 'black',  'transparent', 'lightskyblue', 'snow1', 'wide'] %}
-    <div class="block{% if name %} {{ name }}{% endif %}">
+    <div class="block">
         <div class="row">
             <div class="small-12 columns">
-                <h2>.block{% if name %}.{{ name }}{% endif %}</h2>
-                <p><small class="styleguide-schemes-background-{% if name %}{{ name }}{% else %}default{% endif %}"></small></p>
+                <h2>.block</h2>
+                <p><small class="styleguide-schemes-background-"></small></p>
+                {% include '_includes/_inline_markup.html' %}
+
+                {{ lipsum(n=2, html=True, min=20, max=50) }}
+            </div>
+        </div>
+    </div>
+    {% for k,v in styleguide.block_colors.items() %}
+    <div class="block {{ k }}">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2>.block.{{ k }}</h2>
+                <p><small>{{ v }}</small></p>
                 {% include '_includes/_inline_markup.html' %}
 
                 {{ lipsum(n=2, html=True, min=20, max=50) }}

@@ -2,7 +2,7 @@
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="text-upper">Boxes</h1>
-            <p>Box component is combinates spaces and colors settings alike blocks but with both horizontal and vertical padding and optional borders.</p>
+            <p>Box component combinates spaces and colors settings alike blocks but with both horizontal and vertical padding and optional borders.</p>
             <p>This component support 'hover' prefix for every color scheme properties that will operate on 'hover' event.</p>
 
             <dl>
@@ -22,10 +22,22 @@
             <p>Space features are built from <code>$sv-spaces</code> (except for <code>.unpadded</code> that just set padding to 0). Default box spaces comes from <code>normal</code> item from <code>$sv-spaces</code>.</p>
             <p>Additionaly, to respect visual spaces, first direct child never have a margin and last direct child never have a margin bottom.</p>
             <div class="flex-grid marged demo-result">
-                {% for name in ['unpadded', 'tiny', 'short', '', 'large', 'wide'] %}
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="box{% if name %} {{ name }}{% endif %}">
-                        <h3>.box{% if name %}.{{ name }}{% endif %}</h3>
+                    <div class="box unpadded">
+                        <h3>.box.unpadded</h3>
+                        {% include '_includes/_inline_markup.html' %}
+                    </div>
+                </div>
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box">
+                        <h3>.box</h3>
+                        {% include '_includes/_inline_markup.html' %}
+                    </div>
+                </div>
+                {% for name in styleguide.space_widths %}
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box {{ name }}">
+                        <h3>.box.{{ name }}</h3>
                         {% include '_includes/_inline_markup.html' %}
                     </div>
                 </div>

@@ -82,7 +82,22 @@
  *
  */
 .styleguide-metas-references {
-  --names: "palette text_colors underline_colors row_widths flex_grid_sizes color_schemes thickness distance spaces";
+  --auto: "true";
+}
+
+.styleguide-reference-vocabulary_thickness {
+  --structure: "list";
+  --items: "thin normal bold";
+}
+
+.styleguide-reference-vocabulary_distance {
+  --structure: "list";
+  --items: "sticked near default far";
+}
+
+.styleguide-reference-vocabulary_spaces {
+  --structure: "list";
+  --items: "tiny short normal large wide";
 }
 
 .styleguide-reference-palette {
@@ -97,10 +112,74 @@
   --values: "#ffffff #000000 #404040 #d0d0d0 #e0e0e0 #87cefa #00688b";
 }
 
+.styleguide-reference-text_thickness {
+  --structure: "flat";
+  --keys: "thin normal bold strong";
+  --values: "100 400 700 900";
+}
+
+.styleguide-reference-smalls {
+  --structure: "list";
+  --items: "small big large";
+}
+
+.styleguide-reference-underline_widths {
+  --structure: "list";
+  --items: "tiny short normal large full";
+}
+
+.styleguide-reference-underline_thickness {
+  --structure: "list";
+  --items: "thin normal bold";
+}
+
+.styleguide-reference-underline_distances {
+  --structure: "list";
+  --items: "sticked near default far";
+}
+
 .styleguide-reference-underline_colors {
   --structure: "flat";
   --keys: "white black gray25 gray82 gray88 lightskyblue deepskyblue4";
   --values: "#ffffff #000000 #404040 #d0d0d0 #e0e0e0 #87cefa #00688b";
+}
+
+.styleguide-reference-hr_thickness {
+  --structure: "list";
+  --items: "thin normal bold";
+}
+
+.styleguide-reference-hr_distances {
+  --structure: "list";
+  --items: "sticked near default far";
+}
+
+.styleguide-reference-hr_colors {
+  --structure: "flat";
+  --keys: "white black gray25 gray82 gray88 lightskyblue deepskyblue4";
+  --values: "#ffffff #000000 #404040 #d0d0d0 #e0e0e0 #87cefa #00688b";
+}
+
+.styleguide-reference-space_widths {
+  --structure: "list";
+  --items: "tiny short normal large wide";
+}
+
+.styleguide-reference-button_colors {
+  --keys: "white black lightskyblue snow1 lightskyblue-bordered snow1-bordered";
+  --selector: ".white .black .lightskyblue .snow1 .lightskyblue-bordered .snow1-bordered";
+  --background: "#ffffff #000000 #87cefa #fffafa #87cefa #fffafa";
+}
+
+.styleguide-reference-button_paddings {
+  --structure: "list";
+  --items: "tiny small medium large";
+}
+
+.styleguide-reference-block_colors {
+  --structure: "flat";
+  --keys: "white black lightskyblue snow1 lightskyblue-bordered snow1-bordered";
+  --values: "#ffffff #000000 #87cefa #fffafa #87cefa #fffafa";
 }
 
 .styleguide-reference-row_widths {
@@ -111,7 +190,7 @@
 
 .styleguide-reference-flex_grid_sizes {
   --structure: "flat";
-  --keys: "20 25 33 50 75 100";
+  --keys: "floor-number-items(20 25 33.3333 50 75 100)";
   --values: "20 25 33.3333 50 75 100";
 }
 
@@ -119,21 +198,6 @@
   --keys: "white black lightskyblue snow1 lightskyblue-bordered snow1-bordered";
   --selector: ".white .black .lightskyblue .snow1 .lightskyblue-bordered .snow1-bordered";
   --background: "#ffffff #000000 #87cefa #fffafa #87cefa #fffafa";
-}
-
-.styleguide-reference-thickness {
-  --structure: "list";
-  --items: "thin normal bold";
-}
-
-.styleguide-reference-distance {
-  --structure: "list";
-  --items: "far near default sticked";
-}
-
-.styleguide-reference-spaces {
-  --structure: "list";
-  --items: "tiny short normal large wide";
 }
 
 /*.styleguide-reference-widths{

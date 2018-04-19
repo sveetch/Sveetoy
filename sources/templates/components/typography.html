@@ -60,8 +60,8 @@
                 <li><code>$global-weight-strong</code> for strongest thickness.</li>
             </ul>
             <div class="demo-result v-space-tiny">
-                {% for name in ['thin', 'normal', 'bold', 'strong'] %}
-                <p class="text-{{ name }}">{% if name == 'bold' %}<b>&lt;b&gt;</b>, {% elif name == 'strong' %}<strong>&lt;strong&gt;</strong>, {% endif %}.text-{{ name }}</p>
+                {% for k,v in styleguide.text_thickness.items() %}
+                <p class="text-{{ k }}">{% if k == 'bold' %}<b>&lt;b&gt;</b>, {% elif k == 'strong' %}<strong>&lt;strong&gt;</strong>, {% endif %}.text-{{ k }}</p>
                 {% endfor %}
             </div>
         </div>
@@ -72,7 +72,7 @@
             <h2>Small</h2>
             <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are built from <code>$sv-smalls</code>.</p>
             <div class="demo-result v-space-tiny">
-                {% for name in ['small', 'medium', 'big'] %}
+                {% for name in styleguide.smalls %}
                 <p><code>.{{ name }}</code> <small class="{{ name }}">{{ lipsum(n=1, html=False, min=15, max=16) }}</small></p>
                 {% endfor %}
                 <p>{{ lipsum(n=1, html=False, min=15, max=16) }}</p>
@@ -99,7 +99,7 @@
             <h3>Width</h3>
             <p>Built from list <code>$sv-underline-widths</code>.</p>
             <div class="flex-grid marged">
-                {% for name in ['tiny', 'short', 'normal', 'large', 'full'] %}
+                {% for name in styleguide.underline_widths %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
                         <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
@@ -111,7 +111,7 @@
             <h3>Thickness</h3>
             <p>Built from map <code>$sv-underline-thickness</code>.</p>
             <div class="flex-grid marged">
-                {% for name in ['thin', 'normal', 'bold'] %}
+                {% for name in styleguide.underline_thickness %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
                         <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
@@ -123,7 +123,7 @@
             <h3>Distance</h3>
             <p>Built from list <code>$sv-underline-distances</code>.</p>
             <div class="flex-grid marged">
-                {% for name in ['sticked', 'near', 'default', 'far'] %}
+                {% for name in styleguide.underline_distances %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
                         <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
@@ -147,10 +147,15 @@
             <h3>Color</h3>
             <p>Built from list <code>$sv-underline-colors</code>.</p>
             <div class="flex-grid marged">
-                {% for name in ['normal', 'white', 'black', 'gray25', 'gray82', 'gray88', 'lightskyblue', 'deepskyblue4'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
-                        <p class="title-4 underline {{ name }}">.underline{% if name %}.{{ name }}{% endif %}</p>
+                        <p class="title-4 underline">.underline</p>
+                    </div>
+                </div>
+                {% for k,v in styleguide.underline_colors.items() %}
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline {{ k }}">.underline.{{ k }}</p>
                     </div>
                 </div>
                 {% endfor %}
@@ -166,7 +171,7 @@
             <h3>Thickness</h3>
             <p>Built from map <code>$sv-hr-thickness</code>.</p>
             <div class="flex-grid marged">
-                {% for name in ['thin', 'normal', 'bold'] %}
+                {% for name in styleguide.hr_thickness %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
                         <p>hr{% if name %}.{{ name }}{% endif %}</p>
@@ -179,7 +184,7 @@
             <h3>Distance</h3>
             <p>Built from list <code>$sv-hr-distances</code>.</p>
             <div class="flex-grid marged">
-                {% for name in ['sticked', 'near', 'default', 'far'] %}
+                {% for name in styleguide.hr_distances %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
                         <span>hr{% if name %}.{{ name }}{% endif %}</span>
@@ -192,11 +197,17 @@
             <h3>Color</h3>
             <p>Built from list <code>$sv-hr-colors</code>.</p>
             <div class="flex-grid marged">
-                {% for name in ['normal', 'white', 'black', 'gray25', 'gray82', 'gray88', 'lightskyblue', 'deepskyblue4'] %}
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
-                        <p>hr{% if name %}.{{ name }}{% endif %}</p>
-                        <hr class="{{ name }}">
+                        <p>hr</p>
+                        <hr>
+                    </div>
+                </div>
+                {% for k,v in styleguide.underline_colors.items() %}
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.{{ k }}</p>
+                        <hr class="{{ k }}">
                     </div>
                 </div>
                 {% endfor %}

@@ -25,11 +25,12 @@
             <p>Make the button text stronger and uppercase.</p>
             <div class="demo-result v-space-tiny">
                 <div class="row">
-                    {% for name in ['', 'important'] %}
-                    <div class="large-4 columns{% if loop.last %} end{% endif %}">
-                        <a href="" class="button{% if name %} {{ name }}{% endif %}">.button{% if name %}.{{ name }}{% endif %}</a>
+                    <div class="large-4 columns">
+                        <a href="" class="button">.button</a>
                     </div>
-                    {% endfor %}
+                    <div class="large-4 columns end">
+                        <a href="" class="button important">.button.important</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -55,9 +56,12 @@
             <p>Add <code>.modest</code> feature so the button padding are divided by two or less, it depend from size definitions in <code>$sv-button-modests</code>.</p>
             <div class="demo-result v-space-tiny">
                 <div class="row">
-                    {% for name in ['', 'small.modest', 'modest', 'large.modest', 'small.modest.radius', 'modest.round'] %}
+                    <div class="large-4 columns">
+                        <a href="" class="button modest">.button.modest</a>
+                    </div>
+                    {% for name in styleguide.button_paddings %}
                     <div class="large-4 columns{% if loop.last %} end{% endif %}">
-                        <a href="" class="button{% if name %} {{ name|replace(".", " ") }}{% endif %}">.button{% if name %}.{{ name }}{% endif %}</a>
+                        <a href="" class="button modest {{ name }}">.button.modest.{{ name }}</a>
                     </div>
                     {% endfor %}
                 </div>
@@ -71,9 +75,9 @@
             <p>Button color features are builded from <code>$sv-button-colors-schemes</code> that is on the same format than <code>$sv-colors-schemes</code> and support border and hover properties from color schemes.</p>
             <div class="demo-result v-space-tiny">
                 <div class="row">
-                    {% for name in ['', 'white', 'black', 'snow1', 'snow1.disabled', 'snow1-bordered', 'lightskyblue', 'lightskyblue.disabled', 'lightskyblue-bordered'] %}
+                    {% for k,v in styleguide.button_colors.items() %}
                     <div class="large-4 columns{% if loop.last %} end{% endif %} v-space-tiny">
-                        <a href="" class="button{% if name %} {{ name|replace(".", " ") }}{% endif %}">.button{% if name %}.{{ name }}{% endif %}</a>
+                        <a href="" class="button {{ k }}">.button{{ k }}</a>
                     </div>
                     {% endfor %}
                 </div>
