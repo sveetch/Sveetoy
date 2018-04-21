@@ -40,6 +40,12 @@ $include-sv-classes: false;
     --items: "#{get-names($sv-spaces)}";
 }
 
+// Available breakpoints from $sv-breakpoints map item names
+.styleguide-reference-breakpoints{
+    --structure: "list";
+    --items: "#{get-names($sv-breakpoints)}";
+}
+
 
 // 2. Colors
 // ---------
@@ -173,7 +179,7 @@ $include-sv-classes: false;
 }
 
 
-// 6.
+// 6. Blocks and boxes
 // -------------
 
 // Enabled block color schemes, using $sv-colors-schemes map where color is in
@@ -184,23 +190,54 @@ $include-sv-classes: false;
     --values: "#{get-props($sv-colors-schemes, 'background')}";
 }
 
+// Enabled box color schemes, using $sv-colors-schemes map where color is in
+// item property 'background'
+.styleguide-reference-box_colors{
+    --structure: "flat";
+    --keys: "#{get-names($sv-colors-schemes)}";
+    --values: "#{get-props($sv-colors-schemes, 'background')}";
+}
 
-// 7.
+// Available underline thickness using from $sv-boxes-thickness map item names
+.styleguide-reference-box_thickness{
+    --structure: "list";
+    --items: "#{get-names($sv-boxes-thickness, $prefix: 'border-')}";
+}
+
+
+// 7. Flexbox
+// ----------
+
+// Available Flexbox grid cell widths from $sv-flex-grid-sizes list items
+.styleguide-reference-flex_grid_sizes{
+    --structure: "flat";
+    --keys: "#{floor-number-items($sv-flex-grid-sizes)}";
+    --values: "#{to-string($sv-flex-grid-sizes, $glue: ' ')}";
+}
+
+// Available Flexbox vertical content alignments, hardcoded since they don't
+// belong to a variable
+.styleguide-reference-flex_vertical_alignments{
+    --structure: "list";
+    --items: "start end center around between";
+}
+
+// Available Flexbox directions, hardcoded since hardcoded since they don't
+// belong to a variable
+.styleguide-reference-flex_directions{
+    --structure: "list";
+    --items: "row row-reverse column column-reverse";
+}
+
+
+// 8.
 // -------------
-
 
 // Foundation grid row + Sveetoy larger row
 .styleguide-reference-row_widths{
     --keys: "default larger";
     --rem: "#{$grid-row-width} #{$sv-row-larger-width}";
     --pixel: "#{unitless-calc($grid-row-width)} #{unitless-calc($sv-row-larger-width)}";
-}
-
-// Enabled Flexbox grid cell widths
-.styleguide-reference-flex_grid_sizes{
-    --structure: "flat";
-    --keys: "#{floor-number-items($sv-flex-grid-sizes)}";
-    --values: "#{to-string($sv-flex-grid-sizes, $glue: ' ')}";
 }
 
 // Enabled color schemes, using $sv-colors-schemes map where color is in
@@ -210,9 +247,3 @@ $include-sv-classes: false;
     --selector: "#{get-names($sv-colors-schemes, '.')}";
     --background: "#{get-props($sv-colors-schemes, 'background')}";
 }
-
-// TODO: Need a mixin helper to merge two lists (or maps?) only for non existing item in the first element
-/*.styleguide-reference-widths{
-    --structure: "list";
-    --items: "";
-}*/

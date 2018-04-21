@@ -48,10 +48,10 @@
             <p>Color features are built from <code>$sv-colors-schemes</code>. Default box colors comes from <code>$sv-colors-scheme-default</code>.</p>
             <p>Alike Button component border and hover properties are supported.</p>
             <div class="flex-grid marged demo-result">
-                {% for name in ['', 'white', 'black', 'lightskyblue', 'snow1', 'snow1-bordered'] %}
+                {% for k,v in styleguide.box_colors.items() %}
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="box{% if name %} {{ name }}{% endif %}">
-                        <h3>{% if name %}.{{ name }}{% endif %}</h3>
+                    <div class="box {{ k }}">
+                        <h3>.{{ k }}</h3>
                         {% include '_includes/_inline_markup.html' %}
                     </div>
                 </div>
@@ -61,10 +61,10 @@
             <h2>Border thickness</h2>
             <p>Optionally if your color scheme support borders you can change its thickness using some features. These thickness are built from <code>$sv-boxes-thickness</code>.</p>
             <div class="flex-grid marged demo-result">
-                {% for name in ['border-thin', 'border-normal', 'border-bold'] %}
+                {% for name in styleguide.box_thickness %}
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="box lightskyblue{% if name %} {{ name }}{% endif %}">
-                        <h3>{% if name %}.{{ name }}{% endif %}</h3>
+                    <div class="box lightskyblue {{ name }}">
+                        <h3>.{{ name }}</h3>
                         {% include '_includes/_inline_markup.html' %}
                     </div>
                 </div>
@@ -79,8 +79,8 @@
                         <h3>.lightskyblue</h3>
                         {% include '_includes/_inline_markup.html' %}
                         <div class="box">
-                            <h4>Default color</h4>
-                            {% include '_includes/_inline_markup.html' %}
+                            <h4>Default behavior</h4>
+                            <p>Apply default box color scheme</p>
                         </div>
                     </div>
                 </div>
@@ -89,8 +89,8 @@
                         <h3>.lightskyblue</h3>
                         {% include '_includes/_inline_markup.html' %}
                         <div class="box transparent">
-                            <h4>.transparent</h4>
-                            {% include '_includes/_inline_markup.html' %}
+                            <h4>.transparent behavior</h4>
+                            <p>Don't apply any color scheme</p>
                         </div>
                     </div>
                 </div>

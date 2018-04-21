@@ -7,9 +7,9 @@ Changelog
 Version 0.8.4 - Unreleased
 --------------------------
 
-* Fix flexbox component where some rules was allways created even ``$include-sv-flex`` was disabled;
-* Implement usage of `PyCssStyleguide`_ to build some component demos from styleguide;
-* Common color backgrounds classes (aka ``.bg-NAME``) are now builded from ``$sv-color-background-palette`` which default value is ``$sv-colors-schemes``;
+* Fix flexbox component where some rules was allways created even if ``$include-sv-flex`` was disabled;
+* Implemented usage of `PyCssStyleguide`_ to fully build demonstration from styleguide. You can find the CSS manifest in ``styleguide_manifest.scss``;
+* Common color backgrounds classes (aka ``.bg-NAME``) are now builded from ``$sv-color-background-palette`` which by default is a copy of ``$sv-colors-schemes``;
 
 Version 0.8.3 - 2018/03/13
 --------------------------

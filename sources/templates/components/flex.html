@@ -4,10 +4,10 @@
             <h1 class="text-upper">Flexbox</h1>
             <p>A simple flexbox grid.</p>
             <p>Alike <code>.row</code> in float grid, <code>.flex-grid</code> is the main container and <code>.cell</code> is equivalent to <code>.columns</code>.</p>
-            <p>Available cell sizes are builded from <code>$sv-flex-grid-sizes</code> list and defined for each Foundation media query.</p>
+            <p>Available cell sizes are builded from <code>$sv-flex-grid-sizes</code> list and defined for each enabled breakpoints.</p>
             <p><code>.margin</code> feature is defined from <code>$sv-flex-grid-gutter</code>.</p>
 
-            <p>Available cell width sizes are builded from list <code>$sv-flex-grid-sizes</code>, note that size decimals are removed from the size class name, so value 33.333 will build a class name like <code>.small-33</code>, <code>.medium-33</code>, etc..</p>
+            <p>Available cell width sizes are builded from list <code>$sv-flex-grid-sizes</code>, note that size decimals are removed from the size class name so value <code>33.333</code> will build a class names like <code>.small-33</code>, <code>.medium-33</code>, etc..</p>
 
             <dl>
                 <dt>Can be disabled with</dt>
@@ -27,15 +27,10 @@
                     <div class="cell">
                         <p>.cell</p>
                     </div>
-                    <div class="cell small-100 medium-50">
-                        <p>.cell.small-100.medium-50</p>
-                    </div>
-                    <div class="cell small-100 medium-50">
-                        <p>.cell.small-100.medium-50</p>
-                    </div>
-                    {% for count in range(1, 7) %}
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
+                    {% for k,v in styleguide.flex_grid_sizes.items() %}
+                    <div class="cell small-100 medium-{{ k }}">
+                        <p>.cell.small-100.medium-{{ k }}</p>
+                        <p><small>{{ v }}%</small></p>
                     </div>
                     {% endfor %}
                 </div>
@@ -52,15 +47,10 @@
                     <div class="cell">
                         <p>.cell</p>
                     </div>
-                    <div class="cell small-100 medium-50">
-                        <p>.cell.small-100.medium-50</p>
-                    </div>
-                    <div class="cell small-100 medium-50">
-                        <p>.cell.small-100.medium-50</p>
-                    </div>
-                    {% for count in range(1, 7) %}
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
+                    {% for k,v in styleguide.flex_grid_sizes.items() %}
+                    <div class="cell small-100 medium-{{ k }}">
+                        <p>.cell.small-100.medium-{{ k }}</p>
+                        <p><small>{{ v }}%</small></p>
                     </div>
                     {% endfor %}
                 </div>
@@ -74,9 +64,9 @@
 
             <div class="demo-result">
                 <div class="flex-grid flex-demo align-demo">
-                    {% for name in ['v-align-start', 'v-align-end', 'v-align-center', 'v-align-around', 'v-align-between'] %}
-                    <div class="cell small-100 medium-33 {{ name }}">
-                        <p><code>.{{ name }}</code></p>
+                    {% for name in styleguide.flex_vertical_alignments %}
+                    <div class="cell small-100 medium-33 v-align-{{ name }}">
+                        <p><code>.v-align-{{ name }}</code></p>
                         {{ lipsum(n=1, html=True, min=15, max=16) }}
                     </div>
                     {% endfor %}
@@ -85,25 +75,31 @@
 
             <h3>Using responsive classes</h3>
 
-            <p>Every alignment classname is available for each Foundation media query names, you can combine them to change alignment behavior between media queries.</p>
+            <p>Every alignment classname is available for each breakpoint names, you can combine them to change alignment behavior between breakpoints.</p>
 
-            <p>Classnames are builded using enabled media queries from <code>$sv-breakpoints</code>.</p>
+            <p>Classnames are builded using enabled breakpoints from <code>$sv-breakpoints</code>.</p>
 
             <table>
                 <thead>
                     <tr>
                         <th></th>
-                        {% for name in ['start', 'end', 'center', 'around', 'between'] %}
+                        {% for name in styleguide.flex_vertical_alignments %}
                         <th>{{ name|capitalize }}</th>
                         {% endfor %}
                     </tr>
                 </thead>
                 <tbody>
-                    {% for breakpoint in ['', 'small', 'medium', 'large', 'xlarge', 'xxlarge'] %}
                     <tr>
-                        <th>{% if breakpoint %}{{ breakpoint|capitalize }}{% endif %}</th>
-                        {% for name in ['start', 'end', 'center', 'around', 'between'] %}
-                            <td>.{{ breakpoint }}{% if breakpoint %}-{% endif %}v-align-{{ name }}</td>
+                        <th></th>
+                        {% for name in styleguide.flex_vertical_alignments %}
+                            <td>.v-align-{{ name }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% for breakpoint in styleguide.breakpoints %}
+                    <tr>
+                        <th>{{ breakpoint|capitalize }}</th>
+                        {% for name in styleguide.flex_vertical_alignments %}
+                            <td>.{{ breakpoint }}-v-align-{{ name }}</td>
                         {% endfor %}
                     </tr>
                     {% endfor %}
@@ -116,7 +112,7 @@
         <div class="small-12 columns">
             <h2>Container items direction</h2>
 
-            {% for name in ['row', 'row-reverse', 'column', 'column-reverse'] %}
+            {% for name in styleguide.flex_directions %}
             <h3>.direction-{{ name }}</h3>
             <div class="demo-result">
                 <div class="flex-grid flex-demo direction-{{ name }}">
@@ -131,7 +127,7 @@
 
             <h3>Using responsive classes</h3>
 
-            <p>Every direction classname is available for each Foundation media query names, you can combine them to change direction behavior between media queries.</p>
+            <p>Every direction classname is available for each breakpoint names, you can combine them to change direction behavior between breakpoints.</p>
             <p>Like below with <code>.direction-column.large-direction-row</code>:</p>
             <div class="demo-result">
                 <div class="flex-grid flex-demo direction-column large-direction-row">
@@ -144,21 +140,27 @@
             </div>
 
             <div class="v-space-tiny">
-                <p>Classnames are builded using enabled media queries from <code>$sv-breakpoints</code>.</p>
+                <p>Classnames are builded using enabled breakpoints from <code>$sv-breakpoints</code>.</p>
                 <table>
                     <thead>
                         <tr>
                             <th></th>
-                            {% for name in ['row', 'row reverse', 'column', 'column reverse'] %}
+                            {% for name in styleguide.flex_directions %}
                             <th>{{ name|capitalize }}</th>
                             {% endfor %}
                         </tr>
                     </thead>
                     <tbody>
-                        {% for breakpoint in ['', 'small', 'medium', 'large', 'xlarge', 'xxlarge'] %}
+                        <tr>
+                            <th></th>
+                            {% for name in styleguide.flex_directions %}
+                                <td>.direction-{{ name }}</td>
+                            {% endfor %}
+                        </tr>
+                        {% for breakpoint in styleguide.breakpoints %}
                         <tr>
                             <th>{% if breakpoint %}{{ breakpoint|capitalize }}{% endif %}</th>
-                            {% for name in ['row', 'row-reverse', 'column', 'column-reverse'] %}
+                            {% for name in styleguide.flex_directions %}
                                 <td>.{{ breakpoint }}{% if breakpoint %}-{% endif %}direction-{{ name }}</td>
                             {% endfor %}
                         </tr>
