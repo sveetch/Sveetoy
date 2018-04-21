@@ -76,22 +76,22 @@ $include-sv-classes: false;
     $values: ();
 
     @if $global-weight-thin != null {
-        $names: append($names, 'thin');
+        $names: append($names, "thin");
         $values: append($values, $global-weight-thin);
     }
 
     @if $global-weight-normal != null {
-        $names: append($names, 'normal');
+        $names: append($names, "normal");
         $values: append($values, $global-weight-normal);
     }
 
     @if $global-weight-bold != null {
-        $names: append($names, 'bold');
+        $names: append($names, "bold");
         $values: append($values, $global-weight-bold);
     }
 
     @if $global-weight-strong != null {
-        $names: append($names, 'strong');
+        $names: append($names, "strong");
         $values: append($values, $global-weight-strong);
     }
 

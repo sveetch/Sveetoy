@@ -91,7 +91,7 @@ prod-sassdoc:
 	./node_modules/sassdoc/bin/sassdoc sources/sass/sveetoy
 
 zip-release:
-	bin/python release.py
+	bin/python release.py -f
 
 release: zip-release prod-build prod-sassdoc
 

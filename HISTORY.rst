@@ -4,15 +4,20 @@
 Changelog
 =========
 
-Version 0.8.4 - Unreleased
+Version 0.8.4 - 2018/04/22
 --------------------------
+
+`Download ZIP package for version 0.8.4 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.8.4.zip>`_
 
 * Fix flexbox component where some rules was allways created even if ``$include-sv-flex`` was disabled;
 * Implemented usage of `PyCssStyleguide`_ to fully build demonstration from styleguide. You can find the CSS manifest in ``styleguide_manifest.scss``;
 * Common color backgrounds classes (aka ``.bg-NAME``) are now builded from ``$sv-color-background-palette`` which by default is a copy of ``$sv-colors-schemes``;
+* Dropped ``styleguide`` component since now styleguide is achieved through `PyCssStyleguide`_;
 
 Version 0.8.3 - 2018/03/13
 --------------------------
+
+`Download ZIP package for version 0.8.3 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.8.3.zip>`_
 
 * ``$sv-hr-default-color`` miss ``!default`` mark, close #43;
 * Don't use anymore shortand ``flex`` property to avoid a `bug from IE11 <https://github.com/philipwalton/flexbugs#flexbug-8>`_, close #45;
@@ -24,6 +29,8 @@ A dummy version to fix an error in release. Forgot it.
 
 Version 0.8.1 - 2018/02/12
 --------------------------
+
+`Download ZIP package for version 0.8.1 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.8.1.zip>`_
 
 * Added some lines about 'hover' support for color scheme model usage in box and button, close #40;
 * Added component ``styleguide`` with helper classes ``styleguide-schemes-background-COLORNAME``, close #41;

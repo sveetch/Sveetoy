@@ -10,7 +10,7 @@
     <link href="//fonts.googleapis.com/css?family=Overlock+SC%7CRoboto:100,400,700,900" rel="stylesheet">
     <meta name="robots" content="index,follow,all">
 
-        <link rel="stylesheet" href="./static/css/app.foundation6.min.css?0616d45a">
+        <link rel="stylesheet" href="./static/css/app.foundation6.min.css?4a8e6e92">
         
         <script src="./static/js/modernizr_f6.min.js?c9eb8d85"></script>
         
@@ -84,7 +84,7 @@
                     <a href="http://sveetch.github.io/Sveetoy/api/" class="button lightskyblue" target="blank">Mixins and variables documentation</a>
                 </div>
                 <div class="small-12 medium-6 columns medium-text-left v-space-tiny">
-                    <a href="http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.8.3.zip" class="button">Download version 0.8.3 (ZIP)</a>
+                    <a href="http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.8.4.zip" class="button">Download version 0.8.4 (ZIP)</a>
                 </div>
                 <div class="small-12 columns text-center v-space-tiny">
                     <a href="https://github.com/sveetch/Sveetoy/blob/master/HISTORY.rst" class="button snow1" target="blank">See changelog and older packages in history file</a>
@@ -113,7 +113,9 @@
 
             <p><code>sveetoy/_f6_settings.scss</code> contains a sample setting file you may include in at end of your main settings file and adjust to your needs. Be aware that some of its values are linked to some Foundation setting values.</p>
 
-            <p>Once installed with sample settings it would add CSS styles for around 7Ko and adding more items to color schemes and space schemes will grow up your CSS file a little bit.</p>
+            <p>Once installed with sample settings it would add CSS styles for around 7Ko. Adding more items to color schemes and space schemes will grow up your CSS file a little bit.</p>
+
+            <p>Optionally you can watch about <a href="https://pycssstyleguide.readthedocs.io/en/latest/" target="blank">PyCssStyleguide</a> to build a styleguide for Sveetoy components. A <a href="https://github.com/sveetch/Sveetoy/tree/master/sources/sass/scss_f6/styleguide_manifest.scss">Sass source for CSS manifest</a> is available which contains references about every components.</p>
         </div>
     </div>
 </div>
@@ -130,31 +132,45 @@
                 <div class="cell small-100 medium-33 box">
                     <h2>Thickness</h2>
                     <ul>
+                        
                         <li>thin</li>
+                        
                         <li>normal</li>
+                        
                         <li>bold</li>
-                        <li>strong</li>
+                        
                     </ul>
                 </div>
 
                 <div class="cell small-100 medium-33 box">
                     <h2>Distance</h2>
                     <ul>
+                        
                         <li>sticked</li>
+                        
                         <li>near</li>
+                        
                         <li>default</li>
+                        
                         <li>far</li>
+                        
                     </ul>
                 </div>
 
                 <div class="cell small-100 medium-33 box">
                     <h2>Width</h2>
                     <ul>
+                        
                         <li>tiny</li>
+                        
                         <li>short</li>
+                        
                         <li>normal</li>
+                        
                         <li>large</li>
+                        
                         <li>wide</li>
+                        
                         <li>full</li>
                     </ul>
                 </div>
@@ -188,32 +204,32 @@
 
 
     <div class="column row larger">
-        <h2>Color backgrounds</h2>
+        <h2>Color palette</h2>
 
         <div class="flex-grid marged">
             
                 <div class="cell medium-50 large-33 xlarge-20 v-align-between">
-                    <p><em>.bg-black</em> :</p>
-                    <p><small class="styleguide-schemes-background-black"></small></p>
-                    <div class="bg-black" style="width: 100%; height: 75px;"></div>
-                </div>
-            
-                <div class="cell medium-50 large-33 xlarge-20 v-align-between">
-                    <p><em>.bg-transparent</em> :</p>
-                    <p><small class="styleguide-schemes-background-transparent"></small></p>
-                    <div class="bg-transparent" style="width: 100%; height: 75px;"></div>
-                </div>
-            
-                <div class="cell medium-50 large-33 xlarge-20 v-align-between">
-                    <p><em>.bg-lightskyblue</em> :</p>
-                    <p><small class="styleguide-schemes-background-lightskyblue"></small></p>
-                    <div class="bg-lightskyblue" style="width: 100%; height: 75px;"></div>
+                    <p><em>.bg-white</em> :</p>
+                    <p><small>#ffffff</small></p>
+                    <div class="bg-white" style="width: 100%; height: 75px;"></div>
                 </div>
             
                 <div class="cell medium-50 large-33 xlarge-20 v-align-between">
                     <p><em>.bg-snow1</em> :</p>
-                    <p><small class="styleguide-schemes-background-snow1"></small></p>
+                    <p><small>#fffafa</small></p>
                     <div class="bg-snow1" style="width: 100%; height: 75px;"></div>
+                </div>
+            
+                <div class="cell medium-50 large-33 xlarge-20 v-align-between">
+                    <p><em>.bg-black</em> :</p>
+                    <p><small>#000000</small></p>
+                    <div class="bg-black" style="width: 100%; height: 75px;"></div>
+                </div>
+            
+                <div class="cell medium-50 large-33 xlarge-20 v-align-between">
+                    <p><em>.bg-lightskyblue</em> :</p>
+                    <p><small>#87cefa</small></p>
+                    <div class="bg-lightskyblue" style="width: 100%; height: 75px;"></div>
                 </div>
             
         </div>
@@ -287,19 +303,19 @@
             <p>Text colors are available for every color defined in map <code>$sv-color-text-palette</code>. Properties are defined using <code>!important</code> flag so take care of their usage.</p>
             <div class="demo-result v-space-tiny">
                 
-                <p class="text-white">.text-white</p>
-                
-                <p class="text-black">.text-black</p>
+                <p class="text-deepskyblue4">.text-deepskyblue4</p>
                 
                 <p class="text-gray25">.text-gray25</p>
                 
-                <p class="text-gray82">.text-gray82</p>
-                
-                <p class="text-gray88">.text-gray88</p>
-                
                 <p class="text-lightskyblue">.text-lightskyblue</p>
                 
-                <p class="text-deepskyblue4">.text-deepskyblue4</p>
+                <p class="text-gray82">.text-gray82</p>
+                
+                <p class="text-black">.text-black</p>
+                
+                <p class="text-white">.text-white</p>
+                
+                <p class="text-gray88">.text-gray88</p>
                 
             </div>
         </div>
@@ -315,13 +331,13 @@
             </ul>
             <div class="demo-result v-space-tiny">
                 
-                <p class="text-thin">.text-thin</p>
-                
-                <p class="text-normal">.text-normal</p>
-                
                 <p class="text-bold"><b>&lt;b&gt;</b>, .text-bold</p>
                 
                 <p class="text-strong"><strong>&lt;strong&gt;</strong>, .text-strong</p>
+                
+                <p class="text-thin">.text-thin</p>
+                
+                <p class="text-normal">.text-normal</p>
                 
             </div>
         </div>
@@ -333,13 +349,13 @@
             <p>Add some size possibilities to <code>&lt;small&gt;</code> element. <code>.medium</code> is equivalent to the default <code>&lt;small&gt;</code> behavior. Available sizes are built from <code>$sv-smalls</code>.</p>
             <div class="demo-result v-space-tiny">
                 
-                <p><code>.small</code> <small class="small">Sagittis enim venenatis integer nam in sapien, dictum maecenas parturient est, dictumst ac faucibus magnis.</small></p>
+                <p><code>.small</code> <small class="small">Blandit vitae sem arcu ultrices commodo, cras venenatis sollicitudin faucibus dictumst habitasse, curabitur lacus vulputate.</small></p>
                 
-                <p><code>.medium</code> <small class="medium">Molestie litora netus iaculis fames id, convallis ut pellentesque malesuada ornare pede, semper nonummy congue.</small></p>
+                <p><code>.big</code> <small class="big">Per posuere turpis adipiscing faucibus proin feugiat praesent conubia, penatibus nec est conubia lectus, cum.</small></p>
                 
-                <p><code>.big</code> <small class="big">Fusce euismod massa donec cum eros vivamus tellus, magnis primis arcu congue eros, fusce class.</small></p>
+                <p><code>.large</code> <small class="large">Sapien torquent turpis potenti sollicitudin curabitur fringilla nonummy, sagittis sem pharetra natoque id ante, malesuada.</small></p>
                 
-                <p>Non tortor mollis orci feugiat nec, malesuada aenean class varius aptent, rhoncus id lorem urna.</p>
+                <p>Dignissim euismod eleifend mollis cum donec ornare, non molestie fames enim, purus sed sociis porttitor.</p>
             </div>
         </div>
     </div>
@@ -471,22 +487,15 @@
             <h3>Color</h3>
             <p>Built from list <code>$sv-underline-colors</code>.</p>
             <div class="flex-grid marged">
-                
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
-                        <p class="title-4 underline normal">.underline.normal</p>
+                        <p class="title-4 underline">.underline</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
-                        <p class="title-4 underline white">.underline.white</p>
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-tiny">
-                        <p class="title-4 underline black">.underline.black</p>
+                        <p class="title-4 underline deepskyblue4">.underline.deepskyblue4</p>
                     </div>
                 </div>
                 
@@ -498,25 +507,31 @@
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
-                        <p class="title-4 underline gray82">.underline.gray82</p>
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-tiny">
-                        <p class="title-4 underline gray88">.underline.gray88</p>
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-tiny">
                         <p class="title-4 underline lightskyblue">.underline.lightskyblue</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
-                        <p class="title-4 underline deepskyblue4">.underline.deepskyblue4</p>
+                        <p class="title-4 underline gray82">.underline.gray82</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline black">.underline.black</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline white">.underline.white</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p class="title-4 underline gray88">.underline.gray88</p>
                     </div>
                 </div>
                 
@@ -593,25 +608,17 @@
             <h3>Color</h3>
             <p>Built from list <code>$sv-hr-colors</code>.</p>
             <div class="flex-grid marged">
-                
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
-                        <p>hr.normal</p>
-                        <hr class="normal">
+                        <p>hr</p>
+                        <hr>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
-                        <p>hr.white</p>
-                        <hr class="white">
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-tiny">
-                        <p>hr.black</p>
-                        <hr class="black">
+                        <p>hr.deepskyblue4</p>
+                        <hr class="deepskyblue4">
                     </div>
                 </div>
                 
@@ -624,20 +631,6 @@
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
-                        <p>hr.gray82</p>
-                        <hr class="gray82">
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-tiny">
-                        <p>hr.gray88</p>
-                        <hr class="gray88">
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="demo-result v-space-tiny">
                         <p>hr.lightskyblue</p>
                         <hr class="lightskyblue">
                     </div>
@@ -645,8 +638,29 @@
                 
                 <div class="cell small-100 medium-50 large-33">
                     <div class="demo-result v-space-tiny">
-                        <p>hr.deepskyblue4</p>
-                        <hr class="deepskyblue4">
+                        <p>hr.gray82</p>
+                        <hr class="gray82">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.black</p>
+                        <hr class="black">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.white</p>
+                        <hr class="white">
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="demo-result v-space-tiny">
+                        <p>hr.gray88</p>
+                        <hr class="gray88">
                     </div>
                 </div>
                 
@@ -929,15 +943,12 @@
             <p>Make the button text stronger and uppercase.</p>
             <div class="demo-result v-space-tiny">
                 <div class="row">
-                    
                     <div class="large-4 columns">
                         <a href="" class="button">.button</a>
                     </div>
-                    
                     <div class="large-4 columns end">
                         <a href="" class="button important">.button.important</a>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -963,29 +974,24 @@
             <p>Add <code>.modest</code> feature so the button padding are divided by two or less, it depend from size definitions in <code>$sv-button-modests</code>.</p>
             <div class="demo-result v-space-tiny">
                 <div class="row">
-                    
-                    <div class="large-4 columns">
-                        <a href="" class="button">.button</a>
-                    </div>
-                    
-                    <div class="large-4 columns">
-                        <a href="" class="button small modest">.button.small.modest</a>
-                    </div>
-                    
                     <div class="large-4 columns">
                         <a href="" class="button modest">.button.modest</a>
                     </div>
                     
                     <div class="large-4 columns">
-                        <a href="" class="button large modest">.button.large.modest</a>
+                        <a href="" class="button modest tiny">.button.modest.tiny</a>
                     </div>
                     
                     <div class="large-4 columns">
-                        <a href="" class="button small modest radius">.button.small.modest.radius</a>
+                        <a href="" class="button modest small">.button.modest.small</a>
+                    </div>
+                    
+                    <div class="large-4 columns">
+                        <a href="" class="button modest medium">.button.modest.medium</a>
                     </div>
                     
                     <div class="large-4 columns end">
-                        <a href="" class="button modest round">.button.modest.round</a>
+                        <a href="" class="button modest large">.button.modest.large</a>
                     </div>
                     
                 </div>
@@ -1001,39 +1007,27 @@
                 <div class="row">
                     
                     <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button">.button</a>
+                        <a href="" class="button white">.buttonwhite</a>
                     </div>
                     
                     <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button white">.button.white</a>
+                        <a href="" class="button black">.buttonblack</a>
                     </div>
                     
                     <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button black">.button.black</a>
+                        <a href="" class="button lightskyblue">.buttonlightskyblue</a>
                     </div>
                     
                     <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button snow1">.button.snow1</a>
+                        <a href="" class="button snow1">.buttonsnow1</a>
                     </div>
                     
                     <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button snow1 disabled">.button.snow1.disabled</a>
-                    </div>
-                    
-                    <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button snow1-bordered">.button.snow1-bordered</a>
-                    </div>
-                    
-                    <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button lightskyblue">.button.lightskyblue</a>
-                    </div>
-                    
-                    <div class="large-4 columns v-space-tiny">
-                        <a href="" class="button lightskyblue disabled">.button.lightskyblue.disabled</a>
+                        <a href="" class="button lightskyblue-bordered">.buttonlightskyblue-bordered</a>
                     </div>
                     
                     <div class="large-4 columns end v-space-tiny">
-                        <a href="" class="button lightskyblue-bordered">.button.lightskyblue-bordered</a>
+                        <a href="" class="button snow1-bordered">.buttonsnow1-bordered</a>
                     </div>
                     
                 </div>
@@ -1065,55 +1059,15 @@
         </div>
     </div>
 
-    
     <div class="block">
         <div class="row">
             <div class="small-12 columns">
                 <h2>.block</h2>
-                <p><small class="styleguide-schemes-background-default"></small></p>
+                <p><small class="styleguide-schemes-background-"></small></p>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Ipsum mus ut risus torquent, placerat dictum viverra fames sociosqu viverra lectus, eu eleifend parturient aptent platea metus, primis rhoncus. Malesuada litora massa senectus eros commodo luctus.</p>
-<p>Lobortis ut ornare sem justo suspendisse platea adipiscing commodo, metus ultricies accumsan nullam, natoque id varius. Mus adipiscing in ultricies lectus libero natoque, lacinia primis fermentum malesuada tempor mauris nam. Conubia lectus mattis venenatis inceptos parturient, suscipit platea.</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="block black">
-        <div class="row">
-            <div class="small-12 columns">
-                <h2>.block.black</h2>
-                <p><small class="styleguide-schemes-background-black"></small></p>
-                <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
-
-                <p>Nibh donec a ad diam lorem mattis class, turpis vivamus torquent maecenas mollis suspendisse augue luctus,. Sociis lectus fusce sagittis, morbi pellentesque in tempus nostra sem, praesent sit tortor aliquam dictumst natoque, tortor faucibus mattis maecenas vitae luctus risus, sodales sociosqu. Neque luctus velit sagittis phasellus, nunc.</p>
-<p>Libero hac hymenaeos pede lacus, cras commodo velit vehicula aptent vivamus, pharetra nisi tristique euismod, phasellus lorem pellentesque nunc tortor, eget vestibulum per. Parturient dignissim faucibus ante, lectus adipiscing erat pellentesque suspendisse, dignissim imperdiet scelerisque libero.</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="block transparent">
-        <div class="row">
-            <div class="small-12 columns">
-                <h2>.block.transparent</h2>
-                <p><small class="styleguide-schemes-background-transparent"></small></p>
-                <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
-
-                <p>Eros condimentum a duis euismod donec montes varius, lacus feugiat ultrices mattis primis nam iaculis, purus donec. Ridiculus habitant sapien sodales felis donec, laoreet potenti a sed tempor, massa pulvinar elit bibendum integer conubia, in sociis. Augue vivamus sed risus facilisi.</p>
-<p>Pharetra blandit adipiscing quam pharetra, laoreet aenean arcu tempor, ac faucibus magna ac ipsum leo, massa senectus litora non, duis. Aenean inceptos nunc nibh.</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="block lightskyblue">
-        <div class="row">
-            <div class="small-12 columns">
-                <h2>.block.lightskyblue</h2>
-                <p><small class="styleguide-schemes-background-lightskyblue"></small></p>
-                <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
-
-                <p>Laoreet vivamus porta odio tortor fames proin, aliquet molestie risus nec diam felis, magna sit curabitur dictum dolor, consectetuer. Parturient scelerisque turpis metus orci, dignissim quisque nam nascetur viverra libero, proin egestas tortor sociosqu. Donec nec tristique velit suscipit sollicitudin, in ipsum dapibus lobortis morbi volutpat.</p>
-<p>Turpis malesuada senectus aptent sociis facilisi, erat hac class faucibus risus bibendum laoreet, hymenaeos dignissim platea dictumst id torquent, enim. Potenti eu vitae hymenaeos amet, maecenas erat bibendum lectus accumsan, varius vivamus feugiat arcu facilisis. Sed urna congue nonummy, dignissim platea.</p>
+                <p>Netus phasellus semper class sollicitudin leo, commodo eget euismod quis vitae, fermentum malesuada ultricies nunc congue ornare. Netus tempor sapien lacus bibendum donec.</p>
+<p>Orci justo pede urna accumsan ultricies venenatis, id interdum feugiat euismod aptent augue elit, condimentum lacus ligula rhoncus pede. Luctus rutrum convallis placerat justo.</p>
             </div>
         </div>
     </div>
@@ -1122,24 +1076,76 @@
         <div class="row">
             <div class="small-12 columns">
                 <h2>.block.snow1</h2>
-                <p><small class="styleguide-schemes-background-snow1"></small></p>
+                <p><small>#fffafa</small></p>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>Placerat quam sodales scelerisque congue, erat condimentum justo dis ultricies nostra, vel cum maecenas tempus parturient semper nullam, non pede luctus feugiat, est elementum. Non suscipit litora sociis litora sagittis gravida, adipiscing nisl pellentesque egestas cras luctus, faucibus cras venenatis eget, egestas sagittis porttitor nisi.</p>
-<p>Nullam purus cursus mattis per magnis quisque, fames consectetuer sem dictum hendrerit semper, congue montes proin suspendisse, pellentesque integer egestas dictum orci condimentum habitant,. Venenatis nascetur suspendisse hymenaeos, in senectus scelerisque ullamcorper aptent.</p>
+                <p>Aliquet semper pharetra placerat tristique maecenas semper bibendum, eget sociosqu primis magna, commodo ante nonummy faucibus. Tortor varius ultrices dictumst quam praesent nunc, sapien volutpat sagittis facilisis ipsum eleifend, faucibus posuere pellentesque hymenaeos. Turpis mollis sociis tortor, arcu platea condimentum elit dignissim, enim tellus tortor nisl lacinia mauris.</p>
+<p>Vivamus adipiscing consectetuer parturient curabitur fames, tellus tempor tortor vel tincidunt platea mi, semper lorem platea viverra penatibus egestas pretium. Suscipit sit magnis imperdiet, tellus amet morbi neque lobortis morbi, purus class elit condimentum, cubilia varius duis auctor. Lectus quis sodales iaculis purus fusce, massa ultricies fermentum.</p>
             </div>
         </div>
     </div>
     
-    <div class="block wide">
+    <div class="block lightskyblue-bordered">
         <div class="row">
             <div class="small-12 columns">
-                <h2>.block.wide</h2>
-                <p><small class="styleguide-schemes-background-wide"></small></p>
+                <h2>.block.lightskyblue-bordered</h2>
+                <p><small>#87cefa</small></p>
                 <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                <p>A ridiculus taciti dapibus torquent inceptos porttitor integer, laoreet semper magnis lorem eleifend nascetur varius, aliquam quisque semper mauris fringilla, nulla erat nunc.</p>
-<p>Netus aptent tempus feugiat ligula sit, nulla mauris mi venenatis class, mauris platea facilisi integer bibendum, posuere vulputate tempor ultrices euismod et, parturient pretium justo. Amet lorem blandit in egestas, quisque vivamus tortor.</p>
+                <p>Hac suspendisse nibh tempus gravida rhoncus dolor, odio conubia cum eros auctor, nostra cursus pulvinar phasellus litora senectus, ullamcorper interdum augue. Quam quisque mauris vel varius bibendum penatibus, leo urna tempus tempor primis.</p>
+<p>Mauris consectetuer vehicula nonummy mus erat, habitant sociosqu praesent id, leo neque consectetuer litora lacinia, nibh purus dapibus quis mus, sit ad. Sociosqu venenatis nulla dictumst integer volutpat dui velit, suspendisse vestibulum habitant.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="block snow1-bordered">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2>.block.snow1-bordered</h2>
+                <p><small>#fffafa</small></p>
+                <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+
+                <p>Fames ultrices vivamus nascetur ut cras lacus, accumsan taciti placerat aenean eleifend, conubia eros nulla at nonummy, nam montes lectus dui, molestie cum scelerisque. Congue ornare suscipit consequat lobortis, sit penatibus vehicula etiam class cum, dapibus fames magna hymenaeos. Duis dignissim pharetra nascetur a metus, litora velit.</p>
+<p>Ultricies pretium porttitor pharetra nulla, varius morbi erat duis facilisi lobortis curabitur, porta per a primis. Sapien consequat semper penatibus, etiam pellentesque inceptos sociis, pulvinar etiam tristique ultricies cras ut netus, dictumst cras. Cursus mauris nam fusce enim nam erat, curabitur habitasse a tempor egestas lorem.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="block black">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2>.block.black</h2>
+                <p><small>#000000</small></p>
+                <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+
+                <p>Integer lectus est nonummy duis neque conubia, mi habitant nulla ad lobortis, eu ad nascetur blandit quam, phasellus accumsan per lobortis dictumst. Massa nisi ad malesuada dolor, taciti phasellus senectus eget nulla, consequat hendrerit nunc.</p>
+<p>Iaculis blandit vel dui penatibus ut, diam potenti diam aliquet tristique, eleifend quam est suspendisse libero vehicula class, quam aliquet praesent. Nostra fames taciti nulla ultrices vehicula, mauris id conubia sed quis.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="block white">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2>.block.white</h2>
+                <p><small>#ffffff</small></p>
+                <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+
+                <p>Adipiscing sodales neque nullam nisl auctor, vitae eu dapibus potenti laoreet hendrerit tristique, elementum malesuada hymenaeos fermentum magnis laoreet, conubia tincidunt. Erat ridiculus sem dis.</p>
+<p>Lorem erat urna metus aliquam odio, fermentum eros magna sodales id, cursus duis varius magna commodo consequat, maecenas montes habitasse. Cursus eu senectus velit risus, mollis nascetur euismod et, curae lorem nec sapien magnis, donec sapien nascetur condimentum nullam. A curae duis.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="block lightskyblue">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2>.block.lightskyblue</h2>
+                <p><small>#87cefa</small></p>
+                <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+
+                <p>Imperdiet ante convallis fringilla justo vel aenean, etiam lobortis volutpat ornare ullamcorper convallis viverra, per nunc platea malesuada. Adipiscing pellentesque ridiculus leo ornare, euismod sodales at tempus, pede eros pellentesque ridiculus pulvinar ut, ultrices lacinia potenti. Porta orci ornare fusce auctor rutrum, magnis taciti vel neque bibendum parturient, hendrerit.</p>
+<p>Odio vehicula libero nibh at erat, habitant sit phasellus inceptos ligula auctor, blandit cursus taciti porttitor sit varius,. Scelerisque erat nisi.</p>
             </div>
         </div>
     </div>
@@ -1154,8 +1160,8 @@
 
                     <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
 
-                    <p>Accumsan placerat donec ultrices euismod tempor dictumst, aenean montes iaculis ipsum augue potenti, aliquet fusce senectus et platea, adipiscing hymenaeos. Consectetuer adipiscing cursus ut, habitasse velit primis.</p>
-<p>Bibendum lorem libero praesent parturient libero, cursus diam justo class gravida elementum, luctus euismod rutrum interdum cursus, venenatis non semper tristique vitae, congue. Integer erat tempus sociis nullam, eros donec mollis etiam at rhoncus consequat, urna elit nibh. Cras at elementum lacinia lacus.</p>
+                    <p>Consequat placerat lacinia ante donec, egestas quis augue platea, fringilla sed vel fringilla eleifend adipiscing, diam sagittis laoreet mus, congue luctus turpis. Blandit sociosqu suscipit cubilia laoreet porta, nonummy phasellus luctus mi, dictumst varius vitae potenti, metus aenean eu fusce, nulla curae aliquam. Sit molestie.</p>
+<p>Fermentum aenean dui aptent suspendisse, penatibus curabitur laoreet dui pellentesque vestibulum, dis mauris netus iaculis metus proin erat, montes taciti. Praesent eget ad mi risus, tortor varius fames nulla scelerisque litora, nec penatibus.</p>
                 </div>
             </div>
         </div>
@@ -1165,7 +1171,7 @@
     <div class="row larger demo-introduction">
         <div class="small-12 columns">
             <h1 class="text-upper">Boxes</h1>
-            <p>Box component is combinates spaces and colors settings alike blocks but with both horizontal and vertical padding and optional borders.</p>
+            <p>Box component combinates spaces and colors settings alike blocks but with both horizontal and vertical padding and optional borders.</p>
             <p>This component support 'hover' prefix for every color scheme properties that will operate on 'hover' event.</p>
 
             <dl>
@@ -1185,10 +1191,15 @@
             <p>Space features are built from <code>$sv-spaces</code> (except for <code>.unpadded</code> that just set padding to 0). Default box spaces comes from <code>normal</code> item from <code>$sv-spaces</code>.</p>
             <p>Additionaly, to respect visual spaces, first direct child never have a margin and last direct child never have a margin bottom.</p>
             <div class="flex-grid marged demo-result">
-                
                 <div class="cell small-100 medium-50 large-33">
                     <div class="box unpadded">
                         <h3>.box.unpadded</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box">
+                        <h3>.box</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
@@ -1208,8 +1219,8 @@
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="box">
-                        <h3>.box</h3>
+                    <div class="box normal">
+                        <h3>.box.normal</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
@@ -1236,15 +1247,22 @@
             <div class="flex-grid marged demo-result">
                 
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="box">
-                        <h3></h3>
+                    <div class="box snow1">
+                        <h3>.snow1</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
-                    <div class="box white">
-                        <h3>.white</h3>
+                    <div class="box lightskyblue-bordered">
+                        <h3>.lightskyblue-bordered</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
+                    <div class="box snow1-bordered">
+                        <h3>.snow1-bordered</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
@@ -1257,22 +1275,15 @@
                 </div>
                 
                 <div class="cell small-100 medium-50 large-33">
+                    <div class="box white">
+                        <h3>.white</h3>
+                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                    </div>
+                </div>
+                
+                <div class="cell small-100 medium-50 large-33">
                     <div class="box lightskyblue">
                         <h3>.lightskyblue</h3>
-                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="box snow1">
-                        <h3>.snow1</h3>
-                        <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
-                    </div>
-                </div>
-                
-                <div class="cell small-100 medium-50 large-33">
-                    <div class="box snow1-bordered">
-                        <h3>.snow1-bordered</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                     </div>
                 </div>
@@ -1314,8 +1325,8 @@
                         <h3>.lightskyblue</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                         <div class="box">
-                            <h4>Default color</h4>
-                            <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                            <h4>Default behavior</h4>
+                            <p>Apply default box color scheme</p>
                         </div>
                     </div>
                 </div>
@@ -1324,8 +1335,8 @@
                         <h3>.lightskyblue</h3>
                         <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
                         <div class="box transparent">
-                            <h4>.transparent</h4>
-                            <p>Suspendisse <b>bold</b> mauris, auctor <strong>strong</strong> pretium ac, <i>italic</i> eu mauris. Donec in <em>emphased</em> tortor. Duis <small>small</small> orci sit amet justo <a href="">a link</a> vestibulum. Vivamus commodo <code>some code</code> arcu elit.</p>
+                            <h4>.transparent behavior</h4>
+                            <p>Don't apply any color scheme</p>
                         </div>
                     </div>
                 </div>
@@ -1340,10 +1351,10 @@
             <h1 class="text-upper">Flexbox</h1>
             <p>A simple flexbox grid.</p>
             <p>Alike <code>.row</code> in float grid, <code>.flex-grid</code> is the main container and <code>.cell</code> is equivalent to <code>.columns</code>.</p>
-            <p>Available cell sizes are builded from <code>$sv-flex-grid-sizes</code> list and defined for each Foundation media query.</p>
+            <p>Available cell sizes are builded from <code>$sv-flex-grid-sizes</code> list and defined for each enabled breakpoints.</p>
             <p><code>.margin</code> feature is defined from <code>$sv-flex-grid-gutter</code>.</p>
 
-            <p>Available cell width sizes are builded from list <code>$sv-flex-grid-sizes</code>, note that size decimals are removed from the size class name, so value 33.333 will build a class name like <code>.small-33</code>, <code>.medium-33</code>, etc..</p>
+            <p>Available cell width sizes are builded from list <code>$sv-flex-grid-sizes</code>, note that size decimals are removed from the size class name so value <code>33.333</code> will build a class names like <code>.small-33</code>, <code>.medium-33</code>, etc..</p>
 
             <dl>
                 <dt>Can be disabled with</dt>
@@ -1363,35 +1374,35 @@
                     <div class="cell">
                         <p>.cell</p>
                     </div>
+                    
+                    <div class="cell small-100 medium-25">
+                        <p>.cell.small-100.medium-25</p>
+                        <p><small>25%</small></p>
+                    </div>
+                    
+                    <div class="cell small-100 medium-20">
+                        <p>.cell.small-100.medium-20</p>
+                        <p><small>20%</small></p>
+                    </div>
+                    
+                    <div class="cell small-100 medium-33">
+                        <p>.cell.small-100.medium-33</p>
+                        <p><small>33.3333%</small></p>
+                    </div>
+                    
                     <div class="cell small-100 medium-50">
                         <p>.cell.small-100.medium-50</p>
-                    </div>
-                    <div class="cell small-100 medium-50">
-                        <p>.cell.small-100.medium-50</p>
+                        <p><small>50%</small></p>
                     </div>
                     
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
+                    <div class="cell small-100 medium-75">
+                        <p>.cell.small-100.medium-75</p>
+                        <p><small>75%</small></p>
                     </div>
                     
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
-                    </div>
-                    
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
-                    </div>
-                    
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
-                    </div>
-                    
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
-                    </div>
-                    
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
+                    <div class="cell small-100 medium-100">
+                        <p>.cell.small-100.medium-100</p>
+                        <p><small>100%</small></p>
                     </div>
                     
                 </div>
@@ -1408,35 +1419,35 @@
                     <div class="cell">
                         <p>.cell</p>
                     </div>
+                    
+                    <div class="cell small-100 medium-25">
+                        <p>.cell.small-100.medium-25</p>
+                        <p><small>25%</small></p>
+                    </div>
+                    
+                    <div class="cell small-100 medium-20">
+                        <p>.cell.small-100.medium-20</p>
+                        <p><small>20%</small></p>
+                    </div>
+                    
+                    <div class="cell small-100 medium-33">
+                        <p>.cell.small-100.medium-33</p>
+                        <p><small>33.3333%</small></p>
+                    </div>
+                    
                     <div class="cell small-100 medium-50">
                         <p>.cell.small-100.medium-50</p>
-                    </div>
-                    <div class="cell small-100 medium-50">
-                        <p>.cell.small-100.medium-50</p>
+                        <p><small>50%</small></p>
                     </div>
                     
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
+                    <div class="cell small-100 medium-75">
+                        <p>.cell.small-100.medium-75</p>
+                        <p><small>75%</small></p>
                     </div>
                     
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
-                    </div>
-                    
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
-                    </div>
-                    
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
-                    </div>
-                    
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
-                    </div>
-                    
-                    <div class="cell small-100 medium-33">
-                        <p>.cell.small-100.medium-33</p>
+                    <div class="cell small-100 medium-100">
+                        <p>.cell.small-100.medium-100</p>
+                        <p><small>100%</small></p>
                     </div>
                     
                 </div>
@@ -1453,27 +1464,27 @@
                     
                     <div class="cell small-100 medium-33 v-align-start">
                         <p><code>.v-align-start</code></p>
-                        <p>Ad platea netus molestie accumsan habitant aenean, eu erat senectus praesent, feugiat gravida mattis porttitor.</p>
+                        <p>Habitant ac commodo et odio pede tellus, aenean rhoncus sapien cubilia, eros laoreet mauris cras.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-end">
                         <p><code>.v-align-end</code></p>
-                        <p>Vestibulum velit luctus fermentum cum diam, duis mattis fringilla mus nam, massa augue ut conubia.</p>
+                        <p>Placerat auctor porta faucibus nullam blandit facilisi, litora egestas posuere quisque ullamcorper vulputate dignissim, morbi.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-center">
                         <p><code>.v-align-center</code></p>
-                        <p>Aliquet habitant dis primis hymenaeos mus, amet eros risus placerat ac sociosqu dui, nunc maecenas.</p>
+                        <p>Placerat penatibus iaculis porttitor nec pharetra, hymenaeos condimentum congue condimentum odio facilisis platea fringilla, sapien.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-around">
                         <p><code>.v-align-around</code></p>
-                        <p>Laoreet litora parturient venenatis nulla, blandit dignissim ridiculus litora magna vel, mattis litora suspendisse dis.</p>
+                        <p>Aenean tellus cubilia lacinia habitasse aliquam in turpis, ultricies hac facilisis odio, venenatis mollis pharetra.</p>
                     </div>
                     
                     <div class="cell small-100 medium-33 v-align-between">
                         <p><code>.v-align-between</code></p>
-                        <p>Sit in dolor mus pretium quam, morbi orci nisi praesent scelerisque morbi, tristique nunc tellus.</p>
+                        <p>Nunc ad diam fermentum egestas platea rutrum, integer quam curabitur dis sociis, hendrerit dis fringilla.</p>
                     </div>
                     
                 </div>
@@ -1481,9 +1492,9 @@
 
             <h3>Using responsive classes</h3>
 
-            <p>Every alignment classname is available for each Foundation media query names, you can combine them to change alignment behavior between media queries.</p>
+            <p>Every alignment classname is available for each breakpoint names, you can combine them to change alignment behavior between breakpoints.</p>
 
-            <p>Classnames are builded using enabled media queries from <code>$sv-breakpoints</code>.</p>
+            <p>Classnames are builded using enabled breakpoints from <code>$sv-breakpoints</code>.</p>
 
             <table>
                 <thead>
@@ -1503,7 +1514,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
                     <tr>
                         <th></th>
                         
@@ -1683,7 +1693,7 @@
 
             <h3>Using responsive classes</h3>
 
-            <p>Every direction classname is available for each Foundation media query names, you can combine them to change direction behavior between media queries.</p>
+            <p>Every direction classname is available for each breakpoint names, you can combine them to change direction behavior between breakpoints.</p>
             <p>Like below with <code>.direction-column.large-direction-row</code>:</p>
             <div class="demo-result">
                 <div class="flex-grid flex-demo direction-column large-direction-row">
@@ -1704,7 +1714,7 @@
             </div>
 
             <div class="v-space-tiny">
-                <p>Classnames are builded using enabled media queries from <code>$sv-breakpoints</code>.</p>
+                <p>Classnames are builded using enabled breakpoints from <code>$sv-breakpoints</code>.</p>
                 <table>
                     <thead>
                         <tr>
@@ -1712,16 +1722,15 @@
                             
                             <th>Row</th>
                             
-                            <th>Row reverse</th>
+                            <th>Row-reverse</th>
                             
                             <th>Column</th>
                             
-                            <th>Column reverse</th>
+                            <th>Column-reverse</th>
                             
                         </tr>
                     </thead>
                     <tbody>
-                        
                         <tr>
                             <th></th>
                             
@@ -1807,6 +1816,7 @@
     </div>
 
 </div>
+
 
     </div>
 
