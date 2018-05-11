@@ -2,6 +2,6 @@
 """
 Sveetoy Demo project to build with Optimus
 
-``__version__`` define the Sass library version, not the demo.
+``__version__`` define the Sass library version, not the demonstration project.
 """
-__version__ = "0.8.4"
+__version__ = "0.8.5-pre.1"

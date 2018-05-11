@@ -4,6 +4,16 @@
 Changelog
 =========
 
+Version 0.8.5 - Unreleased
+--------------------------
+
+`Download ZIP package for version 0.8.5 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.8.5.zip>`_
+
+* Patch ``$sv-hr-colors`` usage in styleguide to avoid an error when it is empty, close #48;
+* Fix horizontal rule distance so it does not touch anymore horizontal margin, close #47;
+* Added ``sv-flex()`` mixin, related to #30;
+* Added typography mixins for headers, related to #30;
+
 Version 0.8.4 - 2018/04/22
 --------------------------
 

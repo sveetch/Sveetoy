@@ -25,24 +25,14 @@
  * TODO: Undocumented from demonstration
  */
 /*
- * Default component settings
- */
-/*
  *
  * Sections
  *
  */
 /*
- * Default component settings
- */
-/*
  *
  * Boxes
  *
- */
-/*
- *
- * Flexbox
  */
 /*
  *
@@ -69,13 +59,11 @@
  *
  */
 /*
- * Default component settings
- */
-/*
  *
  * Spaces
  *
  */
+/* Helper functions from py-css-styleguide==0.4.0 */
 .styleguide-metas-references {
   --auto: "true";
 }

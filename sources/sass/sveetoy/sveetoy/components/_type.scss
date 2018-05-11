@@ -1,4 +1,5 @@
 @import "../mixins/colors";
+@import "../mixins/typography";
 
 /*
  *
@@ -305,58 +306,15 @@ $sv-hr-distances: () !default;
     }
 
     //
-    // Rewrite titles adding paragraph classes so we can have the same
-    // behaviors without troubling SEO/semantic
-    //
-    // This is almost a copy'n'rewrite from foundation code.
-    //
     // Heading styles
-    @each $size, $headers in $header-styles {
-        @include breakpoint($size) {
-            @each $header, $header-defs in $headers {
-                $font-size-temp: 1rem;
-
-                #{$header},
-                .title-#{str-slice($header, 2)} {
-                    font-family: $header-font-family;
-
-                    @if map-has-key($header-defs, font-size) {
-                        $font-size-temp: rem-calc(map-get($header-defs, font-size));
-                        font-size: $font-size-temp;
-                    } @else if map-has-key($header-defs, fs) {
-                        $font-size-temp: rem-calc(map-get($header-defs, fs));
-                        font-size: $font-size-temp;
-                    } @else if $size == $-zf-zero-breakpoint {
-                        font-size: $font-size-temp;
-                    }
-
-                    @if map-has-key($header-defs, line-height) {
-                        line-height: unitless-calc(map-get($header-defs, line-height), $font-size-temp);
-                    } @else if map-has-key($header-defs, lh) {
-                        line-height: unitless-calc(map-get($header-defs, lh), $font-size-temp);
-                    } @else if $size == $-zf-zero-breakpoint {
-                        line-height: unitless-calc($header-lineheight, $font-size-temp);
-                    }
-
-                    @if map-has-key($header-defs, margin-top) {
-                        margin-top: rem-calc(map-get($header-defs, margin-top));
-                    } @else if map-has-key($header-defs, mt) {
-                        margin-top: rem-calc(map-get($header-defs, mt));
-                    } @else if $size == $-zf-zero-breakpoint {
-                        margin-top: 0;
-                    }
-
-                    @if map-has-key($header-defs, margin-bottom) {
-                        margin-bottom: rem-calc(map-get($header-defs, margin-bottom));
-                    } @else if map-has-key($header-defs, mb) {
-                        margin-bottom: rem-calc(map-get($header-defs, mb));
-                    } @else if $size == $-zf-zero-breakpoint {
-                        margin-bottom: rem-calc($header-margin-bottom);
-                    }
-                }
-            }
-        }
-    }
+    //
+    @include sv-headers(
+        $header-styles,
+        $-zf-zero-breakpoint,
+        $header-font-family,
+        $header-lineheight,
+        $header-margin-bottom
+    );
 
     //
     // Underlined element
@@ -454,9 +412,11 @@ $sv-hr-distances: () !default;
         @if map-get($sv-hr-distances, "default") {
             $distance: map-get($sv-hr-distances, "default");
             @if $distance == 0{
-                margin: 0;
+                margin-top: 0;
+                margin-bottom: 0;
             } @else if $distance > 0{
-                margin: $distance 0;
+                margin-top: $distance;
+                margin-bottom: $distance;
             }
         }
 
@@ -473,9 +433,11 @@ $sv-hr-distances: () !default;
             @if $distance{
                 &.#{$name}{
                     @if $distance == 0{
-                        margin: 0;
+                        margin-top: 0;
+                        margin-bottom: 0;
                     } @else if $distance > 0{
-                        margin: $distance 0;
+                        margin-top: $distance;
+                        margin-bottom: $distance;
                     }
                 }
             }

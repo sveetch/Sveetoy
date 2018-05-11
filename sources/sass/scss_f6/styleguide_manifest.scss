@@ -144,10 +144,19 @@ $include-sv-classes: false;
 }
 
 // Enabled hr colors, using $sv-hr-colors flat map
-.styleguide-reference-hr_colors{
-    --structure: "flat";
-    --keys: "#{get-names($sv-hr-colors)}";
-    --values: "#{get-values($sv-hr-colors)}";
+@if length(map_keys($sv-hr-colors)) > 0 {
+    .styleguide-reference-hr_colors{
+        --structure: "flat";
+        --keys: "#{get-names($sv-hr-colors)}";
+        --values: "#{get-values($sv-hr-colors)}";
+    }
+} @else {
+    // Trick for when is $sv-hr-colors until py-css-styleguide support empty
+    // values for flat structure
+    .styleguide-reference-hr_colors{
+        --structure: "json";
+        --object: "{}";
+    }
 }
 
 
