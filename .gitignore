@@ -33,9 +33,6 @@ coverage.xml
 
 # Foundation sources
 /foundation-sites-*/
-/sources/js/foundation5/foundation
-/sources/js/foundation5/vendor/*.js
-/foundation-sites-*/
 /sources/js/foundation6/foundation
 /sources/js/foundation6/vendor/*.js
 
