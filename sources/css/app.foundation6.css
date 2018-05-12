@@ -10735,18 +10735,36 @@ ul.arrow.defer li > *:first-child::before {
  *
  */
 .github-badge {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 5000;
 }
 
+@media screen and (min-width: 75em) {
+  .github-badge {
+    display: block;
+  }
+}
+
 #main-top-bar {
   padding: 0;
+  justify-content: flex-start;
 }
 
 #main-top-bar .top-bar-title {
+  margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 63.9375em) {
+  #main-top-bar .top-bar-title {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 }
 
 #main-top-bar .top-bar-title .menu-icon::after {

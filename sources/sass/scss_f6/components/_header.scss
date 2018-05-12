@@ -6,18 +6,27 @@
 
 // "Fork me on github" badge
 .github-badge{
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 5000;
+    @include breakpoint(xlarge){
+        display: block;
+    };
 }
 
 /// Header topbar
 #main-top-bar{
     padding: 0;
+    justify-content: flex-start;
 
     .top-bar-title{
+        margin: 0;
         padding: 0;
+        @include breakpoint(medium down){
+            @include sv-flex(1, 0, 100%);
+        };
 
         .menu-icon::after{
             top: rem-calc(-2px);
