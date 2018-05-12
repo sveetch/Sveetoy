@@ -66,6 +66,7 @@ install-foundation6: clean-foundation6
 	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.4.3/vendor/what-input/dist/what-input.js
 
 dev-build: dev-clean
+	boussole compile --config sources/sass/settings.json
 	cd project && ../bin/optimus-cli build
 
 dev-server:

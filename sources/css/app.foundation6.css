@@ -10779,12 +10779,12 @@ ul.arrow.defer li > *:first-child::before {
   line-height: 3.75rem;
 }
 
-#main-top-bar .menu li a.active {
+#main-top-bar .menu li a.is-active {
   color: #ffffff;
   background: #1779ba;
 }
 
-#main-top-bar .menu li a:not(.active):hover {
+#main-top-bar .menu li a:not(.is-active):hover {
   background: #4d4d4d;
 }
 
