@@ -13,6 +13,8 @@ Version 0.9.0-pre.1 - Unreleased
 * Fix horizontal rule distance so it does not touch anymore horizontal margin, close #47;
 * Added ``sv-flex()`` mixin, related to #30;
 * Added typography mixins for headers, related to #30;
+* Upgraded demo to be built on Foundation 6.4.3;
+* Don't load anymore modernizr from demo since it is not used;
 
 Version 0.8.4 - 2018/04/22
 --------------------------

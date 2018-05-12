@@ -29,7 +29,7 @@ delpyc:
 	find . -name "*\.pyc"|xargs rm -f
 
 clean-foundation6:
-	rm -Rf foundation-sites-6.3.1
+	rm -Rf foundation-sites-*
 	rm -Rf sources/js/foundation6/foundation
 	rm -Rf sources/js/foundation6/vendor/*.js
 
@@ -50,20 +50,20 @@ install-sassdoc:
 	npm install sassdoc
 
 install-foundation6: clean-foundation6
-	@echo "* Download Foundation 6.3.1 archive;"
-	wget https://github.com/zurb/foundation-sites/archive/6.3.1.tar.gz
+	@echo "* Download Foundation 6.4.3 archive;"
+	wget https://github.com/zurb/foundation-sites/archive/v6.4.3.tar.gz
 	@echo "* Open archive;"
-	tar xvzf 6.3.1.tar.gz
+	tar xvzf v6.4.3.tar.gz
 	@echo "* Delete archive;"
-	rm -Rf 6.3.1.tar.gz
+	rm -Rf v6.4.3.tar.gz
 	@echo "* Use 'bower' to get Foundation dependencies"
 	cd requirements/foundation6 && bower install
 	@echo "* Link Foundation Javascript files into project sources"
-	cd sources/js/foundation6 && ln -s ../../../foundation-sites-6.3.1/dist/js foundation
-	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.3.1/vendor/jquery/dist/jquery.js
-	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.3.1/vendor/modernizr/modernizr.js
-	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.3.1/vendor/jquery.cookie/jquery.cookie.js
-	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.3.1/vendor/what-input/dist/what-input.js
+	cd sources/js/foundation6 && ln -s ../../../foundation-sites-6.4.3/dist/js foundation
+	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.4.3/vendor/jquery/dist/jquery.js
+# 	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.4.3/vendor/modernizr/modernizr.js
+# 	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.4.3/vendor/jquery.cookie/jquery.cookie.js
+	cd sources/js/foundation6/vendor && ln -s ../../../../foundation-sites-6.4.3/vendor/what-input/dist/what-input.js
 
 dev-build: dev-clean
 	cd project && ../bin/optimus-cli build

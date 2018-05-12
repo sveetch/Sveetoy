@@ -32,10 +32,10 @@ coverage.xml
 /project/.webassets-cache/
 
 # Foundation sources
-/foundation-sites-5.5.3/
+/foundation-sites-*/
 /sources/js/foundation5/foundation
 /sources/js/foundation5/vendor/*.js
-/foundation-sites-6.3.1/
+/foundation-sites-*/
 /sources/js/foundation6/foundation
 /sources/js/foundation6/vendor/*.js
 

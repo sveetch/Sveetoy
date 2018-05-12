@@ -20,9 +20,9 @@
         {%- endblock %}
         {% block more_css %}{% endblock %}
         {% block base_js -%}
-            {% if foundation_version == 6 %}
+            {#{% if foundation_version == 6 %}
                 {%- assets "modernizr_f6_js" -%}<script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>{%- endassets -%}
-            {% endif %}
+            {% endif %}#}
         {%- endblock %}
         {% block head_more_links %}{% endblock %}
     {%- endblock head_content %}
