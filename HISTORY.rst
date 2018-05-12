@@ -4,7 +4,7 @@
 Changelog
 =========
 
-Version 0.9.0-pre.1 - Unreleased
+Version 0.9.0 - 2018/05/12
 --------------------------
 
 `Download ZIP package for version 0.8.5 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.9.0.zip>`_
