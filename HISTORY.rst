@@ -4,13 +4,17 @@
 Changelog
 =========
 
-Version 0.9.1 - Unreleased
+Version 0.9.1 - 2019/11/24
 --------------------------
 
 `Download ZIP package for version 0.9.1 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.9.1.zip>`_
 
-* Add ``$include-hover`` option to ``sv-button-colors()`` mixin to automatically append button properties prefixed with ``hover`` in pseudo event "hover";
-* Fix invalid parent selector ``&`` on top level in some components which has become an error since ``libsass==3.6.2``. It should be a backward change for your previous sources;
+* Add ``$include-hover`` option to ``sv-button-colors()`` mixin to automatically
+  append button properties prefixed with ``hover`` in pseudo event "hover";
+* Fix invalid parent selector ``&`` on top level in some components which has
+  become an error since ``libsass==3.6.2``. It should be a backward change for
+  your previous sources. Users which need to include this fix in previous
+  release can patch it following `commit 231d594 <https://github.com/sveetch/Sveetoy/commit/231d59416ed0b7befad0b630eb26c171ff4f9bbf>`_;
 
 Version 0.9.0 - 2018/05/12
 --------------------------

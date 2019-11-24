@@ -83,6 +83,7 @@ prod-clean:
 	rm -Rf .webassets-cache
 
 prod-build: prod-clean
+	boussole compile --config sources/sass/settings.json
 	cd project && ../bin/optimus-cli build --settings githubpages_settings
 
 prod-server:
