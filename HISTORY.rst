@@ -4,6 +4,13 @@
 Changelog
 =========
 
+Version 0.9.1 - Unreleased
+--------------------------
+
+`Download ZIP package for version 0.9.1 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.9.1.zip>`_
+
+* Add ``$include-hover`` option to ``sv-button-colors()`` mixin to automatically append button properties prefixed with ``hover`` in pseudo event "hover";
+
 Version 0.9.0 - 2018/05/12
 --------------------------
 
@@ -11,8 +18,8 @@ Version 0.9.0 - 2018/05/12
 
 * Patch ``$sv-hr-colors`` usage in styleguide to avoid an error when it is empty, close #48;
 * Fix horizontal rule distance so it does not touch anymore horizontal margin, close #47;
-* Added ``sv-flex()`` mixin, related to #30;
-* Added typography mixins for headers, related to #30;
+* Add ``sv-flex()`` mixin, related to #30;
+* Add typography mixins for headers, related to #30;
 * Upgraded demo to be built on Foundation 6.4.3;
 * Don't load anymore modernizr from demo since it is not used;
 
@@ -22,7 +29,7 @@ Version 0.8.4 - 2018/04/22
 `Download ZIP package for version 0.8.4 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.8.4.zip>`_
 
 * Fix flexbox component where some rules was allways created even if ``$include-sv-flex`` was disabled;
-* Implemented usage of `PyCssStyleguide`_ to fully build demonstration from styleguide. You can find the CSS manifest in ``styleguide_manifest.scss``;
+* Implement usage of `PyCssStyleguide`_ to fully build demonstration from styleguide. You can find the CSS manifest in ``styleguide_manifest.scss``;
 * Common color backgrounds classes (aka ``.bg-NAME``) are now builded from ``$sv-color-background-palette`` which by default is a copy of ``$sv-colors-schemes``;
 * Dropped ``styleguide`` component since now styleguide is achieved through `PyCssStyleguide`_;
 
@@ -44,10 +51,10 @@ Version 0.8.1 - 2018/02/12
 
 `Download ZIP package for version 0.8.1 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.8.1.zip>`_
 
-* Added some lines about 'hover' support for color scheme model usage in box and button, close #40;
-* Added component ``styleguide`` with helper classes ``styleguide-schemes-background-COLORNAME``, close #41;
-* Added ``!important`` mark to all helper classes values, close #42;
-* Fixed wrong mquery in sample settings, close #39;
+* Add some lines about 'hover' support for color scheme model usage in box and button, close #40;
+* Add component ``styleguide`` with helper classes ``styleguide-schemes-background-COLORNAME``, close #41;
+* Add ``!important`` mark to all helper classes values, close #42;
+* Fix wrong mquery in sample settings, close #39;
 
 Version 0.8.0 - 2017/12/11
 --------------------------
@@ -56,30 +63,30 @@ Version 0.8.0 - 2017/12/11
 
 * Bunch of renaming and tidying up, close #31 :
 
-  * Renamed every ``sveetoy`` to ``sv`` in variables, mixins and classes, did the same for ``flexbox`` to ``flex``;
-  * Renamed every breakpoint suffix like ``foo-medium`` to ``medium-foo`` for consistent naming;
+  * Rename every ``sveetoy`` to ``sv`` in variables, mixins and classes, did the same for ``flexbox`` to ``flex``;
+  * Rename every breakpoint suffix like ``foo-medium`` to ``medium-foo`` for consistent naming;
   * Removed useless patch for Foundation5;
   * Removed useless ``topbar`` component;
   * Removed deprecated mixin ``sveetoy-simulate-grid-columns``;
   * Moved ``components/_global.scss`` to ``_global.scss``;
   * Moved every variables from mixins to ``_global.scss`` file;
 
-* Added behavior to color schemes for button and boxes to support ``hover-`` prefix properties to define rules for ``:hover`` event, close #32;
-* Added ``.bg-***`` classes for every color scheme with ``background`` property, ``hover-background`` is supported also for these classes, close #36;
-* Added transparent feature for block and box, close #37;
-* Changed default ``.flex-grid`` cell size to ``100%``, close #25;
-* Changed border properties support in color schemes so we can use ``border`` shortand, ``border-style``, ``border-width`` and ``border-color``.
-* Changed border properties support in color schemes so font color is not used anymore as a default value;
-* Changed ``font-color``  behavior so it is not defined anymore automatically with inverted color from ``background`` since it may not contain correct color, close #35;
-* Renamed ``background-color`` property from color scheme to ``background`` so now we can define more complex background;
+* Add behavior to color schemes for button and boxes to support ``hover-`` prefix properties to define rules for ``:hover`` event, close #32;
+* Add ``.bg-***`` classes for every color scheme with ``background`` property, ``hover-background`` is supported also for these classes, close #36;
+* Add transparent feature for block and box, close #37;
+* Change default ``.flex-grid`` cell size to ``100%``, close #25;
+* Change border properties support in color schemes so we can use ``border`` shortand, ``border-style``, ``border-width`` and ``border-color``.
+* Change border properties support in color schemes so font color is not used anymore as a default value;
+* Change ``font-color``  behavior so it is not defined anymore automatically with inverted color from ``background`` since it may not contain correct color, close #35;
+* Rename ``background-color`` property from color scheme to ``background`` so now we can define more complex background;
 
 Version 0.7.2 - 2017/11/13
 --------------------------
 
 `Download ZIP package for version 0.7.2 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.7.2.zip>`_
 
-* Added `Stylelint <https://stylelint.io/>`_ rules configuration from `Sass syntax guide with Stylelint <https://github.com/emencia/stylelint-guide>`_;
-* Fixed every syntax warnings from Stylelint;
+* Add `Stylelint <https://stylelint.io/>`_ rules configuration from `Sass syntax guide with Stylelint <https://github.com/emencia/stylelint-guide>`_;
+* Fix every syntax warnings from Stylelint;
 
 
 Version 0.7.1 - 2017/11/04
@@ -98,10 +105,10 @@ Version 0.7.0 - 2017/10/23
 
 `Download ZIP package for version 0.7.0 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.7.0.zip>`_
 
-* Added older package version links in changelog;
-* Dropped Foundation5 support, close #28;
-* Fixed headers missing font family, close #27;
-* Fixed invalid sample settings, close #26
+* Add older package version links in changelog;
+* Dropp Foundation5 support, close #28;
+* Fix headers missing font family, close #27;
+* Fix invalid sample settings, close #26
 * To enforce naming cohesion with Foundation:
 
   * ``$font-weight-normal`` have been removed;
@@ -115,10 +122,10 @@ Version 0.6.1 - 2017/03/05
 
 `Download ZIP package for version 0.6.1 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.6.1.zip>`_
 
-* Added missing ``$sveetoy-row-larger-width`` in default settings;
+* Add missing ``$sveetoy-row-larger-width`` in default settings;
 * Dropped Modernizr condition on flexbox class in Flexbox component, close #17;
-* Fixed inconvenient parent selector on spaces features so it should build with Compass again, close #19;
-* Renamed flexbox vertical alignments from ``.align-[ALIGNMENT]`` to ``.v-align-[ALIGNMENT]`` and moved them out of ``.flex-grid`` so they can be used everywhere, close #20;
+* Fix inconvenient parent selector on spaces features so it should build with Compass again, close #19;
+* Rename flexbox vertical alignments from ``.align-[ALIGNMENT]`` to ``.v-align-[ALIGNMENT]`` and moved them out of ``.flex-grid`` so they can be used everywhere, close #20;
 * ``.inner`` blocks feature only work as direct child of a ``.block.delegate``, close #21;
 
 
@@ -130,8 +137,8 @@ Version 0.6.0 - 2017/03/05
 * Foundation6 support, close #14:
 * Include makefile action to install Foundation6 sources using Foundation 6.3.1;
 * Default demonstration page is built with Foundation6, Foundation5 demo is still available;
-* Added Foundation6 assets;
-* Fixed components grid, flex and typography to build CSS with Foundation6;
+* Add Foundation6 assets;
+* Fix components grid, flex and typography to build CSS with Foundation6;
 
 
 Version 0.5.2 - 2017/02/28
@@ -139,27 +146,27 @@ Version 0.5.2 - 2017/02/28
 
 `Download ZIP package for version 0.5.2 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.5.2.zip>`_
 
-* Added flexbox direction classes, close #2;
+* Add flexbox direction classes, close #2;
 * Use ``$sveetoy-breakpoints`` to build every flexbox media query classnames;
-* Added ``boxes`` component that combine spaces and color schemes, close #3;
+* Add ``boxes`` component that combine spaces and color schemes, close #3;
 * Build ``<hr>`` features from schemes, close #4;
 * Build ``<small>`` element size features from ``$sveetoy-smalls``, close #5;
 * Build ``.underline`` features from schemes, close #6;
 * Dropped button feature ``f-dropdown.overflow``, close #7;
 * Build button color features from variable ``$sveetoy-button-colors-schemes``, close #8;
 * Build button ``.modest`` features from variable ``$sveetoy-button-modests``, close #9;
-* Renamed text thickness features for better consistency, close #12 :
+* Rename text thickness features for better consistency, close #12 :
 
   * ``.text-strong`` becomes ``.text-bold``;
   * ``.text-stronger`` becomes ``.text-strong``;
   * ``$font-weight-stronger`` becomes ``$font-weight-strong``;
 
-* Renamed ``.section`` to ``.block``, close #15;
-* Added vocabulary references and accorded ``spaces`` component features to width terms, close #16;
-* Renamed button feature ``.strong`` to ``.important``;
-* Added ``sveetoy/_settings.scss`` to include some default settings and keep components only with ``!default`` values, close #13;
-* Fixed ``buttons`` and ``type`` components to work nice with empty default values;
-* Added "Install" part in demo;
+* Rename ``.section`` to ``.block``, close #15;
+* Add vocabulary references and accorded ``spaces`` component features to width terms, close #16;
+* Rename button feature ``.strong`` to ``.important``;
+* Add ``sveetoy/_settings.scss`` to include some default settings and keep components only with ``!default`` values, close #13;
+* Fix ``buttons`` and ``type`` components to work nice with empty default values;
+* Add "Install" part in demo;
 
 
 Version 0.5.1 - 2017/02/06
@@ -167,9 +174,9 @@ Version 0.5.1 - 2017/02/06
 
 `Download ZIP package for version 0.5.1 <http://sveetch.github.io/Sveetoy/dist/Sveetoy-sass-0.5.1.zip>`_
 
-* Continued to improve demo;
+* Continue to improve demo;
 * Some cleaning in sources;
-* Moved every TODO in a github issue;
+* Move every TODO in a github issue;
 * Add a script to correctly release with correct version and create an archive;
 * Publish the first sources archive in ``dist/``;
 
