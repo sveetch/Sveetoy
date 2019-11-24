@@ -12,7 +12,7 @@
  * Licensed under MIT Open Source
  */
 @media print, screen and (min-width: 40em) {
-  .reveal, .reveal.tiny, .reveal.small, .reveal.large {
+  .reveal.large, .reveal.small, .reveal.tiny, .reveal {
     right: auto;
     left: auto;
     margin: 0 auto;
@@ -1364,8 +1364,8 @@ textarea {
     clear: both;
   }
   .medium-uncentered,
-  .medium-push-0,
-  .medium-pull-0 {
+.medium-push-0,
+.medium-pull-0 {
     position: static;
     float: left;
     margin-right: 0;
@@ -1663,8 +1663,8 @@ textarea {
     clear: both;
   }
   .large-uncentered,
-  .large-push-0,
-  .large-pull-0 {
+.large-push-0,
+.large-pull-0 {
     position: static;
     float: left;
     margin-right: 0;
@@ -1962,8 +1962,8 @@ textarea {
     clear: both;
   }
   .xlarge-uncentered,
-  .xlarge-push-0,
-  .xlarge-pull-0 {
+.xlarge-push-0,
+.xlarge-pull-0 {
     position: static;
     float: left;
     margin-right: 0;
@@ -2261,8 +2261,8 @@ textarea {
     clear: both;
   }
   .xxlarge-uncentered,
-  .xxlarge-push-0,
-  .xxlarge-pull-0 {
+.xxlarge-push-0,
+.xxlarge-pull-0 {
     position: static;
     float: left;
     margin-right: 0;
@@ -2467,7 +2467,7 @@ ol {
   margin-left: 1.25rem;
 }
 
-ul ul, ol ul, ul ol, ol ol {
+ul ul, ul ol, ol ul, ol ol {
   margin-left: 1.25rem;
   margin-bottom: 0;
 }
@@ -2668,22 +2668,22 @@ ul.no-bullet, ol.no-bullet {
     display: table-cell !important;
   }
   a,
-  a:visited {
+a:visited {
     text-decoration: underline;
   }
   a[href]:after {
     content: " (" attr(href) ")";
   }
   .ir a:after,
-  a[href^='javascript:']:after,
-  a[href^='#']:after {
+a[href^='javascript:']:after,
+a[href^='#']:after {
     content: '';
   }
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
   pre,
-  blockquote {
+blockquote {
     border: 1px solid #8a8a8a;
     page-break-inside: avoid;
   }
@@ -2691,7 +2691,7 @@ ul.no-bullet, ol.no-bullet {
     display: table-header-group;
   }
   tr,
-  img {
+img {
     page-break-inside: avoid;
   }
   img {
@@ -2701,13 +2701,13 @@ ul.no-bullet, ol.no-bullet {
     margin: 0.5cm;
   }
   p,
-  h2,
-  h3 {
+h2,
+h3 {
     orphans: 3;
     widows: 3;
   }
   h2,
-  h3 {
+h3 {
     page-break-after: avoid;
   }
   .print-break-inside {
@@ -3266,10 +3266,10 @@ label.middle {
   border-radius: 0 0 0 0;
 }
 
-.input-group-label, .input-group-field, .input-group-button, .input-group-button a,
+.input-group-button a,
 .input-group-button input,
 .input-group-button button,
-.input-group-button label {
+.input-group-button label, .input-group-button, .input-group-field, .input-group-label {
   margin: 0;
   white-space: nowrap;
 }
@@ -5585,7 +5585,7 @@ select[multiple] {
   color: #ffffff;
 }
 
-.orbit-previous, .orbit-next {
+.orbit-next, .orbit-previous {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -5594,11 +5594,11 @@ select[multiple] {
   color: #ffffff;
 }
 
-[data-whatinput='mouse'] .orbit-previous, [data-whatinput='mouse'] .orbit-next {
+[data-whatinput='mouse'] .orbit-next, [data-whatinput='mouse'] .orbit-previous {
   outline: 0;
 }
 
-.orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus {
+.orbit-next:hover, .orbit-previous:hover, .orbit-next:active, .orbit-previous:active, .orbit-next:focus, .orbit-previous:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -6066,7 +6066,7 @@ input:checked ~ .switch-paddle::after {
   outline: 0;
 }
 
-.switch-active, .switch-inactive {
+.switch-inactive, .switch-active {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -6159,7 +6159,9 @@ table {
   border-radius: 0;
 }
 
-thead, tbody, tfoot {
+thead,
+tbody,
+tfoot {
   border: 1px solid #f2f2f2;
   background-color: #ffffff;
 }
@@ -6179,17 +6181,22 @@ tfoot {
   color: #000000;
 }
 
-thead tr, tfoot tr {
+thead tr,
+tfoot tr {
   background: transparent;
 }
 
-thead th, thead td, tfoot th, tfoot td {
+thead th,
+thead td,
+tfoot th,
+tfoot td {
   padding: 0.5rem 0.625rem 0.625rem;
   font-weight: 700;
   text-align: left;
 }
 
-tbody th, tbody td {
+tbody th,
+tbody td {
   padding: 0.5rem 0.625rem 0.625rem;
 }
 
@@ -6216,8 +6223,8 @@ table.unstriped tbody tr {
     display: none;
   }
   table.stack tr,
-  table.stack th,
-  table.stack td {
+table.stack th,
+table.stack td {
     display: block;
   }
   table.stack td {
@@ -6563,7 +6570,7 @@ a.thumbnail image {
     flex-wrap: wrap;
   }
   .top-bar.stacked-for-medium .top-bar-left,
-  .top-bar.stacked-for-medium .top-bar-right {
+.top-bar.stacked-for-medium .top-bar-right {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -6574,7 +6581,7 @@ a.thumbnail image {
     flex-wrap: wrap;
   }
   .top-bar.stacked-for-large .top-bar-left,
-  .top-bar.stacked-for-large .top-bar-right {
+.top-bar.stacked-for-large .top-bar-right {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -6585,7 +6592,7 @@ a.thumbnail image {
     flex-wrap: wrap;
   }
   .top-bar.stacked-for-xlarge .top-bar-left,
-  .top-bar.stacked-for-xlarge .top-bar-right {
+.top-bar.stacked-for-xlarge .top-bar-right {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -6757,14 +6764,14 @@ a.thumbnail image {
 
 @media screen and (orientation: landscape) {
   .show-for-landscape,
-  .hide-for-portrait {
+.hide-for-portrait {
     display: block !important;
   }
 }
 
 @media screen and (orientation: portrait) {
   .show-for-landscape,
-  .hide-for-portrait {
+.hide-for-portrait {
     display: none !important;
   }
 }
@@ -6776,14 +6783,14 @@ a.thumbnail image {
 
 @media screen and (orientation: landscape) {
   .hide-for-landscape,
-  .show-for-portrait {
+.show-for-portrait {
     display: none !important;
   }
 }
 
 @media screen and (orientation: portrait) {
   .hide-for-landscape,
-  .show-for-portrait {
+.show-for-portrait {
     display: block !important;
   }
 }
@@ -7838,7 +7845,6 @@ button.lightskyblue-bordered:not(.disabled):hover,
 .button.lightskyblue-bordered:not(.disabled):hover {
   color: #ffffff;
   background: #00688b;
-  border: 1px solid #00688b;
 }
 
 button.lightskyblue-bordered.disabled,
@@ -7859,8 +7865,6 @@ button.snow1-bordered:not(.disabled),
 button.snow1-bordered:not(.disabled):hover,
 .button.snow1-bordered:not(.disabled):hover {
   background: #fff0f0;
-  border: 1px solid;
-  border-width: 1px 3px;
 }
 
 button.snow1-bordered.disabled,
@@ -8010,32 +8014,32 @@ h6,
 
 @media print, screen and (min-width: 40em) {
   h1,
-  .title-1 {
+.title-1 {
     font-family: "Overlock SC", cursive;
     font-size: 3rem;
   }
   h2,
-  .title-2 {
+.title-2 {
     font-family: "Overlock SC", cursive;
     font-size: 2.5rem;
   }
   h3,
-  .title-3 {
+.title-3 {
     font-family: "Overlock SC", cursive;
     font-size: 1.9375rem;
   }
   h4,
-  .title-4 {
+.title-4 {
     font-family: "Overlock SC", cursive;
     font-size: 1.5625rem;
   }
   h5,
-  .title-5 {
+.title-5 {
     font-family: "Overlock SC", cursive;
     font-size: 1.25rem;
   }
   h6,
-  .title-6 {
+.title-6 {
     font-family: "Overlock SC", cursive;
     font-size: 1rem;
   }
@@ -8571,8 +8575,7 @@ img.expanded {
   }
 }
 
-.block:not(.delegate).unpadded,
-.block.delegate > .inner.unpadded {
+.block:not(.delegate).unpadded, .block.delegate > .inner.unpadded {
   padding: 0;
 }
 
