@@ -19,5 +19,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sveetch/Sveetoy"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.6.3",
+    "jquery": "^3.5.1",
+    "sassdoc": "^2.7.2",
+    "what-input": "^5.2.10"
   }
 }

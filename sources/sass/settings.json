@@ -1,7 +1,7 @@
 {
     "SOURCES_PATH": "scss_f6",
     "LIBRARY_PATHS": [
-        "../../foundation-sites-6.4.3/scss",
+        "../../node_modules/foundation-sites/scss",
         "sveetoy"
     ],
     "TARGET_PATH": "../css",
